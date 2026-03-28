@@ -1,0 +1,21 @@
+import os
+import aiosqlite
+
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./data/app.db")
+
+
+def get_db_path() -> str:
+    url = DATABASE_URL
+    if url.startswith("sqlite:////"):
+        return url[len("sqlite:///"):]   # keeps leading /
+    if url.startswith("sqlite:///"):
+        return url[len("sqlite:///"):]
+    if url.startswith("sqlite://"):
+        return url[len("sqlite://"):]
+    return "/app/data/app.db"
+
+
+async def get_db():
+    async with aiosqlite.connect(get_db_path()) as db:
+        db.row_factory = aiosqlite.Row
+        yield db
