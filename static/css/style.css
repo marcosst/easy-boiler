@@ -37,3 +37,6 @@ button {
 }
 
 button:hover { background: #1d4ed8; }
+
+button.btn-danger { background: #dc2626; }
+button.btn-danger:hover { background: #b91c1c; }
