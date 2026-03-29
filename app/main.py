@@ -383,11 +383,7 @@ async def oauth_callback(request: Request, provider: str, db=Depends(get_db)):
 
 @app.get("/")
 async def home(request: Request, user=Depends(require_auth)):
-    return templates.TemplateResponse(
-        request=request,
-        name="home.html",
-        context={"user": user, "projects": MOCK_PROJECTS},
-    )
+    return RedirectResponse(f"/{user['username']}", status_code=303)
 
 
 def _collect_content_details(topics_list):
@@ -456,6 +452,24 @@ async def topics(request: Request, project_id: int, collection_id: int, user=Dep
             "collection": collection,
             "topics": MOCK_TOPICS.get(collection_id, []),
         },
+    )
+
+
+@app.get("/{username}")
+async def user_projects(request: Request, username: str, user=Depends(require_auth), db=Depends(get_db)):
+    row = await db.execute("SELECT id FROM users WHERE username = ?", (username,))
+    profile_user = await row.fetchone()
+    if not profile_user:
+        raise HTTPException(status_code=404)
+    cursor = await db.execute(
+        "SELECT id, name, shortname, image_path, created_at FROM projects WHERE owner_id = ? ORDER BY created_at DESC",
+        (profile_user["id"],),
+    )
+    projects = await cursor.fetchall()
+    return templates.TemplateResponse(
+        request=request,
+        name="home.html",
+        context={"user": user, "projects": projects},
     )
 
 
