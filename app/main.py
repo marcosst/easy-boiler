@@ -136,18 +136,50 @@ async def home(request: Request):
     )
 
 
+def _collect_content_details(topics_list):
+    """Collect all details with content from a topics list, enriched for the drawer."""
+    items = []
+    for topic in topics_list:
+        for subtopic in topic["subtopics"]:
+            for detail in subtopic["details"]:
+                if not detail["has_content"]:
+                    continue
+                full = MOCK_DETAILS.get(detail["id"])
+                if not full:
+                    continue
+                thumbnail_url = None
+                detail_type = "document"
+                yt = full.get("youtube_url")
+                if yt:
+                    detail_type = "video"
+                    # extract video id from embed URL
+                    vid = yt.rsplit("/", 1)[-1]
+                    thumbnail_url = f"https://img.youtube.com/vi/{vid}/mqdefault.jpg"
+                items.append({
+                    "id": detail["id"],
+                    "name": full["name"],
+                    "type": detail_type,
+                    "thumbnail_url": thumbnail_url,
+                })
+    return items
+
+
 @app.get("/projects/{project_id}")
-async def collections(request: Request, project_id: int):
+async def project_topics(request: Request, project_id: int):
     project = next((p for p in MOCK_PROJECTS if p["id"] == project_id), None)
     if not project:
         raise HTTPException(status_code=404)
+    # Use the first collection's topics for this project
+    first_collection = MOCK_COLLECTIONS[project_id][0]
+    topics_list = MOCK_TOPICS.get(first_collection["id"], [])
     return templates.TemplateResponse(
         request=request,
-        name="collections.html",
+        name="topics.html",
         context={
             "user": MOCK_USER,
             "project": project,
-            "collections": MOCK_COLLECTIONS[project_id],
+            "topics": topics_list,
+            "drawer_items": _collect_content_details(topics_list),
         },
     )
 

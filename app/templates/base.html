@@ -25,6 +25,14 @@
         }
       }
     </script>
+    <style>
+      /* Dark-mode scrollbar */
+      .dark .dark-scrollbar::-webkit-scrollbar { width: 8px; }
+      .dark .dark-scrollbar::-webkit-scrollbar-track { background: rgb(38 38 38); }
+      .dark .dark-scrollbar::-webkit-scrollbar-thumb { background: rgb(82 82 82); border-radius: 4px; }
+      .dark .dark-scrollbar::-webkit-scrollbar-thumb:hover { background: rgb(115 115 115); }
+      .dark .dark-scrollbar { scrollbar-color: rgb(82 82 82) rgb(38 38 38); }
+    </style>
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.14.3/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.14.3/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
