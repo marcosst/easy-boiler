@@ -3,17 +3,17 @@
 {% block title %}{{ project.name }}{% endblock %}
 
 {% block page_title %}
-<span class="text-sm font-semibold text-slate-800">{{ project.name }}</span>
+<span class="text-sm font-semibold text-slate-800 dark:text-slate-100">{{ project.name }}</span>
 {% endblock %}
 
 {% block section_title %}
-<h1 class="text-2xl font-bold text-slate-800 mb-6">Coleções</h1>
+<h1 class="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-6">Coleções</h1>
 {% endblock %}
 
 {% block grid_items %}
 {% for collection in collections %}
-<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-md transition-shadow cursor-pointer block">
-  <div class="aspect-video bg-slate-200 overflow-hidden">
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow cursor-pointer block">
+  <div class="aspect-video bg-slate-200 dark:bg-slate-700 overflow-hidden">
     {% if collection.thumbnail_url %}
     <img src="{{ collection.thumbnail_url }}" alt="{{ collection.name }}" class="w-full h-full object-cover">
     {% else %}
@@ -21,7 +21,7 @@
     {% endif %}
   </div>
   <div class="p-3">
-    <span class="text-sm font-medium text-slate-800">{{ collection.name }}</span>
+    <span class="text-sm font-medium text-slate-800 dark:text-slate-100">{{ collection.name }}</span>
   </div>
 </div>
 {% endfor %}

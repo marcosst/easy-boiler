@@ -30,3 +30,25 @@ def test_dropdown_contains_theme_options():
     assert "Claro" in response.text
     assert "Escuro" in response.text
     assert "Auto" in response.text
+
+
+def test_home_cards_have_dark_classes():
+    response = client.get("/")
+    assert "dark:bg-slate-800" in response.text
+    assert "dark:border-slate-700" in response.text
+
+
+def test_collections_cards_have_dark_classes():
+    response = client.get("/projects/1")
+    assert "dark:bg-slate-800" in response.text
+    assert "dark:border-slate-700" in response.text
+
+
+def test_home_section_title_has_dark_class():
+    response = client.get("/")
+    assert "dark:text-slate-100" in response.text
+
+
+def test_collections_section_title_has_dark_class():
+    response = client.get("/projects/1")
+    assert "dark:text-slate-100" in response.text
