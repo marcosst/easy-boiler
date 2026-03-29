@@ -1,0 +1,19 @@
+<div class="p-6">
+  {% if detail.youtube_url %}
+  <div class="aspect-video rounded-xl overflow-hidden mb-4 bg-black">
+    <iframe
+      src="{{ detail.youtube_url }}"
+      class="w-full h-full"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {% endif %}
+
+  {% if detail.content_html %}
+  <div class="prose prose-sm dark:prose-invert max-w-none text-slate-700 dark:text-neutral-300">
+    {{ detail.content_html | safe }}
+  </div>
+  {% endif %}
+</div>
