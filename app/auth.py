@@ -72,3 +72,50 @@ async def get_current_user(request: Request, db) -> dict | None:
 async def destroy_session(db, token: str) -> None:
     await db.execute("DELETE FROM sessions WHERE token = ?", (token,))
     await db.commit()
+
+
+from authlib.integrations.starlette_client import OAuth
+
+oauth = OAuth()
+
+_google_id = os.getenv("GOOGLE_CLIENT_ID")
+_github_id = os.getenv("GITHUB_CLIENT_ID")
+_microsoft_id = os.getenv("MICROSOFT_CLIENT_ID")
+
+if _google_id:
+    oauth.register(
+        name="google",
+        client_id=_google_id,
+        client_secret=os.getenv("GOOGLE_CLIENT_SECRET"),
+        server_metadata_url="https://accounts.google.com/.well-known/openid-configuration",
+        client_kwargs={"scope": "openid email profile"},
+    )
+
+if _github_id:
+    oauth.register(
+        name="github",
+        client_id=_github_id,
+        client_secret=os.getenv("GITHUB_CLIENT_SECRET"),
+        authorize_url="https://github.com/login/oauth/authorize",
+        access_token_url="https://github.com/login/oauth/access_token",
+        api_base_url="https://api.github.com/",
+        client_kwargs={"scope": "user:email"},
+    )
+
+if _microsoft_id:
+    oauth.register(
+        name="microsoft",
+        client_id=_microsoft_id,
+        client_secret=os.getenv("MICROSOFT_CLIENT_SECRET"),
+        server_metadata_url="https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration",
+        client_kwargs={"scope": "openid email profile"},
+    )
+
+
+PROVIDERS = {}
+if _google_id:
+    PROVIDERS["google"] = oauth.google
+if _github_id:
+    PROVIDERS["github"] = oauth.github
+if _microsoft_id:
+    PROVIDERS["microsoft"] = oauth.microsoft

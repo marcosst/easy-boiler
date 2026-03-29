@@ -13,6 +13,8 @@ from app.auth import (
     destroy_session,
     get_current_user,
     hash_password,
+    oauth,
+    PROVIDERS,
     set_session_cookie,
     validate_username,
     verify_password,
@@ -243,6 +245,137 @@ async def logout(request: Request, db=Depends(get_db)):
     response = RedirectResponse("/login", status_code=303)
     response.delete_cookie(SESSION_COOKIE)
     return response
+
+
+# --- OAuth routes ---
+
+@app.get("/auth/choose-username")
+async def choose_username_page(request: Request):
+    if "oauth_email" not in request.session:
+        return RedirectResponse("/login", status_code=303)
+    return templates.TemplateResponse(request=request, name="choose_username.html", context={})
+
+
+@app.post("/auth/choose-username")
+async def choose_username_submit(
+    request: Request,
+    username: str = Form(...),
+    db=Depends(get_db),
+):
+    if "oauth_email" not in request.session:
+        return RedirectResponse("/login", status_code=303)
+
+    username = username.strip().lower()
+    err = validate_username(username)
+    if err:
+        return templates.TemplateResponse(
+            request=request, name="choose_username.html",
+            context={"error": err, "username": username},
+            status_code=422,
+        )
+
+    row = await db.execute("SELECT id FROM users WHERE username = ?", (username,))
+    if await row.fetchone():
+        return templates.TemplateResponse(
+            request=request, name="choose_username.html",
+            context={"error": "Username já em uso.", "username": username},
+            status_code=422,
+        )
+
+    email = request.session["oauth_email"]
+    provider = request.session["oauth_provider"]
+    provider_user_id = request.session["oauth_provider_user_id"]
+
+    cursor = await db.execute(
+        "INSERT INTO users (username, email) VALUES (?, ?)",
+        (username, email),
+    )
+    user_id = cursor.lastrowid
+    await db.execute(
+        "INSERT INTO oauth_accounts (user_id, provider, provider_user_id) VALUES (?, ?, ?)",
+        (user_id, provider, provider_user_id),
+    )
+    await db.commit()
+
+    request.session.pop("oauth_email", None)
+    request.session.pop("oauth_provider", None)
+    request.session.pop("oauth_provider_user_id", None)
+
+    token = await create_session(db, user_id)
+    response = RedirectResponse("/", status_code=303)
+    set_session_cookie(response, token)
+    return response
+
+
+@app.get("/auth/{provider}")
+async def oauth_login(request: Request, provider: str):
+    client = PROVIDERS.get(provider)
+    if not client:
+        raise HTTPException(status_code=404, detail="Provider não configurado")
+    redirect_uri = request.url_for("oauth_callback", provider=provider)
+    return await client.authorize_redirect(request, str(redirect_uri))
+
+
+@app.get("/auth/{provider}/callback")
+async def oauth_callback(request: Request, provider: str, db=Depends(get_db)):
+    client = PROVIDERS.get(provider)
+    if not client:
+        raise HTTPException(status_code=404, detail="Provider não configurado")
+
+    token_data = await client.authorize_access_token(request)
+
+    if provider == "github":
+        resp = await client.get("user", token=token_data)
+        profile = resp.json()
+        provider_user_id = str(profile["id"])
+        email = profile.get("email")
+        if not email:
+            email_resp = await client.get("user/emails", token=token_data)
+            emails = email_resp.json()
+            primary = next((e for e in emails if e["primary"]), None)
+            email = primary["email"] if primary else None
+    else:
+        userinfo = token_data.get("userinfo", {})
+        provider_user_id = userinfo.get("sub", "")
+        email = userinfo.get("email")
+
+    if not email:
+        return templates.TemplateResponse(
+            request=request, name="login.html",
+            context={"error": "Não foi possível obter o email do provedor."},
+            status_code=422,
+        )
+
+    row = await db.execute(
+        "SELECT user_id FROM oauth_accounts WHERE provider = ? AND provider_user_id = ?",
+        (provider, provider_user_id),
+    )
+    existing_oauth = await row.fetchone()
+
+    if existing_oauth:
+        token = await create_session(db, existing_oauth["user_id"])
+        response = RedirectResponse("/", status_code=303)
+        set_session_cookie(response, token)
+        return response
+
+    row = await db.execute("SELECT id FROM users WHERE email = ?", (email,))
+    existing_user = await row.fetchone()
+
+    if existing_user:
+        await db.execute(
+            "INSERT INTO oauth_accounts (user_id, provider, provider_user_id) VALUES (?, ?, ?)",
+            (existing_user["id"], provider, provider_user_id),
+        )
+        await db.commit()
+        token = await create_session(db, existing_user["id"])
+        response = RedirectResponse("/", status_code=303)
+        set_session_cookie(response, token)
+        return response
+
+    request.session["oauth_email"] = email
+    request.session["oauth_provider"] = provider
+    request.session["oauth_provider_user_id"] = provider_user_id
+    return RedirectResponse("/auth/choose-username", status_code=303)
 
 
 # --- Protected routes ---

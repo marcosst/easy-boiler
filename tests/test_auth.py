@@ -120,3 +120,8 @@ def test_home_redirects_to_login_when_unauthenticated():
     response = route_client.get("/", follow_redirects=False)
     assert response.status_code == 303
     assert response.headers["location"] == "/login"
+
+
+def test_oauth_unconfigured_provider_returns_404():
+    response = route_client.get("/auth/unconfigured-provider", follow_redirects=False)
+    assert response.status_code == 404
