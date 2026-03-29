@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" x-data="themeManager()" :class="{ 'dark': isDark }">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}App{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: 'class' }
+    </script>
     <script defer src="https://unpkg.com/alpinejs@3.14.3/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+    <script>
+      function themeManager() {
+        return {
+          theme: localStorage.getItem('theme') || 'auto',
+          isDark: false,
+          mediaQuery: window.matchMedia('(prefers-color-scheme: dark)'),
+          init() {
+            this.applyTheme();
+            this.mediaQuery.addEventListener('change', () => {
+              if (this.theme === 'auto') this.applyTheme();
+            });
+          },
+          setTheme(mode) {
+            this.theme = mode;
+            localStorage.setItem('theme', mode);
+            this.applyTheme();
+          },
+          applyTheme() {
+            if (this.theme === 'dark') {
+              this.isDark = true;
+            } else if (this.theme === 'light') {
+              this.isDark = false;
+            } else {
+              this.isDark = this.mediaQuery.matches;
+            }
+          }
+        }
+      }
+    </script>
 </head>
-<body class="bg-slate-100 min-h-screen font-sans">
+<body class="bg-slate-100 dark:bg-slate-900 min-h-screen font-sans transition-colors">
     {% block content %}{% endblock %}
 </body>
 </html>
