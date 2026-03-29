@@ -1,0 +1,24 @@
+[project]
+name = "easy-boiler"
+version = "0.1.0"
+description = "FastAPI boilerplate with a YouTube transcript helper script."
+requires-python = ">=3.12"
+dependencies = [
+    "aiosqlite",
+    "fastapi",
+    "jinja2",
+    "python-dotenv",
+    "yt-dlp",
+    "uvicorn[standard]",
+    "youtube-transcript-api",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "httpx>=0.27",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
