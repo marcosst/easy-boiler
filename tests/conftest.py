@@ -31,6 +31,17 @@ CREATE TABLE oauth_accounts (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(provider, provider_user_id)
 );
+CREATE TABLE projects (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    shortname TEXT NOT NULL UNIQUE
+                     CHECK(length(shortname) >= 2 AND shortname NOT GLOB '*[^a-z0-9-]*'),
+    is_public INTEGER NOT NULL DEFAULT 0 CHECK(is_public IN (0, 1)),
+    image_path TEXT,
+    owner_id INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
 """
 
 
@@ -45,6 +56,14 @@ def auth_client(tmp_path):
             await db.execute(
                 "INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)",
                 ("testuser", "test@example.com", hash_password("pass123")),
+            )
+            await db.execute(
+                "INSERT INTO projects (name, shortname, owner_id) VALUES (?, ?, ?)",
+                ("Projeto Teste", "projeto-teste", 1),
+            )
+            await db.execute(
+                "INSERT INTO projects (name, shortname, owner_id) VALUES (?, ?, ?)",
+                ("Segundo Projeto", "segundo-projeto", 1),
             )
             await db.commit()
             token = await create_session(db, 1)
