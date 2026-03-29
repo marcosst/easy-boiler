@@ -5,9 +5,11 @@ description = "FastAPI boilerplate with a YouTube transcript helper script."
 requires-python = ">=3.12"
 dependencies = [
     "aiosqlite",
+    "authlib",
     "fastapi",
     "jinja2",
     "markdown",
+    "passlib[bcrypt]",
     "python-dotenv",
     "yt-dlp",
     "uvicorn[standard]",
