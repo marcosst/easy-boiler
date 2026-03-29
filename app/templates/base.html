@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}App{% endblock %}</title>
-    <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.14.3/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
 </head>
-<body>
+<body class="bg-slate-100 min-h-screen font-sans">
     {% block content %}{% endblock %}
 </body>
 </html>
