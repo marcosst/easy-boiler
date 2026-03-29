@@ -18,3 +18,15 @@ def test_home_contains_theme_manager():
 def test_home_has_dark_body_class():
     response = client.get("/")
     assert "dark:bg-slate-900" in response.text
+
+
+def test_dropdown_contains_tema_toggle():
+    response = client.get("/")
+    assert "Tema" in response.text
+
+
+def test_dropdown_contains_theme_options():
+    response = client.get("/")
+    assert "Claro" in response.text
+    assert "Escuro" in response.text
+    assert "Auto" in response.text
