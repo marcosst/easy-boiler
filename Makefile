@@ -6,7 +6,7 @@ DB_URL := sqlite:///$(CURDIR)/data/app.db
 setup:
 	uv sync
 	cp -n .env.example .env || true
-	mkdir -p data
+	mkdir -p data midias
 
 # Roda a app com hot-reload
 dev:

@@ -29,6 +29,7 @@ app.add_middleware(
 )
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/midias", StaticFiles(directory="midias"), name="midias")
 templates = Jinja2Templates(directory="app/templates")
 
 # --- Mock data (unchanged from original) ---
