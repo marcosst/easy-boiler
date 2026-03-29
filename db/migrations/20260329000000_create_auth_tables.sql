@@ -1,9 +1,4 @@
-CREATE TABLE IF NOT EXISTS "schema_migrations" (version varchar(128) primary key);
-CREATE TABLE example (
-    id      INTEGER PRIMARY KEY AUTOINCREMENT,
-    name    TEXT    NOT NULL,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
+-- migrate:up
 CREATE TABLE users (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
     username      TEXT    NOT NULL UNIQUE,
@@ -12,6 +7,7 @@ CREATE TABLE users (
     created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
 CREATE TABLE sessions (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id    INTEGER  NOT NULL REFERENCES users(id) ON DELETE CASCADE,
@@ -19,7 +15,9 @@ CREATE TABLE sessions (
     expires_at DATETIME NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
 CREATE INDEX idx_sessions_token ON sessions(token);
+
 CREATE TABLE oauth_accounts (
     id               INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id          INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
@@ -28,7 +26,8 @@ CREATE TABLE oauth_accounts (
     created_at       DATETIME DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(provider, provider_user_id)
 );
--- Dbmate schema migrations
-INSERT INTO "schema_migrations" (version) VALUES
-  ('20240101000000'),
-  ('20260329000000');
+
+-- migrate:down
+DROP TABLE IF EXISTS oauth_accounts;
+DROP TABLE IF EXISTS sessions;
+DROP TABLE IF EXISTS users;
