@@ -1,19 +1,35 @@
-import markdown as md
+import os
 
-from fastapi import FastAPI, HTTPException, Request
-from fastapi.templating import Jinja2Templates
+import markdown as md
+from fastapi import Depends, FastAPI, Form, HTTPException, Request, Response
+from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from starlette.middleware.sessions import SessionMiddleware
+
+from app.auth import (
+    SESSION_COOKIE,
+    create_session,
+    destroy_session,
+    get_current_user,
+    hash_password,
+    set_session_cookie,
+    validate_username,
+    verify_password,
+)
+from app.database import get_db
 
 app = FastAPI()
+
+app.add_middleware(
+    SessionMiddleware,
+    secret_key=os.getenv("SECRET_KEY", "dev-secret-change-me"),
+)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
 
-MOCK_USER = {
-    "name": "Usuário Demo",
-    "email": "usuario@demo.com",
-    "initials": "UD",
-}
+# --- Mock data (unchanged from original) ---
 
 MOCK_PROJECTS = [
     {"id": 1, "name": "Projeto Alpha",   "thumbnail_url": None, "placeholder_color": "bg-gradient-to-br from-teal-400 to-teal-700"},
@@ -127,12 +143,116 @@ def _build_mock_topics():
 MOCK_TOPICS, MOCK_DETAILS = _build_mock_topics()
 
 
+# --- Auth redirect exception ---
+
+class AuthRedirect(Exception):
+    pass
+
+
+@app.exception_handler(AuthRedirect)
+async def auth_redirect_handler(request: Request, exc: AuthRedirect):
+    return RedirectResponse("/login", status_code=303)
+
+
+async def require_auth(request: Request, db=Depends(get_db)):
+    user = await get_current_user(request, db)
+    if not user:
+        raise AuthRedirect()
+    return user
+
+
+# --- Public auth routes ---
+
+@app.get("/login")
+async def login_page(request: Request):
+    return templates.TemplateResponse(request=request, name="login.html", context={})
+
+
+@app.post("/login")
+async def login_submit(
+    request: Request,
+    email: str = Form(...),
+    password: str = Form(...),
+    db=Depends(get_db),
+):
+    row = await db.execute("SELECT id, password_hash FROM users WHERE email = ?", (email,))
+    user = await row.fetchone()
+    if not user or not user["password_hash"] or not verify_password(password, user["password_hash"]):
+        return templates.TemplateResponse(
+            request=request, name="login.html",
+            context={"error": "Email ou senha incorretos."},
+            status_code=422,
+        )
+    token = await create_session(db, user["id"])
+    response = RedirectResponse("/", status_code=303)
+    set_session_cookie(response, token)
+    return response
+
+
+@app.get("/register")
+async def register_page(request: Request):
+    return templates.TemplateResponse(request=request, name="register.html", context={})
+
+
+@app.post("/register")
+async def register_submit(
+    request: Request,
+    username: str = Form(...),
+    email: str = Form(...),
+    password: str = Form(...),
+    password_confirm: str = Form(...),
+    db=Depends(get_db),
+):
+    username = username.strip().lower()
+    err = validate_username(username)
+    if err:
+        return templates.TemplateResponse(
+            request=request, name="register.html",
+            context={"error": err, "username": username, "email": email},
+            status_code=422,
+        )
+    if password != password_confirm:
+        return templates.TemplateResponse(
+            request=request, name="register.html",
+            context={"error": "As senhas não coincidem.", "username": username, "email": email},
+            status_code=422,
+        )
+    row = await db.execute("SELECT id FROM users WHERE email = ? OR username = ?", (email, username))
+    if await row.fetchone():
+        return templates.TemplateResponse(
+            request=request, name="register.html",
+            context={"error": "Email ou username já em uso.", "username": username, "email": email},
+            status_code=422,
+        )
+    cursor = await db.execute(
+        "INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)",
+        (username, email, hash_password(password)),
+    )
+    await db.commit()
+    token = await create_session(db, cursor.lastrowid)
+    response = RedirectResponse("/", status_code=303)
+    set_session_cookie(response, token)
+    return response
+
+
+@app.get("/logout")
+async def logout(request: Request, db=Depends(get_db)):
+    token = request.cookies.get(SESSION_COOKIE)
+    if token:
+        await destroy_session(db, token)
+    response = RedirectResponse("/login", status_code=303)
+    response.delete_cookie(SESSION_COOKIE)
+    return response
+
+
+# --- Protected routes ---
+
 @app.get("/")
-async def home(request: Request):
+async def home(request: Request, user=Depends(require_auth)):
     return templates.TemplateResponse(
         request=request,
         name="home.html",
-        context={"user": MOCK_USER, "projects": MOCK_PROJECTS},
+        context={"user": user, "projects": MOCK_PROJECTS},
     )
 
 
@@ -152,7 +272,6 @@ def _collect_content_details(topics_list):
                 yt = full.get("youtube_url")
                 if yt:
                     detail_type = "video"
-                    # extract video id from embed URL
                     vid = yt.rsplit("/", 1)[-1]
                     thumbnail_url = f"https://img.youtube.com/vi/{vid}/mqdefault.jpg"
                 items.append({
@@ -165,18 +284,17 @@ def _collect_content_details(topics_list):
 
 
 @app.get("/projects/{project_id}")
-async def project_topics(request: Request, project_id: int):
+async def project_topics(request: Request, project_id: int, user=Depends(require_auth)):
     project = next((p for p in MOCK_PROJECTS if p["id"] == project_id), None)
     if not project:
         raise HTTPException(status_code=404)
-    # Use the first collection's topics for this project
     first_collection = MOCK_COLLECTIONS[project_id][0]
     topics_list = MOCK_TOPICS.get(first_collection["id"], [])
     return templates.TemplateResponse(
         request=request,
         name="topics.html",
         context={
-            "user": MOCK_USER,
+            "user": user,
             "project": project,
             "topics": topics_list,
             "drawer_items": _collect_content_details(topics_list),
@@ -185,7 +303,7 @@ async def project_topics(request: Request, project_id: int):
 
 
 @app.get("/projects/{project_id}/collections/{collection_id}")
-async def topics(request: Request, project_id: int, collection_id: int):
+async def topics(request: Request, project_id: int, collection_id: int, user=Depends(require_auth)):
     project = next((p for p in MOCK_PROJECTS if p["id"] == project_id), None)
     if not project:
         raise HTTPException(status_code=404)
@@ -199,13 +317,15 @@ async def topics(request: Request, project_id: int, collection_id: int):
         request=request,
         name="topics.html",
         context={
-            "user": MOCK_USER,
+            "user": user,
             "project": project,
             "collection": collection,
             "topics": MOCK_TOPICS.get(collection_id, []),
         },
     )
 
+
+# --- Public HTMX routes ---
 
 @app.get("/htmx/details/{detail_id}")
 async def htmx_detail(request: Request, detail_id: int):

@@ -96,3 +96,27 @@ def test_validate_username_too_short():
 
 def test_validate_username_special_chars():
     assert validate_username("user@name") is not None
+
+
+from fastapi.testclient import TestClient
+from app.main import app
+
+route_client = TestClient(app)
+
+
+def test_login_page_returns_200():
+    response = route_client.get("/login")
+    assert response.status_code == 200
+    assert "Entre na sua conta" in response.text
+
+
+def test_register_page_returns_200():
+    response = route_client.get("/register")
+    assert response.status_code == 200
+    assert "Crie sua conta" in response.text
+
+
+def test_home_redirects_to_login_when_unauthenticated():
+    response = route_client.get("/", follow_redirects=False)
+    assert response.status_code == 303
+    assert response.headers["location"] == "/login"
