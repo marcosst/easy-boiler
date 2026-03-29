@@ -1,0 +1,104 @@
+[00:00:00] como tornar o kit o modelo padrão que
+[00:00:03] você quer usar na sua caixa então o que
+[00:00:05] que nós vamos fazer aqui ó nós vamos
+[00:00:06] modificar esse kit aqui para que ele
+[00:00:08] fique com três girofix e sempre que eu
+[00:00:10] baixe qualquer componente ele venha já
+[00:00:13] baixando com esses três minifix aqui
+[00:00:15] três minifix no caso no meu caso é
+[00:00:17] minifix e eu também vou mexer Nas folgas
+[00:00:19] aqui eu vou desajustar eles tudo para
+[00:00:20] vocês ver como é que funciona então como
+[00:00:22] é que a gente vai fazer primeiro de tudo
+[00:00:23] a gente clica na mira amarela clica
+[00:00:25] nesse kit e vamos excluir ele ó clico
+[00:00:27] ali em excluir eu não vou usar esse e
+[00:00:30] também venho depois eu posso também até
+[00:00:32] já já vou excluir esse clico nesse aqui
+[00:00:34] e vou excluir esse aqui também tá então
+[00:00:37] tá sem kit agora não tem Furação Então
+[00:00:39] vamos aplicar uma Furação A gente vai
+[00:00:41] abrir aqui internos para peças vamos
+[00:00:44] pegar aqui isso aqui é uma lateral né
+[00:00:46] lateral base Travessa lateral então
+[00:00:49] venho aqui ó na lateral e pego qual kit
+[00:00:52] eu quero usar eu quero usar o mesmo
+[00:00:53] minifix só que agora eu quero com a
+[00:00:55] cavilha clico no minifix clico nessa
+[00:00:57] peça e dou um enter vamos a ajustar esse
+[00:01:00] tá vendo que ele desceu vou até botar em
+[00:01:02] raio x aqui ó ele desceu ali ó uma
+[00:01:05] cavilha um minifix cavilha e minifix
+[00:01:08] certo só que tá muito longe aqui da base
+[00:01:10] eu quero que ess que ela fique mais
+[00:01:11] pertinho aqui da base vamos dizer assim
+[00:01:13] então vou dizer que eu quero que ela
+[00:01:14] fique com 32 e aqui 64 que é o o
+[00:01:18] afastamento da cavilha e ao invés de
+[00:01:21] dois vamos vamos primeiro mudar assim ó
+[00:01:23] vamos clicar clicar então ele já deixou
+[00:01:25] mais perto um do outro aqui ó já ficou
+[00:01:26] mais perto lá e ao invz de dois eu quero
+[00:01:29] botar três eu quero botar tá mais um
+[00:01:30] minifix no meio para dar um reforço
+[00:01:31] clique em aplicar tá ali ó ele já
+[00:01:33] colocou um minifix no meio também
+[00:01:35] entendesse como é que eu vou fazer agora
+[00:01:37] vou tirar do RX só para vocês verem ó tá
+[00:01:40] ali três minifix só que quando eu baixar
+[00:01:42] esse componente aqui de novo eu quero
+[00:01:43] que já baixe nessa configuração aqui tá
+[00:01:46] mesma coisa o meu módulo eu posso
+[00:01:48] carregar o meu módulo para ele já baixar
+[00:01:49] lembra que daquele lado ali ó não tem
+[00:01:51] Furação ainda né então como é que eu
+[00:01:52] faço para para ele para ele já descer
+[00:01:56] assim né então a gente tem que ir
+[00:01:57] clicando aqui ó vou desbloqueando o
+[00:01:59] componente vou entrando vou entrando vou
+[00:02:01] desbloqueando até chegar nesse
+[00:02:03] componente aqui ó cheguei no componente
+[00:02:05] Ele marca o nome aqui ó kit ferragem tá
+[00:02:07] vendo aqui em cima que é o kit quero
+[00:02:09] salvar esse kit aqui então o kit tá no
+[00:02:12] meu padrão tá ó 32 64 e com TR vou
+[00:02:15] clicar com o botão direito em cima dele
+[00:02:17] vou aqui em up Mob e recarrego esse kit
+[00:02:20] aqui ó para quê ó ele deu Aqui ó
+[00:02:22] recarregado com sucesso ele vai
+[00:02:24] atualizar esse meu kit aqui agora quando
+[00:02:25] eu baixar esse kit ele vai baixar na
+[00:02:27] versão nova para mim carregar ele aqui
+[00:02:29] porque ele já tá carregado na minha base
+[00:02:30] de dados a gente tem que atualizar Então
+[00:02:32] como é que a gente atualiza venho aqui ó
+[00:02:34] nesse componente onde tá biblioteca
+[00:02:36] clico nele e clico aqui ó Nessa voltinha
+[00:02:38] aqui em cima aqui ó eu vou atualizar deu
+[00:02:40] atualizei lembra que tem que só vir tem
+[00:02:42] que vir aqui ó nesse os outros todos
+[00:02:44] eles vai ter tu abrir aqui ó vai ter tá
+[00:02:46] vendo mas não vai funcionar esse aqui é
+[00:02:48] para outra coisa esse aqui também vai
+[00:02:50] ter Ó mas não vai funcionar por enquanto
+[00:02:52] tem que ser nesse aqui ó bi biblioteca
+[00:02:54] Clique na biblioteca e recarrega o meu
+[00:02:56] componente Fechou tá recarregado agora
+[00:02:59] quando eu for baixar esse componente
+[00:03:01] nessa outra lateral que tá sem ó vamos
+[00:03:02] lá baixar clico aqui clico em internos
+[00:03:04] né ag internos venho aqui ó para peças
+[00:03:07] laterais vamos pegar o mesmo minifix
+[00:03:10] clico nele e vou clicar aqui nessa peça
+[00:03:12] e vou dar um enter ele jogou o minifix
+[00:03:14] só que ele foi pro outro lado mas eu
+[00:03:15] quero para esse lado vou clicar aqui ó
+[00:03:17] inverter o lado sim e aplico ele já
+[00:03:20] baixou com as mesmas configurações ó
+[00:03:22] aqui e aqui e com três vendo ali ó certo
+[00:03:25] então já ficou o meu kit padrão toda
+[00:03:27] hora que descer vai descer com o meu kit
+[00:03:28] padrão pois eu tenho que arrumar Minas
+[00:03:30] caixas vão sair tudo errada tá muito
+[00:03:31] perto lá né dá para fazer esses ajustes
+[00:03:33] beleza

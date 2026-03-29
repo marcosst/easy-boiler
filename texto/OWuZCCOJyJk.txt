@@ -1,0 +1,103 @@
+[00:00:0] [Música]
+[00:00:1] Olha que legal aqui a questão dos
+[00:00:2] puxadores ó os puxadores do pmob aqui tá
+[00:00:5] então ele tem várias opções de puxadores
+[00:00:7] n tem pra direita pra esquerda ó e todos
+[00:00:10] eles já vem com a Usinagem né Ele vem
+[00:00:12] com o rebaixo já pronto ó e a Usinagem
+[00:00:14] já pronta então é automático tá porque
+[00:00:16] se eu clicar com a Mira amarela em cima
+[00:00:17] do puxador ó Opa aqui ó a mira amarela
+[00:00:20] bem em cima do puxador eu já consigo
+[00:00:22] editar a profundidade desse rebaixo e é
+[00:00:24] visual cara tudo aqui tu consegue
+[00:00:25] visualizar ó esse aqui é o desenho da
+[00:00:27] tua fresa Olha onde tua fresa tá
+[00:00:28] passando então eu quero dizer que vai
+[00:00:30] ser 13 aqui então a fresa já Desce mais
+[00:00:32] um pouquinho ali ó Claro que tem que ser
+[00:00:34] configurado pela tua fresa né ele sempre
+[00:00:35] pega esse risco bem no meio da fresa
+[00:00:36] aqui tá aí tu teria que ver qual é a
+[00:00:38] posição do ta fresa fazer autor
+[00:00:39] regulagem e os ajustes eu consigo também
+[00:00:41] dizer ó o tamanho né Por exemplo é
+[00:00:43] comprimenta 150 eu quero com 25 ó ele já
+[00:00:46] aumenta ali ó Então essa fresa entraria
+[00:00:47] aqui e Faria esse trabalho ou entraria
+[00:00:49] aqui por fora e fazia trabalho né ele já
+[00:00:51] faz a Usinagem ali ó então se eu entrar
+[00:00:52] aqui no meu programa ele vai fazer duas
+[00:00:54] já tem os parafusos que tá furando aqui
+[00:00:56] né e ele vai fazer duas Esse aqui é o
+[00:00:58] rebaixo tá vendo ó esse cinza é o
+[00:00:59] rebaixo se eu for aqui fora aqui ó Nessa
+[00:01:1] linha ele já diz ali que é Usinagem tá
+[00:01:3] vendo olha esse aqui é a Usinagem e esse
+[00:01:5] aqui é o rebaixo Então são dois
+[00:01:6] trabalhos que ele faz ele faz o
+[00:01:8] esvaziamento e depois vem e faz o
+[00:01:9] desenho com a fresa então nós temos esse
+[00:01:12] aqui tem o reto né esse daqui também ó é
+[00:01:14] muito legal esse puxador aqui ó porque a
+[00:01:16] gente selecionando ele eu tenho as
+[00:01:18] opções ó superior esquerdo ele vira para
+[00:01:20] outro lado eu tenho o inferior direito ó
+[00:01:24] eu tenho o lateral direito né posso
+[00:01:27] fazer os desenhos na lateral n claro que
+[00:01:30] eu fiz ele muito maior né eu teria que
+[00:01:31] diminuir a medida aqui ó PR 150 aqui ó
+[00:01:33] né PR ficar ali né eu posso fazer desse
+[00:01:35] lado e daí depois que tu configura o teu
+[00:01:38] puxador tu pode deletar esse componente
+[00:01:40] Zinho aqui dentro ó porque não precisa
+[00:01:41] mais ter ele tu já deixa ele configurado
+[00:01:43] na tua porta e já sobe a tua porta com
+[00:01:45] ele né ele fica configurado aqui ó Então
+[00:01:46] esse detalhe que tem aqui ó esse desenho
+[00:01:48] depois você pode deletar e já salva a
+[00:01:50] tua porta assim né então tem o puxador
+[00:01:52] aqui reto Ó tem o puxador que entra pelo
+[00:01:54] meio e sai assim tu faz o desenho ó tá
+[00:01:56] dizendo como é que entra tua fresa todo
+[00:01:57] ele tu configura também é só vir em cima
+[00:01:59] do teu puxador aqui ó ele tá dizendo
+[00:02:1] onde é que vai entrar né vai fazer o teu
+[00:02:3] o teu ajuste depois pode deletar esse
+[00:02:5] desenho do meio né então ó fiz esse
+[00:02:6] componente aqui eu consigo ajustar ó a
+[00:02:8] altura da ferramenta né consigo ajustar
+[00:02:10] aqui a altura da minha ferramenta que a
+[00:02:12] altura que tem aqui é o diâmetro da
+[00:02:13] minha ferramenta né aqui também ó né É o
+[00:02:16] mesmo daquele lá que eu já mostrei e nós
+[00:02:18] temos também o componente de painel né
+[00:02:20] que dá o componente ó que faz no painel
+[00:02:23] ele faz o desenho dessa fresa direto no
+[00:02:25] painel ali já você pode fazer a Usinagem
+[00:02:27] né claro que vai forçar bem a fresa tem
+[00:02:29] que trabalhar bem devagar nessa fazer
+[00:02:30] esse trabalho mas dá de fazer também se
+[00:02:32] tu quiser ó faz um painel canaletado com
+[00:02:33] a própria fesa Do puxador né E já tem
+[00:02:35] isso aí pronto também no sistema tá bem
+[00:02:37] tranquilo de fazer a gente consegue
+[00:02:39] dizer qual é a espessura do painel né eu
+[00:02:41] posso esticar esse painel ele já vai
+[00:02:44] dividindo igual ó tá vendo ele já vai
+[00:02:46] fazendo as divisões certo ó Conforme o
+[00:02:49] painel ele vai esticando e vai
+[00:02:51] acrescentando os desenhos automáticos
+[00:02:53] ali e se eu vier com a Mira amarela em
+[00:02:55] cima dele eu consigo fazer as edições
+[00:02:57] dele é margem lateral mínima né que tem
+[00:03:0] aqui e espaço entre eles eu quero por
+[00:03:2] exemplo espaço de 20 entre eles né já
+[00:03:5] posso fazer ó ele já modifica ali para
+[00:03:6] mim ó 20 a cada um dele posso dizer que
+[00:03:8] essa margem lateral aqui vai ser zero né
+[00:03:11] ele já chega mais próximo do zero lá
+[00:03:12] porque ele tá dividindo em planos iguais
+[00:03:14] então é bem bem legal essa parte aqui
+[00:03:15] também
+[00:03:17] [Música]

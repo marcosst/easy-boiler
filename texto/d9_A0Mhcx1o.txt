@@ -1,0 +1,130 @@
+[00:00:0] Vou criar um videozinho aqui para fazer
+[00:00:3] para ajudar um pessoal ali do grupo que
+[00:00:6] eles pediram para fazer uma peça, um
+[00:00:8] cone, né, na router, na CNC lá, como é
+[00:00:10] que se faz uma mesa em cone, né? Eu vou,
+[00:00:12] primeiro de tudo, vocês vão instalar uma
+[00:00:14] extensão, ó, vocês vão aqui, ó,
+[00:00:15] gerenciador de eh desculpa, eh,
+[00:00:18] extensões do arus, né? Tem que tá
+[00:00:20] conectado, tá? É gratuito. Vamos lá,
+[00:00:22] criam um login, connect lá, gratuito. E
+[00:00:24] vocês vão digitar essa extensão aqui, ó.
+[00:00:26] Un N w R. É um wap, tá? Clicam nela, ó.
+[00:00:31] Essa extensão aqui, ela é free, ó. Vocês
+[00:00:33] clicam nela, instalam ela, clica em
+[00:00:35] instalar, ela vai instalar a extensão,
+[00:00:37] não vai aparecer nada aqui, tá? Depois
+[00:00:39] vou mostrar como é que vocês vão usar
+[00:00:40] essa extensão. Depois dela instalada,
+[00:00:42] vocês vão pegar e vão desenhar o teu
+[00:00:43] cone. Como é que eu desenho o cone aqui,
+[00:00:45] né? Primeiro eu vou pegar o círculo e
+[00:00:47] vou dizer aqui que eu quero aqui, ó. Vou
+[00:00:48] até fechar essa telinha aqui, só para
+[00:00:50] vocês entenderem. Eu vou dizer ali, ó,
+[00:00:51] quantos lados tem o meu círculo. Vou
+[00:00:52] botar aqui uns 200 de lado, né? Clico
+[00:00:55] nele e vou fazer aqui um raio de, sei
+[00:00:57] lá, 60 m, vai dar 1,20 m. Acho que é
+[00:00:59] muito grande. Vou botar aqui uns, uns 50
+[00:01:2] de raio aqui, fazer 1 m embaixo. Acho
+[00:01:4] que é muito, né? 40, ó, raio de 40.
+[00:01:9] E ele fiz fiz a parte de baixo dele.
+[00:01:11] Pego a ferramenta de extensão e vou
+[00:01:13] aumentar aqui uns 75 cm, que vai ser o
+[00:01:15] meu pé. Como é que eu faço o con?
+[00:01:17] Seleciono a face de cima, aperto o
+[00:01:20] scale, que é a o S, né? Ou venho aqui,
+[00:01:22] ó, pego o escalador aqui, seguro o
+[00:01:25] control e diminuo ele ali no ângulo que
+[00:01:27] eu preciso, ó. Tá aqui. Diminuir essa
+[00:01:30] face de cima aqui, eu não preciso. Essa
+[00:01:32] de baixo aqui, talvez também não
+[00:01:33] precise. Aí eu vou, se vocês quiserem
+[00:01:35] deixar, pode deixar também, tá?
+[00:01:37] Seleciono ela, dou três cliques para
+[00:01:39] selecionar todo o objeto, clico com o
+[00:01:41] botão direito e ela tá aqui, ó, um wrap
+[00:01:43] and faces, né? Esse primeiro aqui, ó.
+[00:01:46] Clico nele e dou um OK. Ele vai criar
+[00:01:48] para mim a linha de segmento ali
+[00:01:50] embaixo, ó. Tá? Esse icone aqui, eu vou
+[00:01:52] até chegar ali para fora, tá? Eu vou
+[00:01:54] usar essa linha. Só o que acontece, eu
+[00:01:56] vou criar um grupo dessa aqui, porque
+[00:01:57] esse aqui não vai funcionar. Ah, já tá
+[00:01:58] em grupo. Ela não vai funcionar como tá
+[00:02:0] aqui, tá? Por causa do do de do jeito
+[00:02:2] que ela foi criada. A gente tem que
+[00:02:3] fazer o contorno agora por cima que fica
+[00:02:5] mais fácil, né? Então, então como é que
+[00:02:7] a gente faz esse contorno? Que atender o
+[00:02:10] telefone aí. Vamos lá. Então ele já tá
+[00:02:12] criou um grupo aqui. Então vocês vão
+[00:02:14] trabalhar agora com a com essa meia lua
+[00:02:17] aqui, ó. Meia lua, né? Então eu vou
+[00:02:18] também digitar face, ó, 200 faces. Clico
+[00:02:21] aqui, clico nesse outro ponto e vou
+[00:02:24] trazer até aqui. Mesma coisa eu vou
+[00:02:27] fazer aqui. Clico nesse ponto, nesse
+[00:02:29] ponto, e vou trazer até aqui, ó. Ela
+[00:02:33] ficou serrilhadinha. Depois a gente
+[00:02:34] arruma ali, tá? Ó, ó, ficou certinha.
+[00:02:36] Ficou ali também. Então agora eu clico,
+[00:02:39] faço uma linha nesse ponto até esse
+[00:02:41] ponto e faço uma linha desse ponto até
+[00:02:46] esse ponto. Beleza? Agora ele criou o
+[00:02:49] meu desenho aqui, ó. Tá? Meu desenho
+[00:02:51] está criado, que é essas faces aqui. Só
+[00:02:54] que aqui notaram que ele ficou um
+[00:02:55] pouquinho encerrilhadinho, né? Então se
+[00:02:57] eu clicar em cima dele, vem aqui com o
+[00:02:59] baldinho, ó, eu posso vir aqui e mudar o
+[00:03:1] segmento dele aqui, ó. Tá? Eu vou dizer
+[00:03:3] que tem uns 100 segmento aqui, ó, para
+[00:03:5] ficar mais arredondadinha, tá? Então ela
+[00:03:7] deu uma melhoradinha ali na curvatura,
+[00:03:9] né? Como que eu criaria essa peça agora
+[00:03:11] no PIMOB? Seleciono ela, né? Upmob,
+[00:03:14] converter usinagem, criar peça face.
+[00:03:17] Aqui eu vou deixar uma margem, ó, né?
+[00:03:19] Uma margem o que acontece? Ela vai
+[00:03:20] aumentar um pouquinho e a usinagem vai
+[00:03:22] começar um pouquinho por dentro, tá? 15
+[00:03:24] mm. Vou usar a fresa de 7 mm. Clico em
+[00:03:27] avançar e eu escolho o veio. Como isso
+[00:03:29] aqui tem mais que 1,90, que eu sei, né?
+[00:03:32] Ele não vai dar para botar o veio assim.
+[00:03:34] Eu tenho que botar o veio deitadinho.
+[00:03:35] Daí vocês selecionam o veio como vocês
+[00:03:38] querem ali, né? Ó, assim, né? Vocês vão
+[00:03:41] ver como é que vai ficar o veio ali.
+[00:03:42] Clico para cá, ele vai criar a face, a
+[00:03:45] peça de vocês. Agora essa peça, né? Ela
+[00:03:48] tá recortada aqui, ó, né? Tá vendo?
+[00:03:50] Recortadinha dentro de uma chapa. Como
+[00:03:52] que a gente faz agora para fazer as
+[00:03:53] usinagens ali, esses riscos? Aí vocês
+[00:03:55] teriam que fazer, teria que ter um
+[00:03:57] cálculo aí um pouquinho, né? Um
+[00:03:58] pouquinho mais de tempo e já faz aqueles
+[00:04:1] as freezinhas aqui. Mas tem que ser
+[00:04:2] linha a linha. Vocês teriam que fazer
+[00:04:4] mais ou menos assim, sei lá. Daí vocês
+[00:04:6] têm que fazer os cálculos ali para ele
+[00:04:8] fazer a curvatura. E essas daqui vocês
+[00:04:10] vão botar em rebaixo, né? Vão converter
+[00:04:12] aqui em usinagem, ó, ponto a ponto. Só
+[00:04:14] que daí vão dizer que ela tem uma
+[00:04:15] profundidade ali tal, né? De, sei lá, de
+[00:04:18] tem de a peça de 15, a profundidade de
+[00:04:20] 14, sei lá, né? 14. E clico em usinar. E
+[00:04:23] daí vocês vão selecionar tudo e ele vai
+[00:04:25] fazer essas usinagens aqui, tá? Mas por
+[00:04:27] enquanto, né, ele vai fazer essas
+[00:04:29] rebaixos aqui para vocês fazer a curva
+[00:04:30] nele. É dessa forma que eu faço. Não vou
+[00:04:32] fazer todos aqui, mas é desse jeito que
+[00:04:34] eu preparo isso, tá bom?
+[00:04:37] Yeah.

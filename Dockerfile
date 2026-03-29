@@ -4,6 +4,8 @@ FROM python:3.12-slim
 RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates && \
     curl -fsSL -o /usr/local/bin/dbmate \
         https://github.com/amacneil/dbmate/releases/latest/download/dbmate-linux-amd64 && \
+    curl -LsSf https://astral.sh/uv/install.sh | sh && \
+    mv /root/.local/bin/uv /usr/local/bin/uv && \
     chmod +x /usr/local/bin/dbmate && \
     apt-get purge -y curl && \
     apt-get autoremove -y && \
@@ -11,8 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certifi
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY pyproject.toml uv.lock ./
+RUN uv sync --frozen --no-install-project
 
 COPY . .
 

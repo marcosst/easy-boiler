@@ -1,0 +1,83 @@
+<h2>Qual estilo de header combina mais com o projeto?</h2>
+<p class="subtitle">Todas as opções têm logo à esquerda e menu do usuário à direita com dropdown.</p>
+
+<div class="cards">
+
+  <!-- Opção A: Header claro, sombra sutil -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8fafc;padding:0;overflow:hidden;border-radius:6px 6px 0 0;">
+      <div style="background:#ffffff;border-bottom:1px solid #e2e8f0;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:90px;height:24px;background:linear-gradient(90deg,#2563eb 0%,#3b82f6 100%);border-radius:4px;"></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;background:#f1f5f9;border-radius:20px;padding:5px 12px 5px 6px;cursor:pointer;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#2563eb;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;">JD</div>
+          <span style="font-size:13px;color:#334155;font-weight:500;">João Doe</span>
+          <span style="font-size:10px;color:#94a3b8;">▼</span>
+        </div>
+      </div>
+      <div style="padding:24px 20px;background:#f8fafc;">
+        <div style="height:10px;width:60%;background:#e2e8f0;border-radius:4px;margin-bottom:8px;"></div>
+        <div style="height:8px;width:40%;background:#e2e8f0;border-radius:4px;"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Light &amp; Clean</h3>
+      <p>Fundo branco, borda inferior sutil, pill com avatar inicial + nome. Tom profissional e neutro.</p>
+    </div>
+  </div>
+
+  <!-- Opção B: Header com cor primária (azul escuro) -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8fafc;padding:0;overflow:hidden;border-radius:6px 6px 0 0;">
+      <div style="background:#1e3a5f;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:90px;height:24px;background:rgba(255,255,255,0.9);border-radius:4px;"></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+          <div style="width:30px;height:30px;border-radius:50%;background:#3b82f6;border:2px solid rgba(255,255,255,0.4);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;">JD</div>
+          <span style="font-size:13px;color:#e2e8f0;font-weight:500;">João Doe</span>
+          <span style="font-size:10px;color:#94a3b8;">▼</span>
+        </div>
+      </div>
+      <div style="padding:24px 20px;background:#f8fafc;">
+        <div style="height:10px;width:60%;background:#e2e8f0;border-radius:4px;margin-bottom:8px;"></div>
+        <div style="height:8px;width:40%;background:#e2e8f0;border-radius:4px;"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Dark Primary</h3>
+      <p>Header com cor sólida escura, logo e nome em tons claros. Mais impacto visual, sensação de "app".</p>
+    </div>
+  </div>
+
+  <!-- Opção C: Header minimalista com separador forte -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8fafc;padding:0;overflow:hidden;border-radius:6px 6px 0 0;">
+      <div style="background:#ffffff;border-bottom:3px solid #2563eb;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:90px;height:24px;background:linear-gradient(90deg,#2563eb 0%,#3b82f6 100%);border-radius:4px;"></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+          <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#2563eb,#7c3aed);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;">JD</div>
+          <div style="display:flex;flex-direction:column;line-height:1.2;">
+            <span style="font-size:13px;color:#1e293b;font-weight:600;">João Doe</span>
+            <span style="font-size:10px;color:#94a3b8;">Admin</span>
+          </div>
+          <span style="font-size:10px;color:#cbd5e1;">▼</span>
+        </div>
+      </div>
+      <div style="padding:24px 20px;background:#f8fafc;">
+        <div style="height:10px;width:60%;background:#e2e8f0;border-radius:4px;margin-bottom:8px;"></div>
+        <div style="height:8px;width:40%;background:#e2e8f0;border-radius:4px;"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Accent Border</h3>
+      <p>Fundo branco com borda inferior colorida. Avatar com gradiente, nome + cargo. Elegante e moderno.</p>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:1.5rem;">Clique para selecionar e diga qual preferiu (ou se quer misturar elementos).</p>

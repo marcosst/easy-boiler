@@ -1,0 +1,89 @@
+[00:00:00] ass vamos deixar um componente do 3D
+[00:00:02] hous Arquivo meu mesmo tem componentes
+[00:00:05] aqui meu vamos pegar esse aqui ó
+[00:00:08] componentes que eu baixei do 3D House
+[00:00:10] pego agora aqui nessa configuração eu
+[00:00:13] vou em atributos do componente dinâmico
+[00:00:15] e vou dizer que ele é um produto E que
+[00:00:18] ele vai receber edição do componente
+[00:00:20] Beleza agora vou fazer os nomes desse
+[00:00:22] aqui V aqui em Componentes dinâmicos
+[00:00:24] Deixa essa telinha aqui aberta e vamos
+[00:00:27] botar o nome o nome dele que é o nome
+[00:00:30] Opa deixa eu puxar não dá para puxar
+[00:00:33] aqui
+[00:00:34] tá não sei porque que não deu para puxar
+[00:00:37] aqui estranho tá vamos lá que vai ser
+[00:00:41] irmão
+[00:00:46] francesa eh O código vai ser mão under
+[00:00:54] Fran aqui esse código aqui ele vai
+[00:00:57] receber igual esse código aqui certo
+[00:01:02] aqui Def nãoa nada aqui ó eg o eg eu
+[00:01:04] tenho que vir aqui ó e adicionar o
+[00:01:06] tamanho dessa peça então Opa aqui vai
+[00:01:11] ter que transformar em centímetro ali só
+[00:01:13] que aqui ó tem que ser tudo em milímetro
+[00:01:14] então é igual a altura vezes
+[00:01:19] 10 opa não pegou é vezes ve 10 aqui é
+[00:01:26] igual a esse aqui vezes 10 e esse aqui é
+[00:01:32] igual a esse aqui vezes 10 agora eu já
+[00:01:36] configurei o meu componente depois de
+[00:01:38] configurar o componente a gente vem aqui
+[00:01:39] no mesmo coisa vem os inagens aqui em
+[00:01:42] Usinagens vem módulos de atributos e
+[00:01:44] adiciona um furo esse furo é o furo
+[00:01:47] selecionado o que que acontece com esse
+[00:01:48] furo ele vai aqui pro eixo Z ó ele cai
+[00:01:50] bem aqui ó tá vendo tá ali ó então eu
+[00:01:52] vou copiar ele vou dar um cont contrl x
+[00:01:54] nele ó cont CRL x aí entro dentro do meu
+[00:01:57] componente que eu criei aqui agora do
+[00:02:00] cont contrl V ó aqui tá o furo é esse
+[00:02:03] aqui ó aí nesse furo ele aparece aqui ó
+[00:02:05] Roller transfer aqui já então tu clica
+[00:02:07] nele e vai em rotação eu quero que esse
+[00:02:11] furo fique a 180º quero que ele fique
+[00:02:13] para cima Então vou pegar ele aqui e vou
+[00:02:16] encostar em cima Esse furo vai ficar
+[00:02:19] onde o primeiro furo vamos configurar
+[00:02:20] ele vai ficar reto com esse furo aqui
+[00:02:22] depois tem que arrumar certinho né vamos
+[00:02:24] supor que ele fique reto com esse furo
+[00:02:25] aqui e agora nós vamos configurar esse
+[00:02:26] furo como é qual é o furo de râm um furo
+[00:02:28] de oito qual é profundidade de 10 e aqui
+[00:02:32] ó tem que botar um código para ele que é
+[00:02:35] curo underline Fit e Underline o número
+[00:02:39] do do coisa que é o oito né Opa aqui não
+[00:02:42] pegou é o oito enter então o diâmetro de
+[00:02:45] oito e aí a profundidade de 10 então
+[00:02:47] aqui eu boto esse código nesse furo E aí
+[00:02:50] depois de eu botar o código eu uso
+[00:02:51] aquela ferramenta es copiar né o contol
+[00:02:54] para copiar e boto um furo aqui Posso
+[00:02:57] copiar Opa copio aqui de novo Ô vamos
+[00:03:02] pegar desse control ó copio para cá
+[00:03:05] agora desse aqui eu vou fazer o quê
+[00:03:08] apertar a seta pra esquerda e vou
+[00:03:09] rotacionar quantos
+[00:03:11] 90º Vamos botar esse furo bem
+[00:03:15] encostadinho nessa Face
+[00:03:18] aqui e esse furo vai ficar mais ou menos
+[00:03:20] aonde el vai ficar onde tá aquele furo
+[00:03:22] ali ó vai ficar mais ou menos aqui Claro
+[00:03:24] teria que ajustar né control e e outro
+[00:03:27] furo mais ou menos ali ó tá os quatro
+[00:03:29] fur aqui componente Já tá pronto certo
+[00:03:32] fecha isso aqui agora o componente já tá
+[00:03:34] configurado só pego ele vamos pegar a
+[00:03:37] face dele ou posso pegar diretamente
+[00:03:39] aqui ó no furo ó encosto ele onde eu
+[00:03:42] quero Vou encostar nessa Face e essa
+[00:03:45] Face aqui de cima eu quero encostar
+[00:03:47] nessa Face aqui aérea Então vamos ver se
+[00:03:50] deu certo clico no verde clico aqui e
+[00:03:53] clico na Furação ó ci os dois furos
+[00:03:56] vamos ver na base como encostei na base
+[00:03:58] aqui ele teria aqui furar essa base
+[00:04:00] também né que é a base do a e tá ali os
+[00:04:04] dois furos simples fácil e preciso

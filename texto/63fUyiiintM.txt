@@ -1,0 +1,47 @@
+[00:00:0] então vamos aqui a a um componente aqui
+[00:00:3] bem interessante ó Então a gente vai
+[00:00:5] entrar na nossa biblioteca de
+[00:00:6] componentes né aqui biblioteca
+[00:00:8] componentes aí vamos aqui ó em itens
+[00:00:12] avulsos aí aqui eu tenho os acessórios
+[00:00:14] de fita de led que eu já mostrei né E
+[00:00:16] nós vamos ir aqui é outros
+[00:00:20] itens pode deixa eu pegar tem outros
+[00:00:23] itens aqui ó por exemplo
+[00:00:26] e montagem interna tá Como é que
+[00:00:30] funciona isso aqui ó por exemplo Às
+[00:00:31] vezes isso aqui é para quem trabalha com
+[00:00:33] aquele quer trabalhar com outras
+[00:00:35] empresas né tipo a minha marcharia vai
+[00:00:38] fornecer serviços para outra empresas e
+[00:00:40] tem alguma peça que ela é especial por
+[00:00:42] exemplo uma peça com recorte lá especial
+[00:00:45] e ele quer cobrar fita daquele recorte
+[00:00:47] Então vai ter um trabalho interno por
+[00:00:49] hora então a hora que o que o a hora que
+[00:00:52] colocar esse componente na tela aqui ó
+[00:00:55] na nas configurações dele você vai poder
+[00:00:58] cobrar quantas horas vai levar no
+[00:01:0] trabalho isso teria que o quê ligar pra
+[00:01:2] fábrica né você ligaria pra fábrica
+[00:01:4] verificaria ó para fazer esse trabalho
+[00:01:6] vai levar 2 horas aí você vem coloca
+[00:01:8] aqui montagem interna já vai sair da
+[00:01:10] fábrica pronta daí você coloca montagem
+[00:01:12] interna vai levar 2 horas e clica em
+[00:01:14] aplicar aí ele vai botar no teu
+[00:01:16] orçamento Quanto que vai custar essas
+[00:01:18] duas horas para fazer um determinado
+[00:01:20] trabalho numa peça por exemplo tem uma
+[00:01:22] peça que eu quero fazer um uma Usinagem
+[00:01:24] nela e eu quero que fite por dentro ou
+[00:01:26] eu quero fazer uma Usinagem nela e quero
+[00:01:28] que fite por fora então aqui por exemplo
+[00:01:30] Ah é uma Peça Toda Trabalhada liga pra
+[00:01:32] fábrica a fábrica vai dizer por exemplo
+[00:01:34] ó vai levar uma hora para fazer esse
+[00:01:36] trabalho você vem aqui pega a montagem
+[00:01:38] interna coloca aqui vem diz que é uma
+[00:01:41] hora e clica em aplicar Isso é para sair
+[00:01:43] no orçamento já bem certinho para quem
+[00:01:45] tá vendendo né

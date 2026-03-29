@@ -1,0 +1,127 @@
+[00:00:0] galera acabei de terminar aquele
+[00:00:2] componente que eu falei para vocês
+[00:00:4] componente de que é agregado em cima das
+[00:00:6] portas Então vamos lá olha só vamos
+[00:00:9] pegar para porta primeiro né Então vem
+[00:00:11] agregados para portas boiser vou pegar
+[00:00:15] esse boiser aqui vou clicar nessa porta
+[00:00:17] e vou clicar nessa e dou um enter então
+[00:00:19] ele já acrescenta e já tem uma folga
+[00:00:21] então além das folgas que eu já tinha
+[00:00:23] mostrado para vocês aqui que eu posso
+[00:00:25] mexer em todas as folgas deles eu criei
+[00:00:27] agora aqui ó peça direita peça esquerda
+[00:00:29] peça inferior peça superior Então vamos
+[00:00:31] dizer aqui nessa porta eu quero que esse
+[00:00:33] bois passe por cima de tudo aqui ó que
+[00:00:35] ele não tem essas peças do meio então
+[00:00:37] que eu venho digo que nesse aqui à
+[00:00:39] direita é não e ven aqui com no direito
+[00:00:41] tem zero clico na mira amarela clico no
+[00:00:44] outro e eu vou dizer ao contrário que a
+[00:00:46] esquerda É não e o esquerdo é zero Então
+[00:00:50] esse componente já ficou né Ó ali
+[00:00:52] certinho respeitando a folga e já
+[00:00:54] funcional aqui tá ó pode abrir uma porta
+[00:00:57] ele vem junto com a porta outro detalhe
+[00:01:0] interessante é que eu posso pegar ele
+[00:01:1] aqui de novo ó clico nesse clico nesse
+[00:01:4] dou um enter o que que eu fiz aqui agora
+[00:01:6] eu criei um outro componente aqui dentro
+[00:01:8] só que a folga desse aqui ó por exemplo
+[00:01:10] o superior eu vou dizer que é 10 o
+[00:01:14] esquerdo eu vou dizer que é 10 o direito
+[00:01:18] eu vou dizer que é zero e
+[00:01:21] o o inferior eu vou dizer que é 10 então
+[00:01:25] eu diminuí e coloquei outro componente
+[00:01:27] dentro aqui e vou remover a peça direita
+[00:01:29] também
+[00:01:30] sim e aplico removo a peça direita vou
+[00:01:33] fazer a mesma coisa com outro eu posso
+[00:01:35] colocar quantos componentes eu quiser
+[00:01:37] então direito é 10 o esquerdo é zero o
+[00:01:41] inferior 10 e o superior 10 e vou dizer
+[00:01:45] aqui que na peça esquerda eu não quero
+[00:01:48] ela e clico em aplicar então eu posso
+[00:01:51] colocar vários componentes aqui e esses
+[00:01:53] componentes também já vão fazer todo o
+[00:01:55] seu trabalho certo ó e agora a gente vai
+[00:01:58] aqui também na gaveta Criei um para
+[00:02:0] gaveta também agregados para frente de
+[00:02:3] gavetas boiser para gaveta clico aqui
+[00:02:6] clico nesse clico nesse clico nesse e
+[00:02:8] dou um enter então pra gaveta olha como
+[00:02:10] é que funciona vamos clicar no de baixo
+[00:02:13] o superior eu vou dizer que é zero e não
+[00:02:16] vou querer a peça superior não quero a
+[00:02:19] superior certo esse aqui do meio o que
+[00:02:22] que eu vou dizer eu vou dizer que o
+[00:02:25] superior é zero e o inferior é zero e
+[00:02:30] vou remover o inferior eu não quero e o
+[00:02:33] superior eu não quero ele já vai ficar
+[00:02:35] ali vou colocar no outro de cima vou
+[00:02:39] dizer que o
+[00:02:40] inferior o inferior eu não quero e o
+[00:02:43] inferior é zero a folga dele então ele
+[00:02:46] fica e fica funcional e eu posso fazer a
+[00:02:49] mesma coisa da cozinha tá ó ele vai
+[00:02:52] abrir a gaveta por gaveta se quiser
+[00:02:54] funcional funciona e eu também posso vir
+[00:02:57] e agregar mais um componente aqui mais
+[00:03:0] um aqui e mais um aqui posso fazer da
+[00:03:2] mesma forma ó Lembrando que daí ele fica
+[00:03:4] na mesma forma que ele já baixa né Eu só
+[00:03:6] vou dizer aqui que tem 10 vamos dizer
+[00:03:9] que tem 80 né tem dois ali 80 80 o
+[00:03:12] direito 80 o inferior eu vou dizer que é
+[00:03:15] zero e o superior vou dizer que tem 80
+[00:03:18] para ele ficar mais ou menos ali no meio
+[00:03:20] tá E daí vocês fazem as configurações
+[00:03:22] que quiser eu não vou configurar todos
+[00:03:23] eles mas a forma é a mesma vocês podem
+[00:03:26] fazer vários desenhos aqui nele tá o
+[00:03:28] apagar funciona
+[00:03:30] posso vir aqui apago esse apago esse
+[00:03:32] apago esse apago Esse eu posso vir
+[00:03:35] colocar um aqui tá e vou dizer que o quê
+[00:03:38] que a largura dele aqui ó largura dele
+[00:03:41] tem 100 clique em aplicar tá 100 e eu
+[00:03:46] posso vir colocar
+[00:03:49] outro também dizer que a largura dele eu
+[00:03:53] vou dizer não vou mexer na largura agora
+[00:03:54] eu vou mexer aqui no transpasse também
+[00:03:56] eu posso botar El em 100 né eu vou dizer
+[00:03:57] que que essa folga daqui até aqui vai
+[00:04:0] ter que eu quero deixar ele com 100 eu
+[00:04:3] vou pegar aqui ó na no eixo que é o eixo
+[00:04:6] esquerdo o eixo direito eu vou dizer que
+[00:04:9] esse direito aqui tem
+[00:04:12] 20 para ele diminuir para cá da eu posso
+[00:04:14] diminuir um pouquinho mais né Ó tem 20
+[00:04:16] eu posso pegar TR eu quero que fique com
+[00:04:18] 10 aí tu só calcula aqui assim ó pode
+[00:04:21] botar uma uma linha guia se tu quiser né
+[00:04:24] ó bota uma linha guia aqui de 100 né ele
+[00:04:28] ficou ali aí a gente Penha aqui com a
+[00:04:29] trenin ou faz o cálculo também né com a
+[00:04:32] trena ó que é menos Opa pego a trena
+[00:04:35] aqui ao lado direito vou acrescentar
+[00:04:38] mais uma medida daqui até
+[00:04:43] aqui e faço dois quadradinhos tá ó posso
+[00:04:47] fazer o desenho que quiser pode fazer
+[00:04:49] vários desenhos pode botar três
+[00:04:50] quadradinhos se quiser é só mexer Nas
+[00:04:51] folgas ali e tenho também mais esse aqui
+[00:04:54] eu vou clicando E clicando aqui e também
+[00:04:57] posso vir aqui na venira amarela
+[00:05:0] clico nele aí o que que eu vou dizer o
+[00:05:2] lado direito é zero o lado direito aqui
+[00:05:5] ó eu não quero ele não quero a peça do
+[00:05:7] lado direito vou dizer que é zero e
+[00:05:9] agora eu venho no esquerdo aqui eu vou
+[00:05:11] dizer que o esquerdo que é o lado peça
+[00:05:13] direita né o lado esquerdo eu não quero
+[00:05:15] e o esquerdo eu quero zero e posso fazer
+[00:05:19] também duas gavetas funcionais tá então
+[00:05:22] aqui tem várias formas de fazer isso
+[00:05:25] aqui beleza essa é uma delas

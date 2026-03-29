@@ -1,0 +1,96 @@
+[00:00:0] continuando aqui vamos pra parte de
+[00:00:2] internos as portas ó colocar internos aí
+[00:00:5] eu tenho aqui porta simples e porta
+[00:00:7] dupla vou mostrar uma porta aqui que ela
+[00:00:9] é muito top cara é a porta 45º clico
+[00:00:13] nela clico no módulo e dou um enter
+[00:00:16] automaticamente que eu dou um enter aqui
+[00:00:17] ele vai carregar o módulo aqui né
+[00:00:19] carregando lá embaixo Já inseriu a porta
+[00:00:21] para mim o puxador tá lá em cima eu não
+[00:00:22] quero puxador em cima eu quero embaixo
+[00:00:24] quero não na lateral e clique em aplicar
+[00:00:26] ele vai ficar puxador na lateral ó já
+[00:00:29] modific Oli a porta na lateral agora
+[00:00:31] aqui vem o a parte mais legal da do
+[00:00:34] sistema comprimento que eu quero do eixo
+[00:00:36] zero eu quero ela com
+[00:00:38] 1,20 então automaticamente ele já vai
+[00:00:40] deixar a minha Usinagem com 1,20 m eu
+[00:00:43] não sei se ficou usinado clico aqui vou
+[00:00:45] clicar no Usinagem da peça ó do lado de
+[00:00:48] cá dobradiça do lado de cá a Usinagem
+[00:00:50] ali já ó vou aumentar aqui para vocês
+[00:00:52] verem ó aqui já tem a Usinagem que é um
+[00:00:53] rebaix inho que aquela fresa já já tem
+[00:00:55] uma programação por trás né então do
+[00:00:57] lado a e do lado b ó do lado a essa é as
+[00:01:0] Furo da dobradiça do lado B Furo da
+[00:01:2] Usinagem agora o legal aqui de tudo cara
+[00:01:5] por exemplo tô com essa porta aqui né
+[00:01:7] vou selecionar a porta de novo clico no
+[00:01:9] componente clico na porta e vou clicar
+[00:01:11] nas cores Vamos abrir as cores das
+[00:01:13] portas aí Aqui nós temos o MDF para a
+[00:01:16] peça se eu clicar na peça e clicar na
+[00:01:18] cordão adado eu vou selecionando a peça
+[00:01:20] que eu quero ou né eu venho aqui nas
+[00:01:23] portas e clico aqui ele aplica nas duas
+[00:01:25] portas ao mesmo tempo que tá selecionada
+[00:01:27] tá vendo aplicou nas duas e daí aqui em
+[00:01:29] baixo existe ó fita de borda eu clico na
+[00:01:32] fita de borda escolho a cor que eu quero
+[00:01:33] para dentro Do puxador eu vou clicar no
+[00:01:35] dedinho né aparece uma olha ali aparece
+[00:01:39] um um Rolim né eu quero aqui e aqui de
+[00:01:42] outra cor Opa clico aqui ó V clicar aqui
+[00:01:46] e aqui de outra cor então o puxador já
+[00:01:49] fica de outra cor ali dentro ele já
+[00:01:51] cobra a fita para dentro dessa peça de
+[00:01:53] outra cor olha que massa que ficou cara
+[00:01:55] e ele cava Alé fica bem certinho as duas
+[00:01:58] Usinagens ali ó e não deforma o veio do
+[00:02:1] MDF né O veio do MDF ficou perfeito tá
+[00:02:3] então isso aqui é um tipo de porta se eu
+[00:02:5] quero ela inteira com a cava inteira de
+[00:02:7] novo clico nela é só vir aqui e botar
+[00:02:9] zero se eu botar zero ele fica no vão
+[00:02:12] Total ó ele vai aplicar no vão total e a
+[00:02:15] fita dentro continuou né então vamos
+[00:02:17] aplicar outra porta aqui a mesma porta
+[00:02:19] podemos aplicar até a mesma porta aqui ó
+[00:02:21] puxador cava 45 ah 45° não vamos fazer
+[00:02:24] diferente vamos usar essa outra aqui ó
+[00:02:27] clico nela Vou baixar ela clico aqui e
+[00:02:30] dou um
+[00:02:33] enter vai carregando lá embaixo
+[00:02:35] carregando lá vai baixar a porta baixou
+[00:02:37] então eu não quero em cima também quero
+[00:02:39] o que que eu quero aqui eu quero ele na
+[00:02:40] lateral e vou dizer ó mover a cava pra
+[00:02:43] direita para vou aplicar na lateral para
+[00:02:44] vocês ver como é que fica ele vai ficar
+[00:02:45] bem no meio aqui ó os dois desenhos vão
+[00:02:47] ficar Centralizado aqui ó um no lado um
+[00:02:49] no outro agora eu vou dizer qual é que o
+[00:02:50] tamanho que eu quero ó V ver cá vou
+[00:02:53] comprimento eu quero aqui com
+[00:02:55] 600 ó ele já aplica o desenho ali no
+[00:02:59] meio e e já junto as duas Cavas né o
+[00:03:1] mesmo esquema vai funcionar aqui na cor
+[00:03:3] Se eu entrar aqui na carregar a paleta
+[00:03:6] de cor tem o valor do MDF para a porta
+[00:03:8] Então qual é o valor que quer do MDF
+[00:03:10] vamos escolher esse outro MDF aqui ó de
+[00:03:11] outra cor para a porta aí para pintar
+[00:03:13] ali dentro né para pintar aqui dentro do
+[00:03:15] Do puxador eu venho aqui ó não é na fita
+[00:03:18] de nesse caso não é na fita de borda tá
+[00:03:19] eu venho aqui em MDF venho em
+[00:03:21] fechamentos eu escolho Qual é a cor que
+[00:03:23] eu quero pintar ali dentro Vamos pintar
+[00:03:24] nessa outra cor aqui ó então com essa
+[00:03:27] porta selecionada ele vai pintar ali
+[00:03:29] dentro de outro outra cor que é o que
+[00:03:31] muitos arquitetos usam né uma porta de
+[00:03:32] uma cor a dentro de outra

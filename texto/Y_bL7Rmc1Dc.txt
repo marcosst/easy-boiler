@@ -1,0 +1,313 @@
+[00:00:0] bom vamos criar aqui um furo paramétrico
+[00:00:4] tá Como é que eu faço esse furo
+[00:00:5] paramétrico vamos dier um recorte aqui
+[00:00:7] vamos dizer que eu quero que esse
+[00:00:8] recorte seja paramétrico aqui desenhei
+[00:00:10] esse recorte clico na face vou ir Mob
+[00:00:14] converter Opa Deixa eu subir mais um
+[00:00:16] pouquinho aqui para mostrar para vocês
+[00:00:18] clico aqui né na face o pmob converter
+[00:00:21] os imagens em gráfico de faces eu quero
+[00:00:25] que esse furo atravesse essa lateral e
+[00:00:27] que ele seje pelo
+[00:00:31] pela esquerda que é o furo vai ficar por
+[00:00:32] dentro exclui o elemento de desenho vou
+[00:00:35] excluir sim depois a mesmo detalhe vai
+[00:00:37] fazer pro desenho por enquanto eu vou
+[00:00:38] excluir só vou mostrar como é que é a
+[00:00:39] Usinagem para ser mais fácil tá é mais
+[00:00:41] rápido clique em aplicar e eu quero
+[00:00:43] nessa Face aqui que ele faça a Usinagem
+[00:00:45] então a Usinagem já tá aqui ó certo tá
+[00:00:47] ali ó todo o detalhe da Usinagem tá aqui
+[00:00:49] ó se tu quiser configurar de outro jeito
+[00:00:52] Pode configurar também por exemplo Ah eu
+[00:00:54] já quero deixar o comprimento do furo
+[00:00:55] aqui de 10 e a altura do furo de 20 para
+[00:00:58] ficar mais fácil de eu visualizar lá ó
+[00:01:0] ele já vai editar esse furo ali né na
+[00:01:2] medida que que a gente determinou aqui
+[00:01:5] então agora o que que eu vou fazer eu
+[00:01:6] pego nesse furo e clico em control x eu
+[00:01:9] recorto ele Dou dois cliques e coloco
+[00:01:11] ele Crol V coloco ele na caixa aí vocês
+[00:01:15] vão observar que eu vou abrir o
+[00:01:17] componente dinâmico aqui ó eh atributos
+[00:01:19] componentes componentes dinâmicos aqui
+[00:01:23] vamos começar a trabalhar nesse
+[00:01:24] componente dinâmico vou clicar fora da
+[00:01:26] caixa de novo porque eu joguei ele lá
+[00:01:29] dentro agora ele ele já tá dentro da
+[00:01:30] caixa se eu mexo a caixa eu já vou mexer
+[00:01:33] ele só que ele não tá com as
+[00:01:34] configurações né então a gente vai vir
+[00:01:36] aqui vou minimizar a caixa do balcão ele
+[00:01:38] tá aqui ó transfer tá vendo pegou todos
+[00:01:41] transfer aqui eu vou habilitar aqui a
+[00:01:43] posição dele por eu quero que ele Pegue
+[00:01:45] uma determinada posição Qual é a posição
+[00:01:47] eu vou determinar os eixos dele então eu
+[00:01:49] quero que isso aqui fique igual a zero
+[00:01:52] vamos ver onde é que ele vai parar quer
+[00:01:54] ver onde ele vai parar lá fora esse aqui
+[00:01:55] vai ser igual a zero vai parar lá fora e
+[00:01:59] esse e o outro aqui também vai ser igual
+[00:02:1] a
+[00:02:2] zero certo ou terminei todos os eixos
+[00:02:5] Zero Só que o que acontece o eixo zero
+[00:02:7] dele jogou ele para fora então eu vou
+[00:02:9] entrar nesse meu transfer aqui e vou
+[00:02:11] modificar esse meu eixo aqui ó clico com
+[00:02:13] o botão direito em cima dele modifica
+[00:02:15] eixos onde é que eu quero o eixo eu
+[00:02:16] quero que esse fique nesse ponto o
+[00:02:19] vermelho para cá
+[00:02:20] Opa deixa eu Bot de novo aqui
+[00:02:24] modifica modifica eixos ó então eu clico
+[00:02:28] aqui né o vermelho quero que fique para
+[00:02:30] cá então o verde já ficou para lá deixa
+[00:02:33] eu ver se ele pegou certinho não tá
+[00:02:37] modificando modifica Ah não já modificou
+[00:02:40] já modificou ali ó eu achei que não tava
+[00:02:42] modificando Então vamos lá clico no
+[00:02:44] componente aqui e vou redesenhar ele
+[00:02:47] componentes dinâmicos redesenha
+[00:02:49] componente
+[00:02:50] dinâmico ó agora é o eixo zero dele já
+[00:02:54] tá bem no eixo zero que a gente definiu
+[00:02:55] ele ficou bem no eixo zero da Caixa
+[00:02:57] certo até aqui beleza entrei no transfer
+[00:03:0] ó entrei no transfer e determinei tudo
+[00:03:2] zero depois a gente vai programar isso
+[00:03:4] aqui toda essa programação vai vai subir
+[00:03:6] já já certinha Tá então vamos
+[00:03:10] lá vamos aqui no Balcão eu quero que
+[00:03:13] esse furo seja programado totalmente
+[00:03:15] quando ele abre o balcão Então nós vamos
+[00:03:17] criar umas variáveis aqui o que qual a
+[00:03:19] variável que eu quero eu quero a
+[00:03:21] posição posição no z certo posição no z
+[00:03:27] eu quero o que também eu quero que ele
+[00:03:28] tenha
+[00:03:30] posição no Y vou digitar as variáveis
+[00:03:33] aqui eu quero que ele digite aqui a
+[00:03:36] posição aqui e a posição aqui a largura
+[00:03:38] e altura a gente pode mexer por dentro
+[00:03:40] dele ou já vir aqui mexer na largura e
+[00:03:43] altura por aqui mesmo então eu quero
+[00:03:44] também a largura do furo botar aqui
+[00:03:47] largura
+[00:03:48] furo vocês podem editar o nome que vocês
+[00:03:51] quiserem tá ó e e altura
+[00:03:55] alura do opa altura do F
+[00:04:0] furo altura do
+[00:04:3] furo nome que quiser aqui depois vocês
+[00:04:6] podem editar lá na etiqueta tá is é só
+[00:04:8] uma uma variável pra gente achar a
+[00:04:9] largura do furo e altura do furo então
+[00:04:12] aqui eu vou digitar que a altura dele é
+[00:04:14] de 20 certo vou digitar mesmo e aqui na
+[00:04:18] largura do furo eu quero que seja de
+[00:04:21] 10 isso eu tô digitando aqui ó no
+[00:04:24] componente balcão tá e eu vou determinar
+[00:04:27] que o meu usuário possa digitar essa
+[00:04:29] medida medida ele vai editar vai ser em
+[00:04:32] milímetros e aqui eu posso botar uma
+[00:04:34] variável é a a etiqueta né
+[00:04:38] Lara do furo certo e aplico vamos lá na
+[00:04:43] altura do furo e faço a mesma coisa o
+[00:04:46] usuário pode editar o texto ele vai ser
+[00:04:49] em centímetros e aqui vai converter em
+[00:04:52] milímetros e a acho que eu não arrumei
+[00:04:54] outro né
+[00:04:55] altura do furo tem que arrumar o outro
+[00:04:58] lá eu esqueci de arrumar aqui então
+[00:05:1] vamos lá aqui aqui vai ser em
+[00:05:4] centímetros e vai converter em
+[00:05:6] milímetros e
+[00:05:7] aplica então eu determinei que meu
+[00:05:10] usuário vai ver essas duas esses dois
+[00:05:12] Campos mas ele vai ver qual Campo a
+[00:05:14] posição então a posição no Y vai ser vou
+[00:05:17] botar um campo aqui diferente ó 8 cm tá
+[00:05:21] dou um enter e no z vai ser e vamos
+[00:05:25] dizer que vai ser 15 15 cm no eixo Z que
+[00:05:28] é de baixo para cima aí eu vou
+[00:05:30] determinar também que ele vai vir em
+[00:05:32] centímetros vai poder Editar o texto e
+[00:05:36] eu vou deixar com aquele nome ali para
+[00:05:37] não demorar muito tá vai ser em
+[00:05:39] milímetro ó posição Z vou deixar assim
+[00:05:41] que a gente já vai saber posição Z e
+[00:05:43] aqui eu faço a mesma coisa nesse daqui
+[00:05:46] vai ser em centímetros pode editar o
+[00:05:48] texto posição Y em milímetros e aplico
+[00:05:52] por que que eu fiz isso tá eu ativei o
+[00:05:55] que que eu fiz aqui nesse ó tá vendo que
+[00:05:57] ele já modificou lá as medidas botão as
+[00:05:59] medidas quebrado não tem problema eu fiz
+[00:06:1] isso porque quando a gente clica aqui na
+[00:06:2] caixa ó esses atributos que a gente
+[00:06:6] ativou ele vem para cá ó ele já aparece
+[00:06:8] aqui no no app Mob quando eu seleciono a
+[00:06:10] caixa ele vai me dizer qual a altura do
+[00:06:12] furo ó ele já pegou aqui a posição do
+[00:06:14] furo eu quero que ele seja vamos
+[00:06:15] arredondar aqui ó 20 e no Y vai ser Y
+[00:06:20] vai ser
+[00:06:22] 10 ó a largura do furo ó largura altura
+[00:06:27] do furo ele vai ter aquele eu botou uma
+[00:06:30] medida aqui né que ele bota já de
+[00:06:31] inicial vamos dizer que a altura do furo
+[00:06:33] vai ter 25 e a largura do furo vai ter
+[00:06:36] 15 e vou clicar em aplicar não vai mudar
+[00:06:39] nada ali porque eu não atele essas
+[00:06:41] medidas ao furo ainda não vai mudar nada
+[00:06:44] então agora a gente vai vir aqui vai
+[00:06:45] atrelar essas medidas do furo que é o qu
+[00:06:47] o furo é esse transfer aqui ó certo
+[00:06:49] então na posição x vai ser o zero no Y
+[00:06:52] ele vai ser igual o quê o y vai ser
+[00:06:54] igual a posição Y que eu digitei só que
+[00:06:59] ela é negativa porque ele tá vindo de
+[00:07:1] trás para frente então eu boto igual
+[00:07:2] menos na posição y e dou um enter ele já
+[00:07:8] vai modificar lá ó ó vse agora no vamos
+[00:07:12] aqui no transfer de novo e eu quero que
+[00:07:13] a posição Z seja igual ao quê igual lá a
+[00:07:16] minha posição Z que eu determinei que é
+[00:07:18] essa daqui a altura 10 ele vai subir 10
+[00:07:21] daqui para lá
+[00:07:23] beleza a medida do furo eu quero que
+[00:07:26] respeite a medida que eu digitar aqui
+[00:07:27] então vamos lá qual é a medida do furo ó
+[00:07:29] o 20 que tá aqui vai ser igual ao 20 lá
+[00:07:34] da dessa medida que a gente botou que é
+[00:07:35] o 20 vai ser o 25 que é a altura aqui
+[00:07:39] foi a gente botou uma medida diferente
+[00:07:41] para ver para vocês verem modificando
+[00:07:43] ali já ó e aqui no na no Len x aqui ó
+[00:07:47] igual vai ser igual o quê o Len x vai
+[00:07:50] ser igual a a minha aqui ó largura cli
+[00:07:56] ent 15 tu vai ver que ele já vai
+[00:07:57] modificar ali ó para 15 então o que que
+[00:08:0] a gente determinou que essa medida aqui
+[00:08:2] ia ser 10 essa medida aqui ia ser 20
+[00:08:7] essa aqui 25 e essa daqui 15 então tá
+[00:08:11] certinha todas as medidas respeitantes
+[00:08:13] por que que eu disse que agora ele ficou
+[00:08:16] dinâmico porque a Furação tá na
+[00:08:18] componente se eu clicar aqui no
+[00:08:20] componente e ver a Furação ó tá aqui ó
+[00:08:22] passante pelos dois lados certo agora eu
+[00:08:24] vou editar esse meu furo na minha caixa
+[00:08:26] aqui clico aqui na caixa mas eu não
+[00:08:28] quero que o furo seja altura de 25 eu
+[00:08:32] quero que seja altura de 50 eu não quero
+[00:08:34] que seja largura eu quero que seja uma
+[00:08:35] largura de 40 e vamos aqui na posição
+[00:08:38] dele posição eu quero que seja 50 aqui e
+[00:08:43] de baixo para cima 50 também e vou
+[00:08:45] clicar em aplicar então ele vai ficar 50
+[00:08:48] 50 40 ó o furo ficou editado Será que
+[00:08:52] funcionou lá na na Furação também vamos
+[00:08:55] verificar olha aí ó funcionou todas as
+[00:08:57] medidas que a gente coloca agora ele tá
+[00:08:59] paramétrico eu posso pegar agora clico
+[00:09:1] nessa caixa e recarrego ela Claro que eu
+[00:09:4] não vou recarregar porque isso aqui vai
+[00:09:5] mudar meus componentes clico nela
+[00:09:7] recarrego e essa caixa já vai baixar com
+[00:09:10] esse furo com essas configurações já o
+[00:09:13] usuário o teu projetista já vai vir aqui
+[00:09:15] ah vamos fazer um teste Depois eu excluo
+[00:09:17] essa caixa aqui vamos lá vamos baix
+[00:09:19] vamos criar uma caixa nova Então vamos
+[00:09:20] criar uma caixa um balcão novo aqui pra
+[00:09:22] gente testar já que estamos fazendo tudo
+[00:09:24] né Vamos mostrar tudo funcionando então
+[00:09:26] vem em desenvolvedor vamos vir aqui em
+[00:09:30] em Componentes eu Opa primeiro geral eu
+[00:09:33] vou salvar esse meu componente numa
+[00:09:35] versão que é 2017 para abrir em várias
+[00:09:38] em vários skets tá ó gerou salvou OK
+[00:09:41] agora a gente vem aqui vou dizer que ele
+[00:09:43] é vai ser um arquivo base porque ele é
+[00:09:45] um arquivo normal vou botar ele dentro
+[00:09:47] de construir e vou botar dentro de
+[00:09:50] balcão o nome dele vai ser balcão com
+[00:09:55] Usinagem beleza venho aqui e seleciono o
+[00:09:58] meu balcão tá ali e seleciono de novo o
+[00:10:1] meu balcão um é o arquivo de sket o
+[00:10:4] outro é a imagem que vai aparecer pro
+[00:10:6] meu usuário clico em enviar vai enviar
+[00:10:8] esse meu balcão
+[00:10:11] ali certo ó enviou agora a gente vem
+[00:10:14] aqui no no nessa lateral e atualizo meus
+[00:10:17] componentes eu vou atualizar para ele
+[00:10:19] recarregar os componentes novos que
+[00:10:20] foram lá pra nuvem vou em construir onde
+[00:10:23] é que eu botei construir em balcão vamos
+[00:10:25] ver se a gente acha esse nosso balcão
+[00:10:27] com recorte tá aqui ó balcão com recorde
+[00:10:29] com Usinagem né então eu vou baixar ele
+[00:10:32] Vou baixar esse meu balcão aqui no fora
+[00:10:34] aqui da do componente ele já tá com a
+[00:10:38] Usinagem atrelada e olha aqui ó já
+[00:10:39] apareceu todas as configurações vamos
+[00:10:41] ver se tá funcionando eu quero que essa
+[00:10:43] posição aqui seja 10 aqui para cima seja
+[00:10:46] 15 que a largura do meu buraco seja 30 e
+[00:10:50] a altura seja 20 vamos ver o que que ele
+[00:10:53] vai
+[00:10:56] fazer ó já modificou tudo vamos ver se
+[00:10:59] ficou certinho daqui para cá eu queria
+[00:11:1] que fosse com 10 daqui para cá que era a
+[00:11:4] altura né eu determinei que seja 15 a
+[00:11:7] altura do buraco 20 por 30 mas eu fiz
+[00:11:10] isso aqui vamos ver se saiu a Furação
+[00:11:12] clico nele a Usinagem né clico na
+[00:11:14] Usinagem vamos ver a Furação tá aqui ó a
+[00:11:17] Usinagem já paramétrica beleza é assim
+[00:11:20] que se faz então é mexendo em componente
+[00:11:22] dinâmico usando já os componentes que
+[00:11:24] tem eu não preciso vir aqui programar
+[00:11:26] quanto que tem essa linha quanto que tem
+[00:11:27] essa linha quanto que tem essa linha
+[00:11:29] linha eu programo a Furação coloco ela
+[00:11:31] na peça e digo onde que eu quero que ela
+[00:11:33] caia E ela como é colisão onde ela se
+[00:11:37] encostar e mexer vai sair a Furação e tu
+[00:11:39] tem um componente dinâmico isso aqui eu
+[00:11:42] fiz só com a Furação mas se tiver o
+[00:11:43] recorte aqui dentro você faz a mesma a
+[00:11:46] mesma configuração pro recorte ele vai
+[00:11:48] copiar esses comandos pro recorte e o
+[00:11:51] recorte vai acompanhar junto é o mesmo
+[00:11:53] jeito Tá só que tem que fazer duas vezes
+[00:11:55] uma pra Usinagem depois que tu terminou
+[00:11:57] a Usinagem Você vai no recorte e diz que
+[00:12:0] o recorte tem a mesma posição dessa
+[00:12:2] Usinagem ele vai vir recortando igual
+[00:12:4] porque o recorte também quando a gente
+[00:12:6] cria um recorte aqui ó vou mostrar para
+[00:12:8] vocês vou criar um recorte
+[00:12:10] eh o mó ambientes criar recorte esse
+[00:12:15] recorte tu entrar dentro dele ó ele é um
+[00:12:17] componente também quer ver Opa tá
+[00:12:19] bloqueado aqui vamos desbloquear tudo
+[00:12:20] Pera aí só um pouquinho desbloqueia tudo
+[00:12:23] aqui desbloquear toda a caixa e ó vou
+[00:12:26] entrar dentro dele ó se tu entrar no
+[00:12:28] recorte
+[00:12:30] ô aqui ó ele é um componente também ó o
+[00:12:33] recorte é um componente só vai dizer que
+[00:12:35] esse componente vai seguir as mesmas
+[00:12:37] Usinagens lá do do que tem no na tua
+[00:12:43] Usinagem né o recorte vai seguir mesmas
+[00:12:45] medidas que tem na tua Usinagem e daí o
+[00:12:47] recorte vai acompanhando junto essa
+[00:12:48] Usinagem aqui ó é da mesma forma é
+[00:12:50] componente dinâmico tu vai fazer e o
+[00:12:52] resto o sistema vai entender se tu botar
+[00:12:55] na posição certa o sistema vai entender

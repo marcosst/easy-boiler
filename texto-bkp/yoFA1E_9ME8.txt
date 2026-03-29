@@ -1,0 +1,292 @@
+[00:00:01] Olá então vamos aqui apresentar o
+[00:00:03] sistema que eu andei mostrando os vídeos
+[00:00:06] a semana passada né então esse sistema
+[00:00:08] se chama up Mob é esse programinha aqui
+[00:00:11] ó é um plugin para SketchUp tá então
+[00:00:14] aqui no plugin a gente tem o modo
+[00:00:15] projetar e o modo revisar eu vou dar uma
+[00:00:18] pincelada aqui por cima dele tá então a
+[00:00:21] gente vai abrir aqui só essas
+[00:00:22] ferramentas que estão aqui em cima
+[00:00:24] quando a gente abre essa caixa de
+[00:00:25] configuração a gente tem os detalhes do
+[00:00:27] projeto os os detalhes do projeto é tipo
+[00:00:30] o código do projeto projetista o nome do
+[00:00:33] cliente o ambiente Uma Breve descrição
+[00:00:35] você pode colocar aqui do projeto se
+[00:00:37] você vai começar a executar o projeto
+[00:00:39] aqui ó em 15
+[00:00:41] MM ou em em 15 ou em 18 mm Então desse
+[00:00:46] daí fiz essa fez essa alteração a gente
+[00:00:49] clica em gravar se eu botar aqui que eu
+[00:00:50] quero 18 todos os módulos vão começar a
+[00:00:52] baixar com 18 mas eu quero com 15 clico
+[00:00:55] em gravar né ó carre gravando Beleza já
+[00:00:59] gravou então toda minha modulação agora
+[00:01:01] ela vai baixar com módulos de 15 mm tá
+[00:01:03] então uma explicação básica dele então
+[00:01:05] ele tem aqui a biblioteca a galeria
+[00:01:07] rápida Se eu der dois cliques aqui em
+[00:01:09] cima ela vai lá para cima ó entende is
+[00:01:10] tem a galeria rápida de projeto onde a
+[00:01:12] gente pode vir aqui cozinhas aparece
+[00:01:15] tudo que tem dentro que a gente filtrou
+[00:01:17] pra cozinha isso aqui tudo tu pode mudar
+[00:01:18] tá tu pode dizer que esse balcão não vai
+[00:01:20] cair em cozinha ele vai cair lá em
+[00:01:21] banheiro Você pode trocar aqui de
+[00:01:23] posição que esse balcão vem aqui
+[00:01:25] primeiro você pode ajustar isso também
+[00:01:27] nós temos aqui guarda-roupas armários é
+[00:01:29] é vamos pegar aqui ó balcões cozinha
+[00:01:31] balcão então tem todos os balcão de
+[00:01:33] cozinha gaveteiros só quero gaveteiros
+[00:01:35] Então aqui tem molduras de geladeira Ó
+[00:01:38] tem torre quente já tem tudo cadastrado
+[00:01:41] só vai filtrando molduras de forno ó a
+[00:01:43] parte de baixo armários Aéreos aqui em
+[00:01:45] cozinha a em dormitório ó dormitório
+[00:01:47] você pode ver que aparece a mesma coisa
+[00:01:49] também só que aparece os gavetões para
+[00:01:50] dormitório o gaveteiros as quantidade de
+[00:01:53] G tudo isso aqui é editável Tá mexe
+[00:01:56] edita então aqui é uma apresentação bem
+[00:01:58] rápida nós temos também aqui a parte de
+[00:01:59] tamp famento que é automático né boto
+[00:02:02] aqui já clico ele vai pra direita já
+[00:02:03] clico Vai pra esquerda modulação
+[00:02:05] composta tudo isso aqui eu vou explicar
+[00:02:06] um vídeo curtinho explicando cada
+[00:02:09] componente desse como é que se coloca
+[00:02:11] então eu tô fazendo uma série de vídeos
+[00:02:13] aí que vai sair nas sequências vai sair
+[00:02:14] um vídeo a cada uma hora mais ou menos
+[00:02:16] tá E vai mostrar detalhe como é que se
+[00:02:18] coloca cada componente desse como é que
+[00:02:20] se edita cada componente desse não vou
+[00:02:21] mostrar todos tá mas vou mostrar boa
+[00:02:23] parte deles eh aqui os espelhos vidro
+[00:02:26] tem espelho jateado também ó já tem o
+[00:02:29] espelho jateado aqui já vem com o painel
+[00:02:31] a espessura tu consegue editar tudo
+[00:02:33] também se tu vier aqui na na mira Deixa
+[00:02:35] eu só pegar aqui a mira que eu não tinha
+[00:02:36] pego ó clico aqui na mira e vou lá dou
+[00:02:40] dois cliques de novo né esse componente
+[00:02:42] aqui ó vou até deixar aqui do ladinho ó
+[00:02:44] aqui tem todas as configurações de cada
+[00:02:46] componente ó a largura da faixa
+[00:02:47] transparente eu quero com 50 ele já mexe
+[00:02:50] na largura da faixa transparente ali ó
+[00:02:51] que a faixa jateada desculpa né então
+[00:02:54] toda essa medida você quero que afaste
+[00:02:56] aqui na borda é 100 ó na margem direita
+[00:03:00] ele vai afastar na direita assim eu
+[00:03:02] consigo editar uma por uma tá individual
+[00:03:04] cada margem aqui e isso já vai ajustando
+[00:03:07] aqui atrás as réguas certo então só para
+[00:03:11] vocês ver tem ele tem n funções aqui tem
+[00:03:13] as portas de correr também que é muito
+[00:03:15] fácil de trabalhar tem a parte de
+[00:03:17] elétrica iluminação Ó tem ledzinho a
+[00:03:21] calha de LED
+[00:03:22] interruptor to eu quero comprar uma fita
+[00:03:26] de metro pedir por exemplo eu quero
+[00:03:29] trabalhar com uma venda e eu já posso
+[00:03:30] cadastrar as fita de led e já enviar
+[00:03:32] essa fita de LED no tamanho ou na medida
+[00:03:35] que ele quiser quando a gente coloca ela
+[00:03:36] aqui ó ela já aparece assim ó tá vendo
+[00:03:38] só a fitinha de LED mesmo ó aí tu pega
+[00:03:41] nela aqui né pode mesmo esquema aqui
+[00:03:43] Amarelo quantos metros eu quero eu quero
+[00:03:45] 3 M envia 3 m ô cm não 3 M até milm ó
+[00:03:49] ele vai te enviar 3 M dessa fita de led
+[00:03:52] tá para para quem tiver comprando o
+[00:03:56] projeto aqui beleza aí eu posso botar os
+[00:03:58] reatores tem o dedinho ali o interruptor
+[00:04:01] circular e as tomadas aí por exemplo eu
+[00:04:04] tô aqui nessa guia geral que é elétrica
+[00:04:06] mas aqui embaixo eu tenho os filtros eu
+[00:04:07] quero só interruptor ele vai te mostrar
+[00:04:08] só o que é interruptor eu quero só o que
+[00:04:10] é de LED ele vai te mostrar só o que é
+[00:04:12] de LED quero só material elétrico daí
+[00:04:14] aparece aqui as tomada interruptor que
+[00:04:15] tem de material elétrico aqui que pode
+[00:04:17] ser enviado né os acessórios tá todos os
+[00:04:20] acessórios aqui junto e posso separar ó
+[00:04:22] suporte para prateleira eu quero só os
+[00:04:24] interruptores também eu botei esse mesmo
+[00:04:26] interruptor é o mesmo cadastro Lar Ele
+[00:04:28] só tá filtrando aqui também tá base para
+[00:04:30] roupeiro só led ó só elétrica aí pz eh
+[00:04:36] pz sapatas E rodis aí tu pode ir
+[00:04:38] filtrando para ficar mais fácil mas eu
+[00:04:40] ainda prefiro aqui em cima ó por exemplo
+[00:04:43] aqui tem uma pesquisa aqui em cima
+[00:04:44] depois eu vou explicar também né então
+[00:04:46] vamos lá eu quero balcão boto um símbolo
+[00:04:49] de por cento e número dois por exemplo
+[00:04:52] tudo que é balcão dois ó ele vai te
+[00:04:54] mostrar que vai te futar tudo que tem
+[00:04:55] bal e que tem dois que é duas portas e
+[00:04:58] duas gavetas tudo que tem dois ó tá
+[00:05:00] vendo duas portas duas gavetas lixeira
+[00:05:01] dupla que é duas então eu não quero dois
+[00:05:04] eu quero 2G que é duas gavetas dou um
+[00:05:07] enter agora ele mostra só o balcão que é
+[00:05:09] duas gavetas ele esse porcento ele pega
+[00:05:11] tudo que tem no meio e tudo que contém a
+[00:05:14] parte dois em outra parte no no outra no
+[00:05:16] outro meio por exemplo eu quero dois
+[00:05:18] quero balcão por cento 2G e coloco
+[00:05:21] porcento de novo que termine com a letra
+[00:05:23] O por exemplo só o que vai terminar com
+[00:05:25] a letra o ó só tem isso aqui ó balcão
+[00:05:27] interno termina com a letra O entende
+[00:05:29] Então tudo isso a gente consegue fazer
+[00:05:31] no filtro aqui então você pode pesquisar
+[00:05:33] por partes colocando esse símbolo de
+[00:05:35] porcento isso aqui facilita muito eu tô
+[00:05:37] projetando por exemplo eu tô fazendo
+[00:05:38] projeto ah preciso uma tomada tomar não
+[00:05:40] precisa digitar tudo ó tomada tá ali aí
+[00:05:42] a gente bota ah eu quero um balcão
+[00:05:44] digita aqui ó balcão vamos pegar um
+[00:05:46] balcão duas portas aqui ó cliquei no
+[00:05:48] balcão duas portas eu vou explicar
+[00:05:49] depois tá isso aqui é uma breve
+[00:05:51] apresentação primeiro ele vai baixar o
+[00:05:53] componente Soltou o componente agora eu
+[00:05:55] clico aqui em tomada ó tomada ó tá ali
+[00:05:58] essa tomada eu quero baixar ela ó já
+[00:06:00] coloquei ela no projeto se vocês virem
+[00:06:02] aqui também no componente na guia
+[00:06:04] verdinha aqui ó na mira verde eu consigo
+[00:06:07] visualizar a Furação dessa tomada também
+[00:06:09] já tá furada mesma coisa interruptor
+[00:06:12] quero interruptor ó int ele mostra todos
+[00:06:17] que tem a palavra int então interruptor
+[00:06:19] tá aqui se eu colocar vou colocar mais
+[00:06:20] embaixo Aqui interruptor ó Então já tá
+[00:06:23] furado também clico no verde clico nele
+[00:06:25] automático instantâneo e vamos verificar
+[00:06:27] aqui a Furação ó ó já tá furado o
+[00:06:30] interruptor e a tomada certo esse é o
+[00:06:32] sistema tem as partes de usinagem também
+[00:06:34] se eu botar aqui a Usinagem deixa eu ver
+[00:06:36] se ele aparece aqui ah não aqui não
+[00:06:37] aparece Usinagem usin é só na parte
+[00:06:39] construtiva dele que daí é o quê é aqui
+[00:06:41] ó na parte de construir aí a gente tem
+[00:06:44] vários vários itens e aqui tem as
+[00:06:46] Usinagens que eu posso fazer nele ó
+[00:06:48] certo posso fazer um círculo só clicar
+[00:06:50] arrastar o círculo tá ali aí desse
+[00:06:52] círculo aparece a configuração aqui ó
+[00:06:53] quero pela direita quero pela esquerda
+[00:06:54] quero pelo Centro o diâmetro e se eu
+[00:06:56] quero de esse vai ser MDF de 15 ou 18 ah
+[00:06:58] MDF de 15 clique em aplicar a hora que
+[00:07:01] eu clique em aplicar esse furo também já
+[00:07:03] está ali no componente tá ó lá já tá lá
+[00:07:07] o furo que eu botei 18 Ele atravessou
+[00:07:08] pelos dois lados certo furo pegou da
+[00:07:11] direita e foi pra esquerda certo então
+[00:07:13] esse aqui é um é um componente que é um
+[00:07:17] sistema né um componente é um sistema
+[00:07:19] que tem bastante partes que pode ajudar
+[00:07:21] de várias formas um detalhe aqui também
+[00:07:22] bem interessante Ó depois a gente vai
+[00:07:24] acabar mostrando tudo mesmo né só para
+[00:07:27] vocês ficarem já um pouco mais interess
+[00:07:31] mais familiarizado eu soltei esse
+[00:07:32] caixote aqui ó esse caixote tá encostado
+[00:07:34] né eu vou passar esse caixote para cima
+[00:07:36] um para cima do outro ali ó um tá
+[00:07:37] transpassando sobre outro aí aqui no
+[00:07:39] projeto para mim verificar as
+[00:07:42] inconsistências ele tem que tá em modo
+[00:07:43] revisar aí eu vou transformar ele modo
+[00:07:45] revisar certo eu tô revisando o projeto
+[00:07:48] e aqui existe os alertas ó vamos ver se
+[00:07:51] tem alguma usin ágil ó ele vai paraos
+[00:07:53] gras tem alguma Usinagem que tá dando
+[00:07:54] problema tá tudo certo Usinagem Vamos
+[00:07:56] pesquisar sobre elementos sobreposição
+[00:07:58] tá tudo certo na Usinagem não tem
+[00:08:00] nenhuma Usinagem em cima da outra Vamos
+[00:08:01] pesquisar trabalhos eh trabalhos não
+[00:08:04] aplicado tá tudo certinho então vamos
+[00:08:06] aqui em Componentes é peças com colisão
+[00:08:08] ó Opa aqui já deu peça com colisão Então
+[00:08:11] vamos ver o que que é clico aqui em cima
+[00:08:12] ó ó essa peça tá colidindo tá colidindo
+[00:08:15] com qual com essa Opa tá o armário tá em
+[00:08:18] cima do outro beleza então vamos tirar
+[00:08:20] esse armário um de cima do outro vamos
+[00:08:23] clicar ali então no final da revisão
+[00:08:25] isso aqui o projetista até nem precisa
+[00:08:26] saber mas é bom né Vamos rever agora se
+[00:08:29] tirem mas o erro tudo certo então isso
+[00:08:32] aqui ele vai garantir que o teu projeto
+[00:08:34] chegue certo lá na casa do cliente
+[00:08:36] depois eu vou explicar vídeo a vídeo
+[00:08:37] passo a passo como é que a gente faz
+[00:08:39] tudo isso aqui por enquanto é só uma
+[00:08:40] apresentação Inicial que tem que o
+[00:08:43] componente Comporta e o que ele tem tá
+[00:08:45] todos os relatórios tá aqui ó tem todos
+[00:08:47] os relatórios integrações aqui ó Tem a
+[00:08:50] parte que eu quero definir que esse
+[00:08:52] caixote aqui tem que ser montado na
+[00:08:53] fábrica eu clico aqui ó ele vai dar uma
+[00:08:56] ó observação montagem foi adicionada a
+[00:08:58] peça então esse módulo tem que ser
+[00:09:00] montado na fábrica vai ir lá na etiqueta
+[00:09:02] mi mi montagem interna na etiqueta
+[00:09:05] aparece um mi que esse caixote eu tenho
+[00:09:07] que montar mas esse aqui pode ir
+[00:09:08] desmontado entende-se São Regras que
+[00:09:11] existe dentro do projeto para facilitar
+[00:09:13] né e aqui tem a área do desenvolvedor
+[00:09:15] essa área aqui é a é a área top mesmo o
+[00:09:19] que que quer dizer essa área
+[00:09:20] desenvolvedor eu posso pegar vou fazer
+[00:09:23] rapidinho aqui depois eu explico vamos
+[00:09:25] pegar umum qualquer componente eu vou
+[00:09:27] desenhar um componente aqui ó vou
+[00:09:29] selecionar esse componente e transformar
+[00:09:31] ele em um componente ó criar
+[00:09:33] componente criar componente beleza tá
+[00:09:36] ali Esse é o componente aí eu venho aqui
+[00:09:38] atributos dinâmicos Qual o atributo que
+[00:09:39] eu quero para esse componente eu quero
+[00:09:40] que esse atributo receba edição do
+[00:09:43] componente atributo adicionado e
+[00:09:45] atributos do produto pronto o que que
+[00:09:48] aconte o que que eu fiz aqui eu
+[00:09:49] determinei que esse bloquinho aqui ele
+[00:09:52] vai receber a minha mira amarela ó
+[00:09:55] recebe a mesma mira com as configurações
+[00:09:57] do Up mó certo claro que depois vou ter
+[00:10:01] que adicionar todos os itens que aqui
+[00:10:03] também é por aqui daí eu vou explicando
+[00:10:04] depois passo a passo para vocês então eu
+[00:10:06] consegui eu consigo transformar cada
+[00:10:08] componente em um em um componente do
+[00:10:11] whoop Mob o que que dá para fazer com
+[00:10:14] isso aqui por exemplo eu posso baixar
+[00:10:16] qualquer modulação lá do 3D House Ah eu
+[00:10:19] quero baixar um controle remoto eu quero
+[00:10:22] botar um furo nesse controle remoto eu
+[00:10:23] baixo o controle remoto transformo ele
+[00:10:25] aqui adiciono os furos nesse controle
+[00:10:27] remoto e onde esse controle remoto
+[00:10:29] encostar ele vai furar a tua peça Então
+[00:10:31] tudo isso pela por essa programação aqui
+[00:10:33] ó certo tudo isso aqui dá de fazer por
+[00:10:35] aqui beleza A então vou ficar por aqui e
+[00:10:37] depois a gente mostra tudo que o sistema
+[00:10:39] faz um abraço

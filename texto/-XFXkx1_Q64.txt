@@ -1,0 +1,45 @@
+[00:00:1] olha aqui ó foi criado esse aqui ó por
+[00:00:3] exemplo já tem um ali na parede tá ó vou
+[00:00:5] pegar esse rodapé aqui tá vendo ele é
+[00:00:8] pra Central né Se tiver um roupeiro que
+[00:00:10] é no meio da parede ele já tem aqui os
+[00:00:12] quatro lados né Vamos botar ele aqui
+[00:00:14] vamos travar encostar na parede vamos
+[00:00:17] encostar nesse lado aqui ó o que que
+[00:00:20] acontece quando a gente faz um tipo de
+[00:00:21] rodapé assim ele tem que o marcineiro
+[00:00:24] tem que recortar aqui e recortar lá né
+[00:00:26] aí eu criei essa função aqui a gente
+[00:00:28] clica na mira amarela clica nele aí ó do
+[00:00:32] lado direito aqui ó do rodapé do lado
+[00:00:34] direito eu quero que ele recue 70 olha o
+[00:00:37] que ele faz lá ele já recua aqui para
+[00:00:40] mim não precisar recortar lá só vou
+[00:00:42] recortar aqui ou aqui nesse caso né eu
+[00:00:45] já deixo um pouquinho mais curto né eu
+[00:00:47] venho aqui já deixo ele um pouco mais
+[00:00:48] curto ali ó até Ô até ali então ele já
+[00:00:52] fica mais curto que eu não vou precisar
+[00:00:53] recortar ali esse lado aqui ó eu teria
+[00:00:55] que recortar porque esse lado Aparece
+[00:00:57] mas aquele lá eu não preciso recortar ó
+[00:00:59] desse lado então o lado esquerdo lado
+[00:01:1] esquerdo eu quero recuar 70 ó El já vai
+[00:01:4] recuar 70 ali ó só vou recortar aqui ó
+[00:01:6] vai ficar assim o rodapé e se tiver um
+[00:01:9] que é Central que é um no meio e um no
+[00:01:11] outro né Tipo posso emendar um rodapé um
+[00:01:13] no outro aqui ó Vamos emendar esse
+[00:01:15] rodapé daqu até aqui Opa até
+[00:01:21] aqui aí eu consigo fazer dessa forma
+[00:01:24] aqui também ó por exemplo esse aqui eu
+[00:01:25] não preciso recortar lá então o lado
+[00:01:27] esquerdo e o lado direito terá 70 no x
+[00:01:30] do Ó entendesse Aí ele fica Central Um
+[00:01:33] roda pé Central fica pra esquerda um pra
+[00:01:35] direita e um Central aí eu consegi
+[00:01:37] emendar ali assim ó não preciso fazer os
+[00:01:38] recortes no rodapé só vou fazer o
+[00:01:40] recorte nesse e nesse que aparece o
+[00:01:41] resto ele já desvia o
+[00:01:43] rodapé mas aí a

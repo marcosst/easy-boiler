@@ -1,0 +1,96 @@
+[00:00:0] Opa faz tempo aí que eu não posto Nada
+[00:00:3] no canal hoje eu vou postar um
+[00:00:4] componente que eu mesmo desenvolvi
+[00:00:6] usando as ferramentas da M tá usando
+[00:00:9] todos os conjuntos de ferramenta dele eu
+[00:00:11] desenvolvi um um construtor de granito
+[00:00:13] aqui eu vamos dizer assim né que é um eu
+[00:00:15] consegui desenhar vários granitos ele
+[00:00:17] vai se adaptando ao tamanho do módulo já
+[00:00:19] Conforme você configurar né então vou
+[00:00:21] botar um aqui ó e ele é um agregado tá
+[00:00:25] aí tu vai agregado granito vem aqui em
+[00:00:27] Granito e eu vou escolher um granito por
+[00:00:29] exemplo esse que esse daqui ó eles são
+[00:00:31] esse tipo de granito que não tem ele não
+[00:00:34] tem nada em cima né é um granito liso
+[00:00:37] então aqui eu vou botar uma Cuba e nesse
+[00:00:39] outro aqui eu vou colocar um fogão tá
+[00:00:42] então eu vou clicar nesse aqui nesse
+[00:00:43] aqui dar um enter ele aplica o granito
+[00:00:45] ali esse granito aqui ó ele tem ele não
+[00:00:47] tá encostando na parede né eu clico com
+[00:00:49] a Mira amarela em cima dele ó e adiciono
+[00:00:51] o comprimento que é o tamanho da minha
+[00:00:53] vista ele já adiciona em cima e embaixo
+[00:00:55] e eu posso vir aqui nesse aqui clico bem
+[00:00:57] em cima da porta tá quando eu seleciono
+[00:00:59] ele ele vai baixar o meu componente ó
+[00:01:0] por exemplo ele baixa o meu componente
+[00:01:2] vira a mira azul eu clico nele e dou um
+[00:01:4] enter eu vou jogar aqui em cima um
+[00:01:6] tanque aqui é uma uma Cuba né E aqui no
+[00:01:9] nesse outro armário aqui ó eu vou jogar
+[00:01:12] uma um fogão né um um um granito com
+[00:01:16] fogão já acoplado em cima dele Deixa eu
+[00:01:20] botar ele aqui ó esse detalhe do fogão
+[00:01:22] aqui foi desenvolvido também usando o
+[00:01:24] componente de troca do Up Mob então se
+[00:01:26] eu clicar em troca ele já vai me
+[00:01:28] selecionar o que que eu posso trocar no
+[00:01:29] fogão então eu posso colocar ele para um
+[00:01:31] fogão de duas bocas né o de quatro já tá
+[00:01:34] ali né eu posso voltar ele aqui para um
+[00:01:35] de qu eu posso botar aqui ó um fogão de
+[00:01:38] indução ele já vai botando ou um fogão
+[00:01:40] de cinco bocas tá ele já vai se
+[00:01:42] adaptando na medida que a gente deixou o
+[00:01:44] padrão no sistema né outro detalhe que
+[00:01:46] faz aqui ó é que como ele não tem
+[00:01:48] acabamento aqui do lado um grandit vai
+[00:01:49] se juntando no outro né então ele fica
+[00:01:51] sem acabamento no final mas se eu clicar
+[00:01:53] com a Mira Amarelo em cima dele ó eu
+[00:01:55] desenvolvi aqui ó na no lado esquerdo eu
+[00:01:57] quero acabamento Sim e eu quero também
+[00:02:0] que o rodapé no lado esquerdo na parte
+[00:02:2] de baixo ali ó rodapé recuei 2 cm para
+[00:02:5] dentro ó então ele vai recuar dois e vai
+[00:02:6] fazer o acabamento pra gente aqui ó já
+[00:02:8] fechamento né então ele faz já todo o
+[00:02:11] granito desenhadinho eu desenvolvi um
+[00:02:13] também para banheiro né Então aqui tem
+[00:02:16] um balco modulinho de banheiro Então a
+[00:02:17] gente vem aqui em agregados granito e eu
+[00:02:20] pego o granito de banheiro já com cuba
+[00:02:22] aqui esse modelo aqui ó já vem com uma
+[00:02:24] Cuba né clico nele e dou um enter ó ele
+[00:02:26] vai baixar O módulo já com a Cuba em
+[00:02:28] cima ó certo aí ele já esse granito aqui
+[00:02:33] todos os granitos tá também vocês podem
+[00:02:35] vir aqui ó nas cores em decoração ele
+[00:02:37] usa os granitos que já estão cadastrados
+[00:02:39] no pmob Pode adicionar mais depois né
+[00:02:41] então eu quero trocar esse granito aqui
+[00:02:43] ele vai trocar a cor dele ali ó tá vou
+[00:02:45] trocar para esse aqui ele vai trocando
+[00:02:46] as cores Conforme você for selecionando
+[00:02:48] um preto tá então outro detalhe também é
+[00:02:51] quando eu for em componente de troca
+[00:02:53] usando as configurações de troca do Up
+[00:02:55] Mob eu criei aqui ó cuba de banheiros né
+[00:02:57] então eu posso ir substituindo essa Cuba
+[00:02:59] não eu quero testar uma Redonda aí eu
+[00:03:1] quero uma retangular Zinha aí eu quero
+[00:03:3] uma maior aqui que essa aqui ficou muito
+[00:03:5] pequena essa aqui ó ficou bacana essa
+[00:03:7] Cuba aqui então fica fácil mais rápido a
+[00:03:9] gente projetar né ah outro detalhe
+[00:03:11] também ficou curto ali né a gente pode
+[00:03:12] também clicar com a Mira amarela nele
+[00:03:14] adicionar o comprimento e vi aqui no
+[00:03:17] rodapé no lado esquerdo e descontar o
+[00:03:19] rodapé no lado esquerdo ali ó eu vou
+[00:03:21] clicar em aplicar ele já faz tudo ao
+[00:03:23] mesmo tempo ó certo bacana né Legal
+[00:03:28] né Y

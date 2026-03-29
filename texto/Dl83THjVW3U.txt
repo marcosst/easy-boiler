@@ -1,0 +1,883 @@
+[00:00:0] continuando aqui ó segunda parte do
+[00:00:2] vídeo tem alguns módulos que a gente já
+[00:00:4] tinha feito naquela hora né E a gente
+[00:00:5] vai fazer o orçamento dele agora então
+[00:00:7] para orçar é muito simples a gente vem
+[00:00:9] aqui ó AB orçamento ele me abre essa
+[00:00:11] telinha E eu consigo ver o custo de tudo
+[00:00:14] por exemplo ó eu posso bottar por módulo
+[00:00:16] ou resumido vamos ver o resumido de todo
+[00:00:18] o projeto aí ele vai me dar ali ó tem
+[00:00:20] uma cozinha tal tal Ah eu quero por
+[00:00:23] módulos de Todo projeto seleciono
+[00:00:26] módulos Todo projeto vai botar todos os
+[00:00:28] módulos que tem na cena e vai dar um
+[00:00:29] famento por módulo detalhado de todo o
+[00:00:32] projeto ele vai me detalhar um pouquinho
+[00:00:34] mais tem o analítico de todo o projeto
+[00:00:36] né que daí tem bem detalhadinho ó cada
+[00:00:39] item de todo o projeto e aqui em cima né
+[00:00:44] a gente vai ter o custo de todo o
+[00:00:45] projeto n então aqui a gente vai ter o
+[00:00:48] custo de tudo o que a gente coloca no
+[00:00:50] projeto bem detalhado o que é
+[00:00:53] interessante aqui ó tem três itens muito
+[00:00:55] interessantes por exemplo eu quero saber
+[00:00:57] quanto é que vai me custar essa porta
+[00:00:59] aqui ó volta aqui letra k ó quant que
+[00:01:1] vaiar só essa porta se a gente clicar
+[00:01:3] com a Mira amarela na porta ele
+[00:01:5] seleciona a porta ó eu venho o custo só
+[00:01:7] do item selecionada então eu tenho o
+[00:01:9] valor que vai me custar essa porta Então
+[00:01:12] essa porta vai ter duas dobradiças um
+[00:01:14] par de ponteira um parfuso 16 ali que é
+[00:01:17] o para fixar as dobradiça vai uma
+[00:01:19] etiqueta né Tem uma etiqueta para essa
+[00:01:21] porta é a chapa de MDF para ela o kit
+[00:01:24] dobradiça a matéria prima a fita de
+[00:01:26] bordo perfil facetato né o puxador aqui
+[00:01:29] aqui corte né vai ter o corte aqui da do
+[00:01:33] MDF tem mais o qu o furo que é o furo do
+[00:01:38] é o furo do CNC de 35 né tem dois furos
+[00:01:41] eh montagem da peça né Ó tem duas montag
+[00:01:45] montagem dobradiça desculpa tem duas
+[00:01:47] montagens de das duas dobradiças posso
+[00:01:50] cobrar um valor para isso e o
+[00:01:51] ponteamento que são os ponteamento
+[00:01:53] zinhos que vão ter ali dentro dessa
+[00:01:55] porta mas por exemplo eu quero saber
+[00:01:57] agora quanto é que me custa só o puxador
+[00:01:58] aqui em cima gente Clica com a Mira
+[00:02:0] amarela vai no puxador e vai lá item
+[00:02:3] selecionado no puxador me tá dizendo
+[00:02:5] aqui o que que eu vou usar para fazer
+[00:02:7] esse puxador aqui ó Então vai o par de
+[00:02:9] ponteira tal e o perfil tal só o que
+[00:02:11] acontece para mim fixar essa ponteira eu
+[00:02:13] preciso parafusar vai dois parafusos ali
+[00:02:16] e dois parafusos aqui não tá
+[00:02:17] contabilizando vamos lá colocar eles
+[00:02:19] então a gente vem aqui ó e outra coisa
+[00:02:21] também que não tá contabilizando aqui ó
+[00:02:23] custo de montagem porque se eu dou esse
+[00:02:25] puxador aqui eu posso dar com ele
+[00:02:26] montado ou não né então eu posso tipo
+[00:02:29] fornecer pro me procor já o puxador
+[00:02:31] montado eu posso cobrar essa montagem
+[00:02:32] também no sistema Então a gente vai no
+[00:02:34] nosso dashboard que aqui no nosso
+[00:02:36] dashboard eu venho aqui ó
+[00:02:38] em insumos e vou procurar aquele insumo
+[00:02:43] que a gente orçou ali ó que é o quê eh
+[00:02:45] par de ponteira facetato 15 ali ó vamos
+[00:02:48] pegar esse aqui ó par de ponteira
+[00:02:49] facetato 15 MM então a gente vem aqui no
+[00:02:52] nosso dashboard vamos localizar
+[00:02:55] par de
+[00:02:58] ponteira Vamos ver que ó par de ponteira
+[00:03:2] facetato facetato
+[00:03:5] Preto esqueci de ver qual era o nome lá
+[00:03:7] né par de ponteira tem o d mesmo deixa
+[00:03:10] eu dar uma olhada aqui é par de ponteira
+[00:03:13] par de ponteira facetada par de
+[00:03:18] ponteira
+[00:03:20] facetada você AB aqui ó perfil essa
+[00:03:24] daqui ó par de ponteira facetato perfil
+[00:03:26] facetato que tá esse aqui ó então ele
+[00:03:28] tem aqui tava cobrando né r$ 13 e o
+[00:03:31] valor de venda por causa que o markup tá
+[00:03:33] padrão daí eu vou vir aqui em editar E
+[00:03:35] dentro dele aqui ó no número eu vou
+[00:03:38] adicionar uns itens a mais que eu quero
+[00:03:40] o quê cobrar a montagem desse puxador ó
+[00:03:43] montagem a gente vai editar aqui
+[00:03:44] montagem daí eu tenho várias montagens
+[00:03:46] montagem bo montagem de perfil de MDF né
+[00:03:49] perfil em MDF Ah vamos botar aqui ó
+[00:03:51] perfil MDF a montagem do perfil MD eu
+[00:03:54] acho que eu tenho montagem de puxadora
+[00:03:55] aqui deixa eu ver montagem interna
+[00:03:57] montagem de corrediça cantoneira
+[00:03:59] montagem de dobradiça é não tem mas tem
+[00:04:2] a montagem de perfil vai ser o quê a
+[00:04:4] cada um perfil uma montagem certo e vão
+[00:04:7] adicionar agora os parafusos para acho
+[00:04:11] quei errado parafuso í ó então eu vou
+[00:04:15] pegar ali o parafuso que tem cadastrado
+[00:04:17] vamos pegar um que tem cadastrado se não
+[00:04:18] tiver cadastrado pode ser cadastrado
+[00:04:20] também né ó
+[00:04:21] 316 vai ser quantos parafuso cada perfil
+[00:04:25] desse quatro porque é dois cada lado
+[00:04:27] dois numa ponteira dois na outra Ah mas
+[00:04:29] vai ter mais no perfil ali no meio Eu
+[00:04:30] quero parafusar o perfil também então
+[00:04:32] vamos botar aqui uns seis por perfil
+[00:04:34] mais dois cada perfil né e clico em
+[00:04:37] salvar feito isso a gente só vem aqui no
+[00:04:41] no nosso orçamento clica aqui em cima
+[00:04:43] nesse botãozinho ó atualizar aí eu venho
+[00:04:46] o custo do item selecionado agora já
+[00:04:48] nota que apareceu mais itens aqui ó
+[00:04:50] custo com montagem e acrescentou os
+[00:04:52] parafusos ali ó então eu consigo saber
+[00:04:55] calcular cada item individual aqui no
+[00:04:57] meu orçamento tá outro outro o detalhe
+[00:05:0] bem interessante vou selecionar essa
+[00:05:1] caixa aqui ó custo do item selecionado
+[00:05:5] aqui embaixo ó né Tem MDF matériaprima
+[00:05:8] serviços aqui em serviços e os inagens ó
+[00:05:12] então por exemplo aqui no serviço cada
+[00:05:14] furo tá sendo cobrado furo de 15 furo de
+[00:05:16] 35 o furo de 3 mm né automático que é o
+[00:05:21] furo que é passante e tem o ponteamento
+[00:05:23] de 3 M que é só faz aquela marcação inha
+[00:05:25] vocês podem cobrar individualmente cada
+[00:05:27] furo do sistema se vocês tiver esse
+[00:05:29] valor bem definido vocês podem colocar
+[00:05:31] que o sistema vai colocar cada furo
+[00:05:33] adicionado ele vai acrescentando aqui né
+[00:05:35] e aqui tem bem interessante que é o
+[00:05:38] rebaixo com a fresa ó Então ele deu
+[00:05:41] 1.91 m né que a fresa percorreu para
+[00:05:44] fazer o quê o encaixe do meu fundo ali ó
+[00:05:47] né então ela percorreu aqui e veio ali
+[00:05:49] ela levou 1.91 m para fazer essa peça
+[00:05:53] aqui se eu selecionar as duas ó essa e
+[00:05:56] essa e vem ali custo do item selecionado
+[00:05:59] nota que cada peça ele vai somando ali ó
+[00:06:2] né então já deu 4.22 m de fresa que tá
+[00:06:6] sendo usado qualquer fresa Tá eu vou
+[00:06:8] pegar aqui ó um desenho do sket é um
+[00:06:12] desenho tá vendo seleciono ele venho o
+[00:06:15] pmob e vou converter ele em uma Usinagem
+[00:06:18] tá de espessura do MDF inteira Vou botar
+[00:06:22] pelo pelo Centro clica em aplicar
+[00:06:25] seleciono o meio e mó Bentes crio
+[00:06:27] abertura pronto aqui eu tenho Usinagem
+[00:06:30] ali dentro então vamos lá seleciono vou
+[00:06:33] selecionar esses dois módulos aqui ou é
+[00:06:35] pode selecionar os dois módulos que daí
+[00:06:36] fica mais fácil custo do item
+[00:06:40] selecionado custo do item
+[00:06:43] selecionado aqui ó ele já anotou já
+[00:06:45] acrescentou mais uma aqui ó né 0.98 que
+[00:06:48] é uma Usinagem de ponto a ponto que eu
+[00:06:50] acabei de acrescentar aqui se eu quiser
+[00:06:52] fazer agora um outro tipo que é um
+[00:06:54] rebaixo seleciono aqui clico aqui C Mob
+[00:06:58] converter
+[00:07:0] rebaixo clico aqui vou deixar com as
+[00:07:2] configurações que tá né e vou clicar em
+[00:07:4] aplicar ali ó Pronto vem o mesmo mesmo
+[00:07:8] esquema né seleciono tudo que eu quero
+[00:07:10] usar tudo que tá aqui item selecionado e
+[00:07:13] ele vai acrescentar o rebaixo um recorte
+[00:07:16] com rebaixo fresa de 7 MM ó 0.30 tá
+[00:07:20] então ele acrescentou né Opa é rebaixo é
+[00:07:23] 0.30 aqui ó rebaixo com FR 7 MM ele
+[00:07:26] acrescentou mais o um rebaix né que era
+[00:07:29] para fazer para fazer aquele desenho ali
+[00:07:30] então qualquer qualquer ferramenta que
+[00:07:33] tu queira usar ou qualquer Usinagem
+[00:07:34] tanto do sket como baixar essas
+[00:07:37] Usinagens aqui já pronta ó né se eu
+[00:07:39] posso baixar isso aqui pronta
+[00:07:41] automaticamente ó só tá ela selecionada
+[00:07:43] né vem em custo do item selecionado ele
+[00:07:45] vai meçar só a Usinagem avula Ó tem uma
+[00:07:48] Usinagem avula colagem ah essa daqui ó
+[00:07:51] ela tá cobrando para mim colar a fita de
+[00:07:53] bordo por dentro ó aí porque foi
+[00:07:55] colocado lá dentro dela quando fizesse
+[00:07:56] um furo eu queria que fosse fitado então
+[00:07:58] ele já cobra agem e o metro de usinagem
+[00:08:1] que tá aqui nesse outro detalhe aqui ó
+[00:08:4] que a gente colocou ele não cobra
+[00:08:6] Usinagem ele não cobra a fita como é que
+[00:08:9] eu faria para cobrar a fita aqui dentro
+[00:08:11] a gente insere Um item avuso que escreve
+[00:08:14] aqui ó
+[00:08:14] fita acho que é fita fita de borda tá
+[00:08:18] ali ó fita de borda avulsa tá de 22 MM
+[00:08:21] né e tem a coisa eu clico aqui ó fita de
+[00:08:23] board se eu selecionar esse meu item
+[00:08:25] aqui ó ali dentro tá vendo eu tô
+[00:08:27] selecionando a minha Usinagem então
+[00:08:29] então quando eu clico nela eu venho aqui
+[00:08:30] ó selecionar o item selecionado ele me
+[00:08:33] dá a metragem ó então eu vou precisar de
+[00:08:34] 1 m de fita para fitar esse quadradinho
+[00:08:36] ó tá vendo Então a gente só você clica
+[00:08:38] aqui nela e escolhe qual é a fita ah de
+[00:08:40] 22 MM vai ter Ah aqui ela tá de cinco em
+[00:08:43] cinco deixa eu pegar esse outro modelo
+[00:08:45] aqui vamos ver se esse e esse eu acho
+[00:08:48] que os dois estão iguais deixa eu ver se
+[00:08:49] tem algum que metro tem um que metro
+[00:08:52] aqui deixa eu pegar deixa eu liberar ele
+[00:08:54] aqui ele não tá liberado aqui para mim
+[00:08:56] aparecer aqui em cima mas tem um aqui
+[00:08:58] dentro ó ó em agregados eh deixa
+[00:09:2] agregados não é construir itens avulso
+[00:09:6] acho que é aqui que acessórios na aqui
+[00:09:10] na
+[00:09:11] eh insumos aqui ó Tem fita adicional
+[00:09:16] deixa eu ver se essa aqui ó em metro
+[00:09:18] acho que essa aqui ó em metro é só não
+[00:09:20] tá liberado lá em cima mas tem como
+[00:09:22] liberar ela lá também então aqui eu
+[00:09:23] escolho ó 1 m fita 0,45 de 22 MM então
+[00:09:27] eu quero fitar aqui ó uma fita né Queque
+[00:09:30] aplicar então eu boto esse quadradinho
+[00:09:31] Deixa eu só apagar essas outras aqui ess
+[00:09:33] aqui são de 5 em 5 m tá então essa aqui
+[00:09:35] ela tá em metro poss Escolher 1 m 2 m
+[00:09:38] aqui 1 m já vai dar para mim fitar aqui
+[00:09:40] dentro só que tem um detalhe né Qual é a
+[00:09:43] cor eu quero fitar em outra cor então se
+[00:09:44] eu selecionar a caixinha vim aqui na
+[00:09:46] fita de borda eu consigo trocar a cor
+[00:09:48] dessa fita de borda por exemplo Ah quero
+[00:09:50] no Carvalho da Duratex ó Pinto ali então
+[00:09:54] aqui ele vai me cobrar né vai cobrar a
+[00:09:56] mão de obra para mim fazer e a fita de ó
+[00:09:59] tá cobrando né vai cobrar fita para mim
+[00:10:1] fazer dentro do recorte no nesse
+[00:10:3] Carvalho aqui da Carvalho rov vírgul Tex
+[00:10:6] né então ele já marca ali fita de bord
+[00:10:8] né ele já marca as informações tudo que
+[00:10:11] que precisa fita de bordo aqui ele
+[00:10:13] escreve aqui ó Carvalho Rover Duratex
+[00:10:15] quando seleciona para saber qual é o
+[00:10:16] material que tá sendo selecionado ali tá
+[00:10:18] eh outro detalhe que dde fazer muito
+[00:10:21] muito muito legal aqui é qualquer coisa
+[00:10:23] tá qualquer informação por exemplo eu
+[00:10:25] vou selecionar esse módulo todo uma
+[00:10:27] coisa que ninguém contabiliza ó vou em
+[00:10:28] custo do do item selecionado ninguém
+[00:10:30] contabiliza mas aqui no pmob já vem ó
+[00:10:33] para mim fazer ó todas essas peças aqui
+[00:10:36] cada peça Vai uma etiqueta né então ela
+[00:10:38] vai 16 etiquetas ó tá sendo cobrado 16
+[00:10:41] etiqueta então ó 1 2 3 4 5 6 7 8 9 10 11
+[00:10:48] né 12 com a prateleira 13 14 15 16 aqui
+[00:10:52] ó queas que as doas travess trá então 16
+[00:10:55] etiqueta 16 peças então ele tá cobrando
+[00:10:57] certinho aqui né tem os cortes também
+[00:11:0] que ele cobra aqui embaixo né o corte tá
+[00:11:2] em algum outro lugar aqui ó 16 cortes ó
+[00:11:4] tá vendo corte MDF 16 cortes as furações
+[00:11:7] todas né e as Usinagens então tu tem um
+[00:11:10] custo bem definido de todo o teu projeto
+[00:11:13] de quanto tu vai gastar no teu projeto
+[00:11:15] então a questão de orçamento dele aqui
+[00:11:17] eu acho uma muito muito muito bem
+[00:11:20] definida e bem detalhada outro detalhe
+[00:11:23] que tem aqui que tu pode fazer também se
+[00:11:25] tu tem RP fora pode exportar tem alguns
+[00:11:28] que já tem aqui aqui né então eu posso
+[00:11:30] exportar para CME pro WPS pro conta né
+[00:11:33] então a gente consegue fazer essas
+[00:11:34] exportações e importar lá dentro desses
+[00:11:37] outros sistemas né então ele é bem bem
+[00:11:39] completo nessa questão
+[00:11:40] eh a parte de orçamento era isso na
+[00:11:44] parte de cores tá eu posso trocar cor
+[00:11:47] também nele então se eu vir aqui na cor
+[00:11:50] eu seleciono eh qualquer peça tá pode
+[00:11:53] ser em peças ó vem aqui azul eu posso
+[00:11:55] trocar qualquer peça aqui ó até a fita e
+[00:11:58] essa o fundo tá vendo ó peças
+[00:12:1] individuais ou eu posso trocar o corpo
+[00:12:4] Opa se eu selecionar aqui ó ah um
+[00:12:6] negócio bem interessante ou deixa eu
+[00:12:7] voltar aqui que V ent ir dentro do
+[00:12:8] módulo aqui ó se eu vir aqui em MDF e
+[00:12:11] trocar o corpo eu vou trocar o corpo
+[00:12:12] para o
+[00:12:15] madeirado trocar o corpo dessa caixa
+[00:12:17] quadrada essa aqui não trocou porque eu
+[00:12:19] troquei peça a peça tá então ele não
+[00:12:21] deixa eu trocar como é que eu
+[00:12:25] volto esse aqui ele não deixa a gente
+[00:12:27] trocar eu teria que vir né porque esse
+[00:12:30] item aqui ó deixa ele carregar ó esse
+[00:12:33] item aqui eu t um corpo né corpo ele não
+[00:12:36] vai trocar tem que ir lá na peça vem
+[00:12:38] aqui em peça vem aqui escolho a mesma
+[00:12:41] cor e daí eu troco essa peça aqui para
+[00:12:43] ficar na mesma cor dos outros se eu
+[00:12:46] quiser peça a peça né Essas as
+[00:12:48] informações que tem dentro do da parte
+[00:12:50] de troca tem outro detalhe aqui né por
+[00:12:52] exemplo ó se eu troco a cor da porta eh
+[00:12:55] deixa eu ver aqui
+[00:12:57] MDF MDF frontais vamos trocar a porta
+[00:13:1] para
+[00:13:2] Azul ó ele já troca a fita da frente
+[00:13:5] para azul né porque ele considera se que
+[00:13:7] a gente vai botar um tapon momento
+[00:13:8] alguma coisa e vai ficar todo interno né
+[00:13:11] Toda quem olhar de frente tudo em azul
+[00:13:13] né E aqui nas ponteiras também ó Isso
+[00:13:16] aqui é um modelo de porta quando eu
+[00:13:18] seleciono a ponteira ó eu tenho perfil
+[00:13:20] né que eu posso trocar a cor e eu posso
+[00:13:24] trocar a cor também da ponteira e se eu
+[00:13:26] vier aqui em trocas ó eu tenho o modelo
+[00:13:28] de ponteira ó tá vendo ó essa aqui é a
+[00:13:30] ponteira curvadinho eu quero a ponteira
+[00:13:32] reta agora ele vai trocar já pro
+[00:13:34] modelinho de ponteira reta só do item
+[00:13:36] selecionado né quem selecionou só esse a
+[00:13:38] ponteira reta aí eu quero aquela outra
+[00:13:40] ponteirinha que tem nesse perfil que é
+[00:13:42] uma pequeninha aqui ó então ele vai
+[00:13:43] trocando né conforme o item tá
+[00:13:45] selecionado e na cor também tem a
+[00:13:49] possibilidade de trocar a cor do perfil
+[00:13:51] né troca a cor do perfil e troco também
+[00:13:55] a cor da ponteira ó posso botar os dois
+[00:13:58] na mesma cor então tu tens essa essa
+[00:14:1] possibilidade de trocar tudo dentro do
+[00:14:3] sistema outro detalhe ó se eu selecionar
+[00:14:5] esse módulo eu venho aqui em trocas
+[00:14:8] troco as portas agora vou trocar por uma
+[00:14:10] porta simples e porta simples aqui sem
+[00:14:13] puxador aqui ó porta simples sem
+[00:14:18] puxador beleza ó troquei porta simples e
+[00:14:21] eu consigo agregar qualquer coisa nessa
+[00:14:23] porta tá pode agregar qualquer coisa
+[00:14:25] então vem agregados para portas eu vou
+[00:14:28] botar um boiser ó clico aqui coloco um
+[00:14:31] Boer nessa porta um Boer nessa dou enter
+[00:14:33] ó ele colocou dois Boer se eu clicar com
+[00:14:36] a Mira amarela em cima do boiser Ó eu
+[00:14:38] tenho informações só desse boiser ó no
+[00:14:40] lado direito eu não quero e eu quero no
+[00:14:42] lado direito zero para ele encostar ali
+[00:14:45] ó e esse outro aqui ó eu vou dizer que o
+[00:14:47] lado esquerdo eu não quero e o lado
+[00:14:50] esquerdo eu quero a distância de zero
+[00:14:52] então a gente consegue fazer um boiser
+[00:14:54] encostando no outro posso colocar mais
+[00:14:56] outro boiser pode tá então tu pode
+[00:14:58] chegar aqui aqui ó deixa eu ver se esse
+[00:15:0] aqui esse aqui eu acho que não copia não
+[00:15:1] deixa eu ver se esse aqui copiei ah
+[00:15:3] copiei ó eu copiei um em cima do outro
+[00:15:5] tá eu copiei esse bo coloquei um em cima
+[00:15:7] do outro e agora eu vou só mexer na
+[00:15:9] distância dele aqui ó
+[00:15:11] 100 100 e 100 ó fazer mais outro então
+[00:15:16] eu seleciono Esse aqui também clico e
+[00:15:19] copiar clico na porta dou um enter ó ele
+[00:15:22] colocou em cima do outro eu só vou mexer
+[00:15:24] nas medidas
+[00:15:26] tá só que esse bo aqui ó ele é um
+[00:15:30] pouquinho mais fino ele só tem 1 cm
+[00:15:32] clico aqui um aí seleciono esse outro
+[00:15:35] aqui e aqui eu coloco
+[00:15:37] 1 cm também né e outro detalhe ó que daí
+[00:15:42] tá ali na porta comer aplicado a gente
+[00:15:45] consegue abrir ela né ó abrir vou fechar
+[00:15:48] que ela já vem tudo agregado outra coisa
+[00:15:50] que a gente consegue fazer vamos Apagar
+[00:15:51] esses dois aqui Mirinha vermelha a gente
+[00:15:55] apaga eles eu consigo vir aqui e agregar
+[00:15:57] também que
+[00:15:59] né posso colocar um ripado aqui ó nessa
+[00:16:2] porta ripado só numa então ele já coloca
+[00:16:5] o ripado ali da gente consegue dizer a
+[00:16:7] largura da
+[00:16:8] régua espessura ó vão entre réguas de 6
+[00:16:11] mm já vai se ajustando né já vai
+[00:16:14] deixando com os vãos que que que tem Ah
+[00:16:17] outro detalhe né tem eu coloquei a régua
+[00:16:19] aqui ele já joga tá os as informações
+[00:16:23] ali ó Então eu quero que tipo Diminuir a
+[00:16:26] quantidade de cavilha se eu diminuir
+[00:16:28] essa vai diminuir só dessa mas eu quero
+[00:16:30] que diminuia de todas ao mesmo tempo
+[00:16:32] então eu vou aumentar aqui a medida de
+[00:16:34] uma régua com uns 40 que é o tamanho
+[00:16:36] mais ou menos na minha porta ficou uma
+[00:16:37] régua só tá vendo agora eu consigo
+[00:16:39] editar só o furinho eu quero aqui duas
+[00:16:43] duas quantidad ó duas e agora sim eu
+[00:16:46] seleciono a minha ripa e digo que a
+[00:16:48] minha ripa tem 5 cm Ó e agora todos eles
+[00:16:52] vão ficar com duas duas cavilhas em vez
+[00:16:55] daquela quantidade de cavilha que tinha
+[00:16:57] então tudo é alterado dentro sistema e
+[00:16:59] tudo ele vai fazer a marcação tá ali na
+[00:17:1] porta ó ele já vai fazer a Furação na
+[00:17:3] porta ó né Tá pelo lado de fora
+[00:17:6] dobradiça pelo lado de dentro e a
+[00:17:7] marcação pelo lado de fora correto então
+[00:17:10] outro detalhe que dá de fazer também eu
+[00:17:12] posso vir aqui
+[00:17:15] eh posso fechar a porta aqui Deixa eu
+[00:17:18] botar na letra k ó aqui eu posso vir
+[00:17:22] aqui pelo lado de dentro ó e fazer um
+[00:17:24] buraco aqui ó né posso vir aqui ó
+[00:17:27] seleciono aqui aqui
+[00:17:29] opa não ficou certinho meu buraco porque
+[00:17:32] eu Opa buraco que ia fazer né então V
+[00:17:36] aqui aqui ó vamos ver se ele já se ele
+[00:17:38] ficou direitinho Se ele ficar enterrado
+[00:17:40] ele não dá certo tá então eu vou Mob
+[00:17:43] converter Usinagem de gráfico de face
+[00:17:50] 15.5 pelo lado esquerdo pelo lado de
+[00:17:53] dentro clico na porta clico aqui
+[00:17:56] ambientes ctos Opa aqui criar abertura
+[00:18:0] pronto ó eu já fiz uma porta né Ela já
+[00:18:3] tem a Usinagem agora com o buraquinho
+[00:18:5] ali dentro ó né arrancando o meio e já
+[00:18:8] vai fazer também as minhas cavilhas pelo
+[00:18:10] outro lado né então a gente já vai fazer
+[00:18:13] essa Usinagem junto com a dobradiça e
+[00:18:16] depois a gente vira a peça pro lado b e
+[00:18:18] faz a cavilha faz o lado B na router
+[00:18:20] também tá eh outra coisa que a gente
+[00:18:23] pode agregar nessa porta aqui ó vem aqui
+[00:18:25] em agregados eh para portas eu consigo
+[00:18:28] botar puxador puxador com aba ou puxador
+[00:18:31] com alça pegar aqui com alça ó então a
+[00:18:34] gente clica no puxador clica na porta e
+[00:18:37] dá um enteró Ah ele ficou desse lado eu
+[00:18:39] posso mudar o superior direito eu quero
+[00:18:41] superior esquerdo ele muda aliado quero
+[00:18:44] nessa ponta não eu quero ele na
+[00:18:46] horizontal em vez da vertical né tudo
+[00:18:48] muda como que eu troco esse puxador aqui
+[00:18:50] ó então V fazer um desenho aqui bem
+[00:18:52] rápido de um puxador aqui ó eh Vamos
+[00:18:54] fazer um sei lá fazer aqui no chão aqui
+[00:18:56] mesmo ou aqui né pode fazer aqui ó vou
+[00:18:59] fazer um desenho aqui desse puxador ó
+[00:19:2] puxador bem louco aqui tá é
+[00:19:6] 30 que mais que a gente pode fazer aqui
+[00:19:8] vamos fazer um desenho
+[00:19:10] aqui assim tô fazendo aqui nada a ver só
+[00:19:13] pra gente pode baixar do 3D house né ali
+[00:19:18] e aqui a gente vai fazer um uma
+[00:19:20] moldurinha nele aqui também
+[00:19:23] ó aqui até aqui
+[00:19:30] não pegou aqui ó fazer esse puxador
+[00:19:34] aqui aqui pronto ó modelinho de puxador
+[00:19:36] diferente aí vamos só diminuir um
+[00:19:38] pouquinho que acho ficou muito grosso ok
+[00:19:41] certo isso aqui é um modelinho de
+[00:19:42] puxador três cliques né dou um cont
+[00:19:45] control x nele reportei ele eu vou só
+[00:19:47] botar ele aqui na esse meu puxador é na
+[00:19:49] posição certa que é na posição vertical
+[00:19:52] né aplico então eu vou desbloquear tudo
+[00:19:55] aqui tem uma ferramenta que desbloqueia
+[00:19:57] tudo e vou criar um novo puxador para
+[00:19:59] mim também ó desbloquei pronto
+[00:20:1] desbloquei ele agora eu vou clicar ele
+[00:20:3] na mira amarela em cima dele ó e aqui eu
+[00:20:6] consigo entrar dentro dele ó Então vou
+[00:20:8] dar dois cliques ó aqui ele tá em linhas
+[00:20:10] seleciono tudo dou um delete e dou um
+[00:20:13] control v e vou colar esse puxador aqui
+[00:20:15] ó aí eu vou só ajustar ele na na medida
+[00:20:17] né
+[00:20:18] ah Aqui é aqui aqui aqui
+[00:20:23] 90 agora vamos ajustar ele aqui também
+[00:20:26] nessa medida no
+[00:20:29] Pronto coloquei ele aqui eu não fiz
+[00:20:31] medida nada aqui de puxador tá só tô
+[00:20:34] desenhando aqui mais ou menos vamos V só
+[00:20:37] deixar ele bem encostadinho aqui na
+[00:20:38] porta tá que encostei aqui na porta Vou
+[00:20:44] deixar na letra k aqui ó para mim ver a
+[00:20:47] medida do furo ó que eu quero
+[00:20:48] centralizar bem no furo do meu parafuso
+[00:20:51] do parafuso que já tem ali e aqui a
+[00:20:53] gente vou dar uma esticada tá eu sei que
+[00:20:54] isso aqui não é o correto vou dar uma
+[00:20:56] esticada até ali ó aí certo é fazer ele
+[00:20:59] bem na medida certinho ou mexer o furo
+[00:21:2] né mexe o furo ali só tô fazendo aqui
+[00:21:4] para mostrar para vocês que que a gente
+[00:21:6] pega qualquer coisa e centraliza ali no
+[00:21:9] Meio do furo Pronto tô com meu puxador
+[00:21:11] já Prontinho aqui na minha cena ó pronto
+[00:21:16] vocês ali puxador já tá ali e ele já tá
+[00:21:19] funcionando tá se eu vier com a Mira
+[00:21:21] amarela nele eu quero na direita ó ele
+[00:21:23] já vai funcionar se eu quero ele na
+[00:21:26] esquerda ele vai funcionar se eu quero
+[00:21:29] virar ele no horizontal ele vai
+[00:21:31] funcionar já tá funcionando o meu
+[00:21:34] puxador ali como que eu salvo ele tem
+[00:21:37] duas maneiras de eu salvar Eu posso
+[00:21:38] salvar ele como agregado colocar um
+[00:21:40] puxador aqui ou eu posso salvar o meu
+[00:21:43] conjunto de porta já com esse puxador
+[00:21:45] colocado nela tá tem duas maneiras vamos
+[00:21:47] salvar só o puxador ó Mira amarela no
+[00:21:50] puxador vamos lá no desenvolvedor clico
+[00:21:53] aqui ó nesse maizinho clico em salvar ó
+[00:21:56] botar puxador lin ali ó tal
+[00:21:59] Eu não mudei nome nada tá só pra gente
+[00:22:1] fazer bem rapidinho então ele é um
+[00:22:3] agregado para portas puxador com alça né
+[00:22:7] puxador com alça tá aqui ó esse aqui eu
+[00:22:11] vou botar
+[00:22:12] como puxador e
+[00:22:14] o e
+[00:22:16] [Música]
+[00:22:18] o puxador e o d vou lá selecionar Ó o
+[00:22:22] meu puxador tá aqui desen se eu quisesse
+[00:22:25] pegar uma imagem dele eu pegaria né ele
+[00:22:28] essa imagem tu pode pegar a imagem que
+[00:22:30] tu quiser né pode baixar uma imag uma
+[00:22:32] foto dele na internet botar aqui né
+[00:22:34] clica em enviar pronto agora só basta eu
+[00:22:37] atualizar aqui tá atualizei e eu trocar
+[00:22:41] vou trocar esse modelo de porta aqui ó
+[00:22:43] troca portas de giro eu vou botar essa
+[00:22:47] porta sem puxador né porque eu vou tou
+[00:22:49] colocar o puxador avz ó portinha sem
+[00:22:52] puxador tá aqui já troquei ela Ó e agora
+[00:22:55] eu vou colocar um puxador nela agregados
+[00:22:57] para portas puxador com o quê com alça Ô
+[00:23:1] acho que eu esqueci Ah tá ali e dnei eu
+[00:23:3] já tinha atualizado né então apareceu
+[00:23:5] ali ó puxador e o dnei venho aqui clico
+[00:23:7] na porta dou um enter já tem um puxador
+[00:23:9] colocado né só que esse aqui ele é ele
+[00:23:12] tá na superior tem que ser direita
+[00:23:13] porque essa porta abre para lá n ele já
+[00:23:15] fica agregado ó então ele já abre eu
+[00:23:18] posso colocar outro puxador posso
+[00:23:19] colocar até dois puxador na mesma porta
+[00:23:21] clico aqui dou um enter aí eu vou dizer
+[00:23:23] que esse puxador também é no lado
+[00:23:25] direito só que o recu na lateral vai ser
+[00:23:27] de 50 por exemplo né mexo até no recu
+[00:23:31] então coloco do fichador na mesma porta
+[00:23:33] se um dia precisarem n vai saber né mas
+[00:23:35] dá para fazer muita coisa aqui com esse
+[00:23:37] sistema tá isso que a gente cria
+[00:23:39] qualquer coisa simples fácil sem muita
+[00:23:42] burocracia existe aqui também ó é dentro
+[00:23:45] de puxador e aqui é o genérico quer ver
+[00:23:49] puxador genérico tá aqui ó é isso aqui é
+[00:23:51] para te fazer um furo tá por exemplo eu
+[00:23:54] clico na porta dou um enter ele vai me
+[00:23:56] mostrar deixa eu apagar esse puxador
+[00:23:57] aqui ó só para te entender ah opa ele tá
+[00:24:2] lá desconfigurado tá lá configurado lá
+[00:24:3] embaixo lá ó deixa eu dar uma olhadinha
+[00:24:5] aqui aqui quu ele Ah tá ele tá com a
+[00:24:8] margem vou botar zero ele tá com a
+[00:24:9] margem muito grande né eu vou botar a
+[00:24:11] margem de 20 tava com uma margem muito
+[00:24:13] grande a gente já acde fazer um furo
+[00:24:15] genérico aqui ó daí tu configura a
+[00:24:16] altura do teu puxador Ah o puxador é o
+[00:24:18] meu é o
+[00:24:20] 192 por exemplo acho que 1928 Não sei
+[00:24:23] então ó ele já vai fazer os furos na
+[00:24:25] medida que tu distância entre furos ó né
+[00:24:28] então tu consegue fazer esse ajuste aqui
+[00:24:30] ah ele não é na direita ele é na
+[00:24:32] esquerda ó ele já vai para lá para
+[00:24:33] aquele outro lado lá então é puxador
+[00:24:35] genérico pode fazer o furo já na tua
+[00:24:38] porta do teu jeito que tu precisar né
+[00:24:39] tanto um furo quanto dois furos bem
+[00:24:42] tranquilo de usar também
+[00:24:43] e que mais
+[00:24:45] aher já foi Ah tá tem um Deixa eu ver se
+[00:24:48] eu consigo botar aqui tem tanto pra
+[00:24:50] gaveta como pra porta tá deixa eu ver um
+[00:24:53] agregado aqui se tem Ah aqui ó deixa eu
+[00:24:55] apagar essa esses dois pux es aqui se eu
+[00:24:59] quiser fazer uma usina um puxador também
+[00:25:1] ó agregados e para portas para portas eu
+[00:25:6] tenho aqui ó Usinagem de puxador cava aí
+[00:25:9] eu tenho a cava linear que é a cava que
+[00:25:10] vai direto de de cima embaixo né tem a
+[00:25:13] cava parcial ó eu coloco ele aqui ó isso
+[00:25:16] aqui ó é para te configurar as tuas
+[00:25:18] fresas ó ele mostra ali ó como é que a
+[00:25:20] tua fresa vai entrar ali dentro ó
+[00:25:22] desenho da tua fresa vou apagar esse
+[00:25:24] módulo aqui do lado ó ele mostra onde é
+[00:25:26] que vai entrar a fresa e a configuração
+[00:25:29] então a gente clicando nele ó tu pode
+[00:25:31] configurar todas tuas fresas no 3D ó
+[00:25:33] Qual é o tamanho do puxador que tu quer
+[00:25:35] que faça profundidade altura da pega
+[00:25:39] qual é o diâmetro da tua ferramenta que
+[00:25:41] o diâmetro vai influenciar no quê na
+[00:25:42] entrada dela aqui né e tudo isso ela faz
+[00:25:45] duas Usinagens tá nota que eu vou
+[00:25:47] mostrar aqui ó pro lado b ó ela faz duas
+[00:25:49] Usinagens uma ela vai dar uma esvaziada
+[00:25:52] e depois vai passar aquela fresa grande
+[00:25:54] já fazendo o desenho né ela faz dois
+[00:25:57] dois Usinagens de uma numa na num
+[00:26:0] puxador né Tem dá zasada e depois entra
+[00:26:2] com a peça fazendo o detalhe aqui ó
+[00:26:5] então isso aqui é um modelo que tu pode
+[00:26:7] fazer o puxador que tu quiser na tua
+[00:26:9] porta Claro não fica muito bonito aqui
+[00:26:11] mas também tu pode desenvolver e e fazer
+[00:26:14] a puxador cava quadrado também ó vou
+[00:26:16] clicar aqui ó vou jogar em cima do outro
+[00:26:18] faz aquele puxador que ele entra aqui e
+[00:26:19] sai ali né Faz um um buraco aqui no meio
+[00:26:23] e não fica tão bonito no 3D aqui mas é
+[00:26:27] funcional e o que manda pra fábrica o
+[00:26:29] que interessa né a informação vai ó vou
+[00:26:31] abrir as duas aqui ó a informação vai ó
+[00:26:34] lá para pra produção Isso é o que mais
+[00:26:37] vai interessar né outro detalhe deixa eu
+[00:26:40] ver ah tá painéis aqui ó tu pode pegar
+[00:26:42] aqui ó
+[00:26:45] painel painel vou pegar um painel avulso
+[00:26:49] vertical vou clicar aqui ó também em
+[00:26:52] agregado só que agora para painel eu
+[00:26:54] também tenho o Usinagem ó eu consigo
+[00:26:56] fazer o quê nesse meu painel fazer
+[00:26:59] aqueles aquelas Usinagens usando a mesma
+[00:27:2] ferramenta ali né que é painel
+[00:27:4] canaletado né E tu faz painel canetado
+[00:27:7] consegue regular os espaços n entre um e
+[00:27:10] outro ele vai aumentando ali n tu
+[00:27:12] consegue configurar toda a tua broca a
+[00:27:15] margem como é que começa na margem e
+[00:27:17] assim por diante consegue fazer todos os
+[00:27:20] ajustes aqui para fazer um painel
+[00:27:21] canaletado se precisar desenvolver na no
+[00:27:24] teu MDF aí né Além disso nós temos os
+[00:27:27] painéis recortados que quando eu não
+[00:27:29] gosto de usar muito que eu prefiro usar
+[00:27:31] direto o desenho lá mas tem aqui a gente
+[00:27:33] pode clicar Cira bem no meio do do do
+[00:27:36] furo que ele fez aqui né e eu consigo
+[00:27:39] ajustar ele aqui ó a altura por exemplo
+[00:27:41] eu quero altura de 28 20 20 ó ele já vai
+[00:27:45] mexer na altura de 20 desse aqui aí eu
+[00:27:47] posso vir nesse outro aqui também e
+[00:27:49] dizer que a altura dele é de 10 né e a
+[00:27:53] gente consegue fazer as edições conforme
+[00:27:56] a os furos ali né e esticando os painéis
+[00:28:0] aqui ele vai permanecer né com as
+[00:28:2] distâncias os furos ali que a gente
+[00:28:13] pré-configuração os painéis moduláveis
+[00:28:15] aqui ó eu posso botar cinco negativo
+[00:28:18] aqui já vai fazer os cinco negativo ali
+[00:28:20] tem na horizontal tem na vertical posso
+[00:28:22] agregar em gosto para painéis vem aqui e
+[00:28:26] agregado esse para deixa eu ver se esse
+[00:28:28] aqui aceita moldura deixa eu ver acho
+[00:28:31] que é moldura Vamos ver se esse aqui
+[00:28:33] aceita tem uns que aceita a gente
+[00:28:35] consegue botar uma moldurinha ali que é
+[00:28:37] engrosso né ó é negativo aí tem esse
+[00:28:41] aqui é
+[00:28:43] parafusado esse aqui é um dos modelos tá
+[00:28:45] tem consegue fazer um monte de coisa
+[00:28:47] aqui que eu não uso mas tem aqui dentro
+[00:28:50] do
+[00:28:51] sistema que mais o ripado Ah também pode
+[00:28:54] colocar ripado em cima do do painel
+[00:28:57] também ó ele vai fazer a Furação também
+[00:28:59] eu coloquei um painel todo negativado e
+[00:29:1] coloquei um ripado em cima tá ele ainda
+[00:29:4] vai fazer a Furação um em cima do outro
+[00:29:5] né olha ó fez a Furação um em cima do
+[00:29:8] outro tudo funciona tá consegue clicar
+[00:29:10] com a Mira amarela no ripado e dizer
+[00:29:13] quantos ripados tu quer quero 25 lipada
+[00:29:16] aqui os 25 não vai custar no outro mas
+[00:29:19] botei Unos 25 ó certo e as Usinagens
+[00:29:23] também né Oi entrei dentro e as
+[00:29:26] Usinagens O legal é que as Usinagens
+[00:29:28] funciona
+[00:29:29] né bem interessante aqui então tá cara
+[00:29:32] tem muita muita muita coisa aqui dentro
+[00:29:34] que só olhando um por um é
+[00:29:38] superiores inferiores Ah aqui também tem
+[00:29:40] as bancadas né balcões de banheiro tem
+[00:29:44] bancadas a bancada tem uma modelinha de
+[00:29:48] bancadinha de mesinha de cabeceira ou
+[00:29:51] bancada pode ser usada né isso aqui ele
+[00:29:54] foi desenvolvido de uma forma que ele já
+[00:29:56] quando eu troco a frente ele troca tudo
+[00:29:58] para ficar da mesma cor Mas tu pode né
+[00:30:0] trocar a cor que tu quiser por exemplo
+[00:30:4] vou trocar aqui para bej troca ali tudo
+[00:30:5] para bege por ele tá configurado para
+[00:30:8] essa forma mas se eu quiser só trocar de
+[00:30:10] cima para Azul ó troco Só de cima Troca
+[00:30:12] esse lado né clicando na mesma
+[00:30:16] ferramenta é só clicando no número um
+[00:30:18] aqui do lado né e eu troquei tudo a
+[00:30:20] vulso sem ser trocado pela peça frontal
+[00:30:23] né
+[00:30:24] Eh cara deixa eu dar uma olhada boiser
+[00:30:28] ris Ah tem aqui ó o boiser da Santa
+[00:30:30] Luzia tem um boiser de MDF que é o que
+[00:30:33] um aplica que tu quer aplicar em cima da
+[00:30:35] tua MDF al por exemplo ó eu quero com a
+[00:30:38] largura da Ripa de 60 e ele vai cortar o
+[00:30:41] quê o MDF vai sair maior 1 cm pra gente
+[00:30:44] poder fazer a meia esquadria aqui ele já
+[00:30:46] sai na medida mas essa daqui ó onde tu
+[00:30:48] vai cortar em 45º ele sai maior e tu
+[00:30:52] consegue ajustar aqui ó por exemplo eu
+[00:30:53] não quero a peça da esquerda por exemplo
+[00:30:56] ó não quero a peça da esquerda ele já
+[00:30:58] remove e remove o 45° ó tá vendo a eu
+[00:31:2] não quero a peça da
+[00:31:4] direita peça da direita aqui cima ó não
+[00:31:7] quero remove sim ó então ele já fica
+[00:31:9] peça reta né se eu botar aqui não e não
+[00:31:12] né ele volta aos 45º é bem dinâmica Ness
+[00:31:17] ó e aqui tá a medida Extra ó 6 mm a mais
+[00:31:20] Então tá cortando essa peça 6 mm a mais
+[00:31:22] PR gente poder fazer o 45° né esse aqui
+[00:31:26] é os bo da saia aí a gente escolhe ele
+[00:31:29] pelo modelo aqui né se é o de 16 ou se é
+[00:31:32] o de 22 ó né e escolhe a largura dele
+[00:31:36] conforme a configuração que temha dentro
+[00:31:38] do moer aqui né esse é o moer reto que é
+[00:31:40] aquele Gold tem o trabalhado também
+[00:31:44] peças avulsos nossa tem muita coisa aqui
+[00:31:46] em avulso ainda que a gente pode
+[00:31:48] construir qualquer coisa aqui com isso
+[00:31:50] né modulação compostas que são as peças
+[00:31:53] engrossadas né tudo tudo é por colisão
+[00:31:57] botei aqui vou pegar uma base engrossada
+[00:31:59] coloco a seta para baixo tá vendo ali ó
+[00:32:1] vou pegar uma base aqui ó engrossada de
+[00:32:4] novo boto para cima ó se eu botar se eu
+[00:32:7] apertar o control clico nessa peça e
+[00:32:9] boto para cima ele já coloca ali as uma
+[00:32:13] em cima da outra na posição certinha né
+[00:32:15] e a gente consegue fazer o quê Furação
+[00:32:17] nesse peça 3D também vem aqui em
+[00:32:19] agregados para peça
+[00:32:22] eh lateral vamos pegar aqui isso aqui é
+[00:32:25] uma lateral né então a lateral e eu vou
+[00:32:28] pegar um minifix vou clicar aqui vou dar
+[00:32:31] um enter ele vai colocar o minifix ele
+[00:32:33] colocou na frente eu não quero na frente
+[00:32:35] quero pela parte de baixo aqui frontal
+[00:32:39] traseiro inferior
+[00:32:42] ó então ele já vai se ajustando ali né
+[00:32:46] tem quantidade minifix Ah eu não quero
+[00:32:47] desse lado quero virar pro lado de fora
+[00:32:49] ah não quero que apareça pro lado de
+[00:32:50] dentro quero pro lado de fora boto aqui
+[00:32:52] ó inverter sim elif você vai fazer lá
+[00:32:54] pelo outro lado né E como ele é por
+[00:32:57] colisão essa peça de baixo já vai ser
+[00:32:59] furada automático tá vendo se eu fiz
+[00:33:2] isso aqui na de baixo ó eu seleciono cam
+[00:33:5] Mira amarela copio e clico aqui e coloco
+[00:33:9] ele para cima ó inferior eu vou botar no
+[00:33:11] superior ele vai jogar lá na parte de
+[00:33:13] cima também Para quê Para mim já fazer a
+[00:33:15] Furação nessa peça tá tudo a vulso aqui
+[00:33:18] ó né estão tudo com peças avulso Ó seu
+[00:33:20] movimentar aqui ó ela tá avuso Tá mas
+[00:33:22] ele já vai fazer o furo nessa outra peça
+[00:33:25] aqui também ó tá olha ó fez foram na
+[00:33:28] outra Peça também pelo outro lado né
+[00:33:30] então o que que acontece aqui vamos
+[00:33:32] supor que isso aqui é uma peça e eu
+[00:33:33] quero que todas essas peças saiam com o
+[00:33:36] mesmo ID o mesmo código lá de produção
+[00:33:39] seleciono o pmob e agrupar componentes
+[00:33:43] tá deixa ele agrupar agrupou o que que é
+[00:33:45] o ID tá é o o sistema coloca sozinho
+[00:33:48] aqui ó a gente vem aqui em outros e
+[00:33:50] coloca numeração dos módulos ó o sistema
+[00:33:53] vai colocar um número né uma tagz inha ó
+[00:33:55] para cada componente ó tá vendo ó todas
+[00:33:58] essas daqui receberam o componente
+[00:34:0] número S bo número c l cada um recebeu
+[00:34:4] por quê comão tudo agregado e atrelado a
+[00:34:6] uma coisa só né eu posso editar isso
+[00:34:9] aqui pode ó aplico com mira amarela e
+[00:34:10] edito isso aqui ó eu posso vir aqui ó
+[00:34:12] copiar esse outro aqui agora entrando
+[00:34:15] dentro do do componente
+[00:34:17] né deixa eu pegar aqui ó eh clico aqui
+[00:34:22] clico aqui deixa eu ver se eu consigo
+[00:34:23] copiar daqui de
+[00:34:25] dentro acho que aqui eu não deixei não
+[00:34:27] deixa copiar a gente tem que desagrupar
+[00:34:30] tá eu consigo editar mas para mim copiar
+[00:34:33] um outro para dentro né Eh tem que
+[00:34:35] desassociar aqui ó
+[00:34:37] desassociar sim eu copio um control
+[00:34:41] consigo usar o control copiar colocar
+[00:34:43] ali tá então ele ficou para cá ó tá
+[00:34:47] vendo Ficou ali para lá a gente pode
+[00:34:48] inverter para suação ficar por fora
+[00:34:50] também igual ó inverter não opa ó jogou
+[00:34:56] pro outro lado e esse aqui inverter
+[00:34:59] também
+[00:35:1] não e jogo as frações para o outro lado
+[00:35:5] ali e agora eu venho aqui de novo e
+[00:35:7] agrupo ele né e faço esse componente
+[00:35:11] ficar um módulo só outro detalhe que dá
+[00:35:14] de fazer aqui eu clico com a Mira
+[00:35:16] amarela nesse componente eu posso editar
+[00:35:18] a altura dele ó 40 tá eu CONSEG editar
+[00:35:22] lá dentro tá vendo eu posso vir nesse
+[00:35:25] outro aqui ó Mira amarela ele e consigo
+[00:35:28] diminuir aqui para 40 também ó aí ele
+[00:35:32] vai diminuir claro que daí ele continua
+[00:35:33] um grupo mas é duas peças que não tem né
+[00:35:36] interferência tipo ela não tá dinâmica
+[00:35:39] mas tudo tá pertencendo ao grupo e tu
+[00:35:41] pode fazer o ajuste que precisar nela e
+[00:35:43] mandar assim também só que claro né como
+[00:35:45] tá afastado aqui ele não vai furar mais
+[00:35:47] aquela peça ali né Essa peça não será
+[00:35:49] mais furada eu teria que entrar dentro
+[00:35:51] dela tá e encostar ela de novo aqui ó
+[00:35:55] certo para ela gerar a Furação é só
+[00:35:58] entrar dentro do componente e fazer
+[00:35:59] edição que a peça já vai fazer a Furação
+[00:36:4] né conforme precisar cara é depois eu
+[00:36:9] fazer a parte três ainda que ainda falta
+[00:36:11] a parte de exportação que é muito grande
+[00:36:13] eu mostro depois também todos esses
+[00:36:15] detalhes nós temos os vidros aqui né
+[00:36:17] vidros e espelhos né né Tem vidro e
+[00:36:19] espelho modulado tá que a gente consegue
+[00:36:22] fazer raios arredondar elevação ó raio
+[00:36:25] inferior 150 posso botar aqui com 30 ele
+[00:36:29] já vai arredondando ali ó né Aí eu aqui
+[00:36:32] o que mais inferior ó consigo fazer um
+[00:36:36] arredondado bem dinâmico mesmo tem o
+[00:36:38] espelho jateado que daí a gente consegue
+[00:36:42] fazer ajustes no jateado também ele já
+[00:36:44] vem com o painel atrás precisar ou não
+[00:36:47] cara ele é muito muito completo Depois a
+[00:36:49] gente vai fazer mais um vídeo paraa não
+[00:36:51] ficar muito grande esse aqui também que
+[00:36:53] é o vídeo
+[00:36:54] mostrando as exportações tá
+[00:37:5] aqui chegara
+[00:37:9] aqui só fechar aqui que montaa
+[00:37:30] eu quero eu quero rico euer quer
+[00:37:45] [Música]
+[00:37:53] RIC ãe acho que você dá para fazer
+[00:38:10] eu quer fazer

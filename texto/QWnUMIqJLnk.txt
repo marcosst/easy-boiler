@@ -1,0 +1,134 @@
+[00:00:0] vamos aqui no fechamento então o
+[00:00:2] fechamento eu venho aqui ó abro os os
+[00:00:5] meus módulos aqui e digito aqui eu posso
+[00:00:7] digitar fechamento tá Opa
+[00:00:10] fechamento ele vai me filtrar tudo aqui
+[00:00:12] ó fechadura botei fecha né então pegou
+[00:00:14] fechadura pegou tdo qué coisa aqui ó
+[00:00:16] Então aqui tem o fechamento inferior e o
+[00:00:18] fechamento superior que eu quero botar
+[00:00:20] tipo um roda teto aqui então clico nele
+[00:00:23] ele vai ficar solto tá eu aperto a seta
+[00:00:26] para cima e dou um enter então e já
+[00:00:28] tenho aqui o meu componente então como
+[00:00:30] eu tenho meu componente eu quero alinhar
+[00:00:32] ele posso vir aqui mover ele e alinhar
+[00:00:35] ele aqui pela esquerda pelo lado
+[00:00:37] esquerdo e pegando a minha lá nas minhas
+[00:00:40] configurações aqui ó tem o comprimento
+[00:00:43] dele clico aqui na trenin e clico daqui
+[00:00:47] até onde até eu quero aumentar ele até
+[00:00:48] aqui ele já automaticamente vai não
+[00:00:50] precisa clicar ent não precisa fazer
+[00:00:52] nada aquela peça lá eu não quero então
+[00:00:54] clico nesse vermelho clico nele vai
+[00:00:56] ficar só o l aqui qual quera Ah eu não
+[00:00:58] quero essa da frente também clico n ele
+[00:01:0] some a da frente também tá a eu quero
+[00:01:2] que ele aumente esse mais esse pedacinho
+[00:01:4] aqui seleciono ele venho aqui em
+[00:01:6] comprimento clico daqui boto a seta tá
+[00:01:10] aperto a seta pro lado eixo X ali
+[00:01:12] travado e clico aqui no final ele vai
+[00:01:14] aumentar até a ali beleza esse aqui é o
+[00:01:17] fechamento superior Vamos botar um
+[00:01:19] fechamento inferior também então a gente
+[00:01:22] vem aqui nos componentes digito aqui
+[00:01:25] fechamento para ficar mais fácil né
+[00:01:27] fechamento ele já vai filtrando aqui eu
+[00:01:29] quero o fechamento superior Opa inferior
+[00:01:32] desculpa clico nele aperto para baixo
+[00:01:34] dou um enter mesma coisa do de cima tudo
+[00:01:38] igual eu posso vir aqui e selecionar
+[00:01:42] aqui e fazer o fechamento igual só que
+[00:01:43] eu não quero isso aqui não quero esse
+[00:01:45] fechamento aqui esse fechamento é para
+[00:01:47] quemar sapatinha eu quero botar um um
+[00:01:49] rodapé então a gente vem aqui vamos
+[00:01:52] clicar aqui nessa linha clico nele ele
+[00:01:54] aparece aqui nas configurações eu delet
+[00:01:57] tá agora vamos botar então com esse m
+[00:01:59] ionado eu vou abrir aqui de novo as
+[00:02:2] configurações e vou dizer aqui eu acho
+[00:02:4] que é roda pé ó já apareceu ali ó rodapé
+[00:02:8] e MDF clico nele el seleciono aperto
+[00:02:12] para baixo dou um enter ele já vem ali
+[00:02:14] só que vai funcionar do mesmo jeito ele
+[00:02:16] só tem um pouco de configuração a mais
+[00:02:18] então eu posso vir ele daqui aqui certo
+[00:02:21] e eu quero aumentar até o final daí a
+[00:02:23] gente vem aqui nas configurações né o
+[00:02:25] comprimento eu quero que ele aumente
+[00:02:27] desse ponto até trava o eixo aqui eu
+[00:02:30] quero que ele venha até aqui até esse
+[00:02:32] ponto ele vai vir automaticamente Ah tem
+[00:02:35] muita régua aqui no meio não quero três
+[00:02:37] réguas quero só duas ó só duas réguas
+[00:02:39] aqui no meio Eu quero só
+[00:02:41] uma certo não quero
+[00:02:45] nenhuma som tudo beleza Ah eu quero que
+[00:02:50] o tipo de montagem vai ser laterais
+[00:02:52] passantes ó vai ficar a lateral passante
+[00:02:54] Ah não quero a frontal
+[00:02:57] passante certo todo ele modifica já
+[00:03:1] instantaneamente aqui e detalhe também
+[00:03:3] né tudo como já expliquei em outros
+[00:03:5] vídeos mas vou explicar
+[00:03:7] novamente eu posso vir aqui também nos
+[00:03:10] mesmos componentes pegar aqui em
+[00:03:12] construir peças
+[00:03:14] avulsas desculpa Peas avulsas deixa eu
+[00:03:17] dar uma olhada onde que era módulos
+[00:03:20] avulsos não Ah desculpa não aqui Aqui
+[00:03:23] tem agregados para peças vou pegar da
+[00:03:26] base V querer que eu quero botar um
+[00:03:28] parafuso
+[00:03:30] ó quero botar parafuso nessa peça a dou
+[00:03:32] um enter vocês podem ver que já
+[00:03:34] selecionou ali em cima ó então eu quero
+[00:03:36] aqui dois não quero cinco parafusos
+[00:03:38] cinco parafusos eu vou botar aqui em
+[00:03:40] raio x para vocês ver ó raio x Opa raio
+[00:03:44] x ali ó então ele já botou um parafuso
+[00:03:46] aqui um parafuso ali ó onde estô mexendo
+[00:03:49] com o mouse outro parafuso aqui e outro
+[00:03:50] ali Será que ele botou mesmo que que a
+[00:03:52] gente vai fazer vamos lá no nosso
+[00:03:54] componente né que é o tira o raio x
+[00:03:57] vamos clicar nessa base aqui vamos ver
+[00:04:0] como é que tá essa base clico nele e vou
+[00:04:2] ver a furação da base Então essa aqui é
+[00:04:5] a parte de dentro o parafuso tem que tá
+[00:04:6] ali ó tá ali marcado já parafuso vamos
+[00:04:10] ver no outro nessa outra base aqui eu
+[00:04:13] clico nela clico nessa clico no verdinho
+[00:04:16] aqui né clico nessa e clico aqui Vamos
+[00:04:20] aumentar de novo lado B ol ali ó dois
+[00:04:22] parafusos tá porque aqui deve ter pego
+[00:04:25] um parafuso porque outro parafuso ficou
+[00:04:27] aqui fora ficou na vista Será que ele
+[00:04:28] fura a vista não sei vamos ver clico
+[00:04:31] aqui clico em
+[00:04:34] Furação vamos maximizar tá lá ó furou o
+[00:04:37] parafuso lá na vista também ó onde ele
+[00:04:39] encosta ele vai furar gente onde ele
+[00:04:42] encosta ele vai furar é espetacular isso
+[00:04:44] aqui né então isso aqui é um fechamento
+[00:04:45] é um rodapé e o fechamento lá em cima se
+[00:04:49] eu quisesse botar parafuso lá atrás
+[00:04:50] também é só pegar aqui escolher o
+[00:04:52] parafuso aqui e clicar lá na parte de
+[00:04:54] trás e dar um enter tá ele já colocou lá
+[00:04:56] e dizer Quantos parafusos tu quer no
+[00:04:58] total quero se nesse aqui ele vai botar
+[00:05:1] seis parafusos lá atrás Então vamos lá
+[00:05:2] ver clico aqui clico na peça ele vai
+[00:05:5] furar na frente atrás do outro lado
+[00:05:7] deixa eu maximizar para vocês ver ó
+[00:05:9] furou ali furou um aqui vamos lá ver na
+[00:05:12] outra base nessa daqui que acho que vai
+[00:05:14] cair dois furos aqui dois ou três ó
+[00:05:17] vamos virar aqui furo b ó dois parafusos
+[00:05:20] aqui e aqui C mais dois aqui perto da
+[00:05:22] Ponta bem na Ponto outra aqui outra aqui
+[00:05:24] e outra aqui Espetacular isso né

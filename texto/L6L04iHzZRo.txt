@@ -1,0 +1,133 @@
+[00:00:0] Vamos pessoal pergunta como é que faz
+[00:00:2] aquele esvaziamento na porta né eu vou
+[00:00:5] fazer aqui pelo lado de fora tá mas dá
+[00:00:7] para fazer pelo lá dentro só vou mostrar
+[00:00:9] para vocês então eu posso desvaziar a
+[00:00:11] porta inteira se eu quiser desenhando um
+[00:00:13] quadrado Vamos só fazer então vamos
+[00:00:15] fazer pela Norma certinho né só para
+[00:00:17] ficar bonitinho então a gente vem aqui
+[00:00:19] eu vou dizer que aqui eu quero um 100 mm
+[00:00:22] para cá aqui eu quero um 100 para cá ó
+[00:00:26] já livrou ali o puxador Eu quero um 100
+[00:00:30] para cá Opa aqui 100 e daqui para cá
+[00:00:34] também eu quero que comece com
+[00:00:36] 100 ó 100 e daqui eu pego esse daqui
+[00:00:42] copio atéa em cima e vou dividir divide
+[00:00:46] por três ol lá só para opa não dividiu
+[00:00:49] deixa eu pegar uma linha aqui que é mais
+[00:00:51] fácil dividir com a linha pego essa esse
+[00:00:54] quadrado aqui e coloco al daqui ali ó
+[00:00:57] posso até agora apagar essas essas
+[00:00:59] linhas guias todas aqui tá apago elas e
+[00:01:2] apago elas vai ficar esse quadrado aqui
+[00:01:4] ó então fica mais fácil da gente dividir
+[00:01:6] aqui em cima né se eu eu posso pegar uma
+[00:01:8] linha aqui ó do Meio até aqui tá E outra
+[00:01:12] linha do meio do Meio até aqui certo
+[00:01:18] então como é que eu faço aqui eu
+[00:01:19] seleciono essa e essa e uso o offset
+[00:01:23] para dentro aqui ó eu quero aqui um 5 cm
+[00:01:26] um 4 certo selecionado agora eu
+[00:01:29] seleciono
+[00:01:30] essa e essa mesma coisa aqui ó tem um
+[00:01:33] offset aqui um qu para dentro para ele
+[00:01:36] ficar igual né e a mesma coisa agora a
+[00:01:38] gente faz aqui embaixo essa com essa e
+[00:01:42] uso o offset né 40 e uso essa com essa
+[00:01:50] offset 40 só para ficar igual aqui então
+[00:01:53] agora eu apago essas linhas eu posso
+[00:01:55] usar a borracha aqui ó quero apagar essa
+[00:01:57] essa essa essa posso passar
+[00:02:0] aqui por cima ele já vai apagando essa
+[00:02:2] aqui eu também não quero e essa aqui eu
+[00:02:4] também não quero vou ficar só com essas
+[00:02:5] daqui ó então a Usinagem eu vou fazer em
+[00:02:8] todos os itens individual que eu quero
+[00:02:10] eu não quero usin eu quero um rebaixo tá
+[00:02:12] eu quero rebaixar isso aqui então eu
+[00:02:13] clico no meio da peça mas antes disso tá
+[00:02:16] vamos fazer o outro lado né seleciono
+[00:02:19] todo esse componente por o outro lado
+[00:02:21] ele tem que tá exatamente igual a isess
+[00:02:23] aqui então vou puxar pro outro lado ó e
+[00:02:26] a única coisa que eu faço que ele tá
+[00:02:28] dele selecionado inverter Face pra Face
+[00:02:31] Branca ficar para cá certo agora vamos
+[00:02:34] fazer nesse daqui selecion esse
+[00:02:36] componente op Mob op Mob rebaixo clico
+[00:02:40] na
+[00:02:40] porta seleciono esse aqui op
+[00:02:44] Mob Mob Usinagens rebaixo clico na porta
+[00:02:48] seleciono esse aqui ele não eu ten que
+[00:02:50] fazer individualmente tá o rebaixo eu
+[00:02:52] faço individualmente a Usinagem eu faço
+[00:02:54] separ e faço tudo junto aqui clico na
+[00:02:58] porta nesse aqui também opou mve
+[00:03:0] ambientes rebaixo rebaixo clico na porta
+[00:03:3] notem que ele já deixou aqui ó tá se eu
+[00:03:6] clicar nesse daqui ó nesse vão ó ten
+[00:03:7] aqui ó eu quero 10 Não eu quero baixar
+[00:03:9] 12 eu quero rebaixar nesse aqui 14 será
+[00:03:12] volta 12 também vamos rebaixar nesse
+[00:03:15] aqui 12 também e nesse aqui 12 notem que
+[00:03:19] eu tô dando 12 um enter ele já tá
+[00:03:21] aplicando agora vamos fazer nesse outro
+[00:03:23] lado idêntico então clico nele op Mob
+[00:03:26] Usinagem rebaixo clico na porta clico
+[00:03:29] nele up Mob usinage rebaixo clico nele
+[00:03:33] clico na porta clico nesse aqui up Mob
+[00:03:36] usinage rebaixo clico na porta clico
+[00:03:39] nesse up Mob Usinagem rebaixo clico na
+[00:03:42] porta Pronto agora eles eles vieram tudo
+[00:03:45] como 10 né eu poderia já cada vez que tá
+[00:03:47] fazendo já editando Ah ess aqui eu quero
+[00:03:49] que rebaixe 12 sei lá esse aqui eu quero
+[00:03:51] que rebaixe 14 tá tudo independente né
+[00:03:54] esse aqui também eu vou botar 12 e esse
+[00:03:57] aqui também eu vou botar 12 então notem
+[00:04:0] que quando eu clico na minha porta aqui
+[00:04:2] ó né vou clicar com botão verde e clico
+[00:04:6] nela já tá os meus rebaixos prontos ó
+[00:04:9] lado a e lado b na parte engrossada da
+[00:04:12] porta ou na parte de 1 e meio né eu fiz
+[00:04:14] na própria porta engrossada mas eu
+[00:04:16] consigo fazer individualmente aqui ó
+[00:04:18] certo então ele funciona bem esses
+[00:04:21] rebaixos aqui funcionam bem isso aqui é
+[00:04:22] rebaixo Se eu quisesse fazer uma
+[00:04:24] Usinagem né que é tipo assim ah vai
+[00:04:27] atravessar a porta inteira not tem quea
+[00:04:29] vou apagar esse lado vou apagar esse
+[00:04:31] lado aqui ó desse lado aqui a gente
+[00:04:33] consegue fazer uma Usinagem
+[00:04:35] aqui vou clicar nela clico na face clico
+[00:04:39] up mobus imagem gráfico de faces então a
+[00:04:43] porta tem 31 vou dizer que é não vou
+[00:04:46] agrupar vou dizer que na esquerda e
+[00:04:48] aplica clico na porta ele já vai aplicar
+[00:04:51] os imagem aqui na
+[00:04:53] porta Opa aqui e aqui ó tá vendo as
+[00:04:58] imagens já foi ó essa é Usinagem ficou
+[00:05:1] só de um lado que é só um lado que da
+[00:05:3] peça que eu tô que eu tô fazendo eu
+[00:05:4] teria que duplicar ela pro outro lado
+[00:05:6] para ela fazer o outro lado né então o
+[00:05:7] lado a Tá feito o lado B eu não fiz né
+[00:05:10] só fiz do lado eu teria que copiar ela
+[00:05:11] para outro lado e fazer do outro lado
+[00:05:13] então essa como a porta é de três a fres
+[00:05:15] ela só vai pegar o 15 MM dessa né teria
+[00:05:17] que fazer uma outra desse lado para ela
+[00:05:19] atravessar para outro lado certo então a
+[00:05:21] Usinagem ela mostra diferente se eu
+[00:05:24] entrar aqui ó ela vai mostrar diferente
+[00:05:26] a Usinagem do rebaixo o rebaixo fica
+[00:05:28] assim ó cinza tá es tudo isso aqui tá
+[00:05:30] rebaixando e essa aqui ela tá cortando
+[00:05:32] esse pedaço certo então tu pode fazer
+[00:05:35] tudo que tu quiser na tua porta
+[00:05:37] tranquilamente que o sistema vai
+[00:05:38] entender e vai mandar pra tua máquina tá
+[00:05:41] vai mandar PR tua tua CNC é muito fácil
+[00:05:44] de fazer

@@ -1,0 +1,111 @@
+<h2>Layout da grade de projetos</h2>
+<p class="subtitle">Thumbnail 16:9 com título abaixo — qual densidade e estilo de card?</p>
+
+<div class="cards">
+
+  <!-- Opção A: Grid 3 colunas, card limpo com sombra -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f1f5f9;padding:16px;">
+      <!-- Header mockup -->
+      <div style="background:#fff;border-bottom:1px solid #e2e8f0;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,0.05);">
+        <div style="width:60px;height:14px;background:#2563eb;border-radius:3px;"></div>
+        <div style="display:flex;align-items:center;gap:5px;background:#f1f5f9;border-radius:20px;padding:3px 8px 3px 4px;">
+          <div style="width:18px;height:18px;border-radius:50%;background:#2563eb;"></div>
+          <div style="width:40px;height:8px;background:#cbd5e1;border-radius:3px;"></div>
+        </div>
+      </div>
+      <!-- Title -->
+      <div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:10px;">Projetos</div>
+      <!-- Grid 3 cols -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+        <div style="background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#3b82f6,#8b5cf6);"></div>
+          <div style="padding:5px 7px;font-size:9px;color:#374151;font-weight:500;">Projeto Alpha</div>
+        </div>
+        <div style="background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#10b981,#3b82f6);"></div>
+          <div style="padding:5px 7px;font-size:9px;color:#374151;font-weight:500;">Projeto Beta</div>
+        </div>
+        <div style="background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#f59e0b,#ef4444);"></div>
+          <div style="padding:5px 7px;font-size:9px;color:#374151;font-weight:500;">Projeto Gamma</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Grid 3 colunas</h3>
+      <p>Cards brancos com sombra leve. Mais projetos visíveis por linha. Boa para listas longas.</p>
+    </div>
+  </div>
+
+  <!-- Opção B: Grid 2 colunas, cards maiores com hover overlay -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f1f5f9;padding:16px;">
+      <div style="background:#fff;border-bottom:1px solid #e2e8f0;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,0.05);">
+        <div style="width:60px;height:14px;background:#2563eb;border-radius:3px;"></div>
+        <div style="display:flex;align-items:center;gap:5px;background:#f1f5f9;border-radius:20px;padding:3px 8px 3px 4px;">
+          <div style="width:18px;height:18px;border-radius:50%;background:#2563eb;"></div>
+          <div style="width:40px;height:8px;background:#cbd5e1;border-radius:3px;"></div>
+        </div>
+      </div>
+      <div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:10px;">Projetos</div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+        <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#3b82f6,#8b5cf6);position:relative;">
+            <div style="position:absolute;inset:0;background:rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;font-size:9px;">▶</div>
+            </div>
+          </div>
+          <div style="padding:7px 9px;font-size:10px;color:#374151;font-weight:600;">Projeto Alpha</div>
+        </div>
+        <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#10b981,#3b82f6);"></div>
+          <div style="padding:7px 9px;font-size:10px;color:#374151;font-weight:600;">Projeto Beta</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Grid 2 colunas</h3>
+      <p>Cards maiores e mais visíveis. Thumbnails com destaque. Ideal para poucos projetos ou imagens importantes.</p>
+    </div>
+  </div>
+
+  <!-- Opção C: Grid responsivo 4 cols, estilo galeria discreta -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f1f5f9;padding:16px;">
+      <div style="background:#fff;border-bottom:1px solid #e2e8f0;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,0.05);">
+        <div style="width:60px;height:14px;background:#2563eb;border-radius:3px;"></div>
+        <div style="display:flex;align-items:center;gap:5px;background:#f1f5f9;border-radius:20px;padding:3px 8px 3px 4px;">
+          <div style="width:18px;height:18px;border-radius:50%;background:#2563eb;"></div>
+          <div style="width:40px;height:8px;background:#cbd5e1;border-radius:3px;"></div>
+        </div>
+      </div>
+      <div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:10px;">Projetos</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;">
+        <div style="border-radius:6px;overflow:hidden;">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#3b82f6,#8b5cf6);"></div>
+          <div style="padding:4px 0;font-size:8px;color:#374151;font-weight:500;">Alpha</div>
+        </div>
+        <div style="border-radius:6px;overflow:hidden;">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#10b981,#3b82f6);"></div>
+          <div style="padding:4px 0;font-size:8px;color:#374151;font-weight:500;">Beta</div>
+        </div>
+        <div style="border-radius:6px;overflow:hidden;">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#f59e0b,#ef4444);"></div>
+          <div style="padding:4px 0;font-size:8px;color:#374151;font-weight:500;">Gamma</div>
+        </div>
+        <div style="border-radius:6px;overflow:hidden;">
+          <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#6366f1,#ec4899);"></div>
+          <div style="padding:4px 0;font-size:8px;color:#374151;font-weight:500;">Delta</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Grid 4 colunas</h3>
+      <p>Galeria densa estilo portfólio. Sem sombra/borda, título simples abaixo. Para muitos projetos.</p>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:1.5rem;">Clique para selecionar ou diga no terminal se quer outra configuração.</p>

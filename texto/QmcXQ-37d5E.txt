@@ -1,0 +1,271 @@
+[00:00:0] pessoal me pergunta muito sobre como é
+[00:00:2] que é o módulo de canto no upm né então
+[00:00:4] no upm ele já tem módulo de canto
+[00:00:6] biblioteca pronta né ó cantos Vou botar
+[00:00:9] aqui C ele já tem prateleira de canto já
+[00:00:13] tem até osages Ó tem tudo já de canto
+[00:00:16] aqui módulo de canto aéreo canto reto
+[00:00:19] canto 45 G né canto em L aqui tem para
+[00:00:23] roupeiro tem vários mas eu vou mostrar
+[00:00:25] para vocês que ele existe um construtor
+[00:00:27] de canto então a gente vem Construtor
+[00:00:30] construir aí existe aqui ó tipo armários
+[00:00:33] Aéreos alto vamos pegar um balcão então
+[00:00:36] aqui no Balcão além de construir a tua
+[00:00:38] caixa normal que é a caixa padrão sua
+[00:00:40] tem as caixas de canto que você pode
+[00:00:42] construir certo essa caixa eu posso
+[00:00:45] construir nessa outra caixa aqui ó todo
+[00:00:49] é totalmente né todas as caixas aqui
+[00:00:53] você pode mudar todo o processo de
+[00:00:55] trabalho dela também se você quiser tá ó
+[00:00:59] Então vamos mostrar nesse canto aqui ó
+[00:01:1] que é o canto que o pessoal mais usa né
+[00:01:2] como é que a gente trabalha com ele
+[00:01:4] então continuando no modo construir o
+[00:01:6] que que a gente precisa a gente precisa
+[00:01:9] colocar uma prateleira posso colocar o
+[00:01:12] quê uma prateleira de canto ou uma
+[00:01:14] prateleira lá naquele fundo ou uma nesse
+[00:01:16] fundo individualmente tá como é que ele
+[00:01:18] faz vamos aqui em Construtor também
+[00:01:20] construir é vamos em agregado desculpa
+[00:01:22] agora e aqui em agregados eu tenho o par
+[00:01:25] internos ó no par internos eu tenho
+[00:01:28] prateleiras que eu posso colocar
+[00:01:29] prateleiras retas e também tenho aqui ó
+[00:01:32] em internos tá aqui internos eu tenho
+[00:01:36] prateleiras de canto e prateleiras
+[00:01:38] normal Então vamos pegar uma prateleira
+[00:01:40] normal Vamos fazer vamos dizer que esse
+[00:01:42] módulo aqui ó eu quero uma prateleira lá
+[00:01:44] daí você tem que saber onde qual módulo
+[00:01:47] selecionar Tá qual canto Qual item você
+[00:01:50] vai selecionar por exemplo se eu
+[00:01:52] selecionar aqui ó ele vai jogar uma
+[00:01:54] prateleira nesse vão todo tá se eu botar
+[00:01:57] nesse canto aqui a prateleirinha vai
+[00:01:58] ficar só nesse lado ó vou mostrar PR
+[00:02:1] vocês só uma prateleirinha ali ó só que
+[00:02:3] claro ela vai ficar uma Emenda né Vamos
+[00:02:5] colocar outra prateleira aqui ó se eu
+[00:02:7] clicar nessa Travessa eu vou colocar uma
+[00:02:9] prateleira lá do outro lado eu faço em
+[00:02:11] duas peças o meu módulo tá claro que
+[00:02:13] isso aqui não a gente pode depois fazer
+[00:02:16] ele jogou o minifix ali porque minha
+[00:02:17] prateleira tá configurada Para minifix
+[00:02:19] né mas eu posso pegar nesse nessa peça
+[00:02:22] aqui ó nesse minifix e eu dizer que é
+[00:02:25] venho aqui em substituições ó em
+[00:02:28] substituições
+[00:02:29] e vem pratileiras kits de fixação e eu
+[00:02:32] vou dizer que isso aqui é um mini Fix
+[00:02:33] passante tá ó ele já botou um mini Fix
+[00:02:36] passante entre um e outro ali ó já
+[00:02:38] travou tá então se eu for ver aqui
+[00:02:40] também ele sai Furação Aqui também tá
+[00:02:42] clico na mira Verde seguro o contol e
+[00:02:44] clico nessa prateleira ó sai a Furação
+[00:02:46] aqui sai a Furação nesse aqui também ó
+[00:02:50] ele já fura com minifix passante Tá mas
+[00:02:53] não é isso que eu quero eu quero uma
+[00:02:54] prateleira inteira recortada notem que o
+[00:02:56] fundo ele é inteiro a parte de baixo
+[00:02:58] aqui a base né então vou clicar na base
+[00:03:0] e vou mostrar para vocês a base já tem o
+[00:03:3] recorte a Usinagem ó lado A lado B tanto
+[00:03:6] que esse fundo aqui é de 15 MM ó ele já
+[00:03:8] faz ar ranhura esse fundo é de seis ele
+[00:03:10] já fez ar ranhura e já fez ar ranhura lá
+[00:03:12] no de 15 também ó certo se eu vier aqui
+[00:03:14] no de 15 ó onde ele tá encostando Ele tá
+[00:03:17] fazendo a ranhura beleza então agora a
+[00:03:20] gente vai fazer o quê vamos apagar essas
+[00:03:21] duas prateleiras aqui vou clicar no
+[00:03:23] amarelo tá seleciono esse vão Deixa eu
+[00:03:26] só chegar o meu configurador para esse
+[00:03:28] lado para ficar melhor e delet
+[00:03:30] pego o amarelo clico nesse outro vão e
+[00:03:33] deleto Vamos colocar agora o quê uma
+[00:03:34] prateleira inteira aqui dentro então
+[00:03:36] internos para internos prateleira de
+[00:03:39] canto aí eu tenho uma duas tenho a
+[00:03:41] prateleira 45º vamos botar uma
+[00:03:43] prateleira de canto essa daqui ó como é
+[00:03:45] que eu colocaria essa prateleira de
+[00:03:46] canto eu viria aqui ó nesse espaço onde
+[00:03:48] não tem nada que ele seleciona todo o
+[00:03:50] interno da Caixa ó Onde tá a minha mira
+[00:03:52] clico nele e dou um enter ele
+[00:03:54] automaticamente colocou uma prateleira
+[00:03:56] de canto tá E essa prateleira de canto
+[00:03:58] eu consigo mexer tanto no lado a quanto
+[00:04:0] no lado B vamos dizer no lado a tem 40 e
+[00:04:4] no lado B tá que no lado B aqui ah não
+[00:04:7] no lado a no lado B tem 40 e no lado a
+[00:04:9] eu vou dizer que tem 25 certo eu consigo
+[00:04:13] manipular essa prateleira assim também ó
+[00:04:15] certo aqui internamente e ela também já
+[00:04:18] sai com as Usinagens e o recorte aqui
+[00:04:21] ficou menor e ali ficou maior lado a e
+[00:04:22] lado b e ainda sai as furações que aqui
+[00:04:25] tá com minifix essa prateleira tá tá com
+[00:04:27] minifix por baixo ali ó tá certo
+[00:04:30] então eu posso manipular desse jeito
+[00:04:31] aqui ajustar do jeito que vocês quiserem
+[00:04:33] e subir essa caixa eu tenho a
+[00:04:35] possibilidade também ó essa caixa tá
+[00:04:37] assim uma travessa aqui e outra ali né
+[00:04:39] se eu clicar nessa Travessa ó eu quero
+[00:04:41] ela deitada em vez de em pé eu quero ela
+[00:04:43] deitada daí eu tenho que virar nessa
+[00:04:46] outra aqui também e quero ela
+[00:04:49] deitada certo ó e notem que essa peça tá
+[00:04:53] colidindo com aquela ali o que que vai
+[00:04:55] acontecer com ela tá nessa peça aqui ó
+[00:04:58] ela vai furar alió ó tá vendo o furo vou
+[00:05:0] dar um zoom aqui ó olha ó já furou o
+[00:05:2] topo dessa peça para atravessar o
+[00:05:4] minifix ali então ele é totalmente
+[00:05:7] paramétrico agora como é que eu
+[00:05:9] colocaria uma porta aqui então vamos lá
+[00:05:11] vamos internos e acho que deixa eu ver
+[00:05:13] se é para internas S verificar aqui não
+[00:05:15] é internos agregados internos aí tem a
+[00:05:19] porta simples aqui ó porta dupla são
+[00:05:22] duas portas Porta simples né portas só
+[00:05:24] portas e uma porta só então vamos pegar
+[00:05:26] a porta com esse puxador aqui ó clico
+[00:05:28] nela como é que eu Colocaria a porta
+[00:05:30] porque eu não consigo selecionar o vão
+[00:05:32] Então eu vou aqui na lateral e Miro ali
+[00:05:34] ó naquela lateral Opa deixa eu dar um
+[00:05:36] zoom aqui no mouse deu uma
+[00:05:38] travada ó deixa eu tirar o configurador
+[00:05:41] aqui de cima ó e existe umas setas aqui
+[00:05:44] no teclado que eu tenho que pegar bem
+[00:05:47] certinho eu posso até às vezes tá para
+[00:05:49] ficar mais fácil vir aqui eu vou excluir
+[00:05:52] eu vou excluir a prateleira e coloco a
+[00:05:53] prateleira depois tá na realidade eu não
+[00:05:55] preciso apagar a prateleira Tá então
+[00:05:57] vamos aqui internos prateleiras de de
+[00:05:59] canto eu vou pegar uma prateleira de
+[00:06:1] canto e colocar aqui ó nesse meio e dou
+[00:06:3] um enter ele vai colocar uma prateleira
+[00:06:4] de canto ali eu não preciso apagar a
+[00:06:6] prateleira eu que tava colocando a porta
+[00:06:8] da forma errada tá então venho em
+[00:06:10] internos portas então V pegar um modelo
+[00:06:13] de porta aqui essa daqui então como é
+[00:06:16] que eu colocaria a porta nesse módulo se
+[00:06:17] ele tem vários vãos aqui né Então eu
+[00:06:19] levo o mouse aqui ó em cima nessa
+[00:06:21] Travessa ó tá vendo bem próximo essa
+[00:06:23] Travessa e pego esse vão coloco uma
+[00:06:25] porta nesse vão depois a gente ajusta
+[00:06:27] ela ou eu já posso ajustar aqui mesmo tá
+[00:06:30] tá vendo que ela tá passando para cima
+[00:06:32] que eu tô usando o modo Construtor eu
+[00:06:33] tenho que ajustar esse meu balcão para
+[00:06:35] subir ele pra galeria então aqui em cima
+[00:06:38] ela tem uma folga aqui ó já aparece os
+[00:06:40] transpasses da folga o superior vai ser
+[00:06:42] o quê -4 ele já vai diminuir e também na
+[00:06:45] lateral essa é uma porta que ela abre
+[00:06:47] para esquerda então na lateral vou
+[00:06:50] descontar aqui uns 2 cm ó - 20 ela já
+[00:06:54] deixar um pouquinho mais curta ali ó
+[00:06:55] certo Agora vamos pegar a outra porta
+[00:06:58] onde como é que eu colocaria essa outra
+[00:07:0] porta aqui o mesmo mesma forma pego uma
+[00:07:3] porta só que aqui ó eu preciso achar a
+[00:07:6] lateral aqui ó desse módulo tá então ó é
+[00:07:10] ó aqui ó Opa ali pegou não é um
+[00:07:14] pouquinho difícil aqui consigo dar um
+[00:07:16] zoom ali deixa eu dar um chegar um
+[00:07:18] pouquinho para
+[00:07:19] trás deixa me pegar ali ó ó aqui eu
+[00:07:22] consegui pegar ó tá vendo Então se eu
+[00:07:24] levar o mouse bem em cima ali próximo ó
+[00:07:26] eu afastei um pouquinho até ficou melhor
+[00:07:28] de pegar ó eu pego essa lateral aqui
+[00:07:30] quando eu CCO nessa lateral e dou enter
+[00:07:32] ele vai jogar a porta nesse vão aqui ó
+[00:07:34] certo ó bola do mouse aqui não tá não tá
+[00:07:38] legal só o que acontece com essa porta
+[00:07:39] se eu abrir ela olha o que ela tá
+[00:07:41] fazendo ela tá abrindo para cima da
+[00:07:42] outra certo eu tenho que mudar o lado
+[00:07:44] dela então ela é do lado direito e
+[00:07:48] também o transpasse lateral Eu vou
+[00:07:49] descontar aqui V descontar um 20 depois
+[00:07:51] a gente ajusta ela né Men 20 né e a
+[00:07:54] parte superior dela Men 4 e cli em
+[00:07:58] aplicar ó ele vou ajustar Ela ali ó aí
+[00:08:1] vocês fazem o ajuste Ó tem que diir um
+[00:08:3] pouquinho mais aqui ó
+[00:08:5] -23 V deixar um três ali de folga e essa
+[00:08:9] daqui eu quero que vai até lá atrás
+[00:08:11] Então essa daqui eu pego na mira amarela
+[00:08:13] clico nela e eu vou urrar um pouco ela
+[00:08:15] para trás ali ó Então em vez de 20 vai
+[00:08:17] ser um 10 ó para ela fazer um encaixe
+[00:08:21] Zinho ali vamos supor que seja assim tá
+[00:08:24] claro que esse puxador não daria para
+[00:08:25] usar mas é só só um exemplo tá então eu
+[00:08:29] fiz as duas portas só que olha o que
+[00:08:31] acontece com ela eu vou abrir essa daqui
+[00:08:33] e vou abrir essa aqui ficou ruim o canto
+[00:08:35] como é que eu vou acessar esse canto
+[00:08:36] aqui seleciona o caixote Vem Em
+[00:08:39] substituição dobradiças e pega a
+[00:08:42] dobradiça
+[00:08:43] 165º escolhe o modelo né Então olha aí
+[00:08:46] agora a porta já vai abrir inteira então
+[00:08:48] eu clico nela ó e ele já tá funcionando
+[00:08:50] e já vai mandar pra produção né essa
+[00:08:53] porta com essa dobradiça a mesma coisa
+[00:08:56] no módulo de canto então o módulo de
+[00:08:58] canto como é que funciona eu venho em
+[00:08:59] agregados internos pego a prateleira de
+[00:09:2] canto pego essa prateleira aqui e
+[00:09:5] seleciono a caixa clicando Lá próximo do
+[00:09:7] fundo ou clicando a seta no teclado para
+[00:09:10] cima clico na caixa e dou um enter Opa V
+[00:09:15] cliquei aqui agora cliquei na caixa e
+[00:09:16] dou um enter ó ele colocou uma
+[00:09:18] prateleira de canto assim eu não quero
+[00:09:20] uma prateleira de canto assim eu quero a
+[00:09:21] de 45º então eu posso deletar ela pego a
+[00:09:24] de 45º levo lá no fundo dou um enter eu
+[00:09:28] botei uma de 45° tá vendo que ela ficou
+[00:09:30] com 10 aqui e 10 ali ó eu posso editar
+[00:09:34] essas medidas eu quero que aqui Fique
+[00:09:35] com 20 ou 30 para chegar mais perto ali
+[00:09:40] ó ele vai fazendo o ângulo aqui também
+[00:09:43] 30 tudo isso tudo isso Lembrando que ela
+[00:09:46] já sai com Usinagem tanto o lado a
+[00:09:49] quanto o lado B agora eu quero botar uma
+[00:09:52] porta aqui a porta também é do mesmo
+[00:09:54] jeito
+[00:09:55] internos portas escolha um modelo de
+[00:09:58] porta que eu quero vou pegar esse modelo
+[00:10:0] aqui só que a porta eu tenho que
+[00:10:2] selecionar esse vão aqui ó certo não é o
+[00:10:5] vão inteiro eu quero selecionar o vão da
+[00:10:6] porta que é esse aqui clico aqui dou
+[00:10:9] enter e a porta já tá ali só preciso
+[00:10:12] ajustar da mesma forma né superior menos
+[00:10:15] 4 MM ó e daí a gente também pode trocar
+[00:10:18] ó ela abre pra esquerda Não eu quero que
+[00:10:20] ela abre pra direita então venho aqui na
+[00:10:23] porta e mudo pra direita eu posso até
+[00:10:26] fazer o qu esse puxador tá em cima eu
+[00:10:28] posso jogar esse puxador lá em baixo Vai
+[00:10:30] que alguém queira né ou na lateral claro
+[00:10:32] que é um balcão inferior né ó na lateral
+[00:10:35] posso colocar esse puxador na lateral se
+[00:10:37] não quiser em cima certo então esse é o
+[00:10:40] construtor de módulos de cantos

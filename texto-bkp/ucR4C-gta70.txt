@@ -1,0 +1,91 @@
+[00:00:00] agora vamos lá pros fechamentos tá
+[00:00:03] fechamentos a gente vem aqui nos
+[00:00:04] internos eu quero botar ele automático
+[00:00:06] então eu quero botar um fechamento na
+[00:00:07] lateral desse roupeiro aqui ó então é
+[00:00:09] onde é que ele tá ele vai vir aqui você
+[00:00:11] vai abrir internos você vai aqui em
+[00:00:13] externos que daí ele vai botar tudo que
+[00:00:15] tem por fora ali né ou em fechamento ó
+[00:00:19] eu quero botar esse fechamento aqui na
+[00:00:20] lateral aí quando eu clico aqui no
+[00:00:22] módulo dou um enter ele já vai
+[00:00:25] aplicar ó apou lado esqueci de escolher
+[00:00:28] o lado mas dá para escolher o lado que
+[00:00:31] tu quer aplicar vamos ali ó eh vamos
+[00:00:33] pegar essa peça aqui vamos clicar nesse
+[00:00:35] aqui frontar o passante laterais
+[00:00:39] passante eu quero no lado esquerdo e vou
+[00:00:42] clicar em aplicar ó aí tem uma margem
+[00:00:45] ali também ó que é de 18 mm aqui ó se eu
+[00:00:47] quiser deixar assim a margem posso
+[00:00:49] deixar zero aqui ó ele já vai aumentar
+[00:00:52] certo eu posso dizer que eu não quero
+[00:00:54] essa peça de cima clicando aqui no botão
+[00:00:58] verde clico nela e eu posso vir aqui e
+[00:01:02] desativo essa peça Eu Não Tô excluindo
+[00:01:04] mas no eu desativar ela ele já não vai
+[00:01:05] sair mais na Furação não vai sair Cora
+[00:01:07] não vai sair nada então desativo Opa
+[00:01:09] venho aqui nela clico aqui né e desativo
+[00:01:14] ela posso desativar posso fazer qualquer
+[00:01:15] coisa aqui ó desativei essa vamos
+[00:01:18] desativar essa aqui ó vai ficar só da
+[00:01:21] frente tá eu posso colocar outro tá
+[00:01:23] venho aqui coloco outro fechamento clico
+[00:01:25] nele dou um enter e já vem pro lado de
+[00:01:27] cá vai vi pro lado direito que o
+[00:01:29] primeiro primo que ele insere desse lado
+[00:01:31] ele abre as configurações para te mudar
+[00:01:32] então mesma coisa de cima não quero
+[00:01:35] quero que isso aqui seja passante de 15
+[00:01:36] MM no lado direito posso recuar na
+[00:01:39] frente aqui eu quero um recu de 50 na
+[00:01:41] frente clico em aplicar ó ele já fica
+[00:01:43] ali Ah e outro detalhe né eu posso mexer
+[00:01:46] também na largura dele eu quero com 3 cm
+[00:01:48] né ele já vai fazer um fechamento Zinho
+[00:01:50] de três de dois ali de 20 deixa eu ver
+[00:01:53] se ele faz de 20 ó entendesse já fica só
+[00:01:57] um fechamento Zinho ali ó certo tanto
+[00:02:00] viu que ele pegou o tamanho do armário
+[00:02:02] né eu posso vir nesse aqui tanto com
+[00:02:03] esse aqui selecionado clicar nele ele
+[00:02:05] também já vai pegar ó se eu clicar nele
+[00:02:09] já pega esse módulo aqui também
+[00:02:11] fechamento para esse módulo Aí eu clico
+[00:02:12] na peça vermelha não quero essa não
+[00:02:15] quero essa quero só um fechamento na
+[00:02:16] frente com 3 cm não fechamento de TR
+[00:02:20] ficar bonitinho ai sem o a folga né ele
+[00:02:24] venha que ele desça sem a folga certo ó
+[00:02:28] ah tem mais uma coisa legal Aqui também
+[00:02:31] que dá de fazer vamos vamos fazer aqui
+[00:02:33] vamos internos e fixação não é deixa eu
+[00:02:38] ver pera aí Aqui deixa eu ver se consigo
+[00:02:41] botar para portas para internos
+[00:02:45] acessórios
+[00:02:47] fixação não desculpa não é internos não
+[00:02:50] é aqui é aqui ó parap vou pegar
+[00:02:55] aqui laterais vamos ver se ele deixa eu
+[00:02:58] colocar quero colocar um cavilar isso
+[00:03:02] aqui vamos só cavilar e parafuso vamos
+[00:03:04] botar aqui ó uma cadeirinha se lá pode
+[00:03:06] ser uma cadeirinha também clico aqui
+[00:03:09] clico nessa peça e dou um enter ó ele
+[00:03:11] colocou a cadeirinha ali ó Mas só que eu
+[00:03:14] não quero desse lado eu quero a
+[00:03:14] cadeirinha pro outro lado aí eu posso
+[00:03:17] inverter o lado mas eu quero na frontal
+[00:03:18] daí tu pode fazer aqui ó tem n funções
+[00:03:21] de fazer né Vamos inverter o lado ele
+[00:03:23] vai ficar pro outro lado da peça pro
+[00:03:24] lado da frente ó entende Vou botar aqui
+[00:03:27] não aplica Ele veio para esse lado dessa
+[00:03:30] peça e eu posso dizer o traseiro endeu
+[00:03:34] ele fica pro outro lado lá e detalhe né
+[00:03:36] tudo que coloca aqui eu clico nele né
+[00:03:40] clico na peça e posso ver a Furação dele
+[00:03:43] já sair aqui a parte de dentro vamos ver
+[00:03:45] a parte de Fora a cadeirinha já sai
+[00:03:47] furadinha aqui também entendeu

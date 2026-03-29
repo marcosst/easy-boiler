@@ -1,0 +1,89 @@
+[00:00:00] bom vamos inserir uma porta e uma
+[00:00:01] fechadura aqui porque eu quero mostrar o
+[00:00:03] kit de fechaduras então a gente vem aqui
+[00:00:05] ó em internos os agregados vem interno
+[00:00:09] aqui existe ó porta dupla e porta
+[00:00:11] simples vamos clicar nas portas clico
+[00:00:14] aqui nessa porta clico na caixa e dou um
+[00:00:16] enter ó então ele já colocou essa porta
+[00:00:20] aqui para mim vamos ver a espessura
+[00:00:21] Dessa porta que ele desceu vamos ver ele
+[00:00:23] deve ter descido já aqui ó ah já tá
+[00:00:25] marcando aqui embaixo né essa porta que
+[00:00:27] tem espessura de 18 mm aqui ó já
+[00:00:30] selecionou ela beleza a gente já sabe
+[00:00:31] que ela tem 18 se for eu posso trocar
+[00:00:33] ela aqui para 15 tranquilamente vamos
+[00:00:34] dizer que ela tem 18 que é para ver para
+[00:00:36] vocês verem notarem o que tem que ser
+[00:00:38] ajustado vamos ver para que lado essa
+[00:00:40] porta tá abrindo aperto I de interagir
+[00:00:42] né ou eu clico aqui em cima nessa
+[00:00:44] mãozinha aqui ó e eu consigo abrir a
+[00:00:46] porta tá vendo aqui em cima onde eu
+[00:00:48] cliquei na mãozinha que é clique para
+[00:00:50] interagir Então essa porta tá abrindo PR
+[00:00:53] para a esquerda Então vamos botar uma
+[00:00:55] chave aqui ó Então essa chave a gente
+[00:00:57] vem dentro de aqui ó na biblioteca
+[00:01:00] construir Opa biblioteca
+[00:01:03] construir cliquei errado nessa aqui vem
+[00:01:06] construir em
+[00:01:08] acessórios Aí eu clico aqui ó Na
+[00:01:10] fechadura vou colocar essa fechadura
+[00:01:12] aqui ó vocês lembram que a nossa porta é
+[00:01:13] de 18 né então vamos clicar né Na
+[00:01:16] fechadura clicar no amarelo e vamos
+[00:01:17] editar a fechadura então a fechadura eu
+[00:01:19] quero aqui ó a lingueta para baixo não
+[00:01:21] eu quero ela para para direita né pro
+[00:01:24] lado direito quero a lingueta pro lado
+[00:01:26] de cá o que que seria essa lingueta ess
+[00:01:27] aqui ó quero pro lado direito cliquei
+[00:01:29] pra direita e qual er a espessura da
+[00:01:31] nossa Chapa da porta espessura da chapa
+[00:01:33] é de 18 e vou clicar em aplicar ele já
+[00:01:35] vai virar e já vai modificar a nossa
+[00:01:38] chave para para 18 não pode esquecer
+[00:01:40] disso né o que que acontece a nossa
+[00:01:42] chave tá pegando na travessa então eu
+[00:01:44] clico aqui modifico no eixo azul
+[00:01:46] seleciono para ela não pegar na travessa
+[00:01:47] e ficar um pouco mais abaixo aqui né ah
+[00:01:50] outro detalhe também quando a gente
+[00:01:51] insere a porta vocês notem que a porta
+[00:01:54] fica passando ali para cima né então eu
+[00:01:56] posso vir aqui na mira amarela aqui ó do
+[00:01:58] componente tanto essa aqui quanto essa
+[00:02:00] que tá aqui em cima aqui ó que é essa
+[00:02:01] amarela vamos pegar nessa clico na porta
+[00:02:04] e aqui ó transpasse superior eu quero
+[00:02:06] ela os3 MM então ela vai ficar já com a
+[00:02:09] folguinha de três ao redor tá vamos ver
+[00:02:12] agora como é que ficou a Usinagem dessa
+[00:02:14] dessa fechadura que a gente colocou
+[00:02:16] clico nela clico na porta e vamos ver o
+[00:02:19] furo ele vai abrir o Furação aqui ó vou
+[00:02:21] maximizar aquela porta que a gente
+[00:02:23] escolheu ela tem uma Usinagem aqui né já
+[00:02:25] tá dizendo que tem Usinagem nela tá
+[00:02:26] vendo aqui ó os dois furinhos da
+[00:02:27] dobradiça o que que são esses dois
+[00:02:29] furinhos são esses dois furinhos aqui ó
+[00:02:31] ó esses dois furinhos da dobradiça vamos
+[00:02:34] ver agora o lado b ó vou maximizar no
+[00:02:36] lado B tem o furo ali da da broca que
+[00:02:38] vai passar que é esse furo que tá aqui
+[00:02:41] desse outro lado aqui agora vamos
+[00:02:43] verificar aqui a lateral porque a
+[00:02:44] lingueta tá ali né tem dois furinho na
+[00:02:46] lingueta vamos clicar aqui clicar na
+[00:02:47] lateral né Opa deixa eu fechar essa
+[00:02:50] telinha E vamos abrir ela de novo na
+[00:02:52] lateral também tem que ter esses dois
+[00:02:53] furinhos mas ó se ela tem que estar
+[00:02:55] encostada tá para ter os dois furinhos
+[00:02:57] eu não sei se eu encostei mas eu acho ó
+[00:02:58] encostei tá ali ó os dois furinhos na da
+[00:03:01] Linguinha na lateral também beleza
+[00:03:04] funciona tudo né

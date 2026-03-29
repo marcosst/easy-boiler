@@ -1,0 +1,348 @@
+[00:00:0] Então pessoal agora vamos na parte
+[00:00:2] principal do programa que eu acho o
+[00:00:3] ápice desse programa é essa questão aqui
+[00:00:6] de alertas né então eu provoquei vários
+[00:00:9] erros nesses ambientes aqui ó tem vários
+[00:00:11] erros nele tá eu vou mostrar depois para
+[00:00:14] você aparentemente aqui vocês não vejam
+[00:00:16] nenhum erro né parece tá tudo certinho
+[00:00:18] tudo perfeitinho né mas tem vários erros
+[00:00:20] aqui eu vou te mostrar agora como ele
+[00:00:22] vai corrigir esses erros então para
+[00:00:24] corrigir o erro a gente vem aqui clica
+[00:00:25] na Serrinha né ó ele vai vai estar assim
+[00:00:28] em projetos para vocês tá vocês vão aqui
+[00:00:30] ó e coloca o nome o número coloca o nome
+[00:00:33] do projeto a espessura e clica em gravar
+[00:00:36] tá gravando a gente vem aqui para cima e
+[00:00:39] clica em revisar clicando em revisar
+[00:00:42] clica em sim então em modo revisão Agora
+[00:00:44] posso fechar essa telinha E eu vou
+[00:00:45] clicar aqui ó nesse nesse mensagenzinha
+[00:00:47] de alerta ó clico nela ele vai abrir
+[00:00:49] essa telinha aqui ó vou até deixar nesse
+[00:00:51] cantinho ó para vocês ver telinha de
+[00:00:52] alerta então o que que tem aqui ó como
+[00:00:54] tem vários erros esse quadradinho aqui é
+[00:00:56] uma Usinagem que tem aqui na lateral
+[00:00:57] vamos começar pelas Usinagens clicando
+[00:00:59] aqui
+[00:01:0] dimensões para Usinagem vamos ver se a
+[00:01:2] dimensão Não tá passando ou tá uma
+[00:01:4] dentro da outra é ó está dentro dentro
+[00:01:7] da caixa quer dizer né Então as
+[00:01:8] dimensões está tudo certo por aqui
+[00:01:11] sobreposição vamos ver se não tem
+[00:01:12] nenhuma Usinagem uma em cima da outra
+[00:01:14] vamos ver não tem nada tudo certinho
+[00:01:17] trabalhos não aplicados clico aqui Opa
+[00:01:20] apareceu um aqui ó então o que que que
+[00:01:22] que seria isso aqui vou clicar nele ó tá
+[00:01:24] ali Ele pintou de vermelhinho que que
+[00:01:27] aconteceu com ele eu devo ter mexido a
+[00:01:28] caixa e a usinagem saiu fora entende
+[00:01:31] então vamos pegar e vamos encostar na
+[00:01:33] caixa por na versão 19 isso aqui não
+[00:01:36] fica trelado na 2024 quando tu mexe a
+[00:01:39] caixa ele vai junto mas quem tem uma
+[00:01:40] versão antiga tem que tomar cuidado com
+[00:01:42] essa informação então encostei na caixa
+[00:01:44] vamos aqui ó clicar em revisar de
+[00:01:47] novo ó já saiu foi corrigido essa esse
+[00:01:51] problema vamos pro outro
+[00:01:53] material aplicado apli eh materiais
+[00:01:56] aplicados vamos clicar aqui então Quais
+[00:01:58] foi os materiais aplicados foi tudo MDF
+[00:02:0] branco MDF branco MDF branco MDF branco
+[00:02:2] tá tudo branco aqui e tá dizendo que
+[00:02:4] todos os materiais estão branc
+[00:02:5] perfeitamente correto vamos vir aqui no
+[00:02:9] no não vamos fazer um um bugzinho aqui ó
+[00:02:12] antes de revisar né vamos vir aqui já
+[00:02:13] vamos fazer até um bug para esse
+[00:02:14] material PR vocês entender como é que é
+[00:02:16] vou clicar aqui clico na prateleira
+[00:02:19] clico aqui no material vamos trocar o
+[00:02:21] MDF essa peça eu quero que seja esse
+[00:02:25] aqui ó essa peça vai ser essa cor tá
+[00:02:28] beleza que que vai acontecer agora vamos
+[00:02:30] em modos revisar vamos ver os materiais
+[00:02:33] aplicados se eu tiver olhando assim ó
+[00:02:35] todo o meu material é branco eu queria
+[00:02:36] que fosse tudo branco aí eu venho aqui
+[00:02:38] Opa tem uma Atena aqui no meio tem uma
+[00:02:41] Atena já me avisou aqui vamos clicar ali
+[00:02:42] vamos ver onde é que tá esse Atena
+[00:02:44] seleciona aqui ele vai pintar em
+[00:02:45] vermelho lá ó se não tiver vendo coloca
+[00:02:48] em raio x quando eu coloco em raio x ó a
+[00:02:50] hora que eu clico ó ele mostra lá em
+[00:02:52] vermelho tá o branco Ó esse aqui é
+[00:02:53] branco isso aqui é em vermelho Opa essa
+[00:02:55] peça tá em Atena aí tu pode tirar do R X
+[00:02:58] para ver oh tá em Atena mesmo Então o
+[00:03:0] que a gente faz vamos lá na cor clico na
+[00:03:3] mira verde e vou trocar essa daqui para
+[00:03:6] MDF de novo né na peça vamos pegar o MDF
+[00:03:9] branco e aplico nele agora vamos ali
+[00:03:13] vamos revisar agora o material se tá
+[00:03:14] tudo branquinho mesmo ó tudo branco da
+[00:03:17] Duratex beleza bordas aplicad
+[00:03:20] aparentemente aqui o meu projeto tá
+[00:03:21] certinho né como é que tá a fita de
+[00:03:23] bordo dele vamos clicar aqui vamos ver
+[00:03:24] quais são as cores que estão aplicadas
+[00:03:26] branco branco Opa brze onde é que tem o
+[00:03:28] brze aqui Vamos botar em raio x para
+[00:03:30] vocês verem ó não sei onde é que tá o
+[00:03:32] brze Então vamos clicar aqui e
+[00:03:34] selecionar o brze olha lá ele já pintou
+[00:03:36] em vermelhinho ali ó Então vamos tirar
+[00:03:38] do RX só para vocês verem vou ocultar as
+[00:03:40] portas aqui ó existe um botão camadas e
+[00:03:42] a gente vem aqui ó nas portas elimina as
+[00:03:44] portas então o que que ele deu Aqui ó
+[00:03:46] ele deu que aqui tem uma fita diferente
+[00:03:49] ó em outra cor como é que faço para
+[00:03:51] pintar a fita posso vir aqui na
+[00:03:55] na na na fita não desculpa vem aqui na
+[00:03:59] na na cor fita de borda clico a fita de
+[00:04:2] borda eu quero que essa fita de borda
+[00:04:4] aqui Fique branco né onde é que tá o
+[00:04:6] branco aqui Deixa eu achar o branco
+[00:04:8] branco branco branco TX tá aqui ó então
+[00:04:13] clico aqui e pinto ela de branco Beleza
+[00:04:15] já foi corrigido a fita de borda não tem
+[00:04:17] erro de fita de borda para outra cor
+[00:04:18] vamos habilitar de novo as portas ó
+[00:04:21] habilitei as portas Vamos pro próximo
+[00:04:23] vamos Daí vamos ver se saiu esse brze
+[00:04:25] dali ó todas o MDF tá tudo branco todas
+[00:04:28] as fitas estão brancas perfeito vamos
+[00:04:31] agora em
+[00:04:32] Componentes peças em colisão Opa vamos
+[00:04:35] ver se tem alguma coisa batendo op tem
+[00:04:37] batendo aqui ó vamos lá clico aqui nessa
+[00:04:39] lupinha Ô tá ali em vermelho ó o que que
+[00:04:41] tá batendo essa peça com se eu clicar na
+[00:04:44] outra lupinha ó tá batendo lá embaixo e
+[00:04:46] na outra tá batendo aqui ó vou te
+[00:04:47] mostrar ali o que que é o embaixo ele tá
+[00:04:49] batendo colidindo dessas duas aqui
+[00:04:50] também ó colide essa ess essa então ó
+[00:04:52] são todas as peça se eu for selecionando
+[00:04:54] ó essa essa a lateral e a outra lateral
+[00:04:59] que é desse lado ali ó certo então todas
+[00:05:2] as peças estão colidindo para visualizar
+[00:05:4] melhor né bota em raio x ó daí vocês vai
+[00:05:6] saber onde é que tá colidindo clicando
+[00:05:7] aqui ó essa tá colidindo essa tá
+[00:05:9] colidindo essa tá colidindo E essa tá
+[00:05:11] colidindo tem algo de errado um móvel tá
+[00:05:13] em cima do outro dou um zoom olha ali ó
+[00:05:15] era muito pouquinha coisa mas estava um
+[00:05:17] em cima do outro poderia dar um erro lá
+[00:05:18] na produção né então encostei aqui vamos
+[00:05:21] ver se corrigiu materiais aplicado já
+[00:05:24] foi né Posso até fechar então vamos aqui
+[00:05:25] colisão vamos corrigir sumiu as colisão
+[00:05:28] não tem mais nenhum módulo colidindo
+[00:05:30] perfeito Vamos no próximo módulos abaixo
+[00:05:33] do nível do piso vamos ver se tem algum
+[00:05:35] não tá tudo no nível do piso elementos
+[00:05:38] ocultos o que que acontece com esses
+[00:05:39] elementos ocultos tá por exemplo vou
+[00:05:41] ocultar esse módulo aqui ó ocultar tô
+[00:05:43] aqui com o projeto e vamos clicar em
+[00:05:45] elementos ocultos opa ele vai dizer ó
+[00:05:47] tem um balcão oculto aqui ó Opa oculto
+[00:05:49] vamos clicar nele o que que é ah op
+[00:05:50] balcão tá oculto então editar resibir
+[00:05:54] tudo beleza vamos ver se tem mais algum
+[00:05:56] oculto não não tem mais nenhum oculto tá
+[00:05:58] certinho componentes não válidos vamos
+[00:06:2] ver se tem algum não tem nenhum que não
+[00:06:3] é válido o que que é componente não
+[00:06:4] válido às vezes eu crio um componente
+[00:06:6] vou até criar um aqui ó e ele vai te
+[00:06:9] dizer vou criar um componente aqui
+[00:06:11] qualquer ele vai te perguntar se tu quer
+[00:06:14] se isso aqui é um componente mesmo não
+[00:06:15] vale do que não é criar componente ó
+[00:06:18] Criei um componente isso aqui é um
+[00:06:20] componente qualquer não pertence a up
+[00:06:21] Mob Então vamos clicar aqui em
+[00:06:23] Componentes não válido ele vai aparecer
+[00:06:25] ó entende ó tá ali ó esse é um
+[00:06:27] componente não válido no sistema e
+[00:06:30] exatamente ele não é válido mesmo então
+[00:06:32] vou deletar ele se eu quiser para ficar
+[00:06:33] mais limpo né E vamos remover ó não tem
+[00:06:36] mais nenhum componentes com
+[00:06:39] sobreposição ó Opa apareceu dois o que
+[00:06:42] que é que tá sobrepondo ô tá lá ó que
+[00:06:44] que aconteceu aqui gente Ô tem uma
+[00:06:46] dobradiça em cima de uma prateleira ó
+[00:06:49] onde é que essa dobradiça tá pegando em
+[00:06:50] cima da prateleira ó ele já acusou nas
+[00:06:52] duas peças então o que que a gente vai
+[00:06:54] fazer aqui agora vamos abrir a porta
+[00:06:56] vamos até tirar do rax aqui para vocês
+[00:06:57] verem ó eu posso fazer duas duas funções
+[00:07:0] aqui mexer na prateleira ou mexer na
+[00:07:3] dobradiça como é que eu mexeria na
+[00:07:5] prateleira posso vir aqui na prateleira
+[00:07:6] ó clico aqui no na na mira amarela clico
+[00:07:10] na prateleira e eu posso dizer aqui ó
+[00:07:11] que ela tem uma medida centralizar não e
+[00:07:15] a posição dela vai ser de 25 beleza ele
+[00:07:18] já vai eliminar o erro lá quer ver ó
+[00:07:20] vamos resolver ó já vai resolver o erro
+[00:07:23] o outra função o que que é eu vou botar
+[00:07:25] aqui é centralizar ele vai botar no
+[00:07:27] centro de novo beleza tá pegando em cima
+[00:07:29] vamos ver o erro ali ele vai pegar é
+[00:07:31] sobreposição ó vai pegar o erro de novo
+[00:07:34] se eu clicar aqui ele vai dizer onde é
+[00:07:35] que tá o erro nessa dobradiça nessa peça
+[00:07:37] a outra função que tem é se eu clicar na
+[00:07:41] mira amarela clico nas dobradiças ó eu
+[00:07:44] tenho configurações dessa dobradiça né
+[00:07:46] eu posso adicionar uma dobradiça que foi
+[00:07:48] o que eu adicionei aqui no meio eu posso
+[00:07:49] deixar zero que eu não adiciono né ali
+[00:07:52] zero beleza eu posso vir aqui e
+[00:07:55] adicionar duas que devia ficar mais duas
+[00:07:56] ali no intervalo que já também vai
+[00:07:59] eliminar ou eu posso deixar essa
+[00:08:1] dobradiça pegando ali em cima e aqui
+[00:08:4] embaixo ó vocês vejam que tem uma
+[00:08:5] mirazinha aqui ó certo eu clico na mira
+[00:08:8] amarela e clico bem nela ali ó na
+[00:08:10] Mirinha entendesse o que que acontece
+[00:08:12] ele me mostra todas as dobradiças que
+[00:08:14] tem desse lado então a primeira de baixo
+[00:08:16] para cima aqui a primeira eu quero que
+[00:08:17] ela movimente cinco para cima ol ali ó
+[00:08:20] vai movimentar cinco para cima a segunda
+[00:08:23] é a do meio essa aqui eu quero
+[00:08:25] movimentar quantas cinco para cima
+[00:08:26] também vamos supor eu posso mexer todas
+[00:08:29] tá ó já livrou ali já a terceira eu
+[00:08:32] quero botar para baixo tá negativo -5
+[00:08:35] posso botar se eu botar para cima pode
+[00:08:37] subir dema menos C então eu vai em ordem
+[00:08:40] da Mirinha para lá tu vai mexendo nelas
+[00:08:42] ó então eu livrei essa dobradiça dessa
+[00:08:44] posição então eu posso mexer todas elas
+[00:08:46] por essa função aqui que é nessa
+[00:08:48] mirazinha aqui embaixo ou vi no Amarelo
+[00:08:51] aqui né se eu clicar no Amarelo Ó eu
+[00:08:53] também consigo dizer a margem que aqui
+[00:08:55] aqui em cima claro que agora ela já tá
+[00:08:56] toda desconfigurada vamos dizer que a
+[00:08:58] margem é de de 20
+[00:09:0] né ele vai mexer nas margens também aqui
+[00:09:1] de fora aqui ó entende se vai juntar
+[00:09:3] mais vamos dizer que a margem aqui ó eu
+[00:09:5] quero só 50
+[00:09:7] ó posso mexer nessas margens aqui
+[00:09:9] entende então o que aconteceu a
+[00:09:11] dobradiça já livrou também né então
+[00:09:13] venho aqui e vamos corrigir não tem mais
+[00:09:16] pe colisão componentes que a realizar a
+[00:09:19] atualização esse aqui gente ó apareceu
+[00:09:21] vários vocês notam que apareceu vários
+[00:09:23] Por que que apareceu vários porque eu
+[00:09:24] mexi pra caixa ficar na minha
+[00:09:26] configuração não quer dizer que tá
+[00:09:28] errado tá a minha configuração Eu testei
+[00:09:30] configurei tudo já testei ela já tá
+[00:09:32] validada Ele só tá dizendo que foi uma
+[00:09:34] peça que eu atualizei ó porque essa
+[00:09:35] caixa a base era por dentro mas eu mudei
+[00:09:38] o kit e botei o kit ali por ali ó então
+[00:09:40] ele tá dizendo que tinha um kit aqui ó
+[00:09:41] entende mas é porque tá já validado para
+[00:09:44] mim então isso aqui é meio que é só tá
+[00:09:46] te avisando o que que tu atualizou na
+[00:09:48] tua caixa ó todas as peças que eu
+[00:09:50] atualizei nessa caixa para ficar do meu
+[00:09:51] padrão entendesse é só isso isso aqui
+[00:09:54] isso aqui bem dizer tu não precisa
+[00:09:56] corrigir nada né então vamos ali mais
+[00:09:59] alertas que que tem aqui eh avisos
+[00:10:2] construtivos vamos ver se tem algum não
+[00:10:4] tem componentes com erro ah componentes
+[00:10:7] com erro vamos lá vamos causar um erro
+[00:10:9] aqui então nesse componente aqui ó vamos
+[00:10:10] pegar aqui eu vou desligar o alerta Às
+[00:10:13] vezes pode ser que o alerta esteja
+[00:10:15] desligado Alerta tá desligado ali então
+[00:10:18] eu vou pegar aqui dentro de aqui dentro
+[00:10:21] mesmo cozinhas vamos pegar um
+[00:10:24] basculante vamos provocar um erro
+[00:10:27] aqui se eu quero que esse basculante
+[00:10:29] fica encostado nessa caixa eu aperto a
+[00:10:31] tecla control clico na caixa aperto a
+[00:10:34] setinha pro lado e dou um enter ó ele
+[00:10:36] vai ficar encostadinho ali Beleza então
+[00:10:38] vou provocar um erro nesse aqui ó vou
+[00:10:40] aumentar essa caixa maior do que o
+[00:10:42] permitido certo o erro não apareceu aqui
+[00:10:44] ó por quê Porque a camada está
+[00:10:47] desabilitada ó tem um erro ali ó tá
+[00:10:49] vendo eu vou des deixar vamos dizer que
+[00:10:51] tá com erro assim eu não percebi tá
+[00:10:53] então eu vou vou verificar aqui no
+[00:10:55] sistema vamos lá se tem algum alerta de
+[00:10:57] erro Opa tem um erro aqui que quer dizer
+[00:10:59] aqui eu não vi passou por mim então tem
+[00:11:2] um alerta de erro aqui que é o ID tal no
+[00:11:4] sistema né então vamos pegar aqui ó
+[00:11:6] deixa eu botar a transparente ver se
+[00:11:8] esse aqui eu acho que esse aqui não
+[00:11:9] seleciona É esse aqui não seleciona tá
+[00:11:11] dizendo tem um erro aqui nesse
+[00:11:12] componente ó então para te saber qual é
+[00:11:14] o componente que tá com erro né você vem
+[00:11:17] em camadas e habilita os alertas ele já
+[00:11:19] dá um alerta ó bem se quem tiver
+[00:11:22] trabalhando já com esse Alerta ó tá ali
+[00:11:23] ó componente com erro é esse aqui ó
+[00:11:26] entendesse então é mais fácil de você
+[00:11:28] localizar esse esses erros Então como é
+[00:11:30] que eu vou arrumar ele tá muito grande
+[00:11:31] ele tá com erro esse componente tá maior
+[00:11:33] do que o permitido então eu vou diminuir
+[00:11:35] ele aqui ó ele vai eliminar o erro e
+[00:11:38] vamos clicar aqui não vai ter mais erro
+[00:11:41] né ó Opa aqui deixa eu vir para
+[00:11:44] cima ainda tá com erro Opa tá com erro
+[00:11:48] porque tá em cima vamos ver tirar aqui
+[00:11:52] vamos clicar aqui em configuração Deixa
+[00:11:54] eu só ver se é se era esse mesmo que
+[00:11:55] tava com erro clico aqui
+[00:11:59] Deixa eu só tirar as telinhas aqui da
+[00:12:1] frente gente que eu acabei abrindo telas
+[00:12:3] demais aqui aqui isso aqui tá mudando tá
+[00:12:5] essas telas agora vão ficar tudo num
+[00:12:7] campo
+[00:12:8] só vamos ver se não tem mais erro Vamos
+[00:12:11] abrir aqui ó Alerta sumiu erro né sumiu
+[00:12:15] erro deixa eu ver se aqui ele atualiza
+[00:12:18] aqui e atualiza é ele continua marcando
+[00:12:21] aqui continua marcando aqui mas já sumiu
+[00:12:24] o erro né já arrumou o componente beleza
+[00:12:28] eu achei que ele ia suir aqui mas ele
+[00:12:29] não some então esse aqui ele não some a
+[00:12:32] te avisou que aquele componente ele tava
+[00:12:33] com erro e já foi corrigido beleza essa
+[00:12:36] é a parte de erro dele né deixa eu dar
+[00:12:39] mais uma ajustada aqui eu acho que não é
+[00:12:41] é não esse erro ainda permanece ali
+[00:12:43] talvez deve ter um bugzinho aqui vou até
+[00:12:46] falar com o pessoal lá mas então Aqui tá
+[00:12:49] dizendo que tinha um erro né e eu já
+[00:12:50] arrumei esse erro já sumiu o alerta de
+[00:12:52] erro então já tá tudo funcionar beleza

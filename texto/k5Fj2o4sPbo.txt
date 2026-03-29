@@ -1,0 +1,215 @@
+[00:00:0] bom dois modelos de caixa que a gente tá
+[00:00:3] desenvolvendo aqui ó primeiro modelo
+[00:00:5] cliente pediu para essa Travessa não
+[00:00:8] mexer na altura e só mexer nas
+[00:00:10] estruturas da caixa que é 15.5 aqui ó a
+[00:00:12] estrutura fica com 15 esse aqui sempre
+[00:00:14] que descer vai descer com 18 Então esse
+[00:00:16] aquilo ali desce com 18 e esse aqui de
+[00:00:19] trás também com 18 mm o resto é com 15 6
+[00:00:22] mm fundo parafusado por trás Então vou
+[00:00:25] mostrar essa caixa aqui por trás para
+[00:00:26] vocês entenderem como é que funciona
+[00:00:28] notem que ela tem vários para parafusos
+[00:00:30] aqui ó então além dela cobrar os
+[00:00:32] parafusos ela também está furando Deixa
+[00:00:35] eu botar aqui em modo de de produção
+[00:00:38] senão a gente não vai L do revisor senão
+[00:00:40] a gente não abre Então ela já tá furando
+[00:00:41] toda a parte aqui ó tanto embaixo el
+[00:00:44] chega um pouquinho ali ó as furas
+[00:00:45] embaixo Furo da divisória tá esses furos
+[00:00:47] aqui no meio são os furos da divisória e
+[00:00:49] a divisória também a gente pode vir aqui
+[00:00:51] ó e modificar ela vou dizer que não é
+[00:00:53] centralizada e ela vai chegar uns 20 cm
+[00:00:56] para cá os parafusos vem junto certo
+[00:00:59] então tudo acanha os parafusos e outro
+[00:01:1] detalhe também é que a cada 20 ele pediu
+[00:01:4] que a cada 20 cm ele coloca um parafuso
+[00:01:6] Então o que a gente vai fazer nessa
+[00:01:8] caixa vamos tirar a altura dela vamos
+[00:01:10] dizer que ela tem 30 então eu diminuir
+[00:01:12] para 30 vai ficar só dois parafusos aqui
+[00:01:15] ó certo ó dois na divisória dois aqui
+[00:01:17] dois ali e se eu pegar e diminuir na
+[00:01:19] largura também ó 30 ele vai diminuir
+[00:01:22] essa quantidade de parafuso aqui também
+[00:01:24] ó e a profundidade também diminui
+[00:01:28] profundidade 50 vou dizer que tem 30
+[00:01:30] também vai diminuir a quantidade de
+[00:01:32] parafuso a depois que uma determinada
+[00:01:34] medida Tá então vamos dizer aqui agora
+[00:01:36] que o comprimento tem 1,30 M que a
+[00:01:39] profundidade tem 60 e que a altura tem
+[00:01:42] 70 ele vai redesenhar essa caixa e vai
+[00:01:45] aumentar a quantidade de parafuso
+[00:01:46] embaixo também porque ela é muito maior
+[00:01:48] aqui na na parte de baixo então a cada
+[00:01:50] 20 cm tem um parafuso E se eu pegar ele
+[00:01:53] aqui ó divisória V clicar na divisória e
+[00:01:56] vão dizer que agora ela centralizada
+[00:01:58] aqui ó esses parafusos vão apanhar a
+[00:02:0] divisória até no centro então esse é um
+[00:02:2] modelo de caixa tá faltando desenvolver
+[00:02:4] mais uns dois modelos que ele pediu aí
+[00:02:6] eu vou ajustar e já vou subir para ele
+[00:02:9] amanhã tá Amanhã mesmo a gente já ele já
+[00:02:11] vai receber essa nova caixa então esse
+[00:02:13] aqui é uma caixa que dá de fazer o outro
+[00:02:15] modelo de caixa é essa daqui ó então o
+[00:02:18] que que eu vou fazer aqui eu vou
+[00:02:19] primeiro vou ocultar essa peça aqui tá
+[00:02:24] vou clicar aqui no ocultar vou ocultar
+[00:02:25] essa peça e vou subir essa caixa sem
+[00:02:31] essa peça carregar componentes vou subir
+[00:02:33] ela sem essa peça aqui
+[00:02:37] ó então a gente vou até subir com outro
+[00:02:40] detalhe aqui ó vamos atualizar
+[00:02:42] aqui eu vou pegar aqui na fixação com
+[00:02:46] réguas e vou dizer que tem uma batente ó
+[00:02:48] fixação traseira com
+[00:02:51] régua eu já botei lá fixação traseiras
+[00:02:54] com Ah não é essa daqui não deixa eu
+[00:02:57] pegar que eu não vou pegar essa caixa
+[00:02:58] aqui não vou pegar outra caixa
+[00:03:0] vou baixar uma caixa
+[00:03:2] daqui tá vou baixar a caixa dele daqui
+[00:03:6] caixas Vou baixar ela aqui ó esse é o
+[00:03:8] modelo de caixa
+[00:03:10] dele ó esse é o modelo de caixa ele vai
+[00:03:13] baixar sem essa parte aqui de cima tá
+[00:03:16] sem a a Texeira por ela tá oculta se eu
+[00:03:19] clicar aqui eu vou habilitar ela então
+[00:03:21] ele vai desenhar essa caixa aqui eu vou
+[00:03:23] botar outro modelo de caixa aqui do lado
+[00:03:25] ó coloco dou enter Vou colocar outro
+[00:03:28] modelo de caixa aqui
+[00:03:30] aqui dou enter então o sistema ele já
+[00:03:34] toda a Caixa tem a sua travessinha se eu
+[00:03:36] clicar nessa daqui ó ela tem a Travessa
+[00:03:38] dela ali tá mas eu vou clicar nessa do
+[00:03:40] Canto e vou ativar essa Travessa ó clico
+[00:03:43] no azul ativo essa e ativo essa ativei a
+[00:03:46] Travessa dessa caixa por quando ele
+[00:03:48] digita a medida da altura da Caixa ele
+[00:03:51] vai pegar junto com essa Travessa ali ó
+[00:03:53] por exemplo ó 71 entende se ele já tá
+[00:03:55] pegando a medida da caixa com a Travessa
+[00:03:58] junta
+[00:04:0] então eu ativei essa medida de dessa
+[00:04:2] Travessa e eu vou dar uma melhorada nela
+[00:04:3] ainda amanhã tá Amanhã eu vou melhorar
+[00:04:5] mais um pouquinho também então quando a
+[00:04:7] gente clica na mira amarela clica nessa
+[00:04:9] Travessa eu tenho aqui adicionar
+[00:04:10] comprimento eu vou adicionar esse
+[00:04:13] comprimento até na parte de dentro aqui
+[00:04:15] ó ele vai crescer essa Travessa até ali
+[00:04:19] certo ó já ficou essa Travessa ali e eu
+[00:04:21] posso vir aqui na mira Verde ó clicar
+[00:04:23] nessa lateral e dizer que essa lateral
+[00:04:25] vai ter uma altura de 70 que é o tamanho
+[00:04:27] daquela Travessa ali ó certo Olha já
+[00:04:30] modificou e já também acrescenta a
+[00:04:33] quantidade de de VB conforme o tamanho
+[00:04:38] da peça cada 40 cm ele tá colocando um
+[00:04:40] VB que que a gente desenvolveu aqui para
+[00:04:43] ele a gente fez esse modelo de de caixa
+[00:04:45] e a gente melhorou um pouquinho né Tem
+[00:04:47] esse modelo de batente mas ele pode
+[00:04:49] escolher outros modelos de batente a
+[00:04:50] gente desenvolveu mais um aqui quando a
+[00:04:52] gente vem em troca fixação com régua eu
+[00:04:54] consigo trocar por esse outro modelo
+[00:04:56] aqui ó notem que eu Estiquei essa
+[00:04:58] Travessa e ela permanece com as mesmas
+[00:05:1] medidas ó profundidade 70 altura de 70 e
+[00:05:3] vai até lá atrás eu se eu clicar aqui na
+[00:05:6] medida amarela aqui ó clicar nessa
+[00:05:7] Travessa eu posso esticar ela para trás
+[00:05:9] a profundidade quero que seja com 30 ele
+[00:05:12] vai aumentar ela até lá atrás tá vendo ó
+[00:05:14] e vai deixar aquela régua ali pode fazer
+[00:05:17] o que você quiser tá então outro detalhe
+[00:05:20] melhoria que a gente vai fazer aqui
+[00:05:21] agora vou fazer até junto com vocês ó
+[00:05:25] aprender um pouquinho também vem interno
+[00:05:27] para a peça lateral eu vou colocar aqui
+[00:05:30] só um não vou fazer pela programação vou
+[00:05:33] fazer manualmente tá vou colocar um não
+[00:05:36] ele não trabalha com minifix ele
+[00:05:37] trabalha com VB deixa eu ver se tem VB
+[00:05:38] aqui Aqui não tem VB no meu meu só tá
+[00:05:41] com minifix v volar minifix mesmo clico
+[00:05:42] no minifix dou enter ele veio aqui pra
+[00:05:45] frente eu vou dizer que esse minifix não
+[00:05:47] é na frente ele é na parte superior
+[00:05:50] venho aqui boto no superior vou dizer
+[00:05:52] que é um só e clique em aplicar ele vai
+[00:05:55] botar um VB ali agora eu quero fazer o
+[00:05:58] quê que esse esse VB Se vocês forem
+[00:06:0] notar aqui ó Nessa Travessa ele já vai
+[00:06:2] furar essa Travessa aqui também ó tá lá
+[00:06:4] ó furo do VB lá ó certo o que que eu vou
+[00:06:7] fazer agora eu vou pegar e VB não
+[00:06:8] minifix eu vou copiar esse aqui e
+[00:06:10] colocar nas outras caixas eu não preciso
+[00:06:12] ficar baixando e configurando pra frente
+[00:06:14] tá eu clico na mira amarela clico nesse
+[00:06:17] aqui clico em copiar ele vira uma Mira
+[00:06:20] azul eu clico nesse clico nesse não
+[00:06:22] preciso colocar em todas as Travessas né
+[00:06:24] E nesse aqui não vai ter então vou
+[00:06:26] clicar só nesse nesse e nesse ó ele já
+[00:06:28] colocou o VB ali em cima já padrão e já
+[00:06:31] vamos ver a Furação já coloca eu vou
+[00:06:33] deixar isso aqui automático também tá
+[00:06:35] lado B tá furado lá ó certo agora a
+[00:06:38] gente vem aqui
+[00:06:39] também vamos pegar na na na parte aqui
+[00:06:43] dessa desse tampinha aqui ó a gente pode
+[00:06:45] colocar também um minifix aqui para
+[00:06:47] travar ali ou um VB né claro que eu acho
+[00:06:49] que VB eu não devo ter aqui mas vamos
+[00:06:50] ver se tem isso aqui é um painel de
+[00:06:52] régua deitada vem agregados
+[00:06:55] eh deixa eu ver aqui para peça
+[00:06:59] acho que é uma régua deitada aqui ó
+[00:07:1] régua deitada de eu ver se tem VB
+[00:07:4] aqui aqui ó tem um VB então eu clico
+[00:07:7] nele clico nessa régua e dou um enter
+[00:07:9] ele vai aparecer na frente tá ali na
+[00:07:11] frente mas eu quero que ele fique o quê
+[00:07:12] nessa lateral então eu vou clicar aqui e
+[00:07:15] vou dizer que é no lado direito e aplico
+[00:07:18] o VB já ficou ali só que eu quero
+[00:07:20] inverter o lado que ele fique para baixo
+[00:07:22] não apareça para cima pronto o VB já tá
+[00:07:25] colocado ali vamos ver se aqui saiu a
+[00:07:27] Furação ó já sai a coração ali coração
+[00:07:30] do fundo já tá tudo paramétrico e
+[00:07:33] automatizado certo ó esse é um modelinho
+[00:07:36] de caixa também que a gente desenvolveu
+[00:07:38] Opa entrei dentro aqui da do armário
+[00:07:41] Então são dois modelinhos de caixa esse
+[00:07:43] outro modelo de caixa aqui o que que vai
+[00:07:44] ser criado agora quando ele ele também
+[00:07:48] tem essa opção de parafusar proel lado e
+[00:07:49] tem a opção de parafusar por baixo então
+[00:07:51] ele vai clicar no botão aqui ó tô
+[00:07:55] fazendo dessa forma mas ainda não está
+[00:07:57] pronto quando ele clicar no na na
+[00:07:59] configuração da caixa aqui ó tu escolhe
+[00:08:1] lateral passante base passante eu vou
+[00:08:3] colocar aqui ó é base encaixada tá vou
+[00:08:6] colocar mais uma opção base encaixada
+[00:08:8] essa base vai aumentar aqui 1 cm p3 tá e
+[00:08:12] ele vai fazer uma Usinagem nessa peça é
+[00:08:15] isso que a gente vai programar agora
+[00:08:17] para ele fazer essa Usinagem aqui sempre
+[00:08:19] sem ele precisar ter várias caixas na
+[00:08:21] mesma caixa ele muda e diz como ele quer
+[00:08:23] na hora que tiver produzindo essa caixa
+[00:08:25] vai acontecer isso tanto com o armário
+[00:08:27] inferior o aéreo e o superior n

@@ -1,0 +1,116 @@
+[00:00:00] vamos lá o dies a gente seleciona a
+[00:00:02] Caixa vai aqui em internos agregados né
+[00:00:06] dos agregados aí ele vai abrir essa
+[00:00:08] caixinha de configuração aqui e a gente
+[00:00:11] vai por exemplo ele abr assim né Vocês
+[00:00:13] vai inferiores rodiz vamos pegar aqui
+[00:00:16] por exemplo rodiz de 50 mm seleciono a
+[00:00:18] caixa pego rodiz de 50 mm clico na caixa
+[00:00:21] e dou um enter automaticamente esse
+[00:00:23] rodiz já vai ser inserido e agregado a
+[00:00:25] essa caixa então se eu mexer na Caixa o
+[00:00:28] Rod já vem junto
+[00:00:30] que que eu posso mexer nesse rodízio
+[00:00:32] aqui ó a gente clica na mira amarela e
+[00:00:34] eu consigo editar o componente ó
+[00:00:36] selecionando o componente eu edito todos
+[00:00:38] os componentes do rodízio vamos dizer
+[00:00:40] que eu quero botar um rodízio Central
+[00:00:41] clique em aplicar ele acrescenta um
+[00:00:43] rodízio no centro desse caixote tá eu
+[00:00:46] posso mexer nas margens laterais quero
+[00:00:48] 10 e 10 quero que deixar um 10 ao redor
+[00:00:52] aqui ó então ele já modifica todo o
+[00:00:54] rodízio nesse nesse vão aqui de nessas
+[00:00:58] configurações vamos sup porque eu quero
+[00:01:00] que esse rodízio ele avance e pegue um
+[00:01:02] outro caixote que esteja em outro
+[00:01:03] caixote aqui do lado então eu venho aqui
+[00:01:05] na margem lateral por exemplo eu posso
+[00:01:07] vir na margem lateral pode vir na
+[00:01:08] esquerda né a gente pode adicionar aqui
+[00:01:10] também ó vamos adicionar o comprimento é
+[00:01:14] 150 ó ele já vai para lá vamos dizer que
+[00:01:18] eu quero adicionar mais uns 500 né para
+[00:01:21] esse rodízio pegar numa outra caixa que
+[00:01:23] você coloca aqui do lado aqui ó
+[00:01:24] entenderam dá para fazer dessa forma
+[00:01:26] agora vamos dizer que por exemplo todos
+[00:01:28] esses rodiz rodiz sim simples mas eu
+[00:01:30] quero que esse rodízio aqui ó seja com
+[00:01:32] freio esses dois da frente aqui seja com
+[00:01:34] freio como é que eu faria isso então a
+[00:01:36] gente seleciona a caixa eu posso
+[00:01:37] selecionar a caixa ou selecionar o
+[00:01:38] componente tá seleciona esse componente
+[00:01:40] e ven aqui ó no aqui em cima Em
+[00:01:42] substituição ó troca de modelos tá vendo
+[00:01:44] clico nele clico nele clico em rodízio
+[00:01:47] de 50 mm e digo aqui ó e quero
+[00:01:51] Substituir eu posso trocar todos os
+[00:01:53] rodízios se clicando no meio eu troco
+[00:01:55] todos os rodízios para freio e aqui em
+[00:01:57] cima vocês vê que tem uma mãozinha ó se
+[00:02:00] eu clico na mãozinha eu consigo
+[00:02:01] selecionar qual rodiz eu quero
+[00:02:03] substituir quero botar esse com freio ó
+[00:02:05] tá vendo que ele já modificou ali e eu
+[00:02:07] quero botar esse aqui com freio ó olha
+[00:02:09] ali ele já modificou esse os outros
+[00:02:10] ficam simples vamos supor que eu quero
+[00:02:12] trocar mais é só ir clicando ó clico
+[00:02:14] nesse aí eu clico nesse eu quero com
+[00:02:16] freio esses dois de trás também ele já
+[00:02:18] substitui Então sai um simples e quatro
+[00:02:19] com freio Ah não eu não quero esses dois
+[00:02:21] de trás com freio Vamos pegar esse outro
+[00:02:23] modelo Aqui de baixo que é sem freio
+[00:02:25] clico na mãozinha clico nele ele já
+[00:02:28] substitui clico nele ele já substitui
+[00:02:30] lembrando né que tudo que a gente
+[00:02:31] acrescenta a caixa tudo que eu
+[00:02:33] acrescento aqui na caixa ele já vem com
+[00:02:35] Furação Então vamos ver a Furação dessa
+[00:02:38] caixa aqui clico aqui aí já ó clico
+[00:02:41] nessa no tampo na emira Verde vamos
+[00:02:44] maximizar aqui e vamos clicar no lado b
+[00:02:45] ó ele já furou aqui ó tá vendo que os
+[00:02:47] outros dois estão na outra caixa aqui
+[00:02:49] como não tem uma outra caixa aqui do
+[00:02:51] lado né Opa Acabei fechando aqui BR
+[00:02:54] engano como não tem uma outra caixa aqui
+[00:02:56] do lado ele não vai sair furo aqui né
+[00:02:59] ele teria que sair na outra caixa que
+[00:03:01] estaria encostada nesse módulo aqui a
+[00:03:03] gente pode até já fazer um teste vamos
+[00:03:04] pegar ele aqui é aqui construir balcão
+[00:03:09] vamos pegar um ó selecionando esse
+[00:03:11] balcão aqui vamos pegar um outro balcão
+[00:03:13] aqui
+[00:03:14] ó e vamos colocá-lo ele aqui do lado ó
+[00:03:18] desse balcão dou um enter Opa acabei
+[00:03:20] colocando lá embaixo porque já tinha um
+[00:03:21] rodice né então ele selecionou por baixo
+[00:03:23] era para selecionar por cima Ah já vou
+[00:03:25] mostrar essa função aqui então também
+[00:03:26] que é bem legal clico aqui em delete
+[00:03:28] seleciona esse caixote clico nesse
+[00:03:30] caixote aqui ó se eu clico uma vez ele
+[00:03:32] alinha por baixo só que embaixo tem o
+[00:03:33] rodiesel ele alinhou pel rodiesel eu vou
+[00:03:35] clicar mais uma vez pro lado direito
+[00:03:36] aqui ó vocês estão vendo tem as setas do
+[00:03:38] teclado aqui no canto inferior aqui né Ó
+[00:03:40] então vou clicar mais uma vez ele vai
+[00:03:42] alinhar por cima e dou um enter então
+[00:03:43] ele já alinhou minha caixa por cima e já
+[00:03:45] vai ficar certinho uma caixa alinhada
+[00:03:47] pela outra então vou clicar agora na
+[00:03:49] Furação dessa peça aqui ele tem que sair
+[00:03:50] os furos bem no meio desse rodízio né
+[00:03:53] então vamos verificar aqui tá aqui atrás
+[00:03:55] vamos verificar a Furação dessa peça
+[00:03:57] Verde aqui que eu selecionei pela Mira
+[00:03:59] Verde
+[00:04:00] ó saiu só no meio os rodis é 100%
+[00:04:03] automatizado

@@ -1,0 +1,101 @@
+[00:00:00] bom agora nós vamos ver um
+[00:00:03] pouquinho deixa eu maximizar aqui agora
+[00:00:06] vamos ver um pouquinho sobre os os
+[00:00:08] insumos tá então existe esse painel aqui
+[00:00:10] esse dashboard onde a gente consegue
+[00:00:13] consegue mexer em tudo em orçamentos nas
+[00:00:17] cores Ó você pode botar cor de textura
+[00:00:19] aparece tudo aqui eu consigo habilitar e
+[00:00:20] desabilitar uma cor para usar lá no
+[00:00:21] sistema ó aqui vermelhinho tá
+[00:00:23] desabilitado verdinho tá habilitado
+[00:00:25] então eu vou em aqui emos Primeiro vou
+[00:00:28] mostrar a parte de insumos insumos aqui
+[00:00:30] tem vários tipos aqui que a gente pode
+[00:00:31] configurar vamos em lista de insumos e
+[00:00:34] markup para vocês saberem ó que cada
+[00:00:36] insumo eu posso criar tudo aqui até ó ó
+[00:00:39] Cola eh colagem da borda né E aqui ó em
+[00:00:44] colar se eu chegar pro ladinho aqui
+[00:00:45] vocês vão ver ó que a gente tem consegue
+[00:00:48] editar e eu consigo botar a quebra dessa
+[00:00:51] colagem da borda o custo dela e o valor
+[00:00:54] que eu vou vender e vai ser um tipo
+[00:00:56] serviço se é linear ou não se metro não
+[00:01:00] daí tu vai conseguindo fazer todos os
+[00:01:01] serviços aqui isso aqui é um custo né
+[00:01:03] que a gente cobra para fazer a colagem
+[00:01:05] da borda agora vamos ver aqui
+[00:01:06] interessante vamos botar aqui ó
+[00:01:07] dobradiça dobradiça ele vai filtrar
+[00:01:11] dobradiça aqui na cima dobradiça 165
+[00:01:14] pode ir filtrando por mais mais códigos
+[00:01:16] que tu queira tá Ah o filtro aqui também
+[00:01:18] ó eu quero tudo que tenha dobradiça por
+[00:01:20] cento e for reta entendeu Ó reta pode
+[00:01:25] botar dobradiça por Cent e reta ele vai
+[00:01:27] me localizar tudo que tem no no meio
+[00:01:30] aqui ó de dobra e tem que contém a
+[00:01:32] palavra reta no meio ó tá vendo Então
+[00:01:35] tudo onde tem reta ele vai me aparecer ó
+[00:01:37] certo então por exemplo vamos pegar essa
+[00:01:39] dobr aqui só para mostrar aqui se eu t
+[00:01:42] eu tô vendo aqui a dobr tem ela
+[00:01:44] cadastrada o custo dela o valor que vai
+[00:01:46] vender vamos clicar aqui ó o id o id
+[00:01:49] vocês vão ver que não tem nada dentro ó
+[00:01:50] tá vendo porque esse aqui é só o valor
+[00:01:52] da dobradiça então eu criei essa
+[00:01:54] dobradiça Só que lá no projeto vocês vão
+[00:01:56] observar que ele vai ser um kit de
+[00:01:58] dobradiça Então vamos pegar agora aqui ó
+[00:02:01] kit
+[00:02:03] dobradiça kit dobradiça ó Então aqui tem
+[00:02:06] um kit dobradiça 165 vamos clicar aqui
+[00:02:08] nesse ID ele vai dar os filhos desse
+[00:02:11] componente porque lá no projeto a a
+[00:02:14] dobradiça o que que é o que que
+[00:02:15] acompanhando a dobradiça Então ela
+[00:02:17] acompanha a dobradiça eh acompanha o
+[00:02:20] ponteamento que é o quê aqueles furinhos
+[00:02:22] do lado tá cobrando ó quatro furinho
+[00:02:23] para furar na dobradiça cada dobradiça
+[00:02:25] ficou acrescento lá no projeto cada kit
+[00:02:27] né ele vai cobrar uma dobradiça os
+[00:02:30] quatro furinhos para furar o parafuso o
+[00:02:32] furo caneco tá sendo cobrado aqui também
+[00:02:34] qual o valor que você cobra no furo
+[00:02:36] caneco para não perder no serviço né
+[00:02:38] quantidade de parafuso mais quatro
+[00:02:39] parafusos 16 e mais um kit de parafuso
+[00:02:42] de 25 esse kit aqui foi eu que botei só
+[00:02:45] para para testar Tá mas é então cada
+[00:02:48] dobradiça a gente pode ir colocando os
+[00:02:51] acessórios que vai colocando aqui tá no
+[00:02:53] caso não dobrad é só os parafusos 16 não
+[00:02:55] tem os parafusos 25 então a gente vem
+[00:02:57] aqui e apaga ele daqui depois você que
+[00:02:59] eu tô fazendo testes aqui ainda então
+[00:03:01] vamos lá é a mesma coisa pode ter o kit
+[00:03:04] tem o kit da reta Então o kit dobradiça
+[00:03:06] canto cego com amortecedor tem o Kit
+[00:03:08] dobradiça genérica ISO aqui é o kit
+[00:03:10] dobradiça genérica O que que tá cobrando
+[00:03:12] só entende porque não tem a dobradiça
+[00:03:14] você cobra dobradiça genérica do valor
+[00:03:16] que você quiser tá vendo que ela nesses
+[00:03:17] kits você pode ver que não tem valores ó
+[00:03:20] tá E aqui ó tá marcado como kit ó é um
+[00:03:24] kit então você não bota valor aqui você
+[00:03:26] agrega o que vai dentro desse kit para
+[00:03:28] você usar lá no projeto então isso aqui
+[00:03:30] é um tipo de de de insumos bem detalhado
+[00:03:33] e você pode fazer de n maneiras e
+[00:03:36] colocar adicionar o seu projeto lá no
+[00:03:38] código 3D ó é o como é que vem como é
+[00:03:40] que é o código que tá vindo lá do 3D lá
+[00:03:42] no 3D vem esse código aqui para essa
+[00:03:44] dobradiça Então você atrela esse código
+[00:03:46] nesse id e ele vai começar a orçar isso
+[00:03:48] aqui beleza Depois eu mostro como é que
+[00:03:51] pega o código lá

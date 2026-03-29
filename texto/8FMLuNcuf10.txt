@@ -1,0 +1,81 @@
+[00:00:1] bom olha só eu desenvolvi esse
+[00:00:4] porta-tempero aqui para mim olha que
+[00:00:6] legal essa função aqui ó por exemplo eu
+[00:00:9] abri ele aqui eu desbloqueei ele tá
+[00:00:11] Desbloqueei ele então as duas corrediças
+[00:00:13] estão embaixo eu quero que essa
+[00:00:15] corrediça vá lá para cima Então como é
+[00:00:16] que eu faço eu vou entrando dentro do
+[00:00:18] componente ó vou entrando dentro do
+[00:00:21] componente até
+[00:00:23] chegar Opa ó na corrediça daí se eu
+[00:00:25] clicar nela eu vejo aqui ó corrediça
+[00:00:28] direita Qual a altura que eu eu quero
+[00:00:30] dela eu já fiz o cálculo aqui para ela
+[00:00:32] pegar ali no centro ela é
+[00:00:34] 45 pronto o que que acontece aqui só
+[00:00:38] modificando isso aqui tá gente já
+[00:00:39] modifiquei ali a posição ficou uma
+[00:00:41] corrid embaixo uma corrid em cima então
+[00:00:43] o que que acontece com isso aqui ó a
+[00:00:45] gente pega a Furação vamos ver como é
+[00:00:48] que saiu ó saiu aqui ó tem a ranhura n é
+[00:00:51] que tem uma ar ranhura porque ele tem um
+[00:00:52] fundinho de seis os minix e do outro
+[00:00:54] lado Já saiu a posição dela nesse lado
+[00:00:57] aqui ó ele não saiu a fura
+[00:01:0] Então vamos pegar ele aqui Opa vamos
+[00:01:3] pegar aqui ó esse e recarrego ele ó
+[00:01:7] desse lado não tem Furação como vocês
+[00:01:9] podem ver ó não tem Furação esse lado de
+[00:01:11] baixo tem que ter Furação Então vamos
+[00:01:13] pegar nesse aqui de baixo ele tem que
+[00:01:16] ter Furação Porque tem uma corrediça vou
+[00:01:18] maximizar bem lado b ó Furo da corrediça
+[00:01:21] vamos do outro lado agora esse lado não
+[00:01:23] pode ter furação do lado de fora então
+[00:01:26] clico
+[00:01:27] nele clico
+[00:01:28] aqui CCO no b ó não tem Furação então
+[00:01:32] ele é bem dinâmico mesmo qualquer peça
+[00:01:35] que você arraste Onde você coloca ele
+[00:01:36] fura então o que que eu fiz aqui ó tinha
+[00:01:38] um fundo aqui embaixo esse fundo aqui
+[00:01:41] por baixo é parafusado ele não é
+[00:01:42] ranhurado ali o parafuso ali para dar
+[00:01:43] uma travada né só que esse de cima eu
+[00:01:45] quis fazer ranhurado então o que que
+[00:01:47] acontece nele quando eu vir aqui nessa
+[00:01:49] contra frente vou clicar nela Opa V
+[00:01:53] clicar na contra frente aqui ó e vamos
+[00:01:56] vir aqui na Furação então tem a Furação
+[00:01:59] dos minifix esse lado e do outro lado
+[00:02:0] tem a ranhura só do de cima por quê o de
+[00:02:3] baixo é parafusado por ali ó para dar
+[00:02:5] uma travada né então o de cima tem uma
+[00:02:7] ranhura bem no meio da peça que é
+[00:02:9] arranhou desse fundo a mesma coisa
+[00:02:11] acontece no frontal ó eu vou fechar o
+[00:02:14] frontal aqui para vocês ver tá ó vou
+[00:02:16] fechar o frontal que ela vai ficar assim
+[00:02:18] fechadinha ó eu fiz também as marcação
+[00:02:20] zinha aqui e vai marcar a frente também
+[00:02:22] da gaveta Então vamos lá vamos marcar
+[00:02:24] nesse aqui Opa tem que fechar essa
+[00:02:27] telinha e recarregar ela aqui ó
+[00:02:28] recarreguei ela ó fez os as marcação
+[00:02:31] Zinha né que é parafuso em cima
+[00:02:33] parafusar aqui em cima parafusar embaixo
+[00:02:34] parafusar essa Travessa do outro lado
+[00:02:36] tem a ranhura que desse lado tem a
+[00:02:37] ranhura do outro lado lá ele já vai
+[00:02:39] fazer as marcação zinhas então outro
+[00:02:41] detalhe que vaiem bem legal aqui ó que
+[00:02:43] na frente também se eu vir aqui na
+[00:02:45] frente ele também vai fazer o furo da da
+[00:02:49] dobradiça Não ess não é dobradiça né vai
+[00:02:50] fazer o furo da marcação Zinha daqueles
+[00:02:52] parafusos que eu botei lá dentro legal
+[00:02:54] né Ele é totalmente interativo gente
+[00:02:56] funciona tudo tudo
+[00:02:58] mesmo l

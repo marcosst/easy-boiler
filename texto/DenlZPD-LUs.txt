@@ -1,0 +1,915 @@
+[00:00:0] vamos lá hoje a gente vai fazer uma
+[00:00:2] coisa diferente Vamos pegar esse projeto
+[00:00:4] aqui ó o projeto de um vendedor que ele
+[00:00:6] já tá mais ou menos desenhado aqui já
+[00:00:7] tem as medidas Então já tá bem bacana
+[00:00:9] pra gente passar ele a limo né então
+[00:00:10] vamos selecionar ele aqui clico para cá
+[00:00:12] e vamos digitar uma medida aqui vamos
+[00:00:14] tentar afastar parede uns 5 m Beleza já
+[00:00:16] caiu fora então a gente vai desenhar
+[00:00:17] esse esses móveis na própria parede do
+[00:00:18] sketch que já veio vamos usar o criador
+[00:00:20] de esbolso e vamos desenhar esse
+[00:00:21] dormitório com criador de esbolso tá
+[00:00:22] então Lembrando que aqui já tem as
+[00:00:24] medidas então fica até mais fácil da
+[00:00:25] gente já começar o projeto né Eu vou bem
+[00:00:27] pertinho ali dou um Tab e vou regular a
+[00:00:28] primeira medida do se por 1 e me2
+[00:00:31] inferior beleza vamos deixar longe aqui
+[00:00:33] pra gente ir acompanhando as medidas do
+[00:00:34] lado de lá então a primeira medida é 582
+[00:00:36] 582 dou um enter vou deixar o meu mouse
+[00:00:39] mais longe aqui e vou digitando as
+[00:00:40] medidas a segunda 816 dou um enter a
+[00:00:43] terceira eu aperto control porque a
+[00:00:44] terceira eu vou uma medida diferente né
+[00:00:46] então eu vou pegar bem ali no pontinho
+[00:00:47] Qual é a terceira medida é a parte de
+[00:00:49] baixo ali então tem 1 m por 1 m por 1 m
+[00:00:52] né 1 m por 1 m Isso mesmo tem 1 m
+[00:00:53] embaixo no metro então a gente dá um Tab
+[00:00:55] e digita 1000 por 1,5 que é a espessura
+[00:00:58] do painel Vou digitar aqui 1 m e dou um
+[00:01:1] enter agora vai ter um negativo de 15 MM
+[00:01:3] e mais um painel de 1 m agora dou um Tab
+[00:01:5] e vamos fazer a medida maior que é de
+[00:01:7] 2,600 voltou para 2600 e o painel tem
+[00:01:9] 816 e depois a gente vai fechar a nossa
+[00:01:11] medida ali porque tinha uma medidinha
+[00:01:12] quebrada vamos ver se aqui vai dar
+[00:01:13] quebrada ó não deu certinho e dou um
+[00:01:15] enter finalizo a minha parede aqui vamos
+[00:01:16] fazer essa parte de cima agora do painel
+[00:01:18] então a gente vem bem no cantinho ali
+[00:01:19] clico nele então é a mesma medida que tá
+[00:01:21] sobrando lá ó é 1,60 tá 559 D60 né então
+[00:01:24] vamos lá dou um Tab 16600 para
+[00:01:27] arredondar 1 e me Comecei na inferior
+[00:01:29] também então esse esse painel tem eu
+[00:01:30] posso digitar 1 m né 15 15 ou ir
+[00:01:32] clicando nos pontos que ele vai me dando
+[00:01:33] ali também ó né posso já ir clicando que
+[00:01:35] ele vai ficar igual D enter vai ficar
+[00:01:37] com a mesma medida já marcou todas as
+[00:01:38] medidas ali o que que a gente vai fazer
+[00:01:39] agora vamos substituir esses painéis
+[00:01:41] tudo por painéis já existentes no
+[00:01:42] projeto Então vamos lá vamos pegar pela
+[00:01:43] biblioteca fácil ou eu poderia continuar
+[00:01:45] desenhando retos né vamos continuar
+[00:01:46] desenhando o resto aqui então desse lado
+[00:01:47] aqui também nós temos um uns painéis ali
+[00:01:49] vamos pegar já já que est Construtor na
+[00:01:50] mão vamos começar por aqui então vou
+[00:01:52] vamos ver se ele pegou o ponto lá pegou
+[00:01:54] Vamos só verificar as medidas aqui vou
+[00:01:56] deixar assim ó eu gosto deixar assim daí
+[00:01:57] eu vejo as Duas Medidas ali né então eu
+[00:01:58] dou um Tab primeira medid
+[00:02:0] 1980 por e me também comei pelo inferior
+[00:02:3] então agora vou digitar essa medida ali
+[00:02:5] de cima que tem 921 921 e dou um enter o
+[00:02:9] próximo painel 536 Opa isso 536 enter aí
+[00:02:14] depois eu vou dar um Tab porque vou
+[00:02:16] fazer o painelzinho lá de baixo o painel
+[00:02:17] de baixo tem 60 então 60 por 90 dou um
+[00:02:21] enter já pegou lá o próximo painel de
+[00:02:23] novo Tab ele vai ter 536 por Opa altura
+[00:02:26] dele não a altura dele vai ser 1980
+[00:02:30] por 1,5 não é 1 e me esse aqui né esse
+[00:02:32] aqui vai ser que eu vou engrossar essa
+[00:02:34] ponta aqui então a gente pode usar até
+[00:02:35] um painel engrossado né então 1980 vou
+[00:02:37] fazer um painel de 4,5 aqui é 45.6 Opa
+[00:02:41] 45.6 e dou um ok e vamos já fazer esse
+[00:02:44] pel um pouquinho mais grosso aqui que
+[00:02:45] ele vai ser com 536
+[00:02:48] 536 beleza terminei meu painel ali dou
+[00:02:50] enter finalizo o meu processo agora nós
+[00:02:51] vamos fazer o painelzinho lá de cima e
+[00:02:53] esse de baixo aqui então de cima eu
+[00:02:54] tenho uma prateleira aqui então nós
+[00:02:55] vamos primeiro fazer essa prateleira que
+[00:02:56] depois fica mais fácil nós fazer esse
+[00:02:57] painel aqui ou não né Já pode começar
+[00:02:59] prateleira aqui só que ela vai ser ao
+[00:03:0] contrário vou dar um Tab e a prateleira
+[00:03:2] vai ser de 1200 que é da medida por 15.5
+[00:03:4] Opa
+[00:03:5] 15.5 tô com o notebook aqui e é
+[00:03:7] diferente o ponto dele não ok Opa e ela
+[00:03:10] começa pelo lado superior né de cima
+[00:03:11] para baixo Então essa esse painel aqui
+[00:03:13] ele também tem a mesma medida de 1900
+[00:03:15] dou enter finalizei esse aqui agora
+[00:03:16] vamos desenhar a prateleira então a
+[00:03:17] prateleira a gente pega bem no canto dou
+[00:03:19] um Tab e a prateleira tem a altura que
+[00:03:21] no caso é a altura da prateleira é 45.6
+[00:03:24] também 45.6 e a espessura vou botar 30
+[00:03:27] que é a profundidade dela ele começa na
+[00:03:29] infer e essa prateleira VM até a metade
+[00:03:31] desse painel aqui ó pelo que tá vendo
+[00:03:32] ali né mais menos até a metade não tem a
+[00:03:34] medida e essa outra a gente pode até dar
+[00:03:35] um acabamen tenho fazendo passando um
+[00:03:36] pouquinho tem 1 4 86 vamos fazer 1 490 1
+[00:03:40] 490 passar um pouquinho para fora a dar
+[00:03:41] uma acam mentinha e dou um enter
+[00:03:43] finalizo Ela ali também essa prateleira
+[00:03:45] aqui ó quando é muito pequena tem que
+[00:03:46] tomar cuidado que ele joga a medida para
+[00:03:47] baixo por causa das cotas ó então o que
+[00:03:48] que eu faço aqui eu só corrijo que ele
+[00:03:50] vai dar certinho ali ó que é o qu essa
+[00:03:51] medida de baixo aqui ó é a medida que
+[00:03:53] teria que est lá em cima por causa das
+[00:03:54] fotos ficou muito pequeninha ele dá um
+[00:03:55] bugzinho aqui mas mas ele ainda dá pra
+[00:03:57] gente produzir dessa forma ELS vamos
+[00:03:58] fazer agora o painel de cima também
+[00:03:59] então peg o Construtor criador de
+[00:04:1] esbolso Tab vamos Opa só não vi a medida
+[00:04:3] lá qual é a medida tem 5 573.5 medidinha
+[00:04:6] quebrada causa da prateleira né tbe
+[00:04:9] 573.5 Por
+[00:04:12] 15.5 P5 começa do inferior e vamos
+[00:04:15] desenhar esses painéis também que é a
+[00:04:16] mesma medida desse daqui desse daqui
+[00:04:18] desse daqui e desse daqui a gente não
+[00:04:20] precisa digitar a medida né porque tá tá
+[00:04:21] dessa forma ali o que que a gente vai
+[00:04:23] fazer agora esse esse esse esse esse
+[00:04:25] esse e esse painel ele vai vir pra
+[00:04:27] frente que vai ficar alinhado com esse
+[00:04:28] outro painel que tá aqui então a gente
+[00:04:29] já pode ir ali movimentar ele até aqui
+[00:04:31] certo eu deixei um pouquinho para frente
+[00:04:33] da parede depois vai ter os encaixes lá
+[00:04:34] embaixo a prateleira fica embutida vamos
+[00:04:35] ver nesse aqui também a mesma coisa esse
+[00:04:37] esse esse esse esse esse esse e esse a
+[00:04:41] gente vai ter também afastado pra frente
+[00:04:43] 31 MM que vai ficar mesma folga daquele
+[00:04:45] lá Fi da par 3 mm agora a gente vai
+[00:04:46] começar a desenvolver o nosso projeto
+[00:04:47] aqui a gente poderia fazer o criado modo
+[00:04:49] também já mas vamos deixar para depois
+[00:04:50] tá vamos pegar então esse painel aqui é
+[00:04:52] um painel de espelho ó esse e esse outro
+[00:04:53] painel um painel de espelho que são os
+[00:04:55] dois da ponta ele já vem um painel de
+[00:04:56] meio com espelho colocado Então vamos lá
+[00:04:57] ó aqui digita painel vocês notam que el
+[00:05:0] já tem um painel com espelho aqui esse
+[00:05:1] painel com espelho então eu quero
+[00:05:2] substituir ele eu clico aqui em cima ele
+[00:05:3] vai carregar e já vai substituir depois
+[00:05:4] a gente ajusta ele tá esse outro painel
+[00:05:6] aqui esse esse esse esse e esse esses
+[00:05:9] dois aqui até São um painel com com
+[00:05:10] negativos né Deixa eu ver se tem aqui
+[00:05:11] negativo não tem nenhum ripa Será que tá
+[00:05:14] com ripa tá como ripa aqui ó então nós
+[00:05:16] temos a ripa deitada espaço entre rigua
+[00:05:17] entre ripa e ripa deitada quantidade de
+[00:05:19] régua Vamos botar esse aqui vamos
+[00:05:19] substituir esses dois por esse aqui ó
+[00:05:21] substituir esse e esse a já vai vir com
+[00:05:22] o painel e a ripa junto né Depois a
+[00:05:23] gente vai regular quantidade Riga esse
+[00:05:25] outro aqui esse outro aqui esse esse são
+[00:05:26] painéis lisos é um painel tá e Nel né
+[00:05:30] tem que tá certinho painel painel vulo
+[00:05:32] vertical então é esse mesmo vamos clicar
+[00:05:33] aqui substituí os quatro ao mesmo tempo
+[00:05:35] então vamos ajustar isso aqui primeiro
+[00:05:36] como é que a gente ajusta esse painel o
+[00:05:37] do espelho eu clico no painel do espelho
+[00:05:39] se eu clicar com a Mira amarela bem em
+[00:05:40] cima do espelho ó eu consigo selecionar
+[00:05:41] o espelho então o espelho ele tá recuado
+[00:05:43] 5 5 e c então ele recua aqui ó a altura
+[00:05:45] do espelho né que ele tá dizendo ali que
+[00:05:47] tem é 2 e 500 né e ele recua 5 c c e CCO
+[00:05:49] então cin ao redor tudo então vamos lá
+[00:05:51] eh adicionar o comprimento ele vai ser
+[00:05:53] menos 10 na altura - 10 eu vou mexer no
+[00:05:56] eixo X 50 e no eixo Z 50 ele já vai se
+[00:05:59] se ajustar para ficar igual aquele lado
+[00:06:0] lá vamos vir nesse aqui também mesma
+[00:06:2] coisa Mira amarela no espelho Opa no
+[00:06:4] espelho Deixa eu só pegar aqui que isso
+[00:06:7] então é Men 100 - 100 eixo X vou mover
+[00:06:11] 50 e no eixo Z eu vou mover 50 também e
+[00:06:14] vamos clicar em aplicar arrumei esses
+[00:06:16] dois espelhos vamos arrumar a ripa aqui
+[00:06:17] agora então aqui na ripa nós temos uma
+[00:06:19] configuração Zinha bem legal vou mostrar
+[00:06:20] a configuração aqui para vocês ó se eu
+[00:06:21] levar uma vou apertar transparente a
+[00:06:22] letra k ó se eu clicar bem na ripa eu
+[00:06:25] consigo configurar a quantidade de ripas
+[00:06:26] Então nesse caso aqui tinha 12 ripas no
+[00:06:28] lado de lá né Vamos botar 12 aqui também
+[00:06:29] vamos ver quant é ficou espaço aqui
+[00:06:30] porque no meio dessa ripa ó ele tá dando
+[00:06:33] aqui só um pouquinho subir ali para
+[00:06:35] mostrar para vocês ou cheguei pro lado
+[00:06:36] sem querer vamos deixar para cá então ó
+[00:06:40] só diminuir um pouquinho gente para
+[00:06:41] pegar a medida ali ó Então aqui tem
+[00:06:43] 19.6 tá entre espaço de ripa por quê
+[00:06:46] Porque aqui no meio Ó tem uma canaleta
+[00:06:47] de LED ali ó entre um e outro uma duas
+[00:06:48] três eu vi que tinha esses ledzin aqui
+[00:06:50] no meio então nós vamos fazer igual isso
+[00:06:51] aqui então se eu quiser também pegar
+[00:06:53] essa Ripa que tá aqui ó e deletar eu
+[00:06:55] posso o painel em vez de pegar a painel
+[00:06:57] posso pegar a ripa e configurar da mesma
+[00:06:59] forma desculpa delar não confar da mesma
+[00:07:0] forma ficar igual né Depois a gente
+[00:07:2] copia os LED de lá para esse LED de cá
+[00:07:3] então como é que funciona aqui ó vamos
+[00:07:4] pegar agora o LED clico em LED clico no
+[00:07:7] LED eu vou colocar lá no painel de trás
+[00:07:9] porque o LED vai ficar lá na parte de
+[00:07:10] trás Vot aciono ele para cima 90 e vamos
+[00:07:13] ajustar ele aqui no meio desse
+[00:07:14] painelzinho então vou ajustar só o
+[00:07:15] primeiro ó então eu desenho uma linha
+[00:07:17] daqui ó daqui aqui eu sei que esse meu
+[00:07:19] LED aqui tem 15 pronto tá ele com a
+[00:07:21] canelinha e tudo ele dá um 15 vamos
+[00:07:22] deixar uma folguinha porque eu deixei de
+[00:07:23] 199 ali e vamos ajustar a mesma medida
+[00:07:25] do painel que é de 2i Ah tem mais um um
+[00:07:27] detalhe nesse painel né Ele é afastado
+[00:07:29] aqui do chão porque eu vou fazer ele
+[00:07:30] parte de cima do criado Então vamos ver
+[00:07:31] quanto é que tem o criado aqui vamos
+[00:07:32] arrumar também
+[00:07:33] ele aqui ali ele tem quatro vamos
+[00:07:36] arredondar essas medidas criar tá tudo
+[00:07:37] quebrado aqui até com uma falha ali ó tá
+[00:07:40] vamos arredondar essas medidas aqui
+[00:07:42] todas então ele tem 31 ali em cima 451
+[00:07:44] vamos redondar a medida para 452 452
+[00:07:47] Então vamos pegar aqui vamos vir bem em
+[00:07:49] cima da ripa e a gente vai conseguir
+[00:07:51] margens laterais margem inferior
+[00:07:52] superior ó esse painel aqui ó já é um
+[00:07:54] painel diferente se eu se eu regular a
+[00:07:55] margem superior e inferior eu não
+[00:07:57] consigo ajustar Só se eu trabalhar ripa
+[00:07:58] a ripa aqui ó então então o que que eu
+[00:07:59] vou fazer com ele eu vou tentar vou
+[00:08:1] tentar escolhir esse painel aqui e vamos
+[00:08:4] tentar fazer de outra forma esse painel
+[00:08:5] vamos substituir ele tá vamos subir com
+[00:08:7] comum painel liso que vai ser melhor de
+[00:08:8] nós trabalhar o painel liso vou pegar e
+[00:08:10] substituir ele por esse painel aqui ó e
+[00:08:12] esse aqui também esse aqui eu vou
+[00:08:13] deletar e depois a gente copia de um
+[00:08:14] lado pro outro que fica mais fácil então
+[00:08:15] por que que eu deletei o painel liso
+[00:08:17] porque a gente tem um construtor de
+[00:08:18] painel aqui também ó se eu V aqui em
+[00:08:19] internos para painéis eu consigo botar
+[00:08:22] ripado nesse painel ripado quantidade de
+[00:08:24] réguas e quantidade limite de réguas 30
+[00:08:27] mm Então aqui tem a quantidade de réguas
+[00:08:28] Vamos botar isso aqui mesmo clico aqui
+[00:08:29] em cima clico nele ele tá carregando a
+[00:08:31] primeira vez né então clico nele e dou
+[00:08:32] um enter vamos fazer a mesma coisa então
+[00:08:34] o espaço aqui a a largura das réguas de
+[00:08:36] 50 que tava ali e vai ser 12 réguas só
+[00:08:38] que eu consigo mexer na margem de baixo
+[00:08:40] 452 né que é no eixo Z ó 452 e diminuo
+[00:08:42] na altura - 452 esse aqui ele tem uma um
+[00:08:45] trabalhadinha a mais tá a gente consegue
+[00:08:47] fazer essas esses ajustes ó então ele
+[00:08:49] ainda continua igual como tá ali agora a
+[00:08:50] gente só vai fazer o LED ajustar até lá
+[00:08:52] embaixo né ó ele vai vir aqui e vamos
+[00:08:54] esticar esse nosso LED até lá em cima
+[00:08:56] até Opa até ele pegar a minha ripa ali
+[00:08:59] em cima ali e agora a gente copia esse
+[00:09:1] LED para lá como é que a gente copia vai
+[00:09:3] ter uma na ponta na outra então se eu
+[00:09:4] pegar daqui do negativo segurar né
+[00:09:6] travar ele e colocar ali eu já consigo
+[00:09:8] pegar ele bem no no na ripinha né então
+[00:09:10] vamos botar uma ripa bem no meio agora
+[00:09:11] então aqui no meio tem uma bem aqui ó
+[00:09:13] pelo que eu tô vendo lá pelo projeto são
+[00:09:14] três né então agora a gente copia esse
+[00:09:16] painel quando a gente copia o painel ó
+[00:09:18] ele já tá tudo atrelado junto né ele vai
+[00:09:20] vir tudo junto para cá ele só não vem as
+[00:09:22] minhas os meus leds né os LEDs não vem
+[00:09:24] porque os LEDs são colocad a vulso em
+[00:09:26] cima e eu fiz uma cópia Mas a gente pode
+[00:09:27] lá copiar ele junto também então coloco
+[00:09:29] ele aqui aqui e agora a também só pega o
+[00:09:30] LED que tá lá e joga ele para cá então
+[00:09:32] pega esse esse e esse LED como é que eu
+[00:09:35] coloco ele lá eu pego bem na ponta da
+[00:09:36] ripa aqui ó porque ele tá Centralizado
+[00:09:37] pela ripa né e a gente consegue copiar
+[00:09:38] esse LED até o outro lado lá então já
+[00:09:41] coloquei meus painéis desse lado já tá
+[00:09:43] quase tudo pronto só vamos trocar a cor
+[00:09:44] agora podemos já trocar a cor desse lado
+[00:09:45] depois a gente arrumou outro né então a
+[00:09:46] cor aqui é o linho aralco qu clico na
+[00:09:49] cor eu tenho que est selecionado um
+[00:09:50] painel né então a gente pode vir em MDF
+[00:09:52] peças e eu vou escolher aqui linho
+[00:09:53] aralco posso vir aqui localizar at o
+[00:09:55] linho tá aqui ó linho cor oral clico
+[00:09:57] nele e eu posso ir selecionando as peças
+[00:09:59] que eu quero pintar né então quero
+[00:10:1] pintar também a ripa
+[00:10:3] aqui esse aqui também ó a ripa não
+[00:10:5] pintou a ripa é de outra forma que é
+[00:10:6] pintada essa aqui eu tô na peça a peça
+[00:10:7] Então vamos lá seleciono esse painel
+[00:10:10] Qual mais esse daqui eu já posso pintar
+[00:10:12] também esses at aqueles ali não
+[00:10:13] substitui aind Então vamos pegar agora
+[00:10:15] as duas ripas vamos pintar seleciona
+[00:10:16] esse aqui seleciona aqui esse Opa esse e
+[00:10:19] esse vamos em MDF ripados e eu também
+[00:10:21] vou botar aqui linho aralco lin linho
+[00:10:25] aralco clico nele ele vai pintar as
+[00:10:26] ripas todas Lembrando que essa ripa aqui
+[00:10:29] aqui ó que eu coloquei que ela tem uma
+[00:10:30] configuração se vocês quiserem mexer na
+[00:10:31] Furação dela também consegue tá então eu
+[00:10:33] clico aqui ó se eu dar a letra k vocês
+[00:10:34] notem que ela tem os cavilhas ali ó mas
+[00:10:36] tá com muita cavilha eu não preciso de
+[00:10:37] todas essas cavilhas como é que a gente
+[00:10:38] ajusta então clico na ripa digo que ela
+[00:10:40] só tem uma ripa só só tem uma ripa tá
+[00:10:42] vendo aqui e agora eu levo minha mira
+[00:10:43] amarela bem em cima da cavilha lá ó
+[00:10:45] quando eu levo cim da cavilha eu consigo
+[00:10:46] editar a quantidade de cavilha tá
+[00:10:47] dizendo tem oito eu vou querer só três
+[00:10:49] só três cavilha e clico em aplicar ele
+[00:10:50] vai modificar já para três cavilhas ali
+[00:10:52] agora eu venho de novo seleciona a minha
+[00:10:54] ripa inteira e digo que ela tem 12 de
+[00:10:55] volta então esse modelo de ripa Eu
+[00:10:57] consigo copiar para lá como é que a
+[00:10:58] gente faz isso a gente paga essa daqui
+[00:10:59] Opa bem na mira amarela clico nas ripas
+[00:11:1] né Ó aqui tá a quantidade de ripa clico
+[00:11:3] em delete deleto ela e eu posso copiar
+[00:11:5] essas ripas daqui para lá também ó
+[00:11:7] seleciona a ripa vem aqui na botão no
+[00:11:8] botão copy e eu digo queer colocar nesse
+[00:11:10] painel então a mesma Ripa que tá aqui
+[00:11:11] com a mesma configuração de cavilha veio
+[00:11:13] para cá sem precisar configurar dois
+[00:11:14] lados a gente copia de um lado para
+[00:11:15] outro esse aqui E esse aqui ele é outra
+[00:11:16] cor Qual é a cor do MDF o MDF Atena a
+[00:11:18] gente vem em peças tá aqui ó Atena então
+[00:11:20] troco esse esse para Atena né a Ah não
+[00:11:22] er de cima é esse e esse é Atena tá
+[00:11:24] vendo aqui tem um conta gotas eu consigo
+[00:11:26] copiar desse aqui e pintar esses daqui
+[00:11:28] de volta que é na outra outra cor ali
+[00:11:29] que é o que é o Lin Então esse lado tá
+[00:11:31] quase pronto n já tá com LED já tá com
+[00:11:33] coisa o que que falta ajustar o negativo
+[00:11:34] então O negativo aqui eu vou ocultar a
+[00:11:36] parede tá vou clicar aquiar a parede vou
+[00:11:37] apagar esse desenho que eu fiz que era
+[00:11:39] só uma medida e vou copiar esse painel
+[00:11:41] aqui para cá ó copio ele aqui eu faço
+[00:11:43] negativo dessa forma né largura 150 e
+[00:11:45] jogo um set para cá tá 7 cm um detalhe
+[00:11:48] que se vocês quiserem fazer esses
+[00:11:49] painéis Aqui eu porque aqui são duas
+[00:11:50] cores de painel né em cima tem um em
+[00:11:51] baixo tem outro vamos fazer a mesma
+[00:11:52] coisa no de baixo vamos verificar aqui
+[00:11:54] por baixo ó eu vou apagar esse aqui né
+[00:11:56] pego esse copio né pelo Copy clico aqui
+[00:12:0] clico aqui digito a medida de 150 também
+[00:12:3] e jogo mais uns 7 cm para cá se quer
+[00:12:5] depois centralizar certinho por que que
+[00:12:6] a gente não precisa centralizar certinho
+[00:12:7] tá porque aqui também tem ó dentro desse
+[00:12:9] componente para internos Opa desculpa
+[00:12:11] agregados para peças vamos em painéis
+[00:12:13] aqui em painel a gente tem esse esse
+[00:12:14] componente aqui ó que é cavilha então eu
+[00:12:16] clico nele clico no painel e dou ent
+[00:12:17] olha o que ele faz aqui com painel só
+[00:12:18] que jogou a cavilha para trás quero a
+[00:12:19] cavilha pro outro lado inverter a
+[00:12:20] cavilha sim né eu posso deixar uma marem
+[00:12:23] de cavilha tá vendo ali ó ó adiciono
+[00:12:25] cavilha ou não e eu posso vir aqui copio
+[00:12:28] copio essa cavilha deixa eu ver se ele
+[00:12:29] deixa colocar esse aqui não deixa
+[00:12:30] colocar Então a gente tem que inserir de
+[00:12:31] novo no de cima então clico no de cima
+[00:12:32] clico aqui ele vai aqui e dou um enter
+[00:12:35] ele jogou para cá eu vou inverter sim o
+[00:12:37] que que vai acontecer nesse painel ele
+[00:12:38] vai cavilar por trás para mim saber onde
+[00:12:39] é que é a posição que eu tenho que fixar
+[00:12:40] essa régua também ó essa cavilhas lá
+[00:12:42] atrás do painel para mim visualizar isso
+[00:12:43] aqui eu tenho que estar em modo revisão
+[00:12:44] tá E daí eu clico na mira verde e eu
+[00:12:46] consigo ver a Furação por trás do painel
+[00:12:47] lá da cavilha tanto desse lado quanto
+[00:12:49] desse lado aqui ó certo então vamos
+[00:12:51] tirar do modo revisão que daí fica mais
+[00:12:53] rápido da gente trabalhar né aperto
+[00:12:55] edito resibir tudo editar resibir tudo
+[00:12:58] só pra gente ver ali também tá ficando
+[00:12:59] vou tirar da letra K aqui para mostrar
+[00:13:0] bem ó ele tá ficando igualzinho já tá
+[00:13:1] ficando com todas as Usinagens do painel
+[00:13:3] Podemos até ver aqui na fita de led ó se
+[00:13:4] vocês clicarem aqui na fita de led ele
+[00:13:6] tem que ter modo revisor né eu acabei
+[00:13:7] tirando Mas vamos voltar aqui só pra
+[00:13:8] gente ver clico em modo revisor já tá
+[00:13:10] fita de lede radinha ali no meio e as
+[00:13:12] minhas cavilhas já pronas tá então vamos
+[00:13:14] tirar aqui de volta só para ficar mais
+[00:13:15] rápido a gente trabalhar então já tô com
+[00:13:16] os espelhos já tô com esses detalhes
+[00:13:17] todo pronto C vilh que eu queria fazer
+[00:13:19] eu posso fazer agora o quê o criado mudo
+[00:13:20] então criado mudo tem um bem parecido
+[00:13:21] com esse aqui tem bem um desenho bem
+[00:13:23] parecido mas podemos até fazer um um
+[00:13:24] componente já na medida certa disso aqui
+[00:13:26] ó Qual é a medida desse criado mudo aqui
+[00:13:27] então a gente tem uma medida dele de de
+[00:13:29] vamos dizer que ele é o total ali Opa
+[00:13:31] Deixa eu só chegar pro ladinho que eu
+[00:13:32] não tô conseguindo ver então a medida
+[00:13:33] dele tem 461 né 461 deixa eu ver FR ripa
+[00:13:37] botou 461 Vamos ver quanto é que a gente
+[00:13:38] deixou na ripa aqui só para ter certeza
+[00:13:39] se foi igual 452 então ele tá um
+[00:13:41] pouquinho diferente da nossa medida
+[00:13:42] vamos ver ali se eu peguei alguma medida
+[00:13:43] errada a gente arruma Nossa Ripa de novo
+[00:13:45] tá então a medida desse criado tem 462
+[00:13:48] Então a nossa ripa aqui tá errada vamos
+[00:13:49] ajustar ela vamos arrumar tudo de novo
+[00:13:51] aqui então clico na mira amarela clico
+[00:13:52] nele 452 é 462 né 462 4 eu inverti aqui
+[00:13:57] ó um C era um seis né 462 462 e daí o
+[00:14:1] ledzinho né de ver se ele tá certinho
+[00:14:3] Ele ficou menor ali vamos ajustar ele
+[00:14:5] também que ele tá passando esses leds a
+[00:14:7] gente pode usar o esio tá bem no meio
+[00:14:9] dele escalonar Opa escalonar até aqui
+[00:14:12] beleza se a gente quiser deletar esse
+[00:14:14] lado aqui a gente pode deletar deleta
+[00:14:16] esse e copia a cavilha que já tá na
+[00:14:18] medida desse né Opa que aqui ó a gente
+[00:14:21] pode tá como já tá selecionado as ripas
+[00:14:23] né eu clico em copiar Aí eu clico no
+[00:14:24] outro lado e dou a e a gente ajusta aqui
+[00:14:27] também que ficou fora né esses
+[00:14:28] probleminhas de percalço digitar a
+[00:14:29] medida aí isso aí é normal né tem a
+[00:14:32] medida ali eu não tinha visto bem
+[00:14:33] certinho então agora já arrumei aqui
+[00:14:34] então agora vamos fazer o queele criado
+[00:14:36] mundo ali então ele tem quantos ele tem
+[00:14:38] 462 né E vamos deixar um 461 podemos
+[00:14:40] deixar até uma folguinha e a
+[00:14:41] profundidade dele até lá atrás tem 30 cm
+[00:14:44] Então vamos pegar e desenhar nós podemos
+[00:14:46] desenhar uma pelo pelo criador debol se
+[00:14:49] vocês quiserem vir aqui também dá de
+[00:14:50] desenhar né que é aqui ó clico aqui nele
+[00:14:52] clico bem clico Ainda bem que ele não
+[00:14:55] perde a medida do criador de esbolso né
+[00:14:56] então vamos lá de novo criado cli clico
+[00:14:59] nele aqui
+[00:15:1] substituo beleza agora com ele
+[00:15:3] selecionado venho aqui e digito
+[00:15:5] fechamento ou deixa eu ver se eu tenho
+[00:15:7] rodapé aqui já roda pé aqui ó tem um
+[00:15:9] rodapé Aí eu clico no roda pé ele vai
+[00:15:11] vir aqui porque é um componente unitário
+[00:15:12] boto para baixo dou um enter e a gente
+[00:15:14] pode escalar ele pelo scale na medida
+[00:15:16] que a gente quiser ali dentro né Então
+[00:15:18] vem daqui aqui e eu posso dizer que a
+[00:15:20] profundidade ele tem 30 vamos deixar uns
+[00:15:22] três a menos aqui ó profundidade 30
+[00:15:24] vamos deixar uns 27 só um pouquinho para
+[00:15:25] dentro ali e a altura dele ele foi bem
+[00:15:28] lá para trás tem que tem a altura dele
+[00:15:29] que tá diferente também né então ele tem
+[00:15:31] altura de 10 cm altura de
+[00:15:35] 10 a gente ajusta ele
+[00:15:38] aqui
+[00:15:41] move deixa eu ver se ficou Ah tem que
+[00:15:44] escalar ele aqui pego ele scale Cadê o
+[00:15:47] scale tá ali
+[00:15:49] ali eu fiz um roda teto aqui tá agora
+[00:15:52] fiz um roda pé desculpa clico nele clico
+[00:15:54] nele seleciono ou eu posso já pintar
+[00:15:55] esse daqui também já vamos ajustar MDF
+[00:15:59] vamos pegar aqui podde pegar até a cor
+[00:16:0] daqui e ir pintando o que a gente quer
+[00:16:2] pintar né aqui vamos pintar só a frente
+[00:16:4] Zinha R pé também e agora eu posso
+[00:16:6] selecionar esse módulo né ó seleciono
+[00:16:8] rodapé seleciono o módulo porque ele é
+[00:16:9] um igual do outro lado então vamos op
+[00:16:12] que que não tá querendo pegar aqui
+[00:16:14] ali então tô copiando um para cá e vou
+[00:16:17] botar exatamente aqui beleza então agora
+[00:16:20] essa cabeceira já tá pronta vamos fazer
+[00:16:21] o outro lado o outro lado é da mesma
+[00:16:22] forma Então a gente vai substituir os
+[00:16:23] painéis só que aqui tem um pouco uma
+[00:16:24] diferença nós temos painel horizontal e
+[00:16:26] painel vertical pelo tamanho né Tem 900
+[00:16:27] passa da medida de 80 Então esse painel
+[00:16:30] esse esse esse esse e esse é um tipo de
+[00:16:33] painel que vai ser o painel simples esse
+[00:16:35] aqui de baixo não ess aqui debaixo ele
+[00:16:37] engrossado né então aquele ali esse aqui
+[00:16:38] também acho vai ser engrossado e eu acho
+[00:16:39] que eu acabei fazendo ele de três né ah
+[00:16:41] vamos substituir esse esse e esse pel um
+[00:16:43] painel painel simples é o painel simples
+[00:16:46] na vertical clico aqui substituo todos
+[00:16:47] ao mesmo tempo que esses quatro aqui ao
+[00:16:48] mesmo tempo prateleira essa e essa vamos
+[00:16:50] botar aqui prateleira prateleira duplada
+[00:16:53] a telea ó prateleira engrossada tem a
+[00:16:55] duplada né ten a engrossada e tem a
+[00:16:57] duplada eu quero aquela que é dupla
+[00:16:58] então Então vamos PR tiira do vsa
+[00:17:0] duplada essa daqui ó selecion ele vai
+[00:17:1] substituir as duas ao mesmo tempo esse
+[00:17:3] aqui vai ser um painel painel Opa painel
+[00:17:6] mas ele não é o o vertical aqui ele tem
+[00:17:9] que ser horizontal né então é esse esse
+[00:17:10] e esse tem que ser esse tipo de painel
+[00:17:12] ele é
+[00:17:13] atravessado Beleza beleza ali tá
+[00:17:15] certinho Aqui também tá certinho depois
+[00:17:16] faltou fazer o acabamen lá em cima ó
+[00:17:18] porque tem uma uma Ripa de sete aqui né
+[00:17:20] não tinha visto tem um pedaço de sete
+[00:17:21] aqui que vai daqui até ali então depois
+[00:17:22] a gente pode fazer essa essa esse
+[00:17:24] complemento depois também vamos fazer
+[00:17:25] daí tudo junto agora a gente só vai
+[00:17:27] fazer as trocas das cores que é o qu só
+[00:17:28] aqui no meio que ele é aquele eu posso
+[00:17:30] copiar daqui desse eu venho na cor né
+[00:17:32] venho no conta Goa copio desse painel
+[00:17:34] vai ser esse painel aqui agora eu venho
+[00:17:36] nesse outro aqui ó venho no cont Goa
+[00:17:38] copio esse painel e esses daqui vão ser
+[00:17:39] pintado nessa cor que a gente definiu
+[00:17:42] aqui esse aqui também agora esses dois
+[00:17:44] aqui nós vamos substituir porque esse
+[00:17:45] aqui é engrossado que é final de painel
+[00:17:46] né então é um painel mas ele é
+[00:17:48] engrossado Ó painel avulso vertical
+[00:17:49] engrossado substituo vamos substituir os
+[00:17:51] dois mas acho que esse aqui vai dar um
+[00:17:52] erro por causa da da espessura dele mas
+[00:17:54] vamos tentar fazer um teste ah não ele
+[00:17:55] já botou na medida certinha então
+[00:17:56] seleciono esses Pego aqui a cor também
+[00:17:58] vamos pegar na cor no contra Goa vamos
+[00:18:0] ver se ele pinta esse pinta Esse beleza
+[00:18:2] já tá certinho ali depois a gente vai
+[00:18:3] fazer só o nosso gavetinha que tem ali
+[00:18:5] no meio tá vamos só verificar se a gente
+[00:18:7] fez as medidas certas que aqui eu não
+[00:18:8] lembro se fiz a medida certa ou não sei
+[00:18:10] que tem um 20 lá de cima quanto é que
+[00:18:11] tem daqui até ali painel tem 5 3 4 Vamos
+[00:18:14] ver quanto é que são esse painel aqui tá
+[00:18:15] com 60 ó 5 3 4 um pouquinho menor Tá e
+[00:18:18] agora a gente também pode fazer puxar né
+[00:18:20] esse painelzinho aqui pra frente que eu
+[00:18:21] acabei esquecendo de puxar esse esse e
+[00:18:22] esse foi os painéis que estava ali eu
+[00:18:24] acabei esquecendo de puxar eles paraa
+[00:18:25] frente então a gente Opa esse aqui
+[00:18:27] também move e vamos dechar esse painel
+[00:18:29] para alinhar com esse daqui tá ó V tá
+[00:18:31] alinhado ali ô já tinha puxado S não
+[00:18:33] tinha puxado
+[00:18:34] outro contr Z cont Z eu fiz aqui ah não
+[00:18:40] é5 bot tem 60 mas a medida aqui acho que
+[00:18:43] tá é outra medida lá tá dizendo tem 60
+[00:18:45] Vamos dar um coisa quanto é que ele tem
+[00:18:46] aqui mas não tem 60 tem 53 4 mesmo tá
+[00:18:49] errado ali ó 5 3 4 esse painel aqui acho
+[00:18:52] que eu substituir pelo painel errado
+[00:18:53] pelo painel engrossado Então nós vamos
+[00:18:54] substituir eles de novo só que pelo
+[00:18:56] painel em vez de ser engrossado eu
+[00:18:57] avulso vertical eess di eil aqui ó por
+[00:18:58] ISO tá dando um errinho ali ó então
+[00:18:59] agora sim substituir pelo painel errado
+[00:19:2] eu já tinha chego ele pra frente né
+[00:19:4] então esse aqui então ele não precisa
+[00:19:6] chegar pra frente nem esse nem esse
+[00:19:7] Então volta volta ele
+[00:19:10] ali ele tá alinhado com esse vamos lá
+[00:19:13] esse painel aqui tá com quantos
+[00:19:14] espessura Ah ele é duas vezes eu por
+[00:19:16] isso esse painel aqui é que não tá na
+[00:19:17] espessura certa e esse também não tem um
+[00:19:19] engrosso a mais agora sim se alinhou ali
+[00:19:21] beleza fazendo isso aqui a gente também
+[00:19:23] já pode vir aqui e digitar que ele tem
+[00:19:25] um ele vai ter uma TV então ele tem um
+[00:19:27] passa fio né É passa fio jogo ele ali
+[00:19:29] posso jogar também uma tomada UTI ou Tom
+[00:19:32] tomada ele já vai fazer
+[00:19:34] também tomadinha da TV ali se quiser né
+[00:19:36] e agora nós vamos digitar esse modulo
+[00:19:38] Zinho que V aqui no canto esse modulo
+[00:19:39] Zinho aqui vamos medir quanto é que ele
+[00:19:41] tem ó eu não tem medida aqui né então
+[00:19:43] ele tem dois tamponamentos 31 em cima
+[00:19:44] embaixo não tem aí ele tem uma folga de
+[00:19:46] vai ter um 90 né Bota o tab para cima
+[00:19:48] aqui e a medida dele aqui tem 246 246
+[00:19:52] Men 31 ele tem que ser né esse cri esse
+[00:19:54] esse melzinho se se da profundidade dele
+[00:19:56] que ele vem desde lá de trás né
+[00:19:57] profundidade dele ele tem lá na parede
+[00:19:59] tá encostando na parede tá cortando o
+[00:20:1] painel então daqui aqui tem 325 Então o
+[00:20:4] que a gente vai fazer vamos colocar aqui
+[00:20:5] depois a gente chega para trás tá vamos
+[00:20:6] podemos usar o mesmo criador de esboço
+[00:20:8] né e eu bem ali no cantinho ali ó Opa
+[00:20:10] bem aqui em cima no cantinho Ó depois a
+[00:20:12] gente chega ali para trás não quer pegar
+[00:20:13] aqui vamos pegar na parte de baixo
+[00:20:14] depois a gente arruma ele também Então
+[00:20:16] pegamos aqui na parte de baixo dou um
+[00:20:17] Tab então ele tem é altura de dois não é
+[00:20:21] menor n 2 4 esqueci da medida ali tem00
+[00:20:24] altura tem 2 4 e deixa eu só medir lente
+[00:20:28] 2 2 46 - 31 né é 2 46 Men 31 que vai ser
+[00:20:34] o engrosso então ele tem 215 Então vamos
+[00:20:36] lá eh criador de esbolso vamos pegar
+[00:20:40] aqui na parte de baixo mesmo para ficar
+[00:20:41] mais fácil então ele tem 215 por 325 dou
+[00:20:45] um ok a medida dele 1900 que é o total
+[00:20:48] dou um enter agora eu coloco ele no
+[00:20:49] local que ele é alinhado pela parte de
+[00:20:51] baixo né Não deu para pegar lá porque
+[00:20:53] aqui coloco mo aqui até ali e agora a
+[00:20:58] gente chega aí ele pra parede né então
+[00:21:0] chega ele encosta ele lá na parede
+[00:21:2] Beleza vai ficar um buraco ali em cima
+[00:21:3] que tá faltando o 31 ali em cima e ele
+[00:21:6] não tem 1900 né Depois a gente troca a
+[00:21:8] medida dele ele tem um pouquinho meno
+[00:21:9] ele tem 31 cada lado também ele não tem
+[00:21:10] bem 1900 vamos substituir depois a gente
+[00:21:12] Ajusta a medida então é
+[00:21:14] gaveta deixa eu ver se tá como graveta
+[00:21:16] sei que eu tenho um bem parecido Ah esse
+[00:21:17] aqui ó Clic substituir ele vai voltar
+[00:21:19] 1900 só ter diir - 62 então pego ele
+[00:21:22] aqui paraar 325 ficou certinho só que no
+[00:21:24] comprimento é - 62 porque vai ter um
+[00:21:26] engrosso cada lado tá terminou aqui aí
+[00:21:29] chego 31 para cá teve uns percursos aqui
+[00:21:32] de erro mas a gente vai ajustando né
+[00:21:33] então vamos lá é substituição frentes de
+[00:21:36] gaveta porque não tem puxador Opa
+[00:21:38] frentes de gaveta é uma porta sem
+[00:21:40] puxador é aqui troquei que que a gente
+[00:21:44] vai trocar agora também que ela tá com a
+[00:21:45] base passante eu vou botar com a lateral
+[00:21:46] passante ó o módulo suspenso né vou
+[00:21:48] botar com a lateral passante por esse
+[00:21:49] puxador aqui Pelo que eu entendi Ele vai
+[00:21:51] ser p por baixo ele vai ter um
+[00:21:52] buraquinho aqui embaixo então o que que
+[00:21:53] eu costumo fazer nesse detalhe eu pego a
+[00:21:54] mira Verde clico na peça e o desconto né
+[00:21:56] a profundidade de menos ó deixa um
+[00:21:59] buraquinho ali pra pessoa pegar por
+[00:22:0] baixo então ficou um buraquinho agave
+[00:22:1] Vetinho ali o que que a gente vai fazer
+[00:22:2] agora vamos tamponar seleciono ele vem
+[00:22:4] os agregados externos externos
+[00:22:6] tamponamento duplo vou pegar o
+[00:22:8] tamponamento que eu tenho criado aqui
+[00:22:9] que ele já é mais ou menos parecido com
+[00:22:10] aquele ali só que a gente tem que fazer
+[00:22:11] um ajuste seleciono nele ele vai
+[00:22:13] tamponar todo o meu
+[00:22:15] caixote beleza ó deu um erro aqui porque
+[00:22:17] ele acrescentou uma medida que o meu
+[00:22:18] tamponamento já vem com uma medida a
+[00:22:19] mais eu só vou zerar essa medida ele vai
+[00:22:20] ficar no tamanho da minha caixa pronto
+[00:22:22] ajustado eu só que ele não tem
+[00:22:23] estampamento em baixo né então o que
+[00:22:24] gente faz clica nele deleta essa parte e
+[00:22:26] vou ajustar isso aqui o que que eu tenho
+[00:22:27] que fazer nessa aqui eh adiciona a
+[00:22:29] altura não e o eixo vai ser zero eu vou
+[00:22:31] deixar ele alinhado ali mesma coisa aqui
+[00:22:33] ó então pego ele clico nele o que que
+[00:22:35] ele vai ser aqui zero e aqui zero porque
+[00:22:36] tava descendo 31 botando zero e zero e
+[00:22:38] agora a gente também pega o conta gotas
+[00:22:40] aqui já vamos pintar esse móvel aqui
+[00:22:41] também pego daqui esse vai ser pintado
+[00:22:44] esse Opa pegou a cor errada desculpa
+[00:22:46] daqui ISO aqui não tá pegando Então pega
+[00:22:48] daqui aqui aqui aqui aqui e aqui pronto
+[00:22:54] já tá pronto aqui o meu home Então o que
+[00:22:55] a gente vai fazer agora aqui vamos jogar
+[00:22:56] as mesmas ripas que tem nesse lado que
+[00:22:58] tá com a mesma cavilha que são a mesma
+[00:23:0] ripa aqui ó seleciono essa ripa venho
+[00:23:2] aqui copiar só que eles são menas ripas
+[00:23:3] aqui né clico aqui clico aqui então vou
+[00:23:6] clicar em um só só nesse vamos ajustar
+[00:23:8] só esse aqui quando a gente ajusta esse
+[00:23:10] aqui ó ele já tá com a folga vou dizer
+[00:23:11] que é zero e zero mas ele só tem aqui
+[00:23:13] oito ripas se eu não me engano é um
+[00:23:14] pouquinho menos ó tá ali agora sim eu
+[00:23:17] consigo vir aqui copiar essa daqui clico
+[00:23:19] nessa nessa e nessa e vai ficar igual
+[00:23:20] quando a gente ajusta um a gente joga
+[00:23:21] pros outros e vai jogar igual a mesma
+[00:23:23] configuração nessa para essa agora a
+[00:23:24] gente vai fazer o mesmo esquema vamos
+[00:23:25] copiar o LED né tá aqui vamos copiar um
+[00:23:29] depois a gente vai ver o que que ele vai
+[00:23:31] vamos jogar ele para cá só que aqui eu
+[00:23:33] tenho que rotacionar ele né Tá virado
+[00:23:34] ali a gente pode usar o rotate que tem
+[00:23:35] aqui em cima uma duas vezes para ele
+[00:23:36] ficar na posição certinha que a gente
+[00:23:37] quer isso aqui ó é essa abinha que
+[00:23:39] encosta lá no no painel lá em cima tá
+[00:23:41] Depois a gente centraliza ele ó só
+[00:23:42] encostei no painel como é que eu faço
+[00:23:43] para centralizar desenho uma linha aqui
+[00:23:45] no vão que daí eu consigo achar bem o
+[00:23:46] centro desse dessa peça com o centro
+[00:23:49] dessa peça aqui ó o centro dessa peça
+[00:23:51] com o centro dessa linha Ah tá pegando a
+[00:23:53] linha será que a linha minha ficou maior
+[00:23:55] Deixa eu deletar aqui só vamos verificar
+[00:23:57] D aqui e até aqui vamos de novo o centro
+[00:24:2] daqui é o centro aqui agora deu e a
+[00:24:5] gente ajusta né que ele tá vindo de um
+[00:24:6] painel até no outro então vou ter que
+[00:24:7] ter um nesse painel de cima certo no
+[00:24:10] painel de cima e daí ele é também três
+[00:24:12] são três medidas né então pego daqui vai
+[00:24:14] ser um nessa ponta e o outro nesse
+[00:24:18] centro aqui pois a gente ajusta os
+[00:24:20] outros para copiar né Vamos fazer já né
+[00:24:22] Já estamos aqui então primeiro a gente
+[00:24:24] vai vir daqui de cima né cont control
+[00:24:27] aperta a seta para cima e coloco ele
+[00:24:29] aqui embaixo e vamos escalar ele também
+[00:24:32] então venho para cá e escalo ele até lá
+[00:24:35] embaixo beleza seleciona esse outro
+[00:24:38] nesse esse e esse aqui e a gente já pega
+[00:24:41] pelo Copy né bem da ripa porque vai
+[00:24:44] ficar Centralizado ripa com ripa quees
+[00:24:45] são do mesmo tamanho coloco ele daqui
+[00:24:47] aqui e a ripa já tá pronta então nós
+[00:24:49] fizemos um jogo de quarto inteiro aqui
+[00:24:50] ah tá faltando mais um detalhezinho né
+[00:24:52] aquele acabamen inho lá em cima vamos
+[00:24:53] botar em câmera perspectiva e vamos
+[00:24:55] desenhar esse acabamento aqui de cima já
+[00:24:56] então eu também vou fazer pelo criador
+[00:24:58] esbolso que eu acho mais rápido tá então
+[00:24:59] a gente vem aqui em cim no painel dá um
+[00:25:1] Tab a altura dele é 70 profundidade 15,5
+[00:25:4] inferior e a gente vai fazer ele até
+[00:25:6] chegar aqui quanto é que ele tem aqui no
+[00:25:7] meio aqui então daqui aqui ele tem é 1 3
+[00:25:11] 1 3 98 1 3 98 a gente faz aqui ó é 1 um
+[00:25:16] ou 2 2 3 9 8 né 2 2 3 9 8 + 7.5 que é a
+[00:25:23] metade do e me ali né Então ele deu 2 E4
+[00:25:26] Opa dois D botar digitar editei aqui né
+[00:25:29] É 2 40.5 é isso né 240 2400.5 acho que é
+[00:25:34] isso é 245.5 né 20 2 405 pon 5,5 é isso
+[00:25:41] aqui ó ele ficar bem no meio aqui e daí
+[00:25:43] nós vamos ter outro até no final lá
+[00:25:45] também e dou um enter já vamos jogar
+[00:25:47] isso aqui para trás porque ele fica um
+[00:25:48] pouquinho ali mais para trás né então
+[00:25:49] seleciono esse e esse e jogo um pouco
+[00:25:51] mais para trás aqui um 15,5 só para dar
+[00:25:53] uma cum mentinha ali e vamos lá no outro
+[00:25:54] lado fazer a mesma coisa então eu pego o
+[00:25:57] mesmo dor des bolso Opa entrei dentro
+[00:26:0] num uma parede aqui posso clicar aqui em
+[00:26:1] cima né então ele já tá com essa folga
+[00:26:3] vamos deixar bem no meio aqui ó para
+[00:26:5] ficar exatamente junto com essa
+[00:26:6] pratileira e exatamente aqui junto com
+[00:26:8] esse acabamento aqui eu dou um enter
+[00:26:10] então a gente faz tudo da mesma forma
+[00:26:11] esse aqui é tudo painel nesse caso aqui
+[00:26:13] como é linho couro ele não tem ó aqui
+[00:26:15] aqui agora a gente pega o painel se
+[00:26:17] fosse material com veio claro que eu
+[00:26:18] teria que fazer dividir bem mais de
+[00:26:19] outra forma né fazer uma outra forma
+[00:26:21] Então a gente vai em digita painel para
+[00:26:23] ele ficar tudo com Opa aqui painel aí a
+[00:26:26] gente vem e pega o painel que é esse
+[00:26:27] painel vertical substitui tudo vai esir
+[00:26:29] todos eles e a gente só vai copiar agora
+[00:26:30] né a nossa cor que tá aqui eu vou jogar
+[00:26:33] essa cor para cá para
+[00:26:35] cá então para cá e para cá então a gente
+[00:26:38] já fez um dormitório Nós já vamos ter
+[00:26:40] tudo pronto né Já botei as coisas ali se
+[00:26:42] quisesse botar a tomadinha aqui em cima
+[00:26:43] do criado mundo também a gente pode
+[00:26:44] botar porque acho que na ripa vai ficar
+[00:26:45] feia a gente podia jogar aqui em cima do
+[00:26:46] Mudo né tomada e o interruptor aqui ó
+[00:26:48] para acender os LEDs a gente pode botar
+[00:26:50] tanto tomada Posso colocar dedinho ou
+[00:26:51] interruptor ó tem um interruptor Aqui
+[00:26:54] também tá se quiser botar dedinho também
+[00:26:56] pode botar tem um dedinho aqui né claro
+[00:26:57] tem austar aqui eu só não botei na
+[00:26:59] medida bem certinho né porque agora
+[00:27:0] vocês sabe que tudo que vocês colocam
+[00:27:2] ele gera essa Furação Então tem que
+[00:27:4] alinhar os dois eu posso copiar aqui
+[00:27:6] também e jogar para lá pro outro lado né
+[00:27:9] vamos ver aqui boto em modo revisor
+[00:27:12] vamos ver se tá corretamente
+[00:27:14] aqui ó tudo certinho cá já faz as
+[00:27:17] imagens Já criei o rodapé os espelhos ó
+[00:27:20] tá perfeito tá faltando alguma coisa só
+[00:27:22] a TV Posso copiar essa TV daqui né já tá
+[00:27:25] TV aqui ó e jogar para lá pronto o
+[00:27:28] projeto tá igual idêntico ao lado de cá
+[00:27:30] ó perfeito né gente já tem todas
+[00:27:32] Usinagens vamos ver se é Usinagens nesse
+[00:27:33] aqui porque eu copiei de um lado pro
+[00:27:34] outro né mas vamos ver se se já tem
+[00:27:35] também a cavilha Usinagem Opa tem
+[00:27:37] cavilha tem Usinagem tem tudo pronto Ô
+[00:27:39] faltou Fazer o que na parte de baixo ah
+[00:27:40] não tá ali também Chega copiado a parte
+[00:27:41] de baixo se a gente quisesse colocar uns
+[00:27:42] leds aqui ó aqui deu erro também ó vamos
+[00:27:44] selecionar essa essa prateleira aqui ó
+[00:27:46] que ela só tá com uma vez el eu fiz para
+[00:27:47] ficar 4 e me Mas ela tá com 3 e me então
+[00:27:49] V selecionar aqui também uma duas três
+[00:27:51] vezes ó só que ela foi para cima a gente
+[00:27:53] seleciona porque essa daqui ela é para
+[00:27:55] baixo para cá ol ficou certinho
+[00:28:1] Oli opa não ajustei lá agora que eu vi ó
+[00:28:4] o LED estava ajustado com a prateleira
+[00:28:5] errada né então ISO que ele passou para
+[00:28:7] cima Então vamos pegar ali o sk e Mexe
+[00:28:9] todos eles na mesma quantidade da Rip e
+[00:28:11] ajustamos aqui também n claro que agora
+[00:28:13] só Ajuste o projeto Já tá pronto né a
+[00:28:15] gente já tem todos esses
+[00:28:17] orçamentos tá pronto
+[00:28:22] Prontinho ali aqui e ali

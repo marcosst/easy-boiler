@@ -1,0 +1,125 @@
+[00:00:1] Olha que bacana aqui ó tava fazendo aqui
+[00:00:3] o verificador de divergência né e ele
+[00:00:7] pegou isso aqui em
+[00:00:9] vermelho aqui aqui e aqui ó tá vendo
+[00:00:12] Então ele pegou os três vermelhos esse
+[00:00:14] aqui limite de peça é porque o limite da
+[00:00:16] minha máquina né então sempre vai
+[00:00:17] aparecer em vermelho quando eu tenho
+[00:00:19] peça menor que 5 cm Então essa aqui já
+[00:00:21] passou do limite da minha máquina então
+[00:00:23] ele já vai acusar como tem um limite de
+[00:00:25] peça né deixa eu abrir aqui ó então
+[00:00:27] ficou em vermelho ali ó os inag posição
+[00:00:31] Então olha que bacana que ele pegou aqui
+[00:00:32] ó vou até botar em transparente para
+[00:00:34] mostrar para vocês selecionar todos ele
+[00:00:37] pinta tudo em vermelho que pegou Então
+[00:00:39] olha o que aconteceu bem aqui ó tá vendo
+[00:00:41] ó uma
+[00:00:43] uma como é que eu vou te dizer um um
+[00:00:46] minifix pegou em cima do outro minifix
+[00:00:48] aqui ó Então a gente vai mudar esse aqui
+[00:00:50] ó vamos mudar esse aqui Vamos aumentar
+[00:00:52] um pouquinho a margem dele vamos passar
+[00:00:55] ele para 50 vou botar ele aqui com 60
+[00:01:0] vamos ver se ele não vai pegar em outro
+[00:01:1] né Acho que não 50 e 60 e esse aqui olha
+[00:01:6] o que aconteceu tem o minifix bem no
+[00:01:8] meio Onde tá descendo o led ó tá tem o
+[00:01:12] minifix bem Onde tá descendo o LED ali
+[00:01:13] porque o LED eu fiz ele passando para
+[00:01:15] baixo aqui para ele entrar com fio aqui
+[00:01:17] por baixo e subir e subir o componente
+[00:01:20] que o fio vai vir pelo rodapé aqui da
+[00:01:21] casa aqui da cliente então ele pegou bem
+[00:01:24] nesse minifix aqui ó nós temos duas
+[00:01:26] maneiras a primeira aumentar a
+[00:01:28] quantidade de minifix aqui ou ou elimina
+[00:01:30] esse minifix né posso aumentar a
+[00:01:32] quantidade de minifix para desviar esse
+[00:01:33] minifix dali ou elimina ele vou dizer
+[00:01:35] que tem dois vou eliminar ele que eu não
+[00:01:37] preciso dele né Não há necessidade que o
+[00:01:39] móvel não é tão profundo assim né então
+[00:01:42] clico aqui nele e vou eliminá-lo ele ali
+[00:01:45] ó Então agora ele já não tá pegando mais
+[00:01:47] no meu difusor de LED então ele tava
+[00:01:49] dizendo que o difusor de LED vinha aqui
+[00:01:50] e tava pegando nele vamos verificar se
+[00:01:52] tem mais algum outro componente que T
+[00:01:54] dando defeito Ó tem mais algum esse
+[00:01:58] daqui vamos ver qual é que é Ah é aqui
+[00:01:59] lá ainda não desviou vamos ver ah tá
+[00:02:3] aqui não desviou porque tem esse aqui
+[00:02:5] esse aqui não vai ter ó vamos apagar
+[00:02:7] esse aqui isso aqui é do é do outro modo
+[00:02:10] esse e esse não vai ter eu acabei
+[00:02:12] esquecendo de apagar
+[00:02:13] ele esse daqui vai mudar agora esse aqui
+[00:02:16] sim esse aqui nós temos que modificar
+[00:02:18] ele que é esse da deixa eu ver qual que
+[00:02:22] era esse daqui né acho que é esse ó ele
+[00:02:25] tá pegando ali em cima ó Tá então vamos
+[00:02:29] jogar vamos deslocar a margem dele vamos
+[00:02:32] deslocar ele no Y
+[00:02:34] menos -2 cm aqui
+[00:02:38] ó joguei ele paraa frente não acho que
+[00:02:41] poderia jogar ele para trás né mais dois
+[00:02:43] dois positivo
+[00:02:46] pronto ver se escapou aqui aqui
+[00:02:49] aparentemente escapou também e aqui
+[00:02:53] escapou vamos
+[00:02:56] verificar tem ficar verde aqui ó ó viu
+[00:03:0] ficou verde esses daqui vão ficar né vão
+[00:03:3] ficar como vermelho são Usinagens não
+[00:03:4] aplicad o que que ele tá dizendo eu
+[00:03:6] tenho uma porta de alumínio Ó daí ele tá
+[00:03:8] dizendo que essas Usinagens aqui não tão
+[00:03:10] não vão ser aplicadas na porta de
+[00:03:11] alumínio Claro que não vão né que a
+[00:03:12] gente não fura porta de alumínio Ele só
+[00:03:14] tá te alertando tá então ele já deu um
+[00:03:16] alerta que essas Usinagens não vão sair
+[00:03:18] mas não vai mesmo né Por causa da porta
+[00:03:19] de alumínio e esse daqui ele tá dizendo
+[00:03:22] que tem uma régua em pé aqui ó essa
+[00:03:24] régua em pé aqui ó ela tá menor do que o
+[00:03:27] limite que eu corto na minha máquina
+[00:03:29] minha máquina corta com 5 cm Então ela
+[00:03:32] tá menor que 5 Então ela tá acusando que
+[00:03:34] essa peça essa régua em pé aqui tá menor
+[00:03:36] que o limite de corte da minha máquina
+[00:03:38] mas a minha máquina vai cortar tá só tá
+[00:03:40] avisando mesmo o restante eu acho que
+[00:03:42] ele passou vamos fazer já todo o
+[00:03:45] verificador que já tinha conferido mas
+[00:03:47] só para conferir novamente então aqui
+[00:03:51] aqui aqui aqui aqui aqui ó beleza Opa
+[00:03:56] esse daqui
+[00:04:0] esse daqui ó componentes não válidos ó
+[00:04:2] Esso aqui são componentes que não
+[00:04:4] pertence ao up mó ele detecta como não
+[00:04:7] válido Ó tipo a cervejeira a parede os
+[00:04:9] objetos ele considera como isso aqui não
+[00:04:12] tá cadastrado no P mó Só aqueles ali ó
+[00:04:14] Então tá correto né sempre vai ficar em
+[00:04:16] vermelho porque ele vai te avisar que
+[00:04:17] existe isso aí tá aqui aqui aqui e aqui
+[00:04:21] esses daqui também vai ter vai ter esses
+[00:04:23] problemas né esses dois aqui mas a gente
+[00:04:25] já sabe o motivo limite de peça É porque
+[00:04:28] tem a minha máquina não corta imagem não
+[00:04:30] aplicada as imagens não aplicada é as
+[00:04:32] dobradiças da porta que não vai ser
+[00:04:34] aplicada no alumínio mesmo né só tá
+[00:04:36] avisando que ali não vai ser aplicada
+[00:04:38] mas olha que bacana ficou tudo verdinho
+[00:04:40] aqui Ah tá isso daqui ó componentes a
+[00:04:42] atualizar são componentes que eu fiz
+[00:04:44] alguma atualização nele mexi nele ó tá
+[00:04:47] ele tá perguntando que se a gente quer
+[00:04:49] fazer uma atualização nele mas não tá
+[00:04:50] correto já foi feito o ajuste que eu
+[00:04:52] precisei ele só avisou que eu mexi neles
+[00:04:55] beleza

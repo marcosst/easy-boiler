@@ -7,4 +7,4 @@ echo "Running database migrations..."
 dbmate --url "${DATABASE_URL}" up
 
 echo "Starting application..."
-exec uvicorn app.main:app --host 0.0.0.0 --port 8000
+exec uv run uvicorn app.main:app --host 0.0.0.0 --port 8000

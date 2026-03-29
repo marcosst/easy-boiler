@@ -1,0 +1,255 @@
+[00:00:00] falar um pouquinho do de tamponamento
+[00:00:02] simples selecionar essa caixa ven aqui
+[00:00:05] internos aí eu vou aqui tem para Interno
+[00:00:08] tem os externos vamos pegar aqui
+[00:00:10] tamponamento simples eu posso tanto
+[00:00:12] jogar um automático que eu já expliquei
+[00:00:14] em alguns vídeos vou clicar aqui em
+[00:00:15] automático e vou mostrar novamente clico
+[00:00:17] nessa caixa dou um enter
+[00:00:19] tá ele pegou só nessa caixa mas eu
+[00:00:22] queria que ele pegasse essa caixa até o
+[00:00:24] final ali com vista e tudo quero que ele
+[00:00:26] venha daqui vai até lá no final com a
+[00:00:27] vista e tudo então a gente pega aqui ó
+[00:00:30] na selecionando o tamponamento a gente
+[00:00:34] acresci o comprimento clica na trena eu
+[00:00:36] quero que ele aumente daqui ó daquele
+[00:00:38] pontinho ali eu vou pegar aquele ponto
+[00:00:40] até chegar lá no final da vista lá ó e
+[00:00:42] dou um enter ele estica já o
+[00:00:44] tamponamento até lá beleza então outros
+[00:00:46] detalhes que a gente pode fazer eu posso
+[00:00:47] clicar nessa peça aqui e dizer que a
+[00:00:50] profundidade dessa peça eu só quero com
+[00:00:52] 70 ó vai ficar só com 7 cm ali ó certo
+[00:00:56] eu quero que esse tamponamento inteiro
+[00:00:57] aqui ó daí eu pego a a aqui em cima ó a
+[00:01:00] mira amarela clico no tamponamento ó
+[00:01:02] tamponamento tem as configurações de
+[00:01:04] tamponamento quanto é que eu quero que
+[00:01:06] adicione na profundidade 25 para ficar
+[00:01:08] um tamponamento embutidor se eu fosse
+[00:01:11] botar a porta de Correia seria o quê uns
+[00:01:13] 70 90 tem gente que usa 90 né 70 nesse
+[00:01:16] 25 é o ó ele vai ficar tudo automático
+[00:01:19] ele fica tudo grudado nessa caixa aqui ó
+[00:01:21] então outro detalhe que a gente pode
+[00:01:23] fazer também neleo selecionando a a
+[00:01:25] amarela clico nele aqui em cima ó eu
+[00:01:28] tenho a base passante eu posso botar
+[00:01:30] lateral passante ele já automaticamente
+[00:01:32] muda ali ó certo já mudou ali paraas
+[00:01:34] laterais passantes eu posso fazer um
+[00:01:36] invertido eu posso diminuir um e-mail
+[00:01:38] nessa e aumentar um e-mail nessa pode
+[00:01:40] fazer tudo que tu quiser nesse tampo
+[00:01:41] aqui beleza Esse é automático vamos
+[00:01:44] excluir ele vou clicar aqui vou deletar
+[00:01:46] ele vamos clicar nessa mesma caixa aqui
+[00:01:49] e vamos vou até puxar ela para fora aqui
+[00:01:51] ó vou puxar ela para fora para me
+[00:01:54] mostrar outra função que tem aqui então
+[00:01:57] nesse nessa nesse caixote aqui aqui a
+[00:02:00] gente tem um tamponamento além do
+[00:02:01] automático nós temos os simples aqui ó
+[00:02:03] então por exemplo eu quero botar um
+[00:02:05] tamponamento tipo aqui ó é tamponamento
+[00:02:07] simples Eu quero no superior só uma
+[00:02:09] ruinha então eu clico nele ele é clico
+[00:02:12] na caixa e dou um enter El já jogo lá em
+[00:02:13] cima ó já fica no tamanho ali ó entende
+[00:02:17] você já até deixou um detalhezinho
+[00:02:19] passante aqui ó tá Por que que esse
+[00:02:21] detalhezinho
+[00:02:25] aqui 18 mm tá esse aqui já vai direto
+[00:02:28] direto na caixa
+[00:02:30] tem outro detalhe aqui também isso aqui
+[00:02:32] tudo pode mudar tá pó clicar aqui na na
+[00:02:35] na amarela pego a parte do tamponamento
+[00:02:38] eu consigo dizer ó adicionar
+[00:02:40] profundidade adicionar largura
+[00:02:42] profundidade já sai 20 para fora aí eu
+[00:02:44] quero no comprimento não quero quero
+[00:02:46] quant que quero tirar aqui no
+[00:02:48] comprimento aqui ó por exemplo ele tá
+[00:02:49] passando aqui para fora eu quero que ele
+[00:02:51] não passe isso aqui para fora quero que
+[00:02:53] ele desconte essa medida aqui ó 18,5 não
+[00:02:56] pode só vir aqui né gente é que a gente
+[00:02:58] acaba esquecendo clica nesse esse aqui
+[00:03:00] bota a setinha pro lado clica ali opa
+[00:03:04] ele aumentou por qu tem que botar clicar
+[00:03:07] nela e apertado no teclado a tecla menos
+[00:03:09] que eu quero diminuir e não aumentar né
+[00:03:10] então clico daqui travo no sket e clico
+[00:03:14] ali ó ele já diminui na medida ali ó
+[00:03:16] entendesse tudo tudo é paramétrico tudo
+[00:03:19] dá de fazer por exemplo esse aqui já
+[00:03:20] ficou nessa medida eu quero botar outro
+[00:03:21] tampo aqui na lateral então eu venho
+[00:03:23] aqui vamos pegar esse aqui ó lateral
+[00:03:26] clico nele clico na caixa e dou um enter
+[00:03:28] ele vai ficar ali ajustado ó tá vendo
+[00:03:31] que ele ficou curto eu quero aumentar
+[00:03:33] isso aqui a tela em cima agora como esse
+[00:03:35] tamponamento tá selecionado eu quero
+[00:03:36] acrescentar no comprimento também clico
+[00:03:39] nele comprimento acho que aqui é na
+[00:03:41] altura né Eu acho que aqui seria
+[00:03:42] adicionar na altura mas vamos ver se é o
+[00:03:43] comprimento clico nele boto para cima
+[00:03:46] você trava a seta aqui para cima e clico
+[00:03:48] nele aqui ó Ele mexeu aqui no afastou no
+[00:03:51] comprimento porque eu pedi para ele me
+[00:03:52] acrescentar no comprimento e não é no
+[00:03:54] comprimento cont Crol Z né vamos de novo
+[00:03:56] aqui vamos selecionar ele ó seleciona
+[00:03:58] esse tamponamento então ele aqui é na
+[00:04:00] altura clico aqui clico na altura clico
+[00:04:03] ali ó ele já aumentou na altura certo
+[00:04:06] ele já ficou aqui ó retinho embaixo tá
+[00:04:08] retinho por baixo eu posso fazer o qu
+[00:04:11] diminuir ele aqui também ou aumentar
+[00:04:12] mais meio pra frente aí tudo tudo por
+[00:04:15] aqui consegue dividir eu posso dizer eu
+[00:04:17] fiz Ali pela pela configuração dele né
+[00:04:19] Mas a gente pode vir aqui clicar no
+[00:04:22] tamponamento aqui e por aqui mesmo T
+[00:04:24] acrescentar eu quero acrescentar na
+[00:04:26] altura mais 18,5 Então posso botar aqui
+[00:04:28] ó mais 18
+[00:04:30] 18,5 ele pega ali ó e no eixo X ou no
+[00:04:33] eixo Z que é a altura - 18,5 ess ele já
+[00:04:38] vai ficar ali com acabamen inho para
+[00:04:40] baixo aí eu posso colocar o outro o
+[00:04:43] outro
+[00:04:44] tamponamento ó já fou ali ó Men 8,5 tudo
+[00:04:48] que a gente vai aumentando diminuindo
+[00:04:50] fazendo quiser ó lá em cima então aqui
+[00:04:52] ficou Men 41 só tirar menos 18 E5 deixa
+[00:04:55] ver porque eu já tinha aumentado 18,5 em
+[00:04:56] cima né então eu só acrescentei um pouco
+[00:04:58] a mais mas não precisava quanto é que
+[00:04:59] isso aqui
+[00:05:01] tá ó 20 essa peça aqui é de
+[00:05:05] 20 18 E5 não 18,5 tá certo é 18,5 mesmo
+[00:05:10] então aqui vai ficar
+[00:05:11] 8 pon Opa
+[00:05:15] 18.5 mais 1 8.5 Opa eu botei mais C né
+[00:05:20] P5 Agora deu certo e aqui embaixo também
+[00:05:24] ele pegou 13 porque um 8.5 eu botei mais
+[00:05:28] né não tinha visto que tinha adicionado
+[00:05:30] mais menos aqui menos ô Jesus teclado
+[00:05:34] aqui tá ruim - 8.5 ó então eu posso
+[00:05:38] ajustar na altura na largura e na
+[00:05:40] profundidade Vamos colocar um embaixo
+[00:05:42] também clico aqui vamos pegar o de baixo
+[00:05:44] esse aqui simples clico nele dou um
+[00:05:47] enter e já aplic embaixo ele vai ficar
+[00:05:48] passante lá ó porque ele vai acrescentar
+[00:05:50] né Ó até já não ô não ficou passante não
+[00:05:53] ficou por dentro Esse já é o tamanho
+[00:05:55] certinho por dentro então eu fiz o
+[00:05:58] tamponamento aqui tudo editável tudo
+[00:06:01] pode mexer pode mexer na profundidade
+[00:06:03] pode mexer na largura esse aqui é um
+[00:06:05] tamponamento simples mas ele já fica
+[00:06:07] grudado no móvel tu mexe o móvel já
+[00:06:09] pertence a esse módulo né agora existe
+[00:06:12] também os tamponamentos que não
+[00:06:13] pertencem ao módulo que daí você pode
+[00:06:16] ajustar ele manualmente também que é
+[00:06:18] aqui dentro de internos desculpa não é
+[00:06:20] internos é aqui em Componentes aí Tem
+[00:06:23] vários tipos aqui ó posso Vamos
+[00:06:25] Construir ó tamp molduras
+[00:06:28] Usinagens vamos ver aqui tem botão
+[00:06:30] decoração avulsos módulos avulsos
+[00:06:33] módulos prontos ó tamponamento tá aqui ó
+[00:06:36] esse aqui também é um tamponamento v
+[00:06:38] clicar nessa caixa eu clico nele né ele
+[00:06:41] é ele é uma Peça solta daí eu tenho que
+[00:06:42] usar as teclas do teclad boto pra
+[00:06:44] direita e dou enter ele já coloca ali só
+[00:06:46] que isso aqui é um módulo né esse aqui é
+[00:06:47] outro tá separado aí esse aqui eu
+[00:06:49] consigo usar por aqui pelo esio quero
+[00:06:52] que esse aqui Fique na medida aqui dessa
+[00:06:54] caixa eu quero que ele fique aqui rzinho
+[00:06:59] com a opa não pegou ali rente com a
+[00:07:02] porta aí eu quero que ele
+[00:07:05] fique que não pegou rente com a
+[00:07:08] porta um zoom mais pertinho aqui S
+[00:07:12] esio ali até aqui agora aí aente com a
+[00:07:17] porta entende El já ficou ali com a
+[00:07:19] folguinha aí eu posso pegar esse aqui é
+[00:07:22] um que eu posso vir aqui como ele é
+[00:07:24] avuso aportar o control copia e joga no
+[00:07:26] outro lado se eu quiser fazer isso aqui
+[00:07:29] eu faço fail entend Esse é avuso posso
+[00:07:31] vir aqui pegar a minha caixa vamos achar
+[00:07:34] um toramento em cima que é esse aqui ó
+[00:07:35] então eu aperto a seta para cima dou um
+[00:07:37] enter ele é avuso Ó ele não pega a
+[00:07:39] medida do caixote aí eu posso vir aqui
+[00:07:43] aumentar aqui posso vir aqui botar ele
+[00:07:46] até ali Opa Meu te meu mouse não tá bom
+[00:07:50] até aqui e posso vir até ó o mouse tá
+[00:07:53] des clicando aqui ó certo então eu posso
+[00:07:58] fazer ele avus só que ele é uma Peça
+[00:08:01] para cada essa peça é um código essa
+[00:08:02] peça é um código um código um código
+[00:08:04] aqui não aqui ele tá agregado ao meu
+[00:08:06] módulo Então esse módulo aqui todo tá
+[00:08:09] com tamponamento e tudo junto já né
+[00:08:12] Vamos habilitar as portas aqui na camada
+[00:08:14] que eu tinha desabilitado então ele fica
+[00:08:16] o módulo já com porta tamponamento e
+[00:08:19] você edita do jeito que quiser beleza
+[00:08:21] Essa é uma das funções bem interessantes
+[00:08:24] e tem esse detalhe né Ó que daí tu pode
+[00:08:28] copiar isso aqui para outro né pode
+[00:08:31] selecionar aqui ó posso esticar ele ó
+[00:08:35] Posso copiar ele inteiro e jogar em
+[00:08:37] outro módulo tá tudo tem isso e detalhe
+[00:08:40] aqui no tamponamento também né além
+[00:08:41] desse tamponamento aqui que depois eu
+[00:08:43] vou botar mais paraa frente a gente vem
+[00:08:45] aqui ó em peças
+[00:08:47] eh módulos módulos prontos não não é
+[00:08:51] aqui Aqui também não é deixa eu dar uma
+[00:08:53] lembrar onde é que era
+[00:08:56] aqui internos aqui ó internos na peça
+[00:08:59] vem aqui aqui na peça eu posso pegar
+[00:09:00] aqui na base e vou dizer que ele tem um
+[00:09:03] minifix aí eu clico nessa peça dou um
+[00:09:06] enter ó ele já vai Opa desculpa peguei a
+[00:09:09] peça errada tá desculpa aí vamos de novo
+[00:09:13] no
+[00:09:14] Amarelinho aqui em cima e deleto ela
+[00:09:19] deleto ela Issa aqui a peça tá em pé
+[00:09:21] então quando a peça tá em pé eu acho que
+[00:09:23] essas laterais aqui ó na lateral aí eu
+[00:09:26] vou pegar e vou botar um mini Fix clico
+[00:09:28] nele dou um enter ó isso mesmo na
+[00:09:30] lateral ele tá por dentro ele tá na
+[00:09:32] frente só que eu não quero na frente eu
+[00:09:33] quero no superior Vamos botar ali
+[00:09:35] superior ó lá Pronto já fou o minifix no
+[00:09:38] superior e já está com a Furação eu
+[00:09:40] botei só nessa peça essa peça aqui já
+[00:09:42] está furada também vem aqui ó já tá
+[00:09:45] furado ali ó tá vendo já furou o tampo
+[00:09:48] em cima tudo automatizado vou botar
+[00:09:51] naquele lá também eu posso fazer o qu
+[00:09:54] entro aqui nessa peça entro aqui nesse
+[00:09:57] aqui copio e vou lá e clico na outra e
+[00:10:01] dou um enter ele Já copiou só que ele
+[00:10:03] ficou para fora não quero para fora a
+[00:10:04] gente vem aqui inverte o lado Sim já
+[00:10:06] inverteu o furo automaticamente pro
+[00:10:08] outro lado vamos lá ver como é ficou a
+[00:10:10] furação do tampo eu botei só nas lateral
+[00:10:12] vamos ver como é ficou o tampo já furou
+[00:10:15] o tampo beleza

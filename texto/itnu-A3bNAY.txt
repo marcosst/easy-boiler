@@ -1,0 +1,143 @@
+[00:00:1] vou te mostrar aqui ó a questão da
+[00:00:3] etiqueta né etiqueta dos vidros só da
+[00:00:6] parte de vidraçaria tem um projeto
+[00:00:8] pronto aqui tem uma 2 3 4 5 6 7 8 portas
+[00:00:12] de vidros então depois que a gente
+[00:00:13] coloca as portas de vidro né aqui dentro
+[00:00:16] ó da porta de vidro tem uma informação ó
+[00:00:17] que é a cor que tu quer sair na etiqueta
+[00:00:20] do vidro tipo ess aqui é um vidro Extra
+[00:00:22] Clear bege Mat então o que que acontece
+[00:00:26] quando a gente vai aplicar uma cor eu
+[00:00:27] vou por exemplo vou pegar essa porta
+[00:00:29] aqui ó
+[00:00:30] vou aplicar uma cor
+[00:00:32] nela se eu vir aqui ó em Componentes tem
+[00:00:36] vidros eu vou trocar essa daqui para
+[00:00:38] Espelho Espelho bronze Ó essas duas
+[00:00:41] portas vão tá espelho bronze certo ele
+[00:00:44] vai pegar esse nome aqui e vai jogar lá
+[00:00:46] na etiqueta para mim tá essas outras
+[00:00:49] portas aqui ó essas outras elas estão
+[00:00:52] trabalhando com esse vidro aqui ó que é
+[00:00:53] uma pintura vidro pintado aqui ó certo
+[00:00:57] eu apliquei nelas e daí depois eu fui
+[00:00:59] ali na cor aqui do próprio sket né aqui
+[00:01:1] na nos materiais ó eu vou até pegar ela
+[00:01:4] aqui para vocês verem ó vou pegar no
+[00:01:6] baldinho aqui vou vir aqui no cont gotas
+[00:01:9] e vou pegar esse aqui ó então é aquela
+[00:01:12] cor que tá ali ó Extra tá vendo ó
+[00:01:15] pintura G1 Eu só vim aqui e editei a cor
+[00:01:18] para ficar na cor que eu queria beleza
+[00:01:20] só que ela tá usando essa cor aqui ó que
+[00:01:22] é a cor que é de pintura que é o mesmo
+[00:01:25] valor para todas as cores eu posso
+[00:01:27] pintar em qualquer cor só que como que
+[00:01:29] eu vou identif ficar isso aqui lá pro
+[00:01:32] identificar na etiqueta né então a gente
+[00:01:35] criou essa fórmula aqui dentro que é a
+[00:01:37] fórmula que é a cor que vai sair na
+[00:01:38] etiqueta a cor que tu quer que saia na
+[00:01:40] etiqueta então quando tu escolher aquele
+[00:01:41] vidro pintado você vai colocar a cor
+[00:01:44] aqui certo então olha como é fácil tô
+[00:01:47] com o projeto pronto vou mandar agora as
+[00:01:49] portas lá pra Vidraçaria clico nesse
+[00:01:51] botão todas as portas estão aqui ele vai
+[00:01:54] gerar as etiquetas automático ó sim
+[00:01:58] pronto já tá feito todo o processo das
+[00:02:1] portas Então olha como é que sai eu vou
+[00:02:3] maximizar aqui para vocês ver ó então
+[00:02:6] ele já sai onde tá pintado escura aqui é
+[00:02:8] o puxador as
+[00:02:9] dobradiças perfil inox com a cor do
+[00:02:12] vidro espelho bronze Então aqui tem ó um
+[00:02:16] a primeiro furo da dobradiça 100 o
+[00:02:18] próximo furo 8 2 1 daí tem as asos
+[00:02:21] espaçamentos do furo aqui ó posição do
+[00:02:23] furo de baixo para cima a posição que
+[00:02:25] vai ser furada o cliente a descrição que
+[00:02:28] é um roupeiro aqui diz que é uma porta
+[00:02:30] giro que o puxador é o a183 com ponteira
+[00:02:33] e aqui embaixo diz ó que é o perfil a04
+[00:02:36] com puxadora é com puxador a13 com
+[00:02:40] ponteiras Esse é uma vou passar pro lado
+[00:02:42] ó a outra puxador já mudou de lado certo
+[00:02:45] continua com as mesmas informações que é
+[00:02:47] espelho bronze A outra tá aqui ó que é
+[00:02:49] vidro Extra Clear né Extra Clear beig
+[00:02:52] matate vai ser a pintura beig mate Então
+[00:02:54] tá aqui ó todas as informações diz até
+[00:02:57] qual é a dobradiça aqui embaixo se você
+[00:02:58] observar Qual é a dobradiça ó é a
+[00:03:0] dobradiça reta né E vai ser quatro
+[00:03:2] dobradiças quantidade de quatro certo
+[00:03:5] então pra outra porta as outras são
+[00:03:7] pintada só aquela ali que é espelho
+[00:03:9] bronze então o que que nós vamos fazer
+[00:03:11] agora vou fechar aqui vou voltar essa
+[00:03:13] aqui pro padrão ó que é essa daqui né
+[00:03:15] então como é que eu voltaria ela padrão
+[00:03:17] selecionaria ela viria aqui na cor vamos
+[00:03:21] substituir o vidro pelo vidro que é o
+[00:03:24] mesmo vidro que tá ali que eu quero esse
+[00:03:26] aqui ó ele já vai até pintar
+[00:03:30] certo ele vai pintar já da mesma cor
+[00:03:31] porque ele vai identificar que eu
+[00:03:32] alterei essa cor para esse aqui ele já
+[00:03:34] alterou aqui então nessa porta vamos ver
+[00:03:37] qual é a cor ah ele já tá escrito também
+[00:03:39] porque já tava escrito eu poderia botar
+[00:03:40] qualquer cor aqui eu posso escrever
+[00:03:42] entende posso escrever mais itens aqui ó
+[00:03:44] e vai sair lá na etiqueta tá no caso
+[00:03:47] esse aqui vai ser BM porque eu vou fazer
+[00:03:48] esse pedido aqui com vocês então fiz
+[00:03:50] isso clique em aplicar a porta Agora já
+[00:03:53] tá configur certinho né ó Pronto agora
+[00:03:57] eu vou mandar esse pedido lá pra
+[00:03:58] Vidraçaria junto com você você ó vou
+[00:04:0] clicar aqui ele vai gerar as etiquetas
+[00:04:4] tá vendo com um clique só eu fiz todas
+[00:04:6] as
+[00:04:6] portas ó vamos lá boto aqui ó Então
+[00:04:13] vamos lá porta be matate ó 402 por 2 363
+[00:04:20] a porta puxador na direita puxador na
+[00:04:23] esquerda a outra porta ó bege Mat tá
+[00:04:27] então só tá gerando todas as etiquetas
+[00:04:31] de todas as portas ó Então tem que ter 1
+[00:04:34] 2 3 4 5 6 portas sete sete portas tem
+[00:04:40] aqui vamos lá verificar vai que eu botei
+[00:04:43] uma a mais né 1 2 3 4 5 6 7 portas então
+[00:04:47] tô com as etiquetas prontas ali vou
+[00:04:50] pegar essas etiquetas né Deixa eu ver se
+[00:04:53] essas daqui mesmo só para confirmar ó
+[00:04:57] bej Mat be Mat be matate be Mat be Mat
+[00:05:1] be matate todas elas estão com as
+[00:05:5] etiquetas e as e as especificações
+[00:05:7] corretas
+[00:05:8] ó
+[00:05:10] certo fecho ela seleciono tudo dou um
+[00:05:15] cont control c dou um cont control c
+[00:05:17] aqui e vamos verificar aqui
+[00:05:19] no no no fornecedor Ah aqui eu já mandei
+[00:05:24] um lá naé queela para Dublin Eu já
+[00:05:26] mandei um que é a parte de vidraçaria
+[00:05:28] então ele vem assim também a parte de
+[00:05:30] vidro ó que não tinha não tinha portas
+[00:05:32] né então ele sai um relatório espelho 4
+[00:05:35] MM a medida e a largura espelho 4 MM a
+[00:05:38] medida e largura ali é o nome do cliente
+[00:05:40] tudo eu só dou um print e colo aqui no
+[00:05:42] WhatsApp a mesma coisa vou fazer com
+[00:05:43] essas portas aqui ó só dou um cont contr
+[00:05:46] V ele vai anexar tudo aqui ó terminando
+[00:05:50] de anexar tudo ó eu anexo todos eles
+[00:05:52] assim ó vai todas as as peças né E aqui
+[00:05:55] embaixo eu digo ó segue né ó segue
+[00:06:3] com uma mão só aqui segue pedido
+[00:06:8] Luciana anoto o nome do cliente para ela
+[00:06:10] saber e para mim localizar melhor aqui
+[00:06:12] no WhatsApp também pronto tá feito
+[00:06:15] pedido fornecedor

@@ -1,0 +1,153 @@
+[00:00:0] agora a gente vai fazer aprender sobre a
+[00:00:2] trenin essa trena aqui ó Então como é
+[00:00:5] que funciona essa trena vamos copiar
+[00:00:6] esse recorte aqui esse painel com
+[00:00:8] recorte vou copiar e botar um afastado
+[00:00:9] do outro então existe três funções nessa
+[00:00:12] trena a primeira eu quero aumentar esse
+[00:00:14] painel até nessa largura aqui ó então eu
+[00:00:16] venho aqui no comprimento clico na
+[00:00:18] trinha Aí eu clico desse ponto nesse
+[00:00:20] ponto ele vai aumentar já Opa painel que
+[00:00:23] estava selecionado era esse né então
+[00:00:24] vamos selecionar esse painel aqui ó
+[00:00:27] clico na trenin clico desse ponto até
+[00:00:30] aquele ponto ó automaticamente ele já
+[00:00:32] aumenta esse meu painel até ali vamos
+[00:00:35] editar agora o furo tá vendo que o furo
+[00:00:37] veio junto né Vamos editar o furo eu
+[00:00:38] clico nessa ferramenta levo ali em cima
+[00:00:41] do furo clico no furo ele abre as
+[00:00:42] configurações do furo então notem que
+[00:00:44] aqui tá mover para horizontal zero então
+[00:00:47] ele botou aqui no lado zero eu quero
+[00:00:49] dividir esse furo bem no centro aqui ó
+[00:00:52] como é que eu faria também então eu não
+[00:00:54] sei essa medida daqui ali eu não preciso
+[00:00:56] medir eu clicando aqui ó eu clico nessa
+[00:00:59] ferramenta clico daqui até Opa mas só
+[00:01:2] que daí não é na horizontal vai ser na
+[00:01:4] vertical aqui né mover na horizontal
+[00:01:7] zero vertical não é aqui mesmo na
+[00:01:9] vertical então eu clico daqui e levo até
+[00:01:12] lá naquele ponto ó eu posso travar a
+[00:01:14] régua aqui para ela não sair desse eixo
+[00:01:16] né e clico nesse ponto ele vai botar a
+[00:01:18] medida ali ó 38 pon que é a medida
+[00:01:20] picada agora Eu só clico aqui no final ó
+[00:01:23] divido por dois só bota isso ele já vai
+[00:01:25] ficar Centralizado no meio vamos fazer
+[00:01:26] com a parte de baixo eu vamos botar aqui
+[00:01:27] ó zero para ele vir para pro o lado de
+[00:01:30] cima ali que o painel tá virado né então
+[00:01:32] ele vai ficar alinhado lá no lado de
+[00:01:33] cima com o eixo zero mover na vertical
+[00:01:35] zero tá lá em cima eu quero dividir ele
+[00:01:37] bem no meio do painel mesmo esquema pego
+[00:01:39] na trenin clico daqui aperto a seta para
+[00:01:42] cima para travar no eixo azul clico
+[00:01:44] embaixo ele vai colocar a medida Deli ó
+[00:01:46] 120 agora tu pega aqui e Divide por dois
+[00:01:48] e esse buraco vai ficar bem no centro do
+[00:01:50] painel que você fez beleza Isso é uma
+[00:01:52] forma a outra forma também que tem né
+[00:01:55] Por exemplo eu quero vamos dizer que
+[00:01:58] vamos baixar um outro painelzinho aqui E
+[00:02:0] é sei lá isso aqui funciona muito em
+[00:02:3] divisórias tá divisórias ele vai
+[00:02:6] funcionar bem aqui vamos dar um delete
+[00:02:7] aqui Vamos pegar vamos ver se nós
+[00:02:8] conseguimos mexer num módulo com
+[00:02:10] divisórias acho que não tem nenhum aqui
+[00:02:12] na cena vamos baixar um vamos aqui em
+[00:02:15] cozinhas e balcões vamos baixar um aqui
+[00:02:18] ó qualc divisório
+[00:02:21] aqui deixa eu baixar ele opa não pegou
+[00:02:24] ah clicou aqui agora sim ele não tinha
+[00:02:26] baixado não tinha clicado nele ó vamos
+[00:02:29] supor aqui aqui ó que eu quero que esse
+[00:02:31] caixote aqui ó que essa divisória ela
+[00:02:34] seja
+[00:02:35] daqui
+[00:02:37] até nesse ponto aqui ó certo essa
+[00:02:40] divisória seja aqui nesse ponto então
+[00:02:42] existe uma ferramenta aqui que a gente
+[00:02:43] vai pegar e vai selecionar ela ele tem
+[00:02:45] aqui ó acrescentar é essa aqui a gente
+[00:02:48] pode acrescentar que vai ficar mais
+[00:02:49] fácil do que substituir né vamos ver
+[00:02:51] outra ferramenta aqui vamos ver vamos
+[00:02:53] clicar aqui ó recu traseiro recu
+[00:02:56] esquerdo ó centralizar eu vou dizer que
+[00:02:58] não que eu não quero ela centralizada
+[00:03:0] vou aplicar eu não quero essa essa
+[00:03:2] divisória centralizada ela ficou lá o
+[00:03:4] eixo dela ficou lá no canto né então a
+[00:03:7] gente tem um reco que é de 50 Vamos só
+[00:03:11] botar aqui para ver Opa reco zero
+[00:03:16] posição da divisória 50 botei errado Ali
+[00:03:19] no lugar da medida recu é aqui a é o
+[00:03:21] frontal dela então o que que eu quero
+[00:03:23] que que aconteça com essa medida ó essa
+[00:03:26] divisória eu botei ela daqui aqui ó ela
+[00:03:29] tem quantos ó ela tem 50 só que vamos
+[00:03:31] supor que eu ten que eu quero que essa
+[00:03:33] divisória ela venha até nesse ponto aqui
+[00:03:35] mais ou menos ó Às vezes tem um objeto
+[00:03:37] que eu quero que alinhe com aéreo por
+[00:03:38] exemplo eu quero que essa divisória para
+[00:03:40] essa porta ficar no mesmo tamanho do
+[00:03:41] aéreo eu quero que ela venha até aqui
+[00:03:43] como é que eu faria isso aqui eu que
+[00:03:44] teria aqui já tem uma medida de 50 tá
+[00:03:46] vendo eu teria que zerar essa medida
+[00:03:49] aqui e acrescentar até chegar naquele
+[00:03:52] ponto ali ou tá se eu quiser clicar na
+[00:03:55] trenin aqui ó se eu clico na trenin
+[00:03:56] aperto o asterístico o asterístico ele
+[00:03:58] vira substituir o que que eu quero
+[00:04:0] Substituir eu quero substituir essa
+[00:04:2] medida até chegar nessa aqui ele
+[00:04:5] automaticamente já vai jogar a trena a
+[00:04:8] divisória para aquela posição ali que a
+[00:04:9] gente determinou certo ele substitui o
+[00:04:12] que tem aqui dentro a outra forma de
+[00:04:15] fazer também por exemplo eu quero que
+[00:04:17] essa vou movimentar essa aqui não sei
+[00:04:20] que posição é tá aqui eu não sei que
+[00:04:22] posição é Tá então vamos de novo nela lá
+[00:04:24] ó vamos pegar a Nira amarela clicar aqui
+[00:04:27] no interno ó cliquei no interno ele
+[00:04:29] botou aqui ó a medida da divisória tá
+[00:04:31] aqui que é daqui até ali só que eu quero
+[00:04:33] que essa divisória venha daqui até ali
+[00:04:35] então existe aqui também na trenin ó se
+[00:04:36] eu clicar na trena e apertar o menos no
+[00:04:39] teclado ela vira ela vai diminuir essa
+[00:04:41] medida daqui até chegar ali ó então eu
+[00:04:44] travo no teclado o lado x né quero
+[00:04:46] diminuir ela daqui até chegar ali ó
+[00:04:49] Então já vai descontar a medida naquele
+[00:04:52] vão ali que a gente pediu então o mais
+[00:04:55] então vou pegar trenda de novo ó o mais
+[00:04:57] acrescenta o menos eu consigo diminuir
+[00:05:0] lembrando tá sempre da direita pra
+[00:05:2] esquerda ou aqui é sempre nesse lado
+[00:05:4] sempre desse lado tá eu não consigo
+[00:05:5] diminuir daqui para cá nesse balcão tá
+[00:05:7] porque o balcão eixo zero dele aqui
+[00:05:9] então é sempre daqui para lá então o
+[00:05:12] mais o mais eu acrescento o menos eu
+[00:05:14] diminuo e o asterístico eu substituo o
+[00:05:17] valor que tá aqui dentro ó se eu quero
+[00:05:18] substituir esse valor por um outro valor
+[00:05:20] por exemplo eu quero substituir esse
+[00:05:22] valor que tá aqui por esse valor daqui
+[00:05:24] até ali ó então eu clico no clico aqui
+[00:05:27] clico na trenin né clico no Aster
+[00:05:30] e clico daqui até nesse vão aqui ó e dou
+[00:05:33] um clique de novo ele automaticamente já
+[00:05:35] vai botar divisória daqui até ali e
+[00:05:37] substitui o valor aqui dentro Beleza
+[00:05:39] então são três funções o mais acrescenta
+[00:05:43] o menos diminui o asterístico substitui

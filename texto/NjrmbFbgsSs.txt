@@ -1,0 +1,290 @@
+[00:00:0] Bom, cada vez que a gente vai usando o
+[00:00:1] sistema, entendendo um pouquinho mais, a
+[00:00:3] gente vai se surpreendendo, né? Eh,
+[00:00:5] nessas últimas atualizações, o Ron
+[00:00:7] desenvolveu um componente aqui, ó. Vou
+[00:00:8] baixar um painel, pode ser feito na
+[00:00:10] porta, no painel, em qualquer outro
+[00:00:12] objeto que vocês queiram, né? Então, eu
+[00:00:15] vou, o que que eu vou fazer aqui, tá? Eu
+[00:00:16] vou fazer um rebaixo aqui, ó, tá? No
+[00:00:18] meio, no centro da porta, e eu vou usar
+[00:00:20] aquela fresa bit para subir, né? Ela vai
+[00:00:23] subir, eh, em profundidades diferentes a
+[00:00:26] usinagem, né, para router, para fazer
+[00:00:28] aquele cantinho, né? o cantinho reto,
+[00:00:30] cantinho 45, né? Então, como é que a
+[00:00:32] gente faz isso? Eu, né, eu costumo fazer
+[00:00:33] assim, ó. Pego, vou pegar aqui o tamanho
+[00:00:35] da peça, né, inteiro, pego a o offset,
+[00:00:39] né, ó, clico no objeto e puxo para
+[00:00:41] dentro e vou dizer que tem 7 cm para
+[00:00:43] dentro. Essa de fora aqui, ó, a gente
+[00:00:45] vai apagar, né, essa de fora. Vou dar um
+[00:00:47] delete. Deixa eu apagar essa linha aqui
+[00:00:49] também com uma linha aqui fora aqui, ó.
+[00:00:52] Op. E apagar essa linha aqui. N, depois
+[00:00:54] essa linha não vai interferir em nada.
+[00:00:55] Vou deixar ela ali, tá? Então, seleciono
+[00:00:57] o meio dela aqui, clico em Opob,
+[00:01:0] converter as imagenses, criar rebaixo,
+[00:01:3] clico na face que eu quero criar o
+[00:01:4] rebaixo, ele vai criar o meu rebaixo
+[00:01:5] ali, ó. Só que eu quero esse rebaixo com
+[00:01:8] 6 vula, opa, 6,5
+[00:01:12] mm ali, ó, 6.5, né? Então, aqui, ó, 6.5
+[00:01:15] a espessura de um MDF ali, tá? Então,
+[00:01:17] fiz esse rebaixo. Agora, o que que eu
+[00:01:18] preciso? Eu preciso que essa que ele
+[00:01:21] fique assim, ó, com esse cantinho aqui,
+[00:01:23] né, em reto e não quando a fresa passa,
+[00:01:25] fica arredondado, né? Então eu quero
+[00:01:26] deixar esse cantinho aqui retinho. Como
+[00:01:29] que eu vou fazer isso aqui? Agora com o
+[00:01:30] PMOB a gente tem essa nova ferramenta.
+[00:01:33] Eu vou desenhar um triângulo aqui, ó.
+[00:01:35] Desenhei um triângulo. Eu eu sei que
+[00:01:36] aqui tem 6,5. Então vou jogar 6.5 para
+[00:01:38] cá, 6,5 para cá. Vou lá embaixo, fecho
+[00:01:42] lá e fecho aqui, ó. Desenhei esse
+[00:01:44] quadradinho. Só que ele tá invertido, tá
+[00:01:46] vendo, ó? A descida dele tá invertida,
+[00:01:47] eu preciso que ela seja para cá. Então o
+[00:01:49] que que a gente vai fazer? Gente, vai
+[00:01:51] rotacionar esse nosso desenho aqui
+[00:01:52] primeiro ou crio primeiro a usinagem e
+[00:01:54] rotaciono com a usinagem pronta, tá?
+[00:01:56] Então eu seleciono a face aqui, venho
+[00:01:58] mob, criar usinagem, criar e opa, criar
+[00:02:2] gráfico de não apareceu ali. Deixa eu
+[00:02:3] voltar um pouquinho para aparecer um
+[00:02:4] botinho lá em cima da Acho que vai
+[00:02:5] aparecer para vocês. Seleciono a face
+[00:02:8] ali.
+[00:02:10] Op mob.
+[00:02:11] Ô, não pegou a face. Pera aí. Ali Não tá
+[00:02:14] pegando. Agora pegou a face, ó. Então
+[00:02:16] vamos lá. Botão direito. P mob, criar
+[00:02:18] usinagem. gráfico de face, tá? Eu vou
+[00:02:22] dizer aqui, ó, que ele vai ser
+[00:02:23] profundidade diferente para router.
+[00:02:26] Marca essa opção aqui. Escolha a fresa.
+[00:02:28] Fresa bit. Eu acho que é essa daqui, tá?
+[00:02:30] A minha é essa daqui. Se eu não me
+[00:02:31] engano, eu cadastrei nessa aqui. Daí tem
+[00:02:33] que ver, tem várias fresas aqui. Vocês
+[00:02:34] podem cadastrar que vocês quiserem aqui,
+[00:02:35] né? Eu vou usar essa fresa aqui, tá? Que
+[00:02:39] é a que é a minha. Clico em criar e
+[00:02:41] clico na face, ó. Vou clicar aqui na
+[00:02:43] face do objeto. Clico nele, ele vai
+[00:02:45] criar aquela usinagem ali, ó. Eu vou
+[00:02:47] puxar ele para fora porque ela tá
+[00:02:48] errada, tá? Eu vou mostrar para vocês o
+[00:02:51] que que a gente tem que corrigir aqui.
+[00:02:52] Por o sistema, opa, control Z aqui.
+[00:02:56] Olha, ó. O que que o sistema fez aqui,
+[00:02:58] ó? Ele jogou a minha usinagem da onde eu
+[00:03:0] comecei, desse ponto aqui, ó, né? Eu
+[00:03:2] preciso deixar essa linha. Se tu dar
+[00:03:4] dois cliques dentro, ó, tem uma linha
+[00:03:6] aqui, ó. Vou dar mais dois cliques, ó.
+[00:03:8] Essa linha aqui, ó. Tá vendo onde é que
+[00:03:9] ela começou? Ela começou aqui, ó, desse
+[00:03:10] ponto. Só que essa linha tem que começar
+[00:03:12] na face de cima, tá? Ela tem que começar
+[00:03:15] nessa face aqui de cima. Ó, então a
+[00:03:17] gente tem que inverter esse nosso
+[00:03:19] desenho. Só que eu vou ter que
+[00:03:20] rotacionar tantas vezes, eu vou fazer de
+[00:03:21] novo, tá? Só voltar aqui, ó. Vamos fazer
+[00:03:24] ela novamente. Vou fazer ela na no lado
+[00:03:26] já mais certo. Oba. Deletar aqui. Vou
+[00:03:29] fazer ela já pelo lado certo, tá? Para
+[00:03:31] deixar ela da maneira correta aqui.
+[00:03:33] Então eu vou pegar aqui, jogo para cá,
+[00:03:37] 6,5
+[00:03:38] e levo lá em cima, né? E trago para cá.
+[00:03:41] O por quê? Aí ele já vai ficar, né? Vou
+[00:03:43] selecionar a face aqui, ó. Seleciona
+[00:03:45] essa face. Op mob, converter face,
+[00:03:47] gráfico de face. Marco essa opção e
+[00:03:51] clico em criar e clico na face que eu
+[00:03:53] quero criar, que é essa aqui, ó. Agora
+[00:03:54] sim, ele vai ficar na posição certinha
+[00:03:56] porque a minha fresa vai começar daqui e
+[00:03:58] vai terminar lá em cima, né? Ou
+[00:03:59] vice-versa começa de cima e termina lá
+[00:04:1] embaixo. Vou puxar ele para fora só para
+[00:04:3] vocês entenderem aquele deseninho lá, ó,
+[00:04:5] que saiu na posição errada, ó. Então, eu
+[00:04:7] dou dois cliques, mais dois cliques,
+[00:04:8] pego esse objeto que tá aqui dentro, ó.
+[00:04:10] Isso aqui é onde tá a minha frase, ó.
+[00:04:12] Essa minha fresa tem que começar aqui em
+[00:04:13] cima, ó. tem que ser alinhado com essa
+[00:04:15] face que é aonde ele vai iniciar. Então,
+[00:04:17] clico nele e solto ali e vou clicando
+[00:04:20] para fora aqui, tá? Ó, porque conforme
+[00:04:23] tu desenhou a tua linha, tu não sabe
+[00:04:24] onde é que esse objeto vai aparecer. Ele
+[00:04:26] tem que sempre ficar alinhado com a tua
+[00:04:28] face aqui em cima, tá? Peguei esse
+[00:04:30] objeto aqui agora de novo e vou jogar
+[00:04:32] ele lá para dentro da minha cena, ó. Vou
+[00:04:36] colocar ele aqui, ó. Pronto, coloquei
+[00:04:38] ele aqui. Só que ele ainda tá assim. Eu
+[00:04:40] preciso que ele seja em diagonal aqui,
+[00:04:41] ó, em 45º, né? Então, o que que a gente
+[00:04:43] faz? Clico nele aqui, clico para cá e
+[00:04:46] rotaciono 45º. Vamos verificar como é
+[00:04:49] que tá aparecendo lá na nossa usinagem,
+[00:04:51] ó. Aqui eu tenho que botar em modo de
+[00:04:53] usinagem. E vamos verificar a furação.
+[00:04:56] Ó, ele já apareceu lá, ó. Tá? Ela começa
+[00:04:58] com profundidades diferentes, tá? Ele
+[00:05:1] vai começar de baixo e vai subindo essa
+[00:05:3] profundidade ali ou de cima e vem
+[00:05:5] descendo, né? Então, a gente vai fazer
+[00:05:7] esse cantinho ficar vivo ali, ó. Clico
+[00:05:9] nesse objeto aqui, clico nessa na linha
+[00:05:14] aqui e vou copiar ele lá pros outros
+[00:05:16] cantos, ó. Então eu vou colocar aqui e
+[00:05:19] rotaciono ele, tá? Rotate. Opa. Sempre
+[00:05:22] na face, né? Aqui venho para cá. Ah, só
+[00:05:27] rotacionar aqui. 90 para cá, né? Ó, boto
+[00:05:30] 90 que ele vai dar certo. E vou fazendo
+[00:05:32] isso com os outros cantos, tá? Venho
+[00:05:34] nesse aqui, coloco nesse objeto aqui e
+[00:05:37] rotaciono. Isso aqui é um moto, né,
+[00:05:40] manual. Aqui eu tô apertando a seta pro
+[00:05:42] lado, pro lado esquerdo. Daí trava o meu
+[00:05:45] rotate, ó, e eu consigo rotacionar 90
+[00:05:48] para lá, que ele vai ficar que é 45 para
+[00:05:50] cá, mas 45 dá 90, né? Então, clico nesse
+[00:05:53] outro aqui, clico aqui em cima, clico
+[00:05:56] nesse objeto ou no rotate ou R ali que é
+[00:05:59] o rotate, né? Ó, aperto pra esquerda
+[00:06:1] para ele ficar na face que eu quero e
+[00:06:2] digito 90 para cá. Ele vai ficar sempre
+[00:06:6] 90º ali, né, que vai dar o 45 para cá.
+[00:06:9] Então assim ficaria esse nosso, né, ó, a
+[00:06:12] nossa rebaixo. Ele vai rebaixar toda
+[00:06:14] essa peça e vai fazer o cantinho ali, ó,
+[00:06:16] ficar em quininha viva, ó. Tá? O que que
+[00:06:19] acontece com essa ferramenta, tá, gente?
+[00:06:20] Essa ferramenta não é só para isso que
+[00:06:22] ela foi desenvolvida. Por exemplo, eu
+[00:06:24] quero fazer um rebaixo, é aquele lamelo,
+[00:06:27] né? lamelo. Vamos supor que eu vou fazer
+[00:06:28] mais ou menos aqui como se fosse o
+[00:06:29] lamelo. Então, ó, eu vou criar uma curva
+[00:06:32] aqui, ó, no lado. Ela vai ser aqui do
+[00:06:34] lado, tá? E essa curva tem que ser
+[00:06:37] fechada, né? Tem que ser uma face. Agora
+[00:06:40] eu seleciono essa face, clico o botão
+[00:06:42] direito, op mob, converter os imagenses
+[00:06:45] e gráfico de face. E vou dizer que ela
+[00:06:47] tem profundidades diferentes, que ela
+[00:06:49] vai começar daqui, vai ir para lá, né? E
+[00:06:51] clico em criar e clico na face que eu
+[00:06:53] quero criar. Pronto, ó, ele já criou
+[00:06:55] ali, ó. Já tá vendo que o desenho ficou
+[00:06:56] aqui na parte de baixo, ó? Ele não vai
+[00:06:58] funcionar. Então a gente dá dois
+[00:06:59] cliques, dois cliques. Pego o desenhinho
+[00:07:1] e coloco ele aonde eu posso colocar ele
+[00:07:3] na parte de qualquer lugar na parte de
+[00:07:5] cima lá, tá? Posso colocar aqui na
+[00:07:7] ponta, se eu quiser colocar aqui no
+[00:07:8] meio. Aí eu vou colocar ele bem aqui na
+[00:07:10] pontinha da face aqui, ó. Tá?
+[00:07:13] O que que esse desenho vai fazer, ó? Se
+[00:07:15] eu clicar com a mira verde nele, ó, tá
+[00:07:17] vendo ali, ó? Ele vai começar daqui e
+[00:07:18] vai fazer um embaloado para dentro. Ele
+[00:07:20] não vai fazer essa face ali, né? Então,
+[00:07:23] o que que eu quero com isso aqui, ó? Eu
+[00:07:25] posso puxar esse meu desenho aqui, ó, e
+[00:07:27] fazer ele aqui no meio, ó. Vou copiar.
+[00:07:29] Não vou nem copiar, vou só mover ele
+[00:07:31] aqui, ó. Eu quero bem no meio. Então,
+[00:07:32] vai começar uma usinagem lá para dentro
+[00:07:34] e vai sair aqui, ó. Clico aqui na face.
+[00:07:37] Olha ali, ó. Uma usinagem bem no meio.
+[00:07:39] Caso, né, caso vocês queiram fazer um um
+[00:07:41] rebaixo curvo assim, um rebaixo
+[00:07:43] arredondado, é só copiar várias dessa,
+[00:07:45] né? A fresa ali, vamos supor, a fresa
+[00:07:47] tem 7 mm, vocês vão botar vários dessa
+[00:07:49] aqui, a cada sei lá, 4 mm, vai ter um
+[00:07:52] desse, ó. Posso botar vários, ó. Quatro.
+[00:07:54] Aí eu vou fazer um trabalho aqui
+[00:07:57] arredondado
+[00:07:59] num num esvazeamento arredondado, vamos
+[00:08:1] dizer assim, né? Ó. Então quatro quatro
+[00:08:3] dá para fazer um um esvazeamento
+[00:08:5] arredondado aqui, ó. Tá? Para dentro,
+[00:08:7] tá? O que que ele não vai fazer visual,
+[00:08:10] né? Vai fazer lá na máquina. Se tu
+[00:08:12] entrar aqui, ó, faço um esvazeamento
+[00:08:14] assim, tá? Visualmente, né? Vocês vão
+[00:08:16] ver esse desenho. O que que é isso que
+[00:08:18] eu fiz aqui? Para quem não entendeu,
+[00:08:20] esse desenho aqui que eu fiz foi a mesma
+[00:08:21] coisa que eu fizesse, vamos supor, eh,
+[00:08:24] vamos botar aqui, ó, vamos desenhar um
+[00:08:26] quadrado aqui para para vocês entender
+[00:08:27] melhor, né? Então, esse, quem não
+[00:08:30] entendeu que foi feito, fazer um
+[00:08:31] quadrado, vamos fazer um quadrado no
+[00:08:33] chão aqui para ficar mais fácil de
+[00:08:34] explicar. Então, fiz um quadrado aqui, é
+[00:08:37] a mesma coisa que eu tivesse puxado um
+[00:08:39] autor aqui, ah, eh, 16, vou dar 16 mm
+[00:08:41] aqui, né? Se eu tivesse feito um outro
+[00:08:44] quadrado aqui dentro, ó, empurrado, eh,
+[00:08:47] vou empurrar aqui uns, sei lá, uns 12
+[00:08:49] para baixo, é a mesma coisa que eu
+[00:08:51] tivesse feito isso aqui, ó, dentro da
+[00:08:53] peça, né? Então, pego dali ali, ó.
+[00:08:58] Então, é a mesma coisa que eu tivesse
+[00:08:59] feito isso aqui dentro da peça, né?
+[00:09:2] Aquele desenho meu que eu fiz ali.
+[00:09:5] Opa, não pegou aqui na ponta,
+[00:09:9] ó. Que que é? Mesma coisa que tivesse
+[00:09:11] feito isso aqui, ó, lá no meio da peça,
+[00:09:13] ó, várias usinagens, ele vai fazer esse
+[00:09:15] trabalho aqui, ó, côncavo no meio da
+[00:09:17] peça, como se fosse um puxador diferente
+[00:09:19] aqui, né? Então, daria para fazer
+[00:09:21] qualquer coisa que vocês queiram fazer
+[00:09:22] dentro do sistema, é só saber usar ele,
+[00:09:25] tá? Mas olha que bacana que ficou, né?
+[00:09:27] Então, essa ferramenta ficou muito,
+[00:09:29] muito boa mesmo, tá? Aqui eu esvaziei
+[00:09:31] direto, não precisa esvaziar direto, né?
+[00:09:32] Vocês podem esvaziar uma uma régua aqui,
+[00:09:34] uma ali, uma ali pro meio ficar, né?
+[00:09:36] Vocês podem fazer vários esvaziamento,
+[00:09:38] né? Como é que faria isso? Tá? Dá para
+[00:09:40] fazer até por aqui, tá? Se vocês pegarem
+[00:09:43] eh se vocês notarem, ó, aqui dentro do
+[00:09:47] desenho, ele tem uma linha. Quer ver
+[00:09:49] onde é que tá? Tá lá em cima, ó. Essa
+[00:09:50] linha aqui, ó. Tá vendo? Se eu clicar
+[00:09:52] nela aqui, ó, a gente consegue mexer
+[00:09:54] largura, comprimento e altura. Vamos
+[00:09:56] supor que eu quero aqui, ó, 30, né?
+[00:09:58] Então, ele já botou bem centralizado 30.
+[00:10:0] Depois, claro, vocês teriam que fazer um
+[00:10:3] aqui, um ali, um ali, vários rebaixos
+[00:10:4] para ele fazer esse rebaixo que vocês
+[00:10:6] queiram, né?
+[00:10:8] Colocar, vamos dar aqui 300 de volta.
+[00:10:11] Vocês ter que fazer um rebaixo aqui, um
+[00:10:13] rebaixo ali, um rebaixo ali e um rebaixo
+[00:10:15] ali. Para quê? Pro meio ficar ativo, né?
+[00:10:17] Tá bom. Mas dá para fazer muita coisa
+[00:10:19] aqui, muita coisa mesmo, tá? O sistema
+[00:10:22] tá top. Yeah.

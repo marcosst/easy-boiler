@@ -1,0 +1,460 @@
+[00:00:1] bom hoje a gente vai aprender o
+[00:00:2] construtor de ambientes que é o que
+[00:00:4] constrói as nossas paredes tá aqui ó
+[00:00:7] esse botãozinho aqui ó construtor de
+[00:00:8] ambientes clicando nele a gente vem aqui
+[00:00:11] ó clicando nesse lapizinho ele abre um
+[00:00:13] menuzinho aqui do lado esse menu gente o
+[00:00:16] primeiro desenho é desenhar paredes o
+[00:00:18] segundo desenha o piso o terceiro
+[00:00:21] desenha o teto desenha bancadas esse
+[00:00:24] aqui desenha as pedras as granitos ali
+[00:00:26] da da Cuba das bancadas e esse aqui faz
+[00:00:28] recortes aberturas na parede
+[00:00:30] e o último ele é um configurador de
+[00:00:33] réguas na realidade ele configura umas
+[00:00:35] linhas guias na parede né vou até clicar
+[00:00:38] nele ó ele configura umas linhas guias
+[00:00:40] na parede que é para você seguir o seu
+[00:00:42] projeto por exemplo Vamos fazer uma
+[00:00:43] cozinha Qual é o pé direito da minha o
+[00:00:46] rodapé da minha cozinha digita ali ó 15
+[00:00:48] eu digito 15 e adiciono uma régua esse
+[00:00:49] aqui já tá adicionado né Qual é o pé
+[00:00:51] direito por cima da bancada por exemplo
+[00:00:53] é 86 que é 15 + 71 do balcão dá 86 A o
+[00:00:57] alinhamento do armário aéreo armário
+[00:00:59] aéreo eu quero 1500 do chão e vamos
+[00:01:1] supor que a parede tem 2,60 eu quero que
+[00:01:3] fique 10 cm menor aqui o alinhamento do
+[00:01:6] armário maior então é 2400 se eu vou
+[00:01:8] fazer com 2.500 né vai ser 2400 ou se eu
+[00:01:11] faço com 2 2,60 aqui será 2.500 ó então
+[00:01:16] a gente apaga aqui bota 2,500 vou deixar
+[00:01:18] 10 cm Menor Vou deixar 10 cm menor Ah
+[00:01:24] para fazer um roda teto em cima tá vamos
+[00:01:26] pô em cima de uma da da da da cozinha né
+[00:01:30] então agora a gente vai vir aqui clico
+[00:01:32] em cliquei em aplicar tá ele já aplicou
+[00:01:35] as medidas que eu modifiquei agora eu
+[00:01:37] venho aqui vou desenhar minha parede
+[00:01:38] nesse menu aqui ó desenhar paredes clico
+[00:01:40] nele e vou configurar minha parede Qual
+[00:01:42] é a altura da minha parede
+[00:01:45] 2,60
+[00:01:48] 2,60 espessura da parede 15 elevação vou
+[00:01:51] deixar zero eu quero começar a desenhar
+[00:01:53] ela da esquerda para direita ou da
+[00:01:54] direita paraa esquerda quero começar à
+[00:01:55] esquerda então ela vai começar aqui ó no
+[00:01:57] sentido horário tá a esquerda tem
+[00:01:59] começar a desenhar a parede por aqui PR
+[00:02:1] as medidas que tu digitar ficar por
+[00:02:3] dentro da parede se eu vier aqui e
+[00:02:5] trocar pra direita eu tenho que começar
+[00:02:6] a desenhar no antihorário sentido
+[00:02:8] antihorário Tá então vamos aqui na
+[00:02:10] esquerda aqui tem umas configurações que
+[00:02:13] eu posso unir as paredes tá quando eu
+[00:02:16] clico nesse botão todas as paredes vão
+[00:02:17] ficar Unidas Eu posso já criar o piso e
+[00:02:19] o teto automático tá sem se eu não
+[00:02:22] quiser eu posso vir clicar nesse botão
+[00:02:23] ele vai desenhar Tá mas eu prefiro
+[00:02:26] deixar sem PIS e sem teto e não não vou
+[00:02:29] unir a par tá tá quem quiser trabalhar
+[00:02:31] com Ni parede uma parede só quando tu
+[00:02:33] mexe ela vai mexer na parede inteira eu
+[00:02:35] vou deixar até o aqui depois eu explico
+[00:02:36] outros detalhes tá e tem o o bloquear
+[00:02:40] paredes também que ela vai ficar um
+[00:02:42] bloco todo bloqueado eu vou deixar ela
+[00:02:44] sem bloquear também e vamos iniciar o
+[00:02:46] desenho Então esse essa esse consor de
+[00:02:49] parede eu botei aqui ó começar pela
+[00:02:50] esquerda ele vira ali ó uma quando a
+[00:02:52] gente clica em iniciar desenho ele vira
+[00:02:53] uma colherzinha de pedreiro né então eu
+[00:02:55] vou criar minha parede aqui ó nesse
+[00:02:58] sentido vamos digitar medida vamos
+[00:03:0] travar Primeiro ela ó eu tô no eixo
+[00:03:2] Verde lá vocês estão vendo tô no eixo
+[00:03:4] verde eu quero travar no verde eu aperto
+[00:03:5] o teclado para o lado esquerdo
+[00:03:8] pressionando o teclado a seta do teclado
+[00:03:11] para o lado esquerdo a parede fica
+[00:03:12] travada não importa onde o meu mouse
+[00:03:14] está a parede vai ficar travada então eu
+[00:03:17] vou digitar a minha medida aqui ó por
+[00:03:18] exemplo vou começar aqui uma parede de 2
+[00:03:20] m vamos dizer que aqui no meio tem uma
+[00:03:22] porta janela de 2 m vamos dizer que tem
+[00:03:25] mais um pedaço de parede de 1500 eu só
+[00:03:27] vou digitando ó porque a parede
+[00:03:29] continuou travada eu só fui digitando e
+[00:03:31] determinando as medidas dela eu quero
+[00:03:34] virar a parede para cá ó pressiono o
+[00:03:36] teclado para o lado direito a seta do
+[00:03:39] teclado pressionei para o lado direito
+[00:03:41] ele já travou no meu eixo vermelho que é
+[00:03:43] esse eixo aqui ó então eu vou desen vou
+[00:03:46] desenhar V dizer que essa parede aqui
+[00:03:47] não tem janela nada ela tem uma parede
+[00:03:48] aqui de 4 m dou enter ela continua
+[00:03:52] travada no eixo vermelho eu quero voltar
+[00:03:55] para o eixo Verde perto lado o lado
+[00:04:0] esquerdo do teclado na setinha né pro
+[00:04:2] lado esquerdo se eu não quiser
+[00:04:3] pressionar também a setinha pode
+[00:04:5] trabalhar mão vão livre como é que
+[00:04:7] funciona no vão livre você tem que achar
+[00:04:9] o eixo ó ela vai dar ali ó achou o eixo
+[00:04:10] Tá vendo você tem que a hora que achar o
+[00:04:13] eixo você digita medida por exemplo eu
+[00:04:15] quero aqui uma medida de 80 e depois vai
+[00:04:18] ter uma porta de 90 eu continuo assim ó
+[00:04:21] só não posso tirar do eixo aí tem que
+[00:04:23] tomar cuidado para não movimentar a
+[00:04:25] parede na hora senão ela vai sair fora
+[00:04:26] né então como eu gosto de trabalhar com
+[00:04:28] ela travado eu travo ela aqui e agora eu
+[00:04:30] quero fechar eu não sei a medida dessa
+[00:04:33] parede aqui eu quero fechar ela com
+[00:04:34] aquela parede lá o primeiro clique tu
+[00:04:37] vai clicar lá atrás ó no vermelho tá
+[00:04:39] vendo virou uma bolinha lá fica mais
+[00:04:41] fácil de pegar ó quando eu clico lá essa
+[00:04:43] parede ficou no tamanho daquela parede
+[00:04:45] lá agora eu quero unir a parede tá
+[00:04:48] quando eu Uno a parede ali ó eu clico no
+[00:04:50] azul ó se eu levar bem no azul ó tá
+[00:04:52] vendo que a parede já vai fazer um chfr
+[00:04:53] lá ó e ele vai ficar uma parede assim ó
+[00:04:56] eu não né aqui ó eu Uni ela quando eu
+[00:04:59] botei aqui ó unir a parede né o que que
+[00:05:1] acontece quando a gente une a parede tem
+[00:05:4] umas ferramentas aqui também ó nesse
+[00:05:6] construtor de parede que é se eu clicar
+[00:05:7] com botão direito vir em up Mob
+[00:05:9] ambientes eu consigo rebaixar a parede ó
+[00:05:12] ela rebaixa toda a parede e se eu vier
+[00:05:14] de novo aqui up Mob ambientes levanto a
+[00:05:17] parede como ela tá unida ela fez todo
+[00:05:20] todo um bloco só eu rebaixo o bloco
+[00:05:22] inteiro e levanta o bloco inteiro se eu
+[00:05:25] tirar aqui ó e não unir ela vamos fazer
+[00:05:27] o mesmo desenho ó vamos iniciar o
+[00:05:29] desenho eu só vou fazer um um um
+[00:05:32] quadradinho aqui tá vou travar lá ó
+[00:05:36] essas paredes não tão unida agora o que
+[00:05:38] que acontece se eu clicar nessa eu
+[00:05:40] consigo Opa vir aqui e rebaixar essa
+[00:05:43] parede aqui consigo selecionar essa e
+[00:05:45] essa clicar com o botão direito e
+[00:05:48] rebaixar essas duas aqui ó entendesse eu
+[00:05:50] posso clicar nessa e rebaixar também
+[00:05:53] individualmente ó tá assim como eu posso
+[00:05:57] selecionar todas elas segurando a tecla
+[00:05:59] control tá pressionando control no
+[00:06:1] teclado seleciono todas elas clico o
+[00:06:3] botão direito P Mob ambientes e levantar
+[00:06:6] paredes então tem essas opções aqui que
+[00:06:8] a gente consegue fazer para trabalhar
+[00:06:11] com construtor de parede outra coisa que
+[00:06:14] a gente pode fazer aqui agora vamos lá
+[00:06:16] eu tenho as aberturas uma porta uma
+[00:06:19] janela e vamos supor que eu quero fazer
+[00:06:20] um buraco aqui ó eu poderia fazer o
+[00:06:22] buraco de duas formas primeira aqui
+[00:06:25] existe ó desenhar aberturas eu vou fazer
+[00:06:27] um desenho de uma abertura aqui ó vou
+[00:06:29] digitar o altura aqui de
+[00:06:31] 60 e a largura de 50 ó e clico em
+[00:06:37] adicionar ele vira um quadradinho onde
+[00:06:39] eu levar o quadradinho vai rotacionar na
+[00:06:42] parede tá ó então eu posso rotacionar o
+[00:06:45] mouse aqui ó quadradinho vai se
+[00:06:47] posicionar onde eu soltar Então vamos
+[00:06:49] usar essa linha aqui como guia aqui ó tá
+[00:06:52] vamos deixar dizer que ele é mais ou
+[00:06:53] menos aqui ó as linhas guias aparecem
+[00:06:55] quando eu vou colocar um objeto tá ó vou
+[00:06:58] colocar um objeto as linhas guias
+[00:06:59] aparece quando eu solto o objeto as
+[00:07:1] linhas somem então o que que acontece
+[00:07:4] aqui ó eu tenho esses dois buracos
+[00:07:6] posicionei naquela altura eu quero mexer
+[00:07:8] no buraco também a gente existe a opção
+[00:07:10] ó se eu clicar bem na linhazinha de fora
+[00:07:12] desse buraco aqui e no move que é a
+[00:07:14] letra m é o movimentar eu consigo
+[00:07:16] movimentar o buraco para cima ou
+[00:07:18] movimentar o buraco para baixo ou para a
+[00:07:20] direita ou para a esquerda eu consigo
+[00:07:22] fazer esses buracos aqui então é só
+[00:07:25] aperta a barra de espaço ele vira a seta
+[00:07:27] Preta quando aperta a barra de espaço é
+[00:07:28] um atalho para essa seta aqui aqui em
+[00:07:29] cima ó essa seta preta né então eu clico
+[00:07:31] bem na linha dela linha frontal e eu
+[00:07:34] consigo vir aqui ó selecionando ela
+[00:07:37] apertando o m o m é o copy né esse daqui
+[00:07:41] ó mover ou copiar tá e posso movimentar
+[00:07:44] ela para cá movimento elá para lá eu
+[00:07:46] posso copiar também ó apertando control
+[00:07:48] copio outra Posso apertar copiando cont
+[00:07:51] control copio outra para cá então eu
+[00:07:53] consigo o que que aconteceu quando eu
+[00:07:54] fiz o contol esse aqui não furou tá
+[00:07:56] vendo É só dar uma mexidinha nela que
+[00:07:58] ele vai furar ó ó só dar uma mexidinha
+[00:08:2] depois vocês podem voltar pra posição
+[00:08:4] que ele vai furar também tá isso é do
+[00:08:6] sket agora a outra opção de colocar
+[00:08:9] furos na parede é usando a nossa
+[00:08:12] biblioteca fácil venho aqui no menu de
+[00:08:14] ações do pmob venho na biblioteca fácil
+[00:08:17] venho aqui em decorações ó aqui em
+[00:08:20] decorações eu tenho portas e janelas
+[00:08:23] clico nela e eu posso pegar uma janela
+[00:08:25] dessa aqui por exemplo eu não desenhei
+[00:08:27] nenhuma na parede mas eu posso pegar ela
+[00:08:29] e posicionar ela num lugar aqui ó vamos
+[00:08:31] ver que ali vai ter uma porta uma
+[00:08:33] janelinha de basculante ali ó tá eu
+[00:08:35] posso vir aqui também nessa outra janela
+[00:08:37] aqui ó Nessa vamos dizer que aqui vai
+[00:08:39] ter uma porta janela então eu clico bem
+[00:08:41] aqui no começo uso o scale porque eu já
+[00:08:44] determinei a minha largura e eu só
+[00:08:46] determino a altura aqui dela vamos dizer
+[00:08:48] que tem aqui um pouquinho aqui olha vou
+[00:08:50] alinhar com aquela ali V alinhar com
+[00:08:53] esse
+[00:08:54] buraco ó ele não mexeu aqui ó porque
+[00:08:57] deve ter passado um pouquinho daqui
+[00:08:58] vamos lá ó aqui ó é só dar uma mexidinha
+[00:09:1] que deve ter essa linha deve ter passado
+[00:09:3] um pouco da li daí não furou Então é só
+[00:09:5] dar uma selecionar ela e alinhar de novo
+[00:09:8] com essa linha que ela vai furar Vamos
+[00:09:10] colocar uma porta aqui então vou pegar
+[00:09:13] essa porta levo lá no cantinho e solto
+[00:09:16] ela ela não furou por quê Porque ela
+[00:09:18] passou na minha linha guia então eu
+[00:09:20] posso vir aqui e usar o esio aperta a
+[00:09:23] tecla S disque e determina o tamanho
+[00:09:26] dela ali ó Então essa janela essa porta
+[00:09:28] já ficou ada pelos dois lados posso
+[00:09:31] também vir aqui ó pegar um batente ó
+[00:09:33] existe um batente também só selecionar e
+[00:09:35] soltar no chão eu marco né vamos dizer
+[00:09:37] assim ó tem um Marco para já colocado no
+[00:09:40] projeto também certo todas as janelas
+[00:09:43] que tem aqui elas vão furar ó só soltar
+[00:09:45] e ela vai furar no ambiente já vai
+[00:09:48] deixar o teu ambiente certinho outra
+[00:09:50] coisa que a gente precisa quando vai
+[00:09:52] construir a fazer um ambiente eu preciso
+[00:09:54] dos pontos elétricos Hidráulicos Então
+[00:09:56] vamos lá pontos elétricos Hidráulicos
+[00:10:0] clico nele que ele vai buscar todos os
+[00:10:2] pontos que tem cadastrado aqui no no
+[00:10:5] sistema só um pouquinho aqui
+[00:10:8] decorações aparecer pontos elétricos
+[00:10:11] Hidráulicos então aqui eu tenho a tomada
+[00:10:14] ponto de água ponto de esgoto
+[00:10:16] interruptor tecla tem um ponto de antena
+[00:10:19] tem uma um quadro e tem uma tomada
+[00:10:21] interruptor junto também tem o registro
+[00:10:24] de água e o registro de gás como é que
+[00:10:26] funciona aqui no sistema Vamos pegar uma
+[00:10:30] tomada pego a tomada quando eu vou tirar
+[00:10:32] a medida na casa do cliente eu sempre
+[00:10:34] pego a medida pelo Centro dessa tomada
+[00:10:36] bem no meio dela tanto no na parte de
+[00:10:39] baixo quanto na lateral por Assim fica
+[00:10:42] muito mais fácil Olha como é que
+[00:10:43] funciona no sistema vamos dizer que essa
+[00:10:44] tomada aqui ó ela começa a dar parede a
+[00:10:46] 1,20 m e tem a altura do chão de 1,10 m
+[00:10:49] 1,15 m então se eu levar lá no cantinho
+[00:10:52] lá e soltar ó olha o que vai acontecer
+[00:10:54] ele vai centralizar para mim no meio já
+[00:10:56] bem no meio daquela medida aí eu posso
+[00:10:58] pegar o move em qualquer lugar eu não
+[00:11:0] preciso clicar nela eu posso clicar aqui
+[00:11:2] ó pegando o move trabalhando no eixo ó
+[00:11:5] por exemplo al tá o eixo vermelho o eixo
+[00:11:7] vermelho se vocês quiserem travar é o
+[00:11:9] teclado pro lado direito ó então travei
+[00:11:11] o eixo vermelho eu digo qual é a medida
+[00:11:13] que eu quero para cá dessa tomada porque
+[00:11:15] ela já tá lá no eixo eu posso pegar em
+[00:11:16] qualquer lugar então a medida para cá eu
+[00:11:18] quero 1,20 dessa parede e a altura
+[00:11:21] teclado a seta do teclado para cima eu
+[00:11:23] travo para ele não sair do eixo qual a
+[00:11:25] altura que eu quero eu quero com 1,1 que
+[00:11:27] eu tinha falado né 1 e é só digitar a
+[00:11:30] medida e menm botei lá outra coisa que a
+[00:11:33] gente pode fazer também vamos pegar um
+[00:11:35] um ponto d'água mesma coisa ali o ponto
+[00:11:37] da água se eu levar lá no cantinho ó e
+[00:11:39] soltar ele já gruda bem no meio ó certo
+[00:11:42] então eu vou pegar ess pon da água pegar
+[00:11:44] o move só que eu quero deixar eu vou ter
+[00:11:46] dois pontos d'água eu vou ter um ponto
+[00:11:47] d' água um pouco mais para cá e outro
+[00:11:49] para lá eu aperto o contol ó eu deixo
+[00:11:51] aquele ponto d'água lá ó como uma cópia
+[00:11:53] vou mexer só um vamos dizer que esse
+[00:11:55] ponto da água aqui ó tem 2 m altura de
+[00:12:0] 60 cm Tá eu vou ter mais um pontinho da
+[00:12:3] água 20 cm afastado um do outro ó 20 ali
+[00:12:6] agora vamos supor que eu tenho uma
+[00:12:7] máquina de lavar Então já deixei aquele
+[00:12:9] ponto ali ó clico no control puxo para
+[00:12:11] cá vamos supor que a minha máquina de
+[00:12:12] lavar vai est mais próxima aqui ó vai tá
+[00:12:15] 1,20 m tá e a altura de ó travo para
+[00:12:19] cima no eixo azul sempre travando né não
+[00:12:22] esqueça vocês não sair do eixo então
+[00:12:24] travo a medida Qual a altura do ponto de
+[00:12:26] máquina aqui uns 45
+[00:12:29] então aqui tá o ponto da água mesma
+[00:12:31] coisa funciona com o esgoto ó o esgoto
+[00:12:33] el é um pouquinho maior então se eu
+[00:12:34] levar no cantinho e soltar ele já vai
+[00:12:37] aparecer o esgoto e eu também vou dizer
+[00:12:39] que tem um esgoto bem aqui no meio aqui
+[00:12:41] ó e a altura dele aqui vamos dizer que é
+[00:12:44] uns
+[00:12:45] 50 só tô chutando a medida aqui tá
+[00:12:47] poderia digitar a medida que vocês
+[00:12:49] quiserem mesma coisa se eu tenho várias
+[00:12:51] tomadas na mesma sequência eu copio a
+[00:12:52] medida de um centro de uma tomada ao
+[00:12:54] outro centro de outra tomada Então eu
+[00:12:56] posso ir digitando as medidas ó vamos
+[00:12:58] supor que tem uma 50 e a outra aqui 1,50
+[00:13:0] m afastado aqui ó certo então as tomadas
+[00:13:3] pode copiar uma da outra ou vire baixar
+[00:13:5] uma outra tomada colocar na parede que
+[00:13:8] ela centraliza ali e digitar a medida
+[00:13:10] vamos supor que eu tem uma tomada para
+[00:13:11] essa máquina aqui ó que ela fica também
+[00:13:14] aqui próxima certo aí vocês vão
+[00:13:16] digitando as medidas e vão colocando os
+[00:13:18] pontos elétricos Hidráulicos o registro
+[00:13:20] do gás ele já vem assim eu vou mostrar
+[00:13:22] só para vocês como é que ele é Ó ele já
+[00:13:23] vem um registro assim ó tá E também já
+[00:13:26] vem o registro de água né que geralmente
+[00:13:28] é mais na parte de cima então o registro
+[00:13:31] de água El já tem o desenho do registro
+[00:13:33] mesmo como vai ficar isso aparece dentro
+[00:13:35] do móvel tem que fazer um recorte al um
+[00:13:37] detalhes assim a caixa de quadro de
+[00:13:40] quadro de luz é um quadradinho né Ó você
+[00:13:43] pode trabalhar tanto ela assim enquanto
+[00:13:45] pode rotacionar ela ou assim ou assim tá
+[00:13:49] ó pode rotacionar ela você consegue
+[00:13:52] escalonar ela na medida também tá dizer
+[00:13:56] que é uma caixa maior então tem essas
+[00:13:58] funções você pode trabalhar aqui dentro
+[00:14:0] de um construtor de parede tudo que você
+[00:14:2] precisa pra parede tá aqui agora também
+[00:14:4] vamos fazer o quê a nossa bancada no
+[00:14:7] Construtor então vamos aqui construtor
+[00:14:10] de parede clique em desenhar eu tenho
+[00:14:12] aqui ó desenhar bancadas que eu ainda
+[00:14:15] não expliquei né clico nela altura
+[00:14:18] frontal da bancada vamos dizer que a
+[00:14:19] nossa pedra tem 6 cm tá profundidade se
+[00:14:22] meu balcon tem 60 vamos dizer que a
+[00:14:24] pedra tem
+[00:14:26] 63 Sara molhada aqui não e a altura do
+[00:14:29] roda pia eu vou dizer que tem 20 e vou
+[00:14:32] clicar aqui agora que tem uma uma um
+[00:14:35] detalhe importante elevação eu vou
+[00:14:38] deixar ela livre eu posso vir aqui a
+[00:14:41] marcar livre Daí onde eu clicar essa
+[00:14:43] pedra vai ficar ou Eu determino já a
+[00:14:46] minha altura da pedra lembra que lá no
+[00:14:48] começo a gente configurou a nossa régua
+[00:14:49] qual era a altura dela a altura era de
+[00:14:51] 80 E6 né na pedra e eu posso bloquear
+[00:14:56] ela e aqui eu tenho que começar a bancar
+[00:14:59] à direita a bancada já funciona um
+[00:15:1] pouquinho diferente da do Construtor de
+[00:15:3] parede ela é invertida se eu quiser
+[00:15:4] começar pela esquerda aqui eu tenho que
+[00:15:6] dizer queela bancada começa à direita
+[00:15:8] aqui ó vai vou desenhar ela para a
+[00:15:10] direita tá então clico aqui em desenho à
+[00:15:14] direita e cli iniciar desenho ele também
+[00:15:16] vira uma colher de pedreiro lembra que a
+[00:15:19] gente Travou a nossa medida 860 ali ela
+[00:15:21] não tá posição livre não interessa onde
+[00:15:24] eu clicar eu posso clicar aqui em cima ó
+[00:15:27] a minha bancada será desenhada
+[00:15:29] lá embaixo na posição que eu determinei
+[00:15:33] para ela certo e dou um enter ele já
+[00:15:35] desenha a bancada ali eu quero botar
+[00:15:38] agora as Cubas aqui em cima Então como é
+[00:15:41] que a gente colocaria essas Cubas posso
+[00:15:43] desenhar posso pegar ela já pronta lá no
+[00:15:46] sistema ou eu posso vir aqui também e já
+[00:15:48] desenhar um recorte Ó tipo quero um
+[00:15:50] recorte aqui
+[00:15:52] de sei lá 50 por 40 e cli adicionar olha
+[00:15:58] tá assim ó ficou invertido vamos botar
+[00:16:0] aqui
+[00:16:1] 40 por
+[00:16:3] 50 clica adicionar ó arrumei ali então
+[00:16:6] vamos dizer que Aqui é onde tá a nossa
+[00:16:8] Cuba onde é que tá o nosso registro de
+[00:16:10] gás tá ali vamos puxar um pouquinho mais
+[00:16:13] pro lado essa nossa Cuba aqui ó certo
+[00:16:16] para cá Opa acabei mexendo para lá e
+[00:16:18] posso desenhar outro buraco aqui que vai
+[00:16:21] ser o nosso onde tem o nosso gás vai ser
+[00:16:23] o nosso Forno Fogão
+[00:16:26] tá E assim vocês podem fazer os desenhos
+[00:16:29] que você quiser a pedra ela pode ser
+[00:16:31] editada dá dois cliques em cima dela eu
+[00:16:33] quero fazer um rebaixo nela aqui ó você
+[00:16:36] pode fazer um rebaixo nela tá dentro da
+[00:16:40] pedra só que teria que fazer o rebaixo
+[00:16:41] depois fazer a a coisa ó posso fazer um
+[00:16:44] rebaix italiano aqui ó de 2 cm certo só
+[00:16:48] o que acontece a minha pedra eu teria
+[00:16:50] que furar ela depois e não como eu furei
+[00:16:52] aqui tá por isso que dá esse defeitinho
+[00:16:54] aqui ó mas também não tem problema a
+[00:16:56] gente pode editar o buraco
+[00:16:59] també é só selecionar é um pouco mais
+[00:17:2] difícil né mas dá de fazer seleciono
+[00:17:4] essas bordas e também consigo não eu não
+[00:17:8] consigo nesse daqui não ter que fazer
+[00:17:10] ele depois mesmo então a gente vem aqui
+[00:17:13] saio fora da pedra Opa clico no ó o
+[00:17:16] buraco ali tá ali ó tá vendo ó Ele tem o
+[00:17:19] Deixa eu botar aqui ó ele tem eu criei
+[00:17:22] duas linhas ali ó essa linha ficou por
+[00:17:24] dentro certo então apago ela agora sim
+[00:17:27] eu coloco o buraco ali dentro dentro
+[00:17:29] desse buraco aqui ó que eu tinha
+[00:17:30] colocado o buraco no de cima né Fiz o
+[00:17:32] rebaixo Então esse buraco teria que ser
+[00:17:34] aqui embaixo ó para ele fazer a a a
+[00:17:37] pedra com rebaixo italiano também tá bom
+[00:17:40] então assim Vocês conseguem fazer todas
+[00:17:42] as suas bancadas pedras tudo pelo
+[00:17:44] Construtor e usando a biblioteca fácil
+[00:17:46] você consegue colocar todos os pontos
+[00:17:48] elétricos colocar as tomadas e as
+[00:17:50] paredes e assim por diante essa era a
+[00:17:52] parte que teria para falar de construtor
+[00:17:54] de parede

@@ -1,0 +1,534 @@
+[00:00:0] iniciar uma cozinha aqui que eu dou ela
+[00:00:2] como treinamento né então a gente vai
+[00:00:4] começar desde a parede e eu vou tirar
+[00:00:7] aqui não quero unir a parede começo pela
+[00:00:8] esquerda e vou iniciar o meu desenho eu
+[00:00:10] eu dou essa cozinha sempre um
+[00:00:11] treinamento aqui daí fica mais fácil da
+[00:00:14] gente explicar mas vamos passar para
+[00:00:16] todos aqui então tem 2 m de parede aqui
+[00:00:18] vamos dizer que eu tenho uma porta
+[00:00:20] janela de 2 m vamos dizer que aqui eu
+[00:00:22] tenho mais 80 de parede eu travo para cá
+[00:00:25] vamos dizer que tem mais um 2 m de
+[00:00:27] parede aqui vamos dizer que tem uma
+[00:00:28] janela de 1,6
+[00:00:30] e vamos ter mais aqui 1,70 aqui 70 70
+[00:00:35] 1,40 V 1,5 M aqui 1,5 M uma vamos dizer
+[00:00:41] que tem mais uma uma porta aqui de 80
+[00:00:45] depois da porta tem mais um pedacinho
+[00:00:46] aqui de uns 10 cm viramos a parede para
+[00:00:49] cá aí aqui vão dizer que tem 1,5 M
+[00:00:52] depois V dizer que tem uma coluna aqui
+[00:00:54] então a gente consegue fazer uma coluna
+[00:00:56] usando o mesmo construtor de parede aqui
+[00:00:59] ó tá uma coluna de 9 cm por 50 aí a
+[00:01:3] gente só vai travando aqui bota nove de
+[00:01:5] novo trava pra cá então a gente pode
+[00:01:8] fazer todos os detalhes com esse
+[00:01:9] construtor de parede Vamos só finalizar
+[00:01:11] a parede aqui a gente finaliza ela fica
+[00:01:14] assim eu posso vir aqui nessa parede
+[00:01:16] aqui ó e rebaixar ela se eu vir aqui ó
+[00:01:18] pó ambiente rebaixa a parede Opa pó
+[00:01:20] ambiente rebaixa a parede aqui também
+[00:01:23] pmob ambientes posso rebaixar essa
+[00:01:24] parede para ficar mais fácil de eu
+[00:01:26] desenhar a parede lá no canto Vamos
+[00:01:27] botar as aberturas agora as aberturas
+[00:01:30] daí a gente vem pelo a biblioteca fácil
+[00:01:32] né Posso até fechar isso aqui que eu não
+[00:01:34] vou usar vou vir em decorações e vou
+[00:01:37] pegar portas e janelas Então vamos pegar
+[00:01:40] um modelinho aqui de janela aqui vamos
+[00:01:41] dizer que tem uma
+[00:01:42] porta uma porta de uma porta de janela
+[00:01:46] aqui né estica ela e vem até ali estica
+[00:01:51] ela até Opa quando quando acontece isso
+[00:01:54] é porque ela não pegou bem no meu ponto
+[00:01:55] lá ó é só dar uma ajad para pegar bem no
+[00:01:58] ponto tá vamos botar aqui que tem uma
+[00:02:0] janela normal aqui então essa janela daí
+[00:02:4] a gente pega e bota a rura dela por
+[00:02:6] exemplo tem um e vamos dizer que ela tem
+[00:02:8] 1,20 1,20 do chão então ela vai começar
+[00:02:11] ali ó então eu posso mover até apertando
+[00:02:15] a tecla M eu movo ela né subo ela até
+[00:02:18] ali e daí eu escalo ela né até o objeto
+[00:02:23] que eu quero e até o tamanho que eu
+[00:02:25] quero né posso diminuir também um
+[00:02:26] pouquinho do tamanho ó se acontecer isso
+[00:02:28] aqui ó você só dá uma mexidinha nela e
+[00:02:30] solta de novo tá daí ela já vai se
+[00:02:32] ajustar depois en Coloca ela no lugar se
+[00:02:36] acontecer dela não não se ajustar oo
+[00:02:37] tamanho tá
+[00:02:39] elete vamos botar uma porta aqui então a
+[00:02:42] porta vamos pegar essa porta aqui
+[00:02:45] colocamos ela aqui ó tá vendo que ela
+[00:02:46] não furou Porque ela passou da minha
+[00:02:48] margem né eu posso vir e diminuir aqui
+[00:02:51] dela já vai furar ela fura dos dois
+[00:02:53] lados tá se eu quisesse a janela na
+[00:02:56] altura da porta né a gente pode usar o
+[00:02:57] esio aqui ó escalonar ela até lá tá que
+[00:03:0] na altura da
+[00:03:1] porta mesma coisa com isso aqui com essa
+[00:03:5] janela se eu quiser que fique tudo
+[00:03:6] alinhado po escalonar eles e agora tem
+[00:03:9] um detalhe bem interessante aqui ó que é
+[00:03:11] os pontos elétricos e Hidráulicos Então
+[00:03:13] como é que funciona o ponto elétrico
+[00:03:14] hidráulico aqui no sistema se eu baixar
+[00:03:16] por exemplo uma água eu levo ele bem no
+[00:03:18] cantinho lá ó quero que a água fique
+[00:03:20] nessa parede quando eu solto no canto
+[00:03:21] aqui ó ele já centraliza ali ó bem no
+[00:03:23] meio da parede então eu consigo com esse
+[00:03:26] detalhe aqui ó chegar um uma parede por
+[00:03:28] ex Ah vai ter 1 m aqui 1 m sei lá é vou
+[00:03:31] jogar 1 m aqui 1 m de água altura de 60
+[00:03:37] aí eu já posso pegar outra água que tá
+[00:03:39] aqui da mesma distância vamos dizer que
+[00:03:41] essa outra água aqui tem sei lá um 15 cm
+[00:03:44] aqui vamos pegar o esgoto o esgoto tá
+[00:03:48] aqui vamos dizer que esse esgoto tem um
+[00:03:51] 80 no bot ter comot tá bem no meio 90
+[00:03:55] tem altura de 50 vamos pegar um registro
+[00:03:58] Olha o registro também a mesma coisa ele
+[00:04:0] já sempre centraliza pelo meio porque se
+[00:04:2] a gente sempre pega a medida do Meio
+[00:04:3] vamos dizer que tem um gás aqui mais ou
+[00:04:5] menos tá vamos dizer que tem um registro
+[00:04:8] de água Olha o registro de água ele já
+[00:04:10] vem com a canoplas aí o registro de água
+[00:04:12] aqui vamos dizer que tem um 90 aqui Opa
+[00:04:15] soltei aqui vamos travar ele aqui vamos
+[00:04:19] ter aqui um registro de água lá em cima
+[00:04:21] as tomadas mesmo esquema tomada
+[00:04:23] interruptor solto ele lá no cantinho ele
+[00:04:26] centraliza movimento vamos ver começa
+[00:04:29] aqui com 10 tem
+[00:04:32] 1,10 de altura 1,15 M sei lá e aí tu
+[00:04:35] pode distribuir as tomadas aqui vamos
+[00:04:37] dizer que tem uma tomada aqui vamos
+[00:04:39] dizer que vai ter uma pro forno aqui uma
+[00:04:40] pra geladeira aqui vamos des então o que
+[00:04:42] que a gente vai fazer agora a gente vai
+[00:04:43] lá no nosso construtor de esbolso né
+[00:04:46] clico no canto da parede Ó o meu já tá
+[00:04:48] configurado se não tivesse configurado
+[00:04:50] vocês apertaram o tab digitariam a
+[00:04:52] altura e a largura e OK e ele já ia
+[00:04:55] começar a desenhar aqui boto meu mouse
+[00:04:57] bem longe e vou dando um enter aqui por
+[00:04:59] 30 aqui aqui eu quero um gaveteiro 50
+[00:05:4] vamos dizer que eu tenho mais uma porta
+[00:05:7] aqui de 1 m duas portas né vai dar 1 m
+[00:05:9] não V dizer que tem mais um gaveteiro
+[00:05:11] aqui de 50 ou eu quero que esse
+[00:05:13] gaveteiro fique alinhado aqui ó né e
+[00:05:15] agora vou ter aqui tem quantos tem 1,60
+[00:05:18] m vamos dizer que dá dois balcão de
+[00:05:20] 80 aqui 80 vamos dizer que aqui tem uma
+[00:05:23] torre de geladeira aqui de
+[00:05:25] 70 tô deixando tudo sem folga né claro
+[00:05:28] que a gente tem que calcular as folgas
+[00:05:29] né já
+[00:05:30] então aqui vamos dizer que eu tenho um
+[00:05:32] um armário que vai ser uma uma torre de
+[00:05:35] forno então eu aperto o tab e vou
+[00:05:37] ajustar essa torre de forno né a altura
+[00:05:40] 2,30 e a profundidade de 65 vou aumentar
+[00:05:44] um pouquinho e dou um enter né ele já
+[00:05:46] bota lá em cima ó Então vou dar um Tab
+[00:05:48] porque ele não ficou bem na medida é
+[00:05:49] 2,35 ó para ficar lá na lá na minha
+[00:05:53] linha lá em cima agora vou digitar um
+[00:05:55] balcão aqui de 70 e a minha torre de
+[00:05:57] geladeira eu vou levar até o final lá e
+[00:06:0] Dá um enter ah torre geladeira vamos
+[00:06:3] apagar esse módulo por quê esse módulo
+[00:06:5] aqui nós vamos apagar porque a torre
+[00:06:6] geladeira ela vem do chão né então dou
+[00:06:8] um delete tá eu tenho duas maneiras de
+[00:06:11] começar ela eu posso já vir aqui e
+[00:06:13] clicar no desenho e descer ele aqui em
+[00:06:16] linha reta ou eu já vi nesse canto aqui
+[00:06:18] que eu que eu já sei que já tá no chão
+[00:06:19] né e começo a desenhar só que o qu ele
+[00:06:22] tá 15 cm menor então eu dou um Tab e
+[00:06:25] digito aqui que é 15 então vai dar 2,50
+[00:06:28] ó 2,50 65 D um ok e agora ele acrescenta
+[00:06:33] essa dor geladeira que ela vai até o
+[00:06:35] chão ali lá em cima nós vamos fazer um
+[00:06:37] armário aéreo Então vamos clicar aqui
+[00:06:40] onde dar um Tab Esse armário aéreo vai
+[00:06:43] ter 1 m vai ter profundidade 35 e vai
+[00:06:47] começar pela inferior também então vou
+[00:06:48] aditar aqui tem uma vista de
+[00:06:50] 30 daqui aqui tem 1,97 V deixar um
+[00:06:55] pouquinho de folga aqui vamos dizer que
+[00:06:57] tem 1,90 1,90 Então vai dar dois
+[00:06:59] armários
+[00:07:0] de 80 né 80 dá em
+[00:07:5] 60
+[00:07:6] 90 90 aqui vamos botar dois armários de
+[00:07:9] 90 dechar uma folga ali e dou um
+[00:07:13] enter agora o que que a gente vai fazer
+[00:07:15] vamos fazer uma testeira aqui em cima aí
+[00:07:17] eu clico daqui a testeira tá invertida
+[00:07:19] dou um Tab eu vou dizer que se a minha
+[00:07:21] testeira tem altura de 31 e 35 de
+[00:07:25] profundidade também só que ele vai
+[00:07:26] começar pelo superior para inverter
+[00:07:28] coloca minha testeira ali dou um enter ó
+[00:07:31] dou um enter para finalizar agora eu
+[00:07:34] pego essa minha Texeira Opa pego essa
+[00:07:36] minha Texeira aqui que ela dá com 31 eu
+[00:07:38] já vou jogar ela um pouquinho mais para
+[00:07:40] baixo aqui ó deixar uma um desenho em
+[00:07:42] cima da janela ali esse aqui é o meu
+[00:07:45] módulo tá ajustado vamos fazer o que
+[00:07:46] agora o roda teto então eu costumo fazer
+[00:07:49] sempre usando esbolso e a gente vai meio
+[00:07:51] que criando um ó 10 roda teto é 100 de
+[00:07:55] altura e eu vou diminuir CCO na
+[00:07:57] profundidade aqui então ele vai ter
+[00:08:1] 30 Opa Tab só que ele vai começar pelo
+[00:08:5] inferior não pelo superior né então eu
+[00:08:8] venho até aqui e dou um enter e vou
+[00:08:10] começar no outro daqui dou um Tab só que
+[00:08:13] a profundidade desse armário era de 65
+[00:08:16] agora vai ter 60 porque eu quero 5 a
+[00:08:17] menos por que que eu tô fazendo ele
+[00:08:19] encostadinho aqui tá como eu não tenho
+[00:08:22] as medidas aí a gente ajusta eles depois
+[00:08:24] tá essa medida na largura que a gente
+[00:08:26] ajusta depois com componente colocado
+[00:08:29] mais fácil tá então fiz esses detalhes
+[00:08:32] aqui vamos fazer aqui vamos fazer aqui
+[00:08:34] também ó um criador mais um aqui que é o
+[00:08:37] Vamos criar no esboço eu acabei tirando
+[00:08:39] esqueci de fazer o o rodapé rodapé vai
+[00:08:42] vir até só que eu vou dar um Tab is aqui
+[00:08:45] não vai ser um rodapé ele vai ser só uma
+[00:08:47] frente Zinha a altura é
+[00:08:49] 150 e aqui vai ser 2 cm de profundidade
+[00:08:53] que é o granito tá clico inferior e
+[00:08:56] coloco ele ali e dou a só que eu vou
+[00:08:58] puxar esse meu esse meu modulinho esse
+[00:09:1] meu componente Zinho lá pra frente então
+[00:09:4] eu quero que mobc tem 60 vai deixar
+[00:09:7] cinco de folga lá na frente então vai
+[00:09:9] ficar com 55 deixar um pouquinho para
+[00:09:12] dentro ali ó tá Fiz o granito ali agora
+[00:09:14] a gente vai começar a fazer a
+[00:09:15] substituição Então como é que a gente
+[00:09:17] substitui isso aqui vamos procurar os
+[00:09:19] componentes nossos aqui em cima eu vou
+[00:09:20] digitando ó
+[00:09:22] balcão cliquei em balcão quero um balcão
+[00:09:24] duas portas nesse aqui ó nesse aqui eu
+[00:09:26] quero um balcão de duas portas substituo
+[00:09:30] aí nesse daqui e nesse daqui eu quero o
+[00:09:33] gaveteiro então é gavetas aí eu quero um
+[00:09:36] de os dois vamos botar os dois iguais
+[00:09:39] aqui ó esse aqui um cada lado os dois
+[00:09:42] iguais falando que pode ser feito tanto
+[00:09:45] um Como selecionar Eu só quis fazer
+[00:09:47] dessa forma aqui para mostrar vocês que
+[00:09:48] a gente pode fazer os dois juntos né
+[00:09:51] Vamos clicar nesse outro aqui op nesse
+[00:09:53] aqui e nesse aqui vamos
+[00:09:55] botar balcão duas gavetas aqui deixa eu
+[00:09:58] ver onde é que ele tá nosso aqui ó
+[00:10:1] gaveteiro duas gavetas Pode ser que esse
+[00:10:3] meu balcão ele não esteje adequado à
+[00:10:5] medida por exemplo ele não estica até
+[00:10:7] esse tamanho né então eu vou deixar
+[00:10:8] assim para mostrar para vocês que se ele
+[00:10:10] ficar curto aqui ó a gente teria que
+[00:10:12] trocar depois por outro balcão Tá mas a
+[00:10:15] gente vai fazer a troca dos dois juntos
+[00:10:16] ó Então esse aqui deixou vamos na torre
+[00:10:19] de geladeira só digito aqui torre tá
+[00:10:22] vamos pegar o modelo de Torre aqui esse
+[00:10:25] aqui aí eu clico no componente aqui em
+[00:10:27] cima no troca substituo too dessa torre
+[00:10:30] essa aqui não é torre de forno né não é
+[00:10:32] de geladeira né Agora nós vamos procurar
+[00:10:33] de geladeira mesmo então vem aqui ó
+[00:10:36] centralizou ali o fogão mas depois vou
+[00:10:38] ensinar vocês a ajustar aqui também aqui
+[00:10:40] vai ter uma G Ladeira então eu vou pegar
+[00:10:44] esse daqui que é engrossadinha clico
+[00:10:46] nele ele vai trocar já tudo agora eu
+[00:10:49] venho aqui também nas dois rodatetos ao
+[00:10:51] mesmo tempo venho nesse Opa ó da teta ó
+[00:10:55] nesse e nesse digito aqui ó fechamento
+[00:10:59] vou pegar os fechamentos superior
+[00:11:1] substituo os dois ao mesmo tempo só que
+[00:11:3] nesse daqui ó lembra que eu falei eu vou
+[00:11:5] clicar na mira amarela e clicar Opa
+[00:11:7] clica na mira amarela e clico nele então
+[00:11:9] eu vou diminuir no comprimento dele os5
+[00:11:11] para deixar um Opa fiz errado aqui aqui
+[00:11:14] comprimento - 50 tá ele vai diminuir ali
+[00:11:19] esse aqui vai ser comprimento Men
+[00:11:23] 100 por qu eu vou deixar cinco cada lado
+[00:11:26] também requadro aqui ó recado não qu
+[00:11:29] então V botar aqui eh 50 para cá tá
+[00:11:34] aquela peça lá eu não vou querer ó por
+[00:11:36] exemplo eu não quero que orche aquela
+[00:11:37] peça a gente vem aqui e desativa ela tá
+[00:11:40] por eu só vou querer esse L aqui e agora
+[00:11:42] vamos trocar também os Aéreos selecione
+[00:11:44] os dois Aéreos digito aqui
+[00:11:46] aéreo ele vai mostrar os dois vamos
+[00:11:49] botar esses dois de basculante aqui
+[00:11:50] vamos ver se vai dar não sei se tamanho
+[00:11:52] dê mas vamos ver substitui os dois o eu
+[00:11:56] tava em fechamento eu já podia ter
+[00:11:57] colocado também as duas vistas Então
+[00:11:59] vamos colocar as duas vistas aqui de
+[00:12:0] novo ó para não precisar para ter visto
+[00:12:3] isso aqui já seleciono essa tá vendo ali
+[00:12:6] seleciono aquela vista ali e seleciono
+[00:12:8] esta vista aqui então eu vou colocar um
+[00:12:10] fechamento lateral aqui ele já vai se
+[00:12:12] ajustar nas medidas tá agora V trocar
+[00:12:14] prateleira vai ser
+[00:12:16] duplada ó clico em duplada pego a
+[00:12:20] prateleira duplada tampa vulo prateleira
+[00:12:23] avulsa duplada e clico aqui substitui
+[00:12:25] essa prateleira Vamos colocar agora um
+[00:12:27] ledzinho aqui embaixo ó LED eu posso
+[00:12:30] colocar tanto a capa Difusora como o LED
+[00:12:33] tá então vou colocar ele pressiono a
+[00:12:35] tecla para baixo ele já ser a linha ali
+[00:12:37] aí eu só tenho que ajustar esse
+[00:12:40] componente até ali né E como ele eu
+[00:12:42] quero el Centralizado vamos dizer que eu
+[00:12:44] quero só uma um de croica Centralizado
+[00:12:46] Ah não quero uma então o sistema já ao
+[00:12:49] vai se ajustando os espaços ali ó vamos
+[00:12:51] dizer que eu quero três ele já coloca
+[00:12:52] três ó Então já tô com uma cozinha
+[00:12:55] totalmente quase pronta aqui em questão
+[00:12:57] de minutos né onde tô
+[00:13:0] o torre de geladeira então o geladeira
+[00:13:4] geladeira só geladeira que é melhor de
+[00:13:6] aparecer Então essa torre aqui eu vou
+[00:13:8] botar esse modelo aqui de
+[00:13:12] geladeira troco o modelo chegou a trocar
+[00:13:14] el tá baixando ó que não foi usada essa
+[00:13:16] torre ainda então ele tá baixando e
+[00:13:18] configurando ó baixou e configurou é um
+[00:13:21] pouco pesado esse módulo né ó Então já
+[00:13:23] ajustou configurou tudo ali outro
+[00:13:25] detalhe que a gente vai fazer agora
+[00:13:26] vamos ajustar esses erros Ah não faltou
+[00:13:28] o meu rodapé aqui ó então o rodapé ele
+[00:13:30] tá dentro aqui ó de decoração granitos ó
+[00:13:34] pedras e granitos tem esse componente
+[00:13:35] aqui eu clico em substituir por ele
+[00:13:37] Pronto já tá substituído e esse agora
+[00:13:40] vamos desenhar a bancada da minha pedra
+[00:13:42] aqui a bancada eu posso usar essas
+[00:13:43] modelos que estão prontos aqui ou eu
+[00:13:45] desenhar a minha mesmo pelo construtor
+[00:13:47] de parede ó vem aqui construo a bancada
+[00:13:50] que vou decapé da 60 o balcão tem 60 vai
+[00:13:53] ser 63 40 é roda pia de 20 e não vou
+[00:13:57] usar elevação queer posição ali e vou
+[00:14:0] iniciar o meu desenho ó clica iniciar
+[00:14:2] ele vai virar ali a colher né então eu
+[00:14:4] clico naquele canto e vou lá e clico lá
+[00:14:8] no outro canto eu posso clicar aqui em
+[00:14:10] cima tá ó se eu clicar aqui ó ele já vai
+[00:14:12] desenhar minha pedra lá desenhe a minha
+[00:14:14] pedra vou fazer uns buracos aqui então
+[00:14:17] esse buraco aqui vai ter vamos pô e
+[00:14:20] 40 por 70 aqui vou botar uma Cuba aqui
+[00:14:24] então eu coloco uma Cuba ali aí vamos
+[00:14:27] dizer que eu quero um fogão também já
+[00:14:29] posso fazer até o buraco do fogão
+[00:14:30] adiciono o outro vamos dizer que vai ter
+[00:14:32] um um buraco para adicionar um fogão
+[00:14:34] Aqui também tá aí vocês ajusta o buraco
+[00:14:37] na medida que quiser ali e agora a gente
+[00:14:39] vai trabalhar ajustando O componente
+[00:14:41] componente vem aqui clico na frente da
+[00:14:44] gaveta Opa clico na frente da gaveta mas
+[00:14:46] eu tenho que selecionar o conjunto de
+[00:14:48] gaveta aqui ele tá com uma produção e
+[00:14:51] altura máxima eu vou destravar essa
+[00:14:53] altura máxima aqui não vai ser mais zero
+[00:14:55] e eu vou dizer que a posição ele tá
+[00:14:57] dando um erro aqui nessa gaveta ó que a
+[00:14:59] vamos até pegar aqui ó que é a gaveta
+[00:15:1] interna conjunto de gavetas ó Opa
+[00:15:4] amarela aqui aqui para cá ó ele diz que
+[00:15:9] a minha corrediça disponível ó tá dando
+[00:15:11] esse Alerta por tem que ver se existe
+[00:15:13] corrediça de 60 lá na fábrica ele tá
+[00:15:15] pedindo para olhar aí eu vou dizer como
+[00:15:17] eu já sei que talvez não exista eu já
+[00:15:19] venho aqui eu vou padronizar essa aqui
+[00:15:20] para 50 porque é um módulo muito
+[00:15:22] profundo ele já elimina o erro ali agora
+[00:15:25] a gente vem aqui vamos ajustar esse
+[00:15:27] componente aqui ó clico n ele né ele tem
+[00:15:30] a folga direita e esquerda ele não tá
+[00:15:32] centralizando né esse aqui tá
+[00:15:33] manualmente então a gente pode
+[00:15:35] centralizar esse componente aqui fazendo
+[00:15:37] o quê mover na horizontal né quero mover
+[00:15:40] na horizontal V de temem zero ele vai
+[00:15:42] ficar ali ó colocou bem no início então
+[00:15:45] eu pego essa trenin aqui eu quero que
+[00:15:47] essa medida fique daqui até ali daqui
+[00:15:51] até aqui ó ele vai me digitar a medida
+[00:15:53] ali dentro do componente Opa aqui ó
+[00:15:54] vaiar medida aqui dentro eu venho aqui e
+[00:15:56] divido por dois daí ele vai ficar igual
+[00:15:58] tá
+[00:15:59] Esse é um componente que ele tem aceit a
+[00:16:2] medidas dos dois lados então mesmo
+[00:16:3] esquema boto aqui zero clico em aplicar
+[00:16:6] e agora eu venho aqui na trinha opa não
+[00:16:9] é nessa né nessa trena venho nessa trena
+[00:16:13] aqui clico daqui para cá tá e ven aqui
+[00:16:17] divido por dois s eu não sei a medida
+[00:16:19] para fazer o cálculo já tô centralizando
+[00:16:21] os componentes então fiz esse meu módulo
+[00:16:24] aqui vamos fazer as cores agora
+[00:16:25] seleciono esse esse esse e esse vamos
+[00:16:28] vir aqui eu eu gosto tá tem gente gosta
+[00:16:30] de fazer trocar por componente mas eu
+[00:16:32] gosto mesmo é de vir direto aqui e
+[00:16:34] trocando por peça Então vem aqui aplicar
+[00:16:37] V MDF peças e eu vou vendo como vai
+[00:16:40] ficando Vamos botar em azul aqui então
+[00:16:43] ele vai virar um um rolinho né E a gente
+[00:16:46] vai clicando nas peças que querem
+[00:16:49] clicar Opa aqui não pegou aqui essa aqui
+[00:16:53] também dar um zoom mais pertinho quero
+[00:16:56] nessa nessa nessa
+[00:17:0] nessa beleza vamos pintar essa parte de
+[00:17:3] cima aqui em azul também vamos pintar a
+[00:17:5] minha vista ali ó de azul essa aqui e
+[00:17:9] essa aqui vamos botar essa lateral aqui
+[00:17:11] em azul esse e essa peça em
+[00:17:14] azul essas daqui eu vou deixar em outra
+[00:17:16] cor Então vou selecionar essa caixa essa
+[00:17:18] essa e essa e vamos vir em MDF corpo
+[00:17:23] vamos pegar aqui o Rover e vamos aplicar
+[00:17:27] em tudo ele vai aplicar em todo esse
+[00:17:28] componente aqui no material S deixa ele
+[00:17:32] selecionar quando eu aplico muita coisa
+[00:17:34] assim né tem por dentro L da teto tudo
+[00:17:37] ele demora um pouquinho né Ó então o que
+[00:17:39] que faltou trocar aqui faltou trocar
+[00:17:41] essas portas então eu posso vir aqui ó a
+[00:17:43] em MDF e pegar por peças e escolher o
+[00:17:47] mesmo Rover daí eu troco essa peça essa
+[00:17:50] peça essa essa e aquela lá manualmente
+[00:17:53] posso trocar a prateleira também então
+[00:17:55] essas às vezes fica mais rápido da gente
+[00:17:57] trocar aqui em cima eu tem um componente
+[00:17:59] de decoração aqui eu já tenho umas
+[00:18:1] pedras criadas eu posso pintar ele só
+[00:18:3] que esse aqui de cima eu fiz ele e a mão
+[00:18:7] livre né esse aqui de cima aqui
+[00:18:10] ó aqui não deixou F ver
+[00:18:14] aqui pintando esse aqui paraou verificar
+[00:18:16] o que que aconteceu vamos pintar Então
+[00:18:19] esse aqui também não deixa então a gente
+[00:18:21] pode depois baixar umas pedras do
+[00:18:22] próprio sket né vem aqui no próprio
+[00:18:26] sketch porque não é não é um negócio que
+[00:18:27] vai ter valor
+[00:18:29] pedras vamos pegar um modelo aqui ó daí
+[00:18:32] a gente pode ir pintando o meu
+[00:18:35] componente
+[00:18:38] né aqui aqui e aqui só que ela tá meio
+[00:18:43] escura deixa editar um pouquinho mais
+[00:18:45] clarinho aqui
+[00:18:46] beleza então tem um uma cozinha completa
+[00:18:50] já com as Usinagens ali como é que a
+[00:18:52] gente vê Usinagem aqui no sistema a
+[00:18:54] gente clica aqui Opa aqui para fechar
+[00:18:59] deixa eu fechar aqui então a gente vem
+[00:19:1] aqui no sistema aqui eu tenho que estar
+[00:19:2] em moldo estou revisando né E daí eu
+[00:19:5] consigo vir aqui e ver as minhas
+[00:19:7] Usinagens se eu não tiver em modo
+[00:19:8] revisando eu não consigo ver as Usinagem
+[00:19:10] então todos os todos os processos de
+[00:19:12] usinagem Ó ali ficou em outra cor eu
+[00:19:13] posso botar um tamponamento aqui embaixo
+[00:19:15] também N sem problema seleciono a minha
+[00:19:18] vista tá seleciono a minha vista venho
+[00:19:20] aqui e digito tamponamento
+[00:19:24] tamponamento ele aparece vários Tá eu
+[00:19:27] vou dizer que eu quero inferior clico
+[00:19:29] nele pressiono para baixo e dou um enter
+[00:19:32] então eu ajusto essa minha medida lá no
+[00:19:34] meu amarelinho né a profundidade eu
+[00:19:36] tenho comprimento a profundidade vai ser
+[00:19:38] 37,5 que eu quero 2,5 para fora e o
+[00:19:41] comprimento a gente estica ele pelo esio
+[00:19:44] né ó eu posso fazer um até ali Posso até
+[00:19:47] fazer isso aqui ó se quiser né Vamos
+[00:19:49] deixar até ali e daí eu troco a cor daí
+[00:19:51] aqui em cima ó nas cores tem um conta
+[00:19:53] Goa aqui ó se eu clicar no conta Goa eu
+[00:19:55] consigo pintar esse de baixo na mesma
+[00:19:57] cor eu coloquei um Vamos colocar também
+[00:19:59] uma uma fita de led aqui ó então a gente
+[00:20:1] vem aqui em cima e digita LED pega a
+[00:20:5] fita de led Coloco ela no sistema essa
+[00:20:9] nossa fita de led aqui ela é totalmente
+[00:20:11] paramétrica que que eu quero dizer que
+[00:20:13] ela é paramétrica porque quando coloco
+[00:20:15] uma fita de led aqui ó coloquei a fita
+[00:20:19] de led ali eu consigo tanto a largura da
+[00:20:22] Usinagem com a profundidade da Usinagem
+[00:20:24] então eu já consigo recuar aqui a
+[00:20:26] largura e a profundidade da Usinagem
+[00:20:27] posso arredondar medida dela que você
+[00:20:29] quiser né e eu posso vir aqui também e
+[00:20:31] colocar um interruptor né um dedinho ali
+[00:20:33] ó tem o toch né tem o ol eu posso vir
+[00:20:35] aqui em elétrica eh acho que é dedinho
+[00:20:39] deixa eu ver se tá como dedinho não é
+[00:20:41] ele tá como interruptor interruptor ó
+[00:20:44] aqui tem interruptor eu tem um dedinho
+[00:20:45] aqui ó o botão então eu posso colocar um
+[00:20:47] botãozinho ali na vista tanto aqui na
+[00:20:49] frente quanto lá atrás e se a gente for
+[00:20:51] entrar aqui ele vai estar com todas as
+[00:20:52] Usinagens prontas tá ó tá no lado b o
+[00:20:56] dedinho e o LED certo então uma cozinha
+[00:21:0] completa pronta comz inagem e tudo é só
+[00:21:2] mandar ela pra produção que já tá o
+[00:21:4] orçamento também já vamos verificar o
+[00:21:5] orçamento claro que aqui tem uns
+[00:21:7] componentes que não estão cadastrados
+[00:21:8] ainda vamos ver se todos estão
+[00:21:9] cadastrados vamos vir aqui em orçamento
+[00:21:12] só verificar se ele tiver a gente entra
+[00:21:15] aqui deixa eu ver se tem de todo o
+[00:21:18] projeto aqui é de todo o projeto Então
+[00:21:20] tá aqui cadastrado já tá com orçamento
+[00:21:22] aqui ó tudo detalhado Ó tem uma peça
+[00:21:25] aqui tá em vermelho que não tem cadastro
+[00:21:26] tá olha marca aqui já em vermelho não
+[00:21:29] tem cadastro e a gente tem uns custos
+[00:21:31] aqui do sistema Beleza o orçamento
+[00:21:33] Prontinho pro cliente já na hora
+[00:21:34] instantaneamente eu acho que foi menos
+[00:21:36] de 20
+[00:21:37] minutos um abraço

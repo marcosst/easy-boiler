@@ -5,11 +5,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Setup & Development
 
 ```bash
-make setup    # Create venv, install deps, copy .env.example → .env, create data/
+make setup    # Sync deps with uv, copy .env.example → .env, create data/
 make dev      # Run migrations + start uvicorn with hot-reload on :8000
 ```
 
-Requirements: Python 3.12, `dbmate` on PATH (installed automatically in Docker).
+Requirements: Python 3.12+, `uv`, and `dbmate` on PATH (`dbmate` is installed automatically in Docker).
 
 ## Database Migrations
 
@@ -34,7 +34,7 @@ make docker-logs   # Follow logs
 
 ## Architecture
 
-**Stack:** FastAPI + Jinja2 templates + HTMX + SQLite via aiosqlite.
+**Stack:** FastAPI + Jinja2 templates + HTMX + Tailwind + SQLite via aiosqlite, managed with `uv`.
 
 - `app/main.py` — FastAPI app, route definitions. Full-page routes return Jinja2 `TemplateResponse`; HTMX partial routes live under `/htmx/` and return HTML fragments.
 - `app/database.py` — async SQLite connection via `aiosqlite`. Use `get_db()` as a FastAPI dependency (`Depends(get_db)`). DB path is resolved from `DATABASE_URL` env var.

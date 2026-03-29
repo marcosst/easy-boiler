@@ -1,0 +1,59 @@
+[00:00:0] ó baixei dois módulos aqui de canto já
+[00:00:2] pronto tem vários Ó tem vários módulos
+[00:00:4] de canto baixei dois aqui já pronto e
+[00:00:7] vamos ver como é que funciona já a
+[00:00:8] Usinagem dele ó ele já vem pronto pode
+[00:00:11] editar largura e altura ó já vem aqui ó
+[00:00:13] tá vendo que ele tem uma Coluninha lá
+[00:00:15] dentro lá ó essa Coluninha não tá aqui
+[00:00:16] tá vendo não tá recortada nem no a nem
+[00:00:18] no B ele só fez um recorte aqui e fez um
+[00:00:21] recorte pelo outro lado para não pegar
+[00:00:22] na que no caso aqui é máquinas de
+[00:00:24] CNC que é o meu caso pegar na ele
+[00:00:27] faz a metade por esse lado a metade pelo
+[00:00:29] outro e não pega na Então vamos
+[00:00:31] supor que eu quero recortar aquele
+[00:00:33] desenho lá ó quero fazer aquele recorte
+[00:00:36] ali ó atravessar tirar essa peça aqui
+[00:00:37] fora Então aqui tem um botãozinho de
+[00:00:39] usinagem eu venho nele aqui aqui aqui
+[00:00:44] aqui Opa aqui e aqui e dou um enter ele
+[00:00:48] cria a Usinagem aqui ó já criou a
+[00:00:50] Usinagem Qual é a profundidade quer
+[00:00:52] profundidade da peça é 18
+[00:00:55] 18.5 18.5 eu quero usar minha broca de 7
+[00:00:59] mm Quero que comece pela esquerda
+[00:01:1] esquerda quer dizer que é tudo pelo
+[00:01:2] Centro clic em aplicar pronto
+[00:01:5] automaticamente eu já tô com essa peça
+[00:01:7] né já usinada e ranhurada certinho já
+[00:01:11] com as partes todas prontas Ó ali do
+[00:01:13] lado a essa aqui como eu fiz passante
+[00:01:15] direto ela vai atravessar direto né Essa
+[00:01:17] aqui não faz doas etapas Então já fiz
+[00:01:19] isso aqui ó e já recortei aquele
+[00:01:21] cantinho Lá também na CNC agora vamos
+[00:01:24] para esse aqui ó deixa eu fechar essa
+[00:01:25] telinha E também nós temos um
+[00:01:28] 45º clico aqui aqui nele ó e vamos ver a
+[00:01:31] Usinagem dele ó 45° já toradinho ali ó
+[00:01:34] lado a e lado b metade de um lado e
+[00:01:36] metade do outro que são profundidades
+[00:01:38] diferentes se tu levar em cima ele diz
+[00:01:40] que a profundidade da fresa vai até a
+[00:01:41] metade Beleza então ele funciona tudo ó
+[00:01:45] eu posso colocar qualquer porta aqui
+[00:01:48] nele né ó essa porta abre ó esse ó porta
+[00:01:53] abriu ali eu posso vir aqui ó deixa eu
+[00:01:55] ver se isso aqui tá funcionando vamos
+[00:01:57] dar uma olhada clico na amarela clico na
+[00:01:59] dobradiça
+[00:02:0] e venho aqui e clico em substituição
+[00:02:3] dobradiças eu quero usar essa aqui ó
+[00:02:5] dobradiça 165º vou substituir pela
+[00:02:8] dobradiça 165 gra Olha o que acontece a
+[00:02:12] porta já abre mais entendesse ó porta já
+[00:02:15] abre até mais tudo funciona tudo
+[00:02:17] perfeito posso colocar porta nesse aqui
+[00:02:19] também tá era isso

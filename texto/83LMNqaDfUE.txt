@@ -1,0 +1,116 @@
+[00:00:0] bom agora nós vamos aprender sobre
+[00:00:2] gavetas então a gavetas Ela tá aqui ó
+[00:00:4] dentro de agregados né internos aí vem
+[00:00:7] aqui internos e gavetas para internos e
+[00:00:11] gavetas V pegar esse módulo aqui ó tem
+[00:00:13] um dois duas gavetas mais um gavetão
+[00:00:16] clico nele levo o mouse na tela clico no
+[00:00:18] módulo e dou um enter tá então ess ele
+[00:00:21] vai carregar esse módulo aqui ó carregou
+[00:00:22] o módulo com um gavetão e duas gavetas
+[00:00:25] agora o que a gente vai fazer nele vamos
+[00:00:27] ajustar ele aqui então eu pego a mira
+[00:00:29] amarela
+[00:00:30] vou clicar vou abrir as gavetas para
+[00:00:32] vocês verem Primeiro vou abrir a
+[00:00:33] primeira que elas são todas
+[00:00:34] Independentes eu consigo abrir todas
+[00:00:36] elas Independentes uma da outra e vamos
+[00:00:38] mexer na edição antes de mexer na edição
+[00:00:41] eu quero mexer na na cor da gaveta então
+[00:00:44] venho aqui nessa opção
+[00:00:46] MDF frente da gaveta vamos escolher uma
+[00:00:48] frente aqui que apareça o veio essa
+[00:00:50] daqui ó apareceu veio Então aqui tem a
+[00:00:53] mira amarela selecionado selecionar um
+[00:00:55] componente clico na amarela levo bem na
+[00:00:57] frente ó tá vendo se eu levar ele bem na
+[00:00:59] frente ele seleciona a frente se levar
+[00:01:1] um pouquinho para cima ele seleciona o
+[00:01:2] corpo da gaveta quero selecionar a
+[00:01:3] frente vamos mostrar a edição da frente
+[00:01:6] edição da frente o que que ela tem aqui
+[00:01:7] ela tem a desconto de puxador que não
+[00:01:9] tem aqui ainda eu posso descontar uma
+[00:01:11] espessura se eu botar um puxador de
+[00:01:12] alumínio em cima ou vim aqui também
+[00:01:14] mudar o veio da Madeira mudou só de cima
+[00:01:17] beleza posso fazer isso aí com todas
+[00:01:19] clicando na frente só na frente dela vim
+[00:01:21] aqui e mudar o veio também certo ó já
+[00:01:24] mudei o veio da madeira a outra função é
+[00:01:27] clicar no amarelo e clicar no corpo da
+[00:01:30] gaveta quando eu clico aqui no corpo da
+[00:01:31] gaveta eu tenho umas funções aqui ó tá
+[00:01:33] vendo que essa gaveta aqui ó tá pegando
+[00:01:35] na travessa lá em cima ó então eu quero
+[00:01:37] diminuir essa parte em cima Essa parte é
+[00:01:39] aqui ó redução da altura do corpo eu
+[00:01:42] quero reduzir 50 50 mm ó Então essa
+[00:01:45] gaveta já não vai pegar nesse batente
+[00:01:47] aqui certo outra função que dá de fazer
+[00:01:50] é se eu segurar clicar nessa Mira
+[00:01:52] amarela e clicar nesse conjunto aqui ó
+[00:01:54] que é mantendo pressionada a seta no
+[00:01:56] teclado aquela conjunto de setinha no
+[00:01:59] teclado aqui ó tá aqui aqui atrás ó
+[00:02:0] mantendo pressionado esse conjunto de
+[00:02:2] set pro lado esquerdo e levar aqui no
+[00:02:5] meio dessas gavetas aqui eu vou
+[00:02:6] selecionar os dois módulos ao mesmo
+[00:02:8] tempo ó Dea eu só botar aqui e aqui ó
+[00:02:11] selecionei os dois módulos aí ele tem
+[00:02:13] umas funções aqui que eu consigo editar
+[00:02:15] altura máxima do corpo da gaveta se eu
+[00:02:17] quero ela interna se eu quero na mesma
+[00:02:19] posição aí tem vários várias
+[00:02:22] configurações aqui de toda a gaveta
+[00:02:23] desse conjunto de cima agora vão clicar
+[00:02:26] nessa mesma mira amarela e v clicar no
+[00:02:28] corpo de baixo não na frente ó Tô
+[00:02:30] clicando no corpo se eu clicar no corpo
+[00:02:32] eu tenho a configuração dessa gaveta
+[00:02:34] também que eu posso fazer o qu V mexer
+[00:02:37] vou mexer nessa de baixo aqui ó que é
+[00:02:39] profundidade da da corrediça eu quero
+[00:02:41] essa corrediça com 50 ó essa corrediça
+[00:02:43] ficou com 50 vamos clicar nessa de cima
+[00:02:46] aqui ó clicar no corpo da gaveta e vamos
+[00:02:48] dizer também que essa corrediça vai
+[00:02:50] ficar com
+[00:02:51] 40 vai diminuir essa e vamos clicar na
+[00:02:54] de cima né ó no corpo da gaveta de cima
+[00:02:56] e vamos dizer que essa corça vai ficar
+[00:02:58] com 30
+[00:03:1] ó uma gaveta diferente da outra certo eu
+[00:03:3] posso mexer em todas elas
+[00:03:4] independentemente independe independente
+[00:03:7] agora eu venho aqui nessa a guia amarela
+[00:03:10] existe mais configurações Tá clicando
+[00:03:11] nessa amarela pressionando a setra da do
+[00:03:14] teclado para a esquerda aqui embaixo
+[00:03:16] Aqui ó pressionando pro lado esquerdo tá
+[00:03:18] então clico no Amarelo pressiono pro
+[00:03:20] lado esquerdo e clico na gaveta aqui ó
+[00:03:23] na caixa da gaveta ele abre outras
+[00:03:25] configurações para esse gavetão aqui ó
+[00:03:27] que é o quê altura máxima do corpo eu
+[00:03:29] quero que esse seja maior porque tem
+[00:03:31] espaço ali né Tem cliente que gosta de
+[00:03:33] mexer em todo espaço entende se corpo
+[00:03:35] fica maior existe mais uma configuração
+[00:03:38] também por exemplo se eu clicar na
+[00:03:40] amarela e clicar em cima da corrediça eu
+[00:03:43] consigo dizer se eu quero alinhar ela
+[00:03:45] pelo centro ou pela parte inferior ó eu
+[00:03:48] quero que ela vai lá no centro da gaveta
+[00:03:51] então tem várias configurações usando só
+[00:03:53] a guia amarela nessa gaveta então tudo
+[00:03:56] pode ser feito e pode ser ajustado
+[00:03:58] Conforme você
+[00:04:0] precisar para o seu módulo Às vezes
+[00:04:1] precisa desviar um cano ou o cliente
+[00:04:4] quer botar uma lixeira essas gavetas tem
+[00:04:5] que ser mais curta todos esses detalhes
+[00:04:8] dá para fazer aqui no mod mudar o veio
+[00:04:10] né Então tudo isso dá de fazer

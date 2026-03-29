@@ -1,0 +1,4 @@
+{"type":"server-started","port":55433,"host":"0.0.0.0","url_host":"localhost","url":"http://localhost:55433","screen_dir":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/150423-1774803509/content","state_dir":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/150423-1774803509/state"}
+{"type":"screen-added","file":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/150423-1774803509/content/header-layout.html"}
+{"type":"screen-added","file":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/150423-1774803509/content/waiting-1.html"}
+{"type":"server-stopped","reason":"idle timeout"}

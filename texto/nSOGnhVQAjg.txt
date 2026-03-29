@@ -1,0 +1,253 @@
+[00:00:0] Cara, essa ferramenta dá para fazer
+[00:00:2] muita coisa, tá? Vamos fazer um um móvel
+[00:00:5] aqui que vai ter uma coluna,
+[00:00:8] uma viga encaixada. Vamos fazer um um
+[00:00:10] desenho aqui bem bacana aqui. Então,
+[00:00:12] vamos lá. Vou pegar aqui esse desenho
+[00:00:14] aqui. Vou dizer que a peça aqui tem 1 m
+[00:00:16] por 50. Beleza? Tá ali, ó, 1 m por 50.
+[00:00:20] Agora eu venho nela aqui e vou converter
+[00:00:22] ela numa peça de face. Clique em
+[00:00:25] aplicar. Escolho o veio. Vai vir para
+[00:00:27] cá. Pronto, já fiz uma peça aqui. Agora
+[00:00:31] eu vou fazer a linha lateral, né? Então
+[00:00:33] eu vou clicar aqui, clico nesse objeto
+[00:00:36] aqui. Vou deixar mais ou menos aqui, ó,
+[00:00:38] só para mim ver ali, ó, a medida, né?
+[00:00:40] Então é 500, ó. 500 por 700 de altura.
+[00:00:44] Fiz uma lateral aqui,
+[00:00:46] só que nessa lateral vai ter um recorte
+[00:00:49] aqui, ó. Nessa lateral minha vai ter um
+[00:00:51] recorte aqui. Pega daí a borracha, né?
+[00:00:54] Se tu quiser. Peguei o errado, botei a
+[00:00:56] tag, né? Tag é borracha. Pode apagar
+[00:00:58] esse canto. Vamos dizer que vai ter um
+[00:01:0] recorte ali, né? Posso botar outro aqui
+[00:01:3] embaixo. Pode também, não tem problema.
+[00:01:4] Então eu selecionei isso aqui. Clico
+[00:01:6] botão direito, p mob, converter
+[00:01:8] usinagem, pá,
+[00:01:10] e aplica. Veio para cima.
+[00:01:15] Então, vamos lá. Eh, fiz essa peça aqui,
+[00:01:19] né? Posso copiar ela para cá, tá? Copie
+[00:01:23] ela para cá. Aqui em cima eu posso fazer
+[00:01:25] ela também já com geometria, se eu
+[00:01:27] quiser, né? Se eu quiser eu já posso
+[00:01:28] jogar a geometria aqui direto aqui em
+[00:01:30] cima e fazer ela ou buscar uma peça
+[00:01:32] pronta, né? Mas se vamos fazer tudo com
+[00:01:34] ela aqui, ó. Fiz um desenho aqui de uma
+[00:01:36] geometria. Clico nela aqui. Eh, aqui
+[00:01:39] converter usinagem, criar peça. Pá, veio
+[00:01:43] da peça. Vamos botar para cá. Já fiz
+[00:01:45] uma. Vamos abaixar aqui o 15,5
+[00:01:48] para ela ficar por dentro e eu parafusar
+[00:01:50] por fora. Vamos fazer a outra da frente
+[00:01:52] aqui também, ó. Tá? Então a gente pode
+[00:01:54] vir aqui, ó, daqui até onde? Até ali.
+[00:01:58] Seleciono ela. Converteros usinagem, pá.
+[00:02:2] Mas antes disso, vamos dizer que aqui
+[00:02:3] ainda passa passa mais uma viga aqui, um
+[00:02:6] cano vindo pra frente aqui, ó. Vamos
+[00:02:9] fazer uma brincadeira, né? Então a gente
+[00:02:10] já pode vir aqui, ó, desenhar um recorte
+[00:02:13] já aqui apago,
+[00:02:15] né? E essa peça também já vai vir com
+[00:02:19] recorte para cá, né? A gente seleciona o
+[00:02:21] veio. Pá, pronto. Agora, como é que a
+[00:02:24] gente bota os os minifix já para ficar
+[00:02:27] essa caixa padrão, né? Também dá de
+[00:02:29] colocar. Eu venho aqui em tampos. Eu vou
+[00:02:30] usar o do tampo mesmo. Ele dá um, ele
+[00:02:33] vai dar um bug porque ele vai jogar um
+[00:02:34] pouquinho lá para fora, mas isso aqui
+[00:02:36] daqui a pouco o Ron já deve corrigir.
+[00:02:38] Essa distância aqui, ó, é a mesma
+[00:02:40] distância da tua peça. Então, se a tua
+[00:02:42] peça tem 50 cm, tu vai ter que botar
+[00:02:43] isso aqui, ó. Vamos botar -50. Opa, é
+[00:02:46] mais 50. É positivo. Mais 50. Ela já cai
+[00:02:49] no lugar. Depois que ela caiu no lugar
+[00:02:51] aqui, ó, a minha ela tá com os minifixos
+[00:02:52] aqui automático. Eu posso botar menos do
+[00:02:54] aqui, né, para ficar assim, ó. Então,
+[00:02:57] quando ela já tá com esse minifix
+[00:02:58] automático aqui, já essa correção feita,
+[00:03:1] vocês podem mudar o lado aqui que ela
+[00:03:2] vai cair na posição certinha, ó. Por
+[00:03:3] exemplo, eu quero botar o lado esquerdo,
+[00:03:5] ó, né? Ó ali, ó. Opa, ficou um benefixo
+[00:03:7] ali. Vou botar aqui zero de novo para
+[00:03:9] ele voltar os três, ó. Agora clico em
+[00:03:11] copiar aqui. Clico aqui, dou um enter e
+[00:03:14] boto pro lado direito, né? Esquerdo.
+[00:03:16] Vamos botar pro lado direito, ó. Ali, ó.
+[00:03:19] Já fiz aqui, já botei minifix ali. Vamos
+[00:03:22] botar aqui em cima também. Vamos pegar o
+[00:03:23] tampo. Vamos pegar esse aqui. Clico
+[00:03:25] nele. Eu não sei qual é a medida que tá
+[00:03:27] isso aqui. Ele jogou para fora, né?
+[00:03:29] Então a gente vai pegar a medida dessa
+[00:03:31] peça aqui, ó, para ele cair no lugar
+[00:03:33] certinho. Então ele tá ali, ó. A medida
+[00:03:35] da peça deu bem quebrada ainda. É
+[00:03:37] 184.53.
+[00:03:39] Então eu seleciono o meu minifix aqui
+[00:03:41] com a mira amarela e boto aqui -18.53.
+[00:03:47] Opa, positivo.
+[00:03:49] Positivo. Já veio para cá, ó. Então, ah,
+[00:03:51] ele tá para baixo. Eu não quero para
+[00:03:53] baixo. Quero ele para cima. Então,
+[00:03:54] inverto o lado aqui para ele ficar lá
+[00:03:57] para cima. Tem muito minifix aqui. Eu
+[00:03:59] vou tirar menos dois aqui. Deixar só uns
+[00:04:2] três aqui, ó. Certo? Fiz isso aqui.
+[00:04:6] Agora também posso fazer o quê? Eu posso
+[00:04:7] travar ele aqui do lado, né? Como ele já
+[00:04:9] tá aqui, eu vou fazer um uma trava aqui
+[00:04:11] do lado também. Então, copio, clico nele
+[00:04:14] e vou fazer ele pela lateral esquerda
+[00:04:17] primeiro, ó. Lado esquerdo já botou lá.
+[00:04:20] Copio, clico aqui, dou um enter e vai
+[00:04:23] pro lado direito agora também. Ah,
+[00:04:26] aquilo ali ficou muito junto. Posso
+[00:04:28] afastar? Pode. Seleciona isso aqui. Diz
+[00:04:30] que a margem aqui é de 100. Ele já vai
+[00:04:32] dar uma afastadinha. Ó, ficou dois ali.
+[00:04:34] Botar aqui menos um para acrescentar
+[00:04:37] mais um no meio ali, ó.
+[00:04:39] O meu aqui tá com uma configuração
+[00:04:40] diferente porque eu salvei assim, tá?
+[00:04:42] Então agora a gente pode pegar esse
+[00:04:43] outro aqui, né? Copiar e colocar nesse
+[00:04:46] daqui também, ó, né? Ele já foi lá pro
+[00:04:48] lado de lá. Só que lembrando, né? Essa
+[00:04:50] peça tá com a medida diferente dessa.
+[00:04:52] Então, qual o tamanho que tem essa peça
+[00:04:53] aqui, ó? Essa peça tem 150. É tudo
+[00:04:56] medida quebrada ainda, só para ajudar,
+[00:04:58] né? Uns. Opa, não pegou ali, ó. 152. Ô,
+[00:05:2] na medida redondinha, 152. Então eu vou
+[00:05:4] botar aqui que tem 1 2 para ele já ficar
+[00:05:6] na medida certinho ali, ó, né? Só que o
+[00:05:9] minifix tá pra frente, eu posso virar
+[00:05:10] para trás, né? Jogo ele lá pro outro
+[00:05:12] lado. Pronto. Copio, coloco na mesma
+[00:05:15] peça e vou dizer que tem do lado direito
+[00:05:18] igual. Então eu joguei pro lado esquerdo
+[00:05:20] e um lado direito. A minha caixa já tá
+[00:05:22] com os minifix, né? Minifix. E fiz uma
+[00:05:25] caixa com coluna ali já, ó, né? Olha que
+[00:05:28] bacana. fez uma caixa já aqui com todos
+[00:05:31] os detalhes que precisam para uma
+[00:05:33] coluna. O fundo daí tu pode pegar fundos
+[00:05:36] avulso, né?
+[00:05:39] Fundo,
+[00:05:42] ã, fundos internos, acho que interno ele
+[00:05:44] não daria de colocar, né? Fundos com
+[00:05:46] rasgo, é porque ele vai ele vai tentar
+[00:05:48] achar a parte interna e não tem, né? Né?
+[00:05:50] Teria que ser um fundo fundo avulso
+[00:05:52] aqui.
+[00:05:54] Ah, deixa eu pegar fundo vertical. Ele
+[00:05:56] vai, ele não vai pegar a parte interna
+[00:05:58] dele porque não tem um contêiner, né? Só
+[00:06:1] que não tem um contêiner.
+[00:06:4] Teria que ser um outro tipo de fundo
+[00:06:5] aqui. Mas beleza.
+[00:06:8] O que que daria pra gente fazer aqui?
+[00:06:13] Ã, tá? Eh, um detalhe também, né, que
+[00:06:16] além desse de tu fazer essas essas
+[00:06:18] funções aqui, se tu pegar as usinagens
+[00:06:20] também já pronta ou desenhar aqui nela,
+[00:06:22] ele também vai interpretar, tá? Faço um
+[00:06:25] recorte aqui. Opa, seleciono ele. Up mob
+[00:06:30] converterosinage. Posso fazer um rebaixo
+[00:06:32] aqui no lado, né? Ele já faz o
+[00:06:34] rebaixinho ali, ó. E o rebaixo agora,
+[00:06:36] né? Já fica, né, 100% mostrando como vai
+[00:06:40] ser o rebaixo mesmo, né? Daí a gente
+[00:06:42] pode fazer até meio mexendo na
+[00:06:44] profundidade aqui, ó, 5 mm, ó. Fica um
+[00:06:46] rebaixinho de cinco. Então fica visual
+[00:06:48] que é um rebaixo mesmo na peça, né,
+[00:06:51] cara? É, ficou muito surreal isso aqui.
+[00:06:53] Dá para montar qualquer coisa agora.
+[00:06:54] Mais simples, mais prático que isso. É
+[00:06:56] impossível, acho. Eu esqueci, né? É, tem
+[00:07:0] peças individuais, fundos, fundo
+[00:07:2] vertical com rasgo. Então aqui eu vou
+[00:07:4] dizer, né, ó, profundidade do lado
+[00:07:5] inferior, eu quero com oito. Esquerdo,
+[00:07:8] oito, direito, oito, superior oito.
+[00:07:14] Ele vai diminuir 1 mm cada lado aqui,
+[00:07:16] né? A espessura do fundo eu quero de 6
+[00:07:18] mm. E clica em aplicar. Então ele já
+[00:07:21] apareceu aqui para mim os desenhos todos
+[00:07:23] certinho, né? Então a gente só pegar a
+[00:07:25] medida dele, né? A gente sabe que tem 1
+[00:07:26] m de largura, então vamos pegar aqui a
+[00:07:28] largura 1 m. Opa. Aqui, aqui tá 80.
+[00:07:32] Vamos botar depois a medida ali, botar
+[00:07:34] uns 60, que eu não lembro quanto é que
+[00:07:35] era, mas aqui vai dar 1 m.
+[00:07:40] Vamos só verificar aqui se deu certo.
+[00:07:44] Aqui deu 1 m, ó. 1 m ele tá com a com os
+[00:07:47] detalhes. Tem que aumentar mais que 1 m,
+[00:07:49] né? Deixa eu ver quanto é que eu botei
+[00:07:50] ele aqui.
+[00:07:55] Daqui aqui tem 1 m. Então é 1 m + 16.
+[00:08:0] 1 m + 16.
+[00:08:3] Pronto. Aqui eu vou alinhar essa linha
+[00:08:7] aqui, né, com a parte de baixo. Certo? E
+[00:08:12] agora aqui eu vou ter que ver quanto é
+[00:08:13] que tem aqui que eu tenho que botar essa
+[00:08:15] medida mais 16, né? Então essa medida
+[00:08:17] aqui, ó, tem 532.5.
+[00:08:21] Então vamos lá. A altura 532.5
+[00:08:24] + 16.
+[00:08:26] E agora eu posso posicionar, né, ele ali
+[00:08:29] no lado, desde que não pegue lá uma uma
+[00:08:31] usinagem em cima da outra ali, né? Posso
+[00:08:34] até jogar mais para dentro aqui se
+[00:08:35] quiser para não pegar ali na usinagem. E
+[00:08:38] vamos verificar se agora essa peça já tá
+[00:08:41] com rebaixo e usinagem. Lado A,
+[00:08:45] lado B, ó, já mostrei aqui, ó, o lado A
+[00:08:47] e o lado B. Então, já tem usinagem lá do
+[00:08:50] lado B lá, né?
+[00:08:53] Furos e baixação
+[00:08:56] que mudou bastante também. Ficou bacana
+[00:08:57] essa tela. Não tinha visto ainda, tinha
+[00:09:0] visto que tinha mudado, mas não tava
+[00:09:1] mexendo nela aqui. Então, direcional,
+[00:09:3] fresagem. Ah, tem bastante informação
+[00:09:5] aqui agora.
+[00:09:7] Tá? Então, ó, o lado A ele tá furando
+[00:09:9] ali. Se eu ocultar o lado B, né, eu
+[00:09:11] posso ocultar aqui, ó, né? O A, ele vai
+[00:09:13] mostrar o que tem no B. E assim por
+[00:09:16] diante. Eu mostro os dois também, lado A
+[00:09:18] e lado B. Então, ele já fez a minha
+[00:09:19] ranhurinha do fundo, ó. Não atravessou
+[00:09:21] lá, né? Tá vendo, ó? Aqui tá pegando bem
+[00:09:23] no minifix, ó. A gente já tá vendo aqui
+[00:09:25] que um furo vai interferir no outro
+[00:09:27] aqui, né? A gente pode modificar esse
+[00:09:29] aqui da lateral. Vamos lá modificar pr
+[00:09:31] ele não pegar,
+[00:09:33] que é esse aqui de baixo, ó. Então,
+[00:09:35] vamos tirar um pouquinho aqui, ó. Vamos
+[00:09:37] deixar ele tá com 50, botar com 25 e
+[00:09:40] também fazer esse daqui com 25 aqui, ó.
+[00:09:43] 25,
+[00:09:46] né? Então agora já não pega mais nada
+[00:09:49] ali. A gente consegue fazer um balcão,
+[00:09:51] consegue fazer qualquer coisa com ele
+[00:09:53] aqui, cara. Meu Deus. Tô brincando aqui.
+[00:09:55] Dá para fazer usando as próprias
+[00:09:57] ferramentas do sket, né? Com um
+[00:09:59] pouquinho do P mob aqui, a gente
+[00:10:1] desenvolve um caixote todo paramétrico
+[00:10:4] e com
+[00:10:6] cominagens já pronta. Isso é fantástico.

@@ -1,0 +1,125 @@
+[00:00:0] pessoal perguntou como é que sai aqui a
+[00:00:2] puxador cava então ele sai dessa forma
+[00:00:4] aqui ó baixamos uma porta puxador cava
+[00:00:7] né A porta já vem com todas as Usinagens
+[00:00:9] prontas certinho então como é que vocês
+[00:00:12] olem ver aqui ó tem a Usinagem tá vou
+[00:00:14] abrir aqui para vocês ver ó lado a e
+[00:00:18] lado b ó lado A forção lado B A Usinagem
+[00:00:21] tá do outro lado certo então vamos
+[00:00:23] mandar isso aqui lá para CNC vamos vir
+[00:00:25] aqui vem em modo revisar sim atualiza
+[00:00:29] vamos salvar aqui e agora a gente vai
+[00:00:31] exportar esse nosso arquivo lá paraa CNC
+[00:00:34] clico aqui em exportar sim pergunta se
+[00:00:37] eu quero abrir sim ó vai ser esse
+[00:00:39] arquivo aqui ó sem nome tá dentro ali do
+[00:00:41] pmob Beleza agora a gente vem e abre
+[00:00:44] aqui o gestor né do móvel produção
+[00:00:47] otimizador vamos adicionar um aqui no
+[00:00:50] maizinho vamos adicionar um lote aqui ó
+[00:00:53] pua Opa
+[00:00:55] puxador
+[00:00:57] Cava Cava o mob é uma cozinha aqui e
+[00:01:3] vamos criar o lote criando o lote eu vou
+[00:01:7] importar o meu arquivo que eu gerei lá
+[00:01:9] né então aqui clic em importar lista de
+[00:01:11] peças dados vamos pegar o arquivo aqui ó
+[00:01:14] e vamos abrir e vai carregar o arquivo
+[00:01:16] Ele pergunta que se os mdfs estão todos
+[00:01:18] certinhos estão vamos baixar ele aqui
+[00:01:23] então baixei o plano de corte e vamos
+[00:01:25] agora salvar a alteração e vamos gerar
+[00:01:27] não vou nem fazer nada só vou salvar e
+[00:01:29] vamos gerar
+[00:01:30] espero ele otimizar aqui tem um um um
+[00:01:33] item bem interessante que às vezes o
+[00:01:35] lote é muito grande né e eu vou ter que
+[00:01:37] sair por exemplo então ele já tá
+[00:01:38] otimizando aqui ó ele vai começar a
+[00:01:40] otimizar os processos aqui esse aqui já
+[00:01:41] otimizou otimizou esse aqui tá
+[00:01:42] otimizando ó eu posso fechar a tela
+[00:01:44] depois de uma determinada hora Ah vou
+[00:01:46] voltar agora voltei aqui vou entrar lá
+[00:01:49] na no meu no meu plano otimizador tá
+[00:01:52] aquii ó puxador cava em processo abre
+[00:01:54] ele aqui ele vai estar otimizando ele
+[00:01:56] ali ainda talvez até já tenha terminado
+[00:01:58] né Vamos visualizar aqui ó ó Então esse
+[00:02:2] aqui já terminou esse aqui já terminou
+[00:02:4] vamos ver onde é que tá o processo desse
+[00:02:5] aqui ó Tá quase terminando entende Você
+[00:02:7] já tá otimizando ali ó Então ele
+[00:02:9] continua otimizando por baixo entende
+[00:02:11] então não perde as configurações então
+[00:02:13] ele já esse aqui já tinha otimizado isso
+[00:02:15] aqui ó por exemplo isso aqui é só uma
+[00:02:16] peça só porque só um caixote isso aqui é
+[00:02:18] o outro que é o fundo de seis e aqui é o
+[00:02:20] de 15 então aqui em cima tem umas
+[00:02:22] configurações aqui ó rotacionar eu vou
+[00:02:24] rotacionar esse plano aqui ó paraa
+[00:02:25] direita para esquerda eu posso
+[00:02:26] rotacionar ele aqui só para ver visual
+[00:02:28] ficar melhor né né aqui eu posso
+[00:02:30] aumentar a fonte e diminuir né dos
+[00:02:32] números ó certo aqui eu posso imprimir
+[00:02:35] os diagramas né que é isso aqui ó
+[00:02:38] primeir o plano de corte com as listas
+[00:02:39] de peças aqui tá então para vocês
+[00:02:42] entenderem aqui ó tudo que tá em
+[00:02:44] vermelho que ó em vermelho é Furação
+[00:02:49] tudo que tá em cinza será gerado um
+[00:02:51] arquivo do lado B tipo por exemplo
+[00:02:54] puxador cava ele vai gerar um arquivo do
+[00:02:55] lado B lá fora aqui não aparece lá na
+[00:02:58] vai ter um arquiv lá chamado A lado B
+[00:03:0] para te fazer essa peça separada para
+[00:03:2] fazer a Usinagem nela do lado B
+[00:03:4] entendesse então ele vai gerar todas as
+[00:03:7] furações então tem essa função aqui que
+[00:03:10] é o vermelho é Furação o cinza tudo que
+[00:03:13] tá em cinza pode ser até furo que tá em
+[00:03:15] cinza por exemplo esses furos aqui ó
+[00:03:16] eles estão em cinza então esses furos
+[00:03:18] vão ser furados do outro lado que é o
+[00:03:20] lado B só o que vai furar desse lado são
+[00:03:22] os vermelhos o verde aqui ó são as os
+[00:03:25] rebaixos né verde é rebaixo e azul são
+[00:03:27] azuls inagens tudo que tiver em azul
+[00:03:29] aqui tem nada em azul vai ser oin Então
+[00:03:31] tá vendo tem um verdinho aqui ó são os
+[00:03:32] rebaix inhos né aqui Opa acabei tirando
+[00:03:35] ali para fora tá então voltamos aqui vou
+[00:03:39] voltar o plano aqui acabei virando aqui
+[00:03:40] sem querer tá
+[00:03:42] ó então só para vocês saberem tudo que é
+[00:03:46] que é verde é rebaixo Azul Usinagem e
+[00:03:51] vermelho Furação se tudo que tiver em
+[00:03:54] cinza aqui na tela ele vai gerar um
+[00:03:55] arquivo do lado B para furar do outro
+[00:03:57] lado aí tu vai fazer essa peça separada
+[00:03:59] no esquadro da tua máquina Beleza então
+[00:04:2] vamos gerar ele aqui vamos salvar o
+[00:04:3] painel já tá aqui processos e
+[00:04:6] etiqueta marcar como finalizado né ó
+[00:04:10] finalizado e vamos exportar o plano de
+[00:04:12] corte ó ele gerou o arquiv aqui ó vamos
+[00:04:15] abrir ele foi para uma pastinha Zip
+[00:04:17] deixa eu abrir ele aqui ele veio aqui
+[00:04:21] que lá todos os meus vídeos Ali tá
+[00:04:24] decorato vamos ver aqui downloads e
+[00:04:28] documentos onde é que tá aqui aqui
+[00:04:30] documentos Z
+[00:04:33] Mob como é foi para download isso aqui ó
+[00:04:37] Foi em downloads aqui ó ele tá aqui em
+[00:04:38] downloads tá então ele gerou o gcode
+[00:04:40] então MDF de 15 vocês vão ver que tem um
+[00:04:43] branco e tem um lado reverso aqui ó
+[00:04:45] entende esse aqui é os furos que vão ser
+[00:04:47] do lado B esse daqui é o arquivo que
+[00:04:50] você vai fazer o lado normal e aqui o
+[00:04:52] lado B tem duas peças que vão ser furada
+[00:04:55] do lado B beleza é dessa forma que
+[00:04:57] funciona

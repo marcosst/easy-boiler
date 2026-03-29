@@ -1,0 +1,70 @@
+[00:00:0] Então esse aqui é o novo componente é um
+[00:00:2] espelho ele é um espelho com várias
+[00:00:3] funções tá então aqui vocês notem que a
+[00:00:6] gente tem ó raio inferior direito e raio
+[00:00:9] inferior esquerdo inferior esquerdo esse
+[00:00:11] lado inferior direito esse lado e aqui a
+[00:00:14] gente tem o superior direito e superior
+[00:00:16] esquerdo superior esquerdo e superior
+[00:00:18] direito então aqui a gente consegue
+[00:00:20] fazer por exemplo ó inferior Eu quero um
+[00:00:22] raio de 5 cm nesse canto aqui ó ele já
+[00:00:25] Ronda ali para cinco vamos supor que eu
+[00:00:27] quero lá embaixo no no também no
+[00:00:30] inferior direito né o inferior esquerdo
+[00:00:33] 5 cm então eu arredondo esses dois lados
+[00:00:36] aqui CCO lá fica R vamos dizer que lá no
+[00:00:39] de cima vamos dizer que no de baixo
+[00:00:40] ainda esse de baixo aqui ó o direito eu
+[00:00:43] quero com
+[00:00:45] 50 mod 50 lá em cima eu vou dizer que
+[00:00:48] tem um com c c nesse lado ó ele já
+[00:00:51] arredondou e vamos dizer que tem outro
+[00:00:53] com 5 do outro ele arredondo lá só que
+[00:00:56] nesse lado aqui eu quero 50 também então
+[00:00:58] é o superior esquerdo superior esquerdo
+[00:01:1] eu quero com 50 também posso fazer uns
+[00:01:4] desenhos assim como eu também posso
+[00:01:7] fazer um desenho 50 50 50 e 50 desde que
+[00:01:13] tem 1 m né 1 m o que que éesse 50 é a
+[00:01:15] metade desse 1 m aqui né então eu posso
+[00:01:17] fazer um espelho assim oval Eu posso
+[00:01:20] também dizer que aqui nos dois
+[00:01:22] inferiores ó vai ser zero ele vai ficar
+[00:01:26] reto aqui embaixo e arredondado lá em
+[00:01:28] cima ou verso posso botar 50 50 aqui
+[00:01:33] zero e aqui zero ou rotacional espelho
+[00:01:36] né ele vai fazer assim também eu posso
+[00:01:38] também dizer que esse espelho aqui no
+[00:01:41] lado de cá por exemplo
+[00:01:43] superior vamos dizer aqui que vou deixar
+[00:01:46] tudo zero zero ó aqui zero e zero e
+[00:01:49] vamos fazer uma meia lua aqui ó fazer
+[00:01:51] uma meia lua nesse lado então como é que
+[00:01:52] a gente faz esse espelho tem 1 m de
+[00:01:54] altura então eu quero fazer desse lado
+[00:01:56] seria os dois lados esquerdos superior e
+[00:01:58] o inferior esquerdo então inferior
+[00:02:0] esquerdo eu vou dizer que tem 1 m e o
+[00:02:3] inferior e o superior direito né e o
+[00:02:6] superior esquerdo também vai ter 1 m eu
+[00:02:10] consigo fazer uma meia lua nele agora
+[00:02:11] vamos complicar um pouquinho mais eu
+[00:02:13] quero fazer uma meia lua mais um raio de
+[00:02:14] C ali ó então eu vou aumentar minha
+[00:02:16] profundidade do espelho para 1,5 ó
+[00:02:20] 1 e eu vou arredondar esse aqui para 5 e
+[00:02:23] esse aqui ó para cinco que é os dois
+[00:02:25] direito fazer uma curvinha de cinco
+[00:02:28] então ainda consigo fazer ele
+[00:02:31] arredondadas aqui então tem n maneira de
+[00:02:34] trabalhar com ele né Vocês querem voltar
+[00:02:36] um espelho reto pode ser usado como reto
+[00:02:39] também só vir aqui colocar zero aqui
+[00:02:41] zero vamos dizer que aqui a medida dele
+[00:02:43] tá 1000 aqui zero e aqui zero e ele vai
+[00:02:47] ficar um espelho quadrado e assim como
+[00:02:49] eu posso só fazer alguns raios né 50
+[00:02:51] nesse lado e direita aqui a esquerdo
+[00:02:54] Vamos botar 50 no direito e a gente faz
+[00:02:57] um um espelho modelado também l

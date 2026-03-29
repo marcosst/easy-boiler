@@ -4,10 +4,7 @@ DB_URL := sqlite:///$(CURDIR)/data/app.db
 
 # Primeira vez: cria venv e instala dependências
 setup:
-	@if [ -d .venv ]; then chmod -R u+w .venv && rm -rf .venv; fi
-	python3 -m venv .venv
-	.venv/bin/pip install --upgrade pip
-	.venv/bin/pip install -r requirements.txt
+	uv sync
 	cp -n .env.example .env || true
 	mkdir -p data
 
@@ -15,7 +12,7 @@ setup:
 dev:
 	mkdir -p data
 	DATABASE_URL=$(DB_URL) dbmate up
-	set -a && . ./.env && set +a && .venv/bin/uvicorn app.main:app --reload --port 8000
+	if [ -f .env ]; then set -a && . ./.env && set +a; fi; uv run uvicorn app.main:app --reload --port 8000
 
 # Só roda as migrations
 migrate:

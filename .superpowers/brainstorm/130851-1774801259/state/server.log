@@ -1,0 +1,8 @@
+{"type":"server-started","port":57124,"host":"0.0.0.0","url_host":"localhost","url":"http://localhost:57124","screen_dir":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/130851-1774801259/content","state_dir":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/130851-1774801259/state"}
+{"type":"screen-added","file":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/130851-1774801259/content/header-style.html"}
+{"source":"user-event","type":"click","text":"JD\n          João Doe\n          ▼\n        \n      \n      \n        \n        \n      \n    \n    \n      A — Light & Clean\n      Fundo branco, borda inferior sutil, pill com avatar inicial + nome. Tom profissional e neutro.","choice":"a","id":null,"timestamp":1774801315017}
+{"source":"user-event","type":"click","text":"JD\n          João Doe\n          ▼\n        \n      \n      \n        \n        \n      \n    \n    \n      A — Light & Clean\n      Fundo branco, borda inferior sutil, pill com avatar inicial + nome. Tom profissional e neutro.","choice":"a","id":null,"timestamp":1774801317221}
+{"type":"screen-added","file":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/130851-1774801259/content/dropdown-items.html"}
+{"type":"screen-added","file":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/130851-1774801259/content/projects-grid.html"}
+{"type":"screen-added","file":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/130851-1774801259/content/full-mockup.html"}
+{"type":"server-stopped","reason":"idle timeout"}

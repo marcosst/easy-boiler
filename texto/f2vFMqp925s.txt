@@ -1,0 +1,320 @@
+[00:00:0] ó vamos lá fazer uma brincadeirinha aqui
+[00:00:1] com ripada vamos pegar um armário aéreo
+[00:00:4] vou baixar ele aqui na na cena Esse
+[00:00:5] armário de uma porta aqui ó vou baixar
+[00:00:7] ele aqui na cena vou substituir a porta
+[00:00:9] dele venho aqui substituir porta porque
+[00:00:11] ele tá com puxador ele a porta com
+[00:00:13] puxador vou deixar essa porta aqui porta
+[00:00:15] sem sem puxador porta lisa vou pegar a
+[00:00:18] porta lisa aqui cliquei na porta lisa eu
+[00:00:20] vou aplicar nele a porta lisa ele vai
+[00:00:22] remover o puxador
+[00:00:24] ali aí a gente vai pegar aqui agora tá
+[00:00:28] puxador portala Vamos fazer uma
+[00:00:29] brincadeira aqui agora vamos desenhar
+[00:00:30] Vamos fazer um buraco nessa porta aqui
+[00:00:32] um recorte né então vou pegar bem nesse
+[00:00:34] ponto até nesse ponto aqui vou pegar o
+[00:00:38] offset puxo para dentro 70 clico aqui do
+[00:00:43] lado de fora deleto Dou dois cliques
+[00:00:45] aqui fora deleto inverto a Face depois
+[00:00:47] de inverter a face eu clico aqui na face
+[00:00:49] vem o mob converter os inagens e gráfico
+[00:00:53] é aqui ó gráfico de faces aqui embaixo
+[00:00:56] então aqui eu vou dizer que eu quero
+[00:00:57] 15.5 que atravessa toda a porta
+[00:01:0] e vou clicar em aplicar aí ele pergunta
+[00:01:3] qual é a Face tu quer fazer essa
+[00:01:5] Usinagem quero fazer nessa Face aqui ó
+[00:01:6] então ele vai aplicar Usinagem e já vai
+[00:01:8] carregar aqui ó no meu lado direito qual
+[00:01:10] é qual é a broca que eu quero aqui quero
+[00:01:13] a fresa né fresa de S Eu quero pela
+[00:01:15] esquerda esquerda é o lado de dentro né
+[00:01:18] cli em aplicar então o que que vai
+[00:01:20] acontecer aqui eu já furei essa porta só
+[00:01:22] que já tem Usinagem nela Quer ver Vou
+[00:01:24] até mostrar PR vocês ó que ela tem
+[00:01:26] Usinagem clico aqui opa CTR Z aqui vou
+[00:01:31] clicar nela aqui vou clicar na porta e
+[00:01:33] vou clicar aqui
+[00:01:35] ó ó já tem a Usinagem dos dois lados da
+[00:01:38] porta tá vendo lado a e lado b só que
+[00:01:40] ela não furou então eu dou três cliques
+[00:01:42] aqui nesse nesse desenho que ficou no
+[00:01:44] meio clico do botão vou e up Mob
+[00:01:46] ambientes e criar recortes então quando
+[00:01:48] eu crio um recorte aqui ó vocês vão
+[00:01:49] verificar que a hora que eu abre a porta
+[00:01:52] ela já abre com um buraquinho certinho
+[00:01:54] né então o que que eu vou botar aqui na
+[00:01:55] frente agora vamos botar uma ripa aqui
+[00:01:57] então a ripa a gente vem aqui ó em
+[00:01:59] internos tá nesse componente botão
+[00:02:1] internos ele vai abrir aqui tu vem para
+[00:02:3] portas e aqui embaixo Ó tem ripados
+[00:02:5] ripados para porta e tem ripado para
+[00:02:7] porta de correio aqui eu tenho vários
+[00:02:9] tipos de ripas ó eu tenho a ripa em pé e
+[00:02:11] a rip a ripa em pé que daí ó por exemplo
+[00:02:13] essa ripa em pé ela é espaço entre ripas
+[00:02:16] e essa ripa em pé aqui é o quantidade de
+[00:02:18] ripa tá tu pode botar por quantidade de
+[00:02:20] ripa ou espaço entre ripas vamos pegar
+[00:02:22] essa daqui ó clico nela clico aqui na na
+[00:02:26] porta e ele já aplica a ripa ali ó então
+[00:02:30] aqui já abre aqui no lado direito as
+[00:02:31] configurações da ripa Qual é a
+[00:02:32] profundidade dela eu quero ela com sei
+[00:02:35] lá 25 ó já vai diminuir ali a
+[00:02:37] profundidade da ripa com 25 certo agora
+[00:02:40] também venho aqui ó deixa eu ver o que
+[00:02:42] tem mais aqui ó quantidade de ripa e
+[00:02:44] quantidade de ripa sete tá o que que eu
+[00:02:46] vou o que que acontece quando a gente
+[00:02:47] atrela uma Ripa na porta eu vou abrir a
+[00:02:49] porta para vocês ver ó ela já vem junto
+[00:02:51] tá tá atrelado só que olha o que
+[00:02:53] acontece ali ó tá vendo que ele tem e a
+[00:02:55] cavilha aqui no meio também ó e a de
+[00:02:58] fora lá também tá tudo cavil então vou
+[00:03:0] pegar aqui ó vou mostrar para vocês a
+[00:03:1] furação da porta clico na porta e vou
+[00:03:3] mostrar o furo então ó desse lado olha
+[00:03:6] ali do outro lado tá vendo ela já tá
+[00:03:7] toda furadinha mas aqui no meio não vai
+[00:03:9] precisar furar isso aqui tudo né então
+[00:03:11] vamos fechar a porta aqui ó vamos
+[00:03:13] interagir vamos fechar a porta Ah tá
+[00:03:16] vocês viram que o recorte sumiu né o
+[00:03:17] recorte sumiu da porta por quê na versão
+[00:03:20] 2019 o recorte não vem junto a Usinagem
+[00:03:23] não vem junto ele vem junto na versão
+[00:03:25] 2024 tá a partir da versão 2024 tudo que
+[00:03:28] tu faz de usinagem a Usinagem já vem
+[00:03:29] pegada tanto é que como eu fechei a
+[00:03:31] porta aqui ele encostou lá na Usinagem ó
+[00:03:33] a hora que ele encostou na Usinagem se
+[00:03:36] eu clicar aqui no furo de volta para ver
+[00:03:37] o furo ó ele já tá furado e do outro
+[00:03:40] lado tá cavil só o que acontece Aqui tá
+[00:03:42] cheio de cavilha no meio do furo né eu
+[00:03:43] não preciso de tudo isso aqui então como
+[00:03:45] é que a gente faz isso aqui ó a gente
+[00:03:47] pega na mira amarela clico aqui na ripa
+[00:03:49] vou dizer que em vez de sete ripa Eu
+[00:03:51] quero uma ripa só e notem também ó eu
+[00:03:54] vou ocultar a porta aqui eu vou vir em
+[00:03:56] camadas ó para vocês verem bem certinho
+[00:03:58] e eu vou abrir vou abrir essa porta aqui
+[00:04:1] interagir abrir para ficar mais fácil
+[00:04:2] para vocês verem ó vou abrir ela ali ó e
+[00:04:4] vou ven aqui em camadas né e desabilito
+[00:04:8] a porta ó vou desabilitar a porta para
+[00:04:10] vocês ver ó a porta aqui ó olha ali o
+[00:04:12] que acontece Ele não tá fitado aqui e a
+[00:04:14] cavilha tá aqui só que tem a cavilha no
+[00:04:16] meio né então vamos pegar e vamos
+[00:04:18] aplicar a fita nesse aqui eu botei só
+[00:04:19] uma ripa tá vamos botar a fita clico
+[00:04:21] aqui ó nesse botãozinho de fita e vou
+[00:04:24] aplicar a fita nessa daqui ó certo
+[00:04:25] aplico nela e agora eu vou clicar na
+[00:04:28] mira amarela e vou clicar no no no
+[00:04:31] conjunto de fixação aqui ó que é a
+[00:04:32] cavilha clico nele e eu vou dizer que em
+[00:04:35] vez de quatro cavilha eu só quero duas
+[00:04:37] cavilha ó ele some as do meio vai ficar
+[00:04:39] só as duas da ponta entenderam ali ó só
+[00:04:41] as duas da ponta Agora sim eu vou
+[00:04:43] habilitar a porta de novo ó Então tá
+[00:04:45] aqui vou habilitar forte vou fechar a
+[00:04:47] porta para vocês ver ó tá ali a cavilha
+[00:04:48] tem uma aqui e uma aqui e vamos duplicar
+[00:04:51] a cavilha como é vamos botar a
+[00:04:53] quantidade de cavilha de ripas né então
+[00:04:55] clico aqui ó na porta quantas ripas tem
+[00:04:58] vou botar sete tinha sete vou lá com
+[00:05:0] sete ó botei sete certo e agora nós
+[00:05:3] vamos ver a Furação lá ó então vou
+[00:05:5] clicar no furo vou clicar aqui e vou ver
+[00:05:8] o Furação então ele tá com a Usinagem as
+[00:05:10] dobradiças ali né do lado b ó só pegou
+[00:05:13] cavilha em cima aqui no meio não
+[00:05:17] cavilhas cavilhas aqui ó eu consigo
+[00:05:20] porque agora tá independente essas daqui
+[00:05:22] ó Então vamos lá como é que funciona eu
+[00:05:25] venho aqui no amarelo e levo bem
+[00:05:26] pertinho ali ó bem pertinho tá vendo
+[00:05:28] aqui ó ficou Amarelo só aquele cantinho
+[00:05:30] se eu clicar nele eu pego Só essa
+[00:05:32] cavilha aqui ó essa aqui eu quero quatro
+[00:05:34] certo e venho nessa outra aqui ó também
+[00:05:37] ó pego amarelinho venho nessa outra aqui
+[00:05:39] Opa bem pertinho aqui tá ó Ó ali ó bem
+[00:05:42] pertinho clico nela e nessa aqui eu
+[00:05:44] quero quatro Então essas do Meio vão
+[00:05:46] ficar com duas e essas da ponta vão
+[00:05:48] ficar com quatro vamos ver a Furação
+[00:05:50] agora clico no verde clico na porta e
+[00:05:53] clico para visualizar aqui ó ó Então
+[00:05:57] olha lá as da ponta ficaram com quatro
+[00:05:58] cavilha e aqui em cima é só uma caveira
+[00:06:0] em cima uma embaixo e se eu abrir a
+[00:06:2] porta aqui eu vou abrir a porta para
+[00:06:3] vocês ver ó notem que agora todas elas
+[00:06:6] estão
+[00:06:11] fitador aqui ó eu vou aplicar existe vou
+[00:06:15] botar um painel aqui existe tanto ripa
+[00:06:19] para painel tá se eu vier aqui no painel
+[00:06:21] eu posso pegar qualquer painel existe
+[00:06:22] ripado aqui ó tá quer dizer eu posso
+[00:06:25] pegar qualquer painel desse e aplicar
+[00:06:26] ripa em cima qualquer modelo de ripa
+[00:06:28] ripa em pé ripa deitada tem todos aqui ó
+[00:06:30] Então vou pegar um painel aqui em cima
+[00:06:32] aqui ó
+[00:06:33] painel pessoal perguntou sobre o painel
+[00:06:35] existe vários tipos de painéis aqui ó
+[00:06:37] daí tem painel simples e painel
+[00:06:38] engrossado vamos pegar um painel
+[00:06:39] engrossado eu vou jogar ele aqui fora
+[00:06:40] para vocês verem ó olha como é que é o
+[00:06:42] painel engrossado ali tem engrossado tá
+[00:06:44] tudo é paramétrico aqui ó eu quero que
+[00:06:46] essa ripa a de engrosso aqui fique só
+[00:06:48] com cinco ao redor ó vai ficar só com
+[00:06:50] cinco eu posso dizer aqui do lado ó se
+[00:06:52] vocês estão observando aqui ó vou até
+[00:06:54] dar um zoom aqui nesse painel ó aqui no
+[00:06:57] lado tem quatro lados eu não quero os
+[00:06:58] quatro lados vou puxar mais para cá para
+[00:07:0] vocês ver clico aqui ó eu não quero
+[00:07:2] quatro lados eu quero só a esquerda e a
+[00:07:3] direita ó ele vai botar vendo esquerda e
+[00:07:6] direita eu quero só superior e inferior
+[00:07:9] só superior inferior eu quero a esquerda
+[00:07:12] superior e inferior ó a esquerda
+[00:07:15] superior inferior aí eu posso dizer ali
+[00:07:16] a direita superior inferior desse eu
+[00:07:19] quero só a superior daí tem todas ó só a
+[00:07:22] superior tudo vocês mexem e Opa tem que
+[00:07:25] clicar em aplicar né só superior entende
+[00:07:28] tudo vocês mexem no painel e fazem como
+[00:07:29] vocês quiserem agora eu vou aplicar uma
+[00:07:31] ripa nesse painel aqui ó como é que eu
+[00:07:32] aplicaria essa ripa é aqui ó em vez de
+[00:07:35] eu ir na portas que eu tava aqui em
+[00:07:36] portas eu vou aqui ó para painéis noos
+[00:07:39] painéis eu pego aqui o ripado aí tem
+[00:07:41] vários também os mesmo modelo de ripado
+[00:07:43] que tem lá eu vou botar nesse aqui ó o
+[00:07:45] deitadinho Vamos pegar esse deitado aqui
+[00:07:46] ó e vou quando eu clico no deitado Ele
+[00:07:49] carrega Ele pergunta onde é que eu quero
+[00:07:50] aplicar eu quero aplicar aqui ó nesse
+[00:07:52] painel clico nele e dou um enter ele vai
+[00:07:55] aplicar já conjunto de ripas aqui ó e
+[00:07:58] aqui tu configura com conforme tu quer
+[00:08:0] eu quero oito não eu quero 10 ripas
+[00:08:2] entende pode botar ali ó 10 ripas aí
+[00:08:5] aqui embaixo ó deixa eu dar uma olhada
+[00:08:6] aqui se nesse aqui tem não esse aqui eu
+[00:08:9] acho que não fura deixa eu dar uma
+[00:08:10] olhada se esse aqui fura tem um desse
+[00:08:12] que fura e outro não deixa eu só
+[00:08:14] confirmar se esse aqui existe uma ripa
+[00:08:16] dessa que não
+[00:08:18] fura Opa aqui e aqui deixa eu ver se
+[00:08:21] essa aqui não essa aqui já tá furando tá
+[00:08:22] essa daqui é peguei a correta Ela já tem
+[00:08:25] a Furação e tá vendo que tá bastante
+[00:08:27] cavil pode mexer tá se eu clicar aqui
+[00:08:30] também ó né a gente consegue editar
+[00:08:33] é espessura largura da régua eu quero
+[00:08:36] régua de 30 entende ó eu posso diminuir
+[00:08:39] a profundidade da régua Ah tá esse aqui
+[00:08:41] tem uma lim essa aqui ó não deixa
+[00:08:43] diminuir ó a menor é 50 tá esse aqui é
+[00:08:45] um padrão de 50 Então esse aqui é 50 não
+[00:08:48] deixa diminuir tem um as configurações
+[00:08:50] porque tá travado para caber na
+[00:08:52] coladeira que é 50 cm a a minha
+[00:08:55] coladeira entendeu então tá travado já
+[00:08:57] tem essas regras que a gente pode
+[00:08:58] aplicar tudo então então além da
+[00:09:0] configuração do painel que ele furou ele
+[00:09:2] fura na ripa também tá então se eu pegar
+[00:09:4] um verdinho aqui eu vou pegar só uma
+[00:09:5] ripa ó clico na ripa e vou abrir ali ó
+[00:09:8] então só a ripa tá
+[00:09:10] cilhão tanto o painel quanto a ripa ele
+[00:09:12] já cavilha tá então já ficou tudo bem
+[00:09:16] bem certinho configurado tá e detalhe
+[00:09:19] quando eu apliquei a ripa no painel tá
+[00:09:21] se eu mexer o painel a ripa vem junto ó
+[00:09:24] ela não fica separada ao painel então eu
+[00:09:26] posso rotacionar ó pro outro lado posso
+[00:09:29] vir aqui nesse painel e aplicar ele aqui
+[00:09:31] do lado dessa dessa porta aqui ó vamos
+[00:09:33] botar aqui ó certo aí a gente aperta o s
+[00:09:38] posso escalonar ela vai vir junto tá
+[00:09:41] vendo ó tudo já certinho se eu pegar
+[00:09:44] aqui vou escalonar aqui ó boto ali só
+[00:09:47] que agora a quantidade de ripa vai ficar
+[00:09:48] muito grande ó ele não deixa tá Vamos
+[00:09:52] diminuir a providade que o mínimo que
+[00:09:53] deu acho que foi 38 deixa eu dar um
+[00:09:55] delete nessa aparelho ó então se eu
+[00:09:57] clicar aqui ó tem a 70 Vamos diminuir a
+[00:10:0] profundidade aqui ó para
+[00:10:4] 50 ó ele já empilhou um monte de ripa
+[00:10:7] ali entende profundidade desse painel
+[00:10:9] aqui ó ele tem vamos ver aqui aí vocês
+[00:10:13] vão ter que ajustar né 35 Então vamos
+[00:10:15] botar aqui
+[00:10:17] 35 só que eu não vou ter essa quantidade
+[00:10:19] de ripa toda que tem aqui né onde é que
+[00:10:21] eu tinha botado a Ah tá a ripa não é
+[00:10:23] aqui a ripa é fora Ó vou botar ele vai
+[00:10:25] empilhar as ripas toda em cima da outra
+[00:10:27] ali tá vendo agora a gente vem na Mira
+[00:10:29] clico na ripa e mexo na quantidade de
+[00:10:32] ripa aqui eu quero só cinco ripas vamos
+[00:10:34] ver se vai dar cinco cinco ripinha aí
+[00:10:36] vocês configuram conforme vocês querem
+[00:10:38] tá se eu clicar aqui também ó por tá
+[00:10:40] vendo que a ripa tá reta aqui eu quero
+[00:10:41] que aquela ripa passe para dar uma
+[00:10:43] Emenda ali ó então a gente clica na mira
+[00:10:45] marela clica na ripa e aqui ó tem eu
+[00:10:48] consigo deslocar ó no eixo eu quero no
+[00:10:49] eixo X mais a metade da ripa livre 2,5
+[00:10:53] quero que ela avance 2,5 para lá no eixo
+[00:10:55] X ó entende isso aqui ó ela tá indo 2,5
+[00:10:58] avançando e me para lá ó para quê a hora
+[00:11:1] que eu emendar um outro painel aqui
+[00:11:2] vamos supor aqui vamos pegar esse outro
+[00:11:4] painel e fazer uma Emenda ele já vai né
+[00:11:8] fazer eu posso fazer é claro que tem
+[00:11:10] deixar a folga ali né posso fazer essa
+[00:11:12] assim né dessa forma daí claro que vocês
+[00:11:14] vão ter que ajustar aqui lado esquerdo
+[00:11:15] lado direito jogar a ripa mais para lá
+[00:11:17] para ela encostar ali certinho ali ó só
+[00:11:19] para vocês der uma noção como é que faz
+[00:11:21] uma ripa táa emenda dos painéis tudo
+[00:11:24] beleza então eu consigo botar ripa em pé
+[00:11:27] ripa deitada e tudo sai furado e as
+[00:11:29] portas tudo com anexo à porta né já vem
+[00:11:32] junto aqui ó já vem grudadinho juntinho
+[00:11:34] ali ó e daí eu fitei a primeira todas
+[00:11:36] elas sai fitada certo então fica mais
+[00:11:38] fácil da gente trabalhar e visualmente
+[00:11:41] pro para quem tiver faz desenvolvendo o
+[00:11:43] projeto já fica o visual bem
+[00:11:45] interessante eu posso pegar e subir esse
+[00:11:47] módulo assim ó como tá aqui ent se eu
+[00:11:49] consigo subir esse módulo pra galeria e
+[00:11:51] usar ele futuramente de novo beleza

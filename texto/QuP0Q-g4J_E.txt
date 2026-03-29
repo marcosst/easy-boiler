@@ -1,0 +1,191 @@
+[00:00:0] Mais uma brincadeirinha aqui. Vamos
+[00:00:3] fazer, vamos fazer um tampo aqui, um
+[00:00:6] balcão curvo aqui 100%. Ele não vai
+[00:00:8] ficar curvo curvo assim, né? Mas dá pra
+[00:00:10] gente brincar legal aqui e já botar
+[00:00:13] todas as peças que eu depois vou mostrar
+[00:00:15] para vocês porque não 100%, mas a gente
+[00:00:17] consegue fazer muita coisa, tá? Vamos
+[00:00:19] botar um balcão aqui, ó, de 80 por 50.
+[00:00:22] Vamos pegar aqui, ó, e vamos botar aqui
+[00:00:26] 100 lados, né? Digitei o 100 antes, né?
+[00:00:30] Fiz aqui. Vamos botar uns 10 cm pra
+[00:00:32] frente aqui e apago o meio, tá? Fiz esse
+[00:00:37] tampinho aqui. Como vocês sabem, eu
+[00:00:39] trabalho com cópias, né, quando eu tô
+[00:00:41] fazendo isso aqui. Então, a gente copia,
+[00:00:43] eu jogo uns 2 m para fora. 1 ou 2 m.
+[00:00:46] Vamos jogar uns 2 m.
+[00:00:48] do
+[00:00:52] Oh, não tá pegando aqui o 2 m porque
+[00:00:54] agora pegou
+[00:00:56] 2 m ali. Então agora a gente vai fazer a
+[00:00:59] nosso molde aqui dentro, né? Então esse
+[00:01:1] daqui eu vou puxar um offset para
+[00:01:3] dentro. Vou jogar aqui uns 5 mm para
+[00:01:7] dentro.
+[00:01:9] Então vou só, como eu tô trabalhando com
+[00:01:13] portas aqui embutidas, vamos fazer este
+[00:01:16] daqui,
+[00:01:18] ó. Vamos fazer mais esse aqui a linha,
+[00:01:20] tá? Beleza. Agora vou puxar essa linha
+[00:01:23] aqui, ó. 15,5.
+[00:01:25] [Música]
+[00:01:27] 15,5 para cá. Essa daqui vai ser 15,5
+[00:01:32] para lá.
+[00:01:34] 15,5.
+[00:01:37] Agora eu vou puxar até ele encostar ali,
+[00:01:42] né? E vou fazer a mesma coisa aqui até
+[00:01:45] encostar aqui.
+[00:01:47] Podia ser mais que 15,5, né?
+[00:01:50] Deixa eu puxar aqui já dar um contrtrl Z
+[00:01:52] lá do outro lado. Eu dei um contrtrl Z
+[00:01:54] aqui porque eu preciso deixar mais uma
+[00:01:56] folguinha da porta, né?
+[00:01:58] Então, mais uns 3 mm aqui, 3 mm aqui e
+[00:02:2] mais um 3 mm aqui.
+[00:02:7] Beleza? Agora eu deixei a foguinha da
+[00:02:9] porta até ali. Essa parte aqui eu já
+[00:02:12] apago. Isso aqui tudo eu posso apagar
+[00:02:14] agora, né? Não vou usar mais. Só quero
+[00:02:17] usar a linha de dentro mesmo. Então esse
+[00:02:19] daqui eu faço o mesmo procedimento
+[00:02:22] até ali. Daqui eu não quero. Isso aqui
+[00:02:25] eu não quero. Isso aqui eu não quero.
+[00:02:26] Isso aqui eu também não quero mais.
+[00:02:29] Posso selecionado isso aqui? Apagar. Eu
+[00:02:30] quero só isso aqui. Ah, não. Não vou
+[00:02:32] apagar o resto porque eu ainda preciso
+[00:02:36] fazer um outro detalhe aqui, ó. Vou
+[00:02:38] desenhar uma linha aqui no chão e vou
+[00:02:40] puxar essa linha aqui, ó. Mais 1,5 mm
+[00:02:44] para cá. E puxo 3 mm para cá. para
+[00:02:46] deixar a folguinha das portas, né? Eu
+[00:02:48] esqueci de deixar, ó, move. E eu vou
+[00:02:51] puxar, né? Control, control aqui para
+[00:02:54] copiar. Vou puxar até ali. Por que que
+[00:02:57] eu desenho isso aqui? É só para mim
+[00:02:59] poder apagar esse meinho aqui, ó. Tá?
+[00:03:2] Isso aqui eu não quero. Isso aqui eu não
+[00:03:3] quero. Isso aqui eu não quero. Vou vou
+[00:03:5] querer só aquelas duas linhas ali, ó.
+[00:03:7] Tá? Dou três cliques aqui. Essas duas
+[00:03:9] linhas que eu preciso. O tampo meu tá lá
+[00:03:11] porque eu já fiz uma cópia, né? Então
+[00:03:12] essas duas linhas aqui, ó. Vem aqui o
+[00:03:14] PMOB, converter usinage. É criar peça
+[00:03:18] curva. Só dou um aplicar. Eu venho de
+[00:03:21] lado aqui para ele mostrar bem o
+[00:03:23] desenho, né? Eu vou dizer que tem uns 70
+[00:03:25] de altura aqui. Opa, 70 de altura. Essa
+[00:03:29] aqui também
+[00:03:33] criar peça cor
+[00:03:37] e 70 de altura.
+[00:03:41] Pronto. Essas duas peças aqui a gente
+[00:03:44] joga elas lá para baixo. Vou jogar 1 m
+[00:03:47] para baixo para não aparecer, porque eu
+[00:03:49] só preciso dessas daqui, né? Então aqui
+[00:03:51] já tá pronta essa minha parte aqui, que
+[00:03:53] é a parte das portas, né? Agora vamos
+[00:03:55] fazer o tampo aqui. Então o tampo é
+[00:03:58] muito simples, só clicar em cima dele,
+[00:04:0] converter usinagem, criar peça fácil.
+[00:04:3] Clico em aplicar,
+[00:04:6] escolho o veio aqui, ó, né? Fiz o tampo,
+[00:04:10] né? Agora, como a gente já chegou 2 m
+[00:04:12] para lá, eu posso voltar ele 2 m para
+[00:04:16] cá, ó. Então, ele tá ali. Vou deixar uma
+[00:04:19] folginha aqui embaixo, né, de 18 mm para
+[00:04:23] ele deixar uma folga ali. Vamos pegar
+[00:04:25] esse aqui e colocar lá para cima.
+[00:04:30] 3 mm aqui de folga. Vai dizer que o
+[00:04:33] tampo tá embutido, né? Embutido. Por que
+[00:04:35] que eu disse que não dá para fazer 100%,
+[00:04:37] tá? Porque por enquanto esse aqui de
+[00:04:38] frente aí não vai fazer por enquanto,
+[00:04:40] né? Daqui a pouco o Ron pode inventar
+[00:04:41] alguma coisa aí. Mas essa curva aqui
+[00:04:43] assim, ó, na frente quando é lateral em
+[00:04:45] pé não faz, né? Então eu pego já, né? Eu
+[00:04:47] pego aqui uma lateral, ó. Lateral. Vamos
+[00:04:52] pegar uma lateral avulsa, pode ser
+[00:04:53] esquerda, depois tu pega direita e assim
+[00:04:55] por diante, né? Então, ó, vou botar ela
+[00:04:58] aqui, ó. Ele não faz aquela pecinha ali,
+[00:05:0] ó, né? aquela partezinha,
+[00:05:2] aquela peça que
+[00:05:6] que faz ali, que a gente tem que fazer
+[00:05:7] manualmente, né? Então, o que que eu
+[00:05:8] costumo fazer nisso aqui? Eu eu mando
+[00:05:10] esse tampo um pouquinho maior, jogo ele
+[00:05:13] para baixo e desenho pro cliente em
+[00:05:14] geometria, né? Eu faço isso aqui, ó. Eu
+[00:05:16] jogo esse tampinho aqui, tipo 1 m para
+[00:05:19] baixo só para ele calcular no orçamento.
+[00:05:21] E depois eu faço a geometria aqui para
+[00:05:22] ficar bonitinho. Mas nesse caso aqui eu
+[00:05:23] não vou fazer desse jeito, né? Você já
+[00:05:26] sabe como é o procedimento e vem para cá
+[00:05:29] e coloco ele para cá. Aí se eu quiser
+[00:05:32] pintar o PVC, é só pegar o PVC lá e
+[00:05:34] clicar na peça. Ele vai pintar ali, né?
+[00:05:37] Ó. Ok. Pintou. Então eu já tenho um
+[00:05:40] balcão curvo, né? Balcão curvo com as
+[00:05:45] com os tamponamento aqui, né?
+[00:05:47] Tamponamento, tá? Se eu quiser botar
+[00:05:49] dobradiça, como é que eu colocaria? Eu
+[00:05:51] colocaria já o furo da dobradiça aqui,
+[00:05:53] ó. Tá? usinagens inferior, ó, desculpa,
+[00:05:56] usinagens. Aí eu pego aqui um furo e eu
+[00:06:0] coloco nessa peça aqui, ó. Nessa peça
+[00:06:2] aqui eu coloco a profundidade, né, de
+[00:06:4] sei lá, de 13 mm e um furo de 35.
+[00:06:9] E daí a gente ajusta aqui no tamanho que
+[00:06:11] vocês precisarem, né? Então vou pegar
+[00:06:13] daqui
+[00:06:15] até aqui. Opa, mexeu demais ali. Dá
+[00:06:20] aqui. Aqui. Botar ali uns 4 mm aqui.
+[00:06:28] E daí eu vou jogar de 10 para cima aqui.
+[00:06:31] A 10. Porque a peça que fura, né? Opa,
+[00:06:35] no
+[00:06:37] move
+[00:06:38] daqui para lá.
+[00:06:43] Seta para cima.
+[00:06:46] Porque a peça que fura é essa daqui de
+[00:06:48] baixo, né? Que faz o furo. As usinagens
+[00:06:50] são essa daqui de baixo, né?
+[00:06:54] Ele vai fazer a marcação. Furo não vai
+[00:06:56] dar 100%
+[00:06:59] talvez exato aqui, porque essa peça é
+[00:07:1] curva, né? Ela vai apertar aqui, talvez
+[00:07:3] o furo não caiba na dobradiça, mas pode
+[00:07:4] até fazer uma marcação, né?
+[00:07:7] Botar aqui uns 5, se quiser fazer desse
+[00:07:9] jeito aqui, ó. Talvez, como ele vai
+[00:07:12] fresar, esse furo vai diminuir de
+[00:07:14] tamanho, né? Teria que furar depois da
+[00:07:15] peça pronta. Então isso aqui é um tipo
+[00:07:17] de peça que tu tem que fazer ela depois,
+[00:07:19] né? Mas caso queira fazer isso que eu
+[00:07:22] fiz aqui, certo, certo, certo, talvez
+[00:07:25] não dê, né? Opa, deixa eu botar aqui,
+[00:07:27] senão não consigo visualizar o furo.
+[00:07:30] Ó, ele já faz a furação ali da dobradiça
+[00:07:33] também, tá?
+[00:07:35] Mas o ideal seria o quê? Curvar toda a
+[00:07:37] peça e depois fazer o furo, né? Não é
+[00:07:39] para fazer desse jeito aqui não. Então a
+[00:07:41] gente dá para Ah, tá um detalhe aqui
+[00:07:43] também, né, que eu nem mostrei, mas a
+[00:07:45] gente também
+[00:07:47] faz esses
+[00:07:49] essa peça, a gente escolhe o veio, né?
+[00:07:51] Então o veio, ó, já sai certinho
+[00:07:54] conforme a gente escolheu o veio do
+[00:07:56] material, tá? Então dá até para fazer um
+[00:07:58] balcãozinho curva. Opa, faltou pintar
+[00:08:0] mais um aqui.
+[00:08:4] Ver se eu pego daqui aqui. Pinto aqui.
+[00:08:7] Beleza. Pronto. Então, dá até para fazer
+[00:08:10] peças curvas aqui. Já tá contabilizando
+[00:08:13] tudo certinho, né? Olha que bacana.

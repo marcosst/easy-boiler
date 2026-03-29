@@ -17,7 +17,7 @@ def test_home_contains_theme_manager():
 
 def test_home_has_dark_body_class():
     response = client.get("/")
-    assert "dark:bg-slate-900" in response.text
+    assert "dark:bg-neutral-900" in response.text
 
 
 def test_dropdown_contains_tema_toggle():
@@ -34,21 +34,21 @@ def test_dropdown_contains_theme_options():
 
 def test_home_cards_have_dark_classes():
     response = client.get("/")
-    assert "dark:bg-slate-800" in response.text
-    assert "dark:border-slate-700" in response.text
+    assert "dark:bg-neutral-800" in response.text
+    assert "dark:border-neutral-700" in response.text
 
 
 def test_collections_cards_have_dark_classes():
     response = client.get("/projects/1")
-    assert "dark:bg-slate-800" in response.text
-    assert "dark:border-slate-700" in response.text
+    assert "dark:bg-neutral-800" in response.text
+    assert "dark:border-neutral-700" in response.text
 
 
 def test_home_section_title_has_dark_class():
     response = client.get("/")
-    assert "dark:text-slate-100" in response.text
+    assert "dark:text-neutral-100" in response.text
 
 
 def test_collections_section_title_has_dark_class():
     response = client.get("/projects/1")
-    assert "dark:text-slate-100" in response.text
+    assert "dark:text-neutral-100" in response.text

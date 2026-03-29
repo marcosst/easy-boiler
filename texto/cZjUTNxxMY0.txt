@@ -1,0 +1,123 @@
+[00:00:0] usinage já sendo recortado o módulo a
+[00:00:3] partir da versão 2024 tá a partir da
+[00:00:6] versão 2000 acho que 2022 pra frente
+[00:00:8] existe uma função nova aqui que foi
+[00:00:10] modificada vamos pegar aqui eu vou
+[00:00:12] mostrar para vocês vamos pegar um arco
+[00:00:14] clico no arco né clico aqui vou fazer um
+[00:00:17] arco aqui no canto aqui ó ele tá
+[00:00:19] segmentado né a gente pode vir aqui
+[00:00:21] editar os segmentos dele né Opa
+[00:00:25] informaçõ de identidade vamos botar aqui
+[00:00:26] uns 40 segmento ó para ficar mais
+[00:00:29] bonitinho certo e venho aqui e fecho
+[00:00:31] esse meu arco aqui Opa pego a linha e
+[00:00:36] vou fechar esse meu arco
+[00:00:38] aqui ver se ele tá fechado ó tá fechado
+[00:00:41] aqui ó dou dou três cliques em cima dele
+[00:00:44] seleciono tudo né Eu quero fazer o quê
+[00:00:47] eu quero criar uma Usinagem aqui então
+[00:00:48] clico com outro botão up Mob ambientes
+[00:00:51] Opa aqui ó eh up Mob up Mob aí converter
+[00:00:55] em Usinagens ponto a ponto clico nela
+[00:00:58] aqui eu posso dizer a profundidade que
+[00:01:0] eu quero fazer a Usinagem e agrupar
+[00:01:3] elementos Eu não eu posso agrupar se
+[00:01:5] tiver várias Usinagens eu posso
+[00:01:6] transformar numa única só excluir o
+[00:01:8] elemento desenho que ele vai excluir
+[00:01:10] essa parte do meio e eu quero que a
+[00:01:11] fresa comece pelo centro ou pela direita
+[00:01:14] ou pela esquerda Vamos ver que ela
+[00:01:15] começa pela direita e vamos direita acho
+[00:01:17] que é a parte de fora e a esquerda é a
+[00:01:19] parte de dentro tá então vamos pela
+[00:01:22] lógica é assim então vamos clicar em
+[00:01:24] aplicar mas a gente tem que conferir em
+[00:01:25] todo o projeto cliquei em aplicar aí ele
+[00:01:28] vai virar uma mãozinha Ele pergunta em
+[00:01:29] qual Face que eu quero aplicar essa
+[00:01:31] fresagem eu quero aplicar nessa daqui
+[00:01:33] então apliquei a fresagem nessa Face
+[00:01:35] então ele já furou ele já Furou não ele
+[00:01:37] já aplicou a Usinagem só que ele não
+[00:01:39] furou a peça então na versão 2024 foi
+[00:01:42] criado isso aqui ó então a gente
+[00:01:44] seleciona isso aqui que ele deixou o
+[00:01:45] desenho para nós só que já tá com a
+[00:01:47] Usinagem ali tá então clico com esse
+[00:01:49] desenho aqui ó clico com outro botão vem
+[00:01:51] up ambientes e criar recorte ele recorta
+[00:01:54] a peça ali ó pra gente saber que tem um
+[00:01:56] recorte nessa nessa peça
+[00:02:0] Então e se eu for ver a Usinagem tá
+[00:02:2] vamos pegar a Usinagem aqui a mira
+[00:02:4] vermelha ela vai estar lá
+[00:02:7] perfeitamente
+[00:02:9] usinado Opa aqui ó usinado tá no lado b
+[00:02:12] ó então a fresa tá começando por ali ó
+[00:02:14] vai começar por ali n Então tá conforme
+[00:02:17] ele escolheu o lado a e lado b ela tá
+[00:02:19] recortando porque eu fiz um rebaixe né
+[00:02:21] Fiz ali 10 Menin de rebaixo ela s vai
+[00:02:23] cortar um lado ali isso aqui É para te
+[00:02:25] mostrar também ó que pode fazer o visual
+[00:02:28] pro cliente se eu quero fazer o um furo
+[00:02:30] aqui no meio da peça eu quero fazer um
+[00:02:33] furo grandão aqui Redondo também posso
+[00:02:35] fazer a mesma coisa posso vir aqui é
+[00:02:38] informações da entidade aqui Opa aqui
+[00:02:41] vamos botar uns 30 Vamos ver como vai
+[00:02:43] ficar uns 50 40 deixam mais redondinha
+[00:02:46] né Ó ali só para deixar ela um pouquinho
+[00:02:50] mais redondinha não ficar muito então
+[00:02:52] ela tá assim eu clico o botão direito é
+[00:02:54] vou em up converter Usinagem ponto a
+[00:02:58] ponto é é profundidade aqui eu posso
+[00:03:1] fazer de 15 que é o tamanho da peça ali
+[00:03:4] 15.5 aí vocês podem andar pelo Centro
+[00:03:8] pela esquerda que dev vai ficar por
+[00:03:9] dentro e clico em aplicar então ele já
+[00:03:13] aplicou qual onde é que eu quero aplicar
+[00:03:15] eu quero aplicar nessa esse furo nessa
+[00:03:17] Face clico nele agora ele aplicou o furo
+[00:03:19] na face dou três cliques para selecionar
+[00:03:22] o que ficou no meio clico com do botão
+[00:03:24] up ambientes criar recorte então eu
+[00:03:27] posso fazer um furo na peça e vai ficar
+[00:03:30] mostrando pro usuário né pro para quem
+[00:03:33] tá vendo se vai ter o furo mesmo né
+[00:03:35] então clico na mira Verde clico nele e
+[00:03:37] clico na peça vamos lá lado A lado B tá
+[00:03:41] vendo que esse aqui já é passante ele tá
+[00:03:43] mostrando no a e no B certo ó no A tá
+[00:03:46] mais em cima no B vai ficar um pouco
+[00:03:47] mais embaixo invertida então ele vai
+[00:03:49] fazer dois furos no lado a e no lado b
+[00:03:51] ah lembrando né que eu mostrei esse
+[00:03:54] módulo aqui ainda H pouco no vídeo
+[00:03:56] anterior e lembrando que eu fiz a
+[00:03:58] Usinagem aqui e por exemplo eu vou mexer
+[00:04:1] nesse módulo vou maximizar ele aqui ou
+[00:04:3] diminuir Vamos diminuir ele Ó vou
+[00:04:5] diminuir esse módulo aqui tá ele foi
+[00:04:8] diminuído vamos ver se ainda tem Furação
+[00:04:10] nele então a gente clica na peça Verde
+[00:04:12] clico aqui nele e clico vamos ver se tem
+[00:04:14] Usinagem né clico nele aqui e clico a
+[00:04:17] Furação vai ter ó ele já ainda tá com a
+[00:04:19] Usinagem atrelada ele não importa eu
+[00:04:21] posso mexer o módulo eu posso modificar
+[00:04:24] o módulo aqui posso levar para outro
+[00:04:26] posso subir ele pra galeria assim ele já
+[00:04:28] vai vir com a Usinagem tá Então vamos
+[00:04:30] clicar aqui de novo na peça Verde clico
+[00:04:33] na lateral clico aqui aí ele vai descer
+[00:04:36] já com a Usinagem porque a Usinagem está
+[00:04:37] atrelada ao componente ela não vai sair
+[00:04:40] daqui entende se ela vai pertencer a
+[00:04:42] esse componente aqui então pode notar
+[00:04:45] que qualquer Usinagem onde eu faço eu
+[00:04:47] posso subir o componente assim o
+[00:04:48] componente já vai vir com essa Usinagem
+[00:04:50] prontinha

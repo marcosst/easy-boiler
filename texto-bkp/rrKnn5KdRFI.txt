@@ -1,0 +1,103 @@
+[00:00:00] aqui no UP Mob também existe uma função
+[00:00:02] checkout tá checkout e um localizador de
+[00:00:05] peça que é essa barrinha de ferramenta
+[00:00:06] aqui ó como é que funciona ela esse
+[00:00:09] primeiro botão aqui ó eu posso fazer
+[00:00:11] pesquisas eu vou digitar um esse mesmo
+[00:00:13] código que tá aqui só para vocês ver ó
+[00:00:15] 47 51 47 e vou dar um enter ele vai te
+[00:00:20] localizar essa peça ali ó certo
+[00:00:21] localizou na tela se eu digitar o outro
+[00:00:23] por exemplo destacar ela da base lá ó
+[00:00:26] 38
+[00:00:27] 56 57 ó não apareceu por quê Porque essa
+[00:00:32] peça deve est aqui por baixo Então você
+[00:00:33] bota nesse botão aqui ó que é o raio x
+[00:00:36] clica nele ó tá lá embaixo ó é essa peça
+[00:00:39] é essa peça aqui ó então às vezes
+[00:00:41] trabalhando com modo raio x você vai
+[00:00:42] digitando os códigos dela e ele já vai
+[00:00:44] aparecendo e vai te dizendo Qual é a
+[00:00:46] peça no módulo para auxiliar o montador
+[00:00:49] a localizar a peça lá no local se ele
+[00:00:51] tem no notebook ele consegue localizar
+[00:00:53] essa peça né então vamos lá agora por
+[00:00:56] exemplo outra coisa que é bem
+[00:00:57] interessante eh aqui ó também esse aqui
+[00:01:00] é o localizador tá que é para auxiliar o
+[00:01:01] montador esse outro aqui ó é o checkout
+[00:01:04] eu vou tirar do raio x aqui de novo ó
+[00:01:06] vou botar normal como é que funciona o
+[00:01:08] checkout tá o checkout eu vou digitar os
+[00:01:09] mesmos códigos lá para para checar se
+[00:01:12] essa peça foi carregada ou não ou foi
+[00:01:14] embalada por exemplo tem uma etiqueta
+[00:01:16] isso aqui é para ler com código de barra
+[00:01:18] né vai bater no código de barra lá esse
+[00:01:19] número da que tá na etiqueta ó 38 5657
+[00:01:24] vou dar um enter Opa Sumiu por que que
+[00:01:27] eu sei que sumiu que ela lá embaixo ele
+[00:01:29] já sumiu a parte de baixo lá da base
+[00:01:31] porque isso aqui era uma base vamos
+[00:01:32] pegar a outra porta 47 51 47 vou dar um
+[00:01:37] enter ó sumiu essa porta vamos pegar
+[00:01:39] outra porta
+[00:01:42] 4765 51 isso aí o que acontece vai bater
+[00:01:44] o cod barra ele vai ler esse código a
+[00:01:46] hora que der um enter essa peça vai
+[00:01:48] sumir daqui você vai vendo que ela já
+[00:01:49] está carregada que ela já foi Saindo
+[00:01:52] quer dizer que ela foi conferida vamos
+[00:01:53] dizer assim né vamos pegar agora e vamos
+[00:01:55] conferir todas elas aqui ó vou aumentar
+[00:01:57] essa telinha Vou baixar ela aqui e vou
+[00:01:59] conferindo aqui ó é só clicar aqui eu
+[00:02:01] vou conferir tudo tu ia bater com có de
+[00:02:02] barra Tá eu vou conferir todas aqui ó
+[00:02:04] essa essa tá vendo ele sumindo lá na
+[00:02:06] tela essa daqui essa daqui essa daqui
+[00:02:09] essa daqui essa daqui essa daqui essa
+[00:02:12] daqui essa daqui essa daqui vamos sumir
+[00:02:15] né Vamos marcando ó então o que que ele
+[00:02:18] tá fazendo aqui ele tá dizendo que todas
+[00:02:20] as peças Eu tô batendo e tô carregando
+[00:02:22] ela ou embalando tá tudo isso vocês já
+[00:02:26] conseguem ver aqui ó ficou só os
+[00:02:27] acessórios aqui tá vamos supor que eu
+[00:02:30] não achei essas duas peças aqui ó ô
+[00:02:32] ficou essas duas você clica no olhinho ó
+[00:02:34] ele pode até te marcar ali ó e te dizer
+[00:02:36] qual é o código e o que que é o nome da
+[00:02:38] gaveta e onde é que essa peça tá tá
+[00:02:39] vamos supor que eu carreguei tudo Opa
+[00:02:41] carreguei tudo beleza foi tudo conferido
+[00:02:44] não tem mais nenhuma peça para carregar
+[00:02:45] e embalar aqui em cima ó tá dizendo as
+[00:02:47] peças que foram conferidas daí tu sabe
+[00:02:50] todas elas que foram conferidas que ela
+[00:02:52] foi entrou no no caminhão ou ou foi
+[00:02:55] conferida já na embalagem já tá
+[00:02:56] carregada na embalagem tá então aqui é
+[00:02:59] as que que falta e aqui é que foi tudo
+[00:03:01] conferido Então já tá certinho aqui emai
+[00:03:05] aqui nesse botão aqui ó eu posso
+[00:03:06] atualizar a lista né ó posso atualizar a
+[00:03:09] lista que não tem mais nenhuma né não
+[00:03:12] existe mais nada e aqui ó nesse nesse
+[00:03:15] botão eu posso resetar tudo o que que é
+[00:03:17] resetar tudo eu quero que volte todo o
+[00:03:19] meu projeto porque eu já conferi né já
+[00:03:21] tá certinho eu quero que volte ele posso
+[00:03:23] vir aqui e voltar entende se ele volta
+[00:03:25] tudo para tentar fazer uma reconferencia
+[00:03:27] ver se tá tudo mesmo tu pode fazer dessa
+[00:03:29] forma isso aqui é um modelo de checkout
+[00:03:31] ainda tá em desenvolvimento mas ele
+[00:03:33] funciona muito bem já como localizador
+[00:03:35] de peça e para vocês que querem ter uma
+[00:03:38] conferência de se tá embarcando todos os
+[00:03:40] itens né é só deixar a etiqueta com
+[00:03:41] cóigo de barra e você vai batendo
+[00:03:43] bipando ele vai sumindo no projeto para
+[00:03:45] ver se todos os itens foram carregados
+[00:03:47] beleza Um abraço

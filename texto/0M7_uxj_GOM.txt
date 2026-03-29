@@ -1,0 +1,45 @@
+[00:00:0] Então olha aqui ó Criei um puxador novo
+[00:00:3] esse puxador aqui eu criei novo vamos
+[00:00:5] subir ele pra galeria mostrar como é que
+[00:00:7] então a gente clica aqui ó nessa parte
+[00:00:9] do na mira amarela clica no puxador já
+[00:00:12] selecionou o puxador aqui então a gente
+[00:00:14] vai vir e vamos subir eles PR Nossa
+[00:00:16] galeria vem
+[00:00:18] aqui visão geral eu vou salvar o projeto
+[00:00:22] ele vai gerar esses elementos aqui per
+[00:00:30] vou di Qual é o tipe é um
+[00:00:33] agregado e ele vai est lá na parte de
+[00:00:36] portas ó para portas subgrupo puxador
+[00:00:40] pronto não puxador
+[00:00:42] alça não puxador não é alça é ABA aqui ó
+[00:00:45] puxador aba esse aqui e o nome dele eu
+[00:00:48] vou colocar aqui
+[00:00:50] puxador é o nome que vai aparecer lá na
+[00:00:52] na
+[00:00:54] cois pra gente lá puxador a
+[00:01:0] 15 esse é o modelo dele aqui eu vou
+[00:01:3] selecionar o arquivo de sket que ele
+[00:01:5] gerou onde é que ele gera ele gera aqui
+[00:01:7] dentro de é pera aí deixa eu dar uma
+[00:01:10] olhada documentos up
+[00:01:17] Mob ó aqui é Mob tá aqui ó gerou aqui ó
+[00:01:21] puxador e aqui eu vou pegar a foto que
+[00:01:24] ele gerou Do puxador que é essa foto
+[00:01:26] aqui e que eu posso baixar uma foto da
+[00:01:28] internet e substituir essa aqui tá aí
+[00:01:30] vou deixar essa mesma fotinha aqui e vou
+[00:01:33] enviar aí ó módulo enviado com sucesso
+[00:01:37] então a gente já vem para cá vou entrar
+[00:01:39] aqui no componentes Vou atualizar meus
+[00:01:42] componentes clico aqui em atualizar
+[00:01:44] Pronto agora vem aqui onde eu boto os
+[00:01:46] internos que é o puxador ó aqui vou
+[00:01:49] internos para a porta Opa deixa eu
+[00:01:51] atualizar aqui também internos eu botei
+[00:01:54] ali para portas né ó puxador com aba já
+[00:01:57] apareceu aqui ó puxador a45 tem eu tinha
+[00:02:1] o 18 né agora o A4 15 eu vou clicar nele
+[00:02:3] aqui clico na porta e dou um enter ele
+[00:02:6] já desce na porta automáticamente é bem
+[00:02:9] assim mesmo simples fácil e preciso

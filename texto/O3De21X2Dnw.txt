@@ -1,0 +1,345 @@
+[00:00:0] bom agora nós vamos ver aqui sobre as
+[00:00:3] prateleiras com divisórias pegar um
+[00:00:5] caixote aqui vamos entrar nesse caixote
+[00:00:8] vou apagar tudo que tem internamente
+[00:00:9] dele ó vou apagar tudo Ele tem um fundo
+[00:00:12] ali também eu vou pegar a mira vermelha
+[00:00:15] deletar o fundo vou pegar na mira Verde
+[00:00:17] desculpa n na mira amarela ali e deletar
+[00:00:19] essa Travessa ó é um caixote sem nada
+[00:00:21] completamente sem nada aqui nesse meu
+[00:00:23] caixote existe uma configuração aqui que
+[00:00:25] é os recursos do fundo ó eu vou botar
+[00:00:27] ele em zero tá só para vocês verem como
+[00:00:29] é que funciona aqui dentro do programa
+[00:00:31] quando a gente baixa esse caixote aqui ó
+[00:00:33] existe aqui dentro de agregados para
+[00:00:35] internos agregado internos Né né para
+[00:00:38] internos agregado internos das
+[00:00:39] Prateleiras esses modelos de prateleira
+[00:00:41] aqui ó eu posso colocar uma prateleira
+[00:00:43] aqui certo e essa prateleira eu posso
+[00:00:46] ajustar a medida dela ela sempre desce
+[00:00:48] Centralizado mas vamos dizer que eu não
+[00:00:50] quero Centralizado e quero que ela fique
+[00:00:52] a 19900 do chão tá um exemplo aqui e
+[00:00:56] vamos dizer que eu quero um fundo aqui ó
+[00:00:57] com ranhura nessa prateleira na parte de
+[00:00:59] cima e um fundo com ranhura na
+[00:01:0] prateleira da parte de baixo ó lembra
+[00:01:2] que no começo da minha caixa quando eu
+[00:01:4] seleciono a minha caixa aqui ó Eu
+[00:01:5] determino a o avanço do fundo ó por
+[00:01:7] exemplo eu quero a fundo avança 23 que
+[00:01:9] vai ser uma travessa 18 mais 6is ali né
+[00:01:12] vai dar mais ou menos essa medida aqui
+[00:01:13] 23 22,5 só botei 23 só para deixar um
+[00:01:16] pouquinho mais para dentro então ele
+[00:01:18] recua por aqui a caixa mas eu vou deixar
+[00:01:20] em zero e vamos fazer um outro processo
+[00:01:22] aqui que é bem interessante Então junto
+[00:01:24] em agregados aqui continuando em
+[00:01:26] internos existe um um um agregado que é
+[00:01:29] o fundo
+[00:01:30] então eu tenho fundo aqui ó já com uma
+[00:01:32] divisória né que fica 3 mm ali ó quee
+[00:01:34] tem uma folguinha de 3 mm ali com uma
+[00:01:36] Emenda plástica mas existe os fundos com
+[00:01:38] ranhura também então existe o fundo
+[00:01:40] horizontal né o fundo horizontal com
+[00:01:42] ranhura sem ranhura o vertical sem
+[00:01:45] ranhura e o vertical com ranhura Vamos
+[00:01:47] pegar esse aqui ó com ranhura clico nele
+[00:01:49] clico aqui na parte de cima clico na
+[00:01:51] parte de clico na parte de baixo clico
+[00:01:53] na parte de cima e dou um enter ele vai
+[00:01:55] colocar um fundo em cada vão tá vendo um
+[00:01:57] fundo em cada vão só que esse fundo tá
+[00:01:58] alinhado por trás né então agora existe
+[00:02:1] uma possibilidade na própria prateleira
+[00:02:3] quando eu clico nessa prateleira aqui ó
+[00:02:5] ele me diz aqui ó Qual é o afastamento
+[00:02:7] traseiro inferior que é o da parte de
+[00:02:9] baixo vamos supor eu vou deixar até aqui
+[00:02:11] ó em em transparente para vocês verem
+[00:02:13] melhor ó transparente ali ó tem um fundo
+[00:02:15] aqui atrás na parte de baixo eu quero
+[00:02:17] que esse fundo avance aqui uns 20 cm tá
+[00:02:20] então pode avançar a medida que vocês
+[00:02:22] quiserem tô botando 20 ó tá ali ó o
+[00:02:24] fundo tá ali eu já tenho uma descrição
+[00:02:26] dele só que ele não tem ranhura na parte
+[00:02:28] de cima desse fundo tá vendo Então esse
+[00:02:30] fundo eu consigo ajustar ele com a Mira
+[00:02:32] verde se eu clicar na mira Verde ele me
+[00:02:34] diz aqui ó o que que o que que me diz
+[00:02:36] nesse fundo né uma redução para corte em
+[00:02:39] cada lado o fundo já reduz em cada lado
+[00:02:42] 1 mm tá e eu faço o rasgo de oito então
+[00:02:45] vamos supor que o fundo já vai sair 1 mm
+[00:02:47] menor então rasgo de Oito na parte
+[00:02:49] inferior na parte esquerda direito e na
+[00:02:52] superior não tem ó na superior eu também
+[00:02:53] vou botar em vez de eu botar oito vamos
+[00:02:56] botar aqui um cinco tá pegar a metade
+[00:02:59] Zinha ali ó aqui ó 5 mm 4 MM n vocês
+[00:03:2] define aqui ó ele já faz a ranhura ali
+[00:03:4] em cima ó o fundo é de seis né então eu
+[00:03:7] coloquei um fundo aqui e se eu clicar de
+[00:03:9] novo na minha prateleira eu consigo
+[00:03:11] editar a parte de cima também então
+[00:03:12] vamos dizer que a parte de cima eu quero
+[00:03:14] só um pouquinho um 23 MM ali que é um
+[00:03:19] fundo de 15 + 6 mm é 15.5 + 6 mm dá 22
+[00:03:22] né 22,5 vou botar um 23 para deixar uma
+[00:03:24] folguinha então coloquei 23 ali ó e ele
+[00:03:27] já tem ar ranhura aqui só que em cima
+[00:03:29] também não tem ó porque ele desce como
+[00:03:30] se fosse um fundo de caixote né então eu
+[00:03:32] vou ajustar esse meu componente para em
+[00:03:34] cima também ter a mesma folga então é na
+[00:03:36] mira verde eu clico no fundo e só digo
+[00:03:39] aqui que eu quero 8 mm para cima ele já
+[00:03:41] acrescenta e já faz a ranhura tá pra
+[00:03:44] gente ver a ranhura a gente tem que tá
+[00:03:45] em modo aqui ó desenvolvedor né modo
+[00:03:47] revisando clico na mira Verde seguro
+[00:03:50] contol e clico nessa peça ó então ele já
+[00:03:52] fez o fundo lá em cima ar ranhura vamos
+[00:03:54] ver agora essa peça aqui de de baixo
+[00:03:56] essa lateral né a lateral como é que
+[00:03:57] saiu vamos ver a lateral ó um ranhura lá
+[00:04:0] atrás tá vendo vou dar um zoom aqui PR
+[00:04:2] vocês ver ó tem uma ranhura lá atrás e
+[00:04:3] uma ranhura na na um pouco mais pra
+[00:04:5] frente na mesma prateleira notar que eu
+[00:04:7] botei na mesma prateleira Então vamos
+[00:04:10] ver essa prateleira aqui agora vamos
+[00:04:12] clicar nela tem uma ranhura no meio do
+[00:04:13] outro lado tem uma ranhura atrás então o
+[00:04:15] lado o lado de baixo né que é o a tem
+[00:04:17] uma ranhura no meio o lado de cima ela
+[00:04:19] tá mais lá atrás por o lado de cima é
+[00:04:21] esse lado que faz isso aqui né então
+[00:04:24] todo o sistema consegue mexer de
+[00:04:25] qualquer qualquer forma Então por que
+[00:04:28] que por que que a gente consegue fazer
+[00:04:29] esse esse detalhe aqui tá se eu for
+[00:04:31] colocar mais uma outra prateleira ou
+[00:04:33] qualquer componente aqui dentro então
+[00:04:34] vamos em agregados internos Vamos
+[00:04:36] colocar mais uma prateleira Então posso
+[00:04:38] clicar aqui numa prateleira ou um
+[00:04:39] agregado de roupeiro tá vamos clicar
+[00:04:41] nessa prateleira quando eu coloco aqui ó
+[00:04:43] como eu já avancei o fundo ele já
+[00:04:45] determina a pratileira na minha medida ó
+[00:04:47] e lá em cima ó ela tá mais para trás né
+[00:04:49] então se eu colocar uma lá em cima ele
+[00:04:51] já vai descontar aquela medida e colocar
+[00:04:53] minha pratileira na posição correta ó
+[00:04:55] então ele já vai sair todas as frações
+[00:04:57] que aqui tá com pino né ah eu quero
+[00:04:58] trocar dessa prateleira o kit dela
+[00:05:0] inteiro só dessa prateleira ó clico nela
+[00:05:2] venho aqui em trocas fixação eu escolho
+[00:05:5] qual kit eu quero usar ali qualquer um
+[00:05:6] desses kit Ah eu quero usar VB aqui ó
+[00:05:8] vou usar VB ali ó beleza Ah o VB ficou
+[00:05:11] para baixo ficou aparecendo eu quero
+[00:05:12] jogar ele para cima não tem problema
+[00:05:14] clica na camira amarela nesse lado aqui
+[00:05:17] eu seleciono esse VB inverto esse lado
+[00:05:19] se eu quiser ó ele já botou lá para cima
+[00:05:21] eu quero inverter esse lado aqui também
+[00:05:22] não tem problema clico nele e a gente
+[00:05:25] inverte esse lado para cima tudo visual
+[00:05:27] ó vou apertar na letra k né vou botar
+[00:05:30] modo renderização para vocês ver ó então
+[00:05:32] é totalmente visual e a gente consegue
+[00:05:34] ir mexendo no sistema assim se eu quiser
+[00:05:36] jogar todos esses minifix pro lado de
+[00:05:38] fora que eu não quero que apareça pelo
+[00:05:39] lado de dentro faz a mesma coisa né
+[00:05:41] então a gente Clica com a Mira amarela
+[00:05:43] nele tem a fixação lateral e eu posso
+[00:05:45] vir aqui na minha inverter esse lado
+[00:05:47] para dentro ó para não aparecer furos
+[00:05:49] ali né então vocês podem trabalhar do
+[00:05:51] jeito que vocês quiserem com o sistema
+[00:05:53] qualquer componente que eu coloco aqui ó
+[00:05:54] em cima desse fundo ele já identifica
+[00:05:57] automaticamente por exemplo vou pegar
+[00:05:59] aqui eh para roupeiros tá vamos pegar
+[00:06:2] uns módulos aqui vamos seria um agregado
+[00:06:4] eh deixa eu ver internos para roupeiros
+[00:06:8] aqui ó para roupeiros tem um conjunto
+[00:06:10] aqui inteiro já com cabide eu vou
+[00:06:12] colocar esse conjunto nessa peça na
+[00:06:14] realidade eu vou apagar essa essa
+[00:06:16] prateleira aqui ó Tá vou deletar ela e
+[00:06:19] vou colocar esse para roupeiros aqui ó
+[00:06:21] quando eu coloco esse componente aqui
+[00:06:22] para roupeiros é só uma prateleirinha
+[00:06:24] assim tá Por que que a gente desenvolveu
+[00:06:26] esse componente aqui porque é uma troca
+[00:06:27] quando vem em trocas aqui ó ele aparece
+[00:06:29] uma opção para riros eu posso trocar
+[00:06:31] tudo isso que tá nessa parte aqui ó pelo
+[00:06:35] um componente desses que já tem pronto
+[00:06:37] aqui ó então o componente que tá
+[00:06:38] selecionado ali ele vai substituir por
+[00:06:39] um desse aqui ó Então vamos dizer que
+[00:06:42] aquele componente ali eu quero esse aqui
+[00:06:44] ó três gavetas um cabide e uma
+[00:06:46] prateleira daqui para baixo isso aqui
+[00:06:47] vai será trocada certo ó ele já trocou
+[00:06:50] ali ó cabide uma prateleira e e o e a
+[00:06:54] parte onde tem as três gavetas Ah não eu
+[00:06:56] não quero dessa forma eu quero Sei lá só
+[00:06:58] pra leira clico nele aqui ó e ele vai
+[00:07:1] respeitar certinho aquela medida que a
+[00:07:3] gente deixou ali ó tá ele troca todos
+[00:07:5] aqueles componentes ali ó vamos botar
+[00:07:7] agora aqui um só quer viu vamos ver se
+[00:07:10] tem mais algum aqui tem como é esse aqui
+[00:07:13] ó que é bem pesadinho tem a sapateira
+[00:07:15] tudo então ele vai colocar uma divisória
+[00:07:18] vai colocar as prateleiras vai colocar a
+[00:07:20] sapateira Tudo nessa posição ó tá vendo
+[00:07:23] já tudo funcionando perfeito já com as
+[00:07:25] furações os inagens e já dá o desconto
+[00:07:27] ali então tudo que eu coloco nesse fundo
+[00:07:30] aqui né e eu posso vir aqui e editar tá
+[00:07:32] se eu clicar nessa prateleira aqui de
+[00:07:34] cima que tem ali o recu de cima o de
+[00:07:37] superior que é 23 eu vou dizer que esse
+[00:07:38] recurso superior não é mais 23 ele vai
+[00:07:41] ser sei lá uns 15 né digito aqui Opa
+[00:07:44] digito aqui 150 clique em aplicar ele já
+[00:07:48] vai vir pra frente e já vai diminuir
+[00:07:49] tudo o que tá aqui dentro dessa parte
+[00:07:51] aqui de cima ó entendeu se eu já diminuí
+[00:07:53] olha ó posso fazer qualquer coisa com o
+[00:07:55] sistema Ele é bem tranquilo de trabalhar
+[00:07:56] com essas divisões aqui tá divisões
+[00:07:59] que já faz ar ranhura ou eu posso
+[00:08:1] colocar ela para dentro e fazer o fundo
+[00:08:3] parafusado também tá se eu disser que
+[00:08:5] esse fundo aqui ó é zero aqui em cima é
+[00:08:8] zero e aqui zero ó ele vai ficar para
+[00:08:10] trás da Caixa ó certo ele fica ali para
+[00:08:12] trás da Caixa ó deixa eu voltar aqui ele
+[00:08:14] vai ajustar todo o meu componente Ó
+[00:08:15] ficou para trás e eu posso diminuir
+[00:08:17] essas folgas aqui ó então eu posso
+[00:08:19] acrescentar esse fundo se eu clicar aqui
+[00:08:22] na mira Verde ó eu posso vir aqui ó e
+[00:08:24] dizer que ele não vai ter mais ranhura
+[00:08:25] aqui na parte de cima por exemplo no
+[00:08:27] superior ele não vai ter mais R e eu
+[00:08:30] posso adicionar a altura dele qual é a
+[00:08:31] altura dele 7.5 que é a metade do do MDF
+[00:08:34] de 15 né pode ser Vírgula pode ser ponto
+[00:08:37] pode ser qualquer coisa aqui que ele vai
+[00:08:38] aceitar tá então eu tirei a ranhura de
+[00:08:40] cima venho agora nesse aqui o que que eu
+[00:08:42] vou fazer nesse aqui também vou dizer
+[00:08:43] que ele tem
+[00:08:45] 7.5 só que a parte inferior dele a
+[00:08:48] inferior ó vai ser zero e eu vou baixar
+[00:08:50] aqui ó no eixo Z - 7.5 porque eu vou
+[00:08:54] descer ele Em vez dele subir né e ele
+[00:08:57] vai ficar ali ó já encaixadinho na
+[00:08:59] posição ó tá já deixa eu botar
+[00:09:2] transparente aqui para vocês verem ó é
+[00:09:4] tudo no X no y e todas as funções vão
+[00:09:6] funcionar certinho tá sistema é perfeito
+[00:09:9] para essas para essas questões aí ó
+[00:09:11] vamos botar aqui ó como eu tirei a
+[00:09:13] ranhura agora né Ó lá ficou lá por fora
+[00:09:14] ah eu tirei a ar ranhura só da parte de
+[00:09:17] cima né poder ter tirado ao redor tudo
+[00:09:18] né então a gente tem que vir aqui na
+[00:09:20] parte de lado aqui ó também fazer o
+[00:09:22] mesmo mesmo daí não é mais esse fundo né
+[00:09:24] agora eu esqueci também né é um detalhe
+[00:09:26] não é mais esse fundo então eu clico
+[00:09:28] aqui ó em Fundos e substituo não preciso
+[00:09:31] desenhar o fundo de novo eu substituo
+[00:09:32] por um outro fundo ó então eu quero
+[00:09:34] substituir esses dois fundos vertical
+[00:09:35] por um fundo sem rasgo a a gente usou
+[00:09:37] esse com rasgo agora eu venho aqui e
+[00:09:38] troco ele por sem rasgo ó Pronto já
+[00:09:41] removi os rasgos dele e automaticamente
+[00:09:43] ele já não vai ter mais rasgo na lateral
+[00:09:46] porque teria que ter trocado o fundo né
+[00:09:48] Se eu quisesse por fora é outro tipo de
+[00:09:49] fundo né então ele já ajusta tudo
+[00:09:51] certinho o componente e se eu quero que
+[00:09:53] esse fundo aqui ó fique
+[00:09:55] parafusado eu posso desenvolver o meu
+[00:09:58] módulo assim também ah eu quero que
+[00:09:59] fundo Fi parafusado a gente vem
+[00:10:0] agregados para peças e eu pego aqui na
+[00:10:3] lateral eu quero colocar o quê parafuso
+[00:10:5] na lateral então eu clico nessa deixa eu
+[00:10:7] apertar a letra k ó Nessa lateral aqui ó
+[00:10:10] posso clicar nessa posso clicar naquela
+[00:10:11] lá ao mesmo tempo vou clicar nas duas e
+[00:10:13] dou um enter o que que vai acontecer com
+[00:10:14] o sistema ele vai jogar para mim já aqui
+[00:10:17] ó os modelos de parafuso tá vendo Então
+[00:10:19] eu clico nesse meu parafuso eu só vou
+[00:10:21] configurar né o fundo não tá configurado
+[00:10:22] porque ele tá pegando bem no meio aqui
+[00:10:24] né então eu vou configurar só o parafuso
+[00:10:26] para vocês verem ali ó Então esse
+[00:10:28] parafuso ele tá fixando no quê no MDF de
+[00:10:31] 6 mm né ele vai fixar no MDF de 6 mm e
+[00:10:36] Quantos parafusos vai ter aqui ah vai
+[00:10:37] ter sei lá uns seis parafusos ó e ele já
+[00:10:40] se ajusta ali então vamos só arrumar o
+[00:10:42] fundo para sair na na Furação porque o
+[00:10:44] fundo não tá ali né vamos dizer que esse
+[00:10:45] fundo vai ser alinhado pelo lado de fora
+[00:10:48] né então a gente consegue acrescentar
+[00:10:49] aqui ó transpasse direito vai ser Vou
+[00:10:54] botar aqui zero zero Deixa eu só ver
+[00:10:55] como é que o direito e esquerdo ó ele
+[00:10:57] ficou no zero então tenho que botar 15.5
+[00:10:59] 15.5 direito 15.5 esquerdo ó ele já
+[00:11:4] deixa alinhado a mesma coisa na parte de
+[00:11:7] cima né
+[00:11:9] 15.5 e
+[00:11:11] 15.5 ou vírgula ponto tá aqui ele vai
+[00:11:14] aceitar tudo então já coloquei parafuso
+[00:11:16] tá vendo que lá tá um parafuso diferente
+[00:11:17] aqui não ó Então a gente tem que arrumar
+[00:11:19] o outro lado também né Eu posso também
+[00:11:21] deletar esse lado né Deixa eu ver se
+[00:11:23] esse aqui deixa copiar tem uns que deixa
+[00:11:25] ó copiei vou clicar nesse lado e vou dar
+[00:11:27] um enter colei do lado de lá porque eu
+[00:11:29] já copiei um configurado para um lado e
+[00:11:31] pro outro ó copio de um lado configurei
+[00:11:33] de um lado copio pro outro e vamos ver
+[00:11:35] se sai Furação no fundo tá lá furinho no
+[00:11:37] fundo lá ó também ó já parafusad Dinho
+[00:11:39] dos dois lados então é bem simples de
+[00:11:41] trabalhar com o sistema aqui eu tô
+[00:11:42] desenvolvendo um módulo né várias formas
+[00:11:45] desenvolver um módulo e o módulo tá
+[00:11:47] funcionando e já tá furando tá fazendo
+[00:11:48] os inagem que vocês quiserem fazer é só
+[00:11:51] pegar e subir esse módulo pra Galeria né
+[00:11:53] Vou atualizar se eu clicar em atualizar
+[00:11:55] esse meu componente aqui ó vai ficar
+[00:11:57] igualzinho esse aqui ó que eu baix a foi
+[00:11:59] esse componente então eu atualizo esse
+[00:12:1] componente é só clicar com o botão
+[00:12:2] direito e recarregar ele aqui ele
+[00:12:4] atualiza Esse eu não vou atualizar né
+[00:12:6] porque minha forma de trabalho mas vocês
+[00:12:8] podem fazer isso aí com de vocês

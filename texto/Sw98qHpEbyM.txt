@@ -1,0 +1,83 @@
+[00:00:0] Olha só, gente, é com a nova ferramenta.
+[00:00:3] Olha como ficou bacana aqui a gente
+[00:00:6] fazer uma moldura embaixo de uma escada,
+[00:00:8] tá? Vou fazer aqui um tudo usando as
+[00:00:12] linhas, a geometria do próprio sket, né?
+[00:00:15] Vou puxar aqui uns 10 cm. Opa, o offset
+[00:00:18] aqui que eu tô sem puxar uns 10 cm para
+[00:00:21] dentro. E vamos fazer essas peças aqui
+[00:00:23] toda em meia esquadrilha, né? Aqui, ó.
+[00:00:25] Ficar bonitinho, né? Tem que ser a coisa
+[00:00:28] coisa em meio esquadrilha mesmo, ó.
+[00:00:29] Aqui, pá, que eu vou puxar essa aqui
+[00:00:32] para baixo aqui. Meio esquadrilha.
+[00:00:36] Aí essa peça tá muito grande, né? Então
+[00:00:38] vamos dividir ela no meio, ó. Vou pegar
+[00:00:39] ela aqui e vou dividir ela no meio aqui
+[00:00:43] e vou puxar uma linha para cá e vou
+[00:00:45] dividir ela no meio aqui e apagar esse
+[00:00:47] meio. O que que acontece? Lembra que eu
+[00:00:49] expliquei já nos nos outros vídeos, né?
+[00:00:52] A gente precisa meio que fazer umas
+[00:00:54] cópias disso aqui pr poder funcionar
+[00:00:56] melhor, tá? Então vou colocar uns 2 m
+[00:00:58] pra cá.
+[00:01:0] Esse outro aqui. Opa, dois cliques aqui.
+[00:01:3] Copio.
+[00:01:5] Move. Copio e jogo para cima. Mais 1 m.
+[00:01:12] >> Então, a gente vai chegando para fora
+[00:01:14] eles, né, para não ter problema, ó.
+[00:01:16] Então, vou chegar esse aqui, vou copiar
+[00:01:18] ele aqui, ó, uns 2 m para cima. Esse
+[00:01:22] daqui eu vou jogar move, né? É o control
+[00:01:26] da gente copia. Eu vou puxar para cá uns
+[00:01:27] 2 m para cá. E esse aqui eu vou jogar,
+[00:01:31] opa, dois cliques. Move control. Vou
+[00:01:34] jogar aqui um e-mail para cá. Nunca
+[00:01:37] nunca encostei, tá vendo? Eu vou jogando
+[00:01:39] várias medidas para não se encostar. E
+[00:01:41] agora a gente vai criar essas peças aqui
+[00:01:42] usinadas já em 40 no meio quadria, né?
+[00:01:45] Ó, é só criar faces. Clique em aplicar,
+[00:01:48] puxa para cima.
+[00:01:50] Vamos na próxima aqui. Criar peça face.
+[00:01:55] Clique em avançar. Puxo para puxo para
+[00:01:57] cá. Criei
+[00:02:0] essa daqui a mesmo procedimento.
+[00:02:5] Vamos para lá e cria
+[00:02:8] esse daqui. Essa daqui mesmo
+[00:02:11] procedimento, só que essa aqui vai ser
+[00:02:14] para cá. O veio vai ser, opa,
+[00:02:17] deixa eu puxar o veio para cá, ó. Para
+[00:02:19] cá. Cria essa daqui, o mesmo
+[00:02:21] procedimento,
+[00:02:25] né? Eu vou criar o veio para cá. Crier.
+[00:02:29] Pronto, criei todas as peças. Isso aqui
+[00:02:31] eu posso apagar agora, né? E é só eu
+[00:02:33] trazer ela para cá de volta. Elas, elas
+[00:02:35] de volta pro lugar que elas já vão se
+[00:02:37] encaixar, né? Então essa aqui acho que
+[00:02:38] foi 2 m. Jogo, ô 2 m para cá. Essa aqui
+[00:02:43] 1,5 m. 1500.
+[00:02:46] Essa daqui acho que foi 2 m. 2 m. Essa
+[00:02:51] daqui acho que foi,
+[00:02:53] vamos vir para cá. Foi um. Foi 1 m 1000.
+[00:02:58] Essa daqui eu acho que foi dois.
+[00:03:1] Boto do Opa,
+[00:03:4] dois. Pronto. Ali, ó, né? Todas as peças
+[00:03:8] já no lugar. E detalhe, né? Elas estão
+[00:03:11] já com as usinagens prontas, ó, né? A
+[00:03:14] peça e a usinagem já pronta, todas elas
+[00:03:17] já para fazer os ângulos ali e poder
+[00:03:20] depois encaixar um móvel aqui embaixo da
+[00:03:23] escada, né? Olha aí, ó, todos os ângulos
+[00:03:25] já prontinho. Cara, isso aqui é
+[00:03:27] fantástico, né? Já sai as coisas pronta
+[00:03:29] e já o desenho pronto. Pode trocar os as
+[00:03:32] cores aqui. Vamos pegar as cores e vamos
+[00:03:35] botar ele na cor peça. Vamos pegar com
+[00:03:38] veio aqui, uma peça com veio. Vamos ver
+[00:03:40] como é que vai se comportar aqui. Então,
+[00:03:42] ó, tudo com seguindo o veio, tudo
+[00:03:46] seguindo o veio da madeira. Olha que
+[00:03:47] bacana, cara. Isso aqui é top demais.

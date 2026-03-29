@@ -1,0 +1,113 @@
+[00:00:00] vamos pra porta de correio agora porta
+[00:00:02] de correio aqui ó internos tá eu abro
+[00:00:05] internos aí tem meas meus roupeiros aqui
+[00:00:08] eu vou a interno porta de correr aqui ó
+[00:00:10] porta de correr eu vou pegar uma porta
+[00:00:12] aqui ó que é mais baixa de duas aqui ó o
+[00:00:15] al 58 se eu clicar nela eu levar o mouse
+[00:00:18] aqui em cima do dos meus módulos eu vou
+[00:00:21] selecionando o vão tá só levando o mouse
+[00:00:23] Note que aqui ó na minha canto inferior
+[00:00:26] direito aqui embaixo Ó tem as setas do
+[00:00:27] teclado então se eu levar aqui em cima e
+[00:00:30] pressionar ele para a esquerda eu
+[00:00:32] seleciono esse vão ó se eu levar no
+[00:00:34] outro lá e pressionar paraa esquerda ele
+[00:00:35] seleciona aquele outro vão Então eu
+[00:00:37] posso selecionar os vão o vão dessa
+[00:00:40] desse segmento ou vão desse segmento se
+[00:00:42] eu soltar ele fica ali tem que manter
+[00:00:45] pressionado tá se eu soltar eu seleciono
+[00:00:47] vão a vão mas eu queria selecionar todo
+[00:00:49] esse vão aqui ó para fazer uma porta
+[00:00:50] nesse vão inteiro então eu pressiono no
+[00:00:53] teclado para a direita eu mantenho
+[00:00:55] pressionado paraa direita Olha o que
+[00:00:56] acontece ele seleciona todo o vão se eu
+[00:00:59] manter pressionado para a esquerda a
+[00:01:00] seta do teclado aqui embaixo tá vendo
+[00:01:02] que ela tá azulzinha aqui ó pra esquerda
+[00:01:04] seleciona um vão outro vão pra direita
+[00:01:07] todo vão se eu não pressiona nada
+[00:01:08] seleciono o vão individual então eu
+[00:01:10] quero pra direita porque eu quero a
+[00:01:12] porta de correr no vão Todo essa porta
+[00:01:14] aqui ó l58 é para para armários Aéreos
+[00:01:17] pequenos né armários menores então vou
+[00:01:19] clicar nele ele vai dar um erro é isso
+[00:01:21] que eu quero mostrar para vocês também ó
+[00:01:22] quando a gente tá projetando o sistema
+[00:01:24] já identifica o erro e já tá em vermelho
+[00:01:27] aqui ó na descrição tá vendo e ele já dá
+[00:01:29] esse essa informação aqui ó que essa
+[00:01:31] porta é só para determinada altura então
+[00:01:33] eu vou del remover essa aqui porque não
+[00:01:34] é essa que eu quero e vamos pegar a
+[00:01:36] porta que eu quero que é ã deixa eu dar
+[00:01:39] uma olhada aqui acho que essa daqui vai
+[00:01:41] ó ess tem esse kit para duas portas
+[00:01:45] vamos pegar até um kit que é o externo
+[00:01:48] esse aqui ó clico nele mesmo esquema né
+[00:01:52] seleciono o vão eu quero apertar pra
+[00:01:53] direita que eu quero vão todo clico nela
+[00:01:55] na no caixote e dou um enter ele vai
+[00:01:57] aplicar duas portas de correr em todo a
+[00:02:00] extensão do móvel ó certo e é aquele kit
+[00:02:02] externo que vai correr por fora olha que
+[00:02:04] interessante essa função aqui eu já
+[00:02:06] apliquei a porta clicar no tamponamento
+[00:02:08] e vamos ver a Furação dele na parte de
+[00:02:10] cima na parte aérea né ó aqui é a parte
+[00:02:14] de dentro onde tem a divisória e o lado
+[00:02:16] B já notem que ele furou aqui embaixo ó
+[00:02:18] os furinhos do trilho né para
+[00:02:20] identificar que aqui vai o trilho mais
+[00:02:23] largo vamos lá no de baixo vamos fazer a
+[00:02:26] mesma coisa clicar na mira Verde clicar
+[00:02:28] nele e verificar a furação do de baixo
+[00:02:31] então a parte de dentro dos furos e a
+[00:02:33] parte de volta olha aqui ó ele já furou
+[00:02:35] parte de fora né ele já furou oos
+[00:02:38] furinhos do trilho menor outra coisa bem
+[00:02:41] interessante é que essa porta já tem
+[00:02:42] toda a Furação desse kit então se eu
+[00:02:45] clicar aqui na porta vamos clicar aqui
+[00:02:47] tá Opa com verde na porta e clicar aqui
+[00:02:50] ó Verifique que aqui ó olha aqui ó já
+[00:02:53] saiu o kit maior em cima e os os três
+[00:02:55] furinhos do kit menor embaixo ó já saiu
+[00:02:57] de cima e já saiu de baixo certo nas
+[00:03:00] duas portas pode verificar na outra
+[00:03:02] também se quiser verificar né que a
+[00:03:05] furação da outra ele já joga as mesmas
+[00:03:08] furações do kit eu ten que maximizar
+[00:03:09] aqui senão vai cons Oli ó já o kit um
+[00:03:11] pouquinho diferente a Furação né porque
+[00:03:13] um kit um kit é por cima até por fora né
+[00:03:16] então esse aqui é a porta Agora eu tenho
+[00:03:18] aquele outro roupeiro ali ó existe uma
+[00:03:20] função bem interessante aqui nesse
+[00:03:22] módulo que é o qu se eu clicar no
+[00:03:24] amarelo e clicar nessa na porta aqui ó
+[00:03:25] no conjunto da porta selecionei essas
+[00:03:28] duas essas duas portas aqui aqui ó claro
+[00:03:30] que ali são três né selecionei as duas
+[00:03:32] portas existe aqui uma função ó copiar
+[00:03:34] elemento tá vendo aqui em cima então eu
+[00:03:36] clique em copiar elemento o meu mouse
+[00:03:38] vai virar a mesma Mirinha né então eu
+[00:03:42] quero aplicar no vão todo seleciono o
+[00:03:44] vão todo e clico ali ó clico nesse modo
+[00:03:46] e dou um enter ele vai aplicar essa
+[00:03:48] mesma porta nesse mesmo componente ali ó
+[00:03:51] certo como aplicou a mesma porta eu
+[00:03:53] copiei daqui para cá identicamente de um
+[00:03:56] modulo para o outro eu poderia ali
+[00:03:58] clicar e arrastar poderia né ISS aqui eu
+[00:04:00] só tô dando exemplo que às vezes tá no
+[00:04:01] projeto você quer copiar esse aqui e
+[00:04:03] jogar em outro módulo também essa
+[00:04:05] facilidade aqui e pode editar também as
+[00:04:07] portas para 18 para 15 MM né Então tudo
+[00:04:10] isso aqui você pode ajustar no
+[00:04:12] componente beleza

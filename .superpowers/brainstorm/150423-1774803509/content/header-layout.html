@@ -1,0 +1,46 @@
+<h2>Como deve ser o header na tela de Coleções?</h2>
+<p class="subtitle">O header atual tem o logo à esquerda e o menu do usuário à direita. Como adaptar para mostrar o nome do projeto?</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1e293b;padding:12px 16px;font-family:sans-serif;">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <img src="" alt="" style="width:32px;height:32px;background:#3b82f6;border-radius:6px;display:block;"/>
+        <span style="color:white;font-size:14px;font-weight:600;position:absolute;left:50%;transform:translateX(-50%);">Projeto Alpha</span>
+        <div style="width:32px;height:32px;background:#3b82f6;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;">UD</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Logo + Nome centralizado + Avatar</h3>
+      <p>Mantém o logo e o avatar do usuário. O nome do projeto aparece centralizado entre eles.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1e293b;padding:12px 16px;font-family:sans-serif;">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <span style="color:#94a3b8;font-size:20px;cursor:pointer;">←</span>
+        <span style="color:white;font-size:14px;font-weight:600;position:absolute;left:50%;transform:translateX(-50%);">Projeto Alpha</span>
+        <div style="width:32px;height:32px;background:#3b82f6;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;">UD</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Seta de voltar + Nome centralizado + Avatar</h3>
+      <p>Troca o logo por uma seta de voltar (← Home). Nome do projeto centralizado, avatar à direita.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1e293b;padding:12px 16px;font-family:sans-serif;">
+      <div style="display:flex;align-items:center;justify-content:center;">
+        <span style="color:white;font-size:14px;font-weight:600;">Projeto Alpha</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Só o nome centralizado (header simples)</h3>
+      <p>Header minimalista. Apenas o nome do projeto, sem logo nem avatar.</p>
+    </div>
+  </div>
+
+</div>

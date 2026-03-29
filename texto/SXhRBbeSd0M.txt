@@ -1,0 +1,145 @@
+[00:00:0] bom hoje eu vou apresentar mais três
+[00:00:2] componentes novos aqui que o pessoal
+[00:00:4] pedir e já foram produzidos Então vou
+[00:00:7] digitar aqui ó
+[00:00:9] metalon e eu desenvolvi esse
+[00:00:13] metalon esse cubo aqui E esse essa
+[00:00:17] pecinha aqui ó essa peça aqui a gente
+[00:00:20] pode também trocar a cor dela que eu
+[00:00:22] acabei esquecendo de salvar eu poderia
+[00:00:23] salvar já ela com a cor rosê né ela já
+[00:00:26] vir Pintadinha assim ó vamos recarregar
+[00:00:28] ele móvel ambient Recarregar para ele
+[00:00:31] vir certinho já na cor certinha do móvel
+[00:00:35] então Opa tinha dois aqui na tela tava
+[00:00:38] testando esses daqui são os componentes
+[00:00:40] que foram foram desenvolvidos tá deixa
+[00:00:42] eu dar um zoom aqui ó esses componentes
+[00:00:45] aqui olha que tá acontecendo aqui que tá
+[00:00:48] cortando meu vídeo então esses
+[00:00:51] componentes aqui ó a gente tem umas
+[00:00:52] edições especiais nele clico na mira
+[00:00:54] amarela clico nele então nesse
+[00:00:56] componente aqui eu consigo digitar por
+[00:00:58] exemplo eh a largura aqui do meu metalon
+[00:01:1] por exemplo eu quero metalon de 20 Opa P
+[00:01:5] 20 ó metalão de 20 e aqui por 20 ou eu
+[00:01:10] posso dizer que ele tem um 50 de largura
+[00:01:12] por 20 de
+[00:01:14] altura se eu tenho 20 aqui eu queria
+[00:01:17] deixar esse ângulo com 20 daí a gente
+[00:01:18] bota aqui ó ângulo direito 20 também mas
+[00:01:21] se eu posso diminuir esse ângulo eu pode
+[00:01:22] segir que esse ângulo tem só 10 aqui ó
+[00:01:24] para fazer mais chanfrados ou tenha zero
+[00:01:27] que daí ele não vai ter ângulo nenhum Se
+[00:01:29] eu disser aqui se ele tem aqui se essa
+[00:01:31] peça aqui ó tem 20 de altura é só jogar
+[00:01:33] 20 para cá ele vai ficar com 20 ali
+[00:01:36] também ó mesma coisa do outro lado é
+[00:01:37] independente o lado direito do lado
+[00:01:39] esquerdo eu posso dizer que aqui tem um
+[00:01:40] ângulo de 50 que é maior entende se
+[00:01:43] vocês podem montar uma uma estrutura
+[00:01:44] desse jeito se vocês querem 45º se aqui
+[00:01:47] tem 20 aqui tem que ser 20 ele vai se
+[00:01:50] encaixar uma na outra e você pode ir
+[00:01:51] montando e copiando essa peça né uma na
+[00:01:54] outra aqui fazendo o trabalho que vocês
+[00:01:56] quiserem fazer e ou girando né pode
+[00:02:0] girando aqui ó e encaixando esse lado
+[00:02:3] aqui teria que ter 20 esse lado aqui
+[00:02:5] também ter 20 então a gente pega essa
+[00:02:7] peça Encosta na outra e vai montando ele
+[00:02:10] do jeito que vocês quiserem montar e ele
+[00:02:13] vai cobrar a metragem do do metalão de
+[00:02:16] vocês Esse outro metalon aqui ele é um
+[00:02:19] pouquinho diferente ele já é um
+[00:02:20] pouquinho mais automatizado se eu clico
+[00:02:22] nele tá cliquei nele aqui deixa eu tirar
+[00:02:24] da letra cá só para vocês ver ó eu
+[00:02:26] consigo ter algumas remoções por exemplo
+[00:02:28] eu quero remover essa Essa de cima aqui
+[00:02:30] ó então é a base superior eu vou dizer ó
+[00:02:33] remover a base superior sim clique em
+[00:02:35] aplicar ele já deixa a partezinha reta
+[00:02:38] automático ó tá vamos remover essa da
+[00:02:40] frente aqui remover a frontal a lateral
+[00:02:43] que no caso essa aqui é direita essa
+[00:02:45] aqui é esquerda olhando de frente assim
+[00:02:46] né Essa aqui é a esquerda essa aqui é a
+[00:02:48] direita Então vou remover a lateral
+[00:02:50] direita sim e ele já vai deixando as
+[00:02:53] peças retinhas e vai fazer o mesmo
+[00:02:54] trabalho que aquele lá só que aquele lá
+[00:02:56] o ângulo tu ajusta esse aqui tu vai
+[00:02:59] ajustar pela medid medida do metalon e o
+[00:03:0] ângulo vai ficar sempre em 45º por
+[00:03:2] exemplo esse metalon tem dois aqui de
+[00:03:4] espessura eu vou dizer que esse metalon
+[00:03:6] não tem mais dois tem três então ele já
+[00:03:8] vai se ajustar sempre no 45º vamos dizer
+[00:03:10] que ele tem cinco então o metalão já
+[00:03:13] ficou 5 por5 né eu posso dizer que ele
+[00:03:16] tem 5 por por
+[00:03:18] do Ó 5 por 2 aqui ó o metalon assim ou
+[00:03:22] tem 2 por 2 ou 3 por TR daí vocês
+[00:03:24] ajustam o metalon e ele vai fazer o
+[00:03:26] desenhinho que vocês quiserem ele já tá
+[00:03:28] cobrando aqui o método do metalon e a
+[00:03:30] pintura dele também posso digitar
+[00:03:31] largura e altura né então a largura aqui
+[00:03:33] de 40 altura de 1
+[00:03:36] m então ele vocês editam do jeito que
+[00:03:39] vocês quiserem o metalon esse outro aqui
+[00:03:42] ele tem um pouquinho mais de
+[00:03:44] automatização dentro dele ele é um cubo
+[00:03:47] Tá mas o cubo ele é como se fosse vários
+[00:03:49] desses daqui dentro ó então eu posso
+[00:03:51] editar as peças separadas por exemplo
+[00:03:52] essa daqui eu não quero essa de cima
+[00:03:54] aqui ó então eu vou dizer que a base
+[00:03:56] superior é não quero remover sim né sim
+[00:04:0] quer remover sim clico no outro lado lá
+[00:04:2] também faço a mesma coisa superior sim
+[00:04:5] removo aquela lá ó Então já tô fazendo
+[00:04:6] um quadro essa de baixo aqui clico na de
+[00:04:9] baixo e vou botar sim e sim e eu consigo
+[00:04:12] fazer uma mesa nesse formato aqui ó
+[00:04:15] certo ah mas aqui eu quero que fique
+[00:04:17] três aqui 3 por TR por exemplo seleciona
+[00:04:20] toda a caixa espessura 30 por 30 ele já
+[00:04:25] vai fazer um metalon ali de 30 por 30 né
+[00:04:27] Ó aqui tá 45º mas ali não né ali ficou
+[00:04:30] retinho mas dá de fazer dessa forma aqui
+[00:04:32] ele vai cobrar o metalão também então eu
+[00:04:34] posso fazer um pé de mesa assim eu
+[00:04:35] consigo também editar largura e altura
+[00:04:38] tipo 60 por largura de 1,40 tem B botar
+[00:04:44] profundidade ó posso fazer uma mesa
+[00:04:47] assim tá Ah eu quero botar um uma outra
+[00:04:50] varinha aqui no meio aqui ou sei lá do
+[00:04:52] jeito que vocês quer vocês pegam esse
+[00:04:53] metalon simples tá edito na medida dele
+[00:04:56] ali pego ele na medida por exemplo ele
+[00:04:58] tem 3 3 Ach que eu botei 3 por
+[00:05:3] 3 Opa aqui é o ângulo o ângulo aqui
+[00:05:5] seria z0 e zer aqui TR e aqui
+[00:05:10] TR ó fez uma barrinha ali também e eu
+[00:05:13] posso ir colocando algumas Barras né
+[00:05:16] posso escalar ele até ali a medida que
+[00:05:19] tem aqui tem quantos ó não liberei o sk
+[00:05:23] nessa aqui vou ajustar já para liberar o
+[00:05:24] sk é 44 então é 44 eu não liberei dessa
+[00:05:30] peça
+[00:05:31] aqui então a gente pode pegar e fazendo
+[00:05:34] e montando uma mesa um uma escada o que
+[00:05:38] queiram montar também aí vocês só vão
+[00:05:40] ajustando dessa forma aqui ó certo esse
+[00:05:44] é um modelo ão três modelos aqui eu vou
+[00:05:47] disponibilizar para vocês eu vou só
+[00:05:48] ajustar o skio que o skio dessa peça
+[00:05:51] aqui não funcionou tá eu vou ver o que
+[00:05:52] aconteceu porque que não funcionar essa
+[00:05:54] peça aqui e daí já mand eles para vocês
+[00:05:56] aí

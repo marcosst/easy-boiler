@@ -1,0 +1,117 @@
+[00:00:0] Muita gente me pergunta como é que eu
+[00:00:2] coloco um divisor de talher né então
+[00:00:4] Vamos pegar vamos baixar um módulo aqui
+[00:00:6] de cozinha um gaveteiro com quatro e um
+[00:00:9] gaveteiro com cinco gavetas aqui então
+[00:00:12] como é que funciona eu tando um dos
+[00:00:14] módulos selecionad para gaveta ele
+[00:00:16] habilita aqui ó os agregados aqui dentro
+[00:00:19] aqui ó então nesses agregados eu tenho
+[00:00:21] aqui ó para gavetas para gavetas tem
+[00:00:24] existe a opção em acessórios para dar
+[00:00:26] mais uma filtrada eu posso botar outros
+[00:00:28] tipos de acessórios mas vamos dizer que
+[00:00:30] eu quero só acessórios que hoje é o
+[00:00:32] divisor de talher vou aumentar até um
+[00:00:33] pouquinho aqui para vocês ver ó Então eu
+[00:00:35] tenho o divisor de 43 e de 51 eu poderia
+[00:00:38] ter vários aqui várias medidas
+[00:00:39] cadastrada tá vocês é que vão cadastrar
+[00:00:41] de vocês claro que já tem dois como
+[00:00:43] padrão e do padrão vocês vão aumentando
+[00:00:46] a sua biblioteca Vamos pegar esse de 51
+[00:00:48] e colocar nessa gaveta dou um enter
+[00:00:51] nessa daqui ó a gente vai colocar para a
+[00:00:53] gavetas um divisor de joia grande aqui ó
+[00:00:56] vamos ver clico nele e dou enter ó notem
+[00:01:0] que ele tem umas medidas já padrão para
+[00:01:1] ele tá por exemplo Ó esse daqui o máximo
+[00:01:5] dele é essa medida aqui ó tá vendo que
+[00:01:8] ele já ficou curto ele não cobe na
+[00:01:9] gaveta então o que que eu poderia fazer
+[00:01:11] eu poderia diminuir a profundidade dessa
+[00:01:13] gaveta ó clicando aqui clicando na
+[00:01:15] gaveta e digo que a profundidade da
+[00:01:17] corrediça é de 50 e ele vai ter essa aba
+[00:01:21] de corte aqui né Ó esse pedaço aqui eu
+[00:01:23] posso cortar claro que olha lá embaixo
+[00:01:25] né ele tem uma aba um pouco maior lá e
+[00:01:28] uma aba aqui então eu cortaria um
+[00:01:29] pedacinho lá e um pedacinho aqui para
+[00:01:31] ele se encaixar na gaveta agora notem
+[00:01:33] que só mexi na primeira gaveta as outras
+[00:01:35] continuam respeitando só para se
+[00:01:36] encaixar melhor o divisor de talher
+[00:01:38] quando eu atrel um divisor só tudo vocês
+[00:01:42] viram que eu não entrei dentro de
+[00:01:43] componente eu não fiz nada eu só peguei
+[00:01:45] ele e adicionei dentro da gaveta ele já
+[00:01:47] se identificou ali então eu posso abrir
+[00:01:49] essa gaveta esse divisor vem junto para
+[00:01:50] vocês mostrarem o de baixo não tem ó né
+[00:01:53] mas o de cima tem um divisor de talher e
+[00:01:55] ele é totalmente funcional e mostra como
+[00:01:57] vai ficar pro cliente tá vocês notarem
+[00:02:0] como diminuir a outra gaveta ela já não
+[00:02:2] abriu tanto por quê essa gaveta é menos
+[00:02:4] do que essa aqui essa aqui vai abrir
+[00:02:6] mais essa aqui vai abrir menos né então
+[00:02:8] ele é totalmente visual mesmo como vai
+[00:02:11] abrir Então nesse daqui também ó ah
+[00:02:13] outro detalhe que eu vou mostrar aqui ó
+[00:02:15] notem que esse divisor também tem uma
+[00:02:17] largura né ele não pode passar dessa
+[00:02:19] largura porque esse modelo ele é de uma
+[00:02:21] determinada largura até uma determinada
+[00:02:23] largura né vamos dizer assim não pode
+[00:02:25] passar Vamos aumentar essa caixa aqui ó
+[00:02:27] vamos aumentar a caixa notem que o
+[00:02:29] divisor vai ficar Centralizado no meio
+[00:02:31] por qu o máximo dele ó o máximo que ele
+[00:02:34] vai aumentar é até 43 ó ele é 43 por 51
+[00:02:39] entende-se então ele não vai passar de
+[00:02:41] 43 então o que que o projetista olha
+[00:02:44] ficou feio esse aqui né então ele vai
+[00:02:45] substituir para um maior Claro que eu
+[00:02:47] não tenho o maior cadastrado aqui mas a
+[00:02:49] gente vai cadastrar e depois clica no
+[00:02:51] maior ele vai se adaptar ao tamanho
+[00:02:53] maior que é permitido para ele então
+[00:02:56] isso fica visual e não deixa o
+[00:02:58] projetista errar a mesma coisa acontece
+[00:03:0] com esse aqui ó que é o de joia né Vamos
+[00:03:2] aumentar ele
+[00:03:5] aqui ó vou aumentar um pouquinho Opa
+[00:03:8] Deixa eu botar aqui ele vai ter uns
+[00:03:16] 60 ó ele pode aumentar um pouquinho ó tá
+[00:03:19] vendo ali ó 60 ele já não cobe nessa
+[00:03:22] gaveta claro que essa gaveta esse
+[00:03:24] divisor Ele é bem pequeninho né então
+[00:03:25] teria que fazer o quê Ah eu quero que
+[00:03:27] ele fique exatamente no tamanho dessa
+[00:03:28] gaveta então a gente vem aqui também no
+[00:03:31] diminui a profundidade gaveta usando a
+[00:03:33] mira amarela letra A clica Opa clica a
+[00:03:36] letra a e clica na gaveta notem que eu
+[00:03:39] cliquei o a lá no no minifix eu troco o
+[00:03:42] minifix lá atrás ele é totalmente
+[00:03:43] editável então eu cliquei aqui na gaveta
+[00:03:46] e vou dizer que essa gaveta tem só uns
+[00:03:48] 40 Vamos ver aí vocês vão ajustando Ela
+[00:03:51] ali ó 40 ainda ficou bem pertinho ali né
+[00:03:55] e a largura daí vocês vão ter que
+[00:03:57] ajustar conforme o tamanho
+[00:04:0] que dá para fazer ele né vou diminuir um
+[00:04:2] pouquinho para ele se ajustar um
+[00:04:3] pouquinho ali ó tudo isso né toda essa
+[00:04:6] parte agora já ficou mais certinho tudo
+[00:04:9] isso vocês vão se ajustando conforme o
+[00:04:10] componente ali ó tá então é uma maneira
+[00:04:13] de a gente inserir divisor de talir aqui
+[00:04:15] dentro de uma forma mais prática e tudo
+[00:04:18] que vocês inserem nele né ele já fica
+[00:04:22] funcional né ele vem junto ó tá vendo a
+[00:04:25] gaveta maior Essa aqui era menor Então
+[00:04:26] essa aqui vai abrir só o tanto que é
+[00:04:28] para abrir mesmo Beleza é assim que a
+[00:04:31] gente coloca um divisor Zinho de talher

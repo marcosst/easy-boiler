@@ -1,0 +1,51 @@
+[00:00:00] olha só que interessante também ó Aqui
+[00:00:02] nós temos um conjunto de furos então se
+[00:00:04] eu clico nele clico aqui dentro Eu vou
+[00:00:07] até nem clicar aqui dentro tá porque eu
+[00:00:09] vou mandar esse conjunto de furas aqui ó
+[00:00:11] eu vou fazer ele na caixa então se eu
+[00:00:13] pegar aqui ó pro lado de fora apertar a
+[00:00:15] seta do o cursor do mouse pro lado
+[00:00:18] esquerdo ele pega toda a caixa então
+[00:00:19] clico na caixa ó aqui apto lado esquerdo
+[00:00:23] clico na caixa e dou um
+[00:00:26] enter ele vai colocar isso aqui ó aí
+[00:00:29] coloca aqui na caixa então isso aqui são
+[00:00:32] vários furos eu consigo programar Qual é
+[00:00:33] a broca que eu quero bloca de oito
+[00:00:36] quantas linhas eu quero eu quero três
+[00:00:38] linhas vai botar lá aqui vou aplicar ó
+[00:00:40] três linhas e o quantidade a
+[00:00:42] profundidade que eu quer o furo entende
+[00:00:44] então tudo isso aqui já vai ter é a
+[00:00:46] quantidade de linhas que eu quero que é
+[00:00:47] aqueles múltiplos furos né então quero
+[00:00:49] umas oito linhas aqui ó oito furos Vai
+[00:00:52] fazer vários Aí também tem aqui a margem
+[00:00:54] horizontal e a margem vertical Então
+[00:00:57] vamos botar na horizontal aqui ó 60
+[00:01:01] aplica ó ele já vai ajustar ali ó certo
+[00:01:04] podemos botar até mais aqui 60 vamos
+[00:01:06] botar aqui
+[00:01:09] 100 ele já vai representando ali aqueles
+[00:01:12] fur e tudo que é representado aqui ele
+[00:01:15] realmente fura né se eu vier aqui ó tá
+[00:01:18] tudo furado ali ó múltiplos furos eu
+[00:01:21] botei do lado esquerdo quero botar do
+[00:01:22] lado direito como é que eu faço venho
+[00:01:24] aqui carrego o outro mesmo esquema clico
+[00:01:27] na caixa e dou um enter
+[00:01:30] ele vai jogar o furo no mesmo lugar só
+[00:01:32] que aqui eu quero que o lado direito em
+[00:01:34] vez de esquerdao ó mudei aqui para lado
+[00:01:36] direito clique em aplicar ele já vai os
+[00:01:38] furos para outro lado posso fazer a
+[00:01:40] mesma configuração broca oit
+[00:01:42] profundidade 10 três furos e na
+[00:01:47] horizontal 100 que eu botei né e
+[00:01:49] quantidades de furos eu não lemb tá oito
+[00:01:52] aqui tem botar a mesma quantidade do
+[00:01:54] outro lado para furar os dois lados se
+[00:01:55] você quiser ó certo posso fazer furo de
+[00:01:57] um lado aqui furo de outro diferente é
+[00:02:00] só no clica arrasta e sol

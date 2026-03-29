@@ -1,0 +1,186 @@
+[00:00:1] olha só a melhoria que tá tá vindo aqui
+[00:00:3] no sistema uma das melhorias né são
+[00:00:5] várias mas essa daqui para mim foi a a
+[00:00:8] top peguei vamos fazer até mais um
+[00:00:11] módulo aqui ó vamos fazer um um módulo
+[00:00:14] aqui
+[00:00:15] diferenciado vamos pegar aqui vamos
+[00:00:18] pegar e apagar essa essa prateleira Opa
+[00:00:22] tá salvando aqui deixa eu só fechar aqui
+[00:00:24] que tá aqui beleza então vamos apagar
+[00:00:27] essa prateleira de cima vamos pegar esse
+[00:00:30] esse esse módulo aqui de baixo conjunto
+[00:00:32] de gaveta copiar e jogar aqui para cima
+[00:00:35] lembrando né que essa gaveta aqui já já
+[00:00:38] foi liberada pros usuários aí ó a gente
+[00:00:41] agora consegue controlar ela por
+[00:00:42] quantidade né posso controlar tanto a de
+[00:00:45] cima por quantidade botar uma duas ou
+[00:00:47] três ou quatro gavetas né como eu posso
+[00:00:49] fazer na de baixo também ó seleciono o
+[00:00:52] conjunto de gaveta com a Mira Amarelo
+[00:00:54] conjunto de gaveta né e coloco aqui a
+[00:00:57] quantidade também e o sistema já vai
+[00:00:59] dividir tanto em cima como duas embaixo
+[00:01:1] como duas ou uma como tá aqui vocês
+[00:01:3] podem fazer dessa forma né então o que
+[00:01:6] que aconteceu aqui agora a gente fez
+[00:01:8] esse módulo aqui eu vou até apagar esse
+[00:01:11] de baixo aqui ó V apagar esse conjunto
+[00:01:13] aqui Opa é só o de baixo Ok conjunto de
+[00:01:17] gavetas esse aqui ó então eu vou apagar
+[00:01:20] para deixar bem diferente o módulo para
+[00:01:22] mostrar para vocês foi criado agora uma
+[00:01:24] troca de caixa nota que essa minha caixa
+[00:01:26] aqui ele tá com uma régua de 25 na
+[00:01:28] frente régua de 15 atrás fundo encaixado
+[00:01:32] né as portas ó de vidro porta de MDF
+[00:01:34] gaveta embaixo gaveta em cima então
+[00:01:36] agora a gente criou aqui substituição de
+[00:01:37] caixas ó e eu vou usar agora a caixa que
+[00:01:41] essa caixa aqui de baixo modelo 10 Ó
+[00:01:43] esse modelo 10 é um modelo que o pessoal
+[00:01:45] pediu muito aí pra gente né ele já foi
+[00:01:48] desenvolvido já PR PR router então ele
+[00:01:51] já tá bem bem certinho para quem
+[00:01:53] trabalha com router nota que eu fiz o
+[00:01:55] projeto selecionei todo o projeto e ele
+[00:01:58] não vai modificar o internos ele vai
+[00:02:1] modificar as caixas então como tem
+[00:02:3] bastante itens aqui ele demora um
+[00:02:5] pouquinho tá mas depois eu vou mostrar
+[00:02:7] só na caixa então ele já trocou todas as
+[00:02:9] caixas Olha que bacana por trás Ó
+[00:02:11] parafusinho ali esse parafuso aqui olha
+[00:02:14] que legal aqui seleciono o parafuso Qual
+[00:02:16] é a distância que eu quero entre os
+[00:02:18] parafusos eu quero com 10 então cada 10
+[00:02:20] cm um parafuso aí vocês vão fazer isso
+[00:02:22] aí na caixa de vocês ó vem nessa aqui a
+[00:02:25] cada 10 cm coloco um parafuso vamos vir
+[00:02:28] aqui também nessa outra aqui eu vou
+[00:02:30] atualizar a caixa para vocês verem ó
+[00:02:32] cada 10 10 cm eu coloco um parafuso
+[00:02:36] clique aplicar nota que eu só mexi em
+[00:02:38] uma caixa né só mexi numa caixa aqui
+[00:02:40] agora então eu vou fazer o quê Vou pegar
+[00:02:42] essa caixa aqui eu vou copiar ela aqui
+[00:02:45] por eu vou precisar apagar os internos
+[00:02:48] dela deixar só a caixa mesmo tá pra
+[00:02:50] gente fazer uma atualização Então vou
+[00:02:52] pegar essa aqui vou apagar apago deixei
+[00:02:55] só a caixa entro dentro da caixa ó clico
+[00:02:57] botão direito o mob recarrego o
+[00:03:0] componente então tô recarregando só a
+[00:03:3] caixinha né ó deu Ok pronto vou
+[00:03:7] atualizar aqui e agora nós vamos deixa
+[00:03:9] ele atualizar ó atualizou né tá
+[00:03:10] atualizando ali seleciono esses daqui e
+[00:03:14] agora eu vou abrir novamente a troca de
+[00:03:17] caixa vamos pegar o mesmo modelo nota
+[00:03:19] que eu mudei essa daqui ó para 10 as
+[00:03:22] outras estão tudo com 15 olha ali ó os
+[00:03:23] furos dos Parafusos ó estão tudo com
+[00:03:25] isso só mudei esse aqui para 10 Então
+[00:03:27] vamos fazer a troca das nossas caixas
+[00:03:29] aqui aqui ó tô trocando todas as caixas
+[00:03:31] novamente tá e ele vai pegar já a nova
+[00:03:35] configuração deixa ele baixar aqui ó
+[00:03:38] então ele tá tudo 10 esse daqui tá tudo
+[00:03:39] 15 os outros tudo 15 tá vendo Então ele
+[00:03:42] demora um pouquinho como eu te falei
+[00:03:43] porque tem bastante módulo ISO aqui você
+[00:03:44] pode fazer no projeto todo ou já fazer
+[00:03:46] Inicial né a hora que tiver iniciando
+[00:03:48] uma cozinha já programa ela do jeito que
+[00:03:51] tu quer e as outras já vão sair
+[00:03:53] recarrega ela e as outras já vão sair
+[00:03:54] assim né Quanto mais projetos ol ó já
+[00:03:57] atualizou Então ficou tudo com 10 ó
+[00:04:0] todos parafusos com 10 melinha de caixa
+[00:04:2] troca aí aí a gente tá fazendo o projeto
+[00:04:5] e Verifica que não eu não quero essa
+[00:04:7] caixa aqui né vou selecionar só esses
+[00:04:9] três aqui não quero essa caixa aqui eu
+[00:04:11] quero outro modelo de caixa vem caixa
+[00:04:13] vamos pegar a caixa aqui para decorar
+[00:04:14] essa modelo dois é a caixa da decorato C
+[00:04:16] nela
+[00:04:18] aqui nota que ela tá com parafusos né
+[00:04:21] esse modelo de caixa e a caixa da
+[00:04:22] decorato é tudo com minifix então ele já
+[00:04:24] vai substituir todas as caixas e os
+[00:04:27] internos permanecem igual sem alteração
+[00:04:30] cara todos os internos ficam igual ó já
+[00:04:34] trocou tá vendo troquei todos os modos e
+[00:04:36] os internos ficou tudo igual não mudou
+[00:04:38] nada e as caixas mudou todas ó né até o
+[00:04:41] que eu selecionei essa aqui eu não tinha
+[00:04:42] selecionado Então essa aqui eu posso
+[00:04:43] fazer o quê posso botar uma caixa
+[00:04:45] diferente aqui ó uma caixa só com as
+[00:04:46] duas réguas afastador ó que as duas
+[00:04:48] réguas aqui atrás em vez de ser a régua
+[00:04:50] deitada Então essa aqui tá diferente das
+[00:04:51] outras pode fazer isso
+[00:04:54] aí ó beleza e os internos fica tudo
+[00:04:57] igual né então se eu pegar nessa outra
+[00:04:59] aqui ó eu posso voltar essa aqui para
+[00:05:1] aquela caixa que o pessoal aqui da
+[00:05:3] região usa né aqui na região sul aqui o
+[00:05:5] pessoal usa muito esse modelo de caixa
+[00:05:6] aqui tudo parafusado né então vocês
+[00:05:9] criam a caixa que vocês quiserem e
+[00:05:11] trocam no projeto na modulação que vocês
+[00:05:14] quiserem fica Top né olha outro negócio
+[00:05:17] interessante legal aqui agora tenho esse
+[00:05:20] modelo de porta aqui ó né então vou
+[00:05:22] pegar aqui agora não tenho mais frontal
+[00:05:25] nem gaveta eu tenho só o modelo de porta
+[00:05:28] então venho aqui ó em MDF agora tenho a
+[00:05:30] a aba frontal tá vendo clico no frontal
+[00:05:33] e olha ali a O PVC ali dentro ó Então
+[00:05:36] vou trocar a cor da porta para Azul ele
+[00:05:38] vai trocar a cor do PVC também tá aí tem
+[00:05:41] um segredinho aqui agora que modificou
+[00:05:44] tá isso aqui foi uma modificação que eu
+[00:05:45] fiz tá eu fiz não é do não vem no no
+[00:05:48] sistema mas eu vou lançar a modulação
+[00:05:50] assim então aqui ó como vocês estão
+[00:05:52] vendo ó a porta tá azul e o PVC também
+[00:05:55] tá trocou para azul eu quero trocar só o
+[00:05:58] PVC agora mas eu quero o PVC o quê bate
+[00:06:0] aqui ó então quando eu levo aqui ó no
+[00:06:1] cantinho aa aparece uma vez aqui ó clico
+[00:06:4] nesse um e eu pressiono o shift e solto
+[00:06:7] então eu consigo trocar a cor do PVC se
+[00:06:10] eu não quiser que seja azul também eu
+[00:06:11] consigo trocar a cor do PVC diferente da
+[00:06:14] cor da porta também usando aqui aí eu
+[00:06:16] não vou mais em fita de bord né aqui ó
+[00:06:19] fita de bord é pros restantes da do
+[00:06:21] módel tá esse daqui essa dali daí vai
+[00:06:24] trocar essa fita de bord esse daqui não
+[00:06:26] esse aqui ele troca junto com a frontal
+[00:06:28] tá então se a gente selecionar aqui
+[00:06:30] frontal claro que eu troquei ali ó então
+[00:06:32] ele perdeu a referência Se eu vir aqui
+[00:06:34] frontal acho que aquele ali não vai
+[00:06:36] trocar ele vai trocar só da porta por qu
+[00:06:37] ele já tá referenciado ali né só vamos
+[00:06:40] confirmar se é isso ou eu limpei Ah não
+[00:06:42] eu limpei Beleza então tá limpo ali ó
+[00:06:44] então ele troca aqui já e volta a normal
+[00:06:46] por qu isso acontecia muito da gente
+[00:06:48] trocar a porta e o PVC ficar na cor
+[00:06:50] diferente né então agora ele faz tudo
+[00:06:53] isso então se eu vier na gaveta aqui
+[00:06:54] também ó seleciono a gaveta vem fita de
+[00:06:58] bordo fita de bord
+[00:07:1] MDF desculpa n agora MDF frontal e troco
+[00:07:4] a frente da gaveta ele vai trocar toda a
+[00:07:6] bord porque Ele identificou que essa
+[00:07:8] frente aqui é madeirada E trocou essa
+[00:07:11] borda aqui também né então já fica tudo
+[00:07:14] tudo paramétrio e muito Espetacular isso
+[00:07:18] aqui o r teve uma excelente sacada

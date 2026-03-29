@@ -1,0 +1,299 @@
+[00:00:0] essa cozinha a gente acabou de terminar
+[00:00:2] agora nós vamos exportar ela lá pro pra
+[00:00:4] router n gerar o gcode dela então como é
+[00:00:6] que funciona a gente clica aqui na
+[00:00:8] Serrinha né Eu não entendo muito de
+[00:00:10] router mas eu sei como como é que é o
+[00:00:12] processo então a gente clica na Serrinha
+[00:00:13] vamos ver aqui os detalhes do projeto
+[00:00:15] você pode salvar um código para ele o
+[00:00:17] nome nome do cliente a cozinha uma
+[00:00:21] descrição projeto de 15 grava e vamos
+[00:00:24] transformar ele em revisar ó deseja
+[00:00:26] transformar sim vamos passar ele pra
+[00:00:28] revisão porque na revisão consegue fazer
+[00:00:30] a exportação tá fiz a revisão aqui agora
+[00:00:33] a gente vem aqui nesse botão aqui ó que
+[00:00:34] é exportar exportar o pmob gestor esse
+[00:00:38] processo aqui ele pode demorar um
+[00:00:39] pouquinho tá por causa que ele vai pegar
+[00:00:42] todas as Usinagens todas as furações que
+[00:00:44] tem aqui dependendo se tiver muita ele
+[00:00:46] acaba demorando um pouquinho para
+[00:00:47] exportar mas ele ele vai exportar tá
+[00:01:4] já gerou aqui ó exportado com sucesso eh
+[00:01:8] deseja abrir o local do arquivo Vou
+[00:01:10] botar aqui sim tá só para vocês verem
+[00:01:12] ele vai gerar esse arquivo aqui ó ele
+[00:01:14] gravou nesse nome ó essa pasta aqui sem
+[00:01:16] nome é porque o nome do nosso arquivo
+[00:01:18] aqui do sket ali em cima está sem nome ó
+[00:01:20] se tivesse o nome do cliente aqui ou o
+[00:01:22] nome do projeto ele iia fazer nesse
+[00:01:24] mesmo nome aqui tá então beleza ele já
+[00:01:27] gerou esse arquiv de exportação agora a
+[00:01:28] gente vem aqui ó nesse aplicativo que é
+[00:01:31] o gestor Então vou entrar dentro do
+[00:01:33] gestor aqui aqui dentro do gestor como é
+[00:01:35] que funciona a gente vai clicar aqui em
+[00:01:37] produção Opa aqui ó Opa em produção Vou
+[00:01:40] clicar de novo aqui e vamos
+[00:01:43] em otimizador aqui no otimizador eu vou
+[00:01:46] criar um lote então que eu vou importar
+[00:01:48] aquele arquivo aqui em cima tem o
+[00:01:49] maizinho vou adicionar o maizinho qual é
+[00:01:51] que vai ser o lote é
+[00:01:53] YouTube
+[00:01:55] YouTube lot do YouTube lá observação é
+[00:01:58] uma
+[00:01:58] cozinha beleza e clico em criar lote
+[00:02:2] Então esse lote tá aqui então eu vou
+[00:02:5] importar aquele arquivo que eu gerei lá
+[00:02:6] então aqui tem a lista de importar lista
+[00:02:9] de peças ó Então vou dados do projeto e
+[00:02:12] vou lá pegar aquele arquivo ô já até
+[00:02:13] abriu na pasta op Mob Sem Nome clico
+[00:02:16] nele e clico em abrir aqui ele vai pedir
+[00:02:18] para linkar o teu material com o
+[00:02:20] material que tá vindo de lá então desse
+[00:02:23] ó então aqui eu e aqui cinza Itália não
+[00:02:26] tinha né eu botei o cinza Cobalto aqui
+[00:02:27] porque eu não quero cadastrar aqui
+[00:02:28] porque eu também não não tem nesse nesse
+[00:02:30] aplicativo o meu é outro o meu ele é via
+[00:02:33] CNC né né via router então aqui os
+[00:02:36] materiais estão diferente porque ó o
+[00:02:38] cinza o que que acontece ele veio o
+[00:02:40] cinza Itália lá do meu projeto e aqui eu
+[00:02:42] tô usando cinza Cobalto aqui ó para
+[00:02:43] otimizar tá só isso que ele perguntou
+[00:02:45] porque como não tem um cinza cadastrado
+[00:02:47] Mas se não tiver você pode ali cadastrar
+[00:02:49] o material que ele vai aparecer aqui né
+[00:02:51] então aqui ó tem um branco tx6 tem um
+[00:02:53] branco TX Duratex é a mesma coisa eu
+[00:02:55] linki os dois no mesmo material
+[00:02:57] entenderam vai funcionar do mesmo jeito
+[00:02:59] e clica em alterar aqui tá toda a tua
+[00:03:2] lista de peças aqui tá toda a lista de
+[00:03:4] peças e do lado de cá os materiais que
+[00:03:5] tem nessas listagens ó aqui em
+[00:03:7] configurações ó eu vou clicar em buscar
+[00:03:10] ele vai buscar as sobras essa sobra que
+[00:03:12] tá com esse detalhezinho aqui ó é porque
+[00:03:14] foi reservada para alguém ó é uma sobra
+[00:03:16] que tá reservada para um projeto ele vai
+[00:03:18] perguntar se tu quer usar ela ou não
+[00:03:19] como ela tá reservada para alguns
+[00:03:21] projetos não vou usar né Vou botar aqui
+[00:03:23] ó nesse projeto eu quero que ele use
+[00:03:25] essas sobras todas ess sobras que estão
+[00:03:27] aqui e guarde já automático depois
+[00:03:30] vamos no branco de 15 também quero que
+[00:03:32] ele use as sobras Vamos ver que sobras
+[00:03:34] tem ó tem só uma vamos no branco de 15
+[00:03:38] vamos no branco de 25 aqui acho que tem
+[00:03:40] um branco de 25 deixa dar uma olhada
+[00:03:43] aqui na configuração esse aqui tá
+[00:03:47] certa esta daqui tá certa não só tem um
+[00:03:49] branco de 18 branco de 15 e branco de tá
+[00:03:53] só tem um branco de se o 18 né vamos ver
+[00:03:55] se o 18 tem alguma sobra vamos buscar ó
+[00:03:58] não tem sobra nesse o de se tem já vai
+[00:04:1] guardar Vou mandar usar todas elas o de
+[00:04:4] 15 se quiser usar também guardar eu vou
+[00:04:8] guardar as outras sobras automático
+[00:04:10] vamos ver aqui e vamos usar essas sobras
+[00:04:14] aqui se tiver mas acho que não tem não
+[00:04:16] não tem Então já vou até desmarcar certo
+[00:04:18] então eu faço a configuração se eu quero
+[00:04:20] ou não quero usar por exemplo aqui no de
+[00:04:22] se tem várias sobras eu não quero usar
+[00:04:24] essa essa daqui desmarco ela já aqui só
+[00:04:27] quero usar essas duas beleza então fiz
+[00:04:30] essas alterações que eu queria no
+[00:04:31] projeto clico aqui ó em salvar projeto
+[00:04:33] em cima salvando o projeto a gente vai
+[00:04:35] no otimizador quando eu clico aqui no
+[00:04:37] otimizador ó ele vai fazer o processo
+[00:04:40] Inicial e vai abrir uma nova tela Depois
+[00:04:43] dessa nova tela que ele abrir aqui ele
+[00:04:45] vai mostrar todos os materiais em
+[00:04:46] processo tá aqui ó ele vai marcar
+[00:04:48] processando aqui ó cada material
+[00:04:50] individualmente essa tela Você pode até
+[00:04:52] fechar tá fecha ela pode fazer outra
+[00:04:55] coisa e deixa otimizando se tu quiser ou
+[00:04:56] ficar aqui esperando né então se quiser
+[00:04:58] deixar ah eu É porque ela é uma tela
+[00:05:0] online ela tá otimizando lá na nuvem
+[00:05:2] vamos dizer assim então ela ficou
+[00:05:4] otimizando lá e tu pode até fechar essa
+[00:05:6] tela não precisa nem ver se tiver muito
+[00:05:7] material tá então agora é só esperar ele
+[00:05:11] fazer todo o processo quando ele liberar
+[00:05:13] já vai poder vai visualizar aqui ó por
+[00:05:14] exemplo essa aqui já liberou ó vamos ver
+[00:05:16] como é que funciona o plano de corte ó
+[00:05:17] tá aqui então ele gerou essas peças aqui
+[00:05:20] ó duas dois materiais tá 1 2 3 4 5 cinco
+[00:05:23] chapas então o otimizador aqui tá Já
+[00:05:27] otimizando já tem os furinhos se Clic
+[00:05:29] aqui no 1 ol já tá bem certinho vamos
+[00:05:31] supor que eu não quero esse plano como
+[00:05:34] tá aqui tá Eu quero mudar esse plano
+[00:05:35] Então eu quero que essa peça venha para
+[00:05:37] cá então eu posso clicar nela ó
+[00:05:39] segurando o shift eu movimento ela por
+[00:05:42] cima uma da outra ó então eu posso
+[00:05:44] clicar nela aqui ó seguro o shift clico
+[00:05:46] nela o shift pressionado só vou clicando
+[00:05:48] nela e vou tirando elas do lugar tá
+[00:05:51] vendo tá uma em cima da outra lá pego
+[00:05:53] essa peça encosto pego essa encosto essa
+[00:05:55] aqui encosto e eu posso agora aproveitar
+[00:05:58] aqui né os detalhes aqui ó e detalhe tá
+[00:06:1] se vocês observam tá uma em cima da
+[00:06:3] outra é só apertar o Shift para sair
+[00:06:4] então ele não deixa passar do objeto ó
+[00:06:8] se não apertar o shift ó então eu posso
+[00:06:10] vir e ficar empilhando as peças aqui ó
+[00:06:12] Conforme eu quero né ó essa daqui para
+[00:06:16] cá e essa daqui para cá ficou até mais
+[00:06:18] bonitinho ali né a otimização então
+[00:06:19] vocês podem arrumar do jeito que vocês
+[00:06:21] quiserem tá então é que ele tá vamos ver
+[00:06:24] quantas páginas tem aqui aqui aqui A2 A1
+[00:06:30] 2 3 4 5 não tem mais tem cinco painéis
+[00:06:36] que ele vai usar aqui esse aqui não
+[00:06:37] tinha sobra né vamos ver um que tem
+[00:06:39] sobra ali depois vamos ver o cinza
+[00:06:41] Cobalto aqui ó então aqui no cinza
+[00:06:43] Cobalto já otimizou então também o mesmo
+[00:06:46] processo ó página 1 página 2 página 3 ó
+[00:06:48] a do Forno ali ó eu fiz Opa o forno aqui
+[00:06:51] tá já o azul é a ranhura aqui tá as
+[00:06:54] portas aqui tá o detalhe da peça Aqui tá
+[00:06:58] todo processo né ó se eu quiser eu posso
+[00:07:1] modificar ele ele não passa do objeto
+[00:07:3] ali tá então ele é travado já para
+[00:07:6] encaixar nos detalhes Eu posso também
+[00:07:8] pegar por exemplo ó essa peça que tá
+[00:07:11] aqui eu não quero que ela fique aqui
+[00:07:12] então eu clico nela aqui ó e troco em
+[00:07:15] transferir Ela vai para esse componente
+[00:07:16] do lado então vou lá na chapa cinco ó
+[00:07:19] clico nela Dou dois cliques ela vem aqui
+[00:07:21] para cima aí eu clico no shift e boto
+[00:07:24] ela na posição que eu quero Ó tipo por
+[00:07:26] exemplo aqui eu posso fazer essa essa
+[00:07:28] troca de um lado para o outro né ó tô
+[00:07:30] mexendo em tudo né então eu posso fazer
+[00:07:32] toda essa troca e fazer essas alterações
+[00:07:34] Conforme eu quero então é clicar com o
+[00:07:36] botão direito em cima eu posso
+[00:07:38] rotacionar uma peça Vamos pegar uma aqui
+[00:07:39] que dê para rotacionar aqui ó clico
+[00:07:41] nessa peça aqui botão direito rotaciono
+[00:07:43] ela ó encosto ela até onde ela pode ela
+[00:07:46] não vai deixar passar ó entende-se ó só
+[00:07:49] vai passar se eu apertar Shift para
+[00:07:50] transferir de um lado pro outro então
+[00:07:52] fez esse processo vamos ver aqui na de
+[00:07:55] seis então a de seis ó a de seis ela
+[00:08:0] usou sobras né então a gente pode
+[00:08:2] visualizar o plano aqui é o plano chapa
+[00:08:4] um chapa dois ó usou uma sobra Chapa TR
+[00:08:7] usou outra sobra Chapa qu usou uma chapa
+[00:08:9] inteira Então ela acabou usando duas
+[00:08:11] sobras daquela aproveitou aqui ó duas
+[00:08:13] sobras daquela se quiser transferir uma
+[00:08:16] peça dessa para outro lado também pode
+[00:08:17] fazer do mesmo jeito terminou aqui né
+[00:08:20] fez esse a gente tá em processos aqui a
+[00:08:22] gente vai salvar as alterações Ó depois
+[00:08:26] que salvar as alterações a gente pode
+[00:08:28] vir ver se aqui também se tá tudo certo
+[00:08:31] aqui ele tá salvando
+[00:08:33] ali aqui ó eu consigo exportar exportar
+[00:08:37] a lista né consigo o estoque o material
+[00:08:41] consigo imprimir e deixa eu dar uma
+[00:08:43] olhada aqui aqui já fez o painel já foi
+[00:08:48] visualiza esse já foi salvo foi salvo
+[00:08:51] foi salvo foi salvo
+[00:09:13] vem aqui ó em finalizado posso marcar
+[00:09:15] que o meu plano tá finalizado aí ele vai
+[00:09:18] aparecer a setinha aqui ó que você pode
+[00:09:20] exportar ó Tá salvo finalizado agora eu
+[00:09:23] posso exportar o meu gcode pronto eu já
+[00:09:26] exportei o gcode ó foi lá para dentro ó
+[00:09:28] planos gcode Zip já tá lá no plano de
+[00:09:31] corte aí aqui ó exportei né mas eu vou
+[00:09:34] mostrar para vocês agora a parte da
+[00:09:37] configurações da máquina tá então aqui ó
+[00:09:39] Tem configurações Gerais então aqui ó no
+[00:09:41] que a gente tá usando esse aqui ó o bmob
+[00:09:44] Então aqui tem todo formato né é
+[00:09:47] espessura da Serra para corte tem a
+[00:09:49] rotação da peça essa parte aqui é mais
+[00:09:52] técnica não vou saber explicar mas ó as
+[00:09:55] sobras usar sobras para otimizar já pode
+[00:09:57] vir aqui deixar como sim ele já vai usar
+[00:09:59] guardar as sobras na seu na no armazém
+[00:10:2] já pode diar que sim ele vai guardar ou
+[00:10:4] não qual é o comprimento mínimo e o
+[00:10:6] máximo da sobra que é que guarde tá o
+[00:10:9] nest ó os furos e rebaixos é aplicar o
+[00:10:12] lado A ou eu quero aplicar o lado B você
+[00:10:14] escolhe
+[00:10:15] eh habilitar troca sim interpolar furos
+[00:10:19] esses detalhes aqui eu não conheço muito
+[00:10:21] sobre nest mas tem tudo aqui ó o z z
+[00:10:25] seguro né o tamanho do Z seguro
+[00:10:28] velocidade deslocamento no eixo X no
+[00:10:30] eixo Y eixo Z isso aqui eu acho que até
+[00:10:32] vai ser retirado Porque se alguém mexer
+[00:10:34] nisso aqui pode estragar a máquina é
+[00:10:38] esquerda para direita de baixo para cima
+[00:10:39] direção de espelhamento pode escolher né
+[00:10:42] o canto da máquina aqui chapa de
+[00:10:45] sacrifício o eixo zero da chapa de
+[00:10:47] sacrifício a altura reservada para
+[00:10:50] último passe a velocidade
+[00:10:52] profundidade eh esse aqui ele sempre
+[00:10:54] passa dois passes né Se aqui a altura do
+[00:10:57] último passe se quiser fazer em duas
+[00:10:58] vezes ou de uma vez também dá para fazer
+[00:11:0] direto ordenar eh ordenação padrão Aí
+[00:11:5] aqui embaixo esse aqui ó que é o mass
+[00:11:7] grande sacada que é as instruções
+[00:11:9] iniciais você vai botar as instruções da
+[00:11:11] sua máquina Inicial aqui e as instruções
+[00:11:13] finais da sua máquina tipo ah eu quero
+[00:11:15] que ela habilite a mesa eu quero que ela
+[00:11:17] faça não sei o quê aqui eu quero que ela
+[00:11:18] descarregue eu quero que ela faça
+[00:11:20] impressão de etiqueta sei lá qualquer
+[00:11:21] coisa aqui ó então você pode botar esses
+[00:11:23] códigos aqui né que a máquina vai fazer
+[00:11:26] a instrução Inicial e instrução final do
+[00:11:28] corte e aqui ó do lado tem por para cada
+[00:11:31] ferramenta da máquina por exemplo o
+[00:11:33] diâmetro de 12 MM se eu editar aqui ó eu
+[00:11:36] tenho uma configuração para essa fresa
+[00:11:38] né que é o código da fresa C Usinagens
+[00:11:41] aí a velocidade dessa fresa que ele vai
+[00:11:43] cortar e tem a instruções para ela
+[00:11:46] separada dessas instruções aqui da do
+[00:11:49] geral né então cada uma Ó tem uma
+[00:11:51] instrução você pode botar uma instrução
+[00:11:52] para cada ferramenta então cada
+[00:11:54] ferramenta vai gerar uma instrução
+[00:11:56] diferente aqui ó então todas as
+[00:11:58] ferramentas cada Fer tem uma instrução
+[00:12:1] diferente existe uma genérica também
+[00:12:3] aqui se nenhuma dessas se adaptar ele
+[00:12:5] vai usar a genérica que você tem
+[00:12:7] cadastrado Então tá tudo cadastrado aqui
+[00:12:9] ó e aqui funciona dessa forma a
+[00:12:11] configuração dele beleza

@@ -1,0 +1,62 @@
+[00:00:0] bom agora nós vamos ver spot de LED spot
+[00:00:3] de LED eu vou vir aqui eu tenho ele em
+[00:00:5] internos agregados para jogar dentro dos
+[00:00:7] armários e eu tenho ele aqui avulso
+[00:00:9] dentro da minha biblioteca de construir
+[00:00:11] então vou clicar aqui no na biblioteca
+[00:00:13] vou em construir vou em acessórios aqui
+[00:00:15] eu ten vários tipos de leds ó fita de
+[00:00:17] led e tem uns spots aqui ó eu vou pegar
+[00:00:19] esse primeiro aqui esse redondinho clico
+[00:00:21] nele tá vendo que ele não tem não se não
+[00:00:24] ten nenhum caixote selecionado né eu
+[00:00:25] posso soltar ele a vulo aqui ou se eu
+[00:00:28] quiser selecionar uma caixa eu aperto
+[00:00:30] control clico na caixa e clico para
+[00:00:32] baixo daí ele vai ficar alinhado ali ó
+[00:00:34] então isso aqui é só para mim alinhar só
+[00:00:36] que ele alinhou pela Caixa Eu tenho um
+[00:00:37] tamponamento né então eu posso pegar
+[00:00:39] essa margem aqui ó e colocar nesse canto
+[00:00:41] ele vai ficar alinhado ali ó eu quero
+[00:00:43] ele bem no centro então uso o scale
+[00:00:45] escalon essa essa medida que já tem aqui
+[00:00:48] ó e vou escalonar ela até o final ele
+[00:00:50] vai ficar Opa aperto o s soltei sem
+[00:00:53] querer ali até o final ele ficou bem no
+[00:00:55] centro do meu móvel Tá então vamos ver
+[00:00:57] como é ficou a fora clico nele venho
+[00:01:0] aqui em Furação e venho aqui verificar ó
+[00:01:4] vamos verificar ele tem um led ó tá ali
+[00:01:6] ó o furo já tá bem ali no meio aqui do
+[00:01:7] componente né então só que não quero no
+[00:01:10] centro eu quero por exemplo dois então a
+[00:01:12] gente pega a mira amarela clica no led ó
+[00:01:15] espera até selecionar o LED ali que é
+[00:01:16] esse aqui selecionei o LED e aqui eu
+[00:01:18] quero dois spots de LED ele vai dividir
+[00:01:21] pelo padrão tá ele vai dividir em quatro
+[00:01:23] partes onde eu quero três três leds
+[00:01:26] então ele vai botar um no meio um cada
+[00:01:27] ponta a Eu quero quatro leds
+[00:01:30] ele vai colocar quatro leds ali vamos
+[00:01:32] dizer que eu quero só três três leds né
+[00:01:34] ele já colocou dimensionou pelo tamanho
+[00:01:36] três leds só que esse LED eu não quero
+[00:01:38] no meio Eu quero que ele fique mais
+[00:01:39] atrás então aqui existe a profundidade
+[00:01:41] desse LED aqui posso vir mexer aqui
+[00:01:44] quero com 20 tá ó ele vai ficar ali ou
+[00:01:47] usando o próprio skio né usando a Opa
+[00:01:51] usando a ferramenta aqui de escalonar
+[00:01:54] ferramenta essa escalonar eu consigo vir
+[00:01:56] e diminuir ele ali ou aumentar para
+[00:01:58] dizer onde é que eu quero que ele fique
+[00:02:0] na posição ali que eu quero que fique o
+[00:02:2] LED ou também posso movimentar ele aqui
+[00:02:6] certo movimentar e deixar na posição que
+[00:02:8] eu quero que ele fique e tudo isso tá eu
+[00:02:11] botei três leds vocês podem verificar
+[00:02:12] aqui e vai sair três furações na posição
+[00:02:15] que você determinar ol na posição que
+[00:02:18] você determinar certo

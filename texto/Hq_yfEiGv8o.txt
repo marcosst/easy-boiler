@@ -1,0 +1,57 @@
+[00:00:0] módulos que já vem com uma divisória no
+[00:00:2] meio então eu clico na configuração dele
+[00:00:4] ele vai aparecer essa Opa vai aparecer
+[00:00:7] essa configuração aqui então ele tem uma
+[00:00:10] divisória no meio então essa divisória
+[00:00:11] eu vou até maximizar um pouco aqui ó a
+[00:00:14] caixinha de configuração e quando eu
+[00:00:17] clico nesse módulo aqui ó ele eu consigo
+[00:00:19] editar a largura e a altura ele já vai
+[00:00:20] ficar no paramétrico a medida ali ó por
+[00:00:22] exemplo eu quero 1500 esse módulo vai
+[00:00:25] passar para 1500 e aí vai sempre
+[00:00:27] centralizar a minha divisória certo
+[00:00:30] agora se eu clicar na na lá em cima na
+[00:00:32] no Amarelo ou aqui ó Nessa selecionadora
+[00:00:35] de componente e eu clicar em cima da
+[00:00:37] divisória tá vendo que ele vai
+[00:00:38] selecionar esse vão aqui ó Ten o recol
+[00:00:41] da divisória eu ele tá sempre
+[00:00:42] centralizar mas eu vou dizer que eu não
+[00:00:44] quero centralizar e vou dizer que o
+[00:00:45] recol da divisória aqui ó vai ser de 50
+[00:00:48] e clico em aplicar ele já vai jogar ela
+[00:00:51] 50 para cá o daqui para cá vai ficar 50
+[00:00:53] Então esse 50 é o vão livre aqui ó esse
+[00:00:57] vão livre dessa divisória daqui até ali
+[00:01:0] ó tá vendo 50 cm Ele marca aqui embaixo
+[00:01:2] Aqui no sket ó no canto inferior no
+[00:01:5] canto inferior direito aqui embaixo ó lá
+[00:01:7] ó então tem 50 500 MM livre aqui esse
+[00:01:10] vão eu posso modificar para 600 né ele
+[00:01:14] vai modificando ali vamos ver como é que
+[00:01:16] fica ele padronizou aqui 600 vamos dizer
+[00:01:18] que essa peça agora aqui tem 1000 e
+[00:01:21] 10000 de novo ele vai diminuir esse vão
+[00:01:25] aqui tem que ó ele já modificou lá Opa
+[00:01:27] eu botei 1400 aqui nesse vão né É não é
+[00:01:30] aqui 600 vamos deixar aqui de novo
+[00:01:32] acabei botando a medida no lugar errado
+[00:01:34] 600 clico fora né para selecionar toda a
+[00:01:36] caixa agora e aqui eu vou dizer que tem
+[00:01:38] 10000 ó então 500 tá bem ali ó vou botar
+[00:01:42] o mouse bem onde ele tá ele só mexe
+[00:01:44] nessa posição porque essa aqui travou na
+[00:01:46] medida que eu quis ele não eu
+[00:01:48] desabilitei a função centralizar tá
+[00:01:50] então ele tá travado na medida de 600 e
+[00:01:53] eu vou mexendo no caixote aqui ó por
+[00:01:54] exemplo 1300 ó vou deixar até o mouse
+[00:01:57] alá em cima para vocês ver que a
+[00:01:58] divisória não vai mexer ó
+[00:02:0] então ele vai diminuir sempre da direita
+[00:02:3] pra esquerda certo porque o eixo zero do
+[00:02:5] cachote é do lado esquerdo beleza iso é
+[00:02:8] mais uma função bem legal do caixote que
+[00:02:11] pode mexer na divisória e não precisa
+[00:02:13] reconstruir o cachote do zero

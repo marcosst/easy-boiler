@@ -1,0 +1,131 @@
+[00:00:00] vamos acrescentar agora nesse
+[00:00:01] tamponamento a fita de led então a fita
+[00:00:03] de led eu venho aqui ó em acessórios eu
+[00:00:05] posso digitar aqui usando essa mesma
+[00:00:06] barra digitar aqui em cima ó fita de led
+[00:00:09] ele vai me abrar tudo que tem fita de
+[00:00:11] led aqui ó certo então vamos pegar
+[00:00:13] qualquer vamos pegar essa aqui 240 mesmo
+[00:00:15] vamos pegar a fita de led coloco ela
+[00:00:16] aqui embaixo eu quero que ela fique
+[00:00:18] alinhada pela frente Ah tá a fita de led
+[00:00:20] tem um segredo também que ela não pode
+[00:00:22] ficar em diagonal assim ó ela só
+[00:00:24] funciona assim e Opa cont control deixa
+[00:00:28] eu deletar isso aqui que ficou errada e
+[00:00:30] só funciona assim
+[00:00:32] e PP e na horizontal e na
+[00:00:37] vertical na horizontal e na vertical
+[00:00:40] funciona só dessa forma aqui certo ela
+[00:00:42] não funciona assim em diagonal vamos
+[00:00:44] pegar essa aqui delete pego ela e estico
+[00:00:49] posso usar o skio e usar ela até onde eu
+[00:00:51] quiser lá certo vamos usar ela até aqui
+[00:00:53] no final também aqui usei a fita de led
+[00:00:56] ali o que que acontece com essa fita de
+[00:00:58] led aqui por exemplo eu tenho que botar
+[00:00:59] um um dedinho aqui embaixo também então
+[00:01:01] vamos botar aqui um dedinho Opa é
+[00:01:04] interruptor interruptor ó interruptor
+[00:01:08] toou interruptor circular vamos pegar o
+[00:01:10] interruptor circular eu quero botar o
+[00:01:11] interruptor circular aqui bem aqui atrás
+[00:01:14] certo então o que que acontece com isso
+[00:01:16] aqui vamos botar ela em raio x ó em raio
+[00:01:19] x tá ali ó o interruptor só pegou até na
+[00:01:22] primeira primeira peça né a segunda não
+[00:01:25] chegou a pegar a mesma coisa vai ficar
+[00:01:26] com o LED ali ó a ar ranhura do Led vai
+[00:01:28] ficar só até a só até na primeira peça
+[00:01:31] então eu quero ter acesso desse LED até
+[00:01:34] lá naquela tomada como é que eu faria
+[00:01:35] isso aqui eu tenho duas maneiras de
+[00:01:37] fazer tá eu posso pegar e acrescentar um
+[00:01:39] furo aqui ó então venho interno aqui em
+[00:01:42] Componentes construir Usinagens ó aqui
+[00:01:45] Usinagens você v que tem uma uma
+[00:01:47] ferramenta que ela é furo aqui ó furo
+[00:01:49] avuso clico no furo eu vou e o furo Eu
+[00:01:52] também consigo colocar na face vou até
+[00:01:53] tirar do raio x para vocês verem ele Opa
+[00:01:55] Ok deixa eu pegar o furo de novo e vou
+[00:01:58] clicar no Raio X aqui eliminar o ra x
+[00:02:00] onde é que tá aqui letra cá aqui ó então
+[00:02:05] o furo tá ali ó ele tá baixando o furo
+[00:02:08] onde é que eu quero botar o furo eu
+[00:02:09] quero botar um furo aqui vamos fazer no
+[00:02:11] Raio X letra k ó o raio x para vocês ver
+[00:02:13] ele não tá alinhado ali com a com o meu
+[00:02:15] componente né então eu posso alinhar ele
+[00:02:18] com o meu componente aqui ó bem ali no
+[00:02:20] meio Opa peguei o meio vcar bem no meio
+[00:02:22] do meu componente ele tá alinhado só que
+[00:02:24] ele não tá encostando lá então eu posso
+[00:02:25] aumentar a profundidade desse furo
+[00:02:27] usando a ferramenta
+[00:02:30] que edita só ele né só o furo amarelinho
+[00:02:34] vou clicar no furo op Deixa eu chegar
+[00:02:36] pertinho cliquei no furo eu posso dizer
+[00:02:38] qual é a profundidade que eu quero furoo
+[00:02:40] uma profundidade aqui de 20 MM e o furo
+[00:02:43] eu quero de 8 mm e cli em aplicar então
+[00:02:47] ver no Raio X aqui ó então o furo já tá
+[00:02:50] bem próximo ali né eu posso aumentar
+[00:02:52] mais esse furo aqui é só um exemplo
+[00:02:54] letra k vamos pegar esse furo aqui
+[00:02:56] também como ele já furou o dedinho lá eu
+[00:02:58] clico aqui Vou puxar ele para cima do
+[00:03:00] dedinho que eu não sei onde é que ele tá
+[00:03:02] e vou apertar a letra k e vamos também
+[00:03:03] centralizar o furo com o dedinho ó então
+[00:03:07] a gente pego o furo aqui e centraliza
+[00:03:09] ele no
+[00:03:11] dedinho ficou os dois furos alinhados
+[00:03:14] beleza e agora já tem todas as Usinagens
+[00:03:16] também ó vamos pegar nessa daqui a
+[00:03:21] Usinagem vamos ver a Usinagem por baixo
+[00:03:25] então ele já ou o LED e já fez o furo do
+[00:03:27] dedinho agora no lado B ele já fez os
+[00:03:30] dois furos que eu queria Então no lado a
+[00:03:32] ele fez a led e os dois dedinhos e no B
+[00:03:35] os dois furinhos
+[00:03:37] beleza lado aqui nós temos a fonte
+[00:03:40] calcular a fonte para o LED né colocar a
+[00:03:42] fonte para esse LED aqui então se a
+[00:03:44] gente vir aqui nos nos internos
+[00:03:46] acessórios né construir acess eh
+[00:03:49] componentes que é componentes Vamos
+[00:03:51] abrir aqui então eu consigo selecionar
+[00:03:53] vários tipos de fonte aqui ela diz ó
+[00:03:54] fonte 100 w fonte de 15 Ó daí ele tá
+[00:03:57] dizendo ali em cima do desenho ó m de
+[00:04:00] fita então vamos ver quantos metos tem
+[00:04:01] essa nossa fita aqui se eu clicar nessa
+[00:04:03] fita
+[00:04:05] aqui aqui cliquei na fita Vamos abrir as
+[00:04:08] configurações dela ok ó então ele tá
+[00:04:11] dizendo ali ó temperatura tal tem todas
+[00:04:13] as informações da fita de led aqui ó né
+[00:04:16] o ângulo de emissão de luz largura
+[00:04:18] altura vai até 5 m tá então aqui rolo de
+[00:04:22] 5 m a embalagem vem com rolo de 5 m esse
+[00:04:24] componente é fornecido e cobrado em
+[00:04:27] embalagem de 5 m então mesmo que tu
+[00:04:30] pegue só 2 m ele vai cobrar 5 m aqui tá
+[00:04:33] Então aqui tem o tamanho dele ó 1600 mas
+[00:04:36] a fita é é rolo fechado mas o LED ele só
+[00:04:39] tem 1600 Então quer dizer que o quê eu
+[00:04:41] posso usar uma fita de led até 3 M um
+[00:04:45] reator né até 3 M então eu pego aqui opa
+[00:04:49] vou botar ele aqui e vou rotacionar 90º
+[00:04:52] aqui para ficar mais fácil Opa aqui e
+[00:04:54] rotaciona o 90 e eu posso esconder né
+[00:04:58] ele aqui atrás da vista desse mar aí
+[00:05:00] vocês vão ver onde onde a gente consegue
+[00:05:02] botar ele ali ó então bem pertinho da
+[00:05:05] fita tem um reator aqui ó certo então
+[00:05:08] sempre que for colocar uma fita de led
+[00:05:11] tem que acrescentar um reator
+[00:05:12] correspondente ao tamanho da sua fita de
+[00:05:14] led Essa é observação que tem que ter tá
+[00:05:16] bom Um abraço

@@ -1,0 +1,400 @@
+[00:00:0] Adinha com a nova ferramenta aqui do do
+[00:00:2] PMOB. Fazer um balcãozinho curvo aqui.
+[00:00:6] Então vamos lá, vamos brincar, tá? Eu tô
+[00:00:7] aprendendo também junto aqui. Eu mexi um
+[00:00:10] pouquinho nela aqui, mas vamos tentar
+[00:00:11] fazer um balcão curvo. Vamos ver como é
+[00:00:13] que vai se comportar. Eu sempre costumo
+[00:00:15] desenhar um esboço do que eu vou fazer,
+[00:00:17] tá? Então eu vou botar aqui um balcão
+[00:00:19] que ele tenha 1 m por 50, tá? Aqui eu
+[00:00:24] vou desenhar um quadradinho só para mim
+[00:00:26] pegar como referência 1,30 por 1,30 mais
+[00:00:30] ou menos. Deixa eu ver. É mais ou menos
+[00:00:32] isso aqui. Vai dar certo aqui. Então
+[00:00:34] agora eu pego a curva, vou digitar ali
+[00:00:36] com raio de 200. É, ficou bom. Vou até
+[00:00:39] diminuir um pouquinho esse balcão aqui.
+[00:00:41] Até que assim, ó. Tá? Fiz aqui. Agora eu
+[00:00:44] pego e faço um pedacinho reto até lá.
+[00:00:47] Fazer um pedacinho reto até ali, tá?
+[00:00:50] Esse outro aqui eu seleciono, seleciono
+[00:00:52] esse aqui, dou um offset e esse offset
+[00:00:55] eu vou botar lá na minha peça lá. Acho
+[00:00:58] que não ficou muito bem, não. Não deu
+[00:01:0] bem certinho ali, mas vamos ajustar ele
+[00:01:3] aqui. Depois eu arrumo aquele lado lá.
+[00:01:5] Então, pego o offset aqui de novo e vou
+[00:01:7] fazer ele ficar ali no ponto ali, ó.
+[00:01:11] Pronto, agora ficou onde eu queria, né?
+[00:01:14] Então, venho aqui, deleto essa linha
+[00:01:16] aqui que eu não quero mais. Essa aqui eu
+[00:01:17] não quero mais. Vamos arrumar outra
+[00:01:19] linha lá do outro lado. Outra linha aqui
+[00:01:21] do outro lado, né? Vamos pegar essa essa
+[00:01:24] linha. Opa,
+[00:01:26] ó. Vamos pegar a linha aqui e vamos
+[00:01:29] levar ela até o final
+[00:01:32] e apago ela aqui. Delete. Pronto. Agora
+[00:01:36] eu já fiz o meu esboço. Vou deletar isso
+[00:01:38] aqui. Vou deletar isso aqui. Deletar
+[00:01:40] isso aqui que eu não quero. É isso aqui
+[00:01:41] que eu quero, o meu esboço. Então,
+[00:01:43] quando eu faço um esboço assim, ó, eu
+[00:01:44] sempre jogo o meu objeto numa distância
+[00:01:47] que ele não encoste um no outro. Aqui,
+[00:01:48] ó, por exemplo, vou jogar 2 m para cá,
+[00:01:51] tá? Joguei 2 m para lá. E agora a gente
+[00:01:54] vai começar a fazer a curva, tá? Então o
+[00:01:56] que que eu pego? Eu pego essa linha aqui
+[00:01:57] da frente, essa outra aqui também que eu
+[00:02:0] quero fazer para essas curvas e vou
+[00:02:1] copiar ela para cá, uns 2 m para cá, do
+[00:02:4] lado de cá. Opa, contrtrl Z. Dei, eu dei
+[00:02:7] 20 cm e não 2 m. Então eu pego essa,
+[00:02:11] pego essa daqui e digito para cá uns 2
+[00:02:16] m.
+[00:02:17] Pronto, tá aqui baseando nessa linha,
+[00:02:20] como ela já tá selecionada, clico com o
+[00:02:22] botão direito, vou em upmob, converter
+[00:02:24] os inages, criar peça curva. Como a
+[00:02:26] minha programação aqui, eu já sempre uso
+[00:02:28] essa como padrão, ele já vem como
+[00:02:29] padrão, né? Veio vertical, clica em
+[00:02:31] aplicar. Agora eu só vou dar, deixa ele
+[00:02:34] configurar aqui. Tá salvando aí. Deixa
+[00:02:38] eu botar mais de ladinho que daí ele
+[00:02:39] aparece mais. Ó, quando a gente bota bem
+[00:02:41] de ladinho, ele aparece mais fácil, tá?
+[00:02:43] Vouitar aqui uns 60.
+[00:02:46] Então, 70 de altura, ó. 70 de altura.
+[00:02:48] Pronto. Fiz um deixa ele calcular aqui
+[00:02:51] agora. 70 de altura. Já fiz a minha
+[00:02:54] primeira peça curva. Lembrando que essa
+[00:02:55] peça aqui, ó, é a peça onde vai todas as
+[00:02:57] usinagens, né? Ela já tá com todas as
+[00:03:0] usinagens aqui desenhadinha, tá?
+[00:03:2] Partezinha reta e a parte curva. Então,
+[00:03:4] o que que a gente faz com isso aqui? Eu
+[00:03:5] já pego e já pinto ele, né? Vem MDF cor.
+[00:03:8] Então, esse aqui eu vou até em madeirado
+[00:03:9] e esse aqui em madeirado também, ó.
+[00:03:11] Porque isso aqui vai ser o meu visual, o
+[00:03:13] cliente, né? Esse madeirado não tá
+[00:03:15] parecendo muito bonitinho. Vamos pegar
+[00:03:16] um outro aqui. Esse aqui, ó, vai parecer
+[00:03:18] até bonitinho. Briz aí, ó. Ripadinho.
+[00:03:22] Deu uma desconfigurada ali no R brize,
+[00:03:25] né? Vamos pegar outro aqui que tá mais
+[00:03:26] legal aqui. Esse aqui, ó, ficar mais
+[00:03:28] bonitinho. E aí, agora esse ficou
+[00:03:31] bacana, tá? Fiz uma peça curva e esse
+[00:03:34] aqui também na mesma cor. Pronto. Essa
+[00:03:36] peça já tá certa já. Eu posso levar ela
+[00:03:37] pro lugar, né? Vou voltar ela lá 2 m.
+[00:03:41] Certo. Voltou para lá. Agora o que eu
+[00:03:43] quero fazer? Eu quero fazer um
+[00:03:44] rodapezinho aqui na frente em branco,
+[00:03:45] tá? No mesma curva em branco. Então o
+[00:03:47] que que eu vou fazer? Eu pego a linha
+[00:03:48] que já tem ali embaixo, ó, essa linha
+[00:03:50] aqui e uso um offset nela. Puxo uns 15.5
+[00:03:56] para cá. Opa, 15,5
+[00:03:59] para cá. E já vou desenhar a minha outra
+[00:04:2] linha daqui para lá que é reta, né?
+[00:04:3] Então para cá eu já sei que é reta,
+[00:04:5] desenho até ali. Pronto. Essa aqui eu
+[00:04:7] não preciso jogar para longe porque eu
+[00:04:8] quero esse desenho e esse desenho aqui,
+[00:04:10] ó. Então vou p mob converter usinagem,
+[00:04:12] criar peça curva. Só que agora mesmo
+[00:04:15] esquema, né? Só que agora eu quero ela
+[00:04:17] com só um altura de uns 20 cm aqui, por
+[00:04:22] exemplo, ó. 20 cm. Já vou desenhar uma
+[00:04:25] pecinha aqui pela frente, ele calcular
+[00:04:26] tudo. Pronto. Tá ali, ó, né? Agora eu só
+[00:04:29] pego essa peça e ela já é branca mesmo.
+[00:04:32] Eu posso até afastar isso aqui para mais
+[00:04:34] longe, ó. Jogo uns 2 m para sempre ficar
+[00:04:37] ali, tá? Uma em cima da outra. Então, já
+[00:04:39] comecei a fazer meu balcãozinho curvo
+[00:04:41] aqui, né? Então, o que que eu preciso
+[00:04:42] agora? Vamos fazer essa esse tampo aqui
+[00:04:44] em cima, ó. Quero fazer o tampo aqui em
+[00:04:46] cima. Então, o tampo eu quero que ele
+[00:04:48] fique exatamente igual ou que ele faça
+[00:04:50] esse acabamento aqui, ó. Ah, eu quero
+[00:04:51] que ele faça esse acabamento. Então, a
+[00:04:53] gente dá dois cliques aqui no tampo eu
+[00:04:55] puxo ele para fora. Só que eu vou puxar
+[00:04:56] ele para lá, ó. Tá? Para ficar mais
+[00:04:58] fácil. Eu vou estar aqui uns 2 m para cá
+[00:05:0] também.
+[00:05:2] O que que eu preciso fazer nesse tampo?
+[00:05:3] Se eu quero que ele saia 1,5 para fora,
+[00:05:5] como eu botei ali, então tenho que pegar
+[00:05:6] esse esse desenho aqui, né? Esse daqui,
+[00:05:9] ó, essa linha e essa linha aqui, ó. E
+[00:05:12] puxar com offset, que é essa ferramenta
+[00:05:14] aqui, 15.5, ó. 15.5 para fora. E agora a
+[00:05:18] gente vai lá e só fecha esse objeto
+[00:05:21] aqui, ó. Fechei ali, tá? E venho aqui.
+[00:05:24] Opa. E venho aqui, fecho ele aqui. Essa
+[00:05:28] do meio eu vou apagar. E essa aqui do
+[00:05:30] meio eu vou apagar. Outro detalhe
+[00:05:32] interessante que tem aqui, se já quiser
+[00:05:34] já botar os os recordes aqui em cima do
+[00:05:36] tampo, se lá, ah, eu quero fazer um uma
+[00:05:38] lixeira aqui, ó, sei lá. Tô só brincando
+[00:05:41] aqui. Ah, eu quero aqui fazer já um uns
+[00:05:43] dois passafio aqui, ó, uns dois
+[00:05:45] quadradinhos aqui, sei lá. Vamos botar
+[00:05:46] lá um quadradinho, desenhar um Vamos
+[00:05:48] fazer uns desenhos aqui no canto. Bacana
+[00:05:50] aqui, ó. Tipo um desenho aqui, ó, de 60
+[00:05:53] por 20. 60 por 20. Vamos fazer um
+[00:05:56] trabalhado nessa nesse tampo recorte a
+[00:05:59] cada, sei lá, 35
+[00:06:3] multiplica por, sei lá, bota 10 vezes
+[00:06:6] aqui. Foi muito não, 10 vezes, ó. Fiz um
+[00:06:8] detalhezinho lá no canto, ó. Então, o
+[00:06:10] que que eu faço? Fiz esse tampo, clico
+[00:06:12] nele aqui, clico outro botão, op mob com
+[00:06:15] deixa eu chegar um pouquinho mais para
+[00:06:16] cima para vocês verem, né? Clico com
+[00:06:17] botão, ó, cliquei na face, tá? Tá vendo
+[00:06:19] que eu não selecionei os recortes?
+[00:06:20] Cliquei na face, op mob. Agora eu não
+[00:06:22] vou em criar peça curva, eu vou criar
+[00:06:24] criar peça com face. Aí ele já tem aqui
+[00:06:27] a minha configuração. Vou escolher a
+[00:06:28] minha fresa MDF de 15 mm e vou clicar em
+[00:06:31] avançar. Aqui eu escolho para onde que
+[00:06:33] eu quero o sentido do veio, da madeira,
+[00:06:35] né? Se eu quero ele para cá, se eu quero
+[00:06:37] ele para cá ou quero atravessado assim,
+[00:06:39] você escolhe. Eu vou botar assim.
+[00:06:42] Clico aqui, ele vai desenhar a peça para
+[00:06:44] mim. E o mais interessante, tá? Que após
+[00:06:46] ele desenhar a peça, ó, ele já fez os
+[00:06:48] recortes, tá vendo? E esses recortes, ó,
+[00:06:51] eles já saem, tá, na com a usinagem.
+[00:06:53] Deixa eu abrir a usinagem aqui, ó. Já
+[00:06:55] sai cominagem tudo, ó. A peça, os furos,
+[00:06:58] os recortezinhos, já sai tudo prontinho,
+[00:06:59] tá? Então, fiz esse tampo aqui. Ah, eu
+[00:07:2] vou pegar agora esse tampo aqui também.
+[00:07:3] Vamos pegar a borda. Pego a fita de
+[00:07:5] borda e clico aqui. Ele já pinta tudo de
+[00:07:7] branco a borda também ali, ó. Tá? Então,
+[00:07:10] peguei esse tampo. Lembra que eu joguei
+[00:07:12] 2 m para fora? Agora eu jogo 2 m para cá
+[00:07:16] e vou colocar ele lá na parte de cima,
+[00:07:18] tá? Fiz um tampo de meio, podia fazer
+[00:07:20] mais engrossado, né? Ó, vou colocar ele
+[00:07:22] aqui na parte de cima aqui, ó. Opa, seta
+[00:07:25] para cima ali, ó. Pronto. Vem dizer, o
+[00:07:29] nosso balcão já tá saindo, né? Olha, ó,
+[00:07:31] o balcão já tá saindo. Essa peça aqui,
+[00:07:33] se eu quiser aproveitar, eu aproveito,
+[00:07:35] senão eu deleto ela, né? Porque eu vou
+[00:07:37] sair, fazer estampa saindo da parede
+[00:07:38] aqui. Vamos dar um exemplo. Op, deleta.
+[00:07:42] E agora, opa, deu essa que deu um print
+[00:07:44] screen sem querer. Agora nós vamos fazer
+[00:07:45] esse outro lado aqui, essa outra parte.
+[00:07:47] Essa outra parte, como é quadrada, a
+[00:07:49] gente poderia ter feito do mesmo jeito,
+[00:07:50] já inteiro poderia, mas eu vou fazer já
+[00:07:52] usando as peças. Então eu venho aqui, eu
+[00:07:54] pego um tampo, né?
+[00:07:58] Vou pegar um tampo duplado, daí tem
+[00:07:59] tampoço, ó. Vou pegar um tampinho avulso
+[00:08:1] e vou colocar ele na medida que a gente
+[00:08:4] digitou, que era 1 m por 60, por 50, né?
+[00:08:6] Tá ali, ó. Então, pego ele aqui,
+[00:08:9] movimento.
+[00:08:11] Ele vai, acho que ele já, ele tá um
+[00:08:12] pouquinho menor, ó. Tá vendo? Vamos
+[00:08:14] esticar ele ali.
+[00:08:17] O skio não tá pegando bem por causa tá
+[00:08:19] muito longe.
+[00:08:21] Ó que o skio tá aqui.
+[00:08:24] Ali. Ô,
+[00:08:26] caramba, por causa da curva ele não
+[00:08:27] pegou.
+[00:08:29] Agora pegou
+[00:08:31] ali. Pronto. Fiz um tampinho em cima.
+[00:08:34] Agora eu posso pegar uma um frontal, um
+[00:08:37] painel, né? Um painel.
+[00:08:39] Sempre eu gosto de fazer, tá? Já com as
+[00:08:41] peças certas. Por quê? Aí já vai ficando
+[00:08:45] os detalhes, os veios, a as furações,
+[00:08:48] fica mais fácil da gente já se adaptar
+[00:08:50] no projeto, né? Fiz aqui,
+[00:08:54] ó, aqui.
+[00:08:57] Pega ali. Ali. Isto. Agora eu vou pegar
+[00:09:0] já, como eu já fiz com o painel, eu já
+[00:09:3] posso copiar isso aqui por dentro e já
+[00:09:5] vou esticar ele para cima. Até ali. Não
+[00:09:9] esticou. Vamos lá. até ali. Oh, meu
+[00:09:12] mouse aqui hoje, gente, não tá legal. Ó,
+[00:09:14] pronto. E agora essa peça aqui a gente
+[00:09:17] só vai pintar ela também no mesmo MDF,
+[00:09:19] que eu não lembro qual era MDF que eu
+[00:09:20] peguei. Acho que foi isso aqui. Então,
+[00:09:22] já fiz um balcãozinho aqui, ó, né? Um
+[00:09:25] balcãozinho curvo já com todas as
+[00:09:28] furações, imagina, detalhes. Agora vamos
+[00:09:30] fazer uma coisa, vamos complicar um
+[00:09:32] pouquinho mais. Quando a gente faz peça
+[00:09:34] curva aqui, geralmente a gente precisa
+[00:09:35] de um molde, né? Um molde para fazer
+[00:09:37] ela. Então, lembra que eu deixei já isso
+[00:09:39] aqui, ó? Então o que que a gente vai
+[00:09:40] fazer? Vamos pegar ela aqui.
+[00:09:43] Aí eu pego o offset, tá? Vou pegar
+[00:09:46] offset. Vamos dizer, vamos fazer um
+[00:09:47] moldezinho aqui, sei lá, de uns 10 cm,
+[00:09:49] 10 para dentro ali. 10. Vamos ver se
+[00:09:52] pegou aqui. Pegou. Beleza. Ó, selecionei
+[00:09:54] essa face. Botão direito, op. Opa. Botão
+[00:09:58] direito, op mob. Converter usinage.
+[00:10:0] Criar peça. Vamos fazer esse daqui um
+[00:10:3] pouquinho maisf de 25. Só tô chutando
+[00:10:6] aqui, tá gente? Escolho o veio que eu
+[00:10:8] quero fazer para cá.
+[00:10:10] Vamos fazer para lá que não vai ter veio
+[00:10:12] porque eu vou fazer em peça branca ou em
+[00:10:14] capa ou em qualquer outra coisa, né?
+[00:10:16] Então eu já fiz a minha pecinha aqui que
+[00:10:18] eu vou fazer o molde para fazer a curva
+[00:10:20] do tampo ali, né? Ah, era para pegar a
+[00:10:22] parte de dentro, tá? Me esqueci no
+[00:10:24] detalhe aqui, ó. Conttrl Z. Deixa eu
+[00:10:25] deletar isso aqui porque eu esqueci de
+[00:10:28] um detalhe. Vamos ver se eu consigo
+[00:10:30] desfazer aqui. Acho que não desfaz mais.
+[00:10:32] Eu não copiei outro, né? Ah, não copiei
+[00:10:34] outro. Não tem problema. Vamos ver se
+[00:10:37] tem aqui embaixo. Não. Então, a gente
+[00:10:38] copia por aqui, ó. Vamos fazer esse
+[00:10:39] molde por aqui, ó. Por o molde era para
+[00:10:41] ter feito pela parte de dentro aqui, ó.
+[00:10:43] E eu fiz pela parte de fora. Ele não vai
+[00:10:44] se encaixar lá, né? Eu fiz lá pela parte
+[00:10:46] de fora. Eu teria que botar ele para
+[00:10:48] dentro. Então, podemos fazer daqui de
+[00:10:50] cima mesmo. Então, eu pego essa linha.
+[00:10:52] Opa, deixa eu desbloquear aqui. Aqui, ó.
+[00:10:55] Vamos pegar essa
+[00:10:57] essa linha. Deixa eu ver. Ele não pega
+[00:10:59] aqui, tá? Não vai pegar. Vamos ter que
+[00:11:1] fazer de novo aqui. Então, vamos lá. Vou
+[00:11:4] deletar. Vou deletar aqui.
+[00:11:7] Vamos deletar. Vamos pegar o offset
+[00:11:8] aqui,
+[00:11:11] que na hora de eu pegar ele, eu peguei
+[00:11:14] ele lá pela parte de fora, né, de a
+[00:11:17] parte de fora do do meu do meu tamp. E
+[00:11:20] essa linha eu preciso pegar ela pelo
+[00:11:22] lado de dentro, né? Vamos só fazer aqui
+[00:11:24] mais ou menos, mais ou menos, tá? Depois
+[00:11:25] você já sabe como fazer. Apertei no
+[00:11:27] botão errado, OK? Então vou jogar o
+[00:11:29] offset 15.5 para dentro, ó. 15,5 para
+[00:11:32] dentro ali, tá? Agora essa linha daqui é
+[00:11:36] que eu vou ter que puxar, né? Essa de
+[00:11:38] dentro aqui, ó, é que eu vou ter que
+[00:11:40] puxar ela pra
+[00:11:42] pr dentro do da minha peça, né? Então eu
+[00:11:44] pego ela aqui, puxo, vou puxar aqui uns
+[00:11:47] 10 cm. Gente, aqui era para ter
+[00:11:48] aproveitado o molde, né? Eu não
+[00:11:50] aproveitei o molde, talvez ele ficou
+[00:11:51] mais serrilhado do que eu imaginava, mas
+[00:11:53] não dá nada. Só pra gente seguir aqui o
+[00:11:56] fluxo, né? Então vamos lá. Vocês já
+[00:11:59] entenderam ali como é que é o como que é
+[00:12:1] o processo. Então, fecho aqui e aqui eu
+[00:12:5] vou fechar ele aqui também. Vamos ver se
+[00:12:8] ele fechou. Fechou. Agora sim. Eu peguei
+[00:12:10] a peça lá de dentro. Então vamos lá.
+[00:12:12] Bmob. Converteros.
+[00:12:15] Peça. Já pegou a última configuração.
+[00:12:18] Escolho o veio. Quero veio para cá.
+[00:12:20] Enter.
+[00:12:22] Deixa ele aplicar. Aplicou. E agora a
+[00:12:25] gente chega 2 m para lá.
+[00:12:29] 2 m. Então, eu já fiz o molde que eu
+[00:12:31] precisava para mim fazer várias outras
+[00:12:33] peças. Agora é só copiar, né? Aí eu
+[00:12:35] quero fazer um, sei lá, uma grade aqui,
+[00:12:37] ó, né? A cada, sei lá, vamos volotar a
+[00:12:40] cada 20 cm.
+[00:12:42] Multiplica. Votar aqui umas quatro
+[00:12:44] vezes, ó. Já fiz, foi até demais quatro
+[00:12:47] vezes. Então, eu já fiz os moldes tudo
+[00:12:50] ali, esses moldes aqui também, né?
+[00:12:52] Lembrando, se tu for vir daqui, ó,
+[00:12:54] lembra que não pegou bem certinho ali,
+[00:12:55] né? Mas o molde, ó, ele já tá com a
+[00:12:57] usinagem pronta, já direto pra máquina.
+[00:12:59] Então, eu já fiz até os moldes para
+[00:13:1] fazer uma curva, se eu precisar fazer,
+[00:13:3] né, cara? Isso aqui ficou demais. Dá
+[00:13:4] para fazer peça curva agora sai no
+[00:13:6] orçamento, tá? Eu não vou mostrar o
+[00:13:8] orçamento porque não tá configurado os
+[00:13:10] valores aqui na minha máquina. Deixa eu
+[00:13:12] ver, ó, todo o projeto, ó, não tem
+[00:13:13] valor, ó, peça dinâmica, contorno, tá
+[00:13:16] vendo? Ela tá sem valor. Vamos cadastrar
+[00:13:18] aqui, então. Já aprendemos a cadastrar.
+[00:13:20] Então, vamos lá. Eu vou entrar aqui no,
+[00:13:22] deixa eu ver. Eu acho que é esse daqui
+[00:13:24] ou esse aqui. Esse aqui eu acho que é
+[00:13:25] esse aqui. Não lembro qual é que é. Não,
+[00:13:27] não é esse. Não é esse. É esse aqui
+[00:13:29] mesmo.
+[00:13:31] Então vou entrar aqui. Entrei. Nei aqui.
+[00:13:34] Vamos acessar. Vamos botar aqui insumos.
+[00:13:37] Vou botar um valor qualquer ali. Mas
+[00:13:39] depois, ó, vou vou pegar aquela peça, ó.
+[00:13:41] Ele não tem cadastro, ó. Tá vendo? Sem
+[00:13:43] cadastro. Vou adicionar ele. Coloco
+[00:13:45] aqui. Então, é peça,
+[00:13:51] peça contorno. Botar ali contorno, como
+[00:13:53] ele botou ali. Peça contorno. Como é que
+[00:13:55] tu quer cobrar ela? Metro quadrado,
+[00:13:57] unidade. Metro. Vou cobrar em unidade
+[00:13:59] aqui. Quando tiver uma peça curva, vou
+[00:14:1] botar aqui um 10% de desperdício aqui.
+[00:14:3] Vai, não vai precisar nem botar quebra,
+[00:14:5] mas tudo bem. Vamos dizer que a cada
+[00:14:6] peça curva aqui eu quero cobrar uns R$
+[00:14:8] 200. marcap padrã pá é um produto que é
+[00:14:13] produto final e clica em salvar, tá?
+[00:14:16] Então eu já tô cobrando. Agora ele vai
+[00:14:18] fazer o orçamento lá. Se eu atualizar
+[00:14:20] aqui, ó, atualizo aqui, custo de todo o
+[00:14:25] projeto. Então já vai mostrar aqui, ó,
+[00:14:27] como eu botei um valor fixo ali, né? Ele
+[00:14:29] vai aparecer aqui a peça com valor fixo,
+[00:14:31] né? Ó, curvo, ó. Teve 2.2 m painel
+[00:14:35] curvo, que é esse daqui, e 6.6, né? de
+[00:14:39] contorno aqui, ó, R$ 200, né? Então, ele
+[00:14:41] já tá cobrando até essas peças curvas
+[00:14:44] aqui, ó. Aí o balcão fica bonitinho. Tá
+[00:14:46] sendo cobradas as usinagens. Se tu for
+[00:14:48] chegar nesse daqui, ó, cada usinagem tá
+[00:14:50] sendo cobrada aqui dentro do sistema, ó.
+[00:14:52] Várias usinagens aqui já. Você entrar
+[00:14:55] nesse daqui também, ó, né? Ele também já
+[00:14:58] tá cobrando as usinagens. Olha que
+[00:14:59] bacana, cara. Vocês podem fazer balcão
+[00:15:1] curvo agora direto no PMOB com todas as
+[00:15:4] usinagens, todos os processos, né? tudo
+[00:15:7] certinho já fazer os acabamentos que
+[00:15:10] vocês precisam de forma fácil, prática e
+[00:15:12] dinâmica, né? Olha que top que ficou.

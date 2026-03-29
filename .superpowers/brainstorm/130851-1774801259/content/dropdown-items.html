@@ -1,0 +1,76 @@
+<h2>O que aparece no dropdown do usuário?</h2>
+<p class="subtitle">Escolha quais itens devem estar no menu ao clicar no avatar/nome.</p>
+
+<div class="cards">
+
+  <!-- Opção A: Simples - apenas essencial -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8fafc;padding:16px 20px;display:flex;justify-content:flex-end;">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.1);min-width:160px;overflow:hidden;">
+        <div style="padding:10px 14px;border-bottom:1px solid #f1f5f9;background:#f8fafc;">
+          <div style="font-size:12px;font-weight:600;color:#1e293b;">João Doe</div>
+          <div style="font-size:11px;color:#94a3b8;">joao@email.com</div>
+        </div>
+        <div style="padding:4px 0;">
+          <div style="padding:8px 14px;font-size:13px;color:#374151;display:flex;align-items:center;gap:8px;">⚙️ <span>Configurações</span></div>
+          <div style="height:1px;background:#f1f5f9;margin:2px 0;"></div>
+          <div style="padding:8px 14px;font-size:13px;color:#dc2626;display:flex;align-items:center;gap:8px;">🚪 <span>Sair</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Minimalista</h3>
+      <p>Cabeçalho com nome + email, Configurações e Sair. Direto ao ponto.</p>
+    </div>
+  </div>
+
+  <!-- Opção B: Médio - com perfil -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8fafc;padding:16px 20px;display:flex;justify-content:flex-end;">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.1);min-width:170px;overflow:hidden;">
+        <div style="padding:10px 14px;border-bottom:1px solid #f1f5f9;background:#f8fafc;">
+          <div style="font-size:12px;font-weight:600;color:#1e293b;">João Doe</div>
+          <div style="font-size:11px;color:#94a3b8;">joao@email.com</div>
+        </div>
+        <div style="padding:4px 0;">
+          <div style="padding:8px 14px;font-size:13px;color:#374151;display:flex;align-items:center;gap:8px;">👤 <span>Meu Perfil</span></div>
+          <div style="padding:8px 14px;font-size:13px;color:#374151;display:flex;align-items:center;gap:8px;">⚙️ <span>Configurações</span></div>
+          <div style="height:1px;background:#f1f5f9;margin:2px 0;"></div>
+          <div style="padding:8px 14px;font-size:13px;color:#dc2626;display:flex;align-items:center;gap:8px;">🚪 <span>Sair</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Com Perfil</h3>
+      <p>Adiciona link "Meu Perfil" para editar dados pessoais além de Configurações e Sair.</p>
+    </div>
+  </div>
+
+  <!-- Opção C: Avatar real no header do dropdown -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8fafc;padding:16px 20px;display:flex;justify-content:flex-end;">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.1);min-width:180px;overflow:hidden;">
+        <div style="padding:12px 14px;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:10px;">
+          <div style="width:36px;height:36px;border-radius:50%;background:#2563eb;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700;flex-shrink:0;">JD</div>
+          <div>
+            <div style="font-size:12px;font-weight:600;color:#1e293b;">João Doe</div>
+            <div style="font-size:11px;color:#94a3b8;">joao@email.com</div>
+          </div>
+        </div>
+        <div style="padding:4px 0;">
+          <div style="padding:8px 14px;font-size:13px;color:#374151;display:flex;align-items:center;gap:8px;">👤 <span>Meu Perfil</span></div>
+          <div style="padding:8px 14px;font-size:13px;color:#374151;display:flex;align-items:center;gap:8px;">⚙️ <span>Configurações</span></div>
+          <div style="height:1px;background:#f1f5f9;margin:2px 0;"></div>
+          <div style="padding:8px 14px;font-size:13px;color:#dc2626;display:flex;align-items:center;gap:8px;">🚪 <span>Sair</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Avatar no Dropdown</h3>
+      <p>Avatar repetido dentro do dropdown junto com nome + email. Visual mais rico e reconhecível.</p>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:1.5rem;">Clique para selecionar. Se precisar de outros itens (notificações, tema, etc.), diga no terminal.</p>

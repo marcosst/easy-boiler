@@ -1,0 +1,2 @@
+{"type":"server-started","port":56132,"host":"0.0.0.0","url_host":"localhost","url":"http://localhost:56132","screen_dir":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/157462-1774805507/content","state_dir":"/home/ubuntu/aaaa/easy-boiler/.superpowers/brainstorm/157462-1774805507/state"}
+{"type":"server-stopped","reason":"idle timeout"}
