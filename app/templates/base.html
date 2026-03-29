@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}App{% endblock %}</title>
+    <script>
+      // Blocking: apply dark class immediately to prevent flash
+      (function() {
+        var theme = localStorage.getItem('theme') || 'auto';
+        var isDark = theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (isDark) document.documentElement.classList.add('dark');
+      })();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = { darkMode: 'class' }
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: { light: '#26a69a', DEFAULT: '#26a69a', dark: '#006064' }
+            }
+          }
+        }
+      }
     </script>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.14.3/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.14.3/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
     <script>
@@ -40,7 +58,7 @@
       }
     </script>
 </head>
-<body class="bg-slate-100 dark:bg-slate-900 min-h-screen font-sans transition-colors">
+<body class="bg-slate-100 dark:bg-neutral-900 min-h-screen font-sans transition-colors">
     {% block content %}{% endblock %}
 </body>
 </html>
