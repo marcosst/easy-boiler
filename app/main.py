@@ -131,9 +131,10 @@ async def register_submit(
             context=_ctx(request, {"error": translate("register.email_or_username_taken", request.state.lang), "username": username, "email": email}),
             status_code=422,
         )
+    lang = getattr(request.state, "lang", "pt")
     cursor = await db.execute(
-        "INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)",
-        (username, email, hash_password(password)),
+        "INSERT INTO users (username, email, password_hash, language) VALUES (?, ?, ?, ?)",
+        (username, email, hash_password(password), lang),
     )
     await db.commit()
     token = await create_session(db, cursor.lastrowid)
@@ -191,9 +192,10 @@ async def choose_username_submit(
     provider = request.session["oauth_provider"]
     provider_user_id = request.session["oauth_provider_user_id"]
 
+    lang = getattr(request.state, "lang", "pt")
     cursor = await db.execute(
-        "INSERT INTO users (username, email) VALUES (?, ?)",
-        (username, email),
+        "INSERT INTO users (username, email, language) VALUES (?, ?, ?)",
+        (username, email, lang),
     )
     user_id = cursor.lastrowid
     await db.execute(
