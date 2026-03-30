@@ -502,7 +502,7 @@ async def htmx_delete_subject(
 async def subject_topics(request: Request, username: str, shortname: str, user=Depends(require_auth), db=Depends(get_db)):
     row = await db.execute(
         """
-        SELECT s.id, s.name, s.shortname, s.content_md, s.image_path, s.is_public
+        SELECT s.id, s.name, s.shortname, s.content_json, s.image_path, s.is_public
         FROM subjects s
         JOIN users u ON s.owner_id = u.id
         WHERE u.username = ? AND s.shortname = ?
@@ -512,7 +512,7 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
     subject = await row.fetchone()
     if not subject:
         raise HTTPException(status_code=404)
-    topics = parse_topics_md(subject["content_md"])
+    topics = parse_topics_json(subject["content_json"])
     cursor = await db.execute(
         """
         SELECT id, name, type, url, file_path, image_path
@@ -549,42 +549,6 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
 YOUTUBE_RE = re.compile(
     r"https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/)([\w-]+)"
 )
-
-
-def _youtube_embed(match):
-    vid = match.group(1)
-    return (
-        f'<div class="aspect-video rounded-xl overflow-hidden mb-4 bg-black">'
-        f'<iframe src="https://www.youtube.com/embed/{vid}" class="w-full h-full" '
-        f'frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
-        f'gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
-    )
-
-
-@app.get("/htmx/details/{username}/{shortname}/{detail_id}")
-async def htmx_detail(request: Request, username: str, shortname: str, detail_id: str, user=Depends(require_auth), db=Depends(get_db)):
-    row = await db.execute(
-        """
-        SELECT s.content_md
-        FROM subjects s
-        JOIN users u ON s.owner_id = u.id
-        WHERE u.username = ? AND s.shortname = ?
-        """,
-        (username, shortname),
-    )
-    subject = await row.fetchone()
-    if not subject:
-        raise HTTPException(status_code=404)
-    content = get_detail_content(subject["content_md"], detail_id)
-    if content is None:
-        raise HTTPException(status_code=404)
-    content_html = md.markdown(content)
-    content_html = YOUTUBE_RE.sub(_youtube_embed, content_html)
-    return templates.TemplateResponse(
-        request=request,
-        name="partials/detail_modal.html",
-        context=_ctx(request, {"detail": {"content_html": content_html}}),
-    )
 
 
 # --- Public HTMX routes ---
