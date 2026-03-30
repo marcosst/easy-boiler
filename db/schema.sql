@@ -23,19 +23,6 @@ CREATE TABLE oauth_accounts (
     created_at       DATETIME DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(provider, provider_user_id)
 );
-CREATE TABLE subjects (
-    id         INTEGER PRIMARY KEY AUTOINCREMENT,
-    name       TEXT    NOT NULL,
-    shortname  TEXT    NOT NULL UNIQUE
-                       CHECK(length(shortname) >= 2 AND shortname NOT GLOB '*[^a-z0-9-]*'),
-    is_public  INTEGER NOT NULL DEFAULT 0 CHECK(is_public IN (0, 1)),
-    owner_id   INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
-    image_path TEXT,
-    content_md TEXT,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-CREATE INDEX idx_subjects_owner ON subjects(owner_id);
 CREATE TABLE library_items (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
     subject_id    INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
@@ -51,6 +38,20 @@ CREATE TABLE library_items (
     updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX idx_library_items_subject ON library_items(subject_id);
+CREATE TABLE IF NOT EXISTS "subjects" (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    name       TEXT    NOT NULL,
+    shortname  TEXT    NOT NULL UNIQUE
+                       CHECK(length(shortname) >= 2 AND shortname NOT GLOB '*[^a-z0-9-]*'),
+    is_public  INTEGER NOT NULL DEFAULT 0 CHECK(is_public IN (0, 1)),
+    owner_id   INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
+    image_path TEXT,
+    content_json TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX idx_subjects_owner ON subjects(owner_id);
 -- Dbmate schema migrations
 INSERT INTO "schema_migrations" (version) VALUES
-  ('20240101000000');
+  ('20240101000000'),
+  ('20260330200000');
