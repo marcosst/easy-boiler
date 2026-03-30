@@ -131,7 +131,7 @@
       return text
         .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
         .toLowerCase()
-        .split(/\s+/)
+        .trim().split(/\s+/)
         .slice(0, 3)
         .join('-')
         .replace(/[^a-z0-9-]/g, '')
