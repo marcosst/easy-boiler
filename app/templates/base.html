@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}App{% endblock %}</title>
     <script>
-      // Blocking: apply dark class immediately to prevent flash
+      // Blocking: apply dark class + background immediately to prevent flash
       (function() {
         var theme = localStorage.getItem('theme') || 'auto';
         var isDark = theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
         if (isDark) document.documentElement.classList.add('dark');
-        document.addEventListener('DOMContentLoaded', function() {
-          document.body.style.backgroundImage = isDark ? 'url(/midias/escuro.png)' : 'url(/midias/claro.png)';
-        });
+        document.documentElement.style.backgroundImage = isDark ? 'url(/midias/escuro.png)' : 'url(/midias/claro.png)';
+        document.documentElement.style.backgroundColor = isDark ? '#171717' : '#f1f5f9';
       })();
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -71,7 +70,7 @@
     </script>
 </head>
 <body class="min-h-screen font-sans transition-colors bg-cover bg-center bg-fixed bg-no-repeat"
-      :style="isDark ? 'background-image: url(/midias/escuro.png)' : 'background-image: url(/midias/claro.png)'">
+      :style="isDark ? 'background-image: url(/midias/escuro.png); background-color: #171717' : 'background-image: url(/midias/claro.png); background-color: #f1f5f9'">
     {% block content %}{% endblock %}
 </body>
 </html>
