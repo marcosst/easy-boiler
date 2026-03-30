@@ -23,13 +23,13 @@
     hx-post="/htmx/set-language"
     hx-vals='{"lang": "{{ code }}"}'
     class="w-8 h-8 flex items-center justify-center rounded-lg transition-all cursor-pointer
-      {% if current_lang == code %}ring-2 ring-indigo-400 bg-indigo-500/10{% else %}opacity-50 hover:opacity-100 hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
+      {% if current_lang == code %}ring-2 ring-teal-400 bg-teal-500/10{% else %}opacity-50 hover:opacity-100 hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
   >{{ flag }}</button>
   {% else %}
   <a
     href="?lang={{ code }}"
     class="w-8 h-8 flex items-center justify-center rounded-lg transition-all
-      {% if current_lang == code %}ring-2 ring-indigo-400 bg-indigo-500/10{% else %}opacity-50 hover:opacity-100 hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
+      {% if current_lang == code %}ring-2 ring-teal-400 bg-teal-500/10{% else %}opacity-50 hover:opacity-100 hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
   >{{ flag }}</a>
   {% endif %}
   {% endfor %}
