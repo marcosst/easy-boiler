@@ -94,3 +94,29 @@ def test_set_language_rejects_invalid(auth_client):
         follow_redirects=False,
     )
     assert resp.status_code == 400
+
+
+def test_language_switch_persists_to_db(auth_client):
+    """Full flow: switch language, verify it persists across requests."""
+    resp = auth_client.post("/htmx/set-language", data={"lang": "es"})
+    assert resp.status_code == 200
+    assert resp.headers.get("HX-Refresh") == "true"
+
+    resp = auth_client.get("/testuser")
+    assert resp.status_code == 200
+    assert "Asignaturas" in resp.text
+
+
+def test_public_page_language_via_cookie():
+    """Public pages respect the lang cookie."""
+    from fastapi.testclient import TestClient
+    from app.main import app
+    client = TestClient(app)
+    resp = client.get("/login?lang=es", follow_redirects=False)
+    assert resp.status_code == 307
+    assert resp.cookies.get("lang") == "es"
+
+    client.cookies.set("lang", "es")
+    resp = client.get("/login")
+    assert resp.status_code == 200
+    assert "Inicia sesión en tu cuenta" in resp.text
