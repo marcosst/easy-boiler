@@ -3,16 +3,15 @@
 {% block content %}
 <div class="min-h-screen flex items-center justify-center bg-slate-100 dark:bg-neutral-900 px-4">
   <div class="w-full max-w-sm">
-    <!-- Language selector -->
-    <div class="flex justify-end mb-4">
+    <!-- Logo + Language selector -->
+    <div class="flex items-center justify-between mb-8">
+      <a href="/login">
+        <img src="/static/resumiu-header.svg" alt="resumiu" class="h-14">
+      </a>
       {% set lang_mode = "public" %}
       {% include "partials/language_selector.html" %}
     </div>
-    <!-- Logo -->
     <div class="text-center mb-8">
-      <a href="/login">
-        <img src="/static/resumiu-header.svg" alt="resumiu" class="h-14 mx-auto mb-2">
-      </a>
       <p class="text-sm text-slate-500 dark:text-neutral-500">{{ _('login.title') }}</p>
     </div>
 
