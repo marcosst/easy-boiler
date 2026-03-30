@@ -13,6 +13,7 @@
   <!-- Chat Drawer -->
   <aside
     x-show="chatOpen"
+    x-cloak
     x-transition:enter="transition ease-out duration-300"
     x-transition:enter-start="translate-x-full"
     x-transition:enter-end="translate-x-0"
@@ -75,6 +76,7 @@
   <!-- Side Drawer (Biblioteca) -->
   <aside
     x-show="drawerOpen"
+    x-cloak
     x-transition:enter="transition ease-out duration-300"
     x-transition:enter-start="translate-x-full"
     x-transition:enter-end="translate-x-0"
@@ -131,6 +133,7 @@
               </button>
               <div
                 x-show="menu"
+                x-cloak
                 @click.outside="menu = false"
                 x-transition:enter="transition ease-out duration-100"
                 x-transition:enter-start="opacity-0 scale-95"
@@ -257,7 +260,7 @@
   @open-detail-modal.window="show = true"
   @keydown.escape.window="show = false"
 >
-  <div x-show="show" class="fixed inset-0 z-50 flex items-center justify-center p-4">
+  <div x-show="show" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
     <!-- Backdrop -->
     <div x-show="show" @click="show = false" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 

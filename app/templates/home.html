@@ -45,6 +45,7 @@
       </button>
       <div
         x-show="menu"
+        x-cloak
         @click.outside="menu = false"
         x-transition:enter="transition ease-out duration-100"
         x-transition:enter-start="opacity-0 scale-95"
