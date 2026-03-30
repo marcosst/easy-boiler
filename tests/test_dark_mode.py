@@ -21,9 +21,9 @@ def test_dropdown_contains_tema_toggle(auth_client):
 
 def test_dropdown_contains_theme_options(auth_client):
     response = auth_client.get("/")
-    assert "Claro" in response.text
-    assert "Escuro" in response.text
-    assert "Auto" in response.text
+    assert "setTheme('light')" in response.text
+    assert "setTheme('dark')" in response.text
+    assert "setTheme('auto')" in response.text
 
 
 def test_home_cards_have_dark_classes(auth_client):
@@ -38,11 +38,11 @@ def test_home_section_title_has_dark_class(auth_client):
 
 
 def test_topics_cards_have_dark_classes(auth_client):
-    response = auth_client.get("/testuser/projeto-teste")
+    response = auth_client.get("/testuser/assunto-teste")
     assert "dark:bg-neutral-800" in response.text
     assert "dark:border-neutral-700" in response.text
 
 
 def test_topics_section_title_has_dark_class(auth_client):
-    response = auth_client.get("/testuser/projeto-teste")
+    response = auth_client.get("/testuser/assunto-teste")
     assert "dark:text-neutral-100" in response.text

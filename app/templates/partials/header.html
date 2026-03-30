@@ -78,21 +78,36 @@
                 {{ _('header.theme') }}
               </span>
               <div class="flex items-center gap-1">
+                <!-- Light -->
                 <button
                   @click="setTheme('light')"
-                  :class="theme === 'light' ? 'bg-indigo-500 text-white' : 'text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
-                  class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors cursor-pointer"
-                >{{ _('header.light') }}</button>
+                  :class="theme === 'light' ? 'bg-indigo-500 text-white' : 'text-slate-400 dark:text-neutral-500 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
+                  class="w-8 h-8 flex items-center justify-center rounded-lg transition-colors cursor-pointer"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.95l-.71.71M21 12h-1M4 12H3m16.66 7.66l-.71-.71M4.05 4.05l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                  </svg>
+                </button>
+                <!-- Dark -->
                 <button
                   @click="setTheme('dark')"
-                  :class="theme === 'dark' ? 'bg-indigo-500 text-white' : 'text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
-                  class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors cursor-pointer"
-                >{{ _('header.dark') }}</button>
+                  :class="theme === 'dark' ? 'bg-indigo-500 text-white' : 'text-slate-400 dark:text-neutral-500 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
+                  class="w-8 h-8 flex items-center justify-center rounded-lg transition-colors cursor-pointer"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                  </svg>
+                </button>
+                <!-- Auto -->
                 <button
                   @click="setTheme('auto')"
-                  :class="theme === 'auto' ? 'bg-indigo-500 text-white' : 'text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
-                  class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors cursor-pointer"
-                >{{ _('header.auto') }}</button>
+                  :class="theme === 'auto' ? 'bg-indigo-500 text-white' : 'text-slate-400 dark:text-neutral-500 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
+                  class="w-8 h-8 flex items-center justify-center rounded-lg transition-colors cursor-pointer"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </button>
               </div>
             </div>
 
