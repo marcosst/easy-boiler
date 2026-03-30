@@ -21,8 +21,6 @@ from app.auth import (
     verify_password,
 )
 from app.database import get_db
-from app.i18n import translate, SUPPORTED_LANGS
-from app.i18n.middleware import LanguageMiddleware
 from app.md_parser import get_detail_content, parse_topics_md
 
 app = FastAPI()
@@ -31,22 +29,13 @@ app.add_middleware(
     SessionMiddleware,
     secret_key=os.getenv("SECRET_KEY", "dev-secret-change-me"),
 )
-app.add_middleware(LanguageMiddleware)
-
 app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/midias", StaticFiles(directory="midias"), name="midias")
 templates = Jinja2Templates(directory="app/templates")
 
 
 def _ctx(request: Request, context: dict | None = None) -> dict:
-    """Add i18n helpers to template context."""
     ctx = context or {}
-    lang = getattr(request.state, "lang", "pt")
-    user = ctx.get("user")
-    if user and user.get("language"):
-        lang = user["language"]
-    ctx["_"] = lambda key: translate(key, lang)
-    ctx["current_lang"] = lang
     return ctx
 
 
@@ -87,7 +76,7 @@ async def login_submit(
     if not user or not user["password_hash"] or not verify_password(password, user["password_hash"]):
         return templates.TemplateResponse(
             request=request, name="login.html",
-            context=_ctx(request, {"error": translate("login.invalid_credentials", request.state.lang)}),
+            context=_ctx(request, {"error": "Email ou senha incorretos."}),
             status_code=422,
         )
     token = await create_session(db, user["id"])
@@ -115,26 +104,25 @@ async def register_submit(
     if err:
         return templates.TemplateResponse(
             request=request, name="register.html",
-            context=_ctx(request, {"error": translate(err, request.state.lang), "username": username, "email": email}),
+            context=_ctx(request, {"error": err, "username": username, "email": email}),
             status_code=422,
         )
     if password != password_confirm:
         return templates.TemplateResponse(
             request=request, name="register.html",
-            context=_ctx(request, {"error": translate("register.passwords_mismatch", request.state.lang), "username": username, "email": email}),
+            context=_ctx(request, {"error": "As senhas não coincidem.", "username": username, "email": email}),
             status_code=422,
         )
     row = await db.execute("SELECT id FROM users WHERE email = ? OR username = ?", (email, username))
     if await row.fetchone():
         return templates.TemplateResponse(
             request=request, name="register.html",
-            context=_ctx(request, {"error": translate("register.email_or_username_taken", request.state.lang), "username": username, "email": email}),
+            context=_ctx(request, {"error": "Email ou username já em uso.", "username": username, "email": email}),
             status_code=422,
         )
-    lang = getattr(request.state, "lang", "pt")
     cursor = await db.execute(
-        "INSERT INTO users (username, email, password_hash, language) VALUES (?, ?, ?, ?)",
-        (username, email, hash_password(password), lang),
+        "INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)",
+        (username, email, hash_password(password)),
     )
     await db.commit()
     token = await create_session(db, cursor.lastrowid)
@@ -176,7 +164,7 @@ async def choose_username_submit(
     if err:
         return templates.TemplateResponse(
             request=request, name="choose_username.html",
-            context=_ctx(request, {"error": translate(err, request.state.lang), "username": username}),
+            context=_ctx(request, {"error": err, "username": username}),
             status_code=422,
         )
 
@@ -184,7 +172,7 @@ async def choose_username_submit(
     if await row.fetchone():
         return templates.TemplateResponse(
             request=request, name="choose_username.html",
-            context=_ctx(request, {"error": translate("choose_username.username_taken", request.state.lang), "username": username}),
+            context=_ctx(request, {"error": "Username já em uso.", "username": username}),
             status_code=422,
         )
 
@@ -192,10 +180,9 @@ async def choose_username_submit(
     provider = request.session["oauth_provider"]
     provider_user_id = request.session["oauth_provider_user_id"]
 
-    lang = getattr(request.state, "lang", "pt")
     cursor = await db.execute(
-        "INSERT INTO users (username, email, language) VALUES (?, ?, ?)",
-        (username, email, lang),
+        "INSERT INTO users (username, email) VALUES (?, ?)",
+        (username, email),
     )
     user_id = cursor.lastrowid
     await db.execute(
@@ -249,7 +236,7 @@ async def oauth_callback(request: Request, provider: str, db=Depends(get_db)):
     if not email:
         return templates.TemplateResponse(
             request=request, name="login.html",
-            context=_ctx(request, {"error": translate("login.oauth_email_error", request.state.lang)}),
+            context=_ctx(request, {"error": "Não foi possível obter o email do provedor."}),
             status_code=422,
         )
 
@@ -397,23 +384,6 @@ async def htmx_detail(request: Request, username: str, shortname: str, detail_id
         name="partials/detail_modal.html",
         context=_ctx(request, {"detail": {"content_html": content_html}}),
     )
-
-
-@app.post("/htmx/set-language")
-async def htmx_set_language(
-    request: Request,
-    lang: str = Form(...),
-    user=Depends(require_auth),
-    db=Depends(get_db),
-):
-    if lang not in SUPPORTED_LANGS:
-        return Response(status_code=400)
-    await db.execute("UPDATE users SET language = ? WHERE id = ?", (lang, user["id"]))
-    await db.commit()
-    response = Response(status_code=200)
-    response.headers["HX-Refresh"] = "true"
-    response.set_cookie("lang", lang, max_age=365 * 86400, samesite="lax")
-    return response
 
 
 # --- Public HTMX routes ---

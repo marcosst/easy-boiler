@@ -21,13 +21,13 @@ def verify_password(plain: str, hashed: str) -> bool:
 
 
 def validate_username(username: str) -> str | None:
-    """Return i18n key or None if valid."""
+    """Return error message or None if valid."""
     if not username or len(username) < 2:
-        return "validation.username_min"
+        return "Username deve ter pelo menos 2 caracteres."
     if len(username) > 40:
-        return "validation.username_max"
+        return "Username deve ter no máximo 40 caracteres."
     if not USERNAME_PATTERN.match(username):
-        return "validation.username_pattern"
+        return "Username deve conter apenas letras minúsculas, números e hífens, e começar com letra ou número."
     return None
 
 
@@ -57,7 +57,7 @@ async def get_current_user(request: Request, db) -> dict | None:
     if not token:
         return None
     row = await db.execute(
-        """SELECT u.id, u.username, u.email, u.language
+        """SELECT u.id, u.username, u.email
            FROM sessions s JOIN users u ON s.user_id = u.id
            WHERE s.token = ? AND s.expires_at > ?""",
         (token, datetime.now(timezone.utc).isoformat()),
@@ -66,7 +66,6 @@ async def get_current_user(request: Request, db) -> dict | None:
     if not user:
         return None
     return {"id": user["id"], "username": user["username"], "email": user["email"],
-            "language": user["language"],
             "name": user["username"], "initials": user["username"][:2].upper()}
 
 

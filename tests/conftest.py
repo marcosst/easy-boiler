@@ -12,7 +12,6 @@ CREATE TABLE users (
     username TEXT NOT NULL UNIQUE,
     email TEXT NOT NULL UNIQUE COLLATE NOCASE,
     password_hash TEXT,
-    language TEXT NOT NULL DEFAULT 'pt',
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
