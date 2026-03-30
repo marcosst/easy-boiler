@@ -5,7 +5,10 @@
 {% block section_title %}
 <div class="flex items-center justify-between mb-6">
   <h1 class="text-2xl font-bold text-slate-800 dark:text-neutral-100">Assuntos</h1>
-  <button class="h-10 flex items-center gap-2 px-4 rounded-full bg-teal-500 hover:bg-teal-600 text-white border border-teal-600 dark:border-teal-400 shadow-lg transition-colors cursor-pointer">
+  <button
+    @click="$dispatch('open-subject-modal')"
+    class="h-10 flex items-center gap-2 px-4 rounded-full bg-teal-500 hover:bg-teal-600 text-white border border-teal-600 dark:border-teal-400 shadow-lg transition-colors cursor-pointer"
+  >
     <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
     </svg>
@@ -55,30 +58,300 @@
         x-transition:leave-end="opacity-0 scale-95"
         class="absolute right-0 mt-1 w-40 bg-white dark:bg-neutral-800 rounded-lg border border-slate-200 dark:border-neutral-700 shadow-lg overflow-hidden z-10"
       >
-        <button @click="menu = false" class="w-full flex items-center gap-2 px-3 py-2 text-sm text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer">
+        <button
+          @click="menu = false; $dispatch('open-subject-modal', { id: {{ subject.id }}, name: '{{ subject.name | e }}', shortname: '{{ subject.shortname }}', image_path: '{{ subject.image_path or '' }}', is_public: {{ 'true' if subject.is_public else 'false' }} })"
+          class="w-full flex items-center gap-2 px-3 py-2 text-sm text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
+        >
           <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
           </svg>
-          Renomear
-        </button>
-        <button @click="menu = false" class="w-full flex items-center gap-2 px-3 py-2 text-sm text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer">
-          <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-          </svg>
-          Trocar imagem
-        </button>
-        <button @click="menu = false" class="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors cursor-pointer">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
-          </svg>
-          Excluir
+          Editar
         </button>
       </div>
     </div>
   </div>
-  <a href="/{{ user.username }}/{{ subject.shortname }}" class="block p-3">
+  <a href="/{{ user.username }}/{{ subject.shortname }}" class="block p-3 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors">
     <span class="text-sm font-medium text-slate-800 dark:text-neutral-100">{{ subject.name }}</span>
   </a>
 </div>
 {% endfor %}
+{% endblock %}
+
+{% block extra_content %}
+<!-- Subject Modal -->
+<div
+  x-data="{
+    show: false,
+    id: null,
+    name: '',
+    shortname: '',
+    shortname_dirty: false,
+    is_public: false,
+    image_path: '',
+    image_preview: null,
+    image_file: null,
+    delete_confirm: '',
+    error_field: '',
+    error_message: '',
+    submitting: false,
+
+    get isEdit() { return this.id !== null },
+    get canDelete() { return this.delete_confirm === this.shortname },
+
+    open(detail) {
+      if (detail && detail.id) {
+        this.id = detail.id;
+        this.name = detail.name;
+        this.shortname = detail.shortname;
+        this.shortname_dirty = true;
+        this.is_public = detail.is_public;
+        this.image_path = detail.image_path || '';
+      } else {
+        this.id = null;
+        this.name = '';
+        this.shortname = '';
+        this.shortname_dirty = false;
+        this.is_public = false;
+        this.image_path = '';
+      }
+      this.image_preview = null;
+      this.image_file = null;
+      this.delete_confirm = '';
+      this.error_field = '';
+      this.error_message = '';
+      this.submitting = false;
+      this.show = true;
+    },
+
+    close() {
+      this.show = false;
+    },
+
+    slugify(text) {
+      return text
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .split(/\s+/)
+        .slice(0, 3)
+        .join('-')
+        .replace(/[^a-z0-9-]/g, '')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
+    },
+
+    onNameInput() {
+      if (!this.shortname_dirty) {
+        this.shortname = this.slugify(this.name);
+      }
+    },
+
+    onShortnameInput() {
+      this.shortname_dirty = true;
+    },
+
+    onImageSelect(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      if (file.size > 5 * 1024 * 1024) {
+        this.error_field = 'image';
+        this.error_message = 'Arquivo muito grande (máx. 5MB).';
+        return;
+      }
+      this.image_file = file;
+      this.image_preview = URL.createObjectURL(file);
+      this.error_field = '';
+      this.error_message = '';
+    },
+
+    async submit() {
+      this.error_field = '';
+      this.error_message = '';
+
+      if (!this.name.trim()) {
+        this.error_field = 'name';
+        this.error_message = 'Informe o título do assunto.';
+        return;
+      }
+      if (!/^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(this.shortname) || this.shortname.length < 2 || this.shortname.length > 64) {
+        this.error_field = 'shortname';
+        this.error_message = 'Apenas letras minúsculas, números e hífens (mín. 2, máx. 64 caracteres).';
+        return;
+      }
+
+      this.submitting = true;
+      const formData = new FormData();
+      formData.append('name', this.name.trim());
+      formData.append('shortname', this.shortname);
+      formData.append('is_public', this.is_public ? 'true' : 'false');
+      if (this.image_file) {
+        formData.append('image', this.image_file);
+      }
+
+      const url = this.isEdit ? `/htmx/subjects/${this.id}` : '/htmx/subjects';
+      const method = this.isEdit ? 'PUT' : 'POST';
+
+      try {
+        const resp = await fetch(url, { method, body: formData });
+        const redirect = resp.headers.get('HX-Redirect');
+        if (resp.ok && redirect) {
+          window.location.href = redirect;
+          return;
+        }
+        const trigger = resp.headers.get('HX-Trigger');
+        if (trigger) {
+          const parsed = JSON.parse(trigger);
+          if (parsed['subject-error']) {
+            this.error_field = parsed['subject-error'].field;
+            this.error_message = parsed['subject-error'].message;
+          }
+        }
+      } catch (e) {
+        this.error_message = 'Erro de conexão. Tente novamente.';
+      }
+      this.submitting = false;
+    },
+
+    async submitDelete() {
+      if (!this.canDelete) return;
+      this.submitting = true;
+      const formData = new FormData();
+      formData.append('shortname_confirm', this.delete_confirm);
+
+      try {
+        const resp = await fetch(`/htmx/subjects/${this.id}`, { method: 'DELETE', body: formData });
+        const redirect = resp.headers.get('HX-Redirect');
+        if (resp.ok && redirect) {
+          window.location.href = redirect;
+          return;
+        }
+        const trigger = resp.headers.get('HX-Trigger');
+        if (trigger) {
+          const parsed = JSON.parse(trigger);
+          if (parsed['subject-error']) {
+            this.error_field = parsed['subject-error'].field;
+            this.error_message = parsed['subject-error'].message;
+          }
+        }
+      } catch (e) {
+        this.error_message = 'Erro de conexão. Tente novamente.';
+      }
+      this.submitting = false;
+    }
+  }"
+  @open-subject-modal.window="open($event.detail)"
+  @keydown.escape.window="close()"
+>
+  <div x-show="show" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div x-show="show" @click="close()" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+    <!-- Panel -->
+    <div x-show="show" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="relative bg-white dark:bg-neutral-800 rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto dark-scrollbar">
+      <!-- Close button -->
+      <button @click="close()" class="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600 transition-colors cursor-pointer">
+        <svg class="w-4 h-4 text-slate-500 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <div class="p-6">
+        <!-- Image area 16:9 -->
+        <div class="mb-5">
+          <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-200 dark:bg-neutral-700">
+            <!-- Preview image (newly selected) -->
+            <template x-if="image_preview">
+              <img :src="image_preview" class="w-full h-full object-cover">
+            </template>
+            <!-- Existing image (edit mode, no new selection) -->
+            <template x-if="!image_preview && image_path">
+              <img :src="'/midias/' + image_path" class="w-full h-full object-cover">
+            </template>
+            <!-- Gradient fallback -->
+            <template x-if="!image_preview && !image_path">
+              <div class="w-full h-full bg-gradient-to-br from-purple-400 to-purple-700 flex items-center justify-center">
+                <svg class="w-10 h-10 text-white/60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+              </div>
+            </template>
+            <!-- Upload button -->
+            <button @click="$refs.imageInput.click()" type="button" class="absolute bottom-2 right-2 px-3 py-1.5 rounded-lg text-xs text-white bg-black/50 hover:bg-black/70 backdrop-blur-sm transition-colors cursor-pointer">
+              <span x-text="image_preview || image_path ? 'Trocar imagem' : 'Carregar imagem'"></span>
+            </button>
+            <input x-ref="imageInput" type="file" accept="image/*" class="hidden" @change="onImageSelect($event)">
+          </div>
+          <!-- Image error -->
+          <p x-show="error_field === 'image'" x-text="error_message" class="mt-1.5 text-xs text-red-500"></p>
+        </div>
+
+        <!-- Title -->
+        <div class="mb-4">
+          <label class="block text-xs font-semibold text-slate-500 dark:text-neutral-400 uppercase tracking-wider mb-1.5">Título</label>
+          <input
+            type="text"
+            x-model="name"
+            @input="onNameInput()"
+            placeholder="Nome do assunto..."
+            maxlength="100"
+            class="w-full px-3.5 py-2.5 rounded-lg border text-sm bg-white dark:bg-neutral-900 text-slate-800 dark:text-neutral-100 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-teal-500/50 transition-colors"
+            :class="error_field === 'name' ? 'border-red-400 dark:border-red-500' : 'border-slate-200 dark:border-neutral-700'"
+          >
+          <p x-show="error_field === 'name'" x-text="error_message" class="mt-1.5 text-xs text-red-500"></p>
+        </div>
+
+        <!-- Shortname -->
+        <div class="mb-4">
+          <label class="block text-xs font-semibold text-slate-500 dark:text-neutral-400 uppercase tracking-wider mb-1.5">Nome curto <span class="font-normal normal-case">(usado na URL)</span></label>
+          <input
+            type="text"
+            x-ref="shortname"
+            x-model="shortname"
+            @input="onShortnameInput()"
+            placeholder="nome-do-assunto"
+            class="w-full px-3.5 py-2.5 rounded-lg border text-sm bg-white dark:bg-neutral-900 text-slate-800 dark:text-neutral-100 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-teal-500/50 transition-colors"
+            :class="error_field === 'shortname' ? 'border-red-400 dark:border-red-500' : 'border-slate-200 dark:border-neutral-700'"
+          >
+          <p x-show="error_field === 'shortname'" x-text="error_message" class="mt-1.5 text-xs text-red-500"></p>
+          <p x-show="error_field !== 'shortname'" class="mt-1 text-[11px] text-slate-400 dark:text-neutral-500">exemplo: /{{ user.username }}/<strong x-text="shortname || 'nome-curto'"></strong></p>
+        </div>
+
+        <!-- Visibility toggle -->
+        <div class="mb-6 flex items-center justify-between px-3.5 py-3 rounded-lg border transition-colors" :class="is_public ? 'bg-teal-50 dark:bg-teal-900/20 border-teal-200 dark:border-teal-800' : 'bg-slate-50 dark:bg-neutral-900 border-slate-200 dark:border-neutral-700'">
+          <div>
+            <div class="text-sm font-medium text-slate-700 dark:text-neutral-200">Visibilidade</div>
+            <div class="text-xs" :class="is_public ? 'text-teal-600 dark:text-teal-400' : 'text-slate-400 dark:text-neutral-500'" x-text="is_public ? 'Público — qualquer pessoa pode ver' : 'Privado — só você pode ver'"></div>
+          </div>
+          <button type="button" @click="is_public = !is_public" class="relative w-11 h-6 rounded-full transition-colors cursor-pointer" :class="is_public ? 'bg-teal-500' : 'bg-slate-300 dark:bg-neutral-600'">
+            <div class="absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform" :class="is_public ? 'translate-x-[22px]' : 'translate-x-0.5'"></div>
+          </button>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex justify-end gap-3 mb-1">
+          <button @click="close()" type="button" class="px-5 py-2.5 rounded-lg border border-slate-200 dark:border-neutral-700 text-sm text-slate-600 dark:text-neutral-400 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer">Cancelar</button>
+          <button @click="submit()" type="button" :disabled="submitting" class="px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-teal-500 hover:bg-teal-600 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+            <span x-text="isEdit ? 'Salvar' : 'Criar Assunto'"></span>
+          </button>
+        </div>
+
+        <!-- Danger zone (edit only) -->
+        <template x-if="isEdit">
+          <div class="mt-6 pt-5 border-t border-red-200 dark:border-red-900/50">
+            <div class="text-sm font-semibold text-red-600 dark:text-red-400 mb-2">Zona de perigo</div>
+            <p class="text-xs text-slate-500 dark:text-neutral-400 mb-2.5">Para excluir, digite <strong class="text-slate-700 dark:text-neutral-200" x-text="shortname"></strong> abaixo:</p>
+            <div class="flex gap-2.5">
+              <input
+                type="text"
+                x-model="delete_confirm"
+                placeholder="Digite o nome curto..."
+                class="flex-1 px-3.5 py-2.5 rounded-lg border border-red-200 dark:border-red-900/50 text-sm bg-white dark:bg-neutral-900 text-slate-800 dark:text-neutral-100 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-red-500/50"
+              >
+              <button @click="submitDelete()" type="button" :disabled="!canDelete || submitting" class="px-4 py-2.5 rounded-lg border border-red-200 dark:border-red-900/50 bg-red-50 dark:bg-red-900/20 text-sm font-medium text-red-600 dark:text-red-400 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed" :class="canDelete && 'hover:bg-red-100 dark:hover:bg-red-900/40'">Excluir</button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
