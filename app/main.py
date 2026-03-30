@@ -326,8 +326,18 @@ YOUTUBE_RE = re.compile(
 )
 
 
+def _youtube_embed(match):
+    vid = match.group(1)
+    return (
+        f'<div class="aspect-video rounded-xl overflow-hidden mb-4 bg-black">'
+        f'<iframe src="https://www.youtube.com/embed/{vid}" class="w-full h-full" '
+        f'frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
+        f'gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+    )
+
+
 @app.get("/htmx/details/{username}/{shortname}/{detail_id}")
-async def htmx_detail(request: Request, username: str, shortname: str, detail_id: str, db=Depends(get_db)):
+async def htmx_detail(request: Request, username: str, shortname: str, detail_id: str, user=Depends(require_auth), db=Depends(get_db)):
     row = await db.execute(
         """
         SELECT p.content_md
@@ -344,15 +354,6 @@ async def htmx_detail(request: Request, username: str, shortname: str, detail_id
     if content is None:
         raise HTTPException(status_code=404)
     content_html = md.markdown(content)
-    # Convert YouTube links to embeds
-    def _youtube_embed(match):
-        vid = match.group(1)
-        return (
-            f'<div class="aspect-video rounded-xl overflow-hidden mb-4 bg-black">'
-            f'<iframe src="https://www.youtube.com/embed/{vid}" class="w-full h-full" '
-            f'frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
-            f'gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
-        )
     content_html = YOUTUBE_RE.sub(_youtube_embed, content_html)
     return templates.TemplateResponse(
         request=request,
