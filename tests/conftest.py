@@ -38,11 +38,44 @@ CREATE TABLE projects (
                      CHECK(length(shortname) >= 2 AND shortname NOT GLOB '*[^a-z0-9-]*'),
     is_public INTEGER NOT NULL DEFAULT 0 CHECK(is_public IN (0, 1)),
     image_path TEXT,
+    content_md TEXT,
     owner_id INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+CREATE TABLE library_items (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id INTEGER NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
+    name TEXT NOT NULL,
+    type TEXT NOT NULL CHECK(type IN ('video', 'pdf', 'document', 'other')),
+    url TEXT,
+    file_path TEXT,
+    image_path TEXT,
+    subtitle_path TEXT,
+    metadata TEXT,
+    position INTEGER NOT NULL DEFAULT 0,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX idx_library_items_project ON library_items(project_id);
 """
+
+TEST_CONTENT_MD = """# Introdução
+## Visão Geral
+### Resumo do tema
+Este é um conteúdo de exemplo em **markdown**.
+### Material complementar
+## Contexto Histórico
+### Linha do tempo
+Texto sobre a história do tema.
+# Conceitos Fundamentais
+## Definições
+### Glossário de termos
+Lista de termos e definições relevantes.
+# Aplicações Práticas
+## Estudo de Caso
+### Exemplo resolvido
+Passo a passo de um problema resolvido."""
 
 
 @pytest.fixture
@@ -58,12 +91,12 @@ def auth_client(tmp_path):
                 ("testuser", "test@example.com", hash_password("pass123")),
             )
             await db.execute(
-                "INSERT INTO projects (name, shortname, owner_id) VALUES (?, ?, ?)",
-                ("Projeto Teste", "projeto-teste", 1),
+                "INSERT INTO projects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
+                ("Projeto Teste", "projeto-teste", 1, TEST_CONTENT_MD),
             )
             await db.execute(
-                "INSERT INTO projects (name, shortname, owner_id) VALUES (?, ?, ?)",
-                ("Segundo Projeto", "segundo-projeto", 1),
+                "INSERT INTO projects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
+                ("Segundo Projeto", "segundo-projeto", 1, TEST_CONTENT_MD),
             )
             await db.commit()
             token = await create_session(db, 1)
