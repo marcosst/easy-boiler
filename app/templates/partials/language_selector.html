@@ -1,22 +1,22 @@
-{# Language selector — inline flag buttons.
+{# Language selector — inline text buttons.
    Requires `current_lang` and `lang_mode` in template context.
    lang_mode: "menu" (HTMX POST) or "public" (query param links). #}
-{% set flags = [("en", "🇺🇸"), ("pt", "🇧🇷"), ("es", "🇪🇸")] %}
+{% set langs = [("en", "EN"), ("pt", "PT"), ("es", "ES")] %}
 <div class="flex items-center gap-1">
-  {% for code, flag in flags %}
+  {% for code, label in langs %}
   {% if lang_mode == "menu" %}
   <button
     hx-post="/htmx/set-language"
     hx-vals='{"lang": "{{ code }}"}'
-    class="w-8 h-8 flex items-center justify-center rounded-lg text-base transition-colors cursor-pointer
-      {% if current_lang == code %}bg-indigo-500/20 ring-1 ring-indigo-400{% else %}hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
-  >{{ flag }}</button>
+    class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors cursor-pointer
+      {% if current_lang == code %}bg-indigo-500 text-white{% else %}text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200{% endif %}"
+  >{{ label }}</button>
   {% else %}
   <a
     href="?lang={{ code }}"
-    class="w-8 h-8 flex items-center justify-center rounded-lg text-base transition-colors
-      {% if current_lang == code %}bg-indigo-500/20 ring-1 ring-indigo-400{% else %}hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
-  >{{ flag }}</a>
+    class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors
+      {% if current_lang == code %}bg-indigo-500 text-white{% else %}text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200{% endif %}"
+  >{{ label }}</a>
   {% endif %}
   {% endfor %}
 </div>
