@@ -7,14 +7,13 @@
 </div>
 {% if preview_type %}
 {# Error during save — re-render the form so user can retry #}
-<form x-data="{ saving: false }"
-      hx-post="/htmx/library/save"
+<form hx-post="/htmx/library/save"
       hx-target="#library-items-list" hx-swap="beforeend"
       hx-target-error="#library-preview-area"
       @htmx:before-request="saving = true"
       @htmx:after-request="saving = false"
       hx-on::after-request="if(event.detail.successful) { window.dispatchEvent(new CustomEvent('close-add-modal')) }"
-      class="relative mt-3">
+      class="mt-3">
   <input type="hidden" name="subject_id" value="{{ subject_id }}">
   <input type="hidden" name="type" value="{{ preview_type }}">
   {% if preview_type == 'youtube' %}
@@ -42,24 +41,15 @@
     <span x-show="!saving">Salvar na biblioteca</span>
     <span x-show="saving" x-cloak>Salvando...</span>
   </button>
-
-  <!-- Overlay spinner -->
-  <div x-show="saving" x-cloak
-       class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/60 rounded-lg z-10">
-    <div class="w-14 h-14 border-4 border-teal-500/20 border-t-teal-500 rounded-full animate-spin"></div>
-    <span class="text-sm text-teal-400 font-medium">Baixando metadados e legendas...</span>
-  </div>
 </form>
 {% endif %}
 {% else %}
-<form x-data="{ saving: false }"
-      hx-post="/htmx/library/save"
+<form hx-post="/htmx/library/save"
       hx-target="#library-items-list" hx-swap="beforeend"
       hx-target-error="#library-preview-area"
       @htmx:before-request="saving = true"
       @htmx:after-request="saving = false"
-      hx-on::after-request="if(event.detail.successful) { window.dispatchEvent(new CustomEvent('close-add-modal')) }"
-      class="relative">
+      hx-on::after-request="if(event.detail.successful) { window.dispatchEvent(new CustomEvent('close-add-modal')) }">
   <input type="hidden" name="subject_id" value="{{ subject_id }}">
   <input type="hidden" name="type" value="{{ preview_type }}">
   {% if preview_type == 'youtube' %}
@@ -100,12 +90,5 @@
     <span x-show="!saving">Salvar na biblioteca</span>
     <span x-show="saving" x-cloak>Salvando...</span>
   </button>
-
-  <!-- Overlay spinner -->
-  <div x-show="saving" x-cloak
-       class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/60 rounded-lg z-10">
-    <div class="w-14 h-14 border-4 border-teal-500/20 border-t-teal-500 rounded-full animate-spin"></div>
-    <span class="text-sm text-teal-400 font-medium">Baixando metadados e legendas...</span>
-  </div>
 </form>
 {% endif %}
