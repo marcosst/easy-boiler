@@ -1,4 +1,5 @@
 import asyncio
+import json
 import pytest
 import aiosqlite
 from fastapi.testclient import TestClient
@@ -38,7 +39,7 @@ CREATE TABLE subjects (
                      CHECK(length(shortname) >= 2 AND shortname NOT GLOB '*[^a-z0-9-]*'),
     is_public INTEGER NOT NULL DEFAULT 0 CHECK(is_public IN (0, 1)),
     image_path TEXT,
-    content_md TEXT,
+    content_json TEXT,
     owner_id INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
@@ -47,7 +48,7 @@ CREATE TABLE library_items (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     subject_id INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
     name TEXT NOT NULL,
-    type TEXT NOT NULL CHECK(type IN ('video', 'pdf', 'document', 'other')),
+    type TEXT NOT NULL CHECK(type IN ('youtube', 'pdf')),
     url TEXT,
     file_path TEXT,
     image_path TEXT,
@@ -60,22 +61,15 @@ CREATE TABLE library_items (
 CREATE INDEX idx_library_items_subject ON library_items(subject_id);
 """
 
-TEST_CONTENT_MD = """# Introdução
-## Visão Geral
-### Resumo do tema
-Este é um conteúdo de exemplo em **markdown**.
-### Material complementar
-## Contexto Histórico
-### Linha do tempo
-Texto sobre a história do tema.
-# Conceitos Fundamentais
-## Definições
-### Glossário de termos
-Lista de termos e definições relevantes.
-# Aplicações Práticas
-## Estudo de Caso
-### Exemplo resolvido
-Passo a passo de um problema resolvido."""
+TEST_CONTENT_JSON = json.dumps({
+    "topicos": [{
+        "titulo": "Introducao",
+        "subtopicos": [{
+            "titulo": "Visao Geral",
+            "passos": [{"acao": "Exemplo", "timestamp": None, "pagina": None, "trecho_referencia": "", "file_path": None, "url": None}]
+        }]
+    }]
+})
 
 
 @pytest.fixture
@@ -91,12 +85,12 @@ def auth_client(tmp_path):
                 ("testuser", "test@example.com", hash_password("pass123")),
             )
             await db.execute(
-                "INSERT INTO subjects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
-                ("Assunto Teste", "assunto-teste", 1, TEST_CONTENT_MD),
+                "INSERT INTO subjects (name, shortname, owner_id, content_json) VALUES (?, ?, ?, ?)",
+                ("Assunto Teste", "assunto-teste", 1, TEST_CONTENT_JSON),
             )
             await db.execute(
-                "INSERT INTO subjects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
-                ("Segundo Assunto", "segundo-assunto", 1, TEST_CONTENT_MD),
+                "INSERT INTO subjects (name, shortname, owner_id, content_json) VALUES (?, ?, ?, ?)",
+                ("Segundo Assunto", "segundo-assunto", 1, TEST_CONTENT_JSON),
             )
             await db.commit()
             token = await create_session(db, 1)
