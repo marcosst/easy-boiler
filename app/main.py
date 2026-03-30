@@ -301,9 +301,10 @@ async def user_subjects(request: Request, username: str, user=Depends(require_au
 
 
 ALLOWED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/gif", "image/webp"}
+MIME_TO_EXT = {"image/jpeg": ".jpg", "image/png": ".png", "image/gif": ".gif", "image/webp": ".webp"}
 MAX_IMAGE_SIZE = 5 * 1024 * 1024  # 5MB
 
-SHORTNAME_RE = re.compile(r"^[a-z0-9-]{2,}$")
+SHORTNAME_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$")
 
 
 @app.post("/htmx/subjects")
@@ -325,10 +326,10 @@ async def htmx_create_subject(
             headers={"HX-Trigger": '{"subject-error": {"field": "name", "message": "Informe o título do assunto."}}'},
         )
 
-    if not SHORTNAME_RE.match(shortname):
+    if len(shortname) < 2 or len(shortname) > 64 or not SHORTNAME_RE.match(shortname):
         return Response(
             status_code=422,
-            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2 caracteres)."}}'},
+            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2, máx. 64 caracteres)."}}'},
         )
 
     row = await db.execute("SELECT id FROM subjects WHERE shortname = ?", (shortname,))
@@ -351,7 +352,7 @@ async def htmx_create_subject(
                 status_code=422,
                 headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Arquivo muito grande (máx. 5MB)."}}'},
             )
-        ext = Path(image.filename).suffix.lower() or ".jpg"
+        ext = MIME_TO_EXT[image.content_type]
         filename = f"{uuid.uuid4().hex}{ext}"
         filepath = Path("midias") / filename
         filepath.write_bytes(contents)
@@ -397,10 +398,10 @@ async def htmx_update_subject(
             headers={"HX-Trigger": '{"subject-error": {"field": "name", "message": "Informe o título do assunto."}}'},
         )
 
-    if not SHORTNAME_RE.match(shortname):
+    if len(shortname) < 2 or len(shortname) > 64 or not SHORTNAME_RE.match(shortname):
         return Response(
             status_code=422,
-            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2 caracteres)."}}'},
+            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2, máx. 64 caracteres)."}}'},
         )
 
     row = await db.execute(
@@ -430,7 +431,7 @@ async def htmx_update_subject(
         if subject["image_path"]:
             old_path = Path("midias") / subject["image_path"]
             old_path.unlink(missing_ok=True)
-        ext = Path(image.filename).suffix.lower() or ".jpg"
+        ext = MIME_TO_EXT[image.content_type]
         filename = f"{uuid.uuid4().hex}{ext}"
         filepath = Path("midias") / filename
         filepath.write_bytes(contents)
