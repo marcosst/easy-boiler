@@ -1,0 +1,96 @@
+<h2>Seletor de Idioma no Menu do Usuário</h2>
+<p class="subtitle">Bandeirinhas inline entre "Tema" e "Sair"</p>
+
+<div class="section">
+  <h3>Menu do usuário — com seletor de idioma</h3>
+  <div class="mockup">
+    <div class="mockup-header">Header → Menu Dropdown</div>
+    <div class="mockup-body" style="padding: 0;">
+      <div style="background: #1e293b; border-radius: 8px; padding: 16px; color: #e2e8f0; font-family: system-ui, sans-serif; max-width: 240px; margin: 20px auto;">
+        <!-- User card -->
+        <div style="display: flex; align-items: center; gap: 10px; padding-bottom: 12px; border-bottom: 1px solid #334155;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: #6366f1; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">JD</div>
+          <div>
+            <div style="font-size: 14px; font-weight: 500;">joao-dev</div>
+            <div style="font-size: 12px; color: #94a3b8;">joao@email.com</div>
+          </div>
+        </div>
+
+        <!-- Menu items -->
+        <div style="padding: 8px 0; border-bottom: 1px solid #334155;">
+          <div style="padding: 8px 4px; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 16px;">👤</span> Meu Perfil
+          </div>
+          <div style="padding: 8px 4px; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 16px;">⚙️</span> Configurações
+          </div>
+        </div>
+
+        <!-- Theme -->
+        <div style="padding: 8px 0; border-bottom: 1px solid #334155;">
+          <div style="padding: 8px 4px; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 16px;">🎨</span> Tema
+            <div style="margin-left: auto; display: flex; gap: 4px;">
+              <span style="padding: 3px 8px; background: #334155; border-radius: 4px; font-size: 12px;">☀️</span>
+              <span style="padding: 3px 8px; background: #6366f1; border-radius: 4px; font-size: 12px;">🌙</span>
+              <span style="padding: 3px 8px; background: #334155; border-radius: 4px; font-size: 12px;">Auto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language selector -->
+        <div style="padding: 8px 0; border-bottom: 1px solid #334155;">
+          <div style="padding: 8px 4px; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 16px;">🌐</span> Idioma
+            <div style="margin-left: auto; display: flex; gap: 4px;">
+              <span style="padding: 3px 8px; background: #334155; border-radius: 4px; font-size: 12px; cursor: pointer;">🇺🇸</span>
+              <span style="padding: 3px 8px; background: #6366f1; border-radius: 4px; font-size: 12px; cursor: pointer; box-shadow: 0 0 0 1px #818cf8;">🇧🇷</span>
+              <span style="padding: 3px 8px; background: #334155; border-radius: 4px; font-size: 12px; cursor: pointer;">🇪🇸</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logout -->
+        <div style="padding: 8px 0;">
+          <div style="padding: 8px 4px; font-size: 14px; display: flex; align-items: center; gap: 8px; color: #f87171;">
+            <span style="font-size: 16px;">🚪</span> Sair
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <h3>Páginas públicas — bandeirinhas no canto</h3>
+  <div class="mockup">
+    <div class="mockup-header">Tela de Login</div>
+    <div class="mockup-body" style="padding: 0;">
+      <div style="background: #0f172a; border-radius: 8px; padding: 24px; color: #e2e8f0; font-family: system-ui, sans-serif; position: relative; min-height: 200px;">
+        <!-- Language flags top-right -->
+        <div style="position: absolute; top: 16px; right: 16px; display: flex; gap: 6px;">
+          <span style="padding: 4px 8px; background: #1e293b; border-radius: 6px; font-size: 14px; cursor: pointer;">🇺🇸</span>
+          <span style="padding: 4px 8px; background: #6366f1; border-radius: 6px; font-size: 14px; cursor: pointer; box-shadow: 0 0 0 1px #818cf8;">🇧🇷</span>
+          <span style="padding: 4px 8px; background: #1e293b; border-radius: 6px; font-size: 14px; cursor: pointer;">🇪🇸</span>
+        </div>
+
+        <!-- Login form mockup -->
+        <div style="max-width: 280px; margin: 20px auto 0;">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <div style="font-size: 20px; font-weight: 600;">resumiu</div>
+            <div style="font-size: 14px; color: #94a3b8; margin-top: 4px;">Entre na sua conta</div>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <input class="mock-input" placeholder="Email" style="width: 100%; box-sizing: border-box;">
+          </div>
+          <div style="margin-bottom: 14px;">
+            <input class="mock-input" placeholder="Senha" style="width: 100%; box-sizing: border-box;">
+          </div>
+          <button class="mock-button" style="width: 100%;">Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top: 20px;">O idioma ativo fica destacado (fundo roxo). Clicar numa bandeira troca o idioma imediatamente — a página recarrega com as strings traduzidas.</p>
