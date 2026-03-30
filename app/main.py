@@ -4,6 +4,9 @@ import re
 import uuid
 from pathlib import Path
 
+import httpx
+import fitz  # pymupdf
+
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, Response, UploadFile
 from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
@@ -549,6 +552,144 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
 YOUTUBE_RE = re.compile(
     r"https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/)([\w-]+)"
 )
+
+
+MAX_PDF_SIZE = 50 * 1024 * 1024  # 50MB
+
+
+@app.post("/htmx/library/preview")
+async def htmx_library_preview(
+    request: Request,
+    type: str = Form(...),
+    subject_id: int = Form(...),
+    url: str | None = Form(None),
+    file: UploadFile | None = File(None),
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    # Verify subject belongs to user
+    row = await db.execute(
+        "SELECT id FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    if not await row.fetchone():
+        raise HTTPException(status_code=404)
+
+    username = user["username"]
+    thumb_dir = Path("midias") / username / "thumbnails"
+    thumb_dir.mkdir(parents=True, exist_ok=True)
+
+    if type == "youtube":
+        if not url:
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_preview.html",
+                context=_ctx(request, {"error": "Informe a URL do vídeo."}),
+            )
+        m = YOUTUBE_RE.search(url)
+        if not m:
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_preview.html",
+                context=_ctx(request, {"error": "URL do YouTube inválida."}),
+            )
+        video_id = m.group(1)
+
+        # Fetch title via oEmbed
+        title = url
+        try:
+            oembed_resp = httpx.get(
+                "https://noembed.com/embed",
+                params={"url": f"https://www.youtube.com/watch?v={video_id}"},
+                timeout=10,
+            )
+            oembed_resp.raise_for_status()
+            title = oembed_resp.json().get("title", url)
+        except Exception:
+            pass
+
+        # Download thumbnail
+        thumb_filename = f"{uuid.uuid4().hex}.jpg"
+        thumb_path = thumb_dir / thumb_filename
+        try:
+            thumb_resp = httpx.get(
+                f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg",
+                timeout=10,
+            )
+            thumb_resp.raise_for_status()
+            thumb_path.write_bytes(thumb_resp.content)
+        except Exception:
+            thumb_path = None
+
+        image_path = f"{username}/thumbnails/{thumb_filename}" if thumb_path else None
+
+        return templates.TemplateResponse(
+            request=request,
+            name="partials/library_preview.html",
+            context=_ctx(request, {
+                "preview_type": "youtube",
+                "preview_name": title,
+                "preview_url": url,
+                "preview_image_path": image_path,
+                "subject_id": subject_id,
+            }),
+        )
+
+    elif type == "pdf":
+        if not file or not file.filename:
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_preview.html",
+                context=_ctx(request, {"error": "Selecione um arquivo PDF."}),
+            )
+
+        contents = await file.read()
+        if len(contents) > MAX_PDF_SIZE:
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_preview.html",
+                context=_ctx(request, {"error": "Arquivo muito grande (máx. 50MB)."}),
+            )
+
+        # Save PDF
+        pdf_dir = Path("midias") / username / "pdfs"
+        pdf_dir.mkdir(parents=True, exist_ok=True)
+        pdf_filename = f"{uuid.uuid4().hex}.pdf"
+        pdf_path = pdf_dir / pdf_filename
+        pdf_path.write_bytes(contents)
+
+        # Generate thumbnail from first page
+        thumb_filename = f"{uuid.uuid4().hex}.jpg"
+        thumb_path = thumb_dir / thumb_filename
+        try:
+            doc = fitz.open(stream=contents, filetype="pdf")
+            page = doc[0]
+            pix = page.get_pixmap(matrix=fitz.Matrix(600 / page.rect.width, 600 / page.rect.width))
+            pix.save(str(thumb_path))
+            doc.close()
+        except Exception:
+            thumb_path = None
+
+        image_path = f"{username}/thumbnails/{thumb_filename}" if thumb_path else None
+        original_name = Path(file.filename).stem
+
+        return templates.TemplateResponse(
+            request=request,
+            name="partials/library_preview.html",
+            context=_ctx(request, {
+                "preview_type": "pdf",
+                "preview_name": original_name,
+                "preview_file_path": f"{username}/pdfs/{pdf_filename}",
+                "preview_image_path": image_path,
+                "subject_id": subject_id,
+            }),
+        )
+
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/library_preview.html",
+        context=_ctx(request, {"error": "Tipo inválido."}),
+    )
 
 
 # --- Public HTMX routes ---
