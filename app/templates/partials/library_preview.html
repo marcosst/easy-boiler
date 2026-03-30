@@ -6,7 +6,7 @@
   <p class="text-sm text-red-600 dark:text-red-400">{{ error }}</p>
 </div>
 {% else %}
-<form hx-post="/htmx/library/save" hx-target="#library-items-list" hx-swap="beforeend" hx-on::after-request="if(event.detail.successful) { document.dispatchEvent(new CustomEvent('close-add-modal')) }">
+<form hx-post="/htmx/library/save" hx-target="#library-items-list" hx-swap="beforeend" hx-on::after-request="if(event.detail.successful) { window.dispatchEvent(new CustomEvent('close-add-modal')) }">
   <input type="hidden" name="subject_id" value="{{ subject_id }}">
   <input type="hidden" name="type" value="{{ preview_type }}">
   {% if preview_type == 'youtube' %}
