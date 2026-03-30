@@ -7,7 +7,8 @@
 {% block content %}
 {% include "partials/header.html" %}
 
-<div x-data="{ drawerOpen: false, chatOpen: false, chatMessages: [], chatInput: '' }" x-init="chatMessages = [{ role: 'assistant', text: {{ _('topics.chat_greeting') | tojson }} }]">
+<script>window.__chatGreeting = {{ _('topics.chat_greeting') | tojson }};</script>
+<div x-data="{ drawerOpen: false, chatOpen: false, chatMessages: [{ role: 'assistant', text: window.__chatGreeting }], chatInput: '' }">
 
   <!-- Chat Drawer -->
   <aside
