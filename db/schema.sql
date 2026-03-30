@@ -37,7 +37,7 @@ CREATE TABLE projects (
     owner_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
     created_at   DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at   DATETIME DEFAULT CURRENT_TIMESTAMP
-, image_path TEXT);
+, image_path TEXT, content_md TEXT);
 CREATE INDEX idx_projects_owner ON projects(owner_id);
 CREATE TABLE project_images (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -47,9 +47,25 @@ CREATE TABLE project_images (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX idx_project_images_project ON project_images(project_id);
+CREATE TABLE library_items (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id INTEGER NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
+    name TEXT NOT NULL,
+    type TEXT NOT NULL CHECK(type IN ('video', 'pdf', 'document', 'other')),
+    url TEXT,
+    file_path TEXT,
+    image_path TEXT,
+    subtitle_path TEXT,
+    metadata TEXT,
+    position INTEGER NOT NULL DEFAULT 0,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX idx_library_items_project ON library_items(project_id);
 -- Dbmate schema migrations
 INSERT INTO "schema_migrations" (version) VALUES
   ('20240101000000'),
   ('20260329000000'),
   ('20260329222835'),
-  ('20260329232616');
+  ('20260329232616'),
+  ('20260330013742');
