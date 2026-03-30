@@ -2,7 +2,10 @@ import os
 import re
 
 import markdown as md
-from fastapi import Depends, FastAPI, Form, HTTPException, Request, Response
+import uuid
+from pathlib import Path
+
+from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, Response, UploadFile
 from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -286,7 +289,7 @@ async def user_subjects(request: Request, username: str, user=Depends(require_au
     if not profile_user:
         raise HTTPException(status_code=404)
     cursor = await db.execute(
-        "SELECT id, name, shortname, image_path, created_at FROM subjects WHERE owner_id = ? ORDER BY created_at DESC",
+        "SELECT id, name, shortname, image_path, is_public, created_at FROM subjects WHERE owner_id = ? ORDER BY created_at DESC",
         (profile_user["id"],),
     )
     subjects = await cursor.fetchall()
@@ -294,6 +297,191 @@ async def user_subjects(request: Request, username: str, user=Depends(require_au
         request=request,
         name="home.html",
         context=_ctx(request, {"user": user, "subjects": subjects}),
+    )
+
+
+ALLOWED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/gif", "image/webp"}
+MAX_IMAGE_SIZE = 5 * 1024 * 1024  # 5MB
+
+SHORTNAME_RE = re.compile(r"^[a-z0-9-]{2,}$")
+
+
+@app.post("/htmx/subjects")
+async def htmx_create_subject(
+    request: Request,
+    name: str = Form(...),
+    shortname: str = Form(...),
+    is_public: bool = Form(False),
+    image: UploadFile | None = File(None),
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    name = name.strip()
+    shortname = shortname.strip().lower()
+
+    if not name:
+        return Response(
+            status_code=422,
+            headers={"HX-Trigger": '{"subject-error": {"field": "name", "message": "Informe o título do assunto."}}'},
+        )
+
+    if not SHORTNAME_RE.match(shortname):
+        return Response(
+            status_code=422,
+            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2 caracteres)."}}'},
+        )
+
+    row = await db.execute("SELECT id FROM subjects WHERE shortname = ?", (shortname,))
+    if await row.fetchone():
+        return Response(
+            status_code=422,
+            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Este nome curto já está em uso. Escolha outro."}}'},
+        )
+
+    image_path = None
+    if image and image.filename:
+        if image.content_type not in ALLOWED_IMAGE_TYPES:
+            return Response(
+                status_code=422,
+                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Tipo de arquivo não suportado."}}'},
+            )
+        contents = await image.read()
+        if len(contents) > MAX_IMAGE_SIZE:
+            return Response(
+                status_code=422,
+                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Arquivo muito grande (máx. 5MB)."}}'},
+            )
+        ext = Path(image.filename).suffix.lower() or ".jpg"
+        filename = f"{uuid.uuid4().hex}{ext}"
+        filepath = Path("midias") / filename
+        filepath.write_bytes(contents)
+        image_path = filename
+
+    await db.execute(
+        "INSERT INTO subjects (name, shortname, is_public, owner_id, image_path) VALUES (?, ?, ?, ?, ?)",
+        (name, shortname, int(is_public), user["id"], image_path),
+    )
+    await db.commit()
+
+    return Response(
+        status_code=204,
+        headers={"HX-Redirect": f"/{user['username']}"},
+    )
+
+
+@app.put("/htmx/subjects/{subject_id}")
+async def htmx_update_subject(
+    request: Request,
+    subject_id: int,
+    name: str = Form(...),
+    shortname: str = Form(...),
+    is_public: bool = Form(False),
+    image: UploadFile | None = File(None),
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    row = await db.execute(
+        "SELECT id, shortname, image_path FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    subject = await row.fetchone()
+    if not subject:
+        raise HTTPException(status_code=404)
+
+    name = name.strip()
+    shortname = shortname.strip().lower()
+
+    if not name:
+        return Response(
+            status_code=422,
+            headers={"HX-Trigger": '{"subject-error": {"field": "name", "message": "Informe o título do assunto."}}'},
+        )
+
+    if not SHORTNAME_RE.match(shortname):
+        return Response(
+            status_code=422,
+            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2 caracteres)."}}'},
+        )
+
+    row = await db.execute(
+        "SELECT id FROM subjects WHERE shortname = ? AND id != ?",
+        (shortname, subject_id),
+    )
+    if await row.fetchone():
+        return Response(
+            status_code=422,
+            headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Este nome curto já está em uso. Escolha outro."}}'},
+        )
+
+    image_path = subject["image_path"]
+    if image and image.filename:
+        if image.content_type not in ALLOWED_IMAGE_TYPES:
+            return Response(
+                status_code=422,
+                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Tipo de arquivo não suportado."}}'},
+            )
+        contents = await image.read()
+        if len(contents) > MAX_IMAGE_SIZE:
+            return Response(
+                status_code=422,
+                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Arquivo muito grande (máx. 5MB)."}}'},
+            )
+        # Remove old image if exists
+        if subject["image_path"]:
+            old_path = Path("midias") / subject["image_path"]
+            old_path.unlink(missing_ok=True)
+        ext = Path(image.filename).suffix.lower() or ".jpg"
+        filename = f"{uuid.uuid4().hex}{ext}"
+        filepath = Path("midias") / filename
+        filepath.write_bytes(contents)
+        image_path = filename
+
+    await db.execute(
+        "UPDATE subjects SET name = ?, shortname = ?, is_public = ?, image_path = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+        (name, shortname, int(is_public), image_path, subject_id),
+    )
+    await db.commit()
+
+    return Response(
+        status_code=204,
+        headers={"HX-Redirect": f"/{user['username']}"},
+    )
+
+
+@app.delete("/htmx/subjects/{subject_id}")
+async def htmx_delete_subject(
+    request: Request,
+    subject_id: int,
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    form = await request.form()
+    shortname_confirm = form.get("shortname_confirm", "").strip()
+
+    row = await db.execute(
+        "SELECT id, shortname, image_path FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    subject = await row.fetchone()
+    if not subject:
+        raise HTTPException(status_code=404)
+
+    if shortname_confirm != subject["shortname"]:
+        return Response(
+            status_code=422,
+            headers={"HX-Trigger": '{"subject-error": {"field": "delete", "message": "Nome curto não confere."}}'},
+        )
+
+    if subject["image_path"]:
+        old_path = Path("midias") / subject["image_path"]
+        old_path.unlink(missing_ok=True)
+
+    await db.execute("DELETE FROM subjects WHERE id = ?", (subject_id,))
+    await db.commit()
+
+    return Response(
+        status_code=204,
+        headers={"HX-Redirect": f"/{user['username']}"},
     )
 
 
