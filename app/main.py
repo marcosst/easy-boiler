@@ -706,6 +706,18 @@ async def htmx_library_preview(
             )
         video_id = m.group(1)
 
+        # Check if video already exists in user's library
+        dup = await db.execute(
+            "SELECT id FROM library_items WHERE url = ? AND subject_id = ? AND deleted_at IS NULL",
+            (url, subject_id),
+        )
+        if await dup.fetchone():
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_preview.html",
+                context=_ctx(request, {"error": "Este vídeo já existe na biblioteca."}),
+            )
+
         # Fetch title via oEmbed
         title = url
         try:
@@ -849,26 +861,6 @@ async def htmx_library_save(
     if type == "youtube" and url:
         m = YOUTUBE_RE.search(url)
         video_id = m.group(1) if m else None
-
-        # Check if video already exists in user's library
-        dup = await db.execute(
-            "SELECT id FROM library_items WHERE url = ? AND subject_id = ? AND deleted_at IS NULL",
-            (url, subject_id),
-        )
-        if await dup.fetchone():
-            return templates.TemplateResponse(
-                request=request,
-                name="partials/library_preview.html",
-                context=_ctx(request, {
-                    "error": "Este vídeo já existe na biblioteca.",
-                    "preview_type": "youtube",
-                    "preview_name": name,
-                    "preview_url": url,
-                    "preview_image_path": image_path,
-                    "subject_id": subject_id,
-                }),
-                status_code=422,
-            )
 
         try:
             metadata, subtitle_text = await fetch_apify_data(url)
