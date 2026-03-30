@@ -1,0 +1,22 @@
+{# Language selector — inline flag buttons.
+   Requires `current_lang` and `lang_mode` in template context.
+   lang_mode: "menu" (HTMX POST) or "public" (query param links). #}
+{% set flags = [("en", "🇺🇸"), ("pt", "🇧🇷"), ("es", "🇪🇸")] %}
+<div class="flex items-center gap-1">
+  {% for code, flag in flags %}
+  {% if lang_mode == "menu" %}
+  <button
+    hx-post="/htmx/set-language"
+    hx-vals='{"lang": "{{ code }}"}'
+    class="w-8 h-8 flex items-center justify-center rounded-lg text-base transition-colors cursor-pointer
+      {% if current_lang == code %}bg-indigo-500/20 ring-1 ring-indigo-400{% else %}hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
+  >{{ flag }}</button>
+  {% else %}
+  <a
+    href="?lang={{ code }}"
+    class="w-8 h-8 flex items-center justify-center rounded-lg text-base transition-colors
+      {% if current_lang == code %}bg-indigo-500/20 ring-1 ring-indigo-400{% else %}hover:bg-slate-100 dark:hover:bg-neutral-700{% endif %}"
+  >{{ flag }}</a>
+  {% endif %}
+  {% endfor %}
+</div>

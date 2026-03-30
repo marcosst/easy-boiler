@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}{{ project.name }}{% endblock %}
+{% block title %}{{ subject.name }}{% endblock %}
 
-{% set header_title = '<span class="text-2xl font-bold text-slate-800 dark:text-neutral-100">' ~ project.name ~ '</span>' %}
+{% set header_title = '<span class="text-2xl font-bold text-slate-800 dark:text-neutral-100">' ~ subject.name ~ '</span>' %}
 
 {% block content %}
 {% include "partials/header.html" %}
 
-<div x-data="{ drawerOpen: false, chatOpen: false, chatMessages: [], chatInput: '' }" x-init="chatMessages = [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este projeto.' }]">
+<div x-data="{ drawerOpen: false, chatOpen: false, chatMessages: [], chatInput: '' }" x-init="chatMessages = [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este assunto.' }]">
 
   <!-- Chat Drawer -->
   <aside

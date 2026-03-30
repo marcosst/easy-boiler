@@ -1,13 +1,17 @@
 {% extends "base.html" %}
-{% block title %}Criar Conta — resumiu{% endblock %}
+{% block title %}{{ _('register.page_title') }}{% endblock %}
 {% block content %}
 <div class="min-h-screen flex items-center justify-center bg-slate-100 dark:bg-neutral-900 px-4">
   <div class="w-full max-w-sm">
+    <div class="flex justify-end mb-4">
+      {% set lang_mode = "public" %}
+      {% include "partials/language_selector.html" %}
+    </div>
     <div class="text-center mb-8">
       <a href="/login">
         <img src="/static/resumiu-logo.svg" alt="resumiu" class="h-10 mx-auto mb-2">
       </a>
-      <p class="text-sm text-slate-500 dark:text-neutral-500">Crie sua conta</p>
+      <p class="text-sm text-slate-500 dark:text-neutral-500">{{ _('register.title') }}</p>
     </div>
 
     {% if error %}
@@ -16,25 +20,25 @@
 
     <form method="post" action="/register" class="flex flex-col gap-3.5 mb-6">
       <div>
-        <input type="text" name="username" placeholder="Username" required pattern="[a-z0-9][a-z0-9-]*" value="{{ username or '' }}"
+        <input type="text" name="username" placeholder="{{ _('register.username') }}" required pattern="[a-z0-9][a-z0-9-]*" value="{{ username or '' }}"
           class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-800 dark:text-neutral-200 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
-        <p class="mt-1 ml-1 text-xs text-slate-400 dark:text-neutral-500">Apenas letras minúsculas, números e hífens</p>
+        <p class="mt-1 ml-1 text-xs text-slate-400 dark:text-neutral-500">{{ _('register.username_hint') }}</p>
       </div>
-      <input type="email" name="email" placeholder="Email" required value="{{ email or '' }}"
+      <input type="email" name="email" placeholder="{{ _('register.email') }}" required value="{{ email or '' }}"
         class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-800 dark:text-neutral-200 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
-      <input type="password" name="password" placeholder="Senha" required
+      <input type="password" name="password" placeholder="{{ _('register.password') }}" required
         class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-800 dark:text-neutral-200 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
-      <input type="password" name="password_confirm" placeholder="Confirmar senha" required
+      <input type="password" name="password_confirm" placeholder="{{ _('register.confirm_password') }}" required
         class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-800 dark:text-neutral-200 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
       <button type="submit"
         class="w-full py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-lg transition-colors cursor-pointer">
-        Criar conta
+        {{ _('register.submit') }}
       </button>
     </form>
 
     <div class="flex items-center gap-3 mb-6">
       <div class="flex-1 h-px bg-slate-300 dark:bg-neutral-700"></div>
-      <span class="text-xs text-slate-400 dark:text-neutral-500">ou continue com</span>
+      <span class="text-xs text-slate-400 dark:text-neutral-500">{{ _('register.or_continue') }}</span>
       <div class="flex-1 h-px bg-slate-300 dark:bg-neutral-700"></div>
     </div>
 
@@ -51,8 +55,8 @@
     </div>
 
     <p class="text-center text-sm text-slate-500 dark:text-neutral-500">
-      Já tem conta?
-      <a href="/login" class="text-brand hover:underline">Entrar</a>
+      {{ _('register.has_account') }}
+      <a href="/login" class="text-brand hover:underline">{{ _('register.sign_in') }}</a>
     </p>
   </div>
 </div>
