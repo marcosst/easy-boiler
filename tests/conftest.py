@@ -12,6 +12,7 @@ CREATE TABLE users (
     username TEXT NOT NULL UNIQUE,
     email TEXT NOT NULL UNIQUE COLLATE NOCASE,
     password_hash TEXT,
+    language TEXT NOT NULL DEFAULT 'pt',
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
@@ -31,7 +32,7 @@ CREATE TABLE oauth_accounts (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(provider, provider_user_id)
 );
-CREATE TABLE projects (
+CREATE TABLE subjects (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     shortname TEXT NOT NULL UNIQUE
@@ -45,7 +46,7 @@ CREATE TABLE projects (
 );
 CREATE TABLE library_items (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    project_id INTEGER NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
+    subject_id INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
     name TEXT NOT NULL,
     type TEXT NOT NULL CHECK(type IN ('video', 'pdf', 'document', 'other')),
     url TEXT,
@@ -57,7 +58,7 @@ CREATE TABLE library_items (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
-CREATE INDEX idx_library_items_project ON library_items(project_id);
+CREATE INDEX idx_library_items_subject ON library_items(subject_id);
 """
 
 TEST_CONTENT_MD = """# Introdução
@@ -91,12 +92,12 @@ def auth_client(tmp_path):
                 ("testuser", "test@example.com", hash_password("pass123")),
             )
             await db.execute(
-                "INSERT INTO projects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
-                ("Projeto Teste", "projeto-teste", 1, TEST_CONTENT_MD),
+                "INSERT INTO subjects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
+                ("Assunto Teste", "assunto-teste", 1, TEST_CONTENT_MD),
             )
             await db.execute(
-                "INSERT INTO projects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
-                ("Segundo Projeto", "segundo-projeto", 1, TEST_CONTENT_MD),
+                "INSERT INTO subjects (name, shortname, owner_id, content_md) VALUES (?, ?, ?, ?)",
+                ("Segundo Assunto", "segundo-assunto", 1, TEST_CONTENT_MD),
             )
             await db.commit()
             token = await create_session(db, 1)
