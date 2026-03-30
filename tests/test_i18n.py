@@ -74,3 +74,23 @@ def test_middleware_ignores_unsupported_lang_param():
     resp = client.get("/?lang=fr", follow_redirects=False)
     assert resp.status_code == 200
     assert resp.text == "pt"
+
+
+def test_set_language_saves_cookie_and_refreshes(auth_client):
+    resp = auth_client.post(
+        "/htmx/set-language",
+        data={"lang": "en"},
+        follow_redirects=False,
+    )
+    assert resp.status_code == 200
+    assert resp.headers.get("HX-Refresh") == "true"
+    assert resp.cookies.get("lang") == "en"
+
+
+def test_set_language_rejects_invalid(auth_client):
+    resp = auth_client.post(
+        "/htmx/set-language",
+        data={"lang": "fr"},
+        follow_redirects=False,
+    )
+    assert resp.status_code == 400

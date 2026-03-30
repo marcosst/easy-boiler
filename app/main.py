@@ -21,6 +21,8 @@ from app.auth import (
     verify_password,
 )
 from app.database import get_db
+from app.i18n import translate, SUPPORTED_LANGS
+from app.i18n.middleware import LanguageMiddleware
 from app.md_parser import get_detail_content, parse_topics_md
 
 app = FastAPI()
@@ -29,10 +31,23 @@ app.add_middleware(
     SessionMiddleware,
     secret_key=os.getenv("SECRET_KEY", "dev-secret-change-me"),
 )
+app.add_middleware(LanguageMiddleware)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/midias", StaticFiles(directory="midias"), name="midias")
 templates = Jinja2Templates(directory="app/templates")
+
+
+def _ctx(request: Request, context: dict | None = None) -> dict:
+    """Add i18n helpers to template context."""
+    ctx = context or {}
+    lang = getattr(request.state, "lang", "pt")
+    user = ctx.get("user")
+    if user and user.get("language"):
+        lang = user["language"]
+    ctx["_"] = lambda key: translate(key, lang)
+    ctx["current_lang"] = lang
+    return ctx
 
 
 # --- Auth redirect exception ---
@@ -57,7 +72,7 @@ async def require_auth(request: Request, db=Depends(get_db)):
 
 @app.get("/login")
 async def login_page(request: Request):
-    return templates.TemplateResponse(request=request, name="login.html", context={})
+    return templates.TemplateResponse(request=request, name="login.html", context=_ctx(request))
 
 
 @app.post("/login")
@@ -72,7 +87,7 @@ async def login_submit(
     if not user or not user["password_hash"] or not verify_password(password, user["password_hash"]):
         return templates.TemplateResponse(
             request=request, name="login.html",
-            context={"error": "Email ou senha incorretos."},
+            context=_ctx(request, {"error": translate("login.invalid_credentials", request.state.lang)}),
             status_code=422,
         )
     token = await create_session(db, user["id"])
@@ -83,7 +98,7 @@ async def login_submit(
 
 @app.get("/register")
 async def register_page(request: Request):
-    return templates.TemplateResponse(request=request, name="register.html", context={})
+    return templates.TemplateResponse(request=request, name="register.html", context=_ctx(request))
 
 
 @app.post("/register")
@@ -100,20 +115,20 @@ async def register_submit(
     if err:
         return templates.TemplateResponse(
             request=request, name="register.html",
-            context={"error": err, "username": username, "email": email},
+            context=_ctx(request, {"error": translate(err, request.state.lang), "username": username, "email": email}),
             status_code=422,
         )
     if password != password_confirm:
         return templates.TemplateResponse(
             request=request, name="register.html",
-            context={"error": "As senhas não coincidem.", "username": username, "email": email},
+            context=_ctx(request, {"error": translate("register.passwords_mismatch", request.state.lang), "username": username, "email": email}),
             status_code=422,
         )
     row = await db.execute("SELECT id FROM users WHERE email = ? OR username = ?", (email, username))
     if await row.fetchone():
         return templates.TemplateResponse(
             request=request, name="register.html",
-            context={"error": "Email ou username já em uso.", "username": username, "email": email},
+            context=_ctx(request, {"error": translate("register.email_or_username_taken", request.state.lang), "username": username, "email": email}),
             status_code=422,
         )
     cursor = await db.execute(
@@ -143,7 +158,7 @@ async def logout(request: Request, db=Depends(get_db)):
 async def choose_username_page(request: Request):
     if "oauth_email" not in request.session:
         return RedirectResponse("/login", status_code=303)
-    return templates.TemplateResponse(request=request, name="choose_username.html", context={})
+    return templates.TemplateResponse(request=request, name="choose_username.html", context=_ctx(request))
 
 
 @app.post("/auth/choose-username")
@@ -160,7 +175,7 @@ async def choose_username_submit(
     if err:
         return templates.TemplateResponse(
             request=request, name="choose_username.html",
-            context={"error": err, "username": username},
+            context=_ctx(request, {"error": translate(err, request.state.lang), "username": username}),
             status_code=422,
         )
 
@@ -168,7 +183,7 @@ async def choose_username_submit(
     if await row.fetchone():
         return templates.TemplateResponse(
             request=request, name="choose_username.html",
-            context={"error": "Username já em uso.", "username": username},
+            context=_ctx(request, {"error": translate("choose_username.username_taken", request.state.lang), "username": username}),
             status_code=422,
         )
 
@@ -232,7 +247,7 @@ async def oauth_callback(request: Request, provider: str, db=Depends(get_db)):
     if not email:
         return templates.TemplateResponse(
             request=request, name="login.html",
-            context={"error": "Não foi possível obter o email do provedor."},
+            context=_ctx(request, {"error": translate("login.oauth_email_error", request.state.lang)}),
             status_code=422,
         )
 
@@ -276,46 +291,46 @@ async def home(request: Request, user=Depends(require_auth)):
 
 
 @app.get("/{username}")
-async def user_projects(request: Request, username: str, user=Depends(require_auth), db=Depends(get_db)):
+async def user_subjects(request: Request, username: str, user=Depends(require_auth), db=Depends(get_db)):
     row = await db.execute("SELECT id FROM users WHERE username = ?", (username,))
     profile_user = await row.fetchone()
     if not profile_user:
         raise HTTPException(status_code=404)
     cursor = await db.execute(
-        "SELECT id, name, shortname, image_path, created_at FROM projects WHERE owner_id = ? ORDER BY created_at DESC",
+        "SELECT id, name, shortname, image_path, created_at FROM subjects WHERE owner_id = ? ORDER BY created_at DESC",
         (profile_user["id"],),
     )
-    projects = await cursor.fetchall()
+    subjects = await cursor.fetchall()
     return templates.TemplateResponse(
         request=request,
         name="home.html",
-        context={"user": user, "projects": projects},
+        context=_ctx(request, {"user": user, "subjects": subjects}),
     )
 
 
 @app.get("/{username}/{shortname}")
-async def project_topics(request: Request, username: str, shortname: str, user=Depends(require_auth), db=Depends(get_db)):
+async def subject_topics(request: Request, username: str, shortname: str, user=Depends(require_auth), db=Depends(get_db)):
     row = await db.execute(
         """
-        SELECT p.id, p.name, p.shortname, p.content_md, p.image_path
-        FROM projects p
-        JOIN users u ON p.owner_id = u.id
-        WHERE u.username = ? AND p.shortname = ?
+        SELECT s.id, s.name, s.shortname, s.content_md, s.image_path
+        FROM subjects s
+        JOIN users u ON s.owner_id = u.id
+        WHERE u.username = ? AND s.shortname = ?
         """,
         (username, shortname),
     )
-    project = await row.fetchone()
-    if not project:
+    subject = await row.fetchone()
+    if not subject:
         raise HTTPException(status_code=404)
-    topics = parse_topics_md(project["content_md"])
+    topics = parse_topics_md(subject["content_md"])
     cursor = await db.execute(
         """
         SELECT id, name, type, url, file_path, image_path
         FROM library_items
-        WHERE project_id = ?
+        WHERE subject_id = ?
         ORDER BY position
         """,
-        (project["id"],),
+        (subject["id"],),
     )
     library_items = [dict(row) for row in await cursor.fetchall()]
     for item in library_items:
@@ -330,14 +345,14 @@ async def project_topics(request: Request, username: str, shortname: str, user=D
     return templates.TemplateResponse(
         request=request,
         name="topics.html",
-        context={
+        context=_ctx(request, {
             "user": user,
-            "project": project,
+            "subject": subject,
             "topics": topics,
             "username": username,
             "shortname": shortname,
             "library_items": library_items,
-        },
+        }),
     )
 
 
@@ -360,17 +375,17 @@ def _youtube_embed(match):
 async def htmx_detail(request: Request, username: str, shortname: str, detail_id: str, user=Depends(require_auth), db=Depends(get_db)):
     row = await db.execute(
         """
-        SELECT p.content_md
-        FROM projects p
-        JOIN users u ON p.owner_id = u.id
-        WHERE u.username = ? AND p.shortname = ?
+        SELECT s.content_md
+        FROM subjects s
+        JOIN users u ON s.owner_id = u.id
+        WHERE u.username = ? AND s.shortname = ?
         """,
         (username, shortname),
     )
-    project = await row.fetchone()
-    if not project:
+    subject = await row.fetchone()
+    if not subject:
         raise HTTPException(status_code=404)
-    content = get_detail_content(project["content_md"], detail_id)
+    content = get_detail_content(subject["content_md"], detail_id)
     if content is None:
         raise HTTPException(status_code=404)
     content_html = md.markdown(content)
@@ -378,12 +393,29 @@ async def htmx_detail(request: Request, username: str, shortname: str, detail_id
     return templates.TemplateResponse(
         request=request,
         name="partials/detail_modal.html",
-        context={"detail": {"content_html": content_html}},
+        context=_ctx(request, {"detail": {"content_html": content_html}}),
     )
+
+
+@app.post("/htmx/set-language")
+async def htmx_set_language(
+    request: Request,
+    lang: str = Form(...),
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    if lang not in SUPPORTED_LANGS:
+        return Response(status_code=400)
+    await db.execute("UPDATE users SET language = ? WHERE id = ?", (lang, user["id"]))
+    await db.commit()
+    response = Response(status_code=200)
+    response.headers["HX-Refresh"] = "true"
+    response.set_cookie("lang", lang, max_age=365 * 86400, samesite="lax")
+    return response
 
 
 # --- Public HTMX routes ---
 
 @app.get("/htmx/hello")
 async def htmx_hello(request: Request):
-    return templates.TemplateResponse(request=request, name="partials/hello.html")
+    return templates.TemplateResponse(request=request, name="partials/hello.html", context=_ctx(request))
