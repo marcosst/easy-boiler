@@ -14,7 +14,7 @@
 {% block content %}
 {% include "partials/header.html" %}
 
-<div x-data="{ drawerOpen: false, chatOpen: false, chatMessages: [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este assunto.' }], chatInput: '' }">
+<div x-data="{ drawerOpen: false, chatOpen: false, viewMode: localStorage.getItem('libraryViewMode') || 'grid', chatMessages: [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este assunto.' }], chatInput: '' }" x-effect="localStorage.setItem('libraryViewMode', viewMode)">
 
   <!-- Chat Drawer -->
   <aside
@@ -91,7 +91,7 @@
     x-transition:leave="transition ease-in duration-200"
     x-transition:leave-start="translate-x-0"
     x-transition:leave-end="translate-x-full"
-    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-80 bg-slate-100 dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl overflow-y-auto dark-scrollbar"
+    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[28rem] bg-slate-100 dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl overflow-y-auto dark-scrollbar"
   >
     <div class="px-4 py-5">
       <div class="flex items-center justify-between mb-4">
@@ -104,14 +104,31 @@
           click='$dispatch(\'open-add-modal\')'
         ) }}
         <h2 class="text-sm font-bold text-slate-700 dark:text-neutral-300 uppercase tracking-wider">Biblioteca</h2>
-        {{ btn_icon(
-          icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
-          click='drawerOpen = false',
-          title='Fechar biblioteca'
-        ) }}
+        <div class="flex items-center gap-1">
+          <button
+            @click="viewMode = viewMode === 'grid' ? 'list' : 'grid'"
+            class="{{ BTN_WH }} flex items-center justify-center rounded-full bg-white dark:bg-neutral-700 hover:bg-slate-100 dark:hover:bg-neutral-600 border border-slate-400/50 dark:border-neutral-600/50 text-slate-500 dark:text-neutral-400 transition-colors cursor-pointer"
+            title="Alternar visualização"
+          >
+            <svg x-show="viewMode === 'grid'" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <svg x-show="viewMode === 'list'" x-cloak class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </button>
+          {{ btn_icon(
+            icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
+            click='drawerOpen = false',
+            title='Fechar biblioteca'
+          ) }}
+        </div>
       </div>
 
-      <div id="library-items-list" class="space-y-4">
+      <div id="library-items-list" :class="viewMode === 'grid' ? 'space-y-4' : 'space-y-2'">
         {% for item in library_items %}
         {% include "partials/library_item.html" %}
         {% endfor %}
@@ -120,7 +137,7 @@
   </aside>
 
   <!-- CONTENT -->
-  <main class="max-w-7xl mx-auto px-6 py-6" :class="{ 'mr-80': drawerOpen, 'mr-[28rem]': chatOpen }" style="transition: margin 0.3s ease;">
+  <main class="max-w-7xl mx-auto px-6 py-6" :class="{ 'mr-[28rem]': drawerOpen, 'mr-[28rem]': chatOpen }" style="transition: margin 0.3s ease;">
     <div class="flex items-center justify-between mb-6 h-10">
       <div class="flex items-center gap-3">
         {{ btn_icon(
