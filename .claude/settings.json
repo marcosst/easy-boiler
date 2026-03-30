@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from app.main import app; print\\(''OK''\\)\")",
+      "Bash(make migrate:*)",
+      "Bash(python -m pytest tests/test_auth.py -v)",
+      "Bash(python -c \"import bcrypt; print\\(bcrypt.__version__\\)\")",
+      "Bash(python -c \"import passlib; print\\(passlib.__version__\\)\")",
+      "Bash(find /home/ubuntu/aaaa/easy-boiler/static -type f \\\\\\(-name *.js -o -name *.ts \\\\\\))",
+      "Bash(grep -r lang /home/ubuntu/aaaa/easy-boiler --include=*.py --include=*.html --include=*.js --include=*.json)",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_screenshot",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_pages",
+      "Bash(xargs ls:*)"
+    ]
+  }
+}

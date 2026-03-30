@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<header class="bg-white dark:bg-neutral-950 border-b border-slate-200 dark:border-neutral-800 shadow-sm transition-colors">
+<header class="sticky top-0 z-40 bg-gradient-to-r from-slate-200/60 via-slate-100/30 to-slate-200/60 dark:from-neutral-950/60 dark:via-neutral-900/30 dark:to-neutral-950/60 backdrop-blur-md border-b border-slate-300 dark:border-neutral-800 shadow-sm transition-colors">
   <div class="max-w-7xl mx-auto px-6 h-[72px] flex items-center gap-8">
 
     <!-- Logo (left) -->
@@ -19,7 +19,7 @@
         <button
           @click="open = !open"
           @keydown.escape="open = false"
-          class="flex items-center gap-2 bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600 rounded-full {{ BTN_H }} pr-3 transition-colors cursor-pointer"
+          class="flex items-center gap-2 bg-white dark:bg-neutral-700 hover:bg-slate-100 dark:hover:bg-neutral-600 border border-slate-400/50 dark:border-neutral-600/50 rounded-full {{ BTN_H }} pr-3 transition-colors cursor-pointer"
           aria-haspopup="true"
           :aria-expanded="open"
         >
@@ -43,7 +43,7 @@
           x-transition:leave="transition ease-in duration-75"
           x-transition:leave-start="opacity-100 scale-100"
           x-transition:leave-end="opacity-0 scale-95"
-          class="absolute right-0 mt-2 w-52 bg-white dark:bg-neutral-800 rounded-xl border border-slate-200 dark:border-neutral-700 shadow-lg overflow-hidden z-50"
+          class="absolute right-0 mt-2 w-52 bg-slate-100 dark:bg-neutral-800 rounded-xl border border-slate-200 dark:border-neutral-700 shadow-lg overflow-hidden z-50"
           role="menu"
         >
           <div class="flex items-center gap-3 px-4 py-3 border-b border-slate-100 dark:border-neutral-700">
@@ -51,7 +51,7 @@
               {{ user.initials }}
             </div>
             <div class="min-w-0">
-              <div class="text-sm font-semibold text-slate-800 dark:text-neutral-100 truncate">{{ user.name }}</div>
+              <div class="text-sm font-semibold text-slate-700 dark:text-neutral-300 truncate">{{ user.name }}</div>
               <div class="text-xs text-slate-400 dark:text-neutral-500 truncate">{{ user.email }}</div>
             </div>
           </div>
@@ -82,7 +82,7 @@
               <div class="flex items-center gap-1">
                 <!-- Light -->
                 <button
-                  @click="setTheme('light')"
+                  @click="setTheme('light'); open = false"
                   :class="theme === 'light' ? 'ring-2 ring-teal-400 bg-teal-500/10 text-teal-500' : 'opacity-50 hover:opacity-100 text-slate-400 dark:text-neutral-500 hover:bg-slate-100 dark:hover:bg-neutral-700'"
                   class="w-8 h-8 flex items-center justify-center rounded-lg transition-all cursor-pointer"
                 >
@@ -92,7 +92,7 @@
                 </button>
                 <!-- Dark -->
                 <button
-                  @click="setTheme('dark')"
+                  @click="setTheme('dark'); open = false"
                   :class="theme === 'dark' ? 'ring-2 ring-teal-400 bg-teal-500/10 text-teal-500' : 'opacity-50 hover:opacity-100 text-slate-400 dark:text-neutral-500 hover:bg-slate-100 dark:hover:bg-neutral-700'"
                   class="w-8 h-8 flex items-center justify-center rounded-lg transition-all cursor-pointer"
                 >
@@ -102,7 +102,7 @@
                 </button>
                 <!-- Auto -->
                 <button
-                  @click="setTheme('auto')"
+                  @click="setTheme('auto'); open = false"
                   :class="theme === 'auto' ? 'ring-2 ring-teal-400 bg-teal-500/10 text-teal-500' : 'opacity-50 hover:opacity-100 text-slate-400 dark:text-neutral-500 hover:bg-slate-100 dark:hover:bg-neutral-700'"
                   class="w-8 h-8 flex items-center justify-center rounded-lg transition-all cursor-pointer"
                 >

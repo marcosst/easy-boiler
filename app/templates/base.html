@@ -10,6 +10,9 @@
         var theme = localStorage.getItem('theme') || 'auto';
         var isDark = theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
         if (isDark) document.documentElement.classList.add('dark');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.body.style.backgroundImage = isDark ? 'url(/midias/escuro.png)' : 'url(/midias/claro.png)';
+        });
       })();
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -67,7 +70,8 @@
       }
     </script>
 </head>
-<body class="bg-slate-100 dark:bg-neutral-900 min-h-screen font-sans transition-colors">
+<body class="min-h-screen font-sans transition-colors bg-cover bg-center bg-fixed bg-no-repeat"
+      :style="isDark ? 'background-image: url(/midias/escuro.png)' : 'background-image: url(/midias/claro.png)'">
     {% block content %}{% endblock %}
 </body>
 </html>

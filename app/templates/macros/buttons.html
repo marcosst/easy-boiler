@@ -9,7 +9,7 @@
 #}
 
 {# Circular icon button #}
-{% macro btn_icon(icon, click='', bg='bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600', text_color='text-slate-500 dark:text-neutral-400', extra_class='', disabled='', href='', title='', type='button', alpine_attrs='') %}
+{% macro btn_icon(icon, click='', bg='bg-white dark:bg-neutral-700 hover:bg-slate-100 dark:hover:bg-neutral-600 border border-slate-400/50 dark:border-neutral-600/50', text_color='text-slate-500 dark:text-neutral-400', extra_class='', disabled='', href='', title='', type='button', alpine_attrs='') %}
 {% if href %}
 <a href="{{ href }}" class="{{ BTN_WH }} flex items-center justify-center rounded-full {{ bg }} {{ text_color }} transition-colors cursor-pointer {{ extra_class }}" {% if title %}title="{{ title }}"{% endif %} {{ alpine_attrs }}>
   {{ icon | safe }}
