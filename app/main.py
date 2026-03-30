@@ -520,7 +520,7 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
         """
         SELECT id, name, type, url, file_path, image_path
         FROM library_items
-        WHERE subject_id = ?
+        WHERE subject_id = ? AND deleted_at IS NULL
         ORDER BY position
         """,
         (subject["id"],),
@@ -555,6 +555,35 @@ YOUTUBE_RE = re.compile(
 
 
 MAX_PDF_SIZE = 50 * 1024 * 1024  # 50MB
+
+
+def format_srt_to_timestamped(srt_text: str) -> str:
+    """Convert SRT subtitle text to [HH:MM:SS] timestamped lines."""
+    blocks = re.split(r"\n\s*\n", srt_text.strip())
+    parts: list[str] = []
+    previous = None
+
+    for block in blocks:
+        lines = [line.strip() for line in block.splitlines() if line.strip()]
+        if not lines:
+            continue
+
+        if lines[0].isdigit():
+            lines = lines[1:]
+
+        if len(lines) < 2 or "-->" not in lines[0]:
+            continue
+
+        start_timestamp = lines[0].split("-->", 1)[0].strip().split(",", 1)[0]
+        text = " ".join(lines[1:])
+        text = " ".join(text.split())
+        if not text or text == previous:
+            continue
+
+        parts.append(f"[{start_timestamp}] {text}")
+        previous = text
+
+    return "\n".join(parts)
 
 
 @app.post("/htmx/library/preview")
@@ -690,6 +719,16 @@ async def htmx_library_preview(
         name="partials/library_preview.html",
         context=_ctx(request, {"error": "Tipo inválido."}),
     )
+
+
+@app.delete("/htmx/library/{item_id}")
+async def htmx_library_delete(item_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
+    await db.execute(
+        "UPDATE library_items SET deleted_at = CURRENT_TIMESTAMP WHERE id = ?",
+        (item_id,),
+    )
+    await db.commit()
+    return Response(status_code=200)
 
 
 @app.post("/htmx/library/save")
