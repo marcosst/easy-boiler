@@ -8,7 +8,6 @@ dependencies = [
     "authlib",
     "fastapi",
     "jinja2",
-    "markdown",
     "passlib[bcrypt]",
     "python-dotenv",
     "yt-dlp",

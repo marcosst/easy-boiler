@@ -1,7 +1,6 @@
+import json
 import os
 import re
-
-import markdown as md
 import uuid
 from pathlib import Path
 
@@ -24,7 +23,6 @@ from app.auth import (
     verify_password,
 )
 from app.database import get_db
-from app.md_parser import get_detail_content, parse_topics_md
 
 app = FastAPI()
 
@@ -46,6 +44,14 @@ templates.env.globals["BTN_WH"] = BTN_WH
 def _ctx(request: Request, context: dict | None = None) -> dict:
     ctx = context or {}
     return ctx
+
+
+def parse_topics_json(content_json: str | None) -> list:
+    """Parse JSON content into a list of topics."""
+    if not content_json:
+        return []
+    data = json.loads(content_json)
+    return data.get("topicos", [])
 
 
 # --- Auth redirect exception ---
