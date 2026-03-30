@@ -1,0 +1,124 @@
+{
+  "topicos": [
+    {
+      "titulo": "Cadastro do módulo na galeria",
+      "subtopicos": [
+        {
+          "titulo": "Definir classificação e nome do item",
+          "passos": [
+            {
+              "library_id": 11,
+              "acao": "Definir o item como agregado",
+              "timestamp": "00:00:30",
+              "pagina": null,
+              "trecho_referencia": "",
+              "file_path": null,
+              "url": "https://youtube.com/watch?v=abc123"
+            },
+            {
+              "library_id": 18,
+              "acao": "Cadastrar o componente com tipo agregado",
+              "timestamp": null,
+              "pagina": 4,
+              "trecho_referencia": "Tipo do componente: agregado",
+              "file_path": "/midias/[username]//manual-componentes.pdf",
+              "url": null
+            }
+          ]
+        },
+        {
+          "titulo": "Enviar arquivo e imagem",
+          "passos": [
+            {
+              "library_id": 11,
+              "acao": "Selecionar o arquivo gerado pelo sistema",
+              "timestamp": "00:01:03",
+              "pagina": null,
+              "trecho_referencia": "",
+              "file_path": null,
+              "url": "https://youtube.com/watch?v=abc123"
+            },
+            {
+              "library_id": 11,
+              "acao": "Escolher a imagem do item para upload",
+              "timestamp": "00:01:21",
+              "pagina": null,
+              "trecho_referencia": "",
+              "file_path": null,
+              "url": "https://youtube.com/watch?v=abc123"
+            },
+            {
+              "library_id": 18,
+              "acao": "Associar arquivo técnico ao componente",
+              "timestamp": null,
+              "pagina": 5,
+              "trecho_referencia": "Selecionar arquivo gerado e imagem de apresentação",
+              "file_path": "/midias/[username]//manual-componentes.pdf",
+              "url": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Atualização dos componentes e uso no projeto",
+      "subtopicos": [
+        {
+          "titulo": "Recarregar a base de componentes",
+          "passos": [
+            {
+              "library_id": 11,
+              "acao": "Atualizar a lista de componentes",
+              "timestamp": "00:01:39",
+              "pagina": null,
+              "trecho_referencia": "",
+              "file_path": null,
+              "url": "https://youtube.com/watch?v=abc123"
+            },
+            {
+              "library_id": 18,
+              "acao": "Atualizar a biblioteca após novo cadastro",
+              "timestamp": null,
+              "pagina": 6,
+              "trecho_referencia": "Atualize os componentes antes de utilizar o novo item",
+              "file_path": "/midias/[username]//manual-componentes.pdf",
+              "url": null
+            }
+          ]
+        },
+        {
+          "titulo": "Aplicar o item no projeto",
+          "passos": [
+            {
+              "library_id": 11,
+              "acao": "Selecionar o novo puxador e aplicar na porta",
+              "timestamp": "00:02:03",
+              "pagina": null,
+              "trecho_referencia": "",
+              "file_path": null,
+              "url": "https://youtube.com/watch?v=abc123"
+            },
+            {
+              "library_id": 12,
+              "acao": "Inserir o acessório no módulo selecionado",
+              "timestamp": "00:00:42",
+              "pagina": null,
+              "trecho_referencia": "",
+              "file_path": null,
+              "url": "https://youtube.com/watch?v=def456"
+            },
+            {
+              "library_id": 21,
+              "acao": "Confirmar o procedimento no manual interno",
+              "timestamp": null,
+              "pagina": 2,
+              "trecho_referencia": "O nome do item deve seguir o padrão interno",
+              "file_path": "/midias/[username]//procedimento-cadastro.pdf",
+              "url": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
