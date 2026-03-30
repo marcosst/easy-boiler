@@ -308,6 +308,25 @@ async def project_topics(request: Request, username: str, shortname: str, user=D
     if not project:
         raise HTTPException(status_code=404)
     topics = parse_topics_md(project["content_md"])
+    cursor = await db.execute(
+        """
+        SELECT id, name, type, url, file_path, image_path
+        FROM library_items
+        WHERE project_id = ?
+        ORDER BY position
+        """,
+        (project["id"],),
+    )
+    library_items = [dict(row) for row in await cursor.fetchall()]
+    for item in library_items:
+        if item["type"] == "video" and item["url"]:
+            m = YOUTUBE_RE.search(item["url"])
+            if m:
+                item["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg"
+            else:
+                item["thumbnail_url"] = None
+        else:
+            item["thumbnail_url"] = None
     return templates.TemplateResponse(
         request=request,
         name="topics.html",
@@ -317,6 +336,7 @@ async def project_topics(request: Request, username: str, shortname: str, user=D
             "topics": topics,
             "username": username,
             "shortname": shortname,
+            "library_items": library_items,
         },
     )
 
