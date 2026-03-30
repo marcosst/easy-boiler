@@ -16,7 +16,10 @@ def _parse_accept_language(header: str) -> str | None:
         item = item.strip()
         if ";q=" in item:
             lang, q = item.split(";q=")
-            parts.append((lang.strip(), float(q)))
+            try:
+                parts.append((lang.strip(), float(q)))
+            except ValueError:
+                parts.append((lang.strip(), 0.0))
         else:
             parts.append((item, 1.0))
     parts.sort(key=lambda x: x[1], reverse=True)

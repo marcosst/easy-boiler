@@ -18,7 +18,7 @@
 
     <form method="post" action="/auth/choose-username" class="flex flex-col gap-3.5">
       <div>
-        <input type="text" name="username" placeholder="Username" required pattern="[a-z0-9][a-z0-9-]*" value="{{ username or '' }}"
+        <input type="text" name="username" placeholder="{{ _('register.username') }}" required pattern="[a-z0-9][a-z0-9-]*" value="{{ username or '' }}"
           class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-800 dark:text-neutral-200 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
         <p class="mt-1 ml-1 text-xs text-slate-400 dark:text-neutral-500">{{ _('register.username_hint') }}</p>
       </div>

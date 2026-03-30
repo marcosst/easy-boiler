@@ -51,7 +51,7 @@
         chatInput = '';
         $nextTick(() => $refs.chatScroll.scrollTop = $refs.chatScroll.scrollHeight);
         setTimeout(() => {
-          chatMessages.push({ role: 'assistant', text: 'Esta é uma resposta de exemplo. A integração com LLM será implementada em breve.' });
+          chatMessages.push({ role: 'assistant', text: '...' });
           $nextTick(() => $refs.chatScroll.scrollTop = $refs.chatScroll.scrollHeight);
         }, 800);
       " class="flex items-end gap-2">
