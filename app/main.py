@@ -527,7 +527,7 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
     )
     library_items = [dict(row) for row in await cursor.fetchall()]
     for item in library_items:
-        if item["type"] == "video" and item["url"]:
+        if item["type"] == "youtube" and item["url"]:
             m = YOUTUBE_RE.search(item["url"])
             if m:
                 item["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg"
@@ -689,6 +689,66 @@ async def htmx_library_preview(
         request=request,
         name="partials/library_preview.html",
         context=_ctx(request, {"error": "Tipo inválido."}),
+    )
+
+
+@app.post("/htmx/library/save")
+async def htmx_library_save(
+    request: Request,
+    subject_id: int = Form(...),
+    type: str = Form(...),
+    name: str = Form(...),
+    url: str | None = Form(None),
+    file_path: str | None = Form(None),
+    image_path: str | None = Form(None),
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    name = name.strip()
+    if not name:
+        return Response(status_code=422, content="Nome é obrigatório.")
+
+    # Verify subject belongs to user
+    row = await db.execute(
+        "SELECT id FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    if not await row.fetchone():
+        raise HTTPException(status_code=404)
+
+    # Get next position
+    row = await db.execute(
+        "SELECT COALESCE(MAX(position), -1) + 1 as next_pos FROM library_items WHERE subject_id = ?",
+        (subject_id,),
+    )
+    next_pos = (await row.fetchone())["next_pos"]
+
+    cursor = await db.execute(
+        """INSERT INTO library_items (subject_id, name, type, url, file_path, image_path, position)
+           VALUES (?, ?, ?, ?, ?, ?, ?)""",
+        (subject_id, name, type, url, file_path, image_path, next_pos),
+    )
+    await db.commit()
+
+    # Build the item dict for the template
+    item = {
+        "id": cursor.lastrowid,
+        "name": name,
+        "type": type,
+        "url": url,
+        "file_path": file_path,
+        "image_path": image_path,
+    }
+    if type == "youtube" and url:
+        m = YOUTUBE_RE.search(url)
+        item["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg" if m else None
+    else:
+        item["thumbnail_url"] = None
+
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/library_item.html",
+        context=_ctx(request, {"item": item}),
     )
 
 
