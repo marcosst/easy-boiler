@@ -719,7 +719,7 @@ async def htmx_library_preview(
             )
 
         # Fetch title via oEmbed
-        title = url
+        title = None
         try:
             oembed_resp = httpx.get(
                 "https://noembed.com/embed",
@@ -727,9 +727,16 @@ async def htmx_library_preview(
                 timeout=10,
             )
             oembed_resp.raise_for_status()
-            title = oembed_resp.json().get("title", url)
+            title = oembed_resp.json().get("title")
         except Exception:
             pass
+
+        if not title:
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_preview.html",
+                context=_ctx(request, {"error": "Não foi possível encontrar este vídeo no YouTube."}),
+            )
 
         # Download thumbnail
         thumb_filename = f"{uuid.uuid4().hex}.jpg"
