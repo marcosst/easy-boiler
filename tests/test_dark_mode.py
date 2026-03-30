@@ -32,17 +32,17 @@ def test_home_cards_have_dark_classes(auth_client):
     assert "dark:border-neutral-700" in response.text
 
 
-def test_collections_cards_have_dark_classes(auth_client):
-    response = auth_client.get("/projects/1")
-    assert "dark:bg-neutral-800" in response.text
-    assert "dark:border-neutral-700" in response.text
-
-
 def test_home_section_title_has_dark_class(auth_client):
     response = auth_client.get("/")
     assert "dark:text-neutral-100" in response.text
 
 
-def test_collections_section_title_has_dark_class(auth_client):
-    response = auth_client.get("/projects/1")
+def test_topics_cards_have_dark_classes(auth_client):
+    response = auth_client.get("/testuser/projeto-teste")
+    assert "dark:bg-neutral-800" in response.text
+    assert "dark:border-neutral-700" in response.text
+
+
+def test_topics_section_title_has_dark_class(auth_client):
+    response = auth_client.get("/testuser/projeto-teste")
     assert "dark:text-neutral-100" in response.text
