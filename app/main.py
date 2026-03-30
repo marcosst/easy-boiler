@@ -837,6 +837,42 @@ async def htmx_library_save(
     if not await row.fetchone():
         raise HTTPException(status_code=404)
 
+    username = user["username"]
+    metadata_json = None
+    subtitle_path = None
+
+    # For YouTube: fetch metadata and subtitles from Apify
+    if type == "youtube" and url:
+        m = YOUTUBE_RE.search(url)
+        video_id = m.group(1) if m else None
+
+        try:
+            metadata, subtitle_text = await fetch_apify_data(url)
+        except (ValueError, RuntimeError) as exc:
+            # Return the preview form with error banner
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_preview.html",
+                context=_ctx(request, {
+                    "error": str(exc),
+                    "preview_type": "youtube",
+                    "preview_name": name,
+                    "preview_url": url,
+                    "preview_image_path": image_path,
+                    "subject_id": subject_id,
+                }),
+                status_code=422,
+            )
+
+        metadata_json = json.dumps(metadata, ensure_ascii=False)
+
+        if video_id and subtitle_text:
+            subs_dir = Path("midias") / username / "subtitles"
+            subs_dir.mkdir(parents=True, exist_ok=True)
+            subs_file = subs_dir / f"{video_id}.txt"
+            subs_file.write_text(subtitle_text + "\n", encoding="utf-8")
+            subtitle_path = f"{username}/subtitles/{video_id}.txt"
+
     # Get next position
     row = await db.execute(
         "SELECT COALESCE(MAX(position), -1) + 1 as next_pos FROM library_items WHERE subject_id = ?",
@@ -845,9 +881,9 @@ async def htmx_library_save(
     next_pos = (await row.fetchone())["next_pos"]
 
     cursor = await db.execute(
-        """INSERT INTO library_items (subject_id, name, type, url, file_path, image_path, position)
-           VALUES (?, ?, ?, ?, ?, ?, ?)""",
-        (subject_id, name, type, url, file_path, image_path, next_pos),
+        """INSERT INTO library_items (subject_id, name, type, url, file_path, image_path, metadata, subtitle_path, position)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        (subject_id, name, type, url, file_path, image_path, metadata_json, subtitle_path, next_pos),
     )
     await db.commit()
 
