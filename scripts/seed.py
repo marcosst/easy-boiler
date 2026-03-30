@@ -40,9 +40,9 @@ def main():
             "shortname": "cadastro-componentes",
             "is_public": 1,
             "library_items": [
-                {"name": "Tutorial Cadastro Completo", "type": "video", "url": "https://youtube.com/watch?v=abc001"},
-                {"name": "Cadastro de Agregados", "type": "video", "url": "https://youtube.com/watch?v=abc002"},
-                {"name": "Tipos de Componentes", "type": "video", "url": "https://youtube.com/watch?v=abc003"},
+                {"name": "Tutorial Cadastro Completo", "type": "youtube", "url": "https://youtube.com/watch?v=abc001"},
+                {"name": "Cadastro de Agregados", "type": "youtube", "url": "https://youtube.com/watch?v=abc002"},
+                {"name": "Tipos de Componentes", "type": "youtube", "url": "https://youtube.com/watch?v=abc003"},
                 {"name": "Manual de Componentes", "type": "pdf", "file_path": "/midias/marcosst/manual-componentes.pdf"},
                 {"name": "Guia de Classificacao", "type": "pdf", "file_path": "/midias/marcosst/guia-classificacao.pdf"},
             ],
@@ -52,9 +52,9 @@ def main():
             "shortname": "montagem-modulos",
             "is_public": 1,
             "library_items": [
-                {"name": "Montagem Basica", "type": "video", "url": "https://youtube.com/watch?v=mont001"},
-                {"name": "Montagem Avancada", "type": "video", "url": "https://youtube.com/watch?v=mont002"},
-                {"name": "Encaixes e Conexoes", "type": "video", "url": "https://youtube.com/watch?v=mont003"},
+                {"name": "Montagem Basica", "type": "youtube", "url": "https://youtube.com/watch?v=mont001"},
+                {"name": "Montagem Avancada", "type": "youtube", "url": "https://youtube.com/watch?v=mont002"},
+                {"name": "Encaixes e Conexoes", "type": "youtube", "url": "https://youtube.com/watch?v=mont003"},
                 {"name": "Manual de Montagem", "type": "pdf", "file_path": "/midias/marcosst/manual-montagem.pdf"},
                 {"name": "Tabela de Medidas", "type": "pdf", "file_path": "/midias/marcosst/tabela-medidas.pdf"},
                 {"name": "Checklist de Montagem", "type": "pdf", "file_path": "/midias/marcosst/checklist-montagem.pdf"},
@@ -65,11 +65,11 @@ def main():
             "shortname": "configuracao-ferragens",
             "is_public": 0,
             "library_items": [
-                {"name": "Ferragens Basicas", "type": "video", "url": "https://youtube.com/watch?v=ferr001"},
-                {"name": "Dobradicas e Corrediceas", "type": "video", "url": "https://youtube.com/watch?v=ferr002"},
+                {"name": "Ferragens Basicas", "type": "youtube", "url": "https://youtube.com/watch?v=ferr001"},
+                {"name": "Dobradicas e Corrediceas", "type": "youtube", "url": "https://youtube.com/watch?v=ferr002"},
                 {"name": "Catalogo de Ferragens", "type": "pdf", "file_path": "/midias/marcosst/catalogo-ferragens.pdf"},
                 {"name": "Manual Tecnico Blum", "type": "pdf", "file_path": "/midias/marcosst/manual-blum.pdf"},
-                {"name": "Ajustes e Regulagens", "type": "video", "url": "https://youtube.com/watch?v=ferr003"},
+                {"name": "Ajustes e Regulagens", "type": "youtube", "url": "https://youtube.com/watch?v=ferr003"},
             ],
         },
         {
@@ -77,9 +77,9 @@ def main():
             "shortname": "renderizacao-3d",
             "is_public": 1,
             "library_items": [
-                {"name": "Introducao ao Render", "type": "video", "url": "https://youtube.com/watch?v=rend001"},
-                {"name": "Iluminacao e Materiais", "type": "video", "url": "https://youtube.com/watch?v=rend002"},
-                {"name": "Exportacao de Imagens", "type": "video", "url": "https://youtube.com/watch?v=rend003"},
+                {"name": "Introducao ao Render", "type": "youtube", "url": "https://youtube.com/watch?v=rend001"},
+                {"name": "Iluminacao e Materiais", "type": "youtube", "url": "https://youtube.com/watch?v=rend002"},
+                {"name": "Exportacao de Imagens", "type": "youtube", "url": "https://youtube.com/watch?v=rend003"},
                 {"name": "Guia de Renderizacao", "type": "pdf", "file_path": "/midias/marcosst/guia-renderizacao.pdf"},
                 {"name": "Biblioteca de Materiais", "type": "pdf", "file_path": "/midias/marcosst/biblioteca-materiais.pdf"},
             ],
@@ -89,11 +89,11 @@ def main():
             "shortname": "orcamento-propostas",
             "is_public": 0,
             "library_items": [
-                {"name": "Gerando Orcamentos", "type": "video", "url": "https://youtube.com/watch?v=orc001"},
-                {"name": "Personalizando Propostas", "type": "video", "url": "https://youtube.com/watch?v=orc002"},
+                {"name": "Gerando Orcamentos", "type": "youtube", "url": "https://youtube.com/watch?v=orc001"},
+                {"name": "Personalizando Propostas", "type": "youtube", "url": "https://youtube.com/watch?v=orc002"},
                 {"name": "Modelo de Proposta", "type": "pdf", "file_path": "/midias/marcosst/modelo-proposta.pdf"},
                 {"name": "Tabela de Precos", "type": "pdf", "file_path": "/midias/marcosst/tabela-precos.pdf"},
-                {"name": "Exportacao para PDF", "type": "video", "url": "https://youtube.com/watch?v=orc003"},
+                {"name": "Exportacao para PDF", "type": "youtube", "url": "https://youtube.com/watch?v=orc003"},
             ],
         },
         {
@@ -101,9 +101,9 @@ def main():
             "shortname": "instalacao-obra",
             "is_public": 1,
             "library_items": [
-                {"name": "Preparacao do Ambiente", "type": "video", "url": "https://youtube.com/watch?v=inst001"},
-                {"name": "Instalacao Passo a Passo", "type": "video", "url": "https://youtube.com/watch?v=inst002"},
-                {"name": "Nivelamento e Prumo", "type": "video", "url": "https://youtube.com/watch?v=inst003"},
+                {"name": "Preparacao do Ambiente", "type": "youtube", "url": "https://youtube.com/watch?v=inst001"},
+                {"name": "Instalacao Passo a Passo", "type": "youtube", "url": "https://youtube.com/watch?v=inst002"},
+                {"name": "Nivelamento e Prumo", "type": "youtube", "url": "https://youtube.com/watch?v=inst003"},
                 {"name": "Manual de Instalacao", "type": "pdf", "file_path": "/midias/marcosst/manual-instalacao.pdf"},
                 {"name": "Checklist de Obra", "type": "pdf", "file_path": "/midias/marcosst/checklist-obra.pdf"},
                 {"name": "Ficha de Vistoria", "type": "pdf", "file_path": "/midias/marcosst/ficha-vistoria.pdf"},
@@ -128,7 +128,7 @@ def main():
             lib_ids.append({"id": c.lastrowid, **lib})
 
         # Build content_json referencing the library items
-        videos = [li for li in lib_ids if li["type"] == "video"]
+        videos = [li for li in lib_ids if li["type"] == "youtube"]
         pdfs = [li for li in lib_ids if li["type"] == "pdf"]
 
         content = {"topicos": []}

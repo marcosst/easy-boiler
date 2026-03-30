@@ -23,21 +23,6 @@ CREATE TABLE oauth_accounts (
     created_at       DATETIME DEFAULT CURRENT_TIMESTAMP,
     UNIQUE(provider, provider_user_id)
 );
-CREATE TABLE library_items (
-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
-    subject_id    INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
-    name          TEXT    NOT NULL,
-    type          TEXT    NOT NULL CHECK(type IN ('video', 'pdf', 'document', 'other')),
-    url           TEXT,
-    file_path     TEXT,
-    image_path    TEXT,
-    subtitle_path TEXT,
-    metadata      TEXT,
-    position      INTEGER NOT NULL DEFAULT 0,
-    created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
-    updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-CREATE INDEX idx_library_items_subject ON library_items(subject_id);
 CREATE TABLE IF NOT EXISTS "subjects" (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
     name       TEXT    NOT NULL,
@@ -51,7 +36,23 @@ CREATE TABLE IF NOT EXISTS "subjects" (
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX idx_subjects_owner ON subjects(owner_id);
+CREATE TABLE IF NOT EXISTS "library_items" (
+    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    subject_id    INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
+    name          TEXT    NOT NULL,
+    type          TEXT    NOT NULL CHECK(type IN ('youtube', 'pdf')),
+    url           TEXT,
+    file_path     TEXT,
+    image_path    TEXT,
+    subtitle_path TEXT,
+    metadata      TEXT,
+    position      INTEGER NOT NULL DEFAULT 0,
+    created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX idx_library_items_subject ON library_items(subject_id);
 -- Dbmate schema migrations
 INSERT INTO "schema_migrations" (version) VALUES
   ('20240101000000'),
-  ('20260330200000');
+  ('20260330200000'),
+  ('20260331000000');
