@@ -14,7 +14,7 @@
 
     <!-- User menu (right) -->
     <div class="flex justify-end">
-      <div class="relative" x-data="{ open: false, themeOpen: false }">
+      <div class="relative" x-data="{ open: false }">
         <button
           @click="open = !open"
           @keydown.escape="open = false"
@@ -70,49 +70,29 @@
             <div class="border-t border-slate-100 dark:border-neutral-700 my-1"></div>
 
             <!-- Theme toggle -->
-            <button @click="themeOpen = !themeOpen" class="flex items-center justify-between w-full px-4 py-2.5 text-sm text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors" role="menuitem">
-              <span class="flex items-center gap-2.5">
+            <div class="flex items-center justify-between px-4 py-2.5">
+              <span class="flex items-center gap-2.5 text-sm text-slate-700 dark:text-neutral-300">
                 <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.95l-.71.71M21 12h-1M4 12H3m16.66 7.66l-.71-.71M4.05 4.05l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                 </svg>
                 {{ _('header.theme') }}
               </span>
-              <svg class="w-3.5 h-3.5 text-slate-400 dark:text-neutral-500 transition-transform duration-200" :class="themeOpen && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div x-show="themeOpen" x-transition class="px-4 pb-2.5">
-              <div class="flex rounded-lg bg-slate-100 dark:bg-neutral-700 p-0.5">
+              <div class="flex items-center gap-1">
                 <button
-                  @click="setTheme('light'); open = false; themeOpen = false"
-                  :class="theme === 'light' ? 'bg-white dark:bg-neutral-600 shadow-sm text-slate-800 dark:text-neutral-100' : 'text-slate-500 dark:text-neutral-400 hover:text-slate-700 dark:hover:text-neutral-300'"
-                  class="flex-1 flex items-center justify-center gap-1 rounded-md py-1.5 text-xs font-medium transition-all cursor-pointer"
-                >
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.95l-.71.71M21 12h-1M4 12H3m16.66 7.66l-.71-.71M4.05 4.05l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-                  </svg>
-                  {{ _('header.light') }}
-                </button>
+                  @click="setTheme('light')"
+                  :class="theme === 'light' ? 'bg-indigo-500 text-white' : 'text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
+                  class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors cursor-pointer"
+                >{{ _('header.light') }}</button>
                 <button
-                  @click="setTheme('dark'); open = false; themeOpen = false"
-                  :class="theme === 'dark' ? 'bg-white dark:bg-neutral-600 shadow-sm text-slate-800 dark:text-neutral-100' : 'text-slate-500 dark:text-neutral-400 hover:text-slate-700 dark:hover:text-neutral-300'"
-                  class="flex-1 flex items-center justify-center gap-1 rounded-md py-1.5 text-xs font-medium transition-all cursor-pointer"
-                >
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-                  </svg>
-                  {{ _('header.dark') }}
-                </button>
+                  @click="setTheme('dark')"
+                  :class="theme === 'dark' ? 'bg-indigo-500 text-white' : 'text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
+                  class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors cursor-pointer"
+                >{{ _('header.dark') }}</button>
                 <button
-                  @click="setTheme('auto'); open = false; themeOpen = false"
-                  :class="theme === 'auto' ? 'bg-white dark:bg-neutral-600 shadow-sm text-slate-800 dark:text-neutral-100' : 'text-slate-500 dark:text-neutral-400 hover:text-slate-700 dark:hover:text-neutral-300'"
-                  class="flex-1 flex items-center justify-center gap-1 rounded-md py-1.5 text-xs font-medium transition-all cursor-pointer"
-                >
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                  </svg>
-                  {{ _('header.auto') }}
-                </button>
+                  @click="setTheme('auto')"
+                  :class="theme === 'auto' ? 'bg-indigo-500 text-white' : 'text-slate-500 dark:text-neutral-400 hover:bg-slate-100 dark:hover:bg-neutral-700 hover:text-slate-700 dark:hover:text-neutral-200'"
+                  class="px-2 py-1 rounded-md text-xs font-bold tracking-wide transition-colors cursor-pointer"
+                >{{ _('header.auto') }}</button>
               </div>
             </div>
 
