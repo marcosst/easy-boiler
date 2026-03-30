@@ -1,6 +1,6 @@
 {% from "macros/buttons.html" import btn_icon %}
 <div x-data="{ menu: false }" class="group">
-  <div class="relative aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 cursor-pointer" @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', name: '{{ item.name | e }}' })">
+  <div class="relative aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 cursor-pointer" @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', filePath: '{{ item.file_path or '' }}', name: '{{ item.name | e }}' })">
     <div class="w-full h-full">
       {% if item.thumbnail_url %}
       <img src="{{ item.thumbnail_url }}" alt="{{ item.name }}" class="w-full h-full object-cover">
@@ -57,5 +57,5 @@
       </div>
     </div>
   </div>
-  <p @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', name: '{{ item.name | e }}' })" class="mt-1.5 text-sm font-medium text-slate-700 dark:text-neutral-300 group-hover:text-[#26a69a] dark:group-hover:text-teal-400 transition-colors cursor-pointer">{{ item.name }}</p>
+  <p @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', filePath: '{{ item.file_path or '' }}', name: '{{ item.name | e }}' })" class="mt-1.5 text-sm font-medium text-slate-700 dark:text-neutral-300 group-hover:text-[#26a69a] dark:group-hover:text-teal-400 transition-colors cursor-pointer">{{ item.name }}</p>
 </div>

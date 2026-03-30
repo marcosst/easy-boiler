@@ -229,6 +229,7 @@
     show: false,
     type: '',
     url: '',
+    filePath: '',
     name: '',
     timestamp: '',
     page: null,
@@ -248,14 +249,16 @@
       return src;
     },
     get pdfUrl() {
-      if (this.type !== 'pdf' || !this.url) return '';
-      let src = this.url;
+      if (this.type !== 'pdf') return '';
+      let src = this.filePath ? '/midias/' + this.filePath : this.url;
+      if (!src) return '';
       if (this.page) src += '#page=' + this.page;
       return src;
     },
     open(detail) {
       this.type = detail.type === 'youtube' ? 'video' : (detail.type || '');
       this.url = detail.url || '';
+      this.filePath = detail.filePath || '';
       this.name = detail.name || '';
       this.timestamp = detail.timestamp || '';
       this.page = detail.page || null;
@@ -264,6 +267,7 @@
     close() {
       this.show = false;
       this.url = '';
+      this.filePath = '';
     }
   }"
   @open-library-modal.window="open($event.detail)"
