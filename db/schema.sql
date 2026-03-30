@@ -49,10 +49,11 @@ CREATE TABLE IF NOT EXISTS "library_items" (
     position      INTEGER NOT NULL DEFAULT 0,
     created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP
-);
+, deleted_at DATETIME DEFAULT NULL);
 CREATE INDEX idx_library_items_subject ON library_items(subject_id);
 -- Dbmate schema migrations
 INSERT INTO "schema_migrations" (version) VALUES
   ('20240101000000'),
   ('20260330200000'),
-  ('20260331000000');
+  ('20260331000000'),
+  ('20260331100000');

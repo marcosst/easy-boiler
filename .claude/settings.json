@@ -10,7 +10,9 @@
       "Bash(grep -r lang /home/ubuntu/aaaa/easy-boiler --include=*.py --include=*.html --include=*.js --include=*.json)",
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_screenshot",
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_pages",
-      "Bash(xargs ls:*)"
+      "Bash(xargs ls:*)",
+      "Bash(sqlite3 /home/ubuntu/aaaa/easy-boiler/data/app.db \"UPDATE library_items SET deleted_at = CURRENT_TIMESTAMP WHERE id = 33; SELECT changes\\(\\);\")",
+      "Bash(sqlite3 /home/ubuntu/aaaa/easy-boiler/data/app.db \"UPDATE library_items SET deleted_at = NULL WHERE id = 33;\")"
     ]
   }
 }

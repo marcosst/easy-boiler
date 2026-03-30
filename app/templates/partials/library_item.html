@@ -1,5 +1,5 @@
 {% from "macros/buttons.html" import btn_icon %}
-<div x-data="{ menu: false }" class="group">
+<div class="group" id="library-item-{{ item.id }}">
   <!-- Grid view -->
   <div x-show="viewMode === 'grid'">
     <div class="relative aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 cursor-pointer" @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', filePath: '{{ item.file_path or '' }}', name: '{{ item.name | e }}' })">
@@ -23,40 +23,15 @@
         </div>
         {% endif %}
       </div>
-      <!-- 3-dot menu -->
+      <!-- Delete button -->
       <div class="absolute top-1.5 right-1.5">
-        {{ btn_icon(
-          icon='<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4z"/></svg>',
-          click='menu = !menu',
-          bg='bg-white/50 hover:bg-white/70 dark:bg-black/40 dark:hover:bg-black/60',
-          text_color='text-slate-700 dark:text-white',
-          extra_class='backdrop-blur-sm'
-        ) }}
-        <div
-          x-show="menu"
-          x-cloak
-          @click.outside="menu = false"
-          x-transition:enter="transition ease-out duration-100"
-          x-transition:enter-start="opacity-0 scale-95"
-          x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-75"
-          x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-95"
-          class="absolute right-0 mt-1 w-40 bg-white dark:bg-neutral-800 rounded-lg border border-slate-200 dark:border-neutral-700 shadow-lg overflow-hidden z-10"
+        <button
+          @click.stop="window.dispatchEvent(new CustomEvent('confirm-delete', { detail: { id: {{ item.id }}, name: '{{ item.name | e }}' } }))"
+          class="{{ BTN_WH }} flex items-center justify-center rounded-full bg-white/50 hover:bg-red-500 dark:bg-black/40 dark:hover:bg-red-500 text-slate-700 dark:text-white hover:text-white transition-colors cursor-pointer backdrop-blur-sm"
+          title="Excluir"
         >
-          <button @click="menu = false" class="w-full flex items-center gap-2 px-3 py-2 text-sm text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer">
-            <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-            </svg>
-            Recarregar
-          </button>
-          <button @click="menu = false" class="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors cursor-pointer">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
-            </svg>
-            Excluir
-          </button>
-        </div>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        </button>
       </div>
     </div>
     <p @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', filePath: '{{ item.file_path or '' }}', name: '{{ item.name | e }}' })" class="mt-1.5 text-sm font-medium text-slate-700 dark:text-neutral-300 group-hover:text-[#26a69a] dark:group-hover:text-teal-400 transition-colors cursor-pointer">{{ item.name }}</p>
@@ -66,76 +41,33 @@
   <div x-show="viewMode === 'list'" x-cloak class="relative">
     <div
       @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', filePath: '{{ item.file_path or '' }}', name: '{{ item.name | e }}' })"
-      class="flex items-center gap-3 p-2 rounded-lg bg-slate-50 dark:bg-neutral-800/50 border border-slate-200 dark:border-neutral-700 cursor-pointer hover:bg-slate-100 dark:hover:bg-neutral-700 transition-colors"
+      class="flex items-center rounded-lg bg-slate-50 dark:bg-neutral-800/50 border border-slate-200 dark:border-neutral-700 cursor-pointer hover:bg-slate-100 dark:hover:bg-neutral-700 transition-colors overflow-hidden"
     >
-      <!-- Thumbnail -->
-      <div class="w-14 h-10 flex-shrink-0 rounded-md overflow-hidden bg-slate-100 dark:bg-neutral-800">
+      <!-- Thumbnail + type icon overlay -->
+      <div class="w-16 self-stretch flex-shrink-0 bg-slate-100 dark:bg-neutral-800 relative">
         {% if item.thumbnail_url %}
         <img src="{{ item.thumbnail_url }}" alt="{{ item.name }}" class="w-full h-full object-cover">
         {% elif item.image_path %}
         <img src="/midias/{{ item.image_path }}" alt="{{ item.name }}" class="w-full h-full object-cover">
         {% else %}
         <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-teal-200 to-purple-300 dark:from-teal-900 dark:to-purple-950">
-          {% if item.type == 'youtube' %}
-          <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          {% else %}
-          <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-          </svg>
-          {% endif %}
         </div>
         {% endif %}
       </div>
-      <!-- Type icon + title -->
-      <div class="flex items-center gap-2 min-w-0 flex-1">
-        {% if item.type == 'youtube' %}
-        <svg class="w-4 h-4 flex-shrink-0 text-red-500" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/>
-        </svg>
-        {% else %}
-        <svg class="w-4 h-4 flex-shrink-0 text-red-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-        </svg>
-        {% endif %}
-        <span class="text-sm font-medium text-slate-700 dark:text-neutral-300 truncate group-hover:text-[#26a69a] dark:group-hover:text-teal-400 transition-colors">{{ item.name }}</span>
+      <!-- Title -->
+      <div class="flex items-center min-w-0 flex-1 px-3 py-2">
+        <span class="text-sm font-medium text-slate-700 dark:text-neutral-300 group-hover:text-[#26a69a] dark:group-hover:text-teal-400 transition-colors">{{ item.name }}</span>
       </div>
-      <!-- 3-dot menu -->
-      <div class="flex-shrink-0" @click.stop>
-        {{ btn_icon(
-          icon='<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4z"/></svg>',
-          click='menu = !menu',
-          extra_class='opacity-0 group-hover:opacity-100 transition-opacity'
-        ) }}
+      <!-- Delete button -->
+      <div class="flex-shrink-0 pr-2">
+        <button
+          @click.stop="window.dispatchEvent(new CustomEvent('confirm-delete', { detail: { id: {{ item.id }}, name: '{{ item.name | e }}' } }))"
+          class="{{ BTN_WH }} flex items-center justify-center rounded-full bg-white/50 hover:bg-red-500 dark:bg-black/40 dark:hover:bg-red-500 text-slate-700 dark:text-white hover:text-white transition-colors cursor-pointer backdrop-blur-sm"
+          title="Excluir"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        </button>
       </div>
-    </div>
-    <!-- Dropdown menu (shared with grid) -->
-    <div
-      x-show="menu"
-      x-cloak
-      @click.outside="menu = false"
-      x-transition:enter="transition ease-out duration-100"
-      x-transition:enter-start="opacity-0 scale-95"
-      x-transition:enter-end="opacity-100 scale-100"
-      x-transition:leave="transition ease-in duration-75"
-      x-transition:leave-start="opacity-100 scale-100"
-      x-transition:leave-end="opacity-0 scale-95"
-      class="absolute right-0 top-full mt-1 w-40 bg-white dark:bg-neutral-800 rounded-lg border border-slate-200 dark:border-neutral-700 shadow-lg overflow-hidden z-10"
-    >
-      <button @click="menu = false" class="w-full flex items-center gap-2 px-3 py-2 text-sm text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer">
-        <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-        </svg>
-        Recarregar
-      </button>
-      <button @click="menu = false" class="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors cursor-pointer">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
-        </svg>
-        Excluir
-      </button>
     </div>
   </div>
 </div>

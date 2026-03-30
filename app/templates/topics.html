@@ -26,7 +26,7 @@
     x-transition:leave="transition ease-in duration-200"
     x-transition:leave-start="translate-x-0"
     x-transition:leave-end="translate-x-full"
-    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[28rem] bg-slate-100 dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl flex flex-col"
+    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[clamp(30vw,400px,50vw)] bg-slate-100 dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl flex flex-col"
   >
     <!-- Header -->
     <div class="px-4 py-3 flex justify-end">
@@ -91,10 +91,10 @@
     x-transition:leave="transition ease-in duration-200"
     x-transition:leave-start="translate-x-0"
     x-transition:leave-end="translate-x-full"
-    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[28rem] bg-slate-100 dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl overflow-y-auto dark-scrollbar"
+    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[clamp(30vw,400px,50vw)] bg-slate-100 dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl flex flex-col"
   >
-    <div class="px-4 py-5">
-      <div class="flex items-center justify-between mb-4">
+    <div class="flex-shrink-0 px-4 pt-3 pb-3 border-b border-slate-200 dark:border-neutral-700">
+      <div class="flex items-center justify-between">
         {{ btn_icon(
           icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>',
           bg='bg-teal-500 hover:bg-teal-600 border border-teal-600 dark:border-teal-400 shadow-lg',
@@ -127,7 +127,9 @@
           ) }}
         </div>
       </div>
+    </div>
 
+    <div class="flex-1 overflow-y-auto dark-scrollbar px-4 py-4">
       <div id="library-items-list" :class="viewMode === 'grid' ? 'space-y-4' : 'space-y-2'">
         {% for item in library_items %}
         {% include "partials/library_item.html" %}
@@ -137,7 +139,7 @@
   </aside>
 
   <!-- CONTENT -->
-  <main class="max-w-7xl mx-auto px-6 py-6" :class="{ 'mr-[28rem]': drawerOpen, 'mr-[28rem]': chatOpen }" style="transition: margin 0.3s ease;">
+  <main class="max-w-7xl mx-auto px-6 py-6" :class="{ 'mr-[clamp(30vw,400px,50vw)]': drawerOpen, 'mr-[clamp(30vw,400px,50vw)]': chatOpen }" style="transition: margin 0.3s ease;">
     <div class="flex items-center justify-between mb-6 h-10">
       <div class="flex items-center gap-3">
         {{ btn_icon(
@@ -336,4 +338,56 @@
   </div>
 </div>
 {% include "partials/library_add_modal.html" %}
+
+<!-- Confirm Delete Modal -->
+<div
+  x-data="{
+    show: false,
+    itemName: '',
+    itemId: null,
+    open(detail) {
+      this.itemName = detail.name || '';
+      this.itemId = detail.id || null;
+      this.show = true;
+    },
+    close() {
+      this.show = false;
+      this.itemName = '';
+      this.itemId = null;
+    },
+    async confirm() {
+      const resp = await fetch('/htmx/library/' + this.itemId, { method: 'DELETE' });
+      if (resp.ok) {
+        const el = document.getElementById('library-item-' + this.itemId);
+        if (el) el.remove();
+      }
+      this.close();
+    }
+  }"
+  @confirm-delete.window="open($event.detail)"
+  @keydown.escape.window="if (show) close()"
+>
+  <div x-show="show" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div x-show="show" @click="close()" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+    <!-- Panel -->
+    <div x-show="show" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="relative bg-white dark:bg-neutral-800 rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden">
+      <div class="p-6 text-center">
+        <!-- Icon -->
+        <div class="mx-auto mb-4 w-12 h-12 flex items-center justify-center rounded-full bg-red-100 dark:bg-red-900/30">
+          <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-700 dark:text-neutral-300 mb-2">Excluir item</h3>
+        <p class="text-sm text-slate-500 dark:text-neutral-400 mb-6">Tem certeza que deseja excluir <span class="font-medium text-slate-700 dark:text-neutral-300" x-text="itemName"></span>?</p>
+        <div class="flex gap-3 justify-center">
+          <button @click="close()" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-neutral-300 bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600 transition-colors cursor-pointer">Cancelar</button>
+          <button @click="confirm()" class="px-4 py-2 rounded-lg text-sm font-medium text-white bg-red-500 hover:bg-red-600 transition-colors cursor-pointer">Excluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
