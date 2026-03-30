@@ -9,9 +9,9 @@ def test_username_route_returns_200(auth_client):
     assert response.status_code == 200
 
 
-def test_username_route_contains_projetos_title(auth_client):
+def test_username_route_contains_assuntos_title(auth_client):
     response = auth_client.get("/testuser")
-    assert "Projetos" in response.text
+    assert "Assuntos" in response.text
 
 
 def test_username_route_contains_user_name(auth_client):
@@ -19,10 +19,10 @@ def test_username_route_contains_user_name(auth_client):
     assert "testuser" in response.text
 
 
-def test_username_route_shows_db_projects(auth_client):
+def test_username_route_shows_db_subjects(auth_client):
     response = auth_client.get("/testuser")
-    assert "Projeto Teste" in response.text
-    assert "Segundo Projeto" in response.text
+    assert "Assunto Teste" in response.text
+    assert "Segundo Assunto" in response.text
 
 
 def test_username_route_unknown_user_returns_404(auth_client):
