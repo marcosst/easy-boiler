@@ -1,0 +1,30 @@
+{#
+  Button macros — sizing comes from BTN_H / BTN_WH defined in base.html.
+
+  Usage:
+    {% from "macros/buttons.html" import btn_icon, btn_pill %}
+
+    {{ btn_icon(icon='<svg ...>...</svg>', click='doSomething()') }}
+    {{ btn_pill(label='Novo Assunto', icon='<svg ...>...</svg>', click='doSomething()') }}
+#}
+
+{# Circular icon button #}
+{% macro btn_icon(icon, click='', bg='bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600', text_color='text-slate-500 dark:text-neutral-400', extra_class='', disabled='', href='', title='', type='button', alpine_attrs='') %}
+{% if href %}
+<a href="{{ href }}" class="{{ BTN_WH }} flex items-center justify-center rounded-full {{ bg }} {{ text_color }} transition-colors cursor-pointer {{ extra_class }}" {% if title %}title="{{ title }}"{% endif %} {{ alpine_attrs }}>
+  {{ icon | safe }}
+</a>
+{% else %}
+<button {% if click %}@click="{{ click }}"{% endif %} type="{{ type }}" {% if disabled %}:disabled="{{ disabled }}"{% endif %} class="{{ BTN_WH }} flex items-center justify-center rounded-full {{ bg }} {{ text_color }} transition-colors cursor-pointer {% if disabled %}disabled:opacity-50 disabled:cursor-not-allowed{% endif %} {{ extra_class }}" {% if title %}title="{{ title }}"{% endif %} {{ alpine_attrs }}>
+  {{ icon | safe }}
+</button>
+{% endif %}
+{% endmacro %}
+
+{# Pill button (rounded-full with icon + text) #}
+{% macro btn_pill(label, icon='', click='', bg='bg-teal-500 hover:bg-teal-600', text_color='text-white', border='border border-teal-600 dark:border-teal-400', extra_class='', alpine_attrs='') %}
+<button {% if click %}@click="{{ click }}"{% endif %} class="{{ BTN_H }} flex items-center gap-2 px-4 rounded-full {{ bg }} {{ text_color }} {{ border }} shadow-lg transition-colors cursor-pointer {{ extra_class }}" {{ alpine_attrs }}>
+  {% if icon %}{{ icon | safe }}{% endif %}
+  <span class="text-sm font-bold uppercase tracking-wider">{{ label }}</span>
+</button>
+{% endmacro %}

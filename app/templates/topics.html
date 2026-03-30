@@ -1,8 +1,15 @@
 {% extends "base.html" %}
+{% from "macros/buttons.html" import btn_icon, btn_pill %}
 
 {% block title %}{{ subject.name }}{% endblock %}
 
-{% set header_title = '<span class="text-2xl font-bold text-slate-800 dark:text-neutral-100">' ~ subject.name ~ '</span>' %}
+{% if subject.is_public %}
+{% set visibility_icon = '<svg class="w-5 h-5 flex-shrink-0 text-teal-500 dark:text-teal-400 " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>' %}
+{% else %}
+{% set visibility_icon = '<svg class="w-5 h-5 flex-shrink-0 text-slate-400 dark:text-neutral-500 " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>' %}
+{% endif %}
+{% set header_title_text = '<span class="text-2xl font-bold text-slate-800 dark:text-neutral-100">' ~ subject.name ~ '</span>' %}
+{% set header_title_icon = visibility_icon %}
 
 {% block content %}
 {% include "partials/header.html" %}
@@ -19,15 +26,17 @@
     x-transition:leave="transition ease-in duration-200"
     x-transition:leave-start="translate-x-0"
     x-transition:leave-end="translate-x-full"
-    class="fixed top-16 right-0 z-30 h-[calc(100vh-4rem)] w-[28rem] bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl flex flex-col"
+    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[28rem] bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl flex flex-col"
   >
     <!-- Header -->
     <div class="px-4 py-3 flex justify-end">
-      <button @click="chatOpen = false" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-lg hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer" title="Fechar chat">
-        <svg class="w-5 h-5 text-slate-500 dark:text-neutral-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
+      {{ btn_icon(
+        icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
+        click='chatOpen = false',
+        bg='bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-lg hover:bg-slate-50 dark:hover:bg-neutral-700',
+        text_color='text-slate-500 dark:text-neutral-300',
+        title='Fechar chat'
+      ) }}
     </div>
 
     <!-- Messages -->
@@ -63,11 +72,13 @@
           rows="1"
           class="flex-1 resize-none rounded-xl border border-slate-200 dark:border-neutral-700 bg-slate-50 dark:bg-neutral-800 px-4 py-2.5 text-sm text-slate-800 dark:text-neutral-100 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
         ></textarea>
-        <button type="submit" class="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-full bg-teal-500 hover:bg-teal-600 text-white transition-colors cursor-pointer shadow-lg">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/>
-          </svg>
-        </button>
+        {{ btn_icon(
+          icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>',
+          bg='bg-teal-500 hover:bg-teal-600 shadow-lg',
+          text_color='text-white',
+          extra_class='flex-shrink-0',
+          type='submit'
+        ) }}
       </form>
     </div>
   </aside>
@@ -82,27 +93,31 @@
     x-transition:leave="transition ease-in duration-200"
     x-transition:leave-start="translate-x-0"
     x-transition:leave-end="translate-x-full"
-    class="fixed top-16 right-0 z-30 h-[calc(100vh-4rem)] w-80 bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl overflow-y-auto dark-scrollbar"
+    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-80 bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-2xl overflow-y-auto dark-scrollbar"
   >
     <div class="px-4 py-5">
       <div class="flex items-center justify-between mb-4">
-        <button class="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-full bg-teal-500 hover:bg-teal-600 text-white border border-teal-600 dark:border-teal-400 shadow-lg transition-colors cursor-pointer" title="Adicionar conteúdo">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
-          </svg>
-        </button>
+        {{ btn_icon(
+          icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>',
+          bg='bg-teal-500 hover:bg-teal-600 border border-teal-600 dark:border-teal-400 shadow-lg',
+          text_color='text-white',
+          extra_class='flex-shrink-0',
+          title='Adicionar conteúdo'
+        ) }}
         <h2 class="text-sm font-bold text-slate-800 dark:text-neutral-100 uppercase tracking-wider">Biblioteca</h2>
-        <button @click="drawerOpen = false" class="w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-lg hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer" title="Fechar biblioteca">
-          <svg class="w-5 h-5 text-slate-500 dark:text-neutral-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
-        </button>
+        {{ btn_icon(
+          icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
+          click='drawerOpen = false',
+          bg='bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-lg hover:bg-slate-50 dark:hover:bg-neutral-700',
+          text_color='text-slate-500 dark:text-neutral-300',
+          title='Fechar biblioteca'
+        ) }}
       </div>
 
       <div class="space-y-4">
         {% for item in library_items %}
         <div x-data="{ menu: false }" class="group">
-          <div class="relative aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700">
+          <div class="relative aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 cursor-pointer" @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', name: '{{ item.name | e }}' })">
             <div class="w-full h-full">
               {% if item.thumbnail_url %}
               <img src="{{ item.thumbnail_url }}" alt="{{ item.name }}" class="w-full h-full object-cover">
@@ -125,11 +140,13 @@
             </div>
             <!-- 3-dot menu -->
             <div class="absolute top-1.5 right-1.5">
-              <button @click="menu = !menu" class="w-6 h-6 flex items-center justify-center rounded-full bg-black/40 hover:bg-black/60 text-white transition-colors cursor-pointer backdrop-blur-sm">
-                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4z"/>
-                </svg>
-              </button>
+              {{ btn_icon(
+                icon='<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4zm0 6a2 2 0 110-4 2 2 0 010 4z"/></svg>',
+                click='menu = !menu',
+                bg='bg-black/40 hover:bg-black/60',
+                text_color='text-white',
+                extra_class='backdrop-blur-sm'
+              ) }}
               <div
                 x-show="menu"
                 x-cloak
@@ -157,7 +174,7 @@
               </div>
             </div>
           </div>
-          <p class="mt-1.5 text-sm font-medium text-slate-700 dark:text-neutral-300 group-hover:text-[#26a69a] dark:group-hover:text-teal-400 transition-colors">{{ item.name }}</p>
+          <p @click="$dispatch('open-library-modal', { type: '{{ item.type }}', url: '{{ item.url or '' }}', name: '{{ item.name | e }}' })" class="mt-1.5 text-sm font-medium text-slate-700 dark:text-neutral-300 group-hover:text-[#26a69a] dark:group-hover:text-teal-400 transition-colors cursor-pointer">{{ item.name }}</p>
         </div>
         {% endfor %}
       </div>
@@ -165,14 +182,20 @@
   </aside>
 
   <!-- CONTENT -->
-  <main class="max-w-7xl mx-auto px-6 py-8" :class="{ 'mr-80': drawerOpen, 'mr-[28rem]': chatOpen }" style="transition: margin 0.3s ease;">
+  <main class="max-w-7xl mx-auto px-6 py-6" :class="{ 'mr-80': drawerOpen, 'mr-[28rem]': chatOpen }" style="transition: margin 0.3s ease;">
     <div class="flex items-center justify-between mb-6 h-10">
-      <h1 class="text-2xl font-bold text-slate-800 dark:text-neutral-100">Tópicos</h1>
+      <div class="flex items-center gap-3">
+        {{ btn_icon(
+          icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>',
+          href='/' ~ username
+        ) }}
+        <h1 class="text-2xl font-bold text-slate-800 dark:text-neutral-100">Tópicos</h1>
+      </div>
       <div class="flex items-center gap-3">
         <button
           x-show="!drawerOpen && !chatOpen"
           @click="chatOpen = false; drawerOpen = true"
-          class="h-10 flex items-center gap-2 px-4 rounded-full bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-lg hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
+          class="{{ BTN_H }} flex items-center gap-2 px-4 rounded-full bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-lg hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
           title="Biblioteca"
         >
           <svg class="w-5 h-5 text-slate-600 dark:text-neutral-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -183,7 +206,7 @@
         <button
           x-show="!drawerOpen && !chatOpen"
           @click="drawerOpen = false; chatOpen = true"
-          class="h-10 flex items-center gap-2 px-4 rounded-full bg-teal-500 hover:bg-teal-600 text-white border border-teal-600 dark:border-teal-400 shadow-lg transition-colors cursor-pointer"
+          class="{{ BTN_H }} flex items-center gap-2 px-4 rounded-full bg-teal-500 hover:bg-teal-600 text-white border border-teal-600 dark:border-teal-400 shadow-lg transition-colors cursor-pointer"
           title="Conversar sobre o assunto"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -266,14 +289,78 @@
     <!-- Panel -->
     <div x-show="show" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="relative bg-white dark:bg-neutral-800 rounded-2xl shadow-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto dark-scrollbar">
       <!-- Close button -->
-      <button @click="show = false" class="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600 transition-colors cursor-pointer">
-        <svg class="w-4 h-4 text-slate-500 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
+      {{ btn_icon(
+        icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>',
+        click='show = false',
+        extra_class='absolute top-4 right-4 z-10'
+      ) }}
 
       <!-- Dynamic content loaded by HTMX -->
       <div id="detail-modal-content"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Library Item Modal -->
+<div
+  x-data="{
+    show: false,
+    type: '',
+    url: '',
+    name: '',
+    get embedUrl() {
+      if (this.type !== 'video' || !this.url) return '';
+      const m = this.url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]+)/);
+      return m ? 'https://www.youtube.com/embed/' + m[1] + '?autoplay=1' : '';
+    },
+    open(detail) {
+      this.type = detail.type || '';
+      this.url = detail.url || '';
+      this.name = detail.name || '';
+      this.show = true;
+    },
+    close() {
+      this.show = false;
+      this.url = '';
+    }
+  }"
+  @open-library-modal.window="open($event.detail)"
+  @keydown.escape.window="close()"
+>
+  <div x-show="show" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div x-show="show" @click="close()" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+    <!-- Panel -->
+    <div x-show="show" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="relative bg-white dark:bg-neutral-800 rounded-2xl shadow-2xl w-full max-w-3xl max-h-[85vh] overflow-y-auto dark-scrollbar">
+      <!-- Close button -->
+      {{ btn_icon(
+        icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>',
+        click='close()',
+        extra_class='absolute top-4 right-4 z-10'
+      ) }}
+
+      <div class="p-6">
+        <!-- Title -->
+        <h3 class="text-lg font-bold text-slate-800 dark:text-neutral-100 mb-4 pr-12" x-text="name"></h3>
+
+        <!-- Video embed -->
+        <template x-if="type === 'video' && embedUrl">
+          <div class="aspect-video rounded-xl overflow-hidden bg-black">
+            <iframe :src="embedUrl" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </template>
+
+        <!-- Coming soon (pdf, document, other) -->
+        <template x-if="type !== 'video' || !embedUrl">
+          <div class="flex flex-col items-center justify-center py-16 text-slate-400 dark:text-neutral-500">
+            <svg class="w-16 h-16 mb-4" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            <p class="text-lg font-medium">Em breve</p>
+          </div>
+        </template>
+      </div>
     </div>
   </div>
 </div>

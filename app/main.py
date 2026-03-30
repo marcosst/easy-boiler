@@ -36,6 +36,12 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/midias", StaticFiles(directory="midias"), name="midias")
 templates = Jinja2Templates(directory="app/templates")
 
+# Global button size tokens — change here to resize all buttons
+BTN_H = "h-10"
+BTN_WH = "w-10 h-10"
+templates.env.globals["BTN_H"] = BTN_H
+templates.env.globals["BTN_WH"] = BTN_WH
+
 
 def _ctx(request: Request, context: dict | None = None) -> dict:
     ctx = context or {}
@@ -490,7 +496,7 @@ async def htmx_delete_subject(
 async def subject_topics(request: Request, username: str, shortname: str, user=Depends(require_auth), db=Depends(get_db)):
     row = await db.execute(
         """
-        SELECT s.id, s.name, s.shortname, s.content_md, s.image_path
+        SELECT s.id, s.name, s.shortname, s.content_md, s.image_path, s.is_public
         FROM subjects s
         JOIN users u ON s.owner_id = u.id
         WHERE u.username = ? AND s.shortname = ?

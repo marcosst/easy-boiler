@@ -1,15 +1,16 @@
 <!-- HEADER -->
 <header class="bg-white dark:bg-neutral-950 border-b border-slate-200 dark:border-neutral-800 shadow-sm transition-colors">
-  <div class="max-w-7xl mx-auto px-6 h-16 grid grid-cols-3 items-center">
+  <div class="max-w-7xl mx-auto px-6 h-[72px] flex items-center gap-8">
 
     <!-- Logo (left) -->
-    <a href="/">
+    <a href="/" class="flex-shrink-0">
       <img src="/static/resumiu-header.svg" alt="Logo" class="h-14 w-auto">
     </a>
 
     <!-- Page title (center) -->
-    <div class="flex justify-center">
-      {{ header_title | safe }}
+    <div class="flex-1 min-w-0 flex items-center justify-center gap-2">
+      <span class="truncate">{{ header_title_text | default(header_title) | safe }}</span>
+      {% if header_title_icon %}{{ header_title_icon | safe }}{% endif %}
     </div>
 
     <!-- User menu (right) -->
@@ -18,11 +19,11 @@
         <button
           @click="open = !open"
           @keydown.escape="open = false"
-          class="flex items-center gap-2 bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600 rounded-full py-1.5 pl-1.5 pr-3 transition-colors cursor-pointer"
+          class="flex items-center gap-2 bg-slate-100 dark:bg-neutral-700 hover:bg-slate-200 dark:hover:bg-neutral-600 rounded-full {{ BTN_H }} pr-3 transition-colors cursor-pointer"
           aria-haspopup="true"
           :aria-expanded="open"
         >
-          <div class="w-8 h-8 rounded-full bg-brand dark:bg-brand-dark flex items-center justify-center text-white text-xs font-bold select-none">
+          <div class="{{ BTN_WH }} rounded-full bg-brand dark:bg-brand-dark flex items-center justify-center text-white text-sm font-bold select-none">
             {{ user.initials }}
           </div>
           <span class="text-sm font-medium text-slate-700 dark:text-neutral-300">{{ user.name }}</span>
