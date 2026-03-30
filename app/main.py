@@ -5,7 +5,7 @@ import re
 import uuid
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import parse_qs, urlparse
+
 from urllib.request import Request as UrllibRequest, urlopen
 
 import httpx
@@ -806,8 +806,11 @@ async def htmx_library_preview(
 @app.delete("/htmx/library/{item_id}")
 async def htmx_library_delete(item_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
     await db.execute(
-        "UPDATE library_items SET deleted_at = CURRENT_TIMESTAMP WHERE id = ?",
-        (item_id,),
+        """UPDATE library_items SET deleted_at = CURRENT_TIMESTAMP
+           WHERE id = ? AND subject_id IN (
+               SELECT id FROM subjects WHERE owner_id = ?
+           )""",
+        (item_id, user["id"]),
     )
     await db.commit()
     return Response(status_code=200)
@@ -840,6 +843,7 @@ async def htmx_library_save(
     username = user["username"]
     metadata_json = None
     subtitle_path = None
+    video_id = None
 
     # For YouTube: fetch metadata and subtitles from Apify
     if type == "youtube" and url:
@@ -896,9 +900,8 @@ async def htmx_library_save(
         "file_path": file_path,
         "image_path": image_path,
     }
-    if type == "youtube" and url:
-        m = YOUTUBE_RE.search(url)
-        item["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg" if m else None
+    if type == "youtube" and url and video_id:
+        item["thumbnail_url"] = f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg"
     else:
         item["thumbnail_url"] = None
 
