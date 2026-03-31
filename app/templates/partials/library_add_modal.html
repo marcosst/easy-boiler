@@ -33,8 +33,9 @@
          :class="saving ? 'overflow-hidden' : 'overflow-y-auto'">
 
       <!-- Header -->
-      <div x-show="!previewed" class="flex items-center justify-between px-5 pt-5 pb-2">
-        <h3 class="text-base font-bold text-slate-700 dark:text-neutral-300">Adicionar à Biblioteca</h3>
+      <div class="flex items-center justify-between px-5 pt-5 pb-2">
+        <h3 x-show="!previewed" class="text-base font-bold text-slate-700 dark:text-neutral-300">Adicionar à Biblioteca</h3>
+        <div x-show="previewed"></div>
         {{ btn_icon(
           icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>',
           click='reset()',
