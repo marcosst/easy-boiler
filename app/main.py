@@ -974,25 +974,16 @@ async def htmx_library_save(
         else:
             print(f"[CLASSIFY] SKIP: type={type}, not youtube")
 
-    item_response = templates.TemplateResponse(
+    response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
         context=_ctx(request, {"item": item}),
     )
-    body = item_response.body.decode("utf-8")
-
+    triggers = {"close-add-modal": True}
     if topics is not None:
-        oob_response = templates.TemplateResponse(
-            request=request,
-            name="partials/topics_accordion.html",
-            context=_ctx(request, {"topics": topics}),
-        )
-        oob_html = oob_response.body.decode("utf-8")
-        body += f'\n<div id="topics-accordion" hx-swap-oob="innerHTML">{oob_html}</div>'
-        print(f"[OOB] Appended OOB swap with {len(topics)} topics")
-
-    response = Response(content=body, media_type="text/html")
-    response.headers["HX-Trigger"] = "close-add-modal"
+        triggers["refresh-topics"] = True
+        print(f"[SAVE] Triggering refresh-topics with {len(topics)} topics")
+    response.headers["HX-Trigger"] = json.dumps(triggers)
     return response
 
 
@@ -1087,6 +1078,23 @@ async def htmx_library_classify(
     subject_row = await row.fetchone()
     topics = parse_topics_json(subject_row["content_json"] if subject_row else None)
 
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/topics_accordion.html",
+        context=_ctx(request, {"topics": topics}),
+    )
+
+
+@app.get("/htmx/subjects/{subject_id}/topics")
+async def htmx_subject_topics(subject_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
+    row = await db.execute(
+        "SELECT content_json FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    subject = await row.fetchone()
+    if not subject:
+        raise HTTPException(status_code=404)
+    topics = parse_topics_json(subject["content_json"])
     return templates.TemplateResponse(
         request=request,
         name="partials/topics_accordion.html",

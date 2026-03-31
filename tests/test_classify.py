@@ -49,11 +49,8 @@ def test_save_youtube_classifies_inline(auth_client):
     assert response.status_code == 200
     # Response should contain the library item
     assert "Test Video" in response.text
-    # Response should contain OOB swap with topics
-    assert "topics-accordion" in response.text
-    assert "hx-swap-oob" in response.text
-    assert "Cadastro" in response.text
-    assert "Selecionar arquivo" in response.text
+    # Response should trigger topics refresh via HX-Trigger
+    assert "refresh-topics" in response.headers.get("hx-trigger", "")
 
     Path("midias/testuser/subtitles/dQw4w9WgXcQ.txt").unlink(missing_ok=True)
 
@@ -77,8 +74,8 @@ def test_save_youtube_llm_failure_still_saves_item(auth_client):
 
     assert response.status_code == 200
     assert "Fail Video" in response.text
-    # No OOB swap when LLM fails
-    assert "hx-swap-oob" not in response.text
+    # No refresh-topics trigger when LLM fails
+    assert "refresh-topics" not in response.headers.get("hx-trigger", "")
 
     Path("midias/testuser/subtitles/failtest.txt").unlink(missing_ok=True)
 

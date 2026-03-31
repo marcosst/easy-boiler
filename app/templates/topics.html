@@ -174,7 +174,10 @@
       </div>
     </div>
 
-    <div id="topics-accordion" class="space-y-3">
+    <div id="topics-accordion" class="space-y-3"
+         hx-get="/htmx/subjects/{{ subject.id }}/topics"
+         hx-trigger="refresh-topics from:body"
+         hx-swap="innerHTML">
       {% include "partials/topics_accordion.html" %}
     </div>
   </main>
