@@ -873,7 +873,7 @@ async def htmx_library_save(
             metadata, subtitle_text = await fetch_apify_data(url)
         except (ValueError, RuntimeError) as exc:
             # Return the preview form with error banner
-            return templates.TemplateResponse(
+            error_response = templates.TemplateResponse(
                 request=request,
                 name="partials/library_preview.html",
                 context=_ctx(request, {
@@ -885,6 +885,9 @@ async def htmx_library_save(
                     "subject_id": subject_id,
                 }),
             )
+            error_response.headers["HX-Retarget"] = "#library-preview-area"
+            error_response.headers["HX-Reswap"] = "innerHTML"
+            return error_response
 
         metadata_json = json.dumps(metadata, ensure_ascii=False)
 
@@ -923,12 +926,11 @@ async def htmx_library_save(
     else:
         item["thumbnail_url"] = None
 
-    item_html = templates.get_template("partials/library_item.html").render(
-        _ctx(request, {"item": item}),
+    response = templates.TemplateResponse(
+        request=request,
+        name="partials/library_item.html",
+        context=_ctx(request, {"item": item}),
     )
-    # Empty span for primary target + OOB swap to insert item into list
-    html = f'<span></span><div id="library-items-list" hx-swap-oob="beforeend">{item_html}</div>'
-    response = Response(content=html, media_type="text/html")
     response.headers["HX-Trigger"] = "close-add-modal"
     return response
 
