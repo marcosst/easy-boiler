@@ -24,5 +24,6 @@ RUN chmod +x /entrypoint.sh
 EXPOSE 8000
 
 ENV DATABASE_URL=sqlite:////app/data/app.db
+ENV PYTHONUNBUFFERED=1
 
 ENTRYPOINT ["/entrypoint.sh"]
