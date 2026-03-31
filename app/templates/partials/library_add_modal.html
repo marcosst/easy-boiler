@@ -15,6 +15,7 @@
       this.saving = false;
       const previewArea = document.getElementById('library-preview-area');
       if (previewArea) previewArea.innerHTML = '';
+      this.$el.querySelectorAll('form').forEach(f => f.reset());
     }
   }"
   @open-add-modal.window="show = true"
