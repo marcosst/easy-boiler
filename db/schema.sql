@@ -49,11 +49,26 @@ CREATE TABLE IF NOT EXISTS "library_items" (
     position      INTEGER NOT NULL DEFAULT 0,
     created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP
-, deleted_at DATETIME DEFAULT NULL);
+, deleted_at DATETIME DEFAULT NULL, processed_at DATETIME DEFAULT NULL);
 CREATE INDEX idx_library_items_subject ON library_items(subject_id);
+CREATE TABLE knowledge_items (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    library_id        INTEGER NOT NULL REFERENCES library_items(id) ON DELETE CASCADE,
+    topico            TEXT NOT NULL,
+    subtopico         TEXT NOT NULL,
+    acao              TEXT NOT NULL,
+    timestamp         TEXT,
+    pagina            INTEGER,
+    trecho_referencia TEXT NOT NULL DEFAULT '',
+    file_path         TEXT,
+    url               TEXT,
+    created_at        DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX idx_knowledge_items_library ON knowledge_items(library_id);
 -- Dbmate schema migrations
 INSERT INTO "schema_migrations" (version) VALUES
   ('20240101000000'),
   ('20260330200000'),
+  ('20260330200001'),
   ('20260331000000'),
   ('20260331100000');
