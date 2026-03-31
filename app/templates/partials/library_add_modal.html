@@ -19,7 +19,7 @@
     }
   }"
   @open-add-modal.window="show = true"
-  @close-add-modal.window="if(!saving) reset()"
+  @close-add-modal.window="reset()"
   @keydown.escape.window="if(!saving) reset()"
 >
   <div x-show="show" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">

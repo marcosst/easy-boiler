@@ -884,7 +884,6 @@ async def htmx_library_save(
                     "preview_image_path": image_path,
                     "subject_id": subject_id,
                 }),
-                status_code=422,
             )
 
         metadata_json = json.dumps(metadata, ensure_ascii=False)
@@ -924,11 +923,13 @@ async def htmx_library_save(
     else:
         item["thumbnail_url"] = None
 
-    return templates.TemplateResponse(
+    response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
-        context=_ctx(request, {"item": item}),
+        context=_ctx(request, {"item": item, "oob": True}),
     )
+    response.headers["HX-Trigger"] = "close-add-modal"
+    return response
 
 
 # --- Public HTMX routes ---

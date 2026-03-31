@@ -1,4 +1,5 @@
 {% from "macros/buttons.html" import btn_icon %}
+{% if oob is defined and oob %}<div id="library-items-list" hx-swap-oob="beforeend">{% endif %}
 <div class="group" id="library-item-{{ item.id }}">
   <!-- Grid view -->
   <div x-show="viewMode === 'grid'">
@@ -71,3 +72,4 @@
     </div>
   </div>
 </div>
+{% if oob is defined and oob %}</div>{% endif %}

@@ -8,11 +8,9 @@
 {% if preview_type %}
 {# Error during save — re-render the form so user can retry #}
 <form hx-post="/htmx/library/save"
-      hx-target="#library-items-list" hx-swap="beforeend"
-      hx-target-error="#library-preview-area"
+      hx-target="#library-preview-area" hx-swap="innerHTML"
       @htmx:before-request="saving = true; $el.closest('.rounded-2xl')?.scrollTo(0,0)"
       @htmx:after-request="saving = false"
-      hx-on::after-request="if(event.detail.successful) { window.dispatchEvent(new CustomEvent('close-add-modal')) }"
       class="mt-3">
   <input type="hidden" name="subject_id" value="{{ subject_id }}">
   <input type="hidden" name="type" value="{{ preview_type }}">
@@ -45,11 +43,9 @@
 {% endif %}
 {% else %}
 <form hx-post="/htmx/library/save"
-      hx-target="#library-items-list" hx-swap="beforeend"
-      hx-target-error="#library-preview-area"
+      hx-target="#library-preview-area" hx-swap="innerHTML"
       @htmx:before-request="saving = true; $el.closest('.rounded-2xl')?.scrollTo(0,0)"
-      @htmx:after-request="saving = false"
-      hx-on::after-request="if(event.detail.successful) { window.dispatchEvent(new CustomEvent('close-add-modal')) }">
+      @htmx:after-request="saving = false">
   <input type="hidden" name="subject_id" value="{{ subject_id }}">
   <input type="hidden" name="type" value="{{ preview_type }}">
   {% if preview_type == 'youtube' %}
