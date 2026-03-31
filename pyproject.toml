@@ -17,6 +17,7 @@ dependencies = [
     "youtube-transcript-api",
     "itsdangerous>=2.2.0",
     "python-multipart>=0.0.22",
+    "openai>=2.30.0",
 ]
 
 [tool.uv]
