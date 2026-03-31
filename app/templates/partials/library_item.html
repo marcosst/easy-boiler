@@ -70,13 +70,10 @@
       </div>
     </div>
   </div>
-{% if trigger_classify %}
-<div hx-post="/htmx/library/{{ classify_item_id }}/classify"
-     hx-trigger="load"
-     hx-target="#topics-accordion"
-     hx-swap="innerHTML"
-     hx-indicator="#classify-spinner"
-     style="display:none">
+{% if oob_topics is not none %}
+{% set topics = oob_topics %}
+<div id="topics-accordion" hx-swap-oob="innerHTML">
+  {% include "partials/topics_accordion.html" %}
 </div>
 {% endif %}
 </div>

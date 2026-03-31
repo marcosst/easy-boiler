@@ -934,15 +934,41 @@ async def htmx_library_save(
     else:
         item["thumbnail_url"] = None
 
-    trigger = type == "youtube" and subtitle_path is not None
+    # If YouTube with subtitles, classify via LLM inline
+    topics = None
+    if type == "youtube" and subtitle_path is not None:
+        item_id = cursor.lastrowid
+        subs_file = Path("midias") / subtitle_path
+        if subs_file.exists():
+            transcript = subs_file.read_text(encoding="utf-8").strip()
+            taxonomy = await get_taxonomy_for_subject(db, subject_id)
+            result = await asyncio.to_thread(classify_transcript, taxonomy, transcript)
+            if result is not None:
+                youtube_id_for_url = video_id or ""
+                await db.execute("DELETE FROM knowledge_items WHERE library_id = ?", (item_id,))
+                for ki in result.itens:
+                    step_url = build_step_url(youtube_id_for_url, ki.timestamp) if youtube_id_for_url else None
+                    await db.execute(
+                        """INSERT INTO knowledge_items
+                           (library_id, topico, subtopico, acao, timestamp, pagina, trecho_referencia, file_path, url)
+                           VALUES (?, ?, ?, ?, ?, NULL, '', NULL, ?)""",
+                        (item_id, ki.topico, ki.subtopico, ki.acao, ki.timestamp, step_url),
+                    )
+                await db.execute(
+                    "UPDATE library_items SET processed_at = CURRENT_TIMESTAMP WHERE id = ?",
+                    (item_id,),
+                )
+                tree = await rebuild_content_json(db, subject_id)
+                topics = tree.get("topicos", [])
+            else:
+                logger.warning("LLM classification failed for library_item %d", item_id)
 
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
         context=_ctx(request, {
             "item": item,
-            "trigger_classify": trigger,
-            "classify_item_id": cursor.lastrowid,
+            "oob_topics": topics,
         }),
     )
     response.headers["HX-Trigger"] = "close-add-modal"

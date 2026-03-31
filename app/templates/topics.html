@@ -174,16 +174,6 @@
       </div>
     </div>
 
-    <!-- Classify spinner (shown during LLM processing) -->
-    <style>
-      #classify-spinner { display: none; }
-      #classify-spinner.htmx-request { display: flex; }
-    </style>
-    <div id="classify-spinner" class="items-center justify-center gap-3 py-6">
-      <div class="w-8 h-8 border-4 border-teal-500/20 border-t-teal-500 rounded-full animate-spin"></div>
-      <span class="text-sm text-teal-500 dark:text-teal-400 font-medium">Fazendo a Mágica Acontecer...</span>
-    </div>
-
     <div id="topics-accordion" class="space-y-3">
       {% include "partials/topics_accordion.html" %}
     </div>
