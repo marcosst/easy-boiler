@@ -139,7 +139,7 @@
   </aside>
 
   <!-- CONTENT -->
-  <main class="max-w-7xl mx-auto px-6 py-6" :class="{ 'mr-[clamp(30vw,400px,50vw)]': drawerOpen, 'mr-[clamp(30vw,400px,50vw)]': chatOpen }" style="transition: margin 0.3s ease;">
+  <main class="max-w-7xl mx-auto px-6 py-6" :class="{ 'mr-[clamp(30vw,400px,50vw)]': drawerOpen || chatOpen }" style="transition: margin 0.3s ease;">
     <div class="flex items-center justify-between mb-6 h-10">
       <div class="flex items-center gap-3">
         {{ btn_icon(
