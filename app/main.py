@@ -31,7 +31,15 @@ from app.auth import (
 )
 from app.database import get_db
 
+import logging
+from app.services.llm_classifier import classify_transcript
+from app.services.taxonomy_service import get_taxonomy_for_subject
+from app.services.tree_builder import rebuild_content_json
+from app.services.url_builder import build_step_url
+
 app = FastAPI()
+
+logger = logging.getLogger(__name__)
 
 app.add_middleware(
     SessionMiddleware,
@@ -929,10 +937,112 @@ async def htmx_library_save(
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
-        context=_ctx(request, {"item": item}),
+        context=_ctx(request, {
+            "item": item,
+            "trigger_classify": type == "youtube" and subtitle_path is not None,
+            "classify_item_id": cursor.lastrowid,
+        }),
     )
     response.headers["HX-Trigger"] = "close-add-modal"
     return response
+
+
+@app.post("/htmx/library/{item_id}/classify")
+async def htmx_library_classify(
+    item_id: int,
+    request: Request,
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    # Fetch the library item and verify ownership
+    cursor = await db.execute(
+        """
+        SELECT li.id, li.subtitle_path, li.subject_id, li.url
+        FROM library_items li
+        JOIN subjects s ON li.subject_id = s.id
+        WHERE li.id = ? AND s.owner_id = ?
+        """,
+        (item_id, user["id"]),
+    )
+    item = await cursor.fetchone()
+    if not item:
+        raise HTTPException(status_code=404)
+
+    subject_id = item["subject_id"]
+    subtitle_path = item["subtitle_path"]
+
+    # If no subtitle_path, return current accordion unchanged
+    if not subtitle_path:
+        row = await db.execute("SELECT content_json FROM subjects WHERE id = ?", (subject_id,))
+        subject_row = await row.fetchone()
+        topics = parse_topics_json(subject_row["content_json"] if subject_row else None)
+        return templates.TemplateResponse(
+            request=request,
+            name="partials/topics_accordion.html",
+            context=_ctx(request, {"topics": topics}),
+        )
+
+    # Read the subtitle file
+    subs_file = Path("midias") / subtitle_path
+    if not subs_file.exists():
+        logger.error("Subtitle file not found: %s", subs_file)
+        row = await db.execute("SELECT content_json FROM subjects WHERE id = ?", (subject_id,))
+        subject_row = await row.fetchone()
+        topics = parse_topics_json(subject_row["content_json"] if subject_row else None)
+        return templates.TemplateResponse(
+            request=request,
+            name="partials/topics_accordion.html",
+            context=_ctx(request, {"topics": topics}),
+        )
+
+    transcript = subs_file.read_text(encoding="utf-8").strip()
+
+    # Get existing taxonomy for this subject
+    taxonomy = await get_taxonomy_for_subject(db, subject_id)
+
+    # Call LLM in a thread (blocking call)
+    result = await asyncio.to_thread(classify_transcript, taxonomy, transcript)
+
+    if result is not None:
+        # Extract youtube_id from URL
+        video_url = item["url"] or ""
+        m = YOUTUBE_RE.search(video_url)
+        youtube_id = m.group(1) if m else ""
+
+        # Delete old knowledge_items for this library_id (for reprocessing)
+        await db.execute("DELETE FROM knowledge_items WHERE library_id = ?", (item_id,))
+
+        # Insert new knowledge_items
+        for ki in result.itens:
+            url = build_step_url(youtube_id, ki.timestamp) if youtube_id else None
+            await db.execute(
+                """INSERT INTO knowledge_items
+                   (library_id, topico, subtopico, acao, timestamp, pagina, trecho_referencia, file_path, url)
+                   VALUES (?, ?, ?, ?, ?, NULL, '', NULL, ?)""",
+                (item_id, ki.topico, ki.subtopico, ki.acao, ki.timestamp, url),
+            )
+
+        # Mark as processed
+        await db.execute(
+            "UPDATE library_items SET processed_at = CURRENT_TIMESTAMP WHERE id = ?",
+            (item_id,),
+        )
+
+        # Rebuild the content_json for the subject
+        await rebuild_content_json(db, subject_id)
+    else:
+        logger.warning("LLM classification failed for library_item %d", item_id)
+
+    # Return updated accordion
+    row = await db.execute("SELECT content_json FROM subjects WHERE id = ?", (subject_id,))
+    subject_row = await row.fetchone()
+    topics = parse_topics_json(subject_row["content_json"] if subject_row else None)
+
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/topics_accordion.html",
+        context=_ctx(request, {"topics": topics}),
+    )
 
 
 # --- Public HTMX routes ---
