@@ -934,12 +934,14 @@ async def htmx_library_save(
     else:
         item["thumbnail_url"] = None
 
+    trigger = type == "youtube" and subtitle_path is not None
+
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
         context=_ctx(request, {
             "item": item,
-            "trigger_classify": type == "youtube" and subtitle_path is not None,
+            "trigger_classify": trigger,
             "classify_item_id": cursor.lastrowid,
         }),
     )
