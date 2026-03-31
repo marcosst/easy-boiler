@@ -923,11 +923,11 @@ async def htmx_library_save(
     else:
         item["thumbnail_url"] = None
 
-    response = templates.TemplateResponse(
-        request=request,
-        name="partials/library_item.html",
-        context=_ctx(request, {"item": item, "oob": True}),
+    item_html = templates.get_template("partials/library_item.html").render(
+        _ctx(request, {"item": item}),
     )
+    oob_html = f'<div id="library-items-list" hx-swap-oob="beforeend">{item_html}</div>'
+    response = Response(content=oob_html, media_type="text/html")
     response.headers["HX-Trigger"] = "close-add-modal"
     return response
 
