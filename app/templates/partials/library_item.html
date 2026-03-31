@@ -71,9 +71,3 @@
     </div>
   </div>
 </div>
-{% if oob_topics is not none %}
-{% set topics = oob_topics %}
-<div id="topics-accordion" hx-swap-oob="innerHTML">
-  {% include "partials/topics_accordion.html" %}
-</div>
-{% endif %}

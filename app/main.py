@@ -939,11 +939,16 @@ async def htmx_library_save(
     if type == "youtube" and subtitle_path is not None:
         item_id = cursor.lastrowid
         subs_file = Path("midias") / subtitle_path
-        if subs_file.exists():
+        if not subs_file.exists():
+            print(f"[CLASSIFY] ERROR: Subtitle file not found: {subs_file}")
+        else:
             transcript = subs_file.read_text(encoding="utf-8").strip()
+            print(f"[CLASSIFY] Read transcript: {len(transcript)} chars")
             taxonomy = await get_taxonomy_for_subject(db, subject_id)
+            print(f"[CLASSIFY] Existing taxonomy: {len(taxonomy.get('topicos', []))} topics")
             result = await asyncio.to_thread(classify_transcript, taxonomy, transcript)
             if result is not None:
+                print(f"[CLASSIFY] LLM returned {len(result.itens)} items")
                 youtube_id_for_url = video_id or ""
                 await db.execute("DELETE FROM knowledge_items WHERE library_id = ?", (item_id,))
                 for ki in result.itens:
@@ -960,17 +965,33 @@ async def htmx_library_save(
                 )
                 tree = await rebuild_content_json(db, subject_id)
                 topics = tree.get("topicos", [])
+                print(f"[CLASSIFY] SUCCESS: {len(topics)} topics in tree, content_json updated")
             else:
-                logger.warning("LLM classification failed for library_item %d", item_id)
+                print(f"[CLASSIFY] ERROR: LLM classification returned None for item {item_id}")
+    else:
+        if type == "youtube":
+            print(f"[CLASSIFY] SKIP: subtitle_path is None (Apify may have failed)")
+        else:
+            print(f"[CLASSIFY] SKIP: type={type}, not youtube")
 
-    response = templates.TemplateResponse(
+    item_response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
-        context=_ctx(request, {
-            "item": item,
-            "oob_topics": topics,
-        }),
+        context=_ctx(request, {"item": item}),
     )
+    body = item_response.body.decode("utf-8")
+
+    if topics is not None:
+        oob_response = templates.TemplateResponse(
+            request=request,
+            name="partials/topics_accordion.html",
+            context=_ctx(request, {"topics": topics}),
+        )
+        oob_html = oob_response.body.decode("utf-8")
+        body += f'\n<div id="topics-accordion" hx-swap-oob="innerHTML">{oob_html}</div>'
+        print(f"[OOB] Appended OOB swap with {len(topics)} topics")
+
+    response = Response(content=body, media_type="text/html")
     response.headers["HX-Trigger"] = "close-add-modal"
     return response
 
