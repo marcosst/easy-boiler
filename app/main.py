@@ -979,11 +979,13 @@ async def htmx_library_save(
         name="partials/library_item.html",
         context=_ctx(request, {"item": item}),
     )
-    triggers = {"close-add-modal": True}
     if topics is not None:
-        triggers["refresh-topics"] = True
+        # refresh-topics fires immediately, close-add-modal fires after settle
+        response.headers["HX-Trigger"] = json.dumps({"refresh-topics": True})
+        response.headers["HX-Trigger-After-Settle"] = json.dumps({"close-add-modal": True})
         print(f"[SAVE] Triggering refresh-topics with {len(topics)} topics")
-    response.headers["HX-Trigger"] = json.dumps(triggers)
+    else:
+        response.headers["HX-Trigger"] = json.dumps({"close-add-modal": True})
     return response
 
 
