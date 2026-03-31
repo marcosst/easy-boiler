@@ -926,8 +926,9 @@ async def htmx_library_save(
     item_html = templates.get_template("partials/library_item.html").render(
         _ctx(request, {"item": item}),
     )
-    oob_html = f'<div id="library-items-list" hx-swap-oob="beforeend">{item_html}</div>'
-    response = Response(content=oob_html, media_type="text/html")
+    # Empty span for primary target + OOB swap to insert item into list
+    html = f'<span></span><div id="library-items-list" hx-swap-oob="beforeend">{item_html}</div>'
+    response = Response(content=html, media_type="text/html")
     response.headers["HX-Trigger"] = "close-add-modal"
     return response
 
