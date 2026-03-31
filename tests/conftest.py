@@ -57,6 +57,7 @@ CREATE TABLE library_items (
     position INTEGER NOT NULL DEFAULT 0,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    deleted_at DATETIME DEFAULT NULL,
     processed_at DATETIME DEFAULT NULL
 );
 CREATE INDEX idx_library_items_subject ON library_items(subject_id);
