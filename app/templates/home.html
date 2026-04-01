@@ -137,7 +137,7 @@
     onImageSelect(event) {
       const file = event.target.files[0];
       if (!file) return;
-      if (file.size > 5 * 1024 * 1024) {
+      if (file.size > {{ max_image_size }}) {
         this.error_field = 'image';
         this.error_message = 'Arquivo muito grande (máx. 5MB).';
         return;
@@ -157,7 +157,7 @@
         this.error_message = 'Informe o título do assunto.';
         return;
       }
-      if (!/^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(this.shortname) || this.shortname.length < 2 || this.shortname.length > 64) {
+      if (!new RegExp('{{ shortname_pattern }}').test(this.shortname) || this.shortname.length < {{ shortname_min }} || this.shortname.length > {{ shortname_max }}) {
         this.error_field = 'shortname';
         this.error_message = 'Apenas letras minúsculas, números e hífens (mín. 2, máx. 64 caracteres).';
         return;

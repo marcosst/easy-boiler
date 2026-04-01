@@ -2,7 +2,7 @@ import json
 import logging
 import os
 
-from openai import OpenAI
+from openai import AsyncOpenAI
 from pydantic import ValidationError
 
 from app.schemas.llm_output import ResultadoLLM
@@ -65,23 +65,18 @@ def _build_messages(taxonomy: dict, transcript: str) -> list[dict]:
     ]
 
 
-def _call_openai(messages: list[dict]):
-    """Make the actual OpenAI API call. Separated for easy mocking."""
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-    return client.chat.completions.create(
-        model="gpt-5.4",
-        messages=messages,
-        temperature=0.3,
-        response_format={"type": "json_object"},
-    )
-
-
-def classify_transcript(taxonomy: dict, transcript: str) -> ResultadoLLM | None:
+async def classify_transcript(taxonomy: dict, transcript: str) -> ResultadoLLM | None:
     """Classify a transcript using the LLM. Returns validated result or None on failure."""
     messages = _build_messages(taxonomy, transcript)
+    client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     try:
-        response = _call_openai(messages)
+        response = await client.chat.completions.create(
+            model="gpt-4o",
+            messages=messages,
+            temperature=0.3,
+            response_format={"type": "json_object"},
+        )
     except Exception as e:
         print(f"[LLM] ERROR: OpenAI API call failed: {e}")
         logger.exception("OpenAI API call failed")

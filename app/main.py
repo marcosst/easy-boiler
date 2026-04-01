@@ -1,12 +1,8 @@
-import asyncio
 import json
 import os
 import re
 import uuid
 from pathlib import Path
-from urllib.error import HTTPError, URLError
-
-from urllib.request import Request as UrllibRequest, urlopen
 
 import httpx
 import fitz  # pymupdf
@@ -32,6 +28,14 @@ from app.auth import (
 from app.database import get_db
 
 import logging
+from app.services.file_service import (
+    ImageValidationError,
+    MAX_IMAGE_SIZE,
+    SHORTNAME_RE,
+    SHORTNAME_MIN,
+    SHORTNAME_MAX,
+    save_upload_image,
+)
 from app.services.llm_classifier import classify_transcript
 from app.services.taxonomy_service import get_taxonomy_for_subject
 from app.services.tree_builder import rebuild_content_json
@@ -323,15 +327,15 @@ async def user_subjects(request: Request, username: str, user=Depends(require_au
     return templates.TemplateResponse(
         request=request,
         name="home.html",
-        context=_ctx(request, {"user": user, "subjects": subjects}),
+        context=_ctx(request, {
+            "user": user,
+            "subjects": subjects,
+            "shortname_pattern": SHORTNAME_RE.pattern,
+            "shortname_min": SHORTNAME_MIN,
+            "shortname_max": SHORTNAME_MAX,
+            "max_image_size": MAX_IMAGE_SIZE,
+        }),
     )
-
-
-ALLOWED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/gif", "image/webp"}
-MIME_TO_EXT = {"image/jpeg": ".jpg", "image/png": ".png", "image/gif": ".gif", "image/webp": ".webp"}
-MAX_IMAGE_SIZE = 5 * 1024 * 1024  # 5MB
-
-SHORTNAME_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$")
 
 
 @app.post("/htmx/subjects")
@@ -353,7 +357,7 @@ async def htmx_create_subject(
             headers={"HX-Trigger": '{"subject-error": {"field": "name", "message": "Informe o título do assunto."}}'},
         )
 
-    if len(shortname) < 2 or len(shortname) > 64 or not SHORTNAME_RE.match(shortname):
+    if len(shortname) < SHORTNAME_MIN or len(shortname) > SHORTNAME_MAX or not SHORTNAME_RE.match(shortname):
         return Response(
             status_code=422,
             headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2, máx. 64 caracteres)."}}'},
@@ -368,22 +372,13 @@ async def htmx_create_subject(
 
     image_path = None
     if image and image.filename:
-        if image.content_type not in ALLOWED_IMAGE_TYPES:
+        try:
+            image_path = await save_upload_image(image)
+        except ImageValidationError as e:
             return Response(
                 status_code=422,
-                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Tipo de arquivo não suportado."}}'},
+                headers={"HX-Trigger": json.dumps({"subject-error": {"field": e.field, "message": e.message}})},
             )
-        contents = await image.read()
-        if len(contents) > MAX_IMAGE_SIZE:
-            return Response(
-                status_code=422,
-                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Arquivo muito grande (máx. 5MB)."}}'},
-            )
-        ext = MIME_TO_EXT[image.content_type]
-        filename = f"{uuid.uuid4().hex}{ext}"
-        filepath = Path("midias") / filename
-        filepath.write_bytes(contents)
-        image_path = filename
 
     await db.execute(
         "INSERT INTO subjects (name, shortname, is_public, owner_id, image_path) VALUES (?, ?, ?, ?, ?)",
@@ -425,7 +420,7 @@ async def htmx_update_subject(
             headers={"HX-Trigger": '{"subject-error": {"field": "name", "message": "Informe o título do assunto."}}'},
         )
 
-    if len(shortname) < 2 or len(shortname) > 64 or not SHORTNAME_RE.match(shortname):
+    if len(shortname) < SHORTNAME_MIN or len(shortname) > SHORTNAME_MAX or not SHORTNAME_RE.match(shortname):
         return Response(
             status_code=422,
             headers={"HX-Trigger": '{"subject-error": {"field": "shortname", "message": "Apenas letras minúsculas, números e hífens (mín. 2, máx. 64 caracteres)."}}'},
@@ -443,26 +438,13 @@ async def htmx_update_subject(
 
     image_path = subject["image_path"]
     if image and image.filename:
-        if image.content_type not in ALLOWED_IMAGE_TYPES:
+        try:
+            image_path = await save_upload_image(image, old_filename=subject["image_path"])
+        except ImageValidationError as e:
             return Response(
                 status_code=422,
-                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Tipo de arquivo não suportado."}}'},
+                headers={"HX-Trigger": json.dumps({"subject-error": {"field": e.field, "message": e.message}})},
             )
-        contents = await image.read()
-        if len(contents) > MAX_IMAGE_SIZE:
-            return Response(
-                status_code=422,
-                headers={"HX-Trigger": '{"subject-error": {"field": "image", "message": "Arquivo muito grande (máx. 5MB)."}}'},
-            )
-        # Remove old image if exists
-        if subject["image_path"]:
-            old_path = Path("midias") / subject["image_path"]
-            old_path.unlink(missing_ok=True)
-        ext = MIME_TO_EXT[image.content_type]
-        filename = f"{uuid.uuid4().hex}{ext}"
-        filepath = Path("midias") / filename
-        filepath.write_bytes(contents)
-        image_path = filename
 
     await db.execute(
         "UPDATE subjects SET name = ?, shortname = ?, is_public = ?, image_path = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?",
@@ -598,8 +580,8 @@ def format_srt_to_timestamped(srt_text: str) -> str:
     return "\n".join(parts)
 
 
-def _run_apify_sync(video_url: str) -> tuple[dict, str]:
-    """Synchronous Apify call — runs in a thread via asyncio.to_thread."""
+async def fetch_apify_data(video_url: str) -> tuple[dict, str]:
+    """Fetch metadata and subtitles from Apify via httpx async."""
     token = os.getenv("APIFY_API_TOKEN", "").strip()
     if not token:
         raise ValueError("Token da Apify não configurado.")
@@ -629,24 +611,20 @@ def _run_apify_sync(video_url: str) -> tuple[dict, str]:
         "preferAutoGeneratedSubtitles": prefer_auto_bool,
     }
 
-    req = UrllibRequest(
-        api_url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json", "Accept": "application/json"},
-        method="POST",
-    )
-
     try:
-        with urlopen(req, timeout=timeout_secs) as response:
-            raw_body = response.read().decode("utf-8")
-    except HTTPError as exc:
+        async with httpx.AsyncClient(timeout=timeout_secs) as client:
+            resp = await client.post(
+                api_url,
+                json=payload,
+                headers={"Accept": "application/json"},
+            )
+            resp.raise_for_status()
+            items = resp.json()
+    except httpx.HTTPStatusError as exc:
         raise RuntimeError("Falha ao baixar metadados. Tente novamente.") from exc
-    except URLError as exc:
+    except httpx.RequestError as exc:
         raise RuntimeError("Falha ao baixar metadados. Tente novamente.") from exc
-
-    try:
-        items = json.loads(raw_body)
-    except json.JSONDecodeError as exc:
+    except Exception as exc:
         raise RuntimeError("A Apify retornou uma resposta inválida.") from exc
 
     if not isinstance(items, list) or not items:
@@ -669,11 +647,6 @@ def _run_apify_sync(video_url: str) -> tuple[dict, str]:
         raise RuntimeError("Nenhuma legenda disponível para este vídeo.")
 
     return metadata, subtitle_text
-
-
-async def fetch_apify_data(video_url: str) -> tuple[dict, str]:
-    """Fetch metadata and subtitles from Apify. Non-blocking wrapper."""
-    return await asyncio.to_thread(_run_apify_sync, video_url)
 
 
 @app.post("/htmx/library/preview")
@@ -946,7 +919,7 @@ async def htmx_library_save(
             print(f"[CLASSIFY] Read transcript: {len(transcript)} chars")
             taxonomy = await get_taxonomy_for_subject(db, subject_id)
             print(f"[CLASSIFY] Existing taxonomy: {len(taxonomy.get('topicos', []))} topics")
-            result = await asyncio.to_thread(classify_transcript, taxonomy, transcript)
+            result = await classify_transcript(taxonomy, transcript)
             if result is not None:
                 print(f"[CLASSIFY] LLM returned {len(result.itens)} items")
                 youtube_id_for_url = video_id or ""
@@ -1042,8 +1015,7 @@ async def htmx_library_classify(
     # Get existing taxonomy for this subject
     taxonomy = await get_taxonomy_for_subject(db, subject_id)
 
-    # Call LLM in a thread (blocking call)
-    result = await asyncio.to_thread(classify_transcript, taxonomy, transcript)
+    result = await classify_transcript(taxonomy, transcript)
 
     if result is not None:
         # Extract youtube_id from URL
