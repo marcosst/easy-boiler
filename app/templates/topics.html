@@ -14,132 +14,10 @@
 {% block content %}
 {% include "partials/header.html" %}
 
-<div x-data="{ drawerOpen: false, chatOpen: false, viewMode: localStorage.getItem('libraryViewMode') || 'grid', chatMessages: [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este assunto.' }], chatInput: '' }" x-effect="localStorage.setItem('libraryViewMode', viewMode)">
-
-  <!-- Chat Drawer (Pinemix Offcanvas) -->
-  <aside
-    x-show="chatOpen"
-    x-cloak
-    x-transition:enter="transition ease-out duration-300 will-change-transform"
-    x-transition:enter-start="translate-x-full"
-    x-transition:enter-end="translate-x-0"
-    x-transition:leave="transition ease-in duration-200 will-change-transform"
-    x-transition:leave-start="translate-x-0"
-    x-transition:leave-end="translate-x-full"
-    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[clamp(30vw,400px,50vw)] bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-lg flex flex-col dark:shadow-neutral-950"
-  >
-    <!-- Header -->
-    <div class="px-4 py-3 flex justify-end">
-      {{ btn_icon(
-        icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
-        click='chatOpen = false',
-        title='Fechar chat'
-      ) }}
-    </div>
-
-    <!-- Messages -->
-    <div class="flex-1 overflow-y-auto dark-scrollbar px-4 py-4 space-y-4 flex flex-col justify-end" x-ref="chatScroll">
-      <template x-for="(msg, i) in chatMessages" :key="i">
-        <div :class="msg.role === 'user' ? 'flex justify-end' : 'flex justify-start'">
-          <div :class="msg.role === 'user'
-            ? 'bg-teal-500 text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[85%] shadow-sm'
-            : 'bg-slate-100 dark:bg-neutral-800 text-slate-700 dark:text-neutral-300 rounded-2xl rounded-bl-md px-4 py-2.5 max-w-[85%] shadow-sm border border-slate-200 dark:border-neutral-700'"
-          >
-            <p class="text-sm leading-relaxed whitespace-pre-wrap" x-text="msg.text"></p>
-          </div>
-        </div>
-      </template>
-    </div>
-
-    <!-- Input -->
-    <div class="px-4 py-3 border-t border-slate-200 dark:border-neutral-700">
-      <form @submit.prevent="
-        if (!chatInput.trim()) return;
-        chatMessages.push({ role: 'user', text: chatInput.trim() });
-        chatInput = '';
-        $nextTick(() => $refs.chatScroll.scrollTop = $refs.chatScroll.scrollHeight);
-        setTimeout(() => {
-          chatMessages.push({ role: 'assistant', text: '...' });
-          $nextTick(() => $refs.chatScroll.scrollTop = $refs.chatScroll.scrollHeight);
-        }, 800);
-      " class="flex items-end gap-2">
-        <textarea
-          x-model="chatInput"
-          @keydown.enter.prevent="if (!$event.shiftKey) $el.form.requestSubmit()"
-          placeholder="Digite sua pergunta..."
-          rows="1"
-          class="flex-1 resize-none rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-2.5 text-sm text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-        ></textarea>
-        {{ btn_icon(
-          icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>',
-          bg='bg-teal-500 hover:bg-teal-600 shadow-lg',
-          text_color='text-white',
-          extra_class='flex-shrink-0',
-          type='submit'
-        ) }}
-      </form>
-    </div>
-  </aside>
-
-  <!-- Side Drawer Biblioteca (Pinemix Offcanvas) -->
-  <aside
-    x-show="drawerOpen"
-    x-cloak
-    x-transition:enter="transition ease-out duration-300 will-change-transform"
-    x-transition:enter-start="translate-x-full"
-    x-transition:enter-end="translate-x-0"
-    x-transition:leave="transition ease-in duration-200 will-change-transform"
-    x-transition:leave-start="translate-x-0"
-    x-transition:leave-end="translate-x-full"
-    class="fixed top-[72px] right-0 z-30 h-[calc(100vh-72px)] w-[clamp(30vw,400px,50vw)] bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-lg flex flex-col dark:shadow-neutral-950"
-  >
-    <div class="flex-shrink-0 px-4 pt-3 pb-3 border-b border-slate-200 dark:border-neutral-700">
-      <div class="flex items-center justify-between">
-        {{ btn_icon(
-          icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>',
-          bg='bg-teal-500 hover:bg-teal-600 border border-teal-600 dark:border-teal-400 shadow-lg',
-          text_color='text-white',
-          extra_class='flex-shrink-0',
-          title='Adicionar conteúdo',
-          click='$dispatch(\'open-add-modal\')'
-        ) }}
-        <h2 class="text-sm font-bold text-slate-700 dark:text-neutral-300 uppercase tracking-wider">Biblioteca</h2>
-        <div class="flex items-center gap-1">
-          <button
-            @click="viewMode = viewMode === 'grid' ? 'list' : 'grid'"
-            class="{{ BTN_WH }} flex items-center justify-center rounded-full bg-white dark:bg-neutral-700 hover:bg-slate-100 dark:hover:bg-neutral-600 border border-slate-400/50 dark:border-neutral-600/50 text-slate-500 dark:text-neutral-400 transition-colors cursor-pointer"
-            title="Alternar visualização"
-          >
-            <svg x-show="viewMode === 'grid'" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-            <svg x-show="viewMode === 'list'" x-cloak class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <rect x="3" y="3" width="7" height="7" rx="1"/>
-              <rect x="14" y="3" width="7" height="7" rx="1"/>
-              <rect x="3" y="14" width="7" height="7" rx="1"/>
-              <rect x="14" y="14" width="7" height="7" rx="1"/>
-            </svg>
-          </button>
-          {{ btn_icon(
-            icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
-            click='drawerOpen = false',
-            title='Fechar biblioteca'
-          ) }}
-        </div>
-      </div>
-    </div>
-
-    <div class="flex-1 overflow-y-auto dark-scrollbar px-4 py-4">
-      <div id="library-items-list" :class="viewMode === 'grid' ? 'space-y-4' : 'space-y-2'">
-        {% for item in library_items %}
-        {% include "partials/library_item.html" %}
-        {% endfor %}
-      </div>
-    </div>
-  </aside>
+<div x-data="{ drawerOpen: false, chatOpen: false, viewMode: localStorage.getItem('libraryViewMode') || 'grid', chatMessages: [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este assunto.' }], chatInput: '' }" x-effect="localStorage.setItem('libraryViewMode', viewMode)" class="flex h-[calc(100vh-72px)]">
 
   <!-- CONTENT -->
-  <main class="w-full px-6 py-6" :class="{ 'mr-[clamp(30vw,400px,50vw)]': drawerOpen || chatOpen }" style="transition: margin 0.3s ease;">
+  <main class="flex-1 min-w-0 overflow-y-auto px-6 py-6">
     <div class="flex items-center justify-between mb-6 h-10">
       <div class="flex items-center gap-3">
         {{ btn_icon(
@@ -207,6 +85,128 @@
       {% endfor %}
     </div>
   </main>
+
+  <!-- Chat Drawer -->
+  <aside
+    x-show="chatOpen"
+    x-cloak
+    x-transition:enter="transition-[width] ease-out duration-300"
+    x-transition:enter-start="!w-0"
+    x-transition:enter-end="!w-[clamp(30vw,400px,50vw)]"
+    x-transition:leave="transition-[width] ease-in duration-200"
+    x-transition:leave-start="!w-[clamp(30vw,400px,50vw)]"
+    x-transition:leave-end="!w-0"
+    class="w-[clamp(30vw,400px,50vw)] flex-shrink-0 h-full bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-lg flex flex-col dark:shadow-neutral-950 overflow-hidden"
+  >
+    <!-- Header -->
+    <div class="px-4 py-3 flex justify-end">
+      {{ btn_icon(
+        icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
+        click='chatOpen = false',
+        title='Fechar chat'
+      ) }}
+    </div>
+
+    <!-- Messages -->
+    <div class="flex-1 overflow-y-auto dark-scrollbar px-4 py-4 space-y-4 flex flex-col justify-end" x-ref="chatScroll">
+      <template x-for="(msg, i) in chatMessages" :key="i">
+        <div :class="msg.role === 'user' ? 'flex justify-end' : 'flex justify-start'">
+          <div :class="msg.role === 'user'
+            ? 'bg-teal-500 text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[85%] shadow-sm'
+            : 'bg-slate-100 dark:bg-neutral-800 text-slate-700 dark:text-neutral-300 rounded-2xl rounded-bl-md px-4 py-2.5 max-w-[85%] shadow-sm border border-slate-200 dark:border-neutral-700'"
+          >
+            <p class="text-sm leading-relaxed whitespace-pre-wrap" x-text="msg.text"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <!-- Input -->
+    <div class="px-4 py-3 border-t border-slate-200 dark:border-neutral-700">
+      <form @submit.prevent="
+        if (!chatInput.trim()) return;
+        chatMessages.push({ role: 'user', text: chatInput.trim() });
+        chatInput = '';
+        $nextTick(() => $refs.chatScroll.scrollTop = $refs.chatScroll.scrollHeight);
+        setTimeout(() => {
+          chatMessages.push({ role: 'assistant', text: '...' });
+          $nextTick(() => $refs.chatScroll.scrollTop = $refs.chatScroll.scrollHeight);
+        }, 800);
+      " class="flex items-end gap-2">
+        <textarea
+          x-model="chatInput"
+          @keydown.enter.prevent="if (!$event.shiftKey) $el.form.requestSubmit()"
+          placeholder="Digite sua pergunta..."
+          rows="1"
+          class="flex-1 resize-none rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-2.5 text-sm text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+        ></textarea>
+        {{ btn_icon(
+          icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>',
+          bg='bg-teal-500 hover:bg-teal-600 shadow-lg',
+          text_color='text-white',
+          extra_class='flex-shrink-0',
+          type='submit'
+        ) }}
+      </form>
+    </div>
+  </aside>
+
+  <!-- Side Drawer Biblioteca -->
+  <aside
+    x-show="drawerOpen"
+    x-cloak
+    x-transition:enter="transition-[width] ease-out duration-300"
+    x-transition:enter-start="!w-0"
+    x-transition:enter-end="!w-[clamp(30vw,400px,50vw)]"
+    x-transition:leave="transition-[width] ease-in duration-200"
+    x-transition:leave-start="!w-[clamp(30vw,400px,50vw)]"
+    x-transition:leave-end="!w-0"
+    class="w-[clamp(30vw,400px,50vw)] flex-shrink-0 h-full bg-white dark:bg-neutral-900 border-l border-slate-200 dark:border-neutral-700 shadow-lg flex flex-col dark:shadow-neutral-950 overflow-hidden"
+  >
+    <div class="flex-shrink-0 px-4 pt-3 pb-3 border-b border-slate-200 dark:border-neutral-700">
+      <div class="flex items-center justify-between">
+        {{ btn_icon(
+          icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>',
+          bg='bg-teal-500 hover:bg-teal-600 border border-teal-600 dark:border-teal-400 shadow-lg',
+          text_color='text-white',
+          extra_class='flex-shrink-0',
+          title='Adicionar conteúdo',
+          click='$dispatch(\'open-add-modal\')'
+        ) }}
+        <h2 class="text-sm font-bold text-slate-700 dark:text-neutral-300 uppercase tracking-wider">Biblioteca</h2>
+        <div class="flex items-center gap-1">
+          <button
+            @click="viewMode = viewMode === 'grid' ? 'list' : 'grid'"
+            class="{{ BTN_WH }} flex items-center justify-center rounded-full bg-white dark:bg-neutral-700 hover:bg-slate-100 dark:hover:bg-neutral-600 border border-slate-400/50 dark:border-neutral-600/50 text-slate-500 dark:text-neutral-400 transition-colors cursor-pointer"
+            title="Alternar visualização"
+          >
+            <svg x-show="viewMode === 'grid'" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <svg x-show="viewMode === 'list'" x-cloak class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </button>
+          {{ btn_icon(
+            icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>',
+            click='drawerOpen = false',
+            title='Fechar biblioteca'
+          ) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-1 overflow-y-auto dark-scrollbar px-4 py-4">
+      <div id="library-items-list" :class="viewMode === 'grid' ? 'space-y-4' : 'space-y-2'">
+        {% for item in library_items %}
+        {% include "partials/library_item.html" %}
+        {% endfor %}
+      </div>
+    </div>
+  </aside>
 
 </div>
 
