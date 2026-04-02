@@ -75,6 +75,30 @@ def parse_topics_json(content_json: str | None) -> list:
     return data.get("topicos", [])
 
 
+async def _extract_error_msg(item_id: int, metadata_str: str | None) -> str:
+    """Extract error message from metadata JSON, falling back to queue.db."""
+    error_msg = ""
+    if metadata_str:
+        try:
+            meta = json.loads(metadata_str)
+            error_msg = meta.get("error_msg", "")
+        except (json.JSONDecodeError, TypeError):
+            pass
+    if not error_msg:
+        try:
+            async with get_queue_db() as queue_db:
+                qrow = await queue_db.execute(
+                    "SELECT error_msg FROM jobs WHERE library_item_id = ? AND status = 'error' ORDER BY finished_at DESC LIMIT 1",
+                    (item_id,),
+                )
+                job_row = await qrow.fetchone()
+                if job_row and job_row["error_msg"]:
+                    error_msg = job_row["error_msg"]
+        except Exception:
+            pass
+    return error_msg
+
+
 # --- Auth redirect exception ---
 
 class AuthRedirect(Exception):
@@ -514,7 +538,7 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
     topics = parse_topics_json(subject["content_json"])
     cursor = await db.execute(
         """
-        SELECT id, name, type, url, file_path, image_path, status
+        SELECT id, name, type, url, file_path, image_path, status, metadata
         FROM library_items
         WHERE subject_id = ? AND deleted_at IS NULL
         ORDER BY position
@@ -531,6 +555,9 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
                 item["thumbnail_url"] = None
         else:
             item["thumbnail_url"] = None
+        # Extract error_msg for error items
+        if item.get("status") == "error":
+            item["error_msg"] = await _extract_error_msg(item["id"], item.get("metadata"))
     return templates.TemplateResponse(
         request=request,
         name="topics.html",
@@ -932,28 +959,7 @@ async def htmx_library_status(item_id: int, request: Request, user=Depends(requi
 
     # Extract error_msg for template display
     if item_dict.get("status") == "error":
-        error_msg = ""
-        # Try metadata JSON first
-        if item_dict.get("metadata"):
-            try:
-                meta = json.loads(item_dict["metadata"])
-                error_msg = meta.get("error_msg", "")
-            except (json.JSONDecodeError, TypeError):
-                pass
-        # Fallback: get from queue.db
-        if not error_msg:
-            try:
-                async with get_queue_db() as queue_db:
-                    qrow = await queue_db.execute(
-                        "SELECT error_msg FROM jobs WHERE library_item_id = ? AND status = 'error' ORDER BY finished_at DESC LIMIT 1",
-                        (item_id,),
-                    )
-                    job_row = await qrow.fetchone()
-                    if job_row and job_row["error_msg"]:
-                        error_msg = job_row["error_msg"]
-            except Exception:
-                pass
-        item_dict["error_msg"] = error_msg
+        item_dict["error_msg"] = await _extract_error_msg(item_id, item_dict.get("metadata"))
 
     response = templates.TemplateResponse(
         request=request,
