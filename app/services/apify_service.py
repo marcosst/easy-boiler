@@ -21,7 +21,10 @@ def format_srt_to_timestamped(srt_text: str) -> str:
         if len(lines) < 2 or "-->" not in lines[0]:
             continue
 
-        start_timestamp = lines[0].split("-->", 1)[0].strip().split(",", 1)[0]
+        raw_ts = lines[0].split("-->", 1)[0].strip().split(",", 1)[0].split(".", 1)[0]
+        # Zero-pad each component to ensure HH:MM:SS format
+        ts_parts = raw_ts.split(":")
+        start_timestamp = ":".join(p.zfill(2) for p in ts_parts)
         text = " ".join(lines[1:])
         text = " ".join(text.split())
         if not text or text == previous:
