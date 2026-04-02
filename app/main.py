@@ -930,13 +930,30 @@ async def htmx_library_status(item_id: int, request: Request, user=Depends(requi
     else:
         item_dict["thumbnail_url"] = None
 
-    # Extract error_msg from metadata JSON for template display
-    if item_dict.get("status") == "error" and item_dict.get("metadata"):
-        try:
-            meta = json.loads(item_dict["metadata"])
-            item_dict["error_msg"] = meta.get("error_msg", "")
-        except (json.JSONDecodeError, TypeError):
-            item_dict["error_msg"] = ""
+    # Extract error_msg for template display
+    if item_dict.get("status") == "error":
+        error_msg = ""
+        # Try metadata JSON first
+        if item_dict.get("metadata"):
+            try:
+                meta = json.loads(item_dict["metadata"])
+                error_msg = meta.get("error_msg", "")
+            except (json.JSONDecodeError, TypeError):
+                pass
+        # Fallback: get from queue.db
+        if not error_msg:
+            try:
+                async with get_queue_db() as queue_db:
+                    qrow = await queue_db.execute(
+                        "SELECT error_msg FROM jobs WHERE library_item_id = ? AND status = 'error' ORDER BY finished_at DESC LIMIT 1",
+                        (item_id,),
+                    )
+                    job_row = await qrow.fetchone()
+                    if job_row and job_row["error_msg"]:
+                        error_msg = job_row["error_msg"]
+            except Exception:
+                pass
+        item_dict["error_msg"] = error_msg
 
     response = templates.TemplateResponse(
         request=request,
