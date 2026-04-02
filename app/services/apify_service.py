@@ -37,7 +37,7 @@ async def fetch_apify_data(video_url: str) -> tuple[dict, str]:
     """Fetch metadata and subtitles from Apify via httpx async."""
     token = os.getenv("APIFY_API_TOKEN", "").strip()
     if not token:
-        raise ValueError("Token da Apify não configurado.")
+        raise ValueError("Erro interno inesperado.")
 
     actor_id = os.getenv("APIFY_YOUTUBE_SCRAPER_ACTOR_ID", "streamers/youtube-scraper").strip()
     actor_id = actor_id or "streamers/youtube-scraper"
