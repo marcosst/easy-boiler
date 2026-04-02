@@ -24,8 +24,46 @@
       </div>
       <input type="email" name="email" placeholder="Email" required value="{{ email or '' }}"
         class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-700 dark:text-neutral-300 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
-      <input type="password" name="password" placeholder="Senha" required
-        class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-700 dark:text-neutral-300 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
+      <!-- Pinemix Password Strength -->
+      <div
+        x-data="{
+          password: '',
+          strength: 0,
+          message: '',
+          checkStrength() {
+            let score = 0;
+            if (this.password.length >= 8) {
+              if (this.password.length >= 12) score += 20;
+              if (/[0-9]/.test(this.password)) score += 20;
+              if (/[a-z]/.test(this.password)) score += 20;
+              if (/[A-Z]/.test(this.password)) score += 20;
+              if (/[^A-Za-z0-9]/.test(this.password)) score += 20;
+            } else if (this.password.length > 0) {
+              score = 10;
+            }
+            this.strength = score;
+            if (score === 0) this.message = '';
+            else if (score === 10) this.message = 'Muito curta';
+            else if (score <= 30) this.message = 'Fraca';
+            else if (score <= 60) this.message = 'Média';
+            else if (score <= 80) this.message = 'Forte';
+            else this.message = 'Muito forte!';
+          }
+        }"
+      >
+        <input type="password" name="password" placeholder="Senha" required
+          x-model="password" @input="checkStrength()"
+          class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-700 dark:text-neutral-300 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
+        <!-- Progress Bar -->
+        <div x-show="strength > 0" x-cloak class="mt-1.5 h-1.5 w-full rounded-full bg-slate-200 dark:bg-neutral-700" role="progressbar" :aria-valuenow="strength">
+          <div class="h-1.5 rounded-full transition-all duration-300"
+            :class="{ 'bg-rose-500': strength <= 30, 'bg-orange-500': strength <= 60 && strength > 30, 'bg-emerald-500': strength > 60 }"
+            :style="{ width: strength + '%' }"></div>
+        </div>
+        <!-- Message -->
+        <p x-show="message" x-cloak x-text="message" class="mt-1 text-xs font-medium"
+          :class="{ 'text-rose-500': strength <= 30, 'text-orange-500': strength <= 60 && strength > 30, 'text-emerald-500': strength > 60 }"></p>
+      </div>
       <input type="password" name="password_confirm" placeholder="Confirmar senha" required
         class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-700 dark:text-neutral-300 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
       <button type="submit"

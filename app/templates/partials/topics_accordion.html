@@ -1,25 +1,42 @@
+<!-- Pinemix Accordion — 3-level nested -->
 {% for topico in topics %}
 <!-- Level 1: Tópico -->
-<div x-data="{ open: false }" class="bg-white dark:bg-neutral-800 rounded-xl border border-slate-200 dark:border-neutral-700 overflow-hidden">
-  <button @click="open = !open" class="w-full flex items-center justify-between px-5 py-4 text-left cursor-pointer hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors">
-    <span class="text-base font-bold text-slate-700 dark:text-neutral-300">{{ topico.titulo }}</span>
-    <svg class="w-5 h-5 text-slate-400 dark:text-neutral-500 transition-transform duration-200" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-    </svg>
-  </button>
+<div x-data="{ active: '' }" class="divide-y divide-slate-200/75 dark:divide-neutral-700/50 overflow-hidden rounded-xl border border-slate-200/75 dark:border-neutral-700/50 text-sm/relaxed">
+  <details x-bind:open="active === 'topico-{{ loop.index }}'" class="group">
+    <summary
+      x-on:click.prevent="active = (active !== 'topico-{{ loop.index }}') ? 'topico-{{ loop.index }}' : ''"
+      class="flex cursor-pointer list-none items-center justify-between px-5 py-4 bg-white dark:bg-neutral-800 hover:bg-slate-50 dark:hover:bg-neutral-700/50 group-open:bg-slate-50 dark:group-open:bg-neutral-700/50 transition-colors [&::-webkit-details-marker]:hidden"
+    >
+      <h4 class="text-left text-base font-bold text-slate-700 dark:text-neutral-300">{{ topico.titulo }}</h4>
+      <div class="relative w-5 h-5 opacity-40">
+        <svg class="absolute w-5 h-5 transition duration-150 ease-out group-open:translate-y-4 group-open:opacity-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+        </svg>
+        <svg class="absolute w-5 h-5 -translate-y-4 opacity-0 transition duration-150 ease-out group-open:translate-y-0 group-open:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd"/>
+        </svg>
+      </div>
+    </summary>
 
-  <div x-show="open" x-collapse>
     {% for subtopico in topico.subtopicos %}
     <!-- Level 2: Subtópico -->
-    <div x-data="{ open: false }" class="border-t border-slate-100 dark:border-neutral-700 bg-slate-100 dark:bg-[#1e1e1e]">
-      <button @click="open = !open" class="w-full flex items-center justify-between pl-10 pr-5 py-3 text-left cursor-pointer hover:bg-slate-100 dark:hover:bg-neutral-700 transition-colors">
-        <span class="text-sm font-semibold text-slate-700 dark:text-neutral-300">{{ subtopico.titulo }}</span>
-        <svg class="w-4 h-4 text-slate-400 dark:text-neutral-500 transition-transform duration-200" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </button>
+    <div x-data="{ active: '' }" class="divide-y divide-slate-100 dark:divide-neutral-700/50">
+      <details x-bind:open="active === 'sub-{{ loop.index }}'" class="group/sub">
+        <summary
+          x-on:click.prevent="active = (active !== 'sub-{{ loop.index }}') ? 'sub-{{ loop.index }}' : ''"
+          class="flex cursor-pointer list-none items-center justify-between pl-10 pr-5 py-3 bg-slate-100 dark:bg-[#1e1e1e] hover:bg-slate-200/50 dark:hover:bg-neutral-700 group-open/sub:bg-slate-200/50 dark:group-open/sub:bg-neutral-700 transition-colors [&::-webkit-details-marker]:hidden"
+        >
+          <span class="text-sm font-semibold text-slate-700 dark:text-neutral-300">{{ subtopico.titulo }}</span>
+          <div class="relative w-4 h-4 opacity-40">
+            <svg class="absolute w-4 h-4 transition duration-150 ease-out group-open/sub:translate-y-3 group-open/sub:opacity-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+            </svg>
+            <svg class="absolute w-4 h-4 -translate-y-3 opacity-0 transition duration-150 ease-out group-open/sub:translate-y-0 group-open/sub:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+        </summary>
 
-      <div x-show="open" x-collapse>
         {% for passo in subtopico.passos %}
         <!-- Level 3: Passo -->
         <button
@@ -30,7 +47,7 @@
             timestamp: '{{ passo.timestamp or '' }}',
             page: {{ passo.pagina or 'null' }}
           })"
-          class="w-full text-left pl-16 pr-5 py-2.5 text-sm text-[#26a69a] dark:text-teal-400 bg-slate-200 dark:bg-[#181818] hover:bg-slate-300 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
+          class="w-full text-left pl-16 pr-5 py-2.5 text-sm text-brand dark:text-teal-400 bg-slate-200 dark:bg-[#181818] hover:bg-slate-300 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
         >
           <div class="flex items-center gap-2">
             {% if passo.url %}
@@ -54,9 +71,9 @@
           {% endif %}
         </button>
         {% endfor %}
-      </div>
+      </details>
     </div>
     {% endfor %}
-  </div>
+  </details>
 </div>
 {% endfor %}

@@ -224,14 +224,36 @@
     }
   }"
   @open-subject-modal.window="open($event.detail)"
-  @keydown.escape.window="close()"
+  x-on:keydown.esc.prevent="close()"
 >
-  <div x-show="show" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
-    <!-- Backdrop -->
-    <div x-show="show" @click="close()" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-
-    <!-- Panel -->
-    <div x-show="show" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="relative bg-slate-100 dark:bg-neutral-800 rounded-2xl shadow-2xl w-full max-w-[460px] max-h-[85vh] overflow-y-auto dark-scrollbar">
+  <!-- Pinemix Modal Backdrop -->
+  <div
+    x-cloak
+    x-show="show"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    x-bind:aria-hidden="!show"
+    tabindex="-1"
+    role="dialog"
+    class="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden bg-black/75 p-4 backdrop-blur-sm will-change-auto lg:p-8"
+  >
+    <!-- Pinemix Modal Dialog -->
+    <div
+      x-cloak
+      x-show="show"
+      x-on:click.away="close()"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 scale-90 -translate-y-full"
+      x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+      x-transition:leave-end="opacity-0 scale-125 translate-y-full"
+      role="document"
+      class="mx-auto flex w-full max-w-[460px] flex-col overflow-hidden rounded-2xl bg-slate-100 shadow-2xl will-change-auto dark:bg-neutral-800 dark:text-neutral-100 max-h-[85vh] overflow-y-auto dark-scrollbar">
       <div class="p-6">
         <!-- Image area 16:9 + action buttons -->
         <div class="mb-5 flex items-start gap-6">
