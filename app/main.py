@@ -26,6 +26,7 @@ from app.auth import (
     verify_password,
 )
 from app.database import get_db
+from app.queue import get_queue_db, enqueue
 from app.services.apify_service import fetch_apify_data
 
 import logging
@@ -773,7 +774,7 @@ async def htmx_library_save(
 
     # Enqueue background processing for YouTube videos
     if type == "youtube":
-        from app.queue import get_queue_db, enqueue
+
         async with get_queue_db() as queue_db:
             await enqueue(queue_db, item_id)
 
@@ -922,11 +923,15 @@ async def htmx_library_status(item_id: int, request: Request, user=Depends(requi
     else:
         item_dict["thumbnail_url"] = None
 
-    return templates.TemplateResponse(
+    response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
         context=_ctx(request, {"item": item_dict}),
     )
+    # When item transitions to ready, trigger topics refresh
+    if item_dict.get("status") == "ready":
+        response.headers["HX-Trigger"] = json.dumps({"refresh-topics": True})
+    return response
 
 
 @app.post("/htmx/library/{item_id}/retry")

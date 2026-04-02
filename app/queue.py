@@ -21,15 +21,21 @@ CREATE INDEX IF NOT EXISTS idx_jobs_status ON jobs(status);
 """
 
 
+_schema_initialized = False
+
+
 @asynccontextmanager
 async def get_queue_db():
     """Open a connection to the queue database with WAL mode and busy timeout."""
+    global _schema_initialized
     async with aiosqlite.connect(QUEUE_DB_PATH) as db:
         await db.execute("PRAGMA journal_mode = WAL")
         await db.execute("PRAGMA busy_timeout = 5000")
         db.row_factory = aiosqlite.Row
-        await db.executescript(_SCHEMA)
-        await db.commit()
+        if not _schema_initialized:
+            await db.executescript(_SCHEMA)
+            await db.commit()
+            _schema_initialized = True
         yield db
 
 
@@ -108,6 +114,7 @@ async def requeue_stale(db: aiosqlite.Connection, timeout_minutes: int = 10) -> 
 
     A job is considered stale if its started_at is older than timeout_minutes ago.
     """
+    # Requeue jobs that haven't exhausted their attempts
     await db.execute(
         """
         UPDATE jobs
@@ -115,6 +122,20 @@ async def requeue_stale(db: aiosqlite.Connection, timeout_minutes: int = 10) -> 
                started_at = NULL
          WHERE status = 'running'
            AND started_at < datetime('now', ? || ' minutes')
+           AND attempts < max_attempts
+        """,
+        (f"-{timeout_minutes}",),
+    )
+    # Mark exhausted jobs as error
+    await db.execute(
+        """
+        UPDATE jobs
+           SET status = 'error',
+               finished_at = datetime('now'),
+               error_msg = 'Max attempts exceeded'
+         WHERE status = 'running'
+           AND started_at < datetime('now', ? || ' minutes')
+           AND attempts >= max_attempts
         """,
         (f"-{timeout_minutes}",),
     )

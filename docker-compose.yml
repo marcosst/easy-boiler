@@ -6,6 +6,7 @@ services:
     volumes:
       - ./data:/app/data
       - ./midias:/app/midias
+    env_file: .env
     environment:
       - DATABASE_URL=sqlite:////app/data/app.db
 
@@ -15,6 +16,7 @@ services:
     volumes:
       - ./data:/app/data
       - ./midias:/app/midias
+    env_file: .env
     environment:
       - DATABASE_URL=sqlite:////app/data/app.db
     depends_on:
