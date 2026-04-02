@@ -119,11 +119,6 @@
       <!-- Title + status text -->
       <div class="flex items-center min-w-0 flex-1 px-3 py-2">
         <span class="text-sm font-medium {{ 'text-slate-700 dark:text-neutral-300 group-hover:text-[#26a69a] dark:group-hover:text-teal-400' if not is_processing else 'text-slate-400 dark:text-neutral-500' }} transition-colors">{{ item.name }}</span>
-        {% if is_processing %}
-        <span class="ml-2 text-[10px] font-semibold uppercase tracking-wider flex-shrink-0 {{ 'text-red-400' if item.status == 'error' else 'text-slate-400 dark:text-neutral-500' }}">
-          {% if item.status == 'pending' %}Na fila{% elif item.status == 'fetching' %}Baixando...{% elif item.status == 'classifying' %}Classificando...{% elif item.status == 'error' %}Erro{% endif %}
-        </span>
-        {% endif %}
       </div>
       {% if is_processing and item.status == 'error' %}
       <!-- Retry button for list view -->
