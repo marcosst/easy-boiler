@@ -99,19 +99,19 @@
         {% if is_processing %}
         {% if item.status == 'error' %}
         <div class="absolute inset-0 bg-red-900/60 flex items-center justify-center">
-          <svg class="w-6 h-6 text-red-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <svg class="w-7 h-7 text-red-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/>
           </svg>
         </div>
         {% elif item.status == 'pending' %}
         <div class="absolute inset-0 bg-black/55 flex items-center justify-center">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
           </svg>
         </div>
         {% else %}
         <div class="absolute inset-0 bg-black/55 flex items-center justify-center">
-          <div class="w-6 h-6 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
+          <div class="w-7 h-7 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
         </div>
         {% endif %}
         {% endif %}
