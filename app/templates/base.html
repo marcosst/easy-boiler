@@ -11,7 +11,7 @@
         var isDark = theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
         if (isDark) document.documentElement.classList.add('dark');
         document.documentElement.style.backgroundImage = isDark ? 'url(/midias/escuro.png)' : 'url(/midias/claro.png)';
-        document.documentElement.style.backgroundColor = isDark ? '#171717' : '#f1f5f9';
+        document.documentElement.style.backgroundColor = isDark ? '#1e1e1e' : '#f1f5f9';
       })();
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -71,7 +71,7 @@
     </script>
 </head>
 <body class="min-h-screen font-sans transition-colors bg-cover bg-center bg-fixed bg-no-repeat"
-      :style="isDark ? 'background-image: url(/midias/escuro.png); background-color: #171717' : 'background-image: url(/midias/claro.png); background-color: #f1f5f9'">
+      :style="isDark ? 'background-image: url(/midias/escuro.png); background-color: #1e1e1e' : 'background-image: url(/midias/claro.png); background-color: #f1f5f9'">
     {% block content %}{% endblock %}
 
     <!-- Pinemix Notification System (global) -->
