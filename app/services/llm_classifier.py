@@ -74,7 +74,7 @@ async def classify_transcript(taxonomy: dict, transcript: str) -> ResultadoLLM |
 
     try:
         response = await client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-5.4",
             messages=messages,
             temperature=0.3,
             response_format={"type": "json_object"},
