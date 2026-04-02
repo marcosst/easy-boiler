@@ -39,12 +39,28 @@ async def get_app_db():
     return db
 
 
-async def update_item_status(app_db, item_id: int, status: str):
-    """Update library_items.status in the main app database."""
-    await app_db.execute(
-        "UPDATE library_items SET status = ? WHERE id = ?",
-        (status, item_id),
-    )
+async def update_item_status(app_db, item_id: int, status: str, error_msg: str = ""):
+    """Update library_items.status in the main app database.
+
+    When status is 'error', stores the error message in the metadata JSON field.
+    """
+    if status == "error" and error_msg:
+        # Store error_msg in metadata JSON so the template can display it
+        cursor = await app_db.execute(
+            "SELECT metadata FROM library_items WHERE id = ?", (item_id,)
+        )
+        row = await cursor.fetchone()
+        metadata = json.loads(row["metadata"]) if row and row["metadata"] else {}
+        metadata["error_msg"] = error_msg
+        await app_db.execute(
+            "UPDATE library_items SET status = ?, metadata = ? WHERE id = ?",
+            (status, json.dumps(metadata, ensure_ascii=False), item_id),
+        )
+    else:
+        await app_db.execute(
+            "UPDATE library_items SET status = ? WHERE id = ?",
+            (status, item_id),
+        )
     await app_db.commit()
 
 
@@ -83,7 +99,7 @@ async def process_job(job: dict, app_db, queue_db) -> None:
     m = YOUTUBE_RE.search(url)
     video_id = m.group(1) if m else None
     if not video_id:
-        await update_item_status(app_db, item_id, "error")
+        await update_item_status(app_db, item_id, "error", "URL do YouTube inválida")
         await fail(queue_db, job_id, "Invalid YouTube URL")
         return
 
@@ -95,7 +111,7 @@ async def process_job(job: dict, app_db, queue_db) -> None:
         metadata, subtitle_text = await fetch_apify_data(url)
     except (ValueError, RuntimeError) as exc:
         logger.error("[%d] Apify fetch failed: %s", item_id, exc)
-        await update_item_status(app_db, item_id, "error")
+        await update_item_status(app_db, item_id, "error", str(exc))
         await fail(queue_db, job_id, str(exc))
         return
 
@@ -125,7 +141,7 @@ async def process_job(job: dict, app_db, queue_db) -> None:
 
     if result is None:
         logger.error("[%d] LLM classification returned None", item_id)
-        await update_item_status(app_db, item_id, "error")
+        await update_item_status(app_db, item_id, "error", "Falha na classificação por IA")
         await fail(queue_db, job_id, "LLM classification failed")
         return
 
@@ -188,7 +204,7 @@ async def main_loop():
                     await fail(queue_db, job["id"], str(exc))
                 # Also mark item as error
                 try:
-                    await update_item_status(app_db, job["library_item_id"], "error")
+                    await update_item_status(app_db, job["library_item_id"], "error", f"Erro inesperado: {exc}")
                 except Exception:
                     pass
     finally:

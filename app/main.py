@@ -930,6 +930,14 @@ async def htmx_library_status(item_id: int, request: Request, user=Depends(requi
     else:
         item_dict["thumbnail_url"] = None
 
+    # Extract error_msg from metadata JSON for template display
+    if item_dict.get("status") == "error" and item_dict.get("metadata"):
+        try:
+            meta = json.loads(item_dict["metadata"])
+            item_dict["error_msg"] = meta.get("error_msg", "")
+        except (json.JSONDecodeError, TypeError):
+            item_dict["error_msg"] = ""
+
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
