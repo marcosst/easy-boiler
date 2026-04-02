@@ -1,4 +1,4 @@
-.PHONY: setup dev migrate db-new db-rollback docker docker-build docker-down docker-logs
+.PHONY: setup dev worker migrate db-new db-rollback docker docker-build docker-down docker-logs
 
 DB_URL := sqlite:///$(CURDIR)/data/app.db
 
@@ -13,6 +13,10 @@ dev:
 	mkdir -p data
 	DATABASE_URL=$(DB_URL) dbmate up
 	if [ -f .env ]; then set -a && . ./.env && set +a; fi; uv run uvicorn app.main:app --reload --port 8000
+
+# Roda o worker de processamento em background
+worker:
+	if [ -f .env ]; then set -a && . ./.env && set +a; fi; uv run python -m app.worker
 
 # Só roda as migrations
 migrate:

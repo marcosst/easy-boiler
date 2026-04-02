@@ -5,5 +5,17 @@ services:
       - "8000:8000"
     volumes:
       - ./data:/app/data
+      - ./midias:/app/midias
     environment:
       - DATABASE_URL=sqlite:////app/data/app.db
+
+  worker:
+    build: .
+    command: python -m app.worker
+    volumes:
+      - ./data:/app/data
+      - ./midias:/app/midias
+    environment:
+      - DATABASE_URL=sqlite:////app/data/app.db
+    depends_on:
+      - app
