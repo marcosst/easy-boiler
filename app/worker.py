@@ -204,7 +204,7 @@ async def main_loop():
                     await fail(queue_db, job["id"], str(exc))
                 # Also mark item as error
                 try:
-                    await update_item_status(app_db, job["library_item_id"], "error", f"Erro inesperado: {exc}")
+                    await update_item_status(app_db, job["library_item_id"], "error", f"Erro inesperado no processamento")
                 except Exception:
                     pass
     finally:

@@ -132,7 +132,7 @@ async def requeue_stale(db: aiosqlite.Connection, timeout_minutes: int = 10) -> 
         UPDATE jobs
            SET status = 'error',
                finished_at = datetime('now'),
-               error_msg = 'Max attempts exceeded'
+               error_msg = 'Número máximo de tentativas excedido'
          WHERE status = 'running'
            AND started_at < datetime('now', ? || ' minutes')
            AND attempts >= max_attempts
