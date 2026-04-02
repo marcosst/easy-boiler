@@ -718,6 +718,13 @@ async def htmx_library_delete(item_id: int, request: Request, user=Depends(requi
         (item_id, user["id"]),
     )
     await db.commit()
+    # Remove pending/queued jobs from queue
+    async with get_queue_db() as queue_db:
+        await queue_db.execute(
+            "DELETE FROM jobs WHERE library_item_id = ? AND status IN ('queued', 'running')",
+            (item_id,),
+        )
+        await queue_db.commit()
     return Response(status_code=200)
 
 
