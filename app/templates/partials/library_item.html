@@ -47,11 +47,11 @@
         >Tentar novamente</button>
       </div>
       {% elif item.status == 'pending' %}
-      <div class="absolute inset-0 bg-black/55 flex flex-col items-center justify-center gap-1.5">
-        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <div class="absolute inset-0 bg-black/65 flex flex-col items-center justify-center gap-1.5">
+        <svg class="w-10 h-10 text-white/70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
         </svg>
-        <span class="text-xs font-semibold text-white uppercase tracking-wider">Na fila</span>
+        <span class="text-xs font-semibold text-white/70 uppercase tracking-wider">Na fila</span>
       </div>
       {% else %}
       {# fetching or classifying #}
@@ -104,8 +104,8 @@
           </svg>
         </div>
         {% elif item.status == 'pending' %}
-        <div class="absolute inset-0 bg-black/55 flex items-center justify-center">
-          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <div class="absolute inset-0 bg-black/65 flex items-center justify-center">
+          <svg class="w-7 h-7 text-white/70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
           </svg>
         </div>
