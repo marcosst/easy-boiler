@@ -513,7 +513,7 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
     topics = parse_topics_json(subject["content_json"])
     cursor = await db.execute(
         """
-        SELECT id, name, type, url, file_path, image_path
+        SELECT id, name, type, url, file_path, image_path, status
         FROM library_items
         WHERE subject_id = ? AND deleted_at IS NULL
         ORDER BY position
@@ -745,43 +745,15 @@ async def htmx_library_save(
         raise HTTPException(status_code=404)
 
     username = user["username"]
-    metadata_json = None
-    subtitle_path = None
-    video_id = None
 
-    # For YouTube: fetch metadata and subtitles from Apify
+    # For YouTube, extract video_id for thumbnail URL
+    video_id = None
     if type == "youtube" and url:
         m = YOUTUBE_RE.search(url)
         video_id = m.group(1) if m else None
 
-        try:
-            metadata, subtitle_text = await fetch_apify_data(url)
-        except (ValueError, RuntimeError) as exc:
-            # Return the preview form with error banner
-            error_response = templates.TemplateResponse(
-                request=request,
-                name="partials/library_preview.html",
-                context=_ctx(request, {
-                    "error": str(exc),
-                    "preview_type": "youtube",
-                    "preview_name": name,
-                    "preview_url": url,
-                    "preview_image_path": image_path,
-                    "subject_id": subject_id,
-                }),
-            )
-            error_response.headers["HX-Retarget"] = "#library-preview-area"
-            error_response.headers["HX-Reswap"] = "innerHTML"
-            return error_response
-
-        metadata_json = json.dumps(metadata, ensure_ascii=False)
-
-        if video_id and subtitle_text:
-            subs_dir = Path("midias") / username / "subtitles"
-            subs_dir.mkdir(parents=True, exist_ok=True)
-            subs_file = subs_dir / f"{video_id}.txt"
-            subs_file.write_text(subtitle_text + "\n", encoding="utf-8")
-            subtitle_path = f"{username}/subtitles/{video_id}.txt"
+    # PDFs are ready immediately, YouTube items need background processing
+    status = "ready" if type != "youtube" else "pending"
 
     # Get next position
     row = await db.execute(
@@ -791,78 +763,41 @@ async def htmx_library_save(
     next_pos = (await row.fetchone())["next_pos"]
 
     cursor = await db.execute(
-        """INSERT INTO library_items (subject_id, name, type, url, file_path, image_path, metadata, subtitle_path, position)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-        (subject_id, name, type, url, file_path, image_path, metadata_json, subtitle_path, next_pos),
+        """INSERT INTO library_items (subject_id, name, type, url, file_path, image_path, position, status)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+        (subject_id, name, type, url, file_path, image_path, next_pos, status),
     )
     await db.commit()
 
+    item_id = cursor.lastrowid
+
+    # Enqueue background processing for YouTube videos
+    if type == "youtube":
+        from app.queue import get_queue_db, enqueue
+        async with get_queue_db() as queue_db:
+            await enqueue(queue_db, item_id)
+
     # Build the item dict for the template
     item = {
-        "id": cursor.lastrowid,
+        "id": item_id,
         "name": name,
         "type": type,
         "url": url,
         "file_path": file_path,
         "image_path": image_path,
+        "status": status,
     }
     if type == "youtube" and url and video_id:
         item["thumbnail_url"] = f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg"
     else:
         item["thumbnail_url"] = None
 
-    # If YouTube with subtitles, classify via LLM inline
-    topics = None
-    if type == "youtube" and subtitle_path is not None:
-        item_id = cursor.lastrowid
-        subs_file = Path("midias") / subtitle_path
-        if not subs_file.exists():
-            print(f"[CLASSIFY] ERROR: Subtitle file not found: {subs_file}")
-        else:
-            transcript = subs_file.read_text(encoding="utf-8").strip()
-            print(f"[CLASSIFY] Read transcript: {len(transcript)} chars")
-            taxonomy = await get_taxonomy_for_subject(db, subject_id)
-            print(f"[CLASSIFY] Existing taxonomy: {len(taxonomy.get('topicos', []))} topics")
-            result = await classify_transcript(taxonomy, transcript)
-            if result is not None:
-                print(f"[CLASSIFY] LLM returned {len(result.itens)} items")
-                youtube_id_for_url = video_id or ""
-                await db.execute("DELETE FROM knowledge_items WHERE library_id = ?", (item_id,))
-                for ki in result.itens:
-                    step_url = build_step_url(youtube_id_for_url, ki.timestamp) if youtube_id_for_url else None
-                    await db.execute(
-                        """INSERT INTO knowledge_items
-                           (library_id, topico, subtopico, acao, timestamp, pagina, trecho_referencia, file_path, url)
-                           VALUES (?, ?, ?, ?, ?, NULL, '', NULL, ?)""",
-                        (item_id, ki.topico, ki.subtopico, ki.acao, ki.timestamp, step_url),
-                    )
-                await db.execute(
-                    "UPDATE library_items SET processed_at = CURRENT_TIMESTAMP WHERE id = ?",
-                    (item_id,),
-                )
-                tree = await rebuild_content_json(db, subject_id)
-                topics = tree.get("topicos", [])
-                print(f"[CLASSIFY] SUCCESS: {len(topics)} topics in tree, content_json updated")
-            else:
-                print(f"[CLASSIFY] ERROR: LLM classification returned None for item {item_id}")
-    else:
-        if type == "youtube":
-            print(f"[CLASSIFY] SKIP: subtitle_path is None (Apify may have failed)")
-        else:
-            print(f"[CLASSIFY] SKIP: type={type}, not youtube")
-
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
         context=_ctx(request, {"item": item}),
     )
-    if topics is not None:
-        # refresh-topics fires immediately, close-add-modal fires after settle
-        response.headers["HX-Trigger"] = json.dumps({"refresh-topics": True})
-        response.headers["HX-Trigger-After-Settle"] = json.dumps({"close-add-modal": True})
-        print(f"[SAVE] Triggering refresh-topics with {len(topics)} topics")
-    else:
-        response.headers["HX-Trigger"] = json.dumps({"close-add-modal": True})
+    response.headers["HX-Trigger-After-Settle"] = json.dumps({"close-add-modal": True})
     return response
 
 
@@ -960,6 +895,73 @@ async def htmx_library_classify(
         request=request,
         name="partials/topics_accordion.html",
         context=_ctx(request, {"topics": topics}),
+    )
+
+
+@app.get("/htmx/library/{item_id}/status")
+async def htmx_library_status(item_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
+    """Return updated card HTML for polling. Used by items in processing state."""
+    cursor = await db.execute(
+        """SELECT li.* FROM library_items li
+           JOIN subjects s ON li.subject_id = s.id
+           WHERE li.id = ? AND s.owner_id = ? AND li.deleted_at IS NULL""",
+        (item_id, user["id"]),
+    )
+    item = await cursor.fetchone()
+    if not item:
+        raise HTTPException(status_code=404)
+
+    item_dict = dict(item)
+    # Add thumbnail_url for YouTube items
+    if item_dict.get("type") == "youtube" and item_dict.get("url"):
+        m = YOUTUBE_RE.search(item_dict["url"])
+        if m:
+            item_dict["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg"
+        else:
+            item_dict["thumbnail_url"] = None
+    else:
+        item_dict["thumbnail_url"] = None
+
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/library_item.html",
+        context=_ctx(request, {"item": item_dict}),
+    )
+
+
+@app.post("/htmx/library/{item_id}/retry")
+async def htmx_library_retry(item_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
+    """Re-enqueue a failed library item for processing."""
+    cursor = await db.execute(
+        """SELECT li.* FROM library_items li
+           JOIN subjects s ON li.subject_id = s.id
+           WHERE li.id = ? AND s.owner_id = ? AND li.status = 'error' AND li.deleted_at IS NULL""",
+        (item_id, user["id"]),
+    )
+    item = await cursor.fetchone()
+    if not item:
+        raise HTTPException(status_code=404)
+
+    # Reset status and re-enqueue
+    await db.execute("UPDATE library_items SET status = 'pending' WHERE id = ?", (item_id,))
+    await db.commit()
+
+    from app.queue import get_queue_db, enqueue
+    async with get_queue_db() as queue_db:
+        await enqueue(queue_db, item_id)
+
+    item_dict = dict(item)
+    item_dict["status"] = "pending"
+    if item_dict.get("type") == "youtube" and item_dict.get("url"):
+        m = YOUTUBE_RE.search(item_dict["url"])
+        item_dict["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg" if m else None
+    else:
+        item_dict["thumbnail_url"] = None
+
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/library_item.html",
+        context=_ctx(request, {"item": item_dict}),
     )
 
 
