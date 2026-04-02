@@ -14,13 +14,12 @@
 {% block content %}
 {% include "partials/header.html" %}
 
-<div x-data="{ drawerOpen: false, chatOpen: false, viewMode: localStorage.getItem('libraryViewMode') || 'grid', chatMessages: [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este assunto.' }], chatInput: '' }" x-effect="localStorage.setItem('libraryViewMode', viewMode)" x-on:keydown.esc.prevent="drawerOpen = false; chatOpen = false">
+<div x-data="{ drawerOpen: false, chatOpen: false, viewMode: localStorage.getItem('libraryViewMode') || 'grid', chatMessages: [{ role: 'assistant', text: 'Olá! Sou seu assistente de estudos. Pergunte qualquer coisa sobre este assunto.' }], chatInput: '' }" x-effect="localStorage.setItem('libraryViewMode', viewMode)">
 
   <!-- Chat Drawer (Pinemix Offcanvas) -->
   <aside
     x-show="chatOpen"
     x-cloak
-    x-on:click.outside="chatOpen = false"
     x-transition:enter="transition ease-out duration-300 will-change-transform"
     x-transition:enter-start="translate-x-full"
     x-transition:enter-end="translate-x-0"
@@ -86,7 +85,6 @@
   <aside
     x-show="drawerOpen"
     x-cloak
-    x-on:click.outside="drawerOpen = false"
     x-transition:enter="transition ease-out duration-300 will-change-transform"
     x-transition:enter-start="translate-x-full"
     x-transition:enter-end="translate-x-0"
