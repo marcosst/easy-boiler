@@ -72,7 +72,6 @@
          hx-swap="innerHTML"
          hx-vals='{"url": "{{ playlist_url }}", "subject_id": "{{ subject_id }}"}'
          hx-trigger="click"
-         hx-indicator="#playlist-spinner"
          @click="playlistMode = true">
       <input type="checkbox" class="w-4 h-4 rounded border-slate-300 dark:border-neutral-600 text-teal-500 focus:ring-teal-500 pointer-events-none">
       <span class="text-sm text-slate-600 dark:text-neutral-300 font-medium">Incluir vídeos da playlist</span>
@@ -96,20 +95,20 @@
   </form>
 </div>
 
-{% if is_playlist %}
-<!-- Skeleton loader for playlist videos -->
-<div id="playlist-spinner" class="htmx-indicator mt-3 space-y-2">
-  {% for _ in range(5) %}
-  <div class="flex items-center gap-2 p-2 animate-pulse">
-    <div class="w-4 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
-    <div class="w-14 h-8 bg-slate-200 dark:bg-neutral-700 rounded"></div>
-    <div class="flex-1 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
-  </div>
-  {% endfor %}
-</div>
-{% endif %}
-
 <!-- Playlist videos area (HTMX target, shown when playlist mode active) -->
-<div id="playlist-videos-area" x-show="playlistMode"></div>
+<div id="playlist-videos-area" x-show="playlistMode">
+  {% if is_playlist %}
+  <!-- Skeleton loader shown while fetching playlist videos -->
+  <div id="playlist-spinner" class="mt-3 space-y-2">
+    {% for _ in range(5) %}
+    <div class="flex items-center gap-2 p-2 animate-pulse">
+      <div class="w-4 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
+      <div class="w-14 h-8 bg-slate-200 dark:bg-neutral-700 rounded"></div>
+      <div class="flex-1 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
 
 {% endif %}
