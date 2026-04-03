@@ -95,8 +95,8 @@
   </form>
 </div>
 
-<!-- Playlist videos area (HTMX target, shown when playlist mode active) -->
-<div id="playlist-videos-area" x-show="playlistMode"
+<!-- Playlist videos area (HTMX target — empty until loaded, no x-show needed) -->
+<div id="playlist-videos-area"
      @htmx:after-swap.camel="playlistLoading = false; playlistMode = true"></div>
 
 {% endif %}
