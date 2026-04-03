@@ -995,6 +995,111 @@ async def htmx_library_save(
     return response
 
 
+@app.post("/htmx/library/save-playlist")
+async def htmx_library_save_playlist(
+    request: Request,
+    subject_id: int = Form(...),
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    form = await request.form()
+    raw_videos = form.getlist("videos[]")
+
+    if not raw_videos:
+        return Response(status_code=422, content="Nenhum vídeo selecionado.")
+
+    videos = []
+    for raw in raw_videos:
+        try:
+            video = json.loads(raw)
+            videos.append(video)
+        except (json.JSONDecodeError, TypeError):
+            continue
+
+    if not videos:
+        return Response(status_code=422, content="Nenhum vídeo selecionado.")
+
+    # Verify subject belongs to user
+    row = await db.execute(
+        "SELECT id FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    if not await row.fetchone():
+        raise HTTPException(status_code=404)
+
+    username = user["username"]
+
+    # Get next position
+    row = await db.execute(
+        "SELECT COALESCE(MAX(position), -1) + 1 as next_pos FROM library_items WHERE subject_id = ?",
+        (subject_id,),
+    )
+    next_pos = (await row.fetchone())["next_pos"]
+
+    items_html = []
+    for i, video in enumerate(videos):
+        url = video.get("url", "")
+        name = (video.get("title") or f"Vídeo {i + 1}").strip()
+
+        # Extract video_id for thumbnail
+        m = YOUTUBE_RE.search(url)
+        video_id = m.group(1) if m else None
+
+        # Download thumbnail locally
+        image_path = None
+        if video_id:
+            thumb_dir = Path("midias") / username / "thumbnails"
+            thumb_dir.mkdir(parents=True, exist_ok=True)
+            thumb_filename = f"{uuid.uuid4().hex}.jpg"
+            try:
+                thumb_resp = httpx.get(
+                    f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg",
+                    timeout=10,
+                )
+                thumb_resp.raise_for_status()
+                (thumb_dir / thumb_filename).write_bytes(thumb_resp.content)
+                image_path = f"{username}/thumbnails/{thumb_filename}"
+            except Exception:
+                pass
+
+        cursor = await db.execute(
+            """INSERT INTO library_items (subject_id, name, type, url, file_path, image_path, position, status)
+               VALUES (?, ?, 'youtube', ?, NULL, ?, ?, 'pending')""",
+            (subject_id, name, url, image_path, next_pos + i),
+        )
+        item_id = cursor.lastrowid
+
+        # Enqueue background processing
+        async with get_queue_db() as queue_db:
+            await enqueue(queue_db, item_id)
+
+        item = {
+            "id": item_id,
+            "name": name,
+            "type": "youtube",
+            "url": url,
+            "file_path": None,
+            "image_path": image_path,
+            "status": "pending",
+            "thumbnail_url": f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg" if video_id else None,
+        }
+        item_resp = templates.TemplateResponse(
+            request=request,
+            name="partials/library_item.html",
+            context=_ctx(request, {"item": item, "is_owner": True}),
+        )
+        items_html.append(item_resp.body.decode())
+
+    await db.commit()
+
+    response = Response(
+        content="".join(items_html),
+        media_type="text/html",
+    )
+    response.headers["HX-Trigger-After-Settle"] = json.dumps({"close-add-modal": True})
+    return response
+
+
 @app.post("/htmx/library/{item_id}/classify")
 async def htmx_library_classify(
     item_id: int,
