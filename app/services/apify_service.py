@@ -103,3 +103,68 @@ async def fetch_apify_data(video_url: str) -> tuple[dict, str]:
         raise RuntimeError("Nenhuma legenda disponível para este vídeo.")
 
     return metadata, subtitle_text
+
+
+async def fetch_playlist_videos(playlist_url: str) -> list[dict]:
+    """Fetch video list from a YouTube playlist via Apify (no subtitles).
+
+    Returns list of {"video_id": str, "title": str, "thumbnail_url": str}.
+    """
+    token = os.getenv("APIFY_API_TOKEN", "").strip()
+    if not token:
+        raise ValueError("Erro interno inesperado.")
+
+    actor_id = os.getenv("APIFY_YOUTUBE_SCRAPER_ACTOR_ID", "streamers/youtube-scraper").strip()
+    actor_id = actor_id or "streamers/youtube-scraper"
+    actor_path = actor_id.replace("/", "~")
+    api_url = f"https://api.apify.com/v2/acts/{actor_path}/run-sync-get-dataset-items?token={token}"
+
+    timeout_raw = os.getenv("APIFY_YOUTUBE_TIMEOUT_SECS", "180").strip()
+    try:
+        timeout_secs = int(timeout_raw)
+    except ValueError:
+        timeout_secs = 180
+    if timeout_secs <= 0:
+        timeout_secs = 180
+
+    payload = {
+        "startUrls": [{"url": playlist_url}],
+        "downloadSubtitles": False,
+        "maxResults": 200,
+    }
+
+    try:
+        async with httpx.AsyncClient(timeout=timeout_secs) as client:
+            resp = await client.post(
+                api_url,
+                json=payload,
+                headers={"Accept": "application/json"},
+            )
+            resp.raise_for_status()
+            items = resp.json()
+    except httpx.HTTPStatusError as exc:
+        raise RuntimeError("Falha ao buscar vídeos da playlist. Tente novamente.") from exc
+    except httpx.RequestError as exc:
+        raise RuntimeError("Falha ao buscar vídeos da playlist. Tente novamente.") from exc
+    except Exception as exc:
+        raise RuntimeError("A Apify retornou uma resposta inválida.") from exc
+
+    if not isinstance(items, list) or not items:
+        raise RuntimeError("Nenhum vídeo encontrado na playlist.")
+
+    videos = []
+    for item in items:
+        video_id = item.get("id") or ""
+        title = item.get("title") or f"Vídeo {video_id}"
+        thumbnail_url = item.get("thumbnailUrl") or ""
+        if not thumbnail_url and video_id:
+            thumbnail_url = f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg"
+        if video_id:
+            videos.append({
+                "video_id": video_id,
+                "title": title,
+                "thumbnail_url": thumbnail_url,
+                "url": f"https://www.youtube.com/watch?v={video_id}",
+            })
+
+    return videos
