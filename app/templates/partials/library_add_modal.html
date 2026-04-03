@@ -6,6 +6,7 @@
     loading: false,
     saving: false,
     previewed: false,
+    playlistMode: false,
     selectType(t) {
       this.selectedType = t;
     },
@@ -15,6 +16,7 @@
       this.loading = false;
       this.saving = false;
       this.previewed = false;
+      this.playlistMode = false;
       const previewArea = document.getElementById('library-preview-area');
       if (previewArea) previewArea.innerHTML = '';
       this.$el.querySelectorAll('form').forEach(f => f.reset());

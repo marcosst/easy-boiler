@@ -42,6 +42,7 @@
 </form>
 {% endif %}
 {% else %}
+<div id="single-preview-area">
 <form hx-post="/htmx/library/save"
       hx-target="#library-items-list" hx-swap="beforeend"
       @htmx:before-request="saving = true; $el.closest('.rounded-2xl')?.scrollTo(0,0)"
@@ -62,19 +63,55 @@
   </div>
   {% endif %}
 
-  <!-- Editable name -->
-  <div class="mb-4">
-    <label class="block text-xs font-semibold text-slate-500 dark:text-neutral-400 uppercase tracking-wider mb-1">Nome</label>
-    <input type="text" name="name" value="{{ preview_name }}"
-           class="w-full rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2 text-sm text-slate-700 dark:text-neutral-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-           required>
-  </div>
+  {% if is_playlist %}
+  <!-- Playlist checkbox -->
+  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 dark:bg-neutral-700/50 border border-slate-200 dark:border-neutral-600 mb-3 cursor-pointer select-none"
+         hx-post="/htmx/library/playlist-videos"
+         hx-target="#playlist-videos-area"
+         hx-swap="innerHTML"
+         hx-vals='{"url": "{{ playlist_url }}", "subject_id": "{{ subject_id }}"}'
+         hx-trigger="click[event.target.closest('label') && !document.querySelector('#playlist-videos-area').children.length]"
+         hx-indicator="#playlist-spinner"
+         @click="playlistMode = !playlistMode"
+         x-show="!playlistMode">
+    <input type="checkbox" class="w-4 h-4 rounded border-slate-300 dark:border-neutral-600 text-teal-500 focus:ring-teal-500 cursor-pointer" x-model="playlistMode" @click.stop>
+    <span class="text-sm text-slate-600 dark:text-neutral-300 font-medium">Incluir vídeos da playlist</span>
+  </label>
+  {% endif %}
 
-  <!-- Save button -->
-  <button type="submit" :disabled="saving"
-          class="w-full h-10 rounded-lg bg-teal-500 hover:bg-teal-600 text-white text-sm font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
-    <span x-show="!saving">Salvar na biblioteca</span>
-    <span x-show="saving" x-cloak>Salvando...</span>
-  </button>
+  <div x-show="!playlistMode">
+    <!-- Editable name -->
+    <div class="mb-4">
+      <label class="block text-xs font-semibold text-slate-500 dark:text-neutral-400 uppercase tracking-wider mb-1">Nome</label>
+      <input type="text" name="name" value="{{ preview_name }}"
+             class="w-full rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2 text-sm text-slate-700 dark:text-neutral-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+             required>
+    </div>
+
+    <!-- Save button -->
+    <button type="submit" :disabled="saving"
+            class="w-full h-10 rounded-lg bg-teal-500 hover:bg-teal-600 text-white text-sm font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+      <span x-show="!saving">Salvar na biblioteca</span>
+      <span x-show="saving" x-cloak>Salvando...</span>
+    </button>
+  </div>
 </form>
+</div>
+
+{% if is_playlist %}
+<!-- Skeleton loader for playlist videos -->
+<div id="playlist-spinner" class="htmx-indicator mt-3 space-y-2">
+  {% for _ in range(5) %}
+  <div class="flex items-center gap-2 p-2 animate-pulse">
+    <div class="w-4 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
+    <div class="w-14 h-8 bg-slate-200 dark:bg-neutral-700 rounded"></div>
+    <div class="flex-1 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Playlist videos area (HTMX target) -->
+<div id="playlist-videos-area" x-show="playlistMode"></div>
+
 {% endif %}
