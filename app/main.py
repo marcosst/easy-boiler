@@ -548,7 +548,8 @@ async def htmx_delete_subject(
 
 
 @app.get("/{username}/{shortname}")
-async def subject_topics(request: Request, username: str, shortname: str, user=Depends(require_auth), db=Depends(get_db)):
+async def subject_topics(request: Request, username: str, shortname: str, db=Depends(get_db)):
+    user = await get_optional_user(request, db)
     row = await db.execute(
         """
         SELECT s.id, s.name, s.shortname, s.content_json, s.image_path, s.is_public
@@ -560,6 +561,13 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
     )
     subject = await row.fetchone()
     if not subject:
+        raise HTTPException(status_code=404)
+    # Determine ownership
+    owner_row = await db.execute("SELECT id FROM users WHERE username = ?", (username,))
+    owner_user = await owner_row.fetchone()
+    is_owner = user is not None and owner_user is not None and user["id"] == owner_user["id"]
+    # Private subjects are only visible to the owner
+    if not subject["is_public"] and not is_owner:
         raise HTTPException(status_code=404)
     topics = parse_topics_json(subject["content_json"])
     cursor = await db.execute(
@@ -589,6 +597,7 @@ async def subject_topics(request: Request, username: str, shortname: str, user=D
         name="topics.html",
         context=_ctx(request, {
             "user": user,
+            "is_owner": is_owner,
             "subject": subject,
             "topics": topics,
             "username": username,

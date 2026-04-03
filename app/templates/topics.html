@@ -166,6 +166,7 @@
     <div class="flex-shrink-0 px-4 pt-3 pb-3 border-b border-slate-200 dark:border-neutral-700">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-1">
+          {% if is_owner %}
           {{ btn_icon(
             icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>',
             bg='bg-teal-500 hover:bg-teal-600 border border-teal-600 dark:border-teal-400 shadow-lg',
@@ -186,6 +187,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
             </svg>
           </button>
+          {% endif %}
         </div>
         <h2 class="text-sm font-bold text-slate-700 dark:text-neutral-300 uppercase tracking-wider">Biblioteca</h2>
         <div class="flex items-center gap-1">
@@ -339,6 +341,7 @@
     </div>
   </div>
 </div>
+{% if is_owner %}
 {% include "partials/library_add_modal.html" %}
 
 <!-- Confirm Delete Modal (Pinemix) -->
@@ -422,4 +425,5 @@
     </div>
   </div>
 </div>
+{% endif %}
 {% endblock %}
