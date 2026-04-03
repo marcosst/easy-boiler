@@ -1,4 +1,4 @@
-.PHONY: setup dev worker migrate db-new db-rollback docker docker-build docker-down docker-logs
+.PHONY: setup dev worker worker-dry migrate db-new db-rollback docker docker-build docker-down docker-logs
 
 DB_URL := sqlite:///$(CURDIR)/data/app.db
 
@@ -17,6 +17,10 @@ dev:
 # Roda o worker de processamento em background
 worker:
 	if [ -f .env ]; then set -a && . ./.env && set +a; fi; uv run python -m app.worker
+
+# Worker em modo teste (simula processamento sem Apify/LLM)
+worker-dry:
+	if [ -f .env ]; then set -a && . ./.env && set +a; fi; uv run python -m app.worker --dry-run
 
 # Só roda as migrations
 migrate:
