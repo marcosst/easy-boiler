@@ -6,11 +6,13 @@
 {% block section_title %}
 <div class="flex items-center justify-between mb-6">
   <h1 class="text-2xl font-bold text-slate-700 dark:text-neutral-300">Assuntos</h1>
+  {% if is_owner %}
   {{ btn_pill(
     label='Novo Assunto',
     icon='<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>',
     click="$dispatch('open-subject-modal')"
   ) }}
+  {% endif %}
 </div>
 {% endblock %}
 
@@ -30,13 +32,14 @@
 {% for subject in subjects %}
 <div class="bg-white dark:bg-neutral-800 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-neutral-700 hover:shadow-md transition-shadow">
   <div class="relative">
-    <a href="/{{ user.username }}/{{ subject.shortname }}" class="block aspect-video bg-slate-200 dark:bg-neutral-700 overflow-hidden">
+    <a href="/{{ profile_username }}/{{ subject.shortname }}" class="block aspect-video bg-slate-200 dark:bg-neutral-700 overflow-hidden">
       {% if subject.image_path %}
       <img src="/midias/{{ subject.image_path }}" alt="{{ subject.name }}" class="w-full h-full object-cover">
       {% else %}
       <div class="w-full h-full {{ gradients[subject.id % 8] }}"></div>
       {% endif %}
     </a>
+    {% if is_owner %}
     <!-- Edit button -->
     <button
       @click.prevent="$dispatch('open-subject-modal', { id: {{ subject.id }}, name: '{{ subject.name | e }}', shortname: '{{ subject.shortname }}', image_path: '{{ subject.image_path or '' }}', is_public: {{ 'true' if subject.is_public else 'false' }} })"
@@ -47,8 +50,9 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
       </svg>
     </button>
+    {% endif %}
   </div>
-  <a href="/{{ user.username }}/{{ subject.shortname }}" class="flex items-center gap-2 p-3 min-w-0 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors">
+  <a href="/{{ profile_username }}/{{ subject.shortname }}" class="flex items-center gap-2 p-3 min-w-0 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors">
     <span class="text-sm font-medium text-slate-700 dark:text-neutral-300 truncate">{{ subject.name }}</span>
     {% if subject.is_public %}
     <svg class="w-4 h-4 flex-shrink-0 text-teal-500 dark:text-teal-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" title="Público">
@@ -69,13 +73,18 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0118 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
     </svg>
   </div>
+  {% if is_owner %}
   <p class="text-lg font-medium text-slate-500 dark:text-neutral-400 mb-1">Nenhum assunto ainda</p>
   <p class="text-sm text-slate-400 dark:text-neutral-500">Crie seu primeiro assunto para começar a organizar seus estudos.</p>
+  {% else %}
+  <p class="text-lg font-medium text-slate-500 dark:text-neutral-400 mb-1">Nenhum assunto público</p>
+  {% endif %}
 </div>
 {% endif %}
 {% endblock %}
 
 {% block extra_content %}
+{% if is_owner %}
 <!-- Subject Modal -->
 <div
   x-data="{
@@ -344,7 +353,7 @@
               :class="error_field === 'shortname' ? 'border-red-400 dark:border-red-500' : 'border-slate-200 dark:border-neutral-700'"
             >
             <p x-show="error_field === 'shortname'" x-text="error_message" class="mt-1.5 text-xs text-red-500"></p>
-            <p x-show="error_field !== 'shortname'" class="mt-1 text-[11px] text-slate-400 dark:text-neutral-500">exemplo: /{{ user.username }}/<strong x-text="shortname || 'nome-curto'"></strong></p>
+            <p x-show="error_field !== 'shortname'" class="mt-1 text-[11px] text-slate-400 dark:text-neutral-500">exemplo: /{{ profile_username }}/<strong x-text="shortname || 'nome-curto'"></strong></p>
           </div>
           <!-- Visibility -->
           <div class="flex-shrink-0">
@@ -378,4 +387,5 @@
     </div>
   </div>
 </div>
+{% endif %}
 {% endblock %}

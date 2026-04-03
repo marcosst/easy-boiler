@@ -356,21 +356,31 @@ async def home(request: Request, db=Depends(get_db)):
 
 
 @app.get("/{username}")
-async def user_subjects(request: Request, username: str, user=Depends(require_auth), db=Depends(get_db)):
-    row = await db.execute("SELECT id FROM users WHERE username = ?", (username,))
+async def user_subjects(request: Request, username: str, db=Depends(get_db)):
+    user = await get_optional_user(request, db)
+    row = await db.execute("SELECT id, username FROM users WHERE username = ?", (username,))
     profile_user = await row.fetchone()
     if not profile_user:
         raise HTTPException(status_code=404)
-    cursor = await db.execute(
-        "SELECT id, name, shortname, image_path, is_public, created_at FROM subjects WHERE owner_id = ? ORDER BY created_at DESC",
-        (profile_user["id"],),
-    )
+    is_owner = user is not None and user["id"] == profile_user["id"]
+    if is_owner:
+        cursor = await db.execute(
+            "SELECT id, name, shortname, image_path, is_public, created_at FROM subjects WHERE owner_id = ? ORDER BY created_at DESC",
+            (profile_user["id"],),
+        )
+    else:
+        cursor = await db.execute(
+            "SELECT id, name, shortname, image_path, is_public, created_at FROM subjects WHERE owner_id = ? AND is_public = 1 ORDER BY created_at DESC",
+            (profile_user["id"],),
+        )
     subjects = await cursor.fetchall()
     return templates.TemplateResponse(
         request=request,
         name="home.html",
         context=_ctx(request, {
             "user": user,
+            "is_owner": is_owner,
+            "profile_username": profile_user["username"],
             "subjects": subjects,
             "shortname_pattern": SHORTNAME_RE.pattern,
             "shortname_min": SHORTNAME_MIN,

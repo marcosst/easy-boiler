@@ -15,6 +15,7 @@
 
     <!-- User menu (right) — Pinemix Dropdown -->
     <div class="flex justify-end">
+      {% if user %}
       <div
         class="relative inline-block"
         x-data="{ open: false }"
@@ -157,6 +158,12 @@
           </div>
         </div>
       </div>
+      {% else %}
+      <div class="flex items-center gap-3">
+        <a href="/login" class="px-4 py-2 rounded-full text-sm font-medium text-slate-700 dark:text-neutral-300 hover:bg-slate-100 dark:hover:bg-neutral-700 transition-colors">Entrar</a>
+        <a href="/register" class="px-4 py-2 rounded-full text-sm font-medium text-white bg-teal-500 hover:bg-teal-600 transition-colors">Criar conta</a>
+      </div>
+      {% endif %}
     </div>
 
   </div>
