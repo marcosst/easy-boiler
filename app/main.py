@@ -1296,18 +1296,19 @@ async def htmx_library_reclassify_all(subject_id: int, request: Request, user=De
         (subject_id,),
     )
 
-    # 3. Find all items with existing subtitles to reclassify
+    # 3. Find all items in this subject
     cursor = await db.execute(
         """SELECT id, url, type, image_path, name, status, metadata, subtitle_path, position
            FROM library_items
-           WHERE subject_id = ? AND subtitle_path IS NOT NULL AND deleted_at IS NULL
+           WHERE subject_id = ? AND deleted_at IS NULL
            ORDER BY position""",
         (subject_id,),
     )
     items = [dict(row) for row in await cursor.fetchall()]
 
-    # 4. Set all to pending and enqueue with classify_only
-    for item in items:
+    # 4. Set youtube items to pending and enqueue
+    youtube_items = [i for i in items if i["type"] == "youtube"]
+    for item in youtube_items:
         await db.execute(
             "UPDATE library_items SET status = 'pending' WHERE id = ?",
             (item["id"],),
@@ -1317,8 +1318,10 @@ async def htmx_library_reclassify_all(subject_id: int, request: Request, user=De
     await db.commit()
 
     async with get_queue_db() as queue_db:
-        for item in items:
-            await enqueue(queue_db, item["id"], classify_only=True)
+        for item in youtube_items:
+            # Items with subtitles only need reclassification; others need full processing
+            has_subtitles = bool(item.get("subtitle_path"))
+            await enqueue(queue_db, item["id"], classify_only=has_subtitles)
 
     # 5. Add thumbnail URLs for template rendering
     for item in items:
@@ -1332,7 +1335,7 @@ async def htmx_library_reclassify_all(subject_id: int, request: Request, user=De
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_list.html",
-        context=_ctx(request, {"items": items}),
+        context=_ctx(request, {"items": items, "is_owner": True}),
     )
     response.headers["HX-Trigger"] = json.dumps({"refresh-topics": True})
     return response
