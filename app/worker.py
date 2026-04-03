@@ -27,6 +27,7 @@ YOUTUBE_RE = re.compile(
 APP_DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "app.db")
 
 POLL_INTERVAL = 5  # seconds
+DRY_RUN = False  # Set via --dry-run flag: skip Apify/LLM, just sleep and mark ready
 
 
 async def get_app_db():
@@ -102,6 +103,22 @@ async def process_job(job: dict, app_db, queue_db) -> None:
     if not video_id:
         await update_item_status(app_db, item_id, "error", "URL do YouTube inválida")
         await fail(queue_db, job_id, "Invalid YouTube URL")
+        return
+
+    # --- Dry-run mode: simulate processing without Apify/LLM ---
+    if DRY_RUN:
+        logger.info("[%d] DRY RUN: simulating processing for %s", item_id, video_id)
+        await update_item_status(app_db, item_id, "fetching")
+        await asyncio.sleep(0.5)
+        await update_item_status(app_db, item_id, "classifying")
+        await asyncio.sleep(0.5)
+        await app_db.execute(
+            "UPDATE library_items SET status = 'ready', processed_at = CURRENT_TIMESTAMP WHERE id = ?",
+            (item_id,),
+        )
+        await app_db.commit()
+        await complete(queue_db, job_id)
+        logger.info("[%d] DRY RUN: done", item_id)
         return
 
     # --- Step 1: Fetch subtitles (skip if file already exists on disk) ---
@@ -218,11 +235,17 @@ async def main_loop():
 
 def main():
     """Entry point for python -m app.worker"""
+    global DRY_RUN
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(name)s] %(levelname)s: %(message)s",
         stream=sys.stdout,
     )
+
+    if "--dry-run" in sys.argv:
+        DRY_RUN = True
+        logger.info("DRY RUN mode enabled — skipping Apify/LLM, sleep 1s per job")
 
     # Load .env if present
     from dotenv import load_dotenv
