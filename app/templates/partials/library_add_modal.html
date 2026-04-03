@@ -23,7 +23,7 @@
     }
   }"
   @open-add-modal.window="show = true"
-  @close-add-modal.window="reset()"
+  @close-add-modal.window="saving = true; setTimeout(() => reset(), 800)"
   @exit-playlist-mode.window="playlistMode = false; document.getElementById('playlist-videos-area').innerHTML = ''"
   x-on:keydown.esc.prevent="if(!saving) reset()"
 >
@@ -157,7 +157,7 @@
 
       <!-- Full-modal overlay spinner -->
       <div x-show="saving" x-cloak
-           class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-neutral-800 dark:bg-neutral-900 rounded-2xl z-20">
+           class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/80 rounded-2xl z-20 backdrop-blur-sm">
         <div class="w-14 h-14 border-4 border-teal-500/20 border-t-teal-500 rounded-full animate-spin"></div>
         <span class="text-sm text-teal-400 font-medium">Fazendo a Mágica Acontecer...</span>
       </div>
