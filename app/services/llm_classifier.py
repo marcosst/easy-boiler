@@ -9,45 +9,191 @@ from app.schemas.llm_output import ResultadoLLM
 
 logger = logging.getLogger(__name__)
 
-SYSTEM_PROMPT = """Você é um organizador de transcripts técnicos de vídeo.
+SYSTEM_PROMPT = """Você é um assistente especializado em análise de vídeos de treinamento de software (CAD, SketchUp, plugins, etc.).
 
-Sua tarefa é classificar o conteúdo de um novo transcript em tópicos e subtópicos, usando a taxonomia existente como referência quando o conteúdo for realmente compatível.
+Sua tarefa é extrair uma taxonomia hierárquica estruturada da transcrição.
 
-Objetivo:
-Criar uma taxonomia precisa e fiel ao conteúdo. Reutilize tópicos e subtópicos existentes SOMENTE quando o conteúdo do transcript tratar genuinamente do mesmo assunto. Crie novos tópicos e subtópicos sem hesitar quando o conteúdo for diferente.
+## Objetivo
+
+Organizar o conteúdo usando a seguinte estrutura obrigatória:
+
+- Tópico = ENTIDADE do sistema (objeto principal)
+- Subtópico = AÇÃO ou contexto sobre essa entidade
+- Detalhe = ação específica, explicação ou comportamento observado
+
+A prioridade é refletir como um usuário pensaria ao aprender o software.
+
+---
+
+## Entrada
+
+Você receberá:
+
+1. Transcrição com timestamps
+2. Taxonomia existente
+
+---
+
+## REGRA PRINCIPAL (CRÍTICA)
+
+Sempre priorize esta estrutura:
+
+ENTIDADE → AÇÃO → DETALHE
+
+---
+
+## 1. Identificação do tópico (ENTIDADE)
+
+O tópico deve ser uma entidade clara do sistema.
+
+Exemplos de entidades válidas:
+- Paredes
+- Portas
+- Puxadores
+- Componentes
+- Materiais
+- Projeto
+- Biblioteca
+
+Exemplos inválidos de tópico:
+- Criar
+- Editar
+- Ajustar
+- Configurar
+- Exemplo
+- Dica
+
+### Regra forte:
+
+Se o vídeo gira em torno de um objeto específico (ex: "Puxadores"), esse deve ser o tópico principal.
+
+---
+
+## 2. Prioridade do título do vídeo
+
+O título do vídeo é uma fonte primária de verdade.
 
 Regras:
-- Analise o conteúdo real do transcript antes de olhar a taxonomia existente.
-- Reutilize um tópico existente APENAS se o conteúdo tratar claramente do mesmo tema.
-- Reutilize um subtópico existente APENAS se a ação descrita pertencer genuinamente àquele subtópico.
-- Se o transcript fala sobre um assunto novo (ex: puxadores, granito, furação), CRIE um tópico novo para ele. Não force em tópicos existentes.
-- Não encaixe conteúdo sobre "puxadores" em "rodízios", nem "furação" em "acessórios", nem temas que não tenham relação direta.
-- Normalize apenas sinônimos verdadeiros (enviar/subir/upload), não conceitos diferentes.
-- Cada item deve representar uma ação concreta e útil para consulta futura.
-- Ignore falas de enchimento, repetições e comentários sem valor operacional.
-- Não invente conteúdo que não esteja no transcript.
-- O nome do tópico deve refletir o assunto principal tratado no transcript.
+- Se o título contém uma entidade clara → use como tópico
+- Só ignore o título se a transcrição contradizer claramente
 
-Considere equivalentes APENAS quando forem sinônimos reais:
-- enviar / subir / fazer upload
-- componente / módulo / item
-- atualizar / recarregar / sincronizar
-- aplicar / inserir / usar
-- configurar / definir / ajustar
-- selecionar / escolher
+Exemplo:
+"03 - Puxador Cava e Usinado"
+→ Tópico deve ser: Puxadores
 
-Retorne apenas JSON válido no formato:
+---
+
+## 3. Subtópicos (AÇÕES)
+
+Subtópicos são ações ou contextos aplicados à entidade.
+
+Exemplos:
+- Inserção
+- Edição
+- Configuração
+- Tipos
+- Ajustes
+- Posicionamento
+
+Regra:
+Ações nunca devem virar tópicos.
+
+---
+
+## 4. Detalhes
+
+Cada detalhe deve ser:
+
+- atômico
+- autocontido
+- com timestamp
+
+Exemplos:
+- Inserir puxador cava usando biblioteca
+- Ajustar profundidade do puxador usinado
+- Alterar posição do puxador na porta
+
+---
+
+## 5. Deduplicação com taxonomia existente
+
+Reutilize apenas se for o MESMO nível:
+
+- entidade com entidade
+- ação com ação
+
+Nunca faça:
+- usar subtópico existente para evitar criar um tópico novo
+
+Regra crítica:
+Se o vídeo trata de uma entidade nova → crie um tópico novo
+
+---
+
+## 6. Limite de tópicos
+
+- Normal: 1 a 2 tópicos por vídeo
+- Máximo: 3
+- Se passar disso, provavelmente está errado
+
+---
+
+## 7. Proibição de erro comum
+
+NUNCA faça isso:
+
+Errado:
+Tópico: Inserção  
+Tópico: Edição  
+Tópico: Configuração  
+
+Correto:
+Tópico: Puxadores  
+  Subtópico: Inserção  
+  Subtópico: Edição  
+  Subtópico: Configuração  
+
+---
+
+## 8. Validação obrigatória (ANTES de responder)
+
+Pergunte mentalmente:
+
+1. Os tópicos são objetos do sistema?
+2. Se eu mostrar só os tópicos, dá pra entender o tema do vídeo?
+3. Existe um objeto óbvio (ex: puxador) que eu ignorei?
+
+Se sim → corrija antes de responder
+
+---
+
+## Formato de saída
+
+Responda exclusivamente com JSON:
 
 {
   "itens": [
     {
-      "topico": "",
-      "subtopico": "",
-      "acao": "",
-      "timestamp": "00:00:00"
+      "topico": "Nome da entidade",
+      "subtopico": "Nome da ação",
+      "detalhe": "Descrição clara e autocontida",
+      "timestamp": "HH:MM:SS"
     }
   ]
-}"""
+}
+
+---
+
+## Taxonomia existente
+
+{{TAXONOMIA_EXISTENTE}}
+
+---
+
+## Transcrição
+
+{{TRANSCRICAO}}
+"""
 
 
 def _build_messages(taxonomy: dict, transcript: str) -> list[dict]:
@@ -68,6 +214,12 @@ def _build_messages(taxonomy: dict, transcript: str) -> list[dict]:
 async def classify_transcript(taxonomy: dict, transcript: str) -> ResultadoLLM | None:
     """Classify a transcript using the LLM. Returns validated result or None on failure."""
     messages = _build_messages(taxonomy, transcript)
+
+    # Log prompt without transcript
+    taxonomy_text = json.dumps(taxonomy, ensure_ascii=False, indent=2) if taxonomy.get("topicos") else "Nenhuma taxonomia existente ainda."
+    logger.info("[LLM] System prompt:\n%s", SYSTEM_PROMPT)
+    logger.info("[LLM] Taxonomia enviada:\n%s", taxonomy_text)
+
     client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     try:

@@ -907,7 +907,7 @@ async def htmx_library_classify(
                 """INSERT INTO knowledge_items
                    (library_id, topico, subtopico, acao, timestamp, pagina, trecho_referencia, file_path, url)
                    VALUES (?, ?, ?, ?, ?, NULL, '', NULL, ?)""",
-                (item_id, ki.topico, ki.subtopico, ki.acao, ki.timestamp, url),
+                (item_id, ki.topico, ki.subtopico, ki.detalhe, ki.timestamp, url),
             )
 
         # Mark as processed
@@ -1006,6 +1006,73 @@ async def htmx_library_retry(item_id: int, request: Request, user=Depends(requir
         name="partials/library_item.html",
         context=_ctx(request, {"item": item_dict}),
     )
+
+
+@app.post("/htmx/library/reclassify-all/{subject_id}")
+async def htmx_library_reclassify_all(subject_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
+    """Delete all knowledge_items for the subject and re-enqueue all items for LLM classification."""
+    # Verify subject belongs to user
+    cursor = await db.execute(
+        "SELECT id FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    if not await cursor.fetchone():
+        raise HTTPException(status_code=404)
+
+    # 1. Delete all knowledge_items for this subject
+    await db.execute(
+        """DELETE FROM knowledge_items WHERE library_id IN (
+               SELECT id FROM library_items WHERE subject_id = ? AND deleted_at IS NULL
+           )""",
+        (subject_id,),
+    )
+
+    # 2. Clear content_json
+    await db.execute(
+        "UPDATE subjects SET content_json = NULL WHERE id = ?",
+        (subject_id,),
+    )
+
+    # 3. Find all items with existing subtitles to reclassify
+    cursor = await db.execute(
+        """SELECT id, url, type, image_path, name, status, metadata, subtitle_path, position
+           FROM library_items
+           WHERE subject_id = ? AND subtitle_path IS NOT NULL AND deleted_at IS NULL
+           ORDER BY position""",
+        (subject_id,),
+    )
+    items = [dict(row) for row in await cursor.fetchall()]
+
+    # 4. Set all to pending and enqueue with classify_only
+    for item in items:
+        await db.execute(
+            "UPDATE library_items SET status = 'pending' WHERE id = ?",
+            (item["id"],),
+        )
+        item["status"] = "pending"
+
+    await db.commit()
+
+    async with get_queue_db() as queue_db:
+        for item in items:
+            await enqueue(queue_db, item["id"], classify_only=True)
+
+    # 5. Add thumbnail URLs for template rendering
+    for item in items:
+        if item.get("type") == "youtube" and item.get("url"):
+            m = YOUTUBE_RE.search(item["url"])
+            item["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg" if m else None
+        else:
+            item["thumbnail_url"] = None
+
+    # Return updated library list + trigger topics refresh
+    response = templates.TemplateResponse(
+        request=request,
+        name="partials/library_list.html",
+        context=_ctx(request, {"items": items}),
+    )
+    response.headers["HX-Trigger"] = json.dumps({"refresh-topics": True})
+    return response
 
 
 @app.get("/htmx/subjects/{subject_id}/topics")

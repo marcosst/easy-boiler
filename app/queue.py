@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS jobs (
     status TEXT NOT NULL DEFAULT 'queued',
     attempts INTEGER NOT NULL DEFAULT 0,
     max_attempts INTEGER NOT NULL DEFAULT 3,
+    classify_only INTEGER NOT NULL DEFAULT 0,
     created_at DATETIME NOT NULL DEFAULT (datetime('now')),
     started_at DATETIME,
     finished_at DATETIME,
@@ -19,6 +20,10 @@ CREATE TABLE IF NOT EXISTS jobs (
 );
 CREATE INDEX IF NOT EXISTS idx_jobs_status ON jobs(status);
 """
+
+_MIGRATIONS = [
+    "ALTER TABLE jobs ADD COLUMN classify_only INTEGER NOT NULL DEFAULT 0",
+]
 
 
 _schema_initialized = False
@@ -34,16 +39,21 @@ async def get_queue_db():
         db.row_factory = aiosqlite.Row
         if not _schema_initialized:
             await db.executescript(_SCHEMA)
+            for sql in _MIGRATIONS:
+                try:
+                    await db.execute(sql)
+                except Exception:
+                    pass  # column already exists
             await db.commit()
             _schema_initialized = True
         yield db
 
 
-async def enqueue(db: aiosqlite.Connection, library_item_id: int) -> int:
+async def enqueue(db: aiosqlite.Connection, library_item_id: int, *, classify_only: bool = False) -> int:
     """Insert a new job with status='queued'. Returns the new job id."""
     cursor = await db.execute(
-        "INSERT INTO jobs (library_item_id, status) VALUES (?, 'queued')",
-        (library_item_id,),
+        "INSERT INTO jobs (library_item_id, status, classify_only) VALUES (?, 'queued', ?)",
+        (library_item_id, int(classify_only)),
     )
     await db.commit()
     return cursor.lastrowid

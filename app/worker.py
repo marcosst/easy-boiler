@@ -68,6 +68,7 @@ async def process_job(job: dict, app_db, queue_db) -> None:
     """Process a single job: fetch subtitles via Apify, classify via LLM."""
     item_id = job["library_item_id"]
     job_id = job["id"]
+    classify_only = bool(job.get("classify_only", 0))
 
     # Get library item details from app.db
     cursor = await app_db.execute(
@@ -103,34 +104,38 @@ async def process_job(job: dict, app_db, queue_db) -> None:
         await fail(queue_db, job_id, "Invalid YouTube URL")
         return
 
-    # --- Step 1: Fetch subtitles via Apify ---
-    await update_item_status(app_db, item_id, "fetching")
-    logger.info("[%d] Fetching subtitles for %s", item_id, video_id)
+    # --- Step 1: Fetch subtitles (skip if file already exists on disk) ---
+    subs_file = Path("midias") / username / "subtitles" / f"{video_id}.txt"
 
-    try:
-        metadata, subtitle_text = await fetch_apify_data(url)
-    except (ValueError, RuntimeError) as exc:
-        logger.error("[%d] Apify fetch failed: %s", item_id, exc)
-        await update_item_status(app_db, item_id, "error", str(exc))
-        await fail(queue_db, job_id, str(exc))
-        return
+    if subs_file.exists():
+        subtitle_text = subs_file.read_text(encoding="utf-8").strip()
+        logger.info("[%d] Subtitles already on disk (%d chars), skipping download", item_id, len(subtitle_text))
+    else:
+        await update_item_status(app_db, item_id, "fetching")
+        logger.info("[%d] Fetching subtitles for %s", item_id, video_id)
 
-    # Save metadata
-    metadata_json = json.dumps(metadata, ensure_ascii=False)
+        try:
+            metadata, subtitle_text = await fetch_apify_data(url)
+        except (ValueError, RuntimeError) as exc:
+            logger.error("[%d] Apify fetch failed: %s", item_id, exc)
+            await update_item_status(app_db, item_id, "error", str(exc))
+            await fail(queue_db, job_id, str(exc))
+            return
 
-    # Save subtitles to file
-    subs_dir = Path("midias") / username / "subtitles"
-    subs_dir.mkdir(parents=True, exist_ok=True)
-    subs_file = subs_dir / f"{video_id}.txt"
-    subs_file.write_text(subtitle_text + "\n", encoding="utf-8")
-    subtitle_path = f"{username}/subtitles/{video_id}.txt"
+        # Save metadata
+        metadata_json = json.dumps(metadata, ensure_ascii=False)
 
-    # Update library item with metadata and subtitle path
-    await app_db.execute(
-        "UPDATE library_items SET metadata = ?, subtitle_path = ? WHERE id = ?",
-        (metadata_json, subtitle_path, item_id),
-    )
-    await app_db.commit()
+        # Save subtitles to file
+        subs_file.parent.mkdir(parents=True, exist_ok=True)
+        subs_file.write_text(subtitle_text + "\n", encoding="utf-8")
+        subtitle_path = f"{username}/subtitles/{video_id}.txt"
+
+        # Update library item with metadata and subtitle path
+        await app_db.execute(
+            "UPDATE library_items SET metadata = ?, subtitle_path = ? WHERE id = ?",
+            (metadata_json, subtitle_path, item_id),
+        )
+        await app_db.commit()
 
     # --- Step 2: Classify via LLM ---
     await update_item_status(app_db, item_id, "classifying")
@@ -155,7 +160,7 @@ async def process_job(job: dict, app_db, queue_db) -> None:
             """INSERT INTO knowledge_items
                (library_id, topico, subtopico, acao, timestamp, pagina, trecho_referencia, file_path, url)
                VALUES (?, ?, ?, ?, ?, NULL, '', NULL, ?)""",
-            (item_id, ki.topico, ki.subtopico, ki.acao, ki.timestamp, step_url),
+            (item_id, ki.topico, ki.subtopico, ki.detalhe, ki.timestamp, step_url),
         )
 
     # Mark as ready and processed
