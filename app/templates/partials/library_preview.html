@@ -44,6 +44,27 @@
 {% else %}
 <!-- Single video preview (hidden when playlist mode active) -->
 <div id="single-preview-area" x-show="!playlistMode">
+  <!-- Thumbnail -->
+  {% if preview_image_path %}
+  <div class="aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 mb-3">
+    <img src="/midias/{{ preview_image_path }}" alt="Preview" class="w-full h-full object-cover">
+  </div>
+  {% endif %}
+
+  {% if is_playlist %}
+  <!-- Playlist checkbox (outside the form to prevent htmx event bubbling) -->
+  <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 dark:bg-neutral-700/50 border border-slate-200 dark:border-neutral-600 mb-3 cursor-pointer select-none"
+       hx-post="/htmx/library/playlist-videos"
+       hx-target="#playlist-videos-area"
+       hx-swap="innerHTML"
+       hx-vals='{"url": "{{ playlist_url }}", "subject_id": "{{ subject_id }}"}'
+       hx-trigger="click"
+       @click="playlistMode = true">
+    <input type="checkbox" class="w-4 h-4 rounded border-slate-300 dark:border-neutral-600 text-teal-500 focus:ring-teal-500 pointer-events-none">
+    <span class="text-sm text-slate-600 dark:text-neutral-300 font-medium">Incluir vídeos da playlist</span>
+  </div>
+  {% endif %}
+
   <form hx-post="/htmx/library/save"
         hx-target="#library-items-list" hx-swap="beforeend"
         @htmx:before-request="saving = true; $el.closest('.rounded-2xl')?.scrollTo(0,0)"
@@ -56,27 +77,6 @@
     <input type="hidden" name="file_path" value="{{ preview_file_path }}">
     {% endif %}
     <input type="hidden" name="image_path" value="{{ preview_image_path or '' }}">
-
-    <!-- Thumbnail -->
-    {% if preview_image_path %}
-    <div class="aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 mb-3">
-      <img src="/midias/{{ preview_image_path }}" alt="Preview" class="w-full h-full object-cover">
-    </div>
-    {% endif %}
-
-    {% if is_playlist %}
-    <!-- Playlist checkbox -->
-    <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 dark:bg-neutral-700/50 border border-slate-200 dark:border-neutral-600 mb-3 cursor-pointer select-none"
-         hx-post="/htmx/library/playlist-videos"
-         hx-target="#playlist-videos-area"
-         hx-swap="innerHTML"
-         hx-vals='{"url": "{{ playlist_url }}", "subject_id": "{{ subject_id }}"}'
-         hx-trigger="click"
-         @click="playlistMode = true">
-      <input type="checkbox" class="w-4 h-4 rounded border-slate-300 dark:border-neutral-600 text-teal-500 focus:ring-teal-500 pointer-events-none">
-      <span class="text-sm text-slate-600 dark:text-neutral-300 font-medium">Incluir vídeos da playlist</span>
-    </div>
-    {% endif %}
 
     <!-- Editable name -->
     <div class="mb-4">
