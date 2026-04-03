@@ -98,15 +98,10 @@
 <!-- Playlist videos area (HTMX target, shown when playlist mode active) -->
 <div id="playlist-videos-area" x-show="playlistMode">
   {% if is_playlist %}
-  <!-- Skeleton loader shown while fetching playlist videos -->
-  <div id="playlist-spinner" class="mt-3 space-y-2">
-    {% for _ in range(5) %}
-    <div class="flex items-center gap-2 p-2 animate-pulse">
-      <div class="w-4 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
-      <div class="w-14 h-8 bg-slate-200 dark:bg-neutral-700 rounded"></div>
-      <div class="flex-1 h-4 bg-slate-200 dark:bg-neutral-700 rounded"></div>
-    </div>
-    {% endfor %}
+  <!-- Centered spinner shown while fetching playlist videos -->
+  <div class="flex flex-col items-center justify-center py-12 gap-3">
+    <div class="w-10 h-10 border-[3px] border-teal-500/20 border-t-teal-500 rounded-full animate-spin"></div>
+    <span class="text-xs text-slate-400 dark:text-neutral-500">Carregando vídeos da playlist...</span>
   </div>
   {% endif %}
 </div>
