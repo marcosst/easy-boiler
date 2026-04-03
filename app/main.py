@@ -552,7 +552,7 @@ async def subject_topics(request: Request, username: str, shortname: str, db=Dep
     user = await get_optional_user(request, db)
     row = await db.execute(
         """
-        SELECT s.id, s.name, s.shortname, s.content_json, s.image_path, s.is_public
+        SELECT s.id, s.name, s.shortname, s.content_json, s.image_path, s.is_public, u.id AS owner_id
         FROM subjects s
         JOIN users u ON s.owner_id = u.id
         WHERE u.username = ? AND s.shortname = ?
@@ -563,9 +563,7 @@ async def subject_topics(request: Request, username: str, shortname: str, db=Dep
     if not subject:
         raise HTTPException(status_code=404)
     # Determine ownership
-    owner_row = await db.execute("SELECT id FROM users WHERE username = ?", (username,))
-    owner_user = await owner_row.fetchone()
-    is_owner = user is not None and owner_user is not None and user["id"] == owner_user["id"]
+    is_owner = user is not None and user["id"] == subject["owner_id"]
     # Private subjects are only visible to the owner
     if not subject["is_public"] and not is_owner:
         raise HTTPException(status_code=404)
@@ -865,7 +863,7 @@ async def htmx_library_save(
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
-        context=_ctx(request, {"item": item}),
+        context=_ctx(request, {"item": item, "is_owner": True}),
     )
     response.headers["HX-Trigger-After-Settle"] = json.dumps({"close-add-modal": True})
     return response
@@ -999,7 +997,7 @@ async def htmx_library_status(item_id: int, request: Request, user=Depends(requi
     response = templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
-        context=_ctx(request, {"item": item_dict}),
+        context=_ctx(request, {"item": item_dict, "is_owner": True}),
     )
     # When item transitions to ready, trigger topics refresh
     if item_dict.get("status") == "ready":
@@ -1039,7 +1037,7 @@ async def htmx_library_retry(item_id: int, request: Request, user=Depends(requir
     return templates.TemplateResponse(
         request=request,
         name="partials/library_item.html",
-        context=_ctx(request, {"item": item_dict}),
+        context=_ctx(request, {"item": item_dict, "is_owner": True}),
     )
 
 
