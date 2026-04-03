@@ -28,12 +28,12 @@
       }
     </script>
     <style>
-      /* Dark-mode scrollbar */
-      .dark .dark-scrollbar::-webkit-scrollbar { width: 8px; }
-      .dark .dark-scrollbar::-webkit-scrollbar-track { background: rgb(38 38 38); }
-      .dark .dark-scrollbar::-webkit-scrollbar-thumb { background: rgb(82 82 82); border-radius: 4px; }
-      .dark .dark-scrollbar::-webkit-scrollbar-thumb:hover { background: rgb(115 115 115); }
-      .dark .dark-scrollbar { scrollbar-color: rgb(82 82 82) rgb(38 38 38); }
+      /* Dark-mode scrollbar — applied globally */
+      .dark ::-webkit-scrollbar { width: 8px; height: 8px; }
+      .dark ::-webkit-scrollbar-track { background: rgb(38 38 38); }
+      .dark ::-webkit-scrollbar-thumb { background: rgb(82 82 82); border-radius: 4px; }
+      .dark ::-webkit-scrollbar-thumb:hover { background: rgb(115 115 115); }
+      .dark * { scrollbar-color: rgb(82 82 82) rgb(38 38 38); }
       [x-cloak] { display: none !important; }
     </style>
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.14.3/dist/cdn.min.js"></script>
