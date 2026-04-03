@@ -646,6 +646,12 @@ def _extract_playlist_id(url: str) -> str | None:
     return list_ids[0] if list_ids else None
 
 
+def _video_id_from_url(url: str) -> str | None:
+    """Extract YouTube video_id from a URL, or None."""
+    m = YOUTUBE_RE.search(url)
+    return m.group(1) if m else None
+
+
 async def _get_existing_video_ids(db, subject_id: int) -> set[str]:
     """Return set of YouTube video_ids already in the subject's library."""
     rows = await db.execute_fetchall(
@@ -1029,6 +1035,13 @@ async def htmx_library_save_playlist(
 
     username = user["username"]
 
+    # Filter out videos already in library
+    existing_ids = await _get_existing_video_ids(db, subject_id)
+    videos = [v for v in videos if _video_id_from_url(v.get("url", "")) not in existing_ids]
+
+    if not videos:
+        return Response(status_code=422, content="Todos os vídeos selecionados já estão na biblioteca.")
+
     # Get next position
     row = await db.execute(
         "SELECT COALESCE(MAX(position), -1) + 1 as next_pos FROM library_items WHERE subject_id = ?",
@@ -1037,6 +1050,7 @@ async def htmx_library_save_playlist(
     next_pos = (await row.fetchone())["next_pos"]
 
     items_html = []
+    item_ids = []
     for i, video in enumerate(videos):
         url = video.get("url", "")
         name = (video.get("title") or f"Vídeo {i + 1}").strip()
@@ -1068,10 +1082,7 @@ async def htmx_library_save_playlist(
             (subject_id, name, url, image_path, next_pos + i),
         )
         item_id = cursor.lastrowid
-
-        # Enqueue background processing
-        async with get_queue_db() as queue_db:
-            await enqueue(queue_db, item_id)
+        item_ids.append(item_id)
 
         item = {
             "id": item_id,
@@ -1091,6 +1102,11 @@ async def htmx_library_save_playlist(
         items_html.append(item_resp.body.decode())
 
     await db.commit()
+
+    # Batch enqueue all items
+    async with get_queue_db() as queue_db:
+        for item_id in item_ids:
+            await enqueue(queue_db, item_id)
 
     response = Response(
         content="".join(items_html),

@@ -24,6 +24,7 @@
   }"
   @open-add-modal.window="show = true"
   @close-add-modal.window="reset()"
+  @exit-playlist-mode.window="playlistMode = false; document.getElementById('playlist-videos-area').innerHTML = ''"
   x-on:keydown.esc.prevent="if(!saving) reset()"
 >
   <!-- Pinemix Modal Backdrop -->
@@ -151,7 +152,7 @@
 
         <!-- Preview area (HTMX target) -->
         <div id="library-preview-area" :class="previewed ? '' : 'mt-3'"
-             @htmx:after-swap.camel="previewed = !!$el.querySelector('form[hx-post*=\'/htmx/library/save\']')"></div>
+             @htmx:after-swap.camel="previewed = $el.children.length > 0"></div>
       </div>
 
       <!-- Full-modal overlay spinner -->
