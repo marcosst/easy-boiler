@@ -138,7 +138,7 @@
           @keydown.enter.prevent="if (!$event.shiftKey) $el.form.requestSubmit()"
           placeholder="Digite sua pergunta..."
           rows="1"
-          class="flex-1 resize-none rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-2.5 text-sm text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+          class="flex-1 resize-none rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-4 py-2.5 text-sm text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500"
         ></textarea>
         {{ btn_icon(
           icon='<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>',
@@ -303,7 +303,7 @@
       x-transition:leave-start="opacity-100 scale-100 translate-y-0"
       x-transition:leave-end="opacity-0 scale-125 translate-y-full"
       role="document"
-      class="mx-auto flex w-full max-w-4xl flex-col overflow-hidden rounded-2xl bg-slate-100 shadow-2xl will-change-auto dark:bg-neutral-800 dark:text-neutral-100"
+      class="mx-auto flex w-full max-w-4xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl will-change-auto dark:bg-neutral-800 dark:text-neutral-100"
     >
       <div class="flex items-center justify-between bg-slate-50 px-5 py-4 dark:bg-neutral-700/20">
         <h3 class="text-lg font-bold" x-text="name"></h3>

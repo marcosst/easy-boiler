@@ -20,11 +20,11 @@
     <!-- Form -->
     <form method="post" action="/login" class="flex flex-col gap-3.5 mb-6">
       <input type="email" name="email" placeholder="Email" required
-        class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-700 dark:text-neutral-300 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
+        class="{{ INPUT_CLS }}">
       <input type="password" name="password" placeholder="Senha" required
-        class="w-full px-3.5 py-2.5 bg-transparent border border-slate-300 dark:border-neutral-700 rounded-lg text-slate-700 dark:text-neutral-300 text-sm placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors">
+        class="{{ INPUT_CLS }}">
       <button type="submit"
-        class="w-full py-2.5 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-lg transition-colors cursor-pointer">
+        class="{{ BTN_PRIMARY }}">
         Entrar
       </button>
     </form>

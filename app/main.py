@@ -57,11 +57,36 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/midias", StaticFiles(directory="midias"), name="midias")
 templates = Jinja2Templates(directory="app/templates")
 
-# Global button size tokens — change here to resize all buttons
+# Global UI tokens — change here to update all components consistently
 BTN_H = "h-10"
 BTN_WH = "w-10 h-10"
+INPUT_CLS = (
+    "w-full px-3.5 py-2.5 bg-white dark:bg-neutral-800 border border-slate-200"
+    " dark:border-neutral-700 rounded-lg text-slate-700 dark:text-neutral-300 text-sm"
+    " placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2"
+    " focus:ring-teal-500/50 focus:border-teal-500 transition-colors"
+)
+INPUT_CLS_ERR = (
+    "w-full px-3.5 py-2.5 bg-white dark:bg-neutral-800 border border-red-400"
+    " dark:border-red-500 rounded-lg text-slate-700 dark:text-neutral-300 text-sm"
+    " placeholder-slate-400 dark:placeholder-neutral-500 focus:outline-none focus:ring-2"
+    " focus:ring-red-500/50 focus:border-red-500 transition-colors"
+)
+BTN_PRIMARY = (
+    "w-full h-10 rounded-lg bg-brand hover:bg-brand-dark text-white text-sm"
+    " font-semibold transition-colors cursor-pointer disabled:opacity-50"
+    " disabled:cursor-not-allowed"
+)
+LABEL_CLS = (
+    "block text-xs font-semibold text-slate-500 dark:text-neutral-400"
+    " uppercase tracking-wider mb-1.5"
+)
 templates.env.globals["BTN_H"] = BTN_H
 templates.env.globals["BTN_WH"] = BTN_WH
+templates.env.globals["INPUT_CLS"] = INPUT_CLS
+templates.env.globals["INPUT_CLS_ERR"] = INPUT_CLS_ERR
+templates.env.globals["BTN_PRIMARY"] = BTN_PRIMARY
+templates.env.globals["LABEL_CLS"] = LABEL_CLS
 
 
 def _ctx(request: Request, context: dict | None = None) -> dict:

@@ -68,7 +68,7 @@
 
     <!-- Save button -->
     <button type="submit" :disabled="saving || selectedCount === 0"
-            class="w-full h-10 rounded-lg bg-teal-500 hover:bg-teal-600 text-white text-sm font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+            class="{{ BTN_PRIMARY }}">
       <span x-show="!saving" x-text="'Salvar ' + selectedCount + ' vídeos na biblioteca'"></span>
       <span x-show="saving" x-cloak>Salvando...</span>
     </button>
