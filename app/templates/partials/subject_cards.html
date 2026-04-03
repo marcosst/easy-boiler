@@ -1,0 +1,36 @@
+{% set gradients = [
+  "bg-gradient-to-br from-teal-200 to-purple-300 dark:from-teal-900 dark:to-purple-950",
+  "bg-gradient-to-br from-blue-200 to-pink-300 dark:from-blue-900 dark:to-pink-950",
+  "bg-gradient-to-br from-purple-200 to-amber-200 dark:from-purple-900 dark:to-amber-950",
+  "bg-gradient-to-br from-rose-200 to-sky-300 dark:from-rose-900 dark:to-sky-950",
+  "bg-gradient-to-br from-amber-200 to-teal-300 dark:from-amber-900 dark:to-teal-950",
+  "bg-gradient-to-br from-emerald-200 to-indigo-300 dark:from-emerald-900 dark:to-indigo-950",
+  "bg-gradient-to-br from-cyan-200 to-rose-300 dark:from-cyan-900 dark:to-rose-950",
+  "bg-gradient-to-br from-indigo-200 to-emerald-300 dark:from-indigo-900 dark:to-emerald-950",
+] %}
+{% if subjects %}
+{% for subject in subjects %}
+<div class="bg-white dark:bg-neutral-800 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-neutral-700 hover:shadow-md transition-shadow">
+  <a href="/{{ subject.username }}/{{ subject.shortname }}" class="block aspect-video bg-slate-200 dark:bg-neutral-700 overflow-hidden">
+    {% if subject.image_path %}
+    <img src="/midias/{{ subject.image_path }}" alt="{{ subject.name }}" class="w-full h-full object-cover">
+    {% else %}
+    <div class="w-full h-full {{ gradients[subject.id % 8] }}"></div>
+    {% endif %}
+  </a>
+  <a href="/{{ subject.username }}/{{ subject.shortname }}" class="block p-3 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors">
+    <span class="text-sm font-medium text-slate-700 dark:text-neutral-300 truncate block">{{ subject.name }}</span>
+    <span class="text-xs text-slate-400 dark:text-neutral-500">{{ subject.username }}</span>
+  </a>
+</div>
+{% endfor %}
+{% else %}
+<div class="col-span-full flex flex-col items-center justify-center py-16 text-center">
+  <div class="w-16 h-16 mb-4 rounded-full bg-slate-100 dark:bg-neutral-700 flex items-center justify-center">
+    <svg class="w-8 h-8 text-slate-300 dark:text-neutral-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+    </svg>
+  </div>
+  <p class="text-lg font-medium text-slate-500 dark:text-neutral-400 mb-1">Nenhum assunto encontrado</p>
+</div>
+{% endif %}

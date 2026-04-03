@@ -336,8 +336,23 @@ async def oauth_callback(request: Request, provider: str, db=Depends(get_db)):
 # --- Protected routes ---
 
 @app.get("/")
-async def home(request: Request, user=Depends(require_auth)):
-    return RedirectResponse(f"/{user['username']}", status_code=303)
+async def home(request: Request, db=Depends(get_db)):
+    user = await get_optional_user(request, db)
+    if user:
+        return RedirectResponse(f"/{user['username']}", status_code=303)
+    cursor = await db.execute(
+        """SELECT s.id, s.name, s.shortname, s.image_path, u.username
+           FROM subjects s JOIN users u ON s.owner_id = u.id
+           WHERE s.is_public = 1
+           ORDER BY s.created_at DESC
+           LIMIT 50""",
+    )
+    subjects = await cursor.fetchall()
+    return templates.TemplateResponse(
+        request=request,
+        name="landing.html",
+        context={"subjects": subjects},
+    )
 
 
 @app.get("/{username}")
