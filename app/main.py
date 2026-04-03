@@ -333,7 +333,35 @@ async def oauth_callback(request: Request, provider: str, db=Depends(get_db)):
     return RedirectResponse("/auth/choose-username", status_code=303)
 
 
-# --- Protected routes ---
+# --- Public data routes (must be before catch-all /{username}) ---
+
+@app.get("/htmx/search")
+async def htmx_search(request: Request, q: str = "", db=Depends(get_db)):
+    q = q.strip()
+    if q:
+        cursor = await db.execute(
+            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
+               FROM subjects s JOIN users u ON s.owner_id = u.id
+               WHERE s.is_public = 1 AND s.name LIKE ?
+               ORDER BY s.created_at DESC
+               LIMIT 50""",
+            (f"%{q}%",),
+        )
+    else:
+        cursor = await db.execute(
+            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
+               FROM subjects s JOIN users u ON s.owner_id = u.id
+               WHERE s.is_public = 1
+               ORDER BY s.created_at DESC
+               LIMIT 50""",
+        )
+    subjects = await cursor.fetchall()
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/subject_cards.html",
+        context={"subjects": subjects},
+    )
+
 
 @app.get("/")
 async def home(request: Request, db=Depends(get_db)):
@@ -1132,29 +1160,3 @@ async def htmx_hello(request: Request):
     return templates.TemplateResponse(request=request, name="partials/hello.html", context=_ctx(request))
 
 
-@app.get("/htmx/search")
-async def htmx_search(request: Request, q: str = "", db=Depends(get_db)):
-    q = q.strip()
-    if q:
-        cursor = await db.execute(
-            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
-               FROM subjects s JOIN users u ON s.owner_id = u.id
-               WHERE s.is_public = 1 AND s.name LIKE ?
-               ORDER BY s.created_at DESC
-               LIMIT 50""",
-            (f"%{q}%",),
-        )
-    else:
-        cursor = await db.execute(
-            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
-               FROM subjects s JOIN users u ON s.owner_id = u.id
-               WHERE s.is_public = 1
-               ORDER BY s.created_at DESC
-               LIMIT 50""",
-        )
-    subjects = await cursor.fetchall()
-    return templates.TemplateResponse(
-        request=request,
-        name="partials/subject_cards.html",
-        context={"subjects": subjects},
-    )
