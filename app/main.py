@@ -18,6 +18,7 @@ from app.auth import (
     create_session,
     destroy_session,
     get_current_user,
+    get_optional_user,
     hash_password,
     oauth,
     PROVIDERS,

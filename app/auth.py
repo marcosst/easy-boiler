@@ -69,6 +69,11 @@ async def get_current_user(request: Request, db) -> dict | None:
             "name": user["username"], "initials": user["username"][:2].upper()}
 
 
+async def get_optional_user(request: Request, db) -> dict | None:
+    """Like get_current_user but returns None instead of redirecting when not authenticated."""
+    return await get_current_user(request, db)
+
+
 async def destroy_session(db, token: str) -> None:
     await db.execute("DELETE FROM sessions WHERE token = ?", (token,))
     await db.commit()
