@@ -42,44 +42,43 @@
 </form>
 {% endif %}
 {% else %}
-<div id="single-preview-area">
-<form hx-post="/htmx/library/save"
-      hx-target="#library-items-list" hx-swap="beforeend"
-      @htmx:before-request="saving = true; $el.closest('.rounded-2xl')?.scrollTo(0,0)"
-      @htmx:after-request="saving = false">
-  <input type="hidden" name="subject_id" value="{{ subject_id }}">
-  <input type="hidden" name="type" value="{{ preview_type }}">
-  {% if preview_type == 'youtube' %}
-  <input type="hidden" name="url" value="{{ preview_url }}">
-  {% elif preview_type == 'pdf' %}
-  <input type="hidden" name="file_path" value="{{ preview_file_path }}">
-  {% endif %}
-  <input type="hidden" name="image_path" value="{{ preview_image_path or '' }}">
+<!-- Single video preview (hidden when playlist mode active) -->
+<div id="single-preview-area" x-show="!playlistMode">
+  <form hx-post="/htmx/library/save"
+        hx-target="#library-items-list" hx-swap="beforeend"
+        @htmx:before-request="saving = true; $el.closest('.rounded-2xl')?.scrollTo(0,0)"
+        @htmx:after-request="saving = false">
+    <input type="hidden" name="subject_id" value="{{ subject_id }}">
+    <input type="hidden" name="type" value="{{ preview_type }}">
+    {% if preview_type == 'youtube' %}
+    <input type="hidden" name="url" value="{{ preview_url }}">
+    {% elif preview_type == 'pdf' %}
+    <input type="hidden" name="file_path" value="{{ preview_file_path }}">
+    {% endif %}
+    <input type="hidden" name="image_path" value="{{ preview_image_path or '' }}">
 
-  <!-- Thumbnail -->
-  {% if preview_image_path %}
-  <div class="aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 mb-3">
-    <img src="/midias/{{ preview_image_path }}" alt="Preview" class="w-full h-full object-cover">
-  </div>
-  {% endif %}
+    <!-- Thumbnail -->
+    {% if preview_image_path %}
+    <div class="aspect-video rounded-lg overflow-hidden bg-slate-100 dark:bg-neutral-800 mb-3">
+      <img src="/midias/{{ preview_image_path }}" alt="Preview" class="w-full h-full object-cover">
+    </div>
+    {% endif %}
 
-  {% if is_playlist %}
-  <!-- Playlist checkbox -->
-  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 dark:bg-neutral-700/50 border border-slate-200 dark:border-neutral-600 mb-3 cursor-pointer select-none"
+    {% if is_playlist %}
+    <!-- Playlist checkbox -->
+    <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 dark:bg-neutral-700/50 border border-slate-200 dark:border-neutral-600 mb-3 cursor-pointer select-none"
          hx-post="/htmx/library/playlist-videos"
          hx-target="#playlist-videos-area"
          hx-swap="innerHTML"
          hx-vals='{"url": "{{ playlist_url }}", "subject_id": "{{ subject_id }}"}'
-         hx-trigger="click[event.target.closest('label') && !document.querySelector('#playlist-videos-area').children.length]"
+         hx-trigger="click"
          hx-indicator="#playlist-spinner"
-         @click="playlistMode = !playlistMode"
-         x-show="!playlistMode">
-    <input type="checkbox" class="w-4 h-4 rounded border-slate-300 dark:border-neutral-600 text-teal-500 focus:ring-teal-500 cursor-pointer" x-model="playlistMode" @click.stop>
-    <span class="text-sm text-slate-600 dark:text-neutral-300 font-medium">Incluir vídeos da playlist</span>
-  </label>
-  {% endif %}
+         @click="playlistMode = true">
+      <input type="checkbox" class="w-4 h-4 rounded border-slate-300 dark:border-neutral-600 text-teal-500 focus:ring-teal-500 pointer-events-none">
+      <span class="text-sm text-slate-600 dark:text-neutral-300 font-medium">Incluir vídeos da playlist</span>
+    </div>
+    {% endif %}
 
-  <div x-show="!playlistMode">
     <!-- Editable name -->
     <div class="mb-4">
       <label class="block text-xs font-semibold text-slate-500 dark:text-neutral-400 uppercase tracking-wider mb-1">Nome</label>
@@ -94,8 +93,7 @@
       <span x-show="!saving">Salvar na biblioteca</span>
       <span x-show="saving" x-cloak>Salvando...</span>
     </button>
-  </div>
-</form>
+  </form>
 </div>
 
 {% if is_playlist %}
@@ -111,7 +109,7 @@
 </div>
 {% endif %}
 
-<!-- Playlist videos area (HTMX target) -->
+<!-- Playlist videos area (HTMX target, shown when playlist mode active) -->
 <div id="playlist-videos-area" x-show="playlistMode"></div>
 
 {% endif %}
