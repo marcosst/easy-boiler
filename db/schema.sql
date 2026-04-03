@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS "library_items" (
     position      INTEGER NOT NULL DEFAULT 0,
     created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP
-, deleted_at DATETIME DEFAULT NULL, processed_at DATETIME DEFAULT NULL);
+, deleted_at DATETIME DEFAULT NULL, processed_at DATETIME DEFAULT NULL, status TEXT NOT NULL DEFAULT 'ready' CHECK(status IN ('pending', 'fetching', 'classifying', 'ready', 'error')));
 CREATE INDEX idx_library_items_subject ON library_items(subject_id);
 CREATE TABLE knowledge_items (
     id                INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -65,10 +65,21 @@ CREATE TABLE knowledge_items (
     created_at        DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX idx_knowledge_items_library ON knowledge_items(library_id);
+CREATE TABLE notifications (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    type TEXT NOT NULL CHECK(type IN ('success', 'error', 'info')),
+    message TEXT NOT NULL,
+    seen INTEGER NOT NULL DEFAULT 0 CHECK(seen IN (0, 1)),
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX idx_notifications_user_unseen ON notifications(user_id, seen);
 -- Dbmate schema migrations
 INSERT INTO "schema_migrations" (version) VALUES
   ('20240101000000'),
   ('20260330200000'),
   ('20260330200001'),
   ('20260331000000'),
-  ('20260331100000');
+  ('20260331100000'),
+  ('20260401233734'),
+  ('20260401233742');

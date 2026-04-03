@@ -35,6 +35,14 @@
       .dark ::-webkit-scrollbar-thumb:hover { background: rgb(115 115 115); }
       .dark * { scrollbar-color: rgb(82 82 82) rgb(38 38 38); }
       [x-cloak] { display: none !important; }
+      /* Force dark-mode styles on browser-autofilled inputs */
+      .dark input:-webkit-autofill,
+      .dark input:-webkit-autofill:hover,
+      .dark input:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0 1000px rgb(38 38 38) inset !important;
+        -webkit-text-fill-color: rgb(212 212 212) !important;
+        caret-color: rgb(212 212 212);
+      }
     </style>
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.14.3/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/focus@3.14.3/dist/cdn.min.js"></script>

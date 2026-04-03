@@ -89,6 +89,11 @@ templates.env.globals["BTN_PRIMARY"] = BTN_PRIMARY
 templates.env.globals["LABEL_CLS"] = LABEL_CLS
 
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
+
 def _ctx(request: Request, context: dict | None = None) -> dict:
     ctx = context or {}
     return ctx

@@ -214,12 +214,6 @@ def _build_messages(taxonomy: dict, transcript: str) -> list[dict]:
 async def classify_transcript(taxonomy: dict, transcript: str) -> ResultadoLLM | None:
     """Classify a transcript using the LLM. Returns validated result or None on failure."""
     messages = _build_messages(taxonomy, transcript)
-
-    # Log prompt without transcript
-    taxonomy_text = json.dumps(taxonomy, ensure_ascii=False, indent=2) if taxonomy.get("topicos") else "Nenhuma taxonomia existente ainda."
-    logger.info("[LLM] System prompt:\n%s", SYSTEM_PROMPT)
-    logger.info("[LLM] Taxonomia enviada:\n%s", taxonomy_text)
-
     client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     try:
