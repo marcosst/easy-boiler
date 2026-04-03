@@ -39,14 +39,15 @@
       {% for video in videos %}
       {% if video.existing %}
       <!-- Existing item (greyed out, no checkbox) -->
-      <div class="flex items-center gap-2 p-2 rounded-lg bg-slate-50/50 dark:bg-neutral-800/30 border border-slate-100 dark:border-neutral-800 opacity-50">
+      <div class="relative flex items-center gap-2 p-2 rounded-lg bg-slate-50/50 dark:bg-neutral-800/30 border border-slate-100 dark:border-neutral-800 opacity-50">
         <div class="w-4 h-4 flex-shrink-0"></div>
         <div class="w-14 h-8 flex-shrink-0 rounded overflow-hidden bg-slate-200 dark:bg-neutral-700">
           {% if video.thumbnail_url %}
           <img src="{{ video.thumbnail_url }}" alt="" class="w-full h-full object-cover">
           {% endif %}
         </div>
-        <span class="text-xs text-slate-400 dark:text-neutral-500 flex-1 truncate">{{ video.title }} <span class="italic">(já na biblioteca)</span></span>
+        <span class="text-xs text-slate-400 dark:text-neutral-500 flex-1 truncate">{{ video.title }}</span>
+        <span class="text-[10px] font-semibold text-amber-500 dark:text-amber-400 uppercase tracking-wider flex-shrink-0">Na Biblioteca</span>
       </div>
       {% else %}
       <!-- New item (checkbox, selectable) -->
