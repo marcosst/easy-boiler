@@ -3,6 +3,7 @@ import os
 import re
 import uuid
 from pathlib import Path
+from urllib.parse import parse_qs, urlparse
 
 import httpx
 import fitz  # pymupdf
@@ -28,7 +29,7 @@ from app.auth import (
 )
 from app.database import get_db
 from app.queue import get_queue_db, enqueue
-from app.services.apify_service import fetch_apify_data
+from app.services.apify_service import fetch_apify_data, fetch_playlist_videos
 
 import logging
 from app.services.file_service import (
@@ -638,6 +639,27 @@ YOUTUBE_RE = re.compile(
 )
 
 
+def _extract_playlist_id(url: str) -> str | None:
+    """Return the playlist ID from a YouTube URL, or None."""
+    parsed = urlparse(url)
+    list_ids = parse_qs(parsed.query).get("list", [])
+    return list_ids[0] if list_ids else None
+
+
+async def _get_existing_video_ids(db, subject_id: int) -> set[str]:
+    """Return set of YouTube video_ids already in the subject's library."""
+    rows = await db.execute_fetchall(
+        "SELECT url FROM library_items WHERE subject_id = ? AND type = 'youtube' AND deleted_at IS NULL",
+        (subject_id,),
+    )
+    existing = set()
+    for row in rows:
+        m = YOUTUBE_RE.search(row["url"] or "")
+        if m:
+            existing.add(m.group(1))
+    return existing
+
+
 MAX_PDF_SIZE = 50 * 1024 * 1024  # 50MB
 
 
@@ -671,7 +693,37 @@ async def htmx_library_preview(
                 name="partials/library_preview.html",
                 context=_ctx(request, {"error": "Informe a URL do vídeo."}),
             )
+
+        playlist_id = _extract_playlist_id(url)
+
+        # Playlist-only URL (no video): go straight to playlist video list
         m = YOUTUBE_RE.search(url)
+        if not m and playlist_id:
+            try:
+                videos = await fetch_playlist_videos(url)
+            except (ValueError, RuntimeError) as exc:
+                return templates.TemplateResponse(
+                    request=request,
+                    name="partials/library_preview.html",
+                    context=_ctx(request, {"error": str(exc)}),
+                )
+            existing_ids = await _get_existing_video_ids(db, subject_id)
+            for v in videos:
+                v["existing"] = v["video_id"] in existing_ids
+            new_count = sum(1 for v in videos if not v["existing"])
+            return templates.TemplateResponse(
+                request=request,
+                name="partials/library_playlist_videos.html",
+                context=_ctx(request, {
+                    "videos": videos,
+                    "subject_id": subject_id,
+                    "playlist_url": url,
+                    "new_count": new_count,
+                    "total_count": len(videos),
+                    "playlist_only": True,
+                }),
+            )
+
         if not m:
             return templates.TemplateResponse(
                 request=request,
@@ -736,6 +788,8 @@ async def htmx_library_preview(
                 "preview_url": url,
                 "preview_image_path": image_path,
                 "subject_id": subject_id,
+                "is_playlist": bool(playlist_id),
+                "playlist_url": url if playlist_id else None,
             }),
         )
 
@@ -793,6 +847,50 @@ async def htmx_library_preview(
         request=request,
         name="partials/library_preview.html",
         context=_ctx(request, {"error": "Tipo inválido."}),
+    )
+
+
+@app.post("/htmx/library/playlist-videos")
+async def htmx_library_playlist_videos(
+    request: Request,
+    url: str = Form(...),
+    subject_id: int = Form(...),
+    user=Depends(require_auth),
+    db=Depends(get_db),
+):
+    # Verify subject belongs to user
+    row = await db.execute(
+        "SELECT id FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    if not await row.fetchone():
+        raise HTTPException(status_code=404)
+
+    try:
+        videos = await fetch_playlist_videos(url)
+    except (ValueError, RuntimeError) as exc:
+        return templates.TemplateResponse(
+            request=request,
+            name="partials/library_preview.html",
+            context=_ctx(request, {"error": str(exc)}),
+        )
+
+    existing_ids = await _get_existing_video_ids(db, subject_id)
+    for v in videos:
+        v["existing"] = v["video_id"] in existing_ids
+    new_count = sum(1 for v in videos if not v["existing"])
+
+    return templates.TemplateResponse(
+        request=request,
+        name="partials/library_playlist_videos.html",
+        context=_ctx(request, {
+            "videos": videos,
+            "subject_id": subject_id,
+            "playlist_url": url,
+            "new_count": new_count,
+            "total_count": len(videos),
+            "playlist_only": False,
+        }),
     )
 
 
