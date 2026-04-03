@@ -1055,31 +1055,14 @@ async def htmx_library_save_playlist(
         url = video.get("url", "")
         name = (video.get("title") or f"Vídeo {i + 1}").strip()
 
-        # Extract video_id for thumbnail
+        # Extract video_id for thumbnail URL (no download — use YouTube CDN directly)
         m = YOUTUBE_RE.search(url)
         video_id = m.group(1) if m else None
 
-        # Download thumbnail locally
-        image_path = None
-        if video_id:
-            thumb_dir = Path("midias") / username / "thumbnails"
-            thumb_dir.mkdir(parents=True, exist_ok=True)
-            thumb_filename = f"{uuid.uuid4().hex}.jpg"
-            try:
-                thumb_resp = httpx.get(
-                    f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg",
-                    timeout=10,
-                )
-                thumb_resp.raise_for_status()
-                (thumb_dir / thumb_filename).write_bytes(thumb_resp.content)
-                image_path = f"{username}/thumbnails/{thumb_filename}"
-            except Exception:
-                pass
-
         cursor = await db.execute(
             """INSERT INTO library_items (subject_id, name, type, url, file_path, image_path, position, status)
-               VALUES (?, ?, 'youtube', ?, NULL, ?, ?, 'pending')""",
-            (subject_id, name, url, image_path, next_pos + i),
+               VALUES (?, ?, 'youtube', ?, NULL, NULL, ?, 'pending')""",
+            (subject_id, name, url, next_pos + i),
         )
         item_id = cursor.lastrowid
         item_ids.append(item_id)
@@ -1090,7 +1073,7 @@ async def htmx_library_save_playlist(
             "type": "youtube",
             "url": url,
             "file_path": None,
-            "image_path": image_path,
+            "image_path": None,
             "status": "pending",
             "thumbnail_url": f"https://img.youtube.com/vi/{video_id}/mqdefault.jpg" if video_id else None,
         }
