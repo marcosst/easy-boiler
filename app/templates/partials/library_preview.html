@@ -60,7 +60,6 @@
        hx-vals='{"url": "{{ playlist_url }}", "subject_id": "{{ subject_id }}"}'
        hx-trigger="click"
        @click="playlistLoading = true"
-       @htmx:after-swap.camel="playlistLoading = false; playlistMode = true">
     <input type="checkbox" class="w-4 h-4 rounded border-slate-300 dark:border-neutral-600 text-teal-500 focus:ring-teal-500 pointer-events-none">
     <span class="text-sm text-slate-600 dark:text-neutral-300 font-medium">Incluir vídeos da playlist</span>
   </div>
@@ -97,6 +96,7 @@
 </div>
 
 <!-- Playlist videos area (HTMX target, shown when playlist mode active) -->
-<div id="playlist-videos-area" x-show="playlistMode"></div>
+<div id="playlist-videos-area" x-show="playlistMode"
+     @htmx:after-swap.camel="playlistLoading = false; playlistMode = true"></div>
 
 {% endif %}
