@@ -743,7 +743,8 @@ async def htmx_library_preview(
             "SELECT id FROM library_items WHERE url = ? AND subject_id = ? AND deleted_at IS NULL",
             (url, subject_id),
         )
-        if await dup.fetchone():
+        video_already_exists = bool(await dup.fetchone())
+        if video_already_exists and not playlist_id:
             return templates.TemplateResponse(
                 request=request,
                 name="partials/library_preview.html",
@@ -796,6 +797,7 @@ async def htmx_library_preview(
                 "subject_id": subject_id,
                 "is_playlist": bool(playlist_id),
                 "playlist_url": url if playlist_id else None,
+                "video_already_exists": video_already_exists if playlist_id else False,
             }),
         )
 
