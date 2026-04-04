@@ -1,0 +1,606 @@
+# Landing Page Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Replace the current minimal `landing.html` with a marketing-style landing page that explains the product, shows pricing plans, includes a contact form modal, and provides public subject search — all with dark/light mode support.
+
+**Architecture:** Single template rewrite (`landing.html`) extending `base.html`, plus a new `/busca` route and template for public search. The landing uses Alpine.js for the contact modal and form behavior. No new dependencies. SVG illustrations are inline in the template.
+
+**Tech Stack:** FastAPI, Jinja2, Tailwind CSS (CDN), Alpine.js, HTMX
+
+---
+
+## File Structure
+
+| File | Action | Responsibility |
+|------|--------|----------------|
+| `app/templates/landing.html` | Rewrite | Full marketing landing page (hero, features, plans, modal, footer) |
+| `app/templates/busca.html` | Create | Public subject search page with HTMX live search |
+| `app/main.py` | Modify | Add `GET /busca` route, keep existing `/` route logic unchanged |
+
+---
+
+### Task 1: Rewrite landing.html — Hero Section
+
+**Files:**
+- Rewrite: `app/templates/landing.html`
+
+This task replaces the entire `landing.html` with the new structure, starting with the hero. Subsequent tasks will add sections to this file.
+
+- [ ] **Step 1: Replace landing.html with hero section**
+
+Replace the full content of `app/templates/landing.html` with:
+
+```html
+{% extends "base.html" %}
+
+{% block title %}Resumiu — Transforme vídeos em conhecimento{% endblock %}
+
+{% block content %}
+<div x-data="{ contactOpen: false, contactSent: false }">
+
+<!-- ===== HERO ===== -->
+<section class="relative overflow-hidden">
+  <!-- Gradient background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-teal-50/30 dark:from-teal-950/40 dark:via-neutral-900 dark:to-neutral-900 -z-10"></div>
+
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12">
+    <!-- Text -->
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+        Transforme vídeos em<br>
+        <span class="text-teal-600 dark:text-teal-400">conhecimento organizado</span>
+      </h1>
+      <p class="mt-5 text-lg text-slate-600 dark:text-neutral-400 max-w-lg mx-auto md:mx-0">
+        Nossa IA extrai, classifica e organiza automaticamente o conteúdo de vídeos do YouTube em uma biblioteca de conhecimento estruturada.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+        <a href="/register"
+           class="px-6 py-3 rounded-full bg-teal-500 hover:bg-teal-600 text-white font-semibold shadow-lg shadow-teal-500/25 transition-colors text-sm">
+          Comece grátis
+        </a>
+        <a href="/login" class="text-sm text-slate-500 dark:text-neutral-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+          Já tem conta? Entrar
+        </a>
+      </div>
+
+      <!-- Search -->
+      <form action="/busca" method="get" class="mt-8 max-w-md mx-auto md:mx-0">
+        <div class="relative">
+          <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 dark:text-neutral-500 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+          </svg>
+          <input
+            type="text" name="q"
+            placeholder="Buscar assuntos públicos..."
+            class="w-full pl-11 pr-4 py-3 rounded-full border border-slate-200 dark:border-neutral-700 bg-white/80 dark:bg-neutral-800/80 backdrop-blur text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50 transition-colors"
+          >
+        </div>
+      </form>
+    </div>
+
+    <!-- SVG Illustration -->
+    <div class="flex-1 flex justify-center max-w-md md:max-w-lg">
+      <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-xl">
+        <!-- Video player -->
+        <rect x="20" y="40" width="200" height="130" rx="12" class="fill-white dark:fill-neutral-800 stroke-slate-200 dark:stroke-neutral-700" stroke-width="2"/>
+        <rect x="35" y="55" width="170" height="95" rx="6" class="fill-slate-100 dark:fill-neutral-700"/>
+        <polygon points="105,85 105,125 135,105" class="fill-teal-500 dark:fill-teal-400"/>
+        <rect x="35" y="158" width="80" height="4" rx="2" class="fill-slate-200 dark:fill-neutral-600"/>
+        <rect x="35" y="166" width="55" height="3" rx="1.5" class="fill-slate-150 dark:fill-neutral-650 opacity-60"/>
+
+        <!-- Arrow -->
+        <path d="M230 105 L270 105" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round"/>
+        <path d="M265 98 L275 105 L265 112" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- AI brain icon -->
+        <circle cx="310" cy="105" r="30" class="fill-teal-100 dark:fill-teal-900/50 stroke-teal-500 dark:stroke-teal-400" stroke-width="2"/>
+        <path d="M298 105 C298 95 305 90 310 90 C315 90 322 95 322 105 C322 115 315 120 310 120 C305 120 298 115 298 105Z" class="stroke-teal-600 dark:stroke-teal-300" stroke-width="1.5" fill="none"/>
+        <circle cx="305" cy="100" r="2" class="fill-teal-600 dark:fill-teal-300"/>
+        <circle cx="315" cy="100" r="2" class="fill-teal-600 dark:fill-teal-300"/>
+        <path d="M300 108 C303 113 317 113 320 108" class="stroke-teal-600 dark:stroke-teal-300" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+        <!-- Arrow down -->
+        <path d="M310 145 L310 175" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round"/>
+        <path d="M303 170 L310 180 L317 170" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Knowledge tree -->
+        <rect x="260" y="190" width="100" height="28" rx="8" class="fill-teal-500 dark:fill-teal-600"/>
+        <text x="310" y="208" text-anchor="middle" class="fill-white text-[11px] font-semibold" font-family="system-ui">Tópico</text>
+
+        <!-- Branches -->
+        <path d="M285 218 L285 235 L270 235 L270 245" class="stroke-slate-300 dark:stroke-neutral-600" stroke-width="2" fill="none"/>
+        <path d="M335 218 L335 235 L350 235 L350 245" class="stroke-slate-300 dark:stroke-neutral-600" stroke-width="2" fill="none"/>
+
+        <!-- Sub-topics -->
+        <rect x="235" y="245" width="70" height="24" rx="6" class="fill-teal-100 dark:fill-teal-900/40 stroke-teal-300 dark:stroke-teal-700" stroke-width="1.5"/>
+        <text x="270" y="261" text-anchor="middle" class="fill-teal-700 dark:fill-teal-300 text-[10px]" font-family="system-ui">Subtópico</text>
+
+        <rect x="315" y="245" width="70" height="24" rx="6" class="fill-teal-100 dark:fill-teal-900/40 stroke-teal-300 dark:stroke-teal-700" stroke-width="1.5"/>
+        <text x="350" y="261" text-anchor="middle" class="fill-teal-700 dark:fill-teal-300 text-[10px]" font-family="system-ui">Subtópico</text>
+
+        <!-- Leaf actions -->
+        <path d="M255 269 L255 280 L245 280 L245 288" class="stroke-slate-200 dark:stroke-neutral-700" stroke-width="1.5" fill="none"/>
+        <path d="M285 269 L285 280 L295 280 L295 288" class="stroke-slate-200 dark:stroke-neutral-700" stroke-width="1.5" fill="none"/>
+
+        <rect x="225" y="288" width="40" height="18" rx="4" class="fill-slate-100 dark:fill-neutral-700 stroke-slate-200 dark:stroke-neutral-600" stroke-width="1"/>
+        <text x="245" y="300" text-anchor="middle" class="fill-slate-500 dark:fill-neutral-400 text-[8px]" font-family="system-ui">Ação</text>
+
+        <rect x="275" y="288" width="40" height="18" rx="4" class="fill-slate-100 dark:fill-neutral-700 stroke-slate-200 dark:stroke-neutral-600" stroke-width="1"/>
+        <text x="295" y="300" text-anchor="middle" class="fill-slate-500 dark:fill-neutral-400 text-[8px]" font-family="system-ui">Ação</text>
+
+        <!-- Decorative dots -->
+        <circle cx="440" cy="50" r="4" class="fill-teal-200 dark:fill-teal-800 opacity-60"/>
+        <circle cx="455" cy="80" r="6" class="fill-teal-100 dark:fill-teal-900 opacity-40"/>
+        <circle cx="50" cy="250" r="5" class="fill-teal-200 dark:fill-teal-800 opacity-50"/>
+        <circle cx="25" cy="300" r="3" class="fill-teal-300 dark:fill-teal-700 opacity-40"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+</div>
+{% endblock %}
+```
+
+- [ ] **Step 2: Verify the hero renders**
+
+Run: `make dev` and open `http://localhost:8000` in a logged-out browser. Confirm:
+- Hero text and CTA buttons are visible
+- SVG illustration renders on the right
+- Search input is present
+- Toggle dark/light mode — both work
+- Mobile responsive (narrow browser)
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add app/templates/landing.html
+git commit -m "feat(landing): rewrite hero section with marketing layout"
+```
+
+---
+
+### Task 2: Add "Como Funciona" Feature Cards Section
+
+**Files:**
+- Modify: `app/templates/landing.html`
+
+- [ ] **Step 1: Add features section after the hero closing `</section>` tag**
+
+Insert before the closing `</div>` of the `x-data` wrapper (before `{% endblock %}`):
+
+```html
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="py-20 bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-slate-900 dark:text-white mb-4">Como funciona</h2>
+    <p class="text-center text-slate-500 dark:text-neutral-400 mb-14 max-w-2xl mx-auto">Em poucos passos, transforme qualquer vídeo ou documento em conhecimento estruturado e pesquisável.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Card 1: Adicione vídeos e PDFs -->
+      <div class="p-8 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 rounded-xl bg-teal-100 dark:bg-teal-900/40 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Adicione vídeos e PDFs</h3>
+        <p class="text-sm text-slate-500 dark:text-neutral-400 leading-relaxed">Cole o link de um vídeo ou playlist do YouTube, envie PDFs, e nós fazemos o resto.</p>
+      </div>
+
+      <!-- Card 2: IA organiza pra você -->
+      <div class="p-8 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 rounded-xl bg-teal-100 dark:bg-teal-900/40 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">IA organiza pra você</h3>
+        <p class="text-sm text-slate-500 dark:text-neutral-400 leading-relaxed">Nossa inteligência artificial extrai as legendas, identifica tópicos e cria uma árvore de conhecimento automaticamente.</p>
+      </div>
+
+      <!-- Card 3: Converse com seus vídeos e PDFs -->
+      <div class="p-8 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 rounded-xl bg-teal-100 dark:bg-teal-900/40 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Converse com seus vídeos e PDFs</h3>
+        <p class="text-sm text-slate-500 dark:text-neutral-400 leading-relaxed">Faça perguntas sobre o conteúdo da sua biblioteca e receba respostas baseadas nos seus próprios materiais.</p>
+      </div>
+
+      <!-- Card 4: Estude e compartilhe -->
+      <div class="p-8 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 rounded-xl bg-teal-100 dark:bg-teal-900/40 flex items-center justify-center mb-5">
+          <svg class="w-7 h-7 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Estude e compartilhe</h3>
+        <p class="text-sm text-slate-500 dark:text-neutral-400 leading-relaxed">Navegue pelos tópicos organizados, encontre o trecho exato do vídeo e compartilhe assuntos publicamente.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+- [ ] **Step 2: Verify features section renders**
+
+Reload `http://localhost:8000`. Confirm 4 cards in 2×2 grid on desktop, stacked on mobile, icons visible, dark mode works.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add app/templates/landing.html
+git commit -m "feat(landing): add 'como funciona' feature cards section"
+```
+
+---
+
+### Task 3: Add Pricing Plans Section
+
+**Files:**
+- Modify: `app/templates/landing.html`
+
+- [ ] **Step 1: Add plans section after the features `</section>` closing tag**
+
+Insert before the closing `</div>` of the `x-data` wrapper:
+
+```html
+<!-- ===== PLANOS ===== -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-slate-900 dark:text-white mb-4">Planos</h2>
+    <p class="text-center text-slate-500 dark:text-neutral-400 mb-14 max-w-2xl mx-auto">Comece gratuitamente. Assine quando precisar editar sua biblioteca.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+      <!-- Gratuito -->
+      <div class="rounded-2xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 p-8 shadow-sm">
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Gratuito</h3>
+        <div class="mt-4 flex items-baseline gap-1">
+          <span class="text-4xl font-extrabold text-slate-900 dark:text-white">R$ 0</span>
+        </div>
+        <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-neutral-400">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Buscar e navegar assuntos públicos
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Acessar conteúdo compartilhado por link
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Chat com seus materiais
+          </li>
+        </ul>
+        <a href="/register" class="mt-8 block w-full text-center py-3 rounded-full border border-slate-300 dark:border-neutral-600 text-sm font-semibold text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors">
+          Criar conta grátis
+        </a>
+      </div>
+
+      <!-- Editor (destaque) -->
+      <div class="rounded-2xl border-2 border-teal-500 dark:border-teal-400 bg-white dark:bg-neutral-800 p-8 shadow-lg md:scale-105 relative">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-teal-500 text-white text-xs font-bold uppercase tracking-wide">1 mês grátis</span>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Editor</h3>
+        <div class="mt-4 flex items-baseline gap-1">
+          <span class="text-4xl font-extrabold text-slate-900 dark:text-white">R$ 19,90</span>
+          <span class="text-sm text-slate-500 dark:text-neutral-400">/mês</span>
+        </div>
+        <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-neutral-400">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Tudo do plano Gratuito
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Criar e editar biblioteca
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Até 50 itens adicionados por mês
+          </li>
+        </ul>
+        <a href="/register?plan=editor" class="mt-8 block w-full text-center py-3 rounded-full bg-teal-500 hover:bg-teal-600 text-white text-sm font-semibold shadow-lg shadow-teal-500/25 transition-colors">
+          Testar grátis por 1 mês
+        </a>
+      </div>
+
+      <!-- Editor Pro -->
+      <div class="rounded-2xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 p-8 shadow-sm relative">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-slate-700 dark:bg-neutral-600 text-white text-xs font-bold uppercase tracking-wide">Mais popular</span>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Editor Pro</h3>
+        <div class="mt-4 flex items-baseline gap-1">
+          <span class="text-4xl font-extrabold text-slate-900 dark:text-white">R$ 49,90</span>
+          <span class="text-sm text-slate-500 dark:text-neutral-400">/mês</span>
+        </div>
+        <ul class="mt-8 space-y-3 text-sm text-slate-600 dark:text-neutral-400">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Tudo do plano Editor
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Até 200 itens adicionados por mês
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-teal-500 flex-none mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Suporte prioritário
+          </li>
+        </ul>
+        <a href="/register?plan=pro" class="mt-8 block w-full text-center py-3 rounded-full border border-slate-300 dark:border-neutral-600 text-sm font-semibold text-slate-700 dark:text-neutral-300 hover:bg-slate-50 dark:hover:bg-neutral-700 transition-colors">
+          Testar grátis por 1 mês
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Contact link -->
+    <p class="text-center mt-10 text-sm text-slate-500 dark:text-neutral-400">
+      Precisa de mais?
+      <button @click="contactOpen = true" class="text-teal-600 dark:text-teal-400 hover:underline font-medium cursor-pointer">Entre em contato</button>
+    </p>
+  </div>
+</section>
+```
+
+- [ ] **Step 2: Verify plans section renders**
+
+Reload page. Confirm 3 cards, Editor card elevated with teal border and badge, "Entre em contato" link visible. Dark mode check. Mobile stacking.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add app/templates/landing.html
+git commit -m "feat(landing): add pricing plans section"
+```
+
+---
+
+### Task 4: Add Contact Modal and Footer
+
+**Files:**
+- Modify: `app/templates/landing.html`
+
+- [ ] **Step 1: Add contact modal and footer before the closing `</div>` of the `x-data` wrapper**
+
+Insert before the final `</div>{% endblock %}`:
+
+```html
+<!-- ===== CONTACT MODAL ===== -->
+<div x-show="contactOpen" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
+  <!-- Overlay -->
+  <div x-show="contactOpen" x-transition.opacity @click="contactOpen = false; contactSent = false" class="absolute inset-0 bg-black/50"></div>
+  <!-- Modal -->
+  <div x-show="contactOpen"
+       x-transition:enter="transition ease-out duration-200"
+       x-transition:enter-start="opacity-0 scale-95"
+       x-transition:enter-end="opacity-100 scale-100"
+       x-transition:leave="transition ease-in duration-150"
+       x-transition:leave-start="opacity-100 scale-100"
+       x-transition:leave-end="opacity-0 scale-95"
+       class="relative w-full max-w-md rounded-2xl bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-2xl p-6">
+    <!-- Close button -->
+    <button @click="contactOpen = false; contactSent = false"
+            class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white dark:bg-neutral-700 hover:bg-slate-100 dark:hover:bg-neutral-600 border border-slate-400/50 dark:border-neutral-600/50 text-slate-500 dark:text-neutral-400 transition-colors cursor-pointer">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <!-- Form -->
+    <template x-if="!contactSent">
+      <div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-5">Fale conosco</h3>
+        <form @submit.prevent="contactSent = true" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-neutral-300 mb-1">Nome</label>
+            <input type="text" required
+                   class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-slate-700 dark:text-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-neutral-300 mb-1">Email ou WhatsApp</label>
+            <input type="text" required
+                   class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-slate-700 dark:text-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-neutral-300 mb-1">Mensagem</label>
+            <textarea required rows="4"
+                      class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-slate-700 dark:text-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50 resize-none"></textarea>
+          </div>
+          <button type="submit"
+                  class="w-full py-3 rounded-full bg-teal-500 hover:bg-teal-600 text-white text-sm font-semibold shadow-lg shadow-teal-500/25 transition-colors cursor-pointer">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </template>
+
+    <!-- Success message -->
+    <template x-if="contactSent">
+      <div class="text-center py-8">
+        <div class="w-16 h-16 rounded-full bg-teal-100 dark:bg-teal-900/40 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Obrigado!</h3>
+        <p class="text-sm text-slate-500 dark:text-neutral-400">Retornaremos em breve.</p>
+      </div>
+    </template>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-6 bg-slate-100 dark:bg-neutral-800 border-t border-slate-200 dark:border-neutral-700">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-neutral-400">
+    <span class="font-semibold text-slate-700 dark:text-neutral-300">Resumiu</span>
+    <div class="flex items-center gap-4">
+      <a href="/login" class="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Entrar</a>
+      <span>·</span>
+      <a href="/register" class="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Criar conta</a>
+    </div>
+    <span>© 2026</span>
+  </div>
+</footer>
+```
+
+- [ ] **Step 2: Verify modal and footer**
+
+Reload page. Click "Entre em contato" → modal opens. Fill form, click "Enviar" → success message appears. Click X or overlay → closes. Footer visible at bottom. Dark mode check.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add app/templates/landing.html
+git commit -m "feat(landing): add contact modal and footer"
+```
+
+---
+
+### Task 5: Add /busca Route and Template
+
+**Files:**
+- Create: `app/templates/busca.html`
+- Modify: `app/main.py`
+
+- [ ] **Step 1: Create busca.html template**
+
+Create `app/templates/busca.html`:
+
+```html
+{% extends "base.html" %}
+
+{% block title %}Busca — Resumiu{% endblock %}
+
+{% block content %}
+{% include "partials/header.html" %}
+
+<main class="w-full px-6 py-8 max-w-5xl mx-auto">
+  <!-- Search -->
+  <div class="mb-8">
+    <input
+      type="text"
+      name="q"
+      value="{{ q }}"
+      placeholder="Buscar assuntos públicos..."
+      hx-get="/htmx/search"
+      hx-trigger="input changed delay:300ms, search"
+      hx-target="#search-results"
+      hx-swap="innerHTML"
+      class="w-full px-5 py-3 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50 transition-colors"
+    >
+  </div>
+
+  <!-- Results grid -->
+  <div id="search-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% include "partials/subject_cards.html" %}
+  </div>
+</main>
+{% endblock %}
+```
+
+- [ ] **Step 2: Add the /busca route in main.py**
+
+Add the route **before** the `/{username}` catch-all route (around line 407, before the `@app.get("/")` route is fine — but it must be before `/{username}`). Insert it right after the existing `@app.get("/htmx/search")` handler block (around line 403):
+
+```python
+@app.get("/busca")
+async def busca(request: Request, q: str = "", db=Depends(get_db)):
+    q = q.strip()
+    if q:
+        cursor = await db.execute(
+            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
+               FROM subjects s JOIN users u ON s.owner_id = u.id
+               WHERE s.is_public = 1 AND s.name LIKE ?
+               ORDER BY s.created_at DESC
+               LIMIT 50""",
+            (f"%{q}%",),
+        )
+    else:
+        cursor = await db.execute(
+            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
+               FROM subjects s JOIN users u ON s.owner_id = u.id
+               WHERE s.is_public = 1
+               ORDER BY s.created_at DESC
+               LIMIT 50""",
+        )
+    subjects = await cursor.fetchall()
+    return templates.TemplateResponse(
+        request=request,
+        name="busca.html",
+        context={"subjects": subjects, "q": q},
+    )
+```
+
+- [ ] **Step 3: Verify /busca route**
+
+Run: visit `http://localhost:8000/busca` — shows search page with public subjects. Visit `http://localhost:8000/busca?q=test` — filters results. From the landing hero, type a query and submit — redirects to `/busca?q=...`.
+
+- [ ] **Step 4: Commit**
+
+```bash
+git add app/templates/busca.html app/main.py
+git commit -m "feat: add /busca route for public subject search"
+```
+
+---
+
+### Task 6: Visual Polish — Scroll Fade-in Animation
+
+**Files:**
+- Modify: `app/templates/landing.html`
+
+- [ ] **Step 1: Add CSS animation and Alpine.js intersect observer**
+
+In `landing.html`, add a `<style>` block right after the `{% block content %}` line (before the `<div x-data=...>`):
+
+```html
+<style>
+  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+</style>
+```
+
+Then add `x-data="{ visible: false }" x-intersect.once="visible = true" :class="{ 'visible': visible }"` and the `fade-up` class to each of the 4 feature cards and each of the 3 plan cards. For example, the first feature card becomes:
+
+```html
+<div class="fade-up p-8 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 shadow-sm hover:shadow-md transition-shadow"
+     x-data="{ visible: false }" x-intersect.once="visible = true" :class="{ 'visible': visible }">
+```
+
+Apply the same pattern to all 4 feature cards and all 3 plan cards (7 elements total).
+
+**Note:** `x-intersect` requires the Alpine.js intersect plugin. Add this script tag in the `<style>` area or rely on the existing Alpine — actually, we need to add the plugin. Add this line to the `<style>` block area (before the `<div x-data`):
+
+```html
+<script defer src="https://unpkg.com/@alpinejs/intersect@3.14.3/dist/cdn.min.js"></script>
+```
+
+**Important:** This `<script>` tag must appear **before** the Alpine.js core script. Since `base.html` already loads Alpine, and this page-level script loads with `defer`, it will be loaded in document order. However, to be safe, place it in the `{% block content %}` area before any `x-intersect` usage — Alpine plugins self-register when Alpine initializes.
+
+- [ ] **Step 2: Verify animations**
+
+Reload page. Scroll down — feature cards and plan cards should fade in from below as they enter the viewport.
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add app/templates/landing.html
+git commit -m "feat(landing): add scroll fade-in animations"
+```
+
+---
+
+## Summary
+
+| Task | Description | Files |
+|------|-------------|-------|
+| 1 | Hero section | `landing.html` (rewrite) |
+| 2 | Feature cards | `landing.html` |
+| 3 | Pricing plans | `landing.html` |
+| 4 | Contact modal + footer | `landing.html` |
+| 5 | `/busca` route + template | `busca.html` (new), `main.py` |
+| 6 | Scroll animations | `landing.html` |
