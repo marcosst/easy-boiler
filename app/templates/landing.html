@@ -7,14 +7,6 @@
   .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
 </style>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
-  });
-</script>
 <div x-data="{ contactOpen: false, contactSent: false }">
 
 <!-- ===== HERO ===== -->
@@ -345,4 +337,12 @@
 </footer>
 
 </div>
+<script>
+  (function() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+  })();
+</script>
 {% endblock %}
