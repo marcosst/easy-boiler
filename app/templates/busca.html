@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Busca — Resumiu{% endblock %}
+
+{% block content %}
+{% include "partials/header.html" %}
+
+<main class="w-full px-6 py-8 max-w-5xl mx-auto">
+  <!-- Search -->
+  <div class="mb-8">
+    <input
+      type="text"
+      name="q"
+      value="{{ q }}"
+      placeholder="Buscar assuntos públicos..."
+      hx-get="/htmx/search"
+      hx-trigger="input changed delay:300ms, search"
+      hx-target="#search-results"
+      hx-swap="innerHTML"
+      class="w-full px-5 py-3 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50 transition-colors"
+    >
+  </div>
+
+  <!-- Results grid -->
+  <div id="search-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% include "partials/subject_cards.html" %}
+  </div>
+</main>
+{% endblock %}

@@ -142,6 +142,16 @@ async def auth_redirect_handler(request: Request, exc: AuthRedirect):
     return RedirectResponse("/login", status_code=303)
 
 
+@app.exception_handler(404)
+async def not_found_handler(request: Request, exc: HTTPException):
+    return templates.TemplateResponse(
+        request=request,
+        name="404.html",
+        context={"request": request},
+        status_code=404,
+    )
+
+
 async def require_auth(request: Request, db=Depends(get_db)):
     user = await get_current_user(request, db)
     if not user:
@@ -391,6 +401,34 @@ async def htmx_search(request: Request, q: str = "", db=Depends(get_db)):
         request=request,
         name="partials/subject_cards.html",
         context={"subjects": subjects},
+    )
+
+
+@app.get("/busca")
+async def busca(request: Request, q: str = "", db=Depends(get_db)):
+    q = q.strip()
+    if q:
+        cursor = await db.execute(
+            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
+               FROM subjects s JOIN users u ON s.owner_id = u.id
+               WHERE s.is_public = 1 AND s.name LIKE ?
+               ORDER BY s.created_at DESC
+               LIMIT 50""",
+            (f"%{q}%",),
+        )
+    else:
+        cursor = await db.execute(
+            """SELECT s.id, s.name, s.shortname, s.image_path, u.username
+               FROM subjects s JOIN users u ON s.owner_id = u.id
+               WHERE s.is_public = 1
+               ORDER BY s.created_at DESC
+               LIMIT 50""",
+        )
+    subjects = await cursor.fetchall()
+    return templates.TemplateResponse(
+        request=request,
+        name="busca.html",
+        context={"subjects": subjects, "q": q},
     )
 
 
