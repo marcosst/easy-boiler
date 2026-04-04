@@ -1,28 +1,110 @@
 {% extends "base.html" %}
 
-{% block title %}Resumiu{% endblock %}
+{% block title %}Resumiu — Transforme vídeos em conhecimento{% endblock %}
 
 {% block content %}
-{% include "partials/header.html" %}
+<div x-data="{ contactOpen: false, contactSent: false }">
 
-<main class="w-full px-6 py-8 max-w-5xl mx-auto">
-  <!-- Search -->
-  <div class="mb-8">
-    <input
-      type="text"
-      name="q"
-      placeholder="Buscar assuntos..."
-      hx-get="/htmx/search"
-      hx-trigger="input changed delay:300ms, search"
-      hx-target="#search-results"
-      hx-swap="innerHTML"
-      class="w-full px-5 py-3 rounded-xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50 transition-colors"
-    >
-  </div>
+<!-- ===== HERO ===== -->
+<section class="relative overflow-hidden">
+  <!-- Gradient background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-teal-50/30 dark:from-teal-950/40 dark:via-neutral-900 dark:to-neutral-900 -z-10"></div>
 
-  <!-- Results grid -->
-  <div id="search-results" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    {% include "partials/subject_cards.html" %}
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12">
+    <!-- Text -->
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+        Transforme vídeos em<br>
+        <span class="text-teal-600 dark:text-teal-400">conhecimento organizado</span>
+      </h1>
+      <p class="mt-5 text-lg text-slate-600 dark:text-neutral-400 max-w-lg mx-auto md:mx-0">
+        Nossa IA extrai, classifica e organiza automaticamente o conteúdo de vídeos do YouTube em uma biblioteca de conhecimento estruturada.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+        <a href="/register"
+           class="px-6 py-3 rounded-full bg-teal-500 hover:bg-teal-600 text-white font-semibold shadow-lg shadow-teal-500/25 transition-colors text-sm">
+          Comece grátis
+        </a>
+        <a href="/login" class="text-sm text-slate-500 dark:text-neutral-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+          Já tem conta? Entrar
+        </a>
+      </div>
+
+      <!-- Search -->
+      <form action="/busca" method="get" class="mt-8 max-w-md mx-auto md:mx-0">
+        <div class="relative">
+          <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 dark:text-neutral-500 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+          </svg>
+          <input
+            type="text" name="q"
+            placeholder="Buscar assuntos públicos..."
+            class="w-full pl-11 pr-4 py-3 rounded-full border border-slate-200 dark:border-neutral-700 bg-white/80 dark:bg-neutral-800/80 backdrop-blur text-slate-700 dark:text-neutral-300 placeholder-slate-400 dark:placeholder-neutral-500 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50 transition-colors"
+          >
+        </div>
+      </form>
+    </div>
+
+    <!-- SVG Illustration -->
+    <div class="flex-1 flex justify-center max-w-md md:max-w-lg">
+      <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-xl">
+        <!-- Video player -->
+        <rect x="20" y="40" width="200" height="130" rx="12" class="fill-white dark:fill-neutral-800 stroke-slate-200 dark:stroke-neutral-700" stroke-width="2"/>
+        <rect x="35" y="55" width="170" height="95" rx="6" class="fill-slate-100 dark:fill-neutral-700"/>
+        <polygon points="105,85 105,125 135,105" class="fill-teal-500 dark:fill-teal-400"/>
+        <rect x="35" y="158" width="80" height="4" rx="2" class="fill-slate-200 dark:fill-neutral-600"/>
+        <rect x="35" y="166" width="55" height="3" rx="1.5" class="fill-slate-150 dark:fill-neutral-650 opacity-60"/>
+
+        <!-- Arrow -->
+        <path d="M230 105 L270 105" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round"/>
+        <path d="M265 98 L275 105 L265 112" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- AI brain icon -->
+        <circle cx="310" cy="105" r="30" class="fill-teal-100 dark:fill-teal-900/50 stroke-teal-500 dark:stroke-teal-400" stroke-width="2"/>
+        <path d="M298 105 C298 95 305 90 310 90 C315 90 322 95 322 105 C322 115 315 120 310 120 C305 120 298 115 298 105Z" class="stroke-teal-600 dark:stroke-teal-300" stroke-width="1.5" fill="none"/>
+        <circle cx="305" cy="100" r="2" class="fill-teal-600 dark:fill-teal-300"/>
+        <circle cx="315" cy="100" r="2" class="fill-teal-600 dark:fill-teal-300"/>
+        <path d="M300 108 C303 113 317 113 320 108" class="stroke-teal-600 dark:stroke-teal-300" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+        <!-- Arrow down -->
+        <path d="M310 145 L310 175" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round"/>
+        <path d="M303 170 L310 180 L317 170" class="stroke-teal-500 dark:stroke-teal-400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Knowledge tree -->
+        <rect x="260" y="190" width="100" height="28" rx="8" class="fill-teal-500 dark:fill-teal-600"/>
+        <text x="310" y="208" text-anchor="middle" class="fill-white text-[11px] font-semibold" font-family="system-ui">Tópico</text>
+
+        <!-- Branches -->
+        <path d="M285 218 L285 235 L270 235 L270 245" class="stroke-slate-300 dark:stroke-neutral-600" stroke-width="2" fill="none"/>
+        <path d="M335 218 L335 235 L350 235 L350 245" class="stroke-slate-300 dark:stroke-neutral-600" stroke-width="2" fill="none"/>
+
+        <!-- Sub-topics -->
+        <rect x="235" y="245" width="70" height="24" rx="6" class="fill-teal-100 dark:fill-teal-900/40 stroke-teal-300 dark:stroke-teal-700" stroke-width="1.5"/>
+        <text x="270" y="261" text-anchor="middle" class="fill-teal-700 dark:fill-teal-300 text-[10px]" font-family="system-ui">Subtópico</text>
+
+        <rect x="315" y="245" width="70" height="24" rx="6" class="fill-teal-100 dark:fill-teal-900/40 stroke-teal-300 dark:stroke-teal-700" stroke-width="1.5"/>
+        <text x="350" y="261" text-anchor="middle" class="fill-teal-700 dark:fill-teal-300 text-[10px]" font-family="system-ui">Subtópico</text>
+
+        <!-- Leaf actions -->
+        <path d="M255 269 L255 280 L245 280 L245 288" class="stroke-slate-200 dark:stroke-neutral-700" stroke-width="1.5" fill="none"/>
+        <path d="M285 269 L285 280 L295 280 L295 288" class="stroke-slate-200 dark:stroke-neutral-700" stroke-width="1.5" fill="none"/>
+
+        <rect x="225" y="288" width="40" height="18" rx="4" class="fill-slate-100 dark:fill-neutral-700 stroke-slate-200 dark:stroke-neutral-600" stroke-width="1"/>
+        <text x="245" y="300" text-anchor="middle" class="fill-slate-500 dark:fill-neutral-400 text-[8px]" font-family="system-ui">Ação</text>
+
+        <rect x="275" y="288" width="40" height="18" rx="4" class="fill-slate-100 dark:fill-neutral-700 stroke-slate-200 dark:stroke-neutral-600" stroke-width="1"/>
+        <text x="295" y="300" text-anchor="middle" class="fill-slate-500 dark:fill-neutral-400 text-[8px]" font-family="system-ui">Ação</text>
+
+        <!-- Decorative dots -->
+        <circle cx="440" cy="50" r="4" class="fill-teal-200 dark:fill-teal-800 opacity-60"/>
+        <circle cx="455" cy="80" r="6" class="fill-teal-100 dark:fill-teal-900 opacity-40"/>
+        <circle cx="50" cy="250" r="5" class="fill-teal-200 dark:fill-teal-800 opacity-50"/>
+        <circle cx="25" cy="300" r="3" class="fill-teal-300 dark:fill-teal-700 opacity-40"/>
+      </svg>
+    </div>
   </div>
-</main>
+</section>
+
+</div>
 {% endblock %}
