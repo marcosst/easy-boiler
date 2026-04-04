@@ -259,5 +259,78 @@
   </div>
 </section>
 
+<!-- ===== CONTACT MODAL ===== -->
+<div x-show="contactOpen" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
+  <!-- Overlay -->
+  <div x-show="contactOpen" x-transition.opacity @click="contactOpen = false; contactSent = false" class="absolute inset-0 bg-black/50"></div>
+  <!-- Modal -->
+  <div x-show="contactOpen"
+       x-transition:enter="transition ease-out duration-200"
+       x-transition:enter-start="opacity-0 scale-95"
+       x-transition:enter-end="opacity-100 scale-100"
+       x-transition:leave="transition ease-in duration-150"
+       x-transition:leave-start="opacity-100 scale-100"
+       x-transition:leave-end="opacity-0 scale-95"
+       class="relative w-full max-w-md rounded-2xl bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 shadow-2xl p-6">
+    <!-- Close button -->
+    <button @click="contactOpen = false; contactSent = false"
+            class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white dark:bg-neutral-700 hover:bg-slate-100 dark:hover:bg-neutral-600 border border-slate-400/50 dark:border-neutral-600/50 text-slate-500 dark:text-neutral-400 transition-colors cursor-pointer">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <!-- Form -->
+    <template x-if="!contactSent">
+      <div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-5">Fale conosco</h3>
+        <form @submit.prevent="contactSent = true" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-neutral-300 mb-1">Nome</label>
+            <input type="text" required
+                   class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-slate-700 dark:text-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-neutral-300 mb-1">Email ou WhatsApp</label>
+            <input type="text" required
+                   class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-slate-700 dark:text-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-neutral-300 mb-1">Mensagem</label>
+            <textarea required rows="4"
+                      class="w-full px-4 py-2.5 rounded-lg border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-slate-700 dark:text-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/50 resize-none"></textarea>
+          </div>
+          <button type="submit"
+                  class="w-full py-3 rounded-full bg-teal-500 hover:bg-teal-600 text-white text-sm font-semibold shadow-lg shadow-teal-500/25 transition-colors cursor-pointer">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </template>
+
+    <!-- Success message -->
+    <template x-if="contactSent">
+      <div class="text-center py-8">
+        <div class="w-16 h-16 rounded-full bg-teal-100 dark:bg-teal-900/40 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Obrigado!</h3>
+        <p class="text-sm text-slate-500 dark:text-neutral-400">Retornaremos em breve.</p>
+      </div>
+    </template>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-6 bg-slate-100 dark:bg-neutral-800 border-t border-slate-200 dark:border-neutral-700">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-neutral-400">
+    <span class="font-semibold text-slate-700 dark:text-neutral-300">Resumiu</span>
+    <div class="flex items-center gap-4">
+      <a href="/login" class="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Entrar</a>
+      <span>·</span>
+      <a href="/register" class="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Criar conta</a>
+    </div>
+    <span>© 2026</span>
+  </div>
+</footer>
+
 </div>
 {% endblock %}
