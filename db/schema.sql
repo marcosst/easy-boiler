@@ -78,6 +78,32 @@ CREATE TABLE notifications (
     created_at TEXT    NOT NULL DEFAULT (datetime('now'))
 );
 CREATE INDEX idx_notifications_user_unseen ON notifications(user_id, seen);
+CREATE TABLE content_chunks (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    subject_id      INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
+    library_item_id INTEGER NOT NULL REFERENCES library_items(id) ON DELETE CASCADE,
+    chunk_text      TEXT    NOT NULL,
+    chunk_index     INTEGER NOT NULL,
+    timestamp_start TEXT,
+    timestamp_end   TEXT,
+    created_at      TEXT    NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX idx_content_chunks_subject ON content_chunks(subject_id);
+CREATE INDEX idx_content_chunks_library_item ON content_chunks(library_item_id);
+CREATE VIRTUAL TABLE vec_chunks USING vec0(
+    chunk_id INTEGER PRIMARY KEY, embedding FLOAT[1536]
+);
+CREATE TABLE IF NOT EXISTS "vec_chunks_info" (key text primary key, value any);
+CREATE TABLE IF NOT EXISTS "vec_chunks_chunks"(chunk_id INTEGER PRIMARY KEY AUTOINCREMENT,size INTEGER NOT NULL,validity BLOB NOT NULL,rowids BLOB NOT NULL);
+CREATE TABLE IF NOT EXISTS "vec_chunks_rowids"(rowid INTEGER PRIMARY KEY AUTOINCREMENT,id,chunk_id INTEGER,chunk_offset INTEGER);
+CREATE TABLE IF NOT EXISTS "vec_chunks_vector_chunks00"(rowid PRIMARY KEY,vectors BLOB NOT NULL);
 -- Dbmate schema migrations
 INSERT INTO "schema_migrations" (version) VALUES
-  ('20240101000000');
+  ('20240101000000'),
+  ('20260330200000'),
+  ('20260330200001'),
+  ('20260331000000'),
+  ('20260331100000'),
+  ('20260401233734'),
+  ('20260401233742'),
+  ('20260404000000');

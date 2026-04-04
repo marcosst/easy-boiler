@@ -9,7 +9,7 @@ import httpx
 import fitz  # pymupdf
 
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, Response, UploadFile
-from fastapi.responses import RedirectResponse
+from fastapi.responses import RedirectResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from starlette.middleware.sessions import SessionMiddleware
@@ -40,7 +40,9 @@ from app.services.file_service import (
     SHORTNAME_MAX,
     save_upload_image,
 )
+from app.services.embedding_service import delete_chunks_for_item
 from app.services.llm_classifier import classify_transcript
+from app.services import rag_service
 from app.services.taxonomy_service import get_taxonomy_for_subject
 from app.services.tree_builder import rebuild_content_json
 from app.services.url_builder import build_step_url
@@ -635,6 +637,11 @@ async def htmx_delete_subject(
         old_path = Path("midias") / subject["image_path"]
         old_path.unlink(missing_ok=True)
 
+    # Clean up vec_chunks before deleting (virtual tables don't CASCADE)
+    await db.execute(
+        "DELETE FROM vec_chunks WHERE chunk_id IN (SELECT id FROM content_chunks WHERE subject_id = ?)",
+        (subject_id,),
+    )
     await db.execute("DELETE FROM subjects WHERE id = ?", (subject_id,))
     await db.commit()
 
@@ -987,6 +994,8 @@ async def htmx_library_delete(item_id: int, request: Request, user=Depends(requi
             (item_id,),
         )
         await queue_db.commit()
+    # Clean up RAG chunks and embeddings
+    await delete_chunks_for_item(db, item_id)
     return Response(status_code=200)
 
 
@@ -1390,8 +1399,8 @@ async def htmx_library_reclassify_all(subject_id: int, request: Request, user=De
     async with get_queue_db() as queue_db:
         for item in youtube_items:
             # Items with subtitles only need reclassification; others need full processing
-            has_subtitles = bool(item.get("subtitle_path"))
-            await enqueue(queue_db, item["id"], classify_only=has_subtitles)
+            jt = "classify" if item.get("subtitle_path") else "full"
+            await enqueue(queue_db, item["id"], job_type=jt)
 
     # 5. Add thumbnail URLs for template rendering
     for item in items:
@@ -1408,6 +1417,133 @@ async def htmx_library_reclassify_all(subject_id: int, request: Request, user=De
         context=_ctx(request, {"items": items, "is_owner": True}),
     )
     response.headers["HX-Trigger"] = json.dumps({"refresh-topics": True})
+    return response
+
+
+@app.post("/htmx/library/reload-subtitles/{subject_id}")
+async def htmx_library_reload_subtitles(subject_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
+    """Delete all cached subtitles and re-enqueue full processing for all items."""
+    cursor = await db.execute(
+        "SELECT id FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    if not await cursor.fetchone():
+        raise HTTPException(status_code=404)
+
+    # Get all youtube items
+    cursor = await db.execute(
+        """SELECT id, url, type, image_path, name, status, metadata, subtitle_path, position
+           FROM library_items
+           WHERE subject_id = ? AND deleted_at IS NULL
+           ORDER BY position""",
+        (subject_id,),
+    )
+    items = [dict(row) for row in await cursor.fetchall()]
+    youtube_items = [i for i in items if i["type"] == "youtube"]
+
+    # Delete subtitle files from disk
+    for item in youtube_items:
+        if item.get("subtitle_path"):
+            sub_file = Path("midias") / item["subtitle_path"]
+            sub_file.unlink(missing_ok=True)
+
+    # Clear subtitle_path, knowledge, content_json — full reprocess
+    await db.execute(
+        """UPDATE library_items SET subtitle_path = NULL, status = 'pending'
+           WHERE subject_id = ? AND type = 'youtube' AND deleted_at IS NULL""",
+        (subject_id,),
+    )
+    await db.execute(
+        """DELETE FROM knowledge_items WHERE library_id IN (
+               SELECT id FROM library_items WHERE subject_id = ? AND deleted_at IS NULL
+           )""",
+        (subject_id,),
+    )
+    await db.execute("UPDATE subjects SET content_json = NULL WHERE id = ?", (subject_id,))
+    # Also clear RAG chunks
+    await db.execute(
+        "DELETE FROM vec_chunks WHERE chunk_id IN (SELECT id FROM content_chunks WHERE subject_id = ?)",
+        (subject_id,),
+    )
+    await db.execute("DELETE FROM content_chunks WHERE subject_id = ?", (subject_id,))
+    await db.commit()
+
+    # Enqueue full processing
+    async with get_queue_db() as queue_db:
+        for item in youtube_items:
+            await enqueue(queue_db, item["id"], job_type="full")
+
+    for item in items:
+        if item["type"] == "youtube":
+            item["status"] = "pending"
+        if item.get("type") == "youtube" and item.get("url"):
+            m = YOUTUBE_RE.search(item["url"])
+            item["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg" if m else None
+        else:
+            item["thumbnail_url"] = None
+
+    response = templates.TemplateResponse(
+        request=request,
+        name="partials/library_list.html",
+        context=_ctx(request, {"items": items, "is_owner": True}),
+    )
+    response.headers["HX-Trigger"] = json.dumps({"refresh-topics": True})
+    return response
+
+
+@app.post("/htmx/library/reembed-all/{subject_id}")
+async def htmx_library_reembed_all(subject_id: int, request: Request, user=Depends(require_auth), db=Depends(get_db)):
+    """Delete all RAG chunks and re-enqueue embedding jobs via worker."""
+    cursor = await db.execute(
+        "SELECT id FROM subjects WHERE id = ? AND owner_id = ?",
+        (subject_id, user["id"]),
+    )
+    if not await cursor.fetchone():
+        raise HTTPException(status_code=404)
+
+    # Clear existing chunks
+    await db.execute(
+        "DELETE FROM vec_chunks WHERE chunk_id IN (SELECT id FROM content_chunks WHERE subject_id = ?)",
+        (subject_id,),
+    )
+    await db.execute("DELETE FROM content_chunks WHERE subject_id = ?", (subject_id,))
+
+    # Get all youtube items with subtitles and enqueue embed jobs
+    cursor = await db.execute(
+        """SELECT id, url, type, image_path, name, status, metadata, subtitle_path, position
+           FROM library_items
+           WHERE subject_id = ? AND deleted_at IS NULL
+           ORDER BY position""",
+        (subject_id,),
+    )
+    items = [dict(row) for row in await cursor.fetchall()]
+    youtube_with_subs = [i for i in items if i["type"] == "youtube" and i.get("subtitle_path")]
+
+    for item in youtube_with_subs:
+        await db.execute(
+            "UPDATE library_items SET status = 'pending' WHERE id = ?",
+            (item["id"],),
+        )
+        item["status"] = "pending"
+
+    await db.commit()
+
+    async with get_queue_db() as queue_db:
+        for item in youtube_with_subs:
+            await enqueue(queue_db, item["id"], job_type="embed")
+
+    for item in items:
+        if item.get("type") == "youtube" and item.get("url"):
+            m = YOUTUBE_RE.search(item["url"])
+            item["thumbnail_url"] = f"https://img.youtube.com/vi/{m.group(1)}/mqdefault.jpg" if m else None
+        else:
+            item["thumbnail_url"] = None
+
+    response = templates.TemplateResponse(
+        request=request,
+        name="partials/library_list.html",
+        context=_ctx(request, {"items": items, "is_owner": True}),
+    )
     return response
 
 
@@ -1435,3 +1571,31 @@ async def htmx_hello(request: Request):
     return templates.TemplateResponse(request=request, name="partials/hello.html", context=_ctx(request))
 
 
+# --- RAG Chat ---
+
+@app.post("/htmx/chat/{subject_id}")
+async def htmx_chat(subject_id: int, request: Request, db=Depends(get_db)):
+    body = await request.json()
+    question = body.get("question", "").strip()
+    history = body.get("history", [])[-10:]
+
+    if not question:
+        raise HTTPException(400, "Pergunta vazia")
+
+    cursor = await db.execute("SELECT id, name FROM subjects WHERE id = ?", (subject_id,))
+    subject = await cursor.fetchone()
+    if not subject:
+        raise HTTPException(404)
+
+    # All DB work before StreamingResponse (connection closes after handler)
+    from app.services.embedding_service import generate_embeddings
+    query_emb = await generate_embeddings([question])
+    chunks = await rag_service.search_chunks(db, subject_id, query_emb[0])
+    messages = rag_service.build_chat_messages(subject["name"], chunks, question, history)
+
+    async def event_stream():
+        async for token in rag_service.stream_completion(messages):
+            yield f"data: {json.dumps({'token': token})}\n\n"
+        yield "data: [DONE]\n\n"
+
+    return StreamingResponse(event_stream(), media_type="text/event-stream")

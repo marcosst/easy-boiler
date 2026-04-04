@@ -9,9 +9,12 @@ import sys
 from pathlib import Path
 
 import aiosqlite
+import sqlite_vec
 
 from app.queue import get_queue_db, dequeue, complete, fail, requeue_stale
 from app.services.apify_service import fetch_apify_data
+from app.services.chunking_service import chunk_subtitle
+from app.services.embedding_service import store_chunks_with_embeddings, delete_chunks_for_item
 from app.services.llm_classifier import classify_transcript
 from app.services.taxonomy_service import get_taxonomy_for_subject
 from app.services.tree_builder import rebuild_content_json
@@ -36,6 +39,14 @@ async def get_app_db():
     await db.execute("PRAGMA journal_mode = WAL")
     await db.execute("PRAGMA busy_timeout = 5000")
     await db.execute("PRAGMA foreign_keys = ON")
+    vec_path = sqlite_vec.loadable_path()
+
+    def _load():
+        db._conn.enable_load_extension(True)
+        db._conn.load_extension(vec_path)
+        db._conn.enable_load_extension(False)
+
+    await db._execute(_load)
     db.row_factory = aiosqlite.Row
     return db
 
@@ -66,10 +77,10 @@ async def update_item_status(app_db, item_id: int, status: str, error_msg: str =
 
 
 async def process_job(job: dict, app_db, queue_db) -> None:
-    """Process a single job: fetch subtitles via Apify, classify via LLM."""
+    """Process a single job based on job_type: full, classify, or embed."""
     item_id = job["library_item_id"]
     job_id = job["id"]
-    classify_only = bool(job.get("classify_only", 0))
+    job_type = job.get("job_type") or "full"
 
     # Get library item details from app.db
     cursor = await app_db.execute(
@@ -121,64 +132,87 @@ async def process_job(job: dict, app_db, queue_db) -> None:
         logger.info("[%d] DRY RUN: done", item_id)
         return
 
-    # --- Step 1: Fetch subtitles (skip if file already exists on disk) ---
+    logger.info("[%d] Processing job_type=%s for %s", item_id, job_type, video_id)
+
+    # --- Step 1: Fetch subtitles (only for job_type=full) ---
     subs_file = Path("midias") / username / "subtitles" / f"{video_id}.txt"
 
-    if subs_file.exists():
-        subtitle_text = subs_file.read_text(encoding="utf-8").strip()
-        logger.info("[%d] Subtitles already on disk (%d chars), skipping download", item_id, len(subtitle_text))
-    else:
-        await update_item_status(app_db, item_id, "fetching")
-        logger.info("[%d] Fetching subtitles for %s", item_id, video_id)
+    if job_type == "full":
+        if subs_file.exists():
+            subtitle_text = subs_file.read_text(encoding="utf-8").strip()
+            logger.info("[%d] Subtitles already on disk (%d chars), skipping download", item_id, len(subtitle_text))
+        else:
+            await update_item_status(app_db, item_id, "fetching")
+            logger.info("[%d] Fetching subtitles for %s", item_id, video_id)
 
+            try:
+                metadata, subtitle_text = await fetch_apify_data(url)
+            except (ValueError, RuntimeError) as exc:
+                logger.error("[%d] Apify fetch failed: %s", item_id, exc)
+                await update_item_status(app_db, item_id, "error", str(exc))
+                await fail(queue_db, job_id, str(exc))
+                return
+
+            metadata_json = json.dumps(metadata, ensure_ascii=False)
+            subs_file.parent.mkdir(parents=True, exist_ok=True)
+            subs_file.write_text(subtitle_text + "\n", encoding="utf-8")
+            subtitle_path = f"{username}/subtitles/{video_id}.txt"
+
+            await app_db.execute(
+                "UPDATE library_items SET metadata = ?, subtitle_path = ? WHERE id = ?",
+                (metadata_json, subtitle_path, item_id),
+            )
+            await app_db.commit()
+    else:
+        # classify or embed: read subtitles from disk
+        if not subs_file.exists():
+            logger.error("[%d] Subtitle file not found: %s", item_id, subs_file)
+            await update_item_status(app_db, item_id, "error", "Legendas não encontradas no disco")
+            await fail(queue_db, job_id, "Subtitle file missing")
+            return
+        subtitle_text = subs_file.read_text(encoding="utf-8").strip()
+
+    # --- Step 1.5: Chunk + Embed (for job_type=full or embed) ---
+    if job_type in ("full", "embed"):
         try:
-            metadata, subtitle_text = await fetch_apify_data(url)
-        except (ValueError, RuntimeError) as exc:
-            logger.error("[%d] Apify fetch failed: %s", item_id, exc)
-            await update_item_status(app_db, item_id, "error", str(exc))
-            await fail(queue_db, job_id, str(exc))
+            await delete_chunks_for_item(app_db, item_id)
+            chunks = chunk_subtitle(subtitle_text)
+            if chunks:
+                count = await store_chunks_with_embeddings(app_db, subject_id, item_id, chunks)
+                logger.info("[%d] Stored %d chunks with embeddings", item_id, count)
+        except Exception as exc:
+            if job_type == "embed":
+                logger.error("[%d] Embedding failed: %s", item_id, exc)
+                await update_item_status(app_db, item_id, "error", f"Falha na vetorização: {exc}")
+                await fail(queue_db, job_id, str(exc))
+                return
+            logger.warning("[%d] Embedding failed (non-fatal): %s", item_id, exc)
+
+    # --- Step 2: Classify via LLM (for job_type=full or classify) ---
+    if job_type in ("full", "classify"):
+        await update_item_status(app_db, item_id, "classifying")
+        logger.info("[%d] Classifying transcript (%d chars)", item_id, len(subtitle_text))
+
+        taxonomy = await get_taxonomy_for_subject(app_db, subject_id)
+        result = await classify_transcript(taxonomy, subtitle_text)
+
+        if result is None:
+            logger.error("[%d] LLM classification returned None", item_id)
+            await update_item_status(app_db, item_id, "error", "Falha na classificação por IA")
+            await fail(queue_db, job_id, "LLM classification failed")
             return
 
-        # Save metadata
-        metadata_json = json.dumps(metadata, ensure_ascii=False)
+        logger.info("[%d] LLM returned %d items", item_id, len(result.itens))
 
-        # Save subtitles to file
-        subs_file.parent.mkdir(parents=True, exist_ok=True)
-        subs_file.write_text(subtitle_text + "\n", encoding="utf-8")
-        subtitle_path = f"{username}/subtitles/{video_id}.txt"
-
-        # Update library item with metadata and subtitle path
-        await app_db.execute(
-            "UPDATE library_items SET metadata = ?, subtitle_path = ? WHERE id = ?",
-            (metadata_json, subtitle_path, item_id),
-        )
-        await app_db.commit()
-
-    # --- Step 2: Classify via LLM ---
-    await update_item_status(app_db, item_id, "classifying")
-    logger.info("[%d] Classifying transcript (%d chars)", item_id, len(subtitle_text))
-
-    taxonomy = await get_taxonomy_for_subject(app_db, subject_id)
-    result = await classify_transcript(taxonomy, subtitle_text)
-
-    if result is None:
-        logger.error("[%d] LLM classification returned None", item_id)
-        await update_item_status(app_db, item_id, "error", "Falha na classificação por IA")
-        await fail(queue_db, job_id, "LLM classification failed")
-        return
-
-    logger.info("[%d] LLM returned %d items", item_id, len(result.itens))
-
-    # Delete old knowledge_items and insert new ones
-    await app_db.execute("DELETE FROM knowledge_items WHERE library_id = ?", (item_id,))
-    for ki in result.itens:
-        step_url = build_step_url(video_id, ki.timestamp) if video_id else None
-        await app_db.execute(
-            """INSERT INTO knowledge_items
-               (library_id, topico, subtopico, acao, timestamp, pagina, trecho_referencia, file_path, url)
-               VALUES (?, ?, ?, ?, ?, NULL, '', NULL, ?)""",
-            (item_id, ki.topico, ki.subtopico, ki.detalhe, ki.timestamp, step_url),
-        )
+        await app_db.execute("DELETE FROM knowledge_items WHERE library_id = ?", (item_id,))
+        for ki in result.itens:
+            step_url = build_step_url(video_id, ki.timestamp) if video_id else None
+            await app_db.execute(
+                """INSERT INTO knowledge_items
+                   (library_id, topico, subtopico, acao, timestamp, pagina, trecho_referencia, file_path, url)
+                   VALUES (?, ?, ?, ?, ?, NULL, '', NULL, ?)""",
+                (item_id, ki.topico, ki.subtopico, ki.detalhe, ki.timestamp, step_url),
+            )
 
     # Mark as ready and processed
     await app_db.execute(
@@ -187,8 +221,9 @@ async def process_job(job: dict, app_db, queue_db) -> None:
     )
     await app_db.commit()
 
-    # Rebuild content_json for the subject
-    await rebuild_content_json(app_db, subject_id)
+    # Rebuild content_json (relevant for full and classify)
+    if job_type in ("full", "classify"):
+        await rebuild_content_json(app_db, subject_id)
 
     await complete(queue_db, job_id)
     logger.info("[%d] Done! Processed successfully", item_id)

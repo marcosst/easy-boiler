@@ -23,6 +23,7 @@ CREATE INDEX IF NOT EXISTS idx_jobs_status ON jobs(status);
 
 _MIGRATIONS = [
     "ALTER TABLE jobs ADD COLUMN classify_only INTEGER NOT NULL DEFAULT 0",
+    "ALTER TABLE jobs ADD COLUMN job_type TEXT NOT NULL DEFAULT 'full'",
 ]
 
 
@@ -49,11 +50,14 @@ async def get_queue_db():
         yield db
 
 
-async def enqueue(db: aiosqlite.Connection, library_item_id: int, *, classify_only: bool = False) -> int:
-    """Insert a new job with status='queued'. Returns the new job id."""
+async def enqueue(db: aiosqlite.Connection, library_item_id: int, *, job_type: str = "full") -> int:
+    """Insert a new job with status='queued'. Returns the new job id.
+
+    job_type: 'full' (fetch+embed+classify), 'classify' (classify only), 'embed' (embed only)
+    """
     cursor = await db.execute(
-        "INSERT INTO jobs (library_item_id, status, classify_only) VALUES (?, 'queued', ?)",
-        (library_item_id, int(classify_only)),
+        "INSERT INTO jobs (library_item_id, status, job_type) VALUES (?, 'queued', ?)",
+        (library_item_id, job_type),
     )
     await db.commit()
     return cursor.lastrowid

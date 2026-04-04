@@ -14,7 +14,30 @@
       "Bash(sqlite3 /home/ubuntu/aaaa/easy-boiler/data/app.db \"UPDATE library_items SET deleted_at = CURRENT_TIMESTAMP WHERE id = 33; SELECT changes\\(\\);\")",
       "Bash(sqlite3 /home/ubuntu/aaaa/easy-boiler/data/app.db \"UPDATE library_items SET deleted_at = NULL WHERE id = 33;\")",
       "Bash(python -c \"import app.main; print\\(''OK''\\)\")",
-      "Bash(gh pr:*)"
+      "Bash(gh pr:*)",
+      "Bash(grep -E \"\\\\.\\(py|txt\\)$\")",
+      "WebFetch(domain:pinemix.com)",
+      "Bash(git branch:*)",
+      "Bash(/home/ubuntu/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/scripts/start-server.sh --project-dir /home/ubuntu/aaaa/easy-boiler --host 0.0.0.0 --url-host localhost)",
+      "Bash(/home/ubuntu/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/scripts/start-server.sh --project-dir /home/ubuntu/aaaa/easy-boiler --host 0.0.0.0 --url-host localhost)",
+      "Read(//home/ubuntu/.claude/**)",
+      "Bash(timeout 5 python -c \"from app.queue import enqueue, get_queue_db; print\\('queue imports OK'\\)\")",
+      "Bash(python -c ':*)",
+      "Bash(grep -n \"status\" /home/ubuntu/aaaa/easy-boiler/db/migrations/*.sql)",
+      "Bash(grep -n \"ALTER.*library_items\" /home/ubuntu/aaaa/easy-boiler/db/migrations/*.sql)",
+      "Bash(bash /home/ubuntu/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/scripts/start-server.sh --project-dir /home/ubuntu/aaaa/easy-boiler --host 0.0.0.0 --url-host localhost)",
+      "Bash(python -c \"from jinja2 import Environment, FileSystemLoader; env = Environment\\(loader=FileSystemLoader\\('app/templates'\\)\\); [env.get_template\\(t\\) for t in ['login.html', 'register.html', 'choose_username.html', 'home.html', 'landing.html', 'topics.html', 'partials/library_add_modal.html', 'partials/library_preview.html', 'partials/library_playlist_videos.html']]; print\\('All templates parse OK'\\)\")",
+      "Bash(timeout 5 python -c \"import app.main; print\\('OK'\\)\")",
+      "Bash(DATABASE_URL=\"sqlite:///tmp/schema_gen.db\" dbmate up)",
+      "Bash(DATABASE_URL=\"sqlite:///tmp/schema_gen.db\" dbmate dump)",
+      "Bash(xargs -I {} basename {})"
+    ],
+    "additionalDirectories": [
+      "/home/ubuntu/aaaa/easy-boiler/db/migrations"
     ]
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "context7@claude-plugins-official": true
   }
 }
